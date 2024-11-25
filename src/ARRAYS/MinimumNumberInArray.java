@@ -13,6 +13,7 @@ public class MinimumNumberInArray {
 
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] < main)
+                min
         }
     }
 }
