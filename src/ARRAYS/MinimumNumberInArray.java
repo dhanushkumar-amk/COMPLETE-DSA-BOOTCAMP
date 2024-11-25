@@ -15,5 +15,7 @@ public class MinimumNumberInArray {
             if(arr[i] < min)
                 min = arr[i];
         }
+
+        return min;
     }
 }
