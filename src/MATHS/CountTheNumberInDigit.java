@@ -12,6 +12,7 @@ public class CountTheNumberInDigit {
         int count = 0;
 
         n = n /10;
+        
 
 
 
