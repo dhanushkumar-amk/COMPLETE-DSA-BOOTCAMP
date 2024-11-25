@@ -9,6 +9,6 @@ public class MinimumNumberInArray {
     }
 
     public static int MinimumNumber(int[] arr){
-        
+        int min = Integer.
     }
 }
