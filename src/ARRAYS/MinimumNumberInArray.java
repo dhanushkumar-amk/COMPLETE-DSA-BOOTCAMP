@@ -12,8 +12,8 @@ public class MinimumNumberInArray {
         int min = Integer.MAX_VALUE;
 
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i] < main)
-                min
+            if(arr[i] < min)
+                min = arr[i];
         }
     }
 }
