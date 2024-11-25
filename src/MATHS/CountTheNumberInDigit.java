@@ -2,10 +2,13 @@ package MATHS;
 
 public class CountTheNumberInDigit {
     public static void main(String[] args) {
-        System.out.println("hello world");
-        System.out.println("hello world");
-        System.out.println("hello world");
-        System.out.println("hello world 2");
+       int n = 1234;
+       System.out.println(countNumber(n));
+    }
+
+    public static int countNumber(int n){
+        int count = 0;
+        
     }
 
 }
