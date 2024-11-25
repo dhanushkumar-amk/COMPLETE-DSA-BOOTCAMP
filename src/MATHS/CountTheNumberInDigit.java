@@ -7,7 +7,9 @@ public class CountTheNumberInDigit {
     }
 
     public static int countNumber(int n){
-       int count = 0;
+
+        int count = 0;
+       
 
 
 
