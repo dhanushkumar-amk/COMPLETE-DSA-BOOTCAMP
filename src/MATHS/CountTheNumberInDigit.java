@@ -8,8 +8,9 @@ public class CountTheNumberInDigit {
 
     public static int countNumber(int n){
 
+        // initli
         int count = 0;
-       
+
 
 
 
