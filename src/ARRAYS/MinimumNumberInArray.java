@@ -9,6 +9,8 @@ public class MinimumNumberInArray {
     }
 
     public static int MinimumNumber(int[] arr){
-        int min = Integer.
+        int min = Integer.MAX_VALUE;
+
+        for
     }
 }
