@@ -11,7 +11,9 @@ public class CountTheNumberInDigit {
         // initlize the count variable
         int count = 0;
 
-        while(n)
+        while(n > 0){
+            
+        }
 
 
 
