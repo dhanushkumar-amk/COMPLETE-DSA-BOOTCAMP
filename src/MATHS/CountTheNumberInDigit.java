@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CountTheNumberInDigit {
     public static void main(String[] args) {
-        Scanner sc = new 
+        Scanner sc = new Scanner(Ss)
        System.out.println(countNumber(n));
     }
     public static int countNumber(int n){
