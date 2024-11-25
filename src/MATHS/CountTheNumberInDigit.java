@@ -9,11 +9,7 @@ public class CountTheNumberInDigit {
     public static int countNumber(int n){
 
         // initlize the count variable
-        int count = 0;
-
-        n = n /10;
-        count++;
-        n = n % 1
+        int count = 0
 
 
 
