@@ -5,9 +5,7 @@ public class CountTheNumberInDigit {
        int n = 1234;
        System.out.println(countNumber(n));
     }
-
     public static int countNumber(int n){
-
         // init the count variable
         int count = 0;
         while(n > 0){
