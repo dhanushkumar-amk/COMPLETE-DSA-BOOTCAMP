@@ -13,7 +13,7 @@ public class CountTheNumberInDigit {
 
         n = n /10;
         count++;
-        n = n
+        n = n 
 
 
 
