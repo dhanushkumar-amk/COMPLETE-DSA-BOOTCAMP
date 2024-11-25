@@ -8,8 +8,8 @@ public class CountTheNumberInDigit {
 
     public static int countNumber(int n){
         int count = 0;
-        System.out.println("hello");
-     
+      
+
 
     }
 
