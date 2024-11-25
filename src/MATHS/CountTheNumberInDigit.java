@@ -13,7 +13,7 @@ public class CountTheNumberInDigit {
 
         while(n > 0){
          n = n /10;
-         
+         count++;
         }
     }
 
