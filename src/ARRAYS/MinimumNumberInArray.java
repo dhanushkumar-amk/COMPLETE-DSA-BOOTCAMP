@@ -8,5 +8,7 @@ public class MinimumNumberInArray {
 
     }
 
-    public static int MinimumNumber()
+    public static int MinimumNumber(int[] arr){
+        
+    }
 }
