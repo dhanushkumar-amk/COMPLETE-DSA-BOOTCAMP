@@ -9,7 +9,7 @@ public  static  int ZerosInFactorial(int n){
     int result = 0;
     int powerOf5 = 5;
 
-    while( n >= powerOf5){
+    while( n <= powerOf5){
         result += n / powerOf5;
         powerOf5 = powerOf5 * 5;
     }
