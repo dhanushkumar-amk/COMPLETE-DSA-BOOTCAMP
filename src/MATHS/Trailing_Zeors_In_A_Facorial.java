@@ -1,7 +1,7 @@
 package MATHS;
 public class Trailing_Zeors_In_A_Facorial {
 public static void main(String[] args) {
-    int n = 200;
+    int n = 5;
     System.out.println(ZerosInFactorial(n));
 }
 
