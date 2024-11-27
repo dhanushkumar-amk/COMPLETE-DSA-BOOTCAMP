@@ -1,6 +1,6 @@
 package MATHS;
 
-import static MATHS.PrimeNumber.isPrime2;
+//import static MATHS.PrimeNumber.isPrime2;
 
 public class PrimeNumberInGivenRange {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class PrimeNumberInGivenRange {
 
    public static void printPrime(int n){
         for (int i =2; i <= n ; i++) {
-            if (isPrime2(n))
+            if (isPrime(n))
                 System.out.println(i);
         }
     }
