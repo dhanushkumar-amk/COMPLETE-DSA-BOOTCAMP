@@ -12,10 +12,10 @@ public class GCD_and_HCF_of_tow_numbers {
         int result  = 0;
         for (int i = min; i >=1;  i--) {
             if (n % i == 1 && m % i == 1) {
-                break;
+                result += i;
             }
-            result += i;
-             }
+            break;
+        }
         return  result;
     }
 }
