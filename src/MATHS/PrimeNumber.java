@@ -2,7 +2,7 @@ package MATHS;
 
 public class PrimeNumber {
     public static void main(String[] args) {
-        int  n = 10;
+        int  n = 5;
         System.out.println(isPrime(n));
     }
     static  boolean isPrime(int n){
