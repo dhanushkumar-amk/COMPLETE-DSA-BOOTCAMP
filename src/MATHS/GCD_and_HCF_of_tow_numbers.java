@@ -15,7 +15,7 @@ public class GCD_and_HCF_of_tow_numbers {
             min = b;
 
             for (int i = min; i >= 1;  i--) {
-            if (a % i == 0 && b % i == 0) {
+            if (a / i == 1 && b / i == 1) {
                 System.out.println(i);
                 break;
             }
