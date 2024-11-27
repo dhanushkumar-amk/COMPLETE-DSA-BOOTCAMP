@@ -4,19 +4,16 @@ public class LCM {
     public static void main(String[] args) {
         int a = 2;
         int b = 5;
-        System.out.println(lcm(a, b));
+        System.out.println("LCM of " + a + " and " + b + " is: " + lcm(a, b));
     }
-    static  int lcm(int a, int b){
+
+    static int lcm(int a, int b) {
         int result = Math.max(a, b);
-        int ans = 0;
-        for (int i = result; i < 10000; i++) {
-            if (a% i == 0 && b % i == 0){
-
-                break;
-
+        while (true) {
+            if (result % a == 0 && result % b == 0) {
+                return result;
             }
-            ans = i;
+            result++; 
         }
-        return ans;
     }
 }
