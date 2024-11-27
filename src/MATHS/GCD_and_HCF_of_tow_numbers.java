@@ -4,6 +4,7 @@ public class GCD_and_HCF_of_tow_numbers {
     public static void main(String[] args) {
         int n = 20;
         int m = 15;
+        gcd(n, m);
     }
 
     public static  void gcd(int n, int m){
@@ -14,6 +15,5 @@ public class GCD_and_HCF_of_tow_numbers {
                 break;
             }
         }
-
     }
 }
