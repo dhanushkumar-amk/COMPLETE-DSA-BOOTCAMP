@@ -11,10 +11,11 @@ public class LCM {
         int ans = 0;
         for (int i = result; i < 10000; i++) {
             if (a% i == 0 && b % i == 0){
-                ans = i;
+
+                break;
 
             }
-            break;
+            ans = i;
         }
         return ans;
     }
