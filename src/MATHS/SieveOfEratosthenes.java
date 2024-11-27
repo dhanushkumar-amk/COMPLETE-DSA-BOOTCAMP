@@ -46,6 +46,7 @@ public class SieveOfEratosthenes {
     // method 3
     static  void isPrime3(int n){
         boolean[] arr = new boolean[n + 1];
+        // i go to only root of n
         for (int i = 2; i <=Math.sqrt(n) ; i++) {
             if (arr[i] == false){
                 for (int j = i * i; j <= n ; j+= i) {
