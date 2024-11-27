@@ -1,2 +1,8 @@
-package MATHS;public class SieveOfEratosthenes {
+package MATHS;
+
+public class SieveOfEratosthenes {
+    public static void main(String[] args) {
+
+    }
+    
 }
