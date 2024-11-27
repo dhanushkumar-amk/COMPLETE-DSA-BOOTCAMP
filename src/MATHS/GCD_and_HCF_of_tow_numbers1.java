@@ -6,6 +6,7 @@ public class GCD_and_HCF_of_tow_numbers1 {
         int b = 15;
         gcd(a, b);
     }
+    
 
     public static  void gcd(int a, int b){
         int min = 0;
