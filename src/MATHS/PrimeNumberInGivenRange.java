@@ -22,8 +22,4 @@ public class PrimeNumberInGivenRange {
                 System.out.println(i);
         }
     }
-
-
-
-
 }
