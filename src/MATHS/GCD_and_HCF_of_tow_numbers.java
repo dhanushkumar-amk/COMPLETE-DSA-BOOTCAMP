@@ -10,7 +10,7 @@ public class GCD_and_HCF_of_tow_numbers {
     public static  int gcd(int n, int m){
         int min = Math.min(n, m);
         int result  = 0;
-        for (int i = min; i >= 1;  i--) {
+        for (int i = min; i >1;  i--) {
             if (n % i == 1 && m % i == 1) {
                 result += i;
                 break;
