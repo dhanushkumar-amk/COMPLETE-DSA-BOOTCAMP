@@ -1,6 +1,6 @@
 package MATHS;
 
-public class GCD_and_HCF_of_tow_numbers1 {
+public class GCDAndHCFOfTwoNumbers {
     public static void main(String[] args) {
         int a = 20;
         int b = 15;
