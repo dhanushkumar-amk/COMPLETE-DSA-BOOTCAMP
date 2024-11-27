@@ -8,7 +8,12 @@ public class GCD_and_HCF_of_tow_numbers {
     }
 
     public static  void gcd(int n, int m){
-        int min = Math.min(n, m);
+        int min = 0;
+        if ( n < m)
+            min = n;
+        else
+            min = m;
+        
             for (int i = min; i >= 1;  i--) {
             if (n % i == 1 && m % i == 1) {
                 System.out.println(i);
