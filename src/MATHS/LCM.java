@@ -13,7 +13,7 @@ public class LCM {
             if (result % a == 0 && result % b == 0) {
                 return result;
             }
-            result++; 
+            result++;
         }
     }
 }
