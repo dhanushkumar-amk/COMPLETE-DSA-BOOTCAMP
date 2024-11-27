@@ -1,11 +1,11 @@
 package MATHS;
+
+// number of zeros in given factorial  number
 public class Trailing_Zeors_In_A_Facorial {
 public static void main(String[] args) {
     int n = 5;
     System.out.println(ZerosInFactorial(n));
 }
-
-
 public  static  int ZerosInFactorial(int n){
     int result = 0;
     int powerOf5 = 5;
@@ -13,7 +13,6 @@ public  static  int ZerosInFactorial(int n){
         result += n / powerOf5;
         powerOf5 = powerOf5 * 5;
     }
-
     return  result;
     }
 }
