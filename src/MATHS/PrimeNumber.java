@@ -1,2 +1,7 @@
-package MATHS;public class PrimeNumber {
+package MATHS;
+
+public class PrimeNumber {
+    public static void main(String[] args) {
+        
+    }
 }
