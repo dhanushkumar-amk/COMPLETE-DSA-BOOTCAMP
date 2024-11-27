@@ -19,7 +19,7 @@ public class PrimeNumber {
     }
 
     // method 2
-
+    
     static  boolean isPrime2(int n){
         for (int i = 2; i <Math.sqrt(n) ; i++) {
             if ( n % i == 0)
@@ -27,5 +27,4 @@ public class PrimeNumber {
         }
         return true;
     }
-
 }
