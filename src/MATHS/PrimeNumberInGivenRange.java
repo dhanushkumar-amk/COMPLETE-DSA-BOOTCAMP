@@ -7,7 +7,7 @@ public class PrimeNumberInGivenRange {
     }
 
 
-    static void printPrime(int n){
+   public static void printPrime(int n){
         for (int i =2; i <= n ; i++) {
             if (isPrime(n))
                 System.out.println(i);
@@ -17,7 +17,7 @@ public class PrimeNumberInGivenRange {
 
 
 //    isPrime function
-    static  boolean isPrime(int n){
+    public static  boolean isPrime(int n){
         for (int i = 2; i * i <= n ; i++) {
             if (n % i == 0)
                 return false;
