@@ -10,6 +10,7 @@ public class LCM {
         int result = Math.max(a, b);
         for (int i = result; i < 10000; i++) {
             if (a% i == 0 && b % i == 0){
+                result = i;
                 break;
             }
         }
