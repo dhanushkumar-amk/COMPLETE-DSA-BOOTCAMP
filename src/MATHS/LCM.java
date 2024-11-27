@@ -9,7 +9,7 @@ public class LCM {
     static  int lcm(int a, int b){
         int result = Math.max(a, b);
         for (int i = result; i < 10000; i++) {
-            if (result % a == 0 && result % b == 0){
+            if (i % a == 0 && i % b == 0){
                 break;
             }
         }
