@@ -1,8 +1,11 @@
 package MATHS;
 
+import java.util.Scanner;
+
 public class PrimeNumber {
     public static void main(String[] args) {
-        int  n = 5;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         System.out.println(isPrime(n));
     }
     static  boolean isPrime(int n){
