@@ -18,7 +18,7 @@ public class PrimeNumberInGivenRange {
 
    public static void printPrime(int n){
         for (int i =2; i <= n ; i++) {
-            if (isPrime(n))
+            if (isPrime(i))
                 System.out.println(i);
         }
     }
