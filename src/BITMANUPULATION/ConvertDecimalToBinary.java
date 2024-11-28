@@ -10,7 +10,6 @@ public class ConvertDecimalToBinary {
             b = x + b;
             n = n / 2;
         }
-
         System.out.println(b);
     }
 }

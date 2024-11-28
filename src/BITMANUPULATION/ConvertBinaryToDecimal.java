@@ -1,2 +1,9 @@
-package BITMANUPULATION;public class ConvertBinaryToDecimal {
+package BITMANUPULATION;
+
+public class ConvertBinaryToDecimal {
+    public static void main(String[] args) {
+        int n = 101101;
+
+    }
+
 }
