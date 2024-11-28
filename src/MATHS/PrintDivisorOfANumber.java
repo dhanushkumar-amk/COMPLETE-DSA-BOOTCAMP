@@ -17,6 +17,12 @@ public class PrintDivisorOfANumber {
 
 
     // method 2
+    public static  void divisor2(int n){
+        for (int i = 1; i* i <= n ; i++) {
+            if (n %)
+        }
+    }
+
 
 
 }
