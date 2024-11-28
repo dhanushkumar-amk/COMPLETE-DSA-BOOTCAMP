@@ -12,5 +12,7 @@ public class SwitchOffTheIthBit {
 
         System.out.println(result);
 
+        System.out.println("hello");
+
     }
 }
