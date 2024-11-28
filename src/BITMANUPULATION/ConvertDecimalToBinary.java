@@ -8,7 +8,7 @@ public class ConvertDecimalToBinary {
         while (n >= 1){
             int x = n % 2;
             b = x + b;
-            n = n / 10;
+            n = n / 2;
         }
 
         System.out.println(b);
