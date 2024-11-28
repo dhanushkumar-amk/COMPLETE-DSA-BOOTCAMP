@@ -6,7 +6,6 @@ public class SwitchOnTheIthBit {
         int i = 3;
 
         int onMask = 1 << i;
-
         int result = n | onMask;
         System.out.println(result);
 
