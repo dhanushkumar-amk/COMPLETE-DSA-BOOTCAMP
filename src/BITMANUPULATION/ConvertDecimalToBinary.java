@@ -6,7 +6,7 @@ public class ConvertDecimalToBinary {
 
         String b = " ";
         while (n >= 1){
-            int x = n % 10;
+            int x = n % 2;
             b = x + b;
             n = n / 10;
         }
