@@ -17,6 +17,6 @@ public class PrintDivisorOfANumber {
 
 
     // method 2
-    
+
 
 }
