@@ -4,7 +4,7 @@ public class ConvertDecimalToBinary {
     public static void main(String[] args) {
         int n = 45;
 
-        String b = "";
+        String b = " ";
         while (n >= 1){
             int x = n % 10;
             b = x + b;
