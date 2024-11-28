@@ -7,7 +7,9 @@ public class SwitchOffTheIthBit {
 
         // mask operation example
         int offMask = ~(1 << i);
+
         int result = n & offMask;
+
         System.out.println(result);
 
     }
