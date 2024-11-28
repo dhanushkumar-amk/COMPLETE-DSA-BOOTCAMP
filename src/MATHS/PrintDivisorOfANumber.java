@@ -2,7 +2,7 @@ package MATHS;
 
 public class PrintDivisorOfANumber {
     public static void main(String[] args) {
-        int n = 25;
+        int n = 40;
         divisor4(n);
     }
 
@@ -57,5 +57,4 @@ public class PrintDivisorOfANumber {
             }
         }
     }
-
 }
