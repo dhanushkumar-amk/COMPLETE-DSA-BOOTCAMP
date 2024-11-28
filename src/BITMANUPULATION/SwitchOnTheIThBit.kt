@@ -1,4 +1,0 @@
-package BITMANUPULATION
-
-class SwitchOnTheIThBit {
-}
