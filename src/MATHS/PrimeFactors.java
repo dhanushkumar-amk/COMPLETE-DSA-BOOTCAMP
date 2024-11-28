@@ -2,7 +2,7 @@ package MATHS;
 
 public class PrimeFactors {
     public static void main(String[] args) {
-int n = 900;
+int n = 53;
 factorsPrime2(n);
     }
 
