@@ -42,7 +42,7 @@ public class PrintDivisorOfANumber {
     // print the divisor in ascending order
     public static  void divisor4(int n){
         int i = 0;
-        for ( i = 1; i* i <= n ; i++) {
+        for ( i = 1; i * i <= n ; i++) {
             if (n % i == 0){
                 System.out.println(i);
             }
@@ -52,7 +52,9 @@ public class PrintDivisorOfANumber {
         // because we initialize the i in above so if i exit that same value exits here it helps us to reverse the for lpop
         for ( ;i >=1;i--){
             if (n % i == 0)
-                System.out.println(n / i);
+                if ( i != n/i)
+                    System.out.println(n/ i);
+        }
         }
     }
 
