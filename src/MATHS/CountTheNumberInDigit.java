@@ -1,4 +1,4 @@
-package MAths;
+package MATHS;
 
 import java.util.Scanner;
 public class CountTheNumberInDigit {
