@@ -32,7 +32,7 @@ public class PrintDivisorOfANumber {
         for (int i = 1; i* i <= n ; i++) {
             if (n % i == 0){
                 System.out.print(i + " ");
-                if (n/ i != i)
+                if ( i != n/i)
                     System.out.println(n/ i);
             }
         }
