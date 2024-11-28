@@ -2,8 +2,8 @@ package MATHS;
 
 public class PrimeFactors {
     public static void main(String[] args) {
-int n = 53;
-factorsPrime2(n);
+        int n = 53;
+        factorsPrime2(n);
     }
 
 
