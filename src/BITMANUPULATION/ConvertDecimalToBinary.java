@@ -1,2 +1,16 @@
-package BITMANUPULATION;public class ConvertDecimalToBinary {
+package BITMANUPULATION;
+
+public class ConvertDecimalToBinary {
+    public static void main(String[] args) {
+        int n = 45;
+
+        String b = "";
+        while (n >= 1){
+            int x = n % 10;
+            b = x + b;
+            n = n / 10;
+        }
+
+        System.out.println(b);
+    }
 }
