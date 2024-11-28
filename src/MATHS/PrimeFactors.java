@@ -12,10 +12,10 @@ factorsPrime(n);
         int i = 2;
         while (n > 1){
             while(n % i == 0){
-                System.out.println(i);
+                System.out.print(i + " ");
                 n = n / i;
             }
-            i++; 
+            i++;
         }
       }
 }
