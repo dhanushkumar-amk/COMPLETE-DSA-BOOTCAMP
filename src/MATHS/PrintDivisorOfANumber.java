@@ -51,10 +51,10 @@ public class PrintDivisorOfANumber {
         // we can use empty to an initialization path in for loop
         // because we initialize the i in above so if i exit that same value exits here it helps us to reverse the for lpop
         for ( ;i >=1;i--){
-            if (n % i == 0)
+            if (n % i == 0){
                 if ( i != n/i)
                     System.out.println(n/ i);
-        }
+            }
         }
     }
 
