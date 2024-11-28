@@ -2,7 +2,7 @@ package MATHS;
 
 public class PrintDivisorOfANumber {
     public static void main(String[] args) {
-        int n = 2000;
+        int n = 25;
         divisor2(n);
     }
 
