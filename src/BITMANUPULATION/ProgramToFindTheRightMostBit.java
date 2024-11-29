@@ -2,7 +2,7 @@ package BITMANUPULATION;
 
 public class ProgramToFindTheRightMostBit {
     public static void main(String[] args) {
-        int n = 0;
+        int n = 40;
         System.out.println(rightMostSetBitPosition2(n));
     }
 
