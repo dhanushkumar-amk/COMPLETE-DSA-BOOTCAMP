@@ -10,6 +10,15 @@ public class FindWhetherTheNumberIsAPowerOf2 {
         if (n==0)
             return false;
 
-        return  (n &(n -1 ))==0;
+//        return  (n &(n -1 ))==0;
+
+// alternative way
+
+        int mask = n & (n -1);
+
+        if (mask == 0)
+            return true;
+        else
+            return false;
     }
 }
