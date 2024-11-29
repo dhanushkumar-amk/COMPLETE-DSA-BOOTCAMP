@@ -1,6 +1,6 @@
 package BITMANUPULATION;
 
-public class ToogleTheIthBit {
+public class ToggleTheIthBi {
     public static void main(String[] args) {
         int n = 36;
         int i = 5;
