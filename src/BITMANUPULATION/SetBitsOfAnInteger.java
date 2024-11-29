@@ -2,7 +2,7 @@ package BITMANUPULATION;
 
 public class SetBitsOfAnInteger {
     public static void main(String[] args) {
-        int n = -1;
+        int n = 1;
         System.out.println(reverse(n));
     }
 
