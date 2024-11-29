@@ -11,6 +11,7 @@ public class ProgramToFindTheRightMostBit {
         int mask = 1;
         int position = 0;// assume intialize it zero
 
+
         if (n == 0)
             return -1;
 
