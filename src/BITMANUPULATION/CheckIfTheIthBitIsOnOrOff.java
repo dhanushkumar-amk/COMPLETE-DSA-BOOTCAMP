@@ -2,7 +2,7 @@ package BITMANUPULATION;
 
 public class CheckIfTheIthBitIsOnOrOff {
     public static void main(String[] args) {
-        int n = 26;
+        int n = 36;
         int i= 5;
         int mask = 1 << i;
         int result = n & mask;
