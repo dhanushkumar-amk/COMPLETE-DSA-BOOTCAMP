@@ -14,6 +14,4 @@ public class CheckIfTheValueIsConsecutiveOnesOrNot {
         else
             return false;
     }
-
-
 }
