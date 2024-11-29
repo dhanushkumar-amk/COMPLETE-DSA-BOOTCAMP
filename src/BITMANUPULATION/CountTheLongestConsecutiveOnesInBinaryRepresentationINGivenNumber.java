@@ -2,7 +2,7 @@ package BITMANUPULATION;
 
 public class CountTheLongestConsecutiveOnesInBinaryRepresentationINGivenNumber {
     public static void main(String[] args) {
-        int n = 101;
+        int n = 255;
         System.out.println(countTheValues(n));
 
     }
