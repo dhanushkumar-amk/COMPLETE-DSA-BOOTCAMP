@@ -2,7 +2,7 @@ package BITMANUPULATION;
 
 public class CheckIfTheValueIsConsecutiveOnesOrNot {
     public static void main(String[] args) {
-        int n = 73;
+        int n = 101;
         System.out.println(consecutive(n));
     }
 
