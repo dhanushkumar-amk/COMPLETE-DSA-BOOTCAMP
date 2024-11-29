@@ -5,7 +5,7 @@ public class ToogleTheIthBit {
         int n = 36;
         int i = 5;
 
-        int mask = n << i;
+        int mask = 1 << i;
 
         System.out.println(n ^ mask);
     }
