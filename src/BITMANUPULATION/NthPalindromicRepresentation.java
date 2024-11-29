@@ -3,7 +3,7 @@ package BITMANUPULATION;
 public class NthPalindromicRepresentation {
     public static void main(String[] args) {
     int n = 21;
-        System.out.println(palindromic(n));
+        System.out.println(Integer.toBinaryString(palindromic(n)));
     }
     public static  int palindromic(int n){
         int length = 0;
