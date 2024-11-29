@@ -23,8 +23,23 @@ public class ProgramToFindTheRightMostBit {
     }
 
     // method 2
-    static  int rightMostSetBitPosition2(int n){
-         return (int) (Math.log10(n ^ (n &(n-1)))/ Math.log10(2)) + 1;
+// Method to find the position of the rightmost set bit in a number
+    static int rightMostSetBitPosition2(int n) {
+        // Step 1: Clear the rightmost set bit of n using n & (n - 1)
+        int clearedRightmostBit = n & (n - 1);
+
+        // Step 2: Isolate the rightmost set bit using XOR
+        int isolatedRightmostBit = n ^ clearedRightmostBit;
+
+        // Step 3: Find the logarithm base 2 of the isolated rightmost bit
+        double logBase2 = Math.log10(isolatedRightmostBit) / Math.log10(2);
+
+        // Step 4: Convert the logarithmic result to an integer and add 1 to get the position
+        int position = (int) logBase2 + 1;
+
+        // Step 5: Return the final position of the rightmost set bit
+        return position;
     }
+
 
 }
