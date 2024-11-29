@@ -23,7 +23,6 @@ public class ProgramToFindTheRightMostBit {
     }
 
     // method 2
-
-
+    
 
 }
