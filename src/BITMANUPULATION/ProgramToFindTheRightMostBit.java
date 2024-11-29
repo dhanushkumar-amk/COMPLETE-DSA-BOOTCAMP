@@ -24,7 +24,7 @@ public class ProgramToFindTheRightMostBit {
 
     // method 2
     static  int rightMostSetBitPosition2(int n){
-         return (int) (Math.log10(n ^ (n &(n-1)))/ Math.log10(2));
+         return (int) (Math.log10(n ^ (n &(n-1)))/ Math.log10(2)) + 1;
     }
 
 }
