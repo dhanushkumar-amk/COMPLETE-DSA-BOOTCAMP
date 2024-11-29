@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class LonelyDigits {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,3,2,1};
+        int[] arr = {1,2,3,4,3,2,4,5,1};
         System.out.println(lonelyInteger2(arr));
     }
 
