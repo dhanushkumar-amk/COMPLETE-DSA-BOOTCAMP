@@ -2,7 +2,7 @@ package BITMANUPULATION;
 
 public class TrailingZerosInABinary {
     public static void main(String[] args) {
-        int n = 168;
+        int n = 128;
         System.out.println(trailing(n));
     }
     static  int trailing(int n){
