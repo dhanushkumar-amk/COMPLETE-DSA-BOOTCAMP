@@ -2,7 +2,7 @@ package BITMANUPULATION;
 
 public class FindWhetherTheNumberIsAPowerOf2 {
     public static void main(String[] args) {
-        int n = 8;
+        int n = 9;
         System.out.println(powerOf2(n));
     }
     static  boolean powerOf2(int n){
