@@ -42,4 +42,12 @@ public class ProgramToFindTheRightMostBit {
     }
 
 
+    // single line representation
+    /*
+        static  int rightMostSetBitPosition2(int n){
+         return (int) (Math.log10(n ^ (n &(n-1)))/ Math.log10(2)) + 1;
+    }
+     */
+
+
 }
