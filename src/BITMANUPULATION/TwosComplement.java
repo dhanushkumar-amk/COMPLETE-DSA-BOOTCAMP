@@ -8,8 +8,8 @@ public class TwosComplement {
     public static String twosComplement(String str) {
 
         String onesComplement = OnesComplement(str);
-        
-        StringBuilder builder = new StringBuilder(str);
+
+        StringBuilder builder = new StringBuilder(onesComplement);
 
         int carry = 1;
         for (int i = str.length() - 1; i >= 0; i++) {
