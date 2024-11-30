@@ -23,15 +23,13 @@ public class TwosComplement {
                 break;
             }
 
-            // If carry is still 1, prepend it to the result (for overflow cases)
-            if (carry == 1) {
-                builder.insert(0, '1');
-            }
-
-            return builder.toString();
-
         }
 
+        // still last digit the carry == 1 then we put last digit as 1
+        if (carry == 1) {
+            builder.insert(0, '1');
+        }
+        return builder.toString();
     }
 
     public static String OnesComplement(String str) {
