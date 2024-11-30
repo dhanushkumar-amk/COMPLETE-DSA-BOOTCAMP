@@ -13,7 +13,7 @@ public class TwosComplement {
         StringBuilder builder = new StringBuilder(onesComplement);
 
         int carry = 1;
-        for (int i = str.length() - 1; i >= 0; i++) {
+        for (int i = str.length() - 1; i > 0; i++) {
             if (str.charAt(i) == '1' && carry == 1) {
                 builder.setCharAt(i, '0');
             } else if (str.charAt(i) == '0' && carry == '1') {
