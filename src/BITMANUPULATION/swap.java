@@ -8,6 +8,8 @@ public class swap {
         swapp(a, b);
     }
     static void swapp(int a, int b){
+
+        System.out.println("Before swapping: A = " + a + " ||  B = " + b);
         a = a ^ b;
         b = a ^ b;
         a = a ^ b;
