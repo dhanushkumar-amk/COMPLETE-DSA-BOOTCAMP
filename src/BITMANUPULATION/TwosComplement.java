@@ -8,7 +8,9 @@ public class TwosComplement {
     public static String twosComplement(String str){
         StringBuilder builder = new StringBuilder(str);
 
-        for
+        for (int i = str.length()-1; i >= 0 ; i++) {
+            if (str.charAt(i) == )
+        }
 
     }
 
