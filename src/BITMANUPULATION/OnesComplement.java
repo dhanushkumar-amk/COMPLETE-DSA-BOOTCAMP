@@ -3,7 +3,7 @@ package BITMANUPULATION;
 
 public class OnesComplement {
     public static void main(String[] args) {
-        String num = "111111";
+        String num = "10101010";
         System.out.println(Complement(num));
     }
    public static String Complement(String num){
