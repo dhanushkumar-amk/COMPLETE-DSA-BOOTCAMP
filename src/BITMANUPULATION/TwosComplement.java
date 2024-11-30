@@ -2,41 +2,42 @@ package BITMANUPULATION;
 
 public class TwosComplement {
     public static void main(String[] args) {
-    String str = "1001";
-        System.out.println(twosComplement(str));
+        String str = "1001";
+        System.out.println("2's Complement of " + str + " is: " + twosComplement(str));
     }
 
     public static String twosComplement(String str) {
+        // Step 1: Calculate 1's complement
+        String onesComplement = onesComplement(str);
 
-        String onesComplement = OnesComplement(str);
-
+        // Step 2: Add 1 to the 1's complement
         StringBuilder builder = new StringBuilder(onesComplement);
 
         int carry = 1;
-        for (int i = str.length() - 1; i >= 0; i--) {
-            if (str.charAt(i) == '1' && carry == 1) {
+        for (int i = onesComplement.length() - 1; i >= 0; i--) {
+            if (onesComplement.charAt(i) == '1' && carry == 1) {
                 builder.setCharAt(i, '0');
-            } else if (str.charAt(i) == '0' && carry == '1') {
+            } else if (onesComplement.charAt(i) == '0' && carry == 1) {
                 builder.setCharAt(i, '1');
                 carry = 0;
-            }else {
+            } else {
                 break;
             }
-
         }
 
-        // still last digit the carry == 1 then we put last digit as 1
+        // If carry is still 1, prepend '1' to the result (for overflow cases)
         if (carry == 1) {
             builder.insert(0, '1');
         }
+
         return builder.toString();
     }
 
-    public static String OnesComplement(String str) {
-
+    // Method to calculate 1's complement
+    public static String onesComplement(String str) {
         StringBuilder stringBuilder = new StringBuilder();
 
-        for (char i = 0; i < str.length(); i++) {
+        for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == '1')
                 stringBuilder.append('0');
             else
