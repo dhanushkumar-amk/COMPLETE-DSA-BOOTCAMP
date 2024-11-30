@@ -12,6 +12,6 @@ public class swap {
         b = a ^ b;
         a = a ^ b;
 
-        System.out.println("After swapping: A = " + a + "B = " + b);
+        System.out.println("After swapping: A = " + a + " B = " + b);
     }
 }
