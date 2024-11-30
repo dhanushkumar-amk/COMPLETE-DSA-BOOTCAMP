@@ -2,7 +2,8 @@ package BITMANUPULATION;
 
 public class TwosComplement {
     public static void main(String[] args) {
-
+    String str = "1001";
+        System.out.println(twosComplement(str));
     }
 
     public static String twosComplement(String str) {
