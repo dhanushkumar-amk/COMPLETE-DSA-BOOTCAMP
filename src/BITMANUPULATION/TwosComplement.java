@@ -6,7 +6,10 @@ public class TwosComplement {
     }
 
     public static String twosComplement(String str){
-        StringBuilder builder = new StringBuilder();
+        StringBuilder builder = new StringBuilder(str);
+
+        for
+
     }
 
     public  static  String OnesComplement(String str){
