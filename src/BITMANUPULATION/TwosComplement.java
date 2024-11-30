@@ -8,8 +8,13 @@ public class TwosComplement {
     public static String twosComplement(String str){
         StringBuilder builder = new StringBuilder(str);
 
+        int carry = 1;
         for (int i = str.length()-1; i >= 0 ; i++) {
-            if (str.charAt(i) == )
+            if (str.charAt(i) == '1' && carry == 1){
+                builder.setCharAt(i, '0');
+        }else if () {
+
+            }
         }
 
     }
