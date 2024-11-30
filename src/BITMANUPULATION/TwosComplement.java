@@ -6,6 +6,9 @@ public class TwosComplement {
     }
 
     public static String twosComplement(String str) {
+
+        String onesComplement = OnesComplement(str);
+        
         StringBuilder builder = new StringBuilder(str);
 
         int carry = 1;
@@ -19,7 +22,7 @@ public class TwosComplement {
                 break;
             }
 
-            
+
 
         }
 
