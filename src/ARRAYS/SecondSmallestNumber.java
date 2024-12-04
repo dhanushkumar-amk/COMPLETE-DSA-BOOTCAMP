@@ -12,10 +12,11 @@ public class SecondSmallestNumber {
 
         for (int i = arr.length-1; i <= 0 ; i--) {
             if (arr[i] < min1){
-                min2 = min1;
                 min1 = arr[i];
             } else if (arr[i] < min2) {
+                min1= min2;
                 min2 = arr[i];
+
             }
         }
         return  min2;
