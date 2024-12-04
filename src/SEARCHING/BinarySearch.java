@@ -2,8 +2,8 @@ package SEARCHING;
 
 public class BinarySearch {
     public static void main(String[] args) {
-        int[] arr = {12,14,15,17,18};
-        int target = 14;
+        int[] arr = {12,14,15,17,18,67};
+        int target = 141;
         System.out.println(binarySearch(arr, target));
     }
 
