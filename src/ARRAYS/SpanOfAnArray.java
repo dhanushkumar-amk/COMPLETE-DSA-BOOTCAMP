@@ -1,4 +1,4 @@
-package SEARCHING;
+package ARRAYS;
 
 public class SpanOfAnArray {
     public static void main(String[] args) {
@@ -7,20 +7,17 @@ public class SpanOfAnArray {
     }
     static  int span(int[] arr){
         int max = arr[0];
+        int min = arr[0];
 
         for (int i = 0; i <arr.length ; i++) {
             if (arr[i] > max)
                 max = arr[i];
-        }
 
-        int min = arr[0];
-
-        for (int i = 0; i < arr.length ; i++) {
             if (arr[i] < min)
                 min = arr[i];
         }
 
-        int span = max - min;
+          int span = max - min;
 
         return span;
 
