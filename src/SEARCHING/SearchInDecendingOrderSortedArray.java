@@ -15,10 +15,13 @@ public class SearchInDecendingOrderSortedArray {
         while (low<= high){
          int mid = (low + high)/2;
 
+         if (target == arr[mid])
+             return mid;
+
          if (target < arr[mid])
              low = mid + 1;
          else
-             high = mid -1;
+             high = mid - 1;
 
         }
         return -1;
