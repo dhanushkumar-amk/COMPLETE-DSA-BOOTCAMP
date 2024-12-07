@@ -1,6 +1,6 @@
 package SEARCHING;
 
-public class BitonicArray {
+class BitonicArray {
     public static void main(String[] args) {
         int[] arr = {5, 6, 7, 8, 9, 10, 3, 2, 1};
         int target = 8;
