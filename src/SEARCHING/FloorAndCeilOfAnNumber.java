@@ -3,7 +3,7 @@ package SEARCHING;
 public class FloorAndCeilOfAnNumber {
     public static void main(String[] args) {
         int[] arr = {19,23,56,58,78,79,84,89,99};
-        int target  = 58;
+        int target  = 80;
         System.out.println(ceil(arr, target));
         System.out.println(floor(arr, target));
 
