@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class FirstAndLastPositionOfAnElementInSortedArray {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,4,4,4,5,6,7};
+        int[] arr = {1,2,3,4,4,4,5,6,7};
         int target = 4;
         System.out.println(Arrays.toString(position(arr, target)));
     }
@@ -18,8 +18,8 @@ public class FirstAndLastPositionOfAnElementInSortedArray {
             mid = (low + high)/2;
 
             if (arr[mid] == target){
-            res[0] = mid ;
-            high = mid -1;
+                res[0] = mid ;
+                high = mid -1;
             }
 
             if (target < arr[mid]){
@@ -40,8 +40,8 @@ public class FirstAndLastPositionOfAnElementInSortedArray {
             mid = (low + high)/2;
 
             if (arr[mid] == target){
-            res[1] = mid ;
-                low= mid +1;
+                res[1] = mid ;
+                low = mid +1;
             }
 
             if (target < arr[mid]){
