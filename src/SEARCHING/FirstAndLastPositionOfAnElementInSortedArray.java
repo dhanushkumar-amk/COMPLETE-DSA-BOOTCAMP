@@ -14,6 +14,8 @@ public class FirstAndLastPositionOfAnElementInSortedArray {
         int mid = 0;
 
         int[] res = {-1, -1};
+
+        // start point
         while (low <= high){
             mid = (low + high)/2;
 
@@ -22,7 +24,7 @@ public class FirstAndLastPositionOfAnElementInSortedArray {
                 high = mid -1;
             }
 
-            if (target < arr[mid]){
+            else if (target < arr[mid]){
                 high = mid -1;
             }
             else {
@@ -36,6 +38,7 @@ public class FirstAndLastPositionOfAnElementInSortedArray {
         high = arr.length -1;
         mid =  0;
 
+        // end point
         while (low <= high){
             mid = (low + high)/2;
 
@@ -45,7 +48,7 @@ public class FirstAndLastPositionOfAnElementInSortedArray {
             }
 
             if (target < arr[mid]){
-                high = mid -1;
+                high = mid - 1;
             }
             else {
                 low = mid + 1;
