@@ -28,6 +28,9 @@ public class FloorAndCeilOfAnNumber {
 
 
      }
-     static int floor(int[] arr, int target){}
+     static int floor(int[] arr, int target){
+
+        return -1;
+     }
 
 }
