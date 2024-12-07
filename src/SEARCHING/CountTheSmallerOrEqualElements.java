@@ -38,7 +38,7 @@ public class CountTheSmallerOrEqualElements {
              mid = (low + high)/2;
 
             if (target == arr[mid]) {
-                while (arr[mid + 1] == target && arr[mid + 1] < arr.length) {
+                while (arr[mid + 1] == target && mid + 1 < arr.length) {
                     mid++;
                 }
                 break;
