@@ -5,7 +5,7 @@ public class CountTheSmallerOrEqualElements {
 //    int[] arr = {2,6,12,18,21,26,33,42};
     int[] arr = {2,6,12,18,21,26,26,26,26,33,42};
     int target =  26;
-        System.out.println(countElement1(arr, target));
+        System.out.println(countElement2(arr, target));
     }
 
     // no duplicates
@@ -27,6 +27,7 @@ public class CountTheSmallerOrEqualElements {
         }
         return  mid + 1;
     }
+
     // found duplicates
     static int countElement2(int[] arr, int target){
         int low = 0;
