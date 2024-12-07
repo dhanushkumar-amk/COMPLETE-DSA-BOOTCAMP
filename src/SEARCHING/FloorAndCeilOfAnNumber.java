@@ -5,6 +5,7 @@ public class FloorAndCeilOfAnNumber {
         int[] arr = {19,23,56,58,78,79,84,89,99};
         int target  = 70;
         System.out.println(ceil(arr, target));
+        System.out.println(floor(arr, target));
 
     }
 
@@ -30,7 +31,22 @@ public class FloorAndCeilOfAnNumber {
      }
      static int floor(int[] arr, int target){
 
-        return -1;
+         int low = 0;
+         int high = arr.length -1;
+
+         while(low <= high){
+             int mid = (low + high)/2;
+
+             if (arr[mid] == target )
+                 return arr[mid];
+
+             if (target < arr[mid])
+                 high = mid -1;
+             else
+                 low = mid + 1;
+         }
+
+         return arr[high];
      }
 
 }
