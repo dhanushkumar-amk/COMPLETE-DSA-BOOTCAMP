@@ -23,7 +23,6 @@ public class FirstAndLastPositionOfAnElementInSortedArray {
                 res[0] = mid ;
                 high = mid -1;
             }
-
             else if (target < arr[mid]){
                 high = mid -1;
             }
