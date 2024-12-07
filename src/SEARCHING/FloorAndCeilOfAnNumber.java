@@ -30,6 +30,8 @@ public class FloorAndCeilOfAnNumber {
         else
             return -1;
      }
+
+     
      static int floor(int[] arr, int target){
 
          int low = 0;
