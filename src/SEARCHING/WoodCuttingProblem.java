@@ -16,5 +16,33 @@ public class WoodCuttingProblem {
                 max =height[i];
         }
 
+        int low = 0;
+        int high = max;
+        int mid = 0;
+
+        while(low <= high){
+            mid = (low + high)/2;
+            int woodPiece = findWoodCount(height, mid);
+
+            if (woodPiece == targetWood || low == mid)
+                return mid;
+            else if (woodPiece > targetWood)
+                low = mid;
+            else
+                high  =mid;
+        }
+        return -1;
     }
+
+    static  int findWoodCount(int[] height, int mid){
+        int woodCount = 0;
+
+        for (int i = 0; i < height.length ; i++) {
+            if(height[i] > mid){
+                woodCount += (height[i] - mid);
+            }
+        }
+        return woodCount;
+    }
+
 }
