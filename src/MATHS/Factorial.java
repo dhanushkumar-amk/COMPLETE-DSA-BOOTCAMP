@@ -1,4 +1,4 @@
-
+package MATHS;
 
 import java.util.Scanner;
 
