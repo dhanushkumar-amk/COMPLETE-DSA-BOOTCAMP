@@ -1,2 +1,7 @@
-package ARRAYS;public class MedianOfTwoSortedArray {
+package ARRAYS;
+
+public class MedianOfTwoSortedArray {
+    public static void main(String[] args) {
+        
+    }
 }
