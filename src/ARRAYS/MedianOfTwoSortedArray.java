@@ -62,8 +62,4 @@ public class MedianOfTwoSortedArray {
     }
 
 
-    // optimized solution o(log (m + n))
-    public static float findMedian2(int[] arr1, int[] arr2){
-
-    }
 }
