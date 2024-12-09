@@ -39,7 +39,7 @@ public class MedianOfTwoSortedArray {
 
 
         // arr2
-        while (i < arr2.length){
+        while (j < arr2.length){
             arr3[k] = arr2[j];
             j++;
             k++;
