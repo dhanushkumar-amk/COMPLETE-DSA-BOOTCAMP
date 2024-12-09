@@ -1,2 +1,7 @@
-package SEARCHING;public class WoodCuttingProlem {
+package SEARCHING;
+
+public class WoodCuttingProblem {
+    public static void main(String[] args) {
+        
+    }
 }
