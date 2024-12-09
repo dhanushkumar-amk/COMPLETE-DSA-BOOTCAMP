@@ -47,10 +47,13 @@ public class MedianOfTwoSortedArray {
 
 
         // find median
+
+        // for even number of vaues
         if (arr3.length % 2 == 0){
             int mid = arr3.length/2;
            return (float) (arr3[mid] + arr3[mid -1])/2;
         }
+        // odd number of values
         else{
             int mid = arr3.length / 2;
             return arr3[mid];
