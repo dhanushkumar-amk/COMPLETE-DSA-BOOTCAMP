@@ -8,6 +8,7 @@ public class MedianOfTwoSortedArray {
         System.out.println(findMedian1(arr1, arr2));
     }
 
+    // efficient solution O(m + n)
     public static float findMedian1(int[] arr1, int[] arr2){
         int i = 0;
         int j = 0;
@@ -58,5 +59,11 @@ public class MedianOfTwoSortedArray {
             int mid = arr3.length / 2;
             return arr3[mid];
         }
+    }
+
+
+    // optimized solution o(log (m + n))
+    public static float findMedian2(int[] arr1, int[] arr2){
+
     }
 }
