@@ -9,7 +9,7 @@ public class BookAllocationProblem {
 
     static boolean isPossibleSolution(int[] pages, int student, int mid){
 
-        int stu = 1;
+        int currentStudent = 1;
         int pageCount = 0;
 
         for (int i = 0; i < pages.length ; i++) {
@@ -17,15 +17,16 @@ public class BookAllocationProblem {
             if (pages[i] > mid)
                 return false;
 
+
             if (pageCount + pages[i] <= mid)
                 pageCount += pages[i];
             else{
-                stu++;
+                currentStudent++;
 
-                if (stu > student)
+                if (currentStudent > student)
                     return false;
 
-                stu = pages[i];
+                currentStudent = pages[i];
             }
 
         }
