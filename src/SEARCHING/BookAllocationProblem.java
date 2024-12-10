@@ -7,8 +7,30 @@ public class BookAllocationProblem {
         System.out.println(maxValue(pages, student));
     }
 
-    static boolean isPossibleSolution(int[]nt mid){
+    static boolean isPossibleSolution(int[] pages, int student, int mid){
 
+        int stu = 1;
+        int pageCount = 0;
+
+        for (int i = 0; i < pages.length ; i++) {
+
+            if (pages[i] > mid)
+                return false;
+
+            if (pageCount + pages[i] <= mid)
+                pageCount += pages[i];
+            else{
+                stu++;
+
+                if (stu > student)
+                    return false;
+
+                stu = pages[i];
+            }
+
+        }
+
+        return true;
     }
 
     static int maxValue(int[] pages, int student){
@@ -29,7 +51,7 @@ public class BookAllocationProblem {
         while (low <= high){
             int mid = (low + high)/2;
 
-            if(isPossibleSolution(mid)){
+            if(isPossibleSolution(pages, student, mid)){
                 result = mid;
                 high = mid -1;
             }
