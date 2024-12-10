@@ -1,2 +1,7 @@
-package SEARCHING;public class BookAllocationProblem {
+package SEARCHING;
+
+public class BookAllocationProblem {
+    public static void main(String[] args) {
+        
+    }
 }
