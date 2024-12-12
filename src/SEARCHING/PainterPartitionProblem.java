@@ -57,6 +57,7 @@ public class PainterPartitionProblem {
         }
 
 
+    return result * timeUnit;
     }
 
 }
