@@ -1,8 +1,8 @@
 package ARRAYS;
 
-import java.util.Arrays;
 
-public class HowToReverseAnArray {
+
+public class ReverseAnArray {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6};
 
@@ -11,6 +11,7 @@ public class HowToReverseAnArray {
         }
 
         System.out.println();
+
         reverse(arr);
 
         for (int i = 0; i <arr.length ; i++) {
