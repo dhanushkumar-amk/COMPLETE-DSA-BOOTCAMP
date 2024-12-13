@@ -2,7 +2,7 @@ package ARRAYS;
 
 public class CheckIfArrayIsSortedOrNOt {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
+        int[] arr = {1,2,13,4,5};
         System.out.println(isSorted(arr));
 
     }
