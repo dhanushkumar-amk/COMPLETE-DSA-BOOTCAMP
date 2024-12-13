@@ -2,8 +2,11 @@ package ARRAYS;
 
 public class CheckIfArrayIsSortedOrNOt {
     public static void main(String[] args) {
-        int[] arr = {1,2,13,4,5};
-        System.out.println(isSorted(arr));
+        int[] arr = {1,2,3,4,5};
+
+       int answer = Integer.parseInt(isSorted(arr) ? "is sorted" : "not sorted");
+        System.out.println(answer);
+
 
     }
     static boolean isSorted(int[] arr){
