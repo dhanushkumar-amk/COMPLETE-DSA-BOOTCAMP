@@ -10,6 +10,7 @@ public class HowToReverseAnArray {
             System.out.print(arr[i] + " ");
         }
 
+        System.out.println();
         reverse(arr);
 
         for (int i = 0; i <arr.length ; i++) {
