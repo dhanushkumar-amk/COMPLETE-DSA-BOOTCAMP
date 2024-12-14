@@ -30,9 +30,17 @@ public class Main {
 
         // main games started
         while (moves < n * n && !gameWon){
-            //printBoard();
 
+            // print the board
+            printBoard();
+
+            // get the index to enter the value
             System.out.printf("Player %c, enter your move (row and column) : " , currentPlayer);
+            int row = sc.nextInt();
+            int column = sc.nextInt();
+
+            // check if the user enter the move is valid or not
+            
 
         }
     }
