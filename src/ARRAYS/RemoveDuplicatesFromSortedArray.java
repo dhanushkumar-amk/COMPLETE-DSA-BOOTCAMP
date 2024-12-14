@@ -8,8 +8,7 @@ public class RemoveDuplicatesFromSortedArray {
         for (int i = 0; i <arr.length ; i++) {
             System.out.print(arr[i] + " ");
         }
-        System.out.println();
-
+       
         removeDuplicates(arr);
 
         System.out.println("After :");
