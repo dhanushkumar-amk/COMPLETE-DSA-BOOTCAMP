@@ -1,2 +1,7 @@
-package Applications.TicTaxToe;public class Main {
+package Applications.TicTaxToe;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("hello world");
+    }
 }
