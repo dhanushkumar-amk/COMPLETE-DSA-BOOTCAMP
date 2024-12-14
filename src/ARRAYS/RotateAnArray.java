@@ -25,12 +25,12 @@ public class RotateAnArray {
             }
         }
  */
-        int k = 4;
+        int k = -1;
         System.out.println();
         rotate2(arr, k);
 
         for (int i = 0; i < arr.length ; i++) {
-            System.out.print(arr[i]);
+            System.out.print(arr[i] + " ");
         }
 
     }
