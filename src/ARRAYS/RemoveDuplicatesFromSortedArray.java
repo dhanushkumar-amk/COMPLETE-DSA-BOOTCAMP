@@ -8,18 +8,18 @@ public class RemoveDuplicatesFromSortedArray {
         for (int i = 0; i <arr.length ; i++) {
             System.out.print(arr[i] + " ");
         }
-       
-        removeDuplicates(arr);
 
+        System.out.println();
+     int j =  removeDuplicates(arr);
         System.out.println("After :");
 
 
-        for (int i = 0; i <arr.length ; i++) {
+        for (int i = 0; i < j ; i++) {
             System.out.print(arr[i] + " ");
         }
 
     }
-    static void removeDuplicates(int[] arr){
+    static int removeDuplicates(int[] arr){
 
         int j = 0;
 
@@ -29,5 +29,6 @@ public class RemoveDuplicatesFromSortedArray {
                 arr[j] = arr[i];
             }
         }
+        return j + 1;
     }
 }
