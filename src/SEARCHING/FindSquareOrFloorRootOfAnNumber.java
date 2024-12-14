@@ -14,20 +14,16 @@ public class FindSquareOrFloorRootOfAnNumber {
         int low = 2;
         int high = n/2;
 
-        int result = 0;
-        while (low <= high){
+       while (low <= high){
             int mid = (low + high)/2;
 
             if (mid * mid == n)
                 return mid;
-            else if (mid * mid < n) {
+            else if (mid * mid < n)
                 low = mid + 1;
-               // result = mid;  // for floor
-            }else {
+              else
                 high = mid - 1;
-                //result = mid // for ceil;
             }
-        }
-        return high;
+        return high;  // for finding floor return high value or finding ceil means return low
     }
 }
