@@ -25,7 +25,7 @@ public class RotateAnArray {
             }
         }
  */
-        int k = -1;
+        int k = -3;
         System.out.println();
         rotate2(arr, k);
 
