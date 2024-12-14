@@ -12,7 +12,8 @@ public class RemoveDuplicatesFromSortedArray {
 
         removeDuplicates(arr);
 
-        
+        System.out.println("After :");
+
 
         for (int i = 0; i <arr.length ; i++) {
             System.out.print(arr[i] + " ");
