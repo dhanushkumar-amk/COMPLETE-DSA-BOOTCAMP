@@ -47,11 +47,13 @@ public class Main {
     private static void printBoard(){
         for (int i = 0; i <n ; i++) {
             for (int j = 0; j <n ; j++) {
-                System.out.println(board[i][j] + " ");
+                System.out.print(board[i][j] + " ");
             }
             System.out.println();
         }
     }
+
+    
 
 
 
