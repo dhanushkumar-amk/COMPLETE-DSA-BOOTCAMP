@@ -25,7 +25,13 @@ public class RotateAnArray {
             }
         }
  */
+        int k = 4;
+        System.out.println();
+        rotate2(arr, k);
 
+        for (int i = 0; i < arr.length ; i++) {
+            System.out.print(arr[i]);
+        }
 
     }
 
@@ -37,5 +43,15 @@ public class RotateAnArray {
             arr[i - 1] = arr[i];
         }
         arr[arr.length - 1] = temp;
+    }
+
+    // rotate for k times with same rotate1 function
+    static void rotate2(int[] arr, int k){
+        k = k % arr.length;
+        if (k < 0)
+            k += arr.length;
+        for (int i = 1; i <= k ; i++) {
+            rotate1(arr);
+        }
     }
 }
