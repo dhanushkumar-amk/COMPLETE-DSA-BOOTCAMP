@@ -22,12 +22,12 @@ public class FindSquareOrFloorRootOfAnNumber {
                 return mid;
             else if (mid * mid < n) {
                 low = mid + 1;
-                result = mid;  // for floor
+               // result = mid;  // for floor
             }else {
                 high = mid - 1;
                 //result = mid // for ceil;
             }
         }
-        return result;
+        return low;
     }
 }
