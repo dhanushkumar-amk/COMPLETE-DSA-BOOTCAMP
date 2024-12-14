@@ -2,7 +2,7 @@ package SEARCHING;
 
 public class FindSquareOrFloorRootOfAnNumber {
     public static void main(String[] args) {
-        int n =  25;
+        int n =  24;
         System.out.println(sqrt(n));
     }
     static int sqrt(int n){
