@@ -40,9 +40,30 @@ public class Main {
             int column = sc.nextInt();
 
             // check if the user enter the move is valid or not
-            
+            if (isValid(row, column)){
+                board[row][column] = currentPlayer;
+                moves++;
 
+                if (checkWin(row, column)){
+                    gameWon = true;
+                   printBoard();
+                    System.out.printf("player %c wins ", currentPlayer);
+                }
+                else {
+                    currentPlayer = (currentPlayer == 'x') ? '0' : 'X';
+                }
+            }
+            else
+                System.out.println("Invalid move, Try again.");
         }
+
+        // if the game is drawn after get out from the while loop then draw
+        if (!gameWon){
+            printBoard();
+            System.out.println("The game is drawn");
+        }
+
+        sc.close();
     }
 
     // board initialize
@@ -66,7 +87,48 @@ public class Main {
 
 
 
+    // check is user given value is valid or not
+    private static boolean isValid(int row, int column){
+        return row >= 0 && row < n && column >= 0 && column < n && board[row][column] == '-';
+    }
 
+    // check if the player is win or not
+    private static boolean checkWin(int row, int column){
+        return checkRow(row) || checkColumn(column) || checkDiagonals();
+    }
 
+    // wins check 1 row
+    private static boolean checkRow(int row){
+        for (int column = 0; column < n; column++) {
+            if (board[row][column] != currentPlayer)
+                return false;
+        }
+        return true;
+    }
+
+    // wins check 2 column
+    private static boolean checkColumn(int column){
+        for (int row = 0; row < n; row++) {
+            if (board[row][column] != currentPlayer)
+                return false;
+        }
+        return true;
+    }
+
+    // wins check 3 diagonals
+    private static boolean checkDiagonals(){
+        boolean diagonal1 = true;
+        boolean diagonal2 = true;
+
+        // diagonal 1
+        for (int i = 0; i <n ; i++) {
+            if (board[i][i] != currentPlayer)
+                diagonal1 = false;
+
+            if (board[i][n - i - 1] != currentPlayer)
+                diagonal2 = false;
+        }
+        return diagonal1 || diagonal2;
+    }
 
 }
