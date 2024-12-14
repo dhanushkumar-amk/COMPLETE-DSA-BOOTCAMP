@@ -32,7 +32,7 @@ public class Main {
         while (moves < n * n && !gameWon){
             //printBoard();
 
-            System.out.println("Player enter your move (row and column) : " + currentPlayer);
+            System.out.printf("Player %c, enter your move (row and column) : " , currentPlayer);
 
         }
     }
