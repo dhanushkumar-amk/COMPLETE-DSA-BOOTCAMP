@@ -11,17 +11,20 @@ public class RotateAnArray {
 
         System.out.println();
 
+        /*
+
+        // brute for method to  rotate k times
+
         int k = 3;
-
         for (int i = 0; i <k ; i++) {
-
             rotate1(arr);
-
             System.out.println("After ");
             for (int j = 0; j < arr.length; j++) {
                 System.out.print(arr[j] + " ");
+                
             }
         }
+ */
 
 
     }
