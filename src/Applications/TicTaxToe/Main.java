@@ -19,8 +19,41 @@ public class Main {
 
         // create the board
         board = new char[n][n];
-        
+        initializeBoard();
 
+        // init current player
+        currentPlayer = 'X';
 
+        // variable deceleration
+        int moves = 0;
+        boolean gameWon = false;
+
+        // main games started
+        while (moves < n * n && !gameWon){
+            printBoard();
+        }
     }
+
+    // board initialize
+    private static void initializeBoard(){
+        for (int i = 0; i <n; i++) {
+            for (int j = 0; j <n; j++) {
+                board[i][j] = '-';
+            }
+        }
+    }
+
+    // print board
+    private static void printBoard(){
+        for (int i = 0; i <n ; i++) {
+            for (int j = 0; j <n ; j++) {
+                System.out.println(board[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+
+
+
 }
