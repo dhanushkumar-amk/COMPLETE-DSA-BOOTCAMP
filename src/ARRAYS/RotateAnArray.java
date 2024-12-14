@@ -10,18 +10,19 @@ public class RotateAnArray {
         }
 
         System.out.println();
-        rotate1(arr);
-        System.out.println("After ");
-        for (int i = 0; i <arr.length ; i++) {
-            System.out.print(arr[i] + " ");
+
+        int k = 3;
+
+        for (int i = 0; i <k ; i++) {
+
+            rotate1(arr);
+
+            System.out.println("After ");
+            for (int j = 0; j < arr.length; j++) {
+                System.out.print(arr[j] + " ");
+            }
         }
 
-        System.out.println();
-        rotate1(arr);
-        System.out.println("After ");
-        for (int i = 0; i <arr.length ; i++) {
-            System.out.print(arr[i] + " ");
-        }
 
     }
 
