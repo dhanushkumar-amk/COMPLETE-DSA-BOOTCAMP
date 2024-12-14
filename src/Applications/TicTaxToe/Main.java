@@ -30,7 +30,10 @@ public class Main {
 
         // main games started
         while (moves < n * n && !gameWon){
-            printBoard();
+            //printBoard();
+
+            System.out.println("Player enter your move (row and column) : " + currentPlayer);
+
         }
     }
 
@@ -53,7 +56,7 @@ public class Main {
         }
     }
 
-    
+
 
 
 
