@@ -50,7 +50,7 @@ public class Main {
                     System.out.printf("player %c wins ", currentPlayer);
                 }
                 else {
-                    currentPlayer = (currentPlayer == 'x') ? '0' : 'X';
+                    currentPlayer = (currentPlayer == 'X') ? '0' : 'X';
                 }
             }
             else
