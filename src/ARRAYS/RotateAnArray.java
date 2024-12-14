@@ -16,6 +16,13 @@ public class RotateAnArray {
             System.out.print(arr[i] + " ");
         }
 
+        System.out.println();
+        rotate1(arr);
+        System.out.println("After ");
+        for (int i = 0; i <arr.length ; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
     }
 
     // brute force  for one place
