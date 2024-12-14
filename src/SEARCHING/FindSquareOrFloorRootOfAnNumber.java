@@ -28,6 +28,6 @@ public class FindSquareOrFloorRootOfAnNumber {
                 //result = mid // for ceil;
             }
         }
-        return low;
+        return high;
     }
 }
