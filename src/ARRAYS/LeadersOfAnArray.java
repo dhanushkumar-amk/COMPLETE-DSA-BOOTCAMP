@@ -27,7 +27,7 @@ public class LeadersOfAnArray {
     static  void leaders2(int[] arr){
         int currentLeader = arr.length -1;
 
-        for (int i = arr.length - 2; i <= 0; i++) {
+        for (int i = arr.length - 2; i <= 0; i--) {
             if (arr[i] > currentLeader){
                 currentLeader = arr[i];
                 System.out.print(arr[i] + " ");
