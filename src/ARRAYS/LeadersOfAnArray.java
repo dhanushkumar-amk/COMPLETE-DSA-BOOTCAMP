@@ -1,5 +1,8 @@
 package ARRAYS;
 
 public class LeadersOfAnArray {
-    psvm
+    public static void main(String[] args) {
+
+    }
+    
 }
