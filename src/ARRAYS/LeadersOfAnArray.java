@@ -3,7 +3,7 @@ package ARRAYS;
 public class LeadersOfAnArray {
     public static void main(String[] args) {
     int[] arr = {8,11,5,11,7,6,3};
-    leaders1(arr);
+    leaders2(arr);
     }
 
 
@@ -25,6 +25,13 @@ public class LeadersOfAnArray {
 
     // efficient solution
     static  void leaders2(int[] arr){
-        
+        int currentLeader = arr.length -1;
+
+        for (int i = arr.length - 2; i >= 0; i++) {
+            if (arr[i] > currentLeader){
+                currentLeader = arr[i];
+                System.out.print(arr[i] + " ");
+            }
+        }
     }
 }
