@@ -30,7 +30,7 @@ public class LeadersOfAnArray {
         for (int i = arr.length - 2; i >= 0; i--) {
             if (arr[i] > currentLeader){
                 currentLeader = arr[i];
-                System.out.print(arr[i] + " ");
+                System.out.print(currentLeader + " ");
             }
         }
     }
