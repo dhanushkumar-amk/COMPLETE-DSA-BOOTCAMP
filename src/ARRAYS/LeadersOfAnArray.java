@@ -22,4 +22,9 @@ public class LeadersOfAnArray {
                 System.out.print(arr[i] + " ");
         }
     }
+
+    // efficient solution
+    static  void leaders2(int[] arr){
+        
+    }
 }
