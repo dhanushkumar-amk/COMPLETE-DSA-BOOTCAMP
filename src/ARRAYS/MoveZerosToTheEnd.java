@@ -1,6 +1,5 @@
 package ARRAYS;
 
-import java.util.Arrays;
 
 public class MoveZerosToTheEnd {
     public static void main(String[] args) {
@@ -23,7 +22,6 @@ public class MoveZerosToTheEnd {
         if (size == 0 || size == 1)
             return;
 
-
         int zero = 0;
         int nonZero = 0;
 
@@ -34,7 +32,8 @@ public class MoveZerosToTheEnd {
                 arr[zero] = temp;
                 nonZero++;
                 zero++;
-            }else
+            }
+            else
                 nonZero++;
         }
 
