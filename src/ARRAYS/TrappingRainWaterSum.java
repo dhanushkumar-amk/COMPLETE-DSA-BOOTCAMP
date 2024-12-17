@@ -6,7 +6,8 @@ public class TrappingRainWaterSum {
 
     }
 
-    static void trap(int[] height){
+    static int trap(int[] height){
 
+        
     }
 }
