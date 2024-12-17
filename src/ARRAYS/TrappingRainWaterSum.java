@@ -15,13 +15,13 @@ public class TrappingRainWaterSum {
             int leftBorder = height[i];
             for (int j = 0; j < i; j++) {
                 if (height[j] > leftBorder)
-                    leftBorder = height[i];
+                    leftBorder = height[j];
             }
 
             int rightBorder = height[i];
             for (int j = i + 1; j < height.length ; j++) {
                 if (height[j] > rightBorder)
-                    rightBorder = height[i];
+                    rightBorder = height[j];
             }
 
             int waterLevel = Math.min(leftBorder, rightBorder);
