@@ -24,7 +24,7 @@ public class MaximumSubArray {
         int sum = arr[0];
         int maxSum = arr[0];
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) {
             if (sum > 0){
                 sum+= arr[i];
             }else{
