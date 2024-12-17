@@ -2,10 +2,26 @@ package ARRAYS;
 
 public class FrequencyOfAnArray {
     public static void main(String[] args) {
-
+    int[] arr = {20,20,30,30,30,30};
+    frequency(arr);
     }
-    static void frequency(int[] arr){
-        
 
+    static void frequency(int[] arr){
+    int frequency = 1;
+    int i = 1; // starts from second variable
+
+        while (i < arr.length){
+            while (i < arr.length && arr[i] == arr[i -1]){
+                frequency++;
+                i++;
+            }
+
+            System.out.println(arr[i -1] + " " + frequency);
+            frequency = 1;
+            i++;
+        }
+
+        if (arr[i - 1] != arr[ i - 2] || arr.length == 1 )
+            System.out.println(arr[i - 1] + " " + frequency);
     }
 }
