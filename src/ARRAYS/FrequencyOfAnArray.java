@@ -5,6 +5,7 @@ public class FrequencyOfAnArray {
 
     }
     static void frequency(int[] arr){
+        
 
     }
 }
