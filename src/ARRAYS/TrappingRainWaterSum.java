@@ -8,6 +8,11 @@ public class TrappingRainWaterSum {
 
     static void trap(int[] height){
         int maxmin = Math.min(height[0] , height[height.length - 1]);
-        System.out.println(maxmin);
+
+        int result = 0;
+        for (int i = 1; i <height.length -2; i++) {
+            result += height[i] - maxmin;
+        }
+        System.out.println(result);
     }
 }
