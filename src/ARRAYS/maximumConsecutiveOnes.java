@@ -14,10 +14,8 @@ public class maximumConsecutiveOnes {
             for (int j = i; j < arr.length ; j++) {
                 if (arr[j]== 1)
                     count++;
-                else {
-                    count = 0;
+                else
                     break;
-                }
             }
 
             maxCount = Math.max(count, maxCount);
