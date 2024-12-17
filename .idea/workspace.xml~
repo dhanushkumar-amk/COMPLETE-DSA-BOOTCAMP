@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3b31853-a80d-4570-8193-c0fc280c5451" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/ARRAYS/MaximumSubArray.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;0f7f7fff&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2p7NwaiJCZKDdnuZ24QmNuiYDl1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+    <option name="sortKey" value="BY_TIME_DESCENDING" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AddTwoNumbers.executor": "Run",
+    "Application.BinarySearch.executor": "Run",
+    "Application.BitonicArray.executor": "Run",
+    "Application.BitonicArrray.executor": "Run",
+    "Application.BookAllocationProblem.executor": "Run",
+    "Application.CheckIfArrayIsSortedOrNOt.executor": "Run",
+    "Application.CheckIfTheIthBitIsOnOrOff.executor": "Run",
+    "Application.CheckIfTheValueIsConsecutiveOnesOrNot.executor": "Run",
+    "Application.ConvertBinaryToDecimal.executor": "Run",
+    "Application.ConvertDecimalToBinary.executor": "Run",
+    "Application.CountTheLongestConsecutiveOnesInBinaryRepresentationINGivenNumber.executor": "Run",
+    "Application.CountTheNumberInDigit.executor": "Run",
+    "Application.CountTheSetBits.executor": "Run",
+    "Application.CountTheSmallerOrEqualElements.executor": "Run",
+    "Application.EuclidLCM.executor": "Run",
+    "Application.Euclid_Of_Alexandria_GCD.executor": "Run",
+    "Application.Factorial.executor": "Run",
+    "Application.FindSquareOrFloorRootOfAnNumber.executor": "Run",
+    "Application.FindSubArrayOfAnArrray.executor": "Run",
+    "Application.FindWhetherTheNumberIsAPowerOf2.executor": "Run",
+    "Application.FirstAndLastPositionOfAnElementInSortedArray.executor": "Run",
+    "Application.FloorAndCeilOfAnNumber.executor": "Run",
+    "Application.FrequencyOfAnArray.executor": "Run",
+    "Application.GCD_and_HCF_of_tow_numbers.executor": "Run",
+    "Application.GabrielLameOptimizedEculidAlgorithmGCD.executor": "Debug",
+    "Application.HowToReverseAnArray.executor": "Run",
+    "Application.InverseOfAnArray.executor": "Run",
+    "Application.LCM.executor": "Run",
+    "Application.LeadersOfAnArray.executor": "Run",
+    "Application.LinearSearch.executor": "Run",
+    "Application.LonelyDigits.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MaximumNumberInArray.executor": "Run",
+    "Application.MaximumSubArray.executor": "Run",
+    "Application.MedianOfTwoSortedArray.executor": "Run",
+    "Application.MinimumNumberOfDaysToMakeMBouqutes.executor": "Run",
+    "Application.MoveZerosToTheEnd.executor": "Run",
+    "Application.NthPalindromicRepresentation.executor": "Run",
+    "Application.OddOrEven.executor": "Run",
+    "Application.OnesComplement.executor": "Run",
+    "Application.PainterPartitionProblem.executor": "Run",
+    "Application.PrimeFactors.executor": "Run",
+    "Application.PrimeNumber.executor": "Run",
+    "Application.PrimeNumberInGivenRange.executor": "Run",
+    "Application.PrintDivisorOfANumber.executor": "Run",
+    "Application.ProgramToFindTheRightMostBit.executor": "Run",
+    "Application.RemoveDuplicatesFromSortedArray.executor": "Run",
+    "Application.RotateAnArray.executor": "Run",
+    "Application.SearchInDecendingOrderSortedArray.executor": "Run",
+    "Application.SearchInRotatedSortedArray.executor": "Run",
+    "Application.SecondLargestElement.executor": "Run",
+    "Application.SecondSmallestNumber.executor": "Run",
+    "Application.SetBitsOfAnInteger.executor": "Run",
+    "Application.SieveOfEratosthenes.executor": "Run",
+    "Application.SpanOfAnArray.executor": "Run",
+    "Application.SubtractTwoNumber.executor": "Run",
+    "Application.SwapAllOddAndEvenBits.executor": "Run",
+    "Application.SwitchOffTheIthBit.executor": "Run",
+    "Application.SwitchOnTheIthBit.executor": "Run",
+    "Application.ToogleTheIthBit.executor": "Run",
+    "Application.TrailingZerosInABinary.executor": "Run",
+    "Application.Trailing_Zeors_In_A_Facorial.executor": "Run",
+    "Application.TrappingRainWaterSum.executor": "Run",
+    "Application.TwosComplement.executor": "Run",
+    "Application.maximumConsecutiveOnes.executor": "Run",
+    "Application.swap.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/hp5cd/Documents/Coding.dev",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Markdown"
+    ]
+  }
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="git" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MaximumSubArray">
+    <configuration name="FrequencyOfAnArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ARRAYS.FrequencyOfAnArray" />
+      <module name="Coding.dev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ARRAYS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeadersOfAnArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ARRAYS.LeadersOfAnArray" />
+      <module name="Coding.dev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ARRAYS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaximumSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ARRAYS.MaximumSubArray" />
+      <module name="Coding.dev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ARRAYS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrappingRainWaterSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ARRAYS.TrappingRainWaterSum" />
+      <module name="Coding.dev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ARRAYS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="maximumConsecutiveOnes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ARRAYS.maximumConsecutiveOnes" />
+      <module name="Coding.dev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ARRAYS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MaximumSubArray" />
+        <item itemvalue="Application.maximumConsecutiveOnes" />
+        <item itemvalue="Application.TrappingRainWaterSum" />
+        <item itemvalue="Application.FrequencyOfAnArray" />
+        <item itemvalue="Application.LeadersOfAnArray" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3b31853-a80d-4570-8193-c0fc280c5451" name="Changes" comment="" />
+      <created>1732113394695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732113394695</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1732335110087</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732335110087</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1732536181749</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732536181750</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modified" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SEARCHING/BitonicArrray.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
