@@ -11,7 +11,7 @@ public class TrappingRainWaterSum {
 
         int result = 0;
         for (int i = 1; i <height.length -2; i++) {
-            result += height[i] - maxmin;
+            result +=  maxmin - height[i];
         }
         System.out.println(result);
     }
