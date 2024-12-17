@@ -2,7 +2,7 @@ package ARRAYS;
 
 public class FrequencyOfAnArray {
     public static void main(String[] args) {
-    int[] arr = {20,20,30,30,30,30};
+    int[] arr = {20,20,30,30,30,30, 40};
     frequency(arr);
     }
 
