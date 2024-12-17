@@ -10,7 +10,7 @@ public class TrappingRainWaterSum {
         int maxmin = Math.min(height[0] , height[height.length - 1]);
 
         int result = 0;
-        for (int i = 1; i <height.length -2; i++) {
+        for (int i = 1; i <height.length -1; i++) {
             result +=  maxmin - height[i];
         }
         System.out.println(result);
