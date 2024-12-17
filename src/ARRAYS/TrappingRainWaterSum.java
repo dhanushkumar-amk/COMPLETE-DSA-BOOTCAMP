@@ -31,8 +31,26 @@ public class TrappingRainWaterSum {
         return result;
     }
 
-    static int trap1(int[] height){
-        
+    static int trap2(int[] height){
+        int res = 0;
+        int[] lb = new int[height.length];
+        int[] rb = new int[height.length];
+
+        lb[0] = height[0];
+        for (int i = 1; i < height.length - 1; i++) {
+          lb[i] = Math.max(height[i], lb[i - 1]);
+        }
+
+        rb[0] = height[height.length - 1];
+        for (int i = height.length - 2; i <= 0; i--) {
+          rb[i] = Math.max(height[i], lb[i + 1]);
+        }
+
+        for (int i = 1; i < height.length -1 ; i++) {
+            res += Math.min(lb[i],rb[i]) - height[i];
+        }
+
+        return res;
     }
 
 }
