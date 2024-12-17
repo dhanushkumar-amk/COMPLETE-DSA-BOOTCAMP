@@ -21,7 +21,7 @@ public class FrequencyOfAnArray {
             i++;
         }
 
-        if (arr[i - 1] != arr[ i - 2] || arr.length == 1 )
+        if (arr[i - 1] != arr[ i - 2])
             System.out.println(arr[i - 1] + " " + frequency);
     }
 }
