@@ -42,7 +42,7 @@ public class TrappingRainWaterSum {
         }
 
         rb[0] = height[height.length - 1];
-        for (int i = height.length - 2; i <= 0; i--) {
+        for (int i = height.length - 2; i >= 0; i--) {
           rb[i] = Math.max(height[i], lb[i + 1]);
         }
 
