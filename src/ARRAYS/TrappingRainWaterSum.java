@@ -3,11 +3,11 @@ package ARRAYS;
 public class TrappingRainWaterSum {
     public static void main(String[] args) {
     int[] height = {4,2,0,3,2,5};
-        System.out.println(trap(height));
+        System.out.println(trap2(height));
 
     }
 
-    static int trap(int[] height){
+    static int trap1(int[] height){
 
         int result = 0;
         for (int i = 1; i <= height.length - 2; i++) {
@@ -30,4 +30,9 @@ public class TrappingRainWaterSum {
         }
         return result;
     }
+
+    static int trap1(int[] height){
+        
+    }
+
 }
