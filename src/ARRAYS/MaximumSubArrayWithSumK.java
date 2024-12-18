@@ -15,9 +15,10 @@ public class MaximumSubArrayWithSumK {
             int CurrentSum  = 0;
             for (int j = i; j < k ; j++) {
                 CurrentSum += arr[j];
+                MaxSum = Math.max(CurrentSum, MaxSum);
             }
 
-            MaxSum = Math.max(CurrentSum, MaxSum);
+
         }
 
         return MaxSum;
