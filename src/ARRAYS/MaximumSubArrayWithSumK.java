@@ -13,7 +13,7 @@ public class MaximumSubArrayWithSumK {
 
         for (int i = 0; i < arr.length - k ; i++) {
             int CurrentSum  = 0;
-            for (int j = i; j <= k ; j++) {
+            for (int j = i; j < k ; j++) {
                 CurrentSum += arr[j];
             }
 
