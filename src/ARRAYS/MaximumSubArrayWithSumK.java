@@ -11,14 +11,12 @@ public class MaximumSubArrayWithSumK {
 
         int MaxSum = Integer.MIN_VALUE;
 
-        for (int i = 0; i < arr.length - k ; i++) {
+        for (int i = 0; i <= arr.length - k ; i++) {
             int CurrentSum  = 0;
             for (int j = i; j < k ; j++) {
                 CurrentSum += arr[j];
                 MaxSum = Math.max(CurrentSum, MaxSum);
             }
-
-
         }
 
         return MaxSum;
