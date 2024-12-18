@@ -17,6 +17,12 @@ public class PrintMatrixInZigZagForm {
                     System.out.print(arr[i][j] + " ");
                 }
             }
+            else{
+                for (int j= arr.length - 1; j > 0;j++)
+                    System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+
         }
     }
 }
