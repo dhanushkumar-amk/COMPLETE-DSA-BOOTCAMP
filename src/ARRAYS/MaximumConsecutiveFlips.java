@@ -15,6 +15,7 @@ public class MaximumConsecutiveFlips {
                 else
                     System.out.print(i - 1);
             }
- }
+            System.out.println();
+     }
     }
 }
