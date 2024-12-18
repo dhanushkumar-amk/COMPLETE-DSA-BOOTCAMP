@@ -19,7 +19,20 @@ public class PrintAllTheBoundriesOfAMatrix {
             System.out.print(arr[i][j] + " ");
         }
 
-        
 
+        j = arr.length -1;
+        for (i = 1; i < arr.length  ; i++) {
+            System.out.print(arr[i][j] +" ");
+        }
+
+        i = arr.length - 1;
+        for ( j = arr[i].length - 2; j >= 0 ; j--) {
+            System.out.print(arr[i][j] + " ");
+        }
+
+        j = 0;
+        for ( i = arr[i].length - 2; i >= 1; i--) {
+            System.out.print(arr[i][j] +" ");
+        }
     }
 }
