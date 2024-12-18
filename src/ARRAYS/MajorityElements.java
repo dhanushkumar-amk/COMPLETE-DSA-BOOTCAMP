@@ -2,7 +2,7 @@ package ARRAYS;
 
 public class MajorityElements {
     public static void main(String[] args) {
-        int[] arr = {3,2,3};
+        int[] arr = {5,5,8,8,8,8,1};
         System.out.println(majorityElements2(arr));
     }
 
