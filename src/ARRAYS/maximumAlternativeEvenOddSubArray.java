@@ -18,6 +18,6 @@ public class maximumAlternativeEvenOddSubArray {
             }
             maxCount = Math.max(maxCount, count);
         }
-        return ,maxCount;
+        return maxCount;
     }
 }
