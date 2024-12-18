@@ -7,7 +7,7 @@ public class maximumAlternativeEvenOddSubArray {
     }
 
 
-    static int evenOdd(int[] arr){
+    static int evenOdd1(int[] arr){
         int maxCount = 0;
         for (int i = 0; i < arr.length ; i++) {
             int count = 1;
@@ -21,4 +21,18 @@ public class maximumAlternativeEvenOddSubArray {
         }
         return maxCount;
     }
+
+    // efficient solution
+    static int evenOdd(int[] arr){
+        int count =1;
+        int maxCount = 0;
+
+        for (int i = 1; i < arr.length ; i++) {
+            if (arr[i] % 2 == 0 && arr[i - 1] % 2 != 0    ||   arr[i] % 2 != 0 && arr[i - 1] % 2 == 0 ){
+                count++;
+                maxCount = Math.max(count,)
+            }
+        }
+    }
+
 }
