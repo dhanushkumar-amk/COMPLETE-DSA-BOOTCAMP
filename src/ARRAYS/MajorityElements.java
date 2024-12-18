@@ -32,7 +32,6 @@ public class MajorityElements {
             else
                 count--;
 
-
             if (count == 0){
                 maj = arr[i];
                 count = 1;
