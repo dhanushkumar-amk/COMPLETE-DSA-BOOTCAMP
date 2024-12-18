@@ -2,7 +2,8 @@ package ARRAYS;
 
 public class MaximumConsecutiveFlips {
     public static void main(String[] args) {
-        int[] arr =
+        int[] arr = {1,1,0,0,1,1,0,0,0,1,1,};
+        maximumFlips(arr);
     }
 
     static void maximumFlips(int[] arr){
