@@ -3,7 +3,7 @@ package ARRAYS;
 public class maximumAlternativeEvenOddSubArray {
     public static void main(String[] args) {
         int[] arr = {8,10,11,12};
-        System.out.println(evenOdd(arr));
+        System.out.println(evenOdd2(arr));
     }
 
 
@@ -23,7 +23,7 @@ public class maximumAlternativeEvenOddSubArray {
     }
 
     // efficient solution
-    static int evenOdd(int[] arr){
+    static int evenOdd2(int[] arr){
         int count =1;
         int maxCount = 0;
 
