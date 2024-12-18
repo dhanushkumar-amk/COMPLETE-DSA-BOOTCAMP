@@ -11,10 +11,11 @@ public class MaximumConsecutiveFlips {
         for (int i = 1; i < arr.length ; i++) {
             if (arr[i] != arr[i-1]){
                 if (arr[i] != arr[0])
-                    System.out.println(i + " ");
+                    System.out.print(i + " ");
                 else
                     System.out.print(i - 1);
             }
-     }
+         }
+        
     }
 }
