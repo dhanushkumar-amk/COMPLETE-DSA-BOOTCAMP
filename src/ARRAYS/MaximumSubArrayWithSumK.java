@@ -2,7 +2,7 @@ package ARRAYS;
 
 public class MaximumSubArrayWithSumK {
     public static void main(String[] args) {
-        int[] arr = {2,9,3,-4,21,7};
+        int[] arr = {2,9,31,-4,21,7};
         int k = 3;
         System.out.println(sum1(arr, k));
     }
