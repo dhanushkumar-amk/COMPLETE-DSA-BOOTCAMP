@@ -26,10 +26,13 @@ public class PrintAllTheBoundriesOfAMatrix {
             System.out.print(arr[i][j] +" ");
         }
 
+        System.out.println();
+
         i = arr.length - 1;
         for ( j = arr[i].length - 2; j >= 0 ; j--) {
             System.out.print(arr[i][j] + " ");
         }
+        System.out.println();
 
         j = 0;
         for ( i = arr[i].length - 2; i >= 1; i--) {
