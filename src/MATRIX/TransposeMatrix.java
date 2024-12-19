@@ -11,7 +11,7 @@ public class TransposeMatrix {
         };
      //   transpose(arr);
 
-        transpose1(arr);
+        System.out.println(transpose1(arr));
     }
 
     static void transpose(int[][] arr){
