@@ -10,7 +10,7 @@ public class SearchInTwoDMatrix {
                 {18,21,23,26,30},
         };
 
-        int target = 5;
+        int target = 20;
         System.out.println(isPresent2(arr, target));
     }
 
