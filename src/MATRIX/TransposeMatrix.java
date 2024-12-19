@@ -40,7 +40,7 @@ public class TransposeMatrix {
 
         for (int i = 0; i < arr.length ; i++) {
             for (int j = 0; j <arr[i].length ; j++) {
-                result[i][j] = arr[j][i] - arr[j][i];
+                result[i][j] = arr[j][i];
             }
         }
         return result;
@@ -48,5 +48,5 @@ public class TransposeMatrix {
 
 
     // efficient solution
-
+    
 }
