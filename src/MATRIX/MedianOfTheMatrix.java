@@ -7,7 +7,6 @@ public class MedianOfTheMatrix {
                 {1,2,3,4,6},
                 {13,15,16,19,21},
         };
-
         System.out.println(median1(arr));
     }
 
@@ -61,4 +60,9 @@ public class MedianOfTheMatrix {
         }
         return count;
     }
+
+
+    // brute force is better for understanding
+
+
 }
