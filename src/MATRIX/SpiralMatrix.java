@@ -18,7 +18,7 @@ public class SpiralMatrix {
         System.out.println(spiralOrder);
     }
 
-    static List<Integer> spiralOrder(int[][] arr){
+    static ArrayList<Integer> spiralOrder(int[][] arr){
 
         int top = 0;
         int bottom = arr.length - 1;
@@ -27,7 +27,7 @@ public class SpiralMatrix {
 
         ArrayList<Integer> list = new ArrayList<>();
 
-        while(){
+        while(top <= bottom && left <= right){
 
             // left to right
             for (int i = left; i <= right; i++) {
@@ -55,5 +55,6 @@ public class SpiralMatrix {
 
         }
 
+        return list;
     }
 }
