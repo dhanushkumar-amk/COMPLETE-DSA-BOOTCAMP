@@ -9,8 +9,9 @@ public class TransposeMatrix {
                 {16,17,18,19,20},
                 {21,22,23,24,25},
         };
-        transpose(arr);
+     //   transpose(arr);
 
+        transpose1(arr);
     }
 
     static void transpose(int[][] arr){
@@ -21,5 +22,19 @@ public class TransposeMatrix {
             }
             System.out.println();
         }
+    }
+
+    // return as a arrays
+
+    static int[][] transpose1(int[][] arr){
+
+        int[][] result = new int[arr.length][arr.length];
+
+        for (int i = 0; i < arr.length ; i++) {
+            for (int j = 0; j <arr[i].length ; j++) {
+                result[j][i] = arr[i][j];
+            }
+        }
+        return result;
     }
 }
