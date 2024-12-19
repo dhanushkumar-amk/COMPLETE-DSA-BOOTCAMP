@@ -15,16 +15,17 @@ public class SearchInTwoDMatrix {
     }
 
     static boolean isPresent(int[][] arr, int target){
-
         for (int i = 0; i < arr.length ; i++) {
             for (int j = 0; j <arr[i].length ; j++) {
-                if (arr[i][j] == target) {
+                if (arr[i][j] == target)
                     return true;
-                    System.out.println(arr[i][j] + " ");
-                }
-                }
             }
         }
         return false;
     }
+
+
+    // efficient solution
+
+    
 }
