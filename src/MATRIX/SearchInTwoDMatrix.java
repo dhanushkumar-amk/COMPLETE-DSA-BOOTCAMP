@@ -35,7 +35,7 @@ public class SearchInTwoDMatrix {
 
             if (arr[i][j] == target)
                 return true;
-            else if (arr[i][j] > target)
+            else if ( target > arr[i][j])
                 i++;
             else
                 j--;
