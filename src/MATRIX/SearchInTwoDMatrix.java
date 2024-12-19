@@ -11,10 +11,10 @@ public class SearchInTwoDMatrix {
         };
 
         int target = 5;
-        System.out.println(isPresent(arr, target));
+        System.out.println(isPresent2(arr, target));
     }
 
-    static boolean isPresent(int[][] arr, int target){
+    static boolean isPresent1(int[][] arr, int target){
         for (int i = 0; i < arr.length ; i++) {
             for (int j = 0; j <arr[i].length ; j++) {
                 if (arr[i][j] == target)
@@ -26,6 +26,21 @@ public class SearchInTwoDMatrix {
 
 
     // efficient solution
+    static boolean isPresent2(int[][] arr, int target){
 
-    
+        int i = 0;
+        int j = arr[0].length -1;
+
+        while(i < arr.length && j >= 0){
+
+            if (arr[i][j] == target)
+                return true;
+            else if (arr[i][j] > target)
+                i++;
+            else
+                j--;
+        }
+        return false;
+    }
+
 }
