@@ -41,6 +41,7 @@ public class SpiralMatrix {
             }
             right--;
 
+            // for this above condition is not satisfied then break the condition
             if (!(top <= bottom && left <= right))
                 break;
 
