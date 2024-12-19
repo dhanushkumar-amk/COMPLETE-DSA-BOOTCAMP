@@ -41,6 +41,9 @@ public class SpiralMatrix {
             }
             right--;
 
+            if (!(top <= bottom && left <= right))
+                break;
+
             // right to left
             for (int i = right; i >= left ; i--) {
                 list.add(arr[bottom][i]);
