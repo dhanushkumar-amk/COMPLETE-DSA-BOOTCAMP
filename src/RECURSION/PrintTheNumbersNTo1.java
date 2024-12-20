@@ -7,10 +7,8 @@ public class PrintTheNumbersNTo1 {
 
     static void numbers(int n){
 
-        if (n < 1)
-            return;
-        numbers(n - 1);
-        System.out.println(n);
-
+        for (int i = 1; i <=n ; i++) {
+            System.out.println(i);
+        }
     }
 }
