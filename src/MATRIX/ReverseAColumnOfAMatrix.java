@@ -35,7 +35,7 @@ public class ReverseAColumnOfAMatrix {
     static void reverseColumn(int[][] arr){
         for (int i = 0; i < arr.length ; i++) {
             int left = 0;
-            int right = arr[i].length - 1;
+            int right = arr.length - 1;
 
             while(left <= right){
                 int temp = arr[i][left];
