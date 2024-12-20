@@ -17,6 +17,7 @@ public class ReverseAColumnOfAMatrix {
         }
 
         System.out.println();
+        System.out.println("after reversing : ");
 
     reverseColumn(arr);
 
