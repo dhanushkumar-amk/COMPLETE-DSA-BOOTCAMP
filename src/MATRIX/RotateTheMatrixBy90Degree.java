@@ -32,8 +32,27 @@ public class RotateTheMatrixBy90Degree {
 
     static void rotate(int[][] arr){
         // transpose matrix
-        
+            for (int i = 0; i < arr.length - 1 ; i++) {
+                for (int j = i + 1; j < arr.length; j++) {
+                    int temp = arr[i][j];
+                    arr[i][j] = arr[j][i];
+                    arr[j][i] = temp;
+                }
+            }
 
         // reverse a matrix or mirror image
+        for (int i = 0; i < arr.length ; i++) {
+            int left = 0;
+            int right = arr[i].length - 1;
+
+            while(left <= right){
+                int temp = arr[i][left];
+                arr[i][left] = arr[i][right];
+                arr[i][right] = temp;
+                left++;
+                right--;
+            }
+        }
     }
 }
+
