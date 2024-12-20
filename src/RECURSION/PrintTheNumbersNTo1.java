@@ -7,8 +7,11 @@ public class PrintTheNumbersNTo1 {
 
     static void numbers(int n){
 
-        for (int i = 1; i <=n ; i++) {
-            System.out.println(i);
-        }
+        // base case
+        if (n < 1)
+            return;
+
+        System.out.println(n);
+        numbers(n - 1);
     }
 }
