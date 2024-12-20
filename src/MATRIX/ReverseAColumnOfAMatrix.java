@@ -38,9 +38,9 @@ public class ReverseAColumnOfAMatrix {
             int right = arr.length - 1;
 
             while(left <= right){
-                int temp = arr[i][left];
-                arr[i][left] = arr[i][right];
-                arr[i][right] = temp;
+                int temp = arr[left][i];
+                arr[left][i] = arr[right][i];
+                arr[right][i] = temp;
                 left++;
                 right--;
             }
