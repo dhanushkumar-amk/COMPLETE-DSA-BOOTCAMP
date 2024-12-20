@@ -9,8 +9,8 @@ public class PrintTheNumbersNTo1 {
 
         if (n < 1)
             return;
-
+        numbers(n - 1);
         System.out.println(n);
-            numbers(n - 1);
+
     }
 }
