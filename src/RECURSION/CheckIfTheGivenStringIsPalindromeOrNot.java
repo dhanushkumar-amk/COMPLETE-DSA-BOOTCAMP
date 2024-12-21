@@ -2,7 +2,7 @@ package RECURSION;
 
 public class CheckIfTheGivenStringIsPalindromeOrNot {
     public static void main(String[] args) {
-        String s = "madaam";
+        String s = "madam";
         int i = 0;
         int j= s.length()-1;
         System.out.println(isPalindrome(s, i,j));
