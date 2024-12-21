@@ -2,7 +2,7 @@ package RECURSION;
 
 public class FibonacciNumber {
     public static void main(String[] args) {
-        int n = 5;
+        int n = 6;
         System.out.println(fibo(n));
     }
     static int fibo(int n){
