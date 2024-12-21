@@ -2,7 +2,7 @@ package RECURSION;
 
 public class CountNumberOfDigitsInAGivenValue {
     public static void main(String[] args) {
-        int n = 1232345445;
+        int n = 1111;
         System.out.println(count(n));
     }
     static int count(int n){
