@@ -5,7 +5,7 @@ public class ReverseAString {
      String s = "hello";
      String r = "";
      int index  = s.length()-1;
-        System.out.println(reverse(s,r,index));
+     System.out.println(reverse(s,r,index));
     }
 
     static  String reverse(String s, String r, int index){
