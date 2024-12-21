@@ -9,7 +9,7 @@ public class SumOfAllElementsInArray {
     static int sum(int[] arr, int i){
 
 
-        if (i == 0)
+        if (i < 0)
             return 0;
 
         return sum(arr, i -1) +arr[i];
