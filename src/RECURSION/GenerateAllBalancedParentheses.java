@@ -17,7 +17,7 @@ public class GenerateAllBalancedParentheses {
 
         // base case
         if (index == arr.length)
-            System.out.println("The possible answer is : " + arr);
+            System.out.println (arr);
 
         if(openingBraceCount < n){
             arr[index] = 'C';
