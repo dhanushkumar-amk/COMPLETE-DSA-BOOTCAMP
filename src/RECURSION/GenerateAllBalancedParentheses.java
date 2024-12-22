@@ -3,7 +3,7 @@ package RECURSION;
 public class GenerateAllBalancedParentheses {
     public static void main(String[] args) {
 
-        int n = 10;
+        int n = 2;
         char[] arr = new char[n * 2];
         int openingBraceCount = 0;
         int closingBraceCount = 0;
