@@ -29,4 +29,5 @@ public class GenerateAllBalancedParentheses {
             generate(arr, n, index + 1, openingBraceCount, closingBraceCount + 1);
         }
     }
+
 }
