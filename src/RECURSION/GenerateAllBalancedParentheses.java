@@ -20,7 +20,7 @@ public class GenerateAllBalancedParentheses {
             System.out.println (arr);
 
         if(openingBraceCount < n){
-            arr[index] = 'C';
+            arr[index] = '(';
             generate(arr, n, index + 1, openingBraceCount + 1, closingBraceCount);
         }
 
