@@ -16,7 +16,7 @@ public class LetterCombinationOfAPhoneNumber {
             return;
         }
 
-            
+            int key = keypad[s.charAt(0) - 48];
 
     }
 }
