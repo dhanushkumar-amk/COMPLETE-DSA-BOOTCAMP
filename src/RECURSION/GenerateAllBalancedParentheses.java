@@ -24,7 +24,7 @@ public class GenerateAllBalancedParentheses {
             generate(arr, n, index + 1, openingBraceCount + 1, closingBraceCount);
         }
 
-        if (closingBraceCount < n){
+        if (closingBraceCount < openingBraceCount){
             arr[index] = ')';
             generate(arr, n, index + 1, openingBraceCount, closingBraceCount + 1);
         }
