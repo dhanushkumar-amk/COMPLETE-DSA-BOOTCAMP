@@ -16,10 +16,10 @@ public class LetterCombinationOfAPhoneNumber {
             return;
         }
 
-            int key = keypad[s.charAt(0) - 48];
+            String key = keypad[s.charAt(0) - 48];
 
-        for (int i = 0; i < ; i++) {
-            
+        for (int i = 0; i < key.length() ; i++) {
+            possibleWords(s.substring(1), answer+s.charAt(i));
         }
 
     }
