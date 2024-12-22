@@ -19,8 +19,8 @@ public class LetterCombinationOfAPhoneNumber {
 
             String key = keypad[s.charAt(0) - 48];
 
-        for (int i = 0; i < key.length() - 1 ; i++) {
-            possibleWords(s.substring(1), answer+s.charAt(i));
+        for (int i = 0; i < key.length() ; i++) {
+            possibleWords(s.substring(1), answer+key.charAt(i));
         }
 
     }
