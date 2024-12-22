@@ -18,5 +18,9 @@ public class LetterCombinationOfAPhoneNumber {
 
             int key = keypad[s.charAt(0) - 48];
 
+        for (int i = 0; i < ; i++) {
+            
+        }
+
     }
 }
