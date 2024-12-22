@@ -5,7 +5,8 @@ public class LetterCombinationOfAPhoneNumber {
     static String[] keypad = {"", "", "abc", "def", "ghi", "jkl","mno", "pqrs", "tuv", "wxyz"};
 
     public static void main(String[] args) {
-
+        String s = "46";
+        possibleWords(s, "");
     }
 
     static void possibleWords(String s, String answer){
