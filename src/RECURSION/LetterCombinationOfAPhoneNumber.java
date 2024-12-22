@@ -8,5 +8,15 @@ public class LetterCombinationOfAPhoneNumber {
 
     }
 
-    static void possibleWords(String s, A)
+    static void possibleWords(String s, String answer){
+
+        // base case
+        if (s.length() == 0){
+            System.out.println(answer);
+            return;
+        }
+
+            
+
+    }
 }
