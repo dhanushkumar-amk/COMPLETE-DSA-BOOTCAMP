@@ -1,4 +1,4 @@
-package Applications.TicTaxToe;
+package APPLICATION.TicTaxToe;
 
 import java.util.*;
 
