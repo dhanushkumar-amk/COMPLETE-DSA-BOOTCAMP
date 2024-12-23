@@ -14,7 +14,7 @@ public class TowerOfHanoi {
         }
 
         tower(n-1,source, destination, auxiliary );
-        tower(n, source, auxiliary, destination);
+        tower(1, source, auxiliary, destination);
         tower(n-1, auxiliary,source,destination);
 
     }
