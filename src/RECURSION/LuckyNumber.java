@@ -1,2 +1,8 @@
-package RECURSION;public class LuckyNumber {
+package RECURSION;
+
+public class LuckyNumber {
+    public static void main(String[] args) {
+
+    }
+    
 }
