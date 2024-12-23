@@ -18,7 +18,6 @@ public class PrintAllPermutationOfAGivenString {
             permutation(arr, fixedIndex + 1);
             swap(arr, i, fixedIndex);
         }
-
     }
 
     static void swap(char[] arr, int i, int fixedIndex){
