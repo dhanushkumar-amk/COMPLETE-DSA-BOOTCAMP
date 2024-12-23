@@ -2,7 +2,7 @@ package RECURSION;
 
 public class LuckyNumber {
     public static void main(String[] args) {
-    int n = 10;
+    int n = 13;
     int counter = 2;
 
         System.out.println(isLuckyNumber(n, counter));
