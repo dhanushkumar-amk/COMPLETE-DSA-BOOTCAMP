@@ -3,7 +3,7 @@ package RECURSION;
 public class SubSetSum {
     public static void main(String[] args) {
 
-        int[] arr = {10,20,1,5};
+        int[] arr = {10,20,15,5};
         int sum = 25;
 
         System.out.println(countSubSets(arr, sum, 0));
