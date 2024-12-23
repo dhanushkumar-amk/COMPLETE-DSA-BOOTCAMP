@@ -21,7 +21,7 @@ public class SubSetSum {
         if (i == arr.length)
             return 0;
 
-        return countSubSets(arr, sum - arr[i], i++) + countSubSets(arr, sum, i++);
+        return countSubSets(arr, sum - arr[i], i+1) + countSubSets(arr, sum, i+1);
 
     }
 }
