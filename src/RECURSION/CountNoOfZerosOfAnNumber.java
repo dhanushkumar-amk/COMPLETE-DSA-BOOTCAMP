@@ -9,7 +9,7 @@ public class CountNoOfZerosOfAnNumber {
         while(n != 0){
             int rem = n % 10;
 
-            if (n % 10 == 0)
+            if (n % 10 == n && rem == 0)
                 count++;
 
             if (rem == 0) {
