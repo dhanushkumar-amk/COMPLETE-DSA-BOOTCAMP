@@ -59,6 +59,6 @@ public class LinearSearch {
 
 
     // return an array list within an function
-    
+
 
 }
