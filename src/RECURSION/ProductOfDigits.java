@@ -6,7 +6,7 @@ public class ProductOfDigits {
         System.out.println(product(n));
     }
     static int product(int n){
-        if (n == 1)
+        if (n == 0)
             return 1;
 
         return product(n/ 10) * product(n % 10);
