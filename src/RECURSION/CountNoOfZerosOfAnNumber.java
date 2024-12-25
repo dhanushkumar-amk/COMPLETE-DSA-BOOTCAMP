@@ -2,7 +2,7 @@ package RECURSION;
 
 public class CountNoOfZerosOfAnNumber {
     public static void main(String[] args) {
-    int n  = 20202020;
+    int n  = 2020202000;
         System.out.println(countZero(n, 0));
     }
     static int countZero(int n, int count ){
