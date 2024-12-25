@@ -2,23 +2,24 @@ package RECURSION;
 
 public class CountNoOfZerosOfAnNumber {
     public static void main(String[] args) {
+    int n  = 20202020;
+        System.out.println(countZero(n));
 
-        int n = 10000000;
-
-        int count = 0;
-        while(n != 0){
-            int rem = n % 10;
-
-          
-            if (rem == 0) {
-                count++;
-                n = n / 10;
-            }else {
-                n = n/10;
-            }
-        }
-        System.out.println(count);
 
     }
+    static int countZero(int n){
+        return helper( n, 0);
+    }
 
+    private static int helper(int n, int counter){
+        if (n == 0)
+            return counter;
+
+        int rem = n % 10;
+
+        if (rem == 0)
+            return helper(n/10, counter + 1);
+        else
+            return helper(n/10, counter);
+    }
 }
