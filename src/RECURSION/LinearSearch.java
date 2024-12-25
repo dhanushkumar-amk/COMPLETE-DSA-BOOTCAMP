@@ -29,7 +29,7 @@ public class LinearSearch {
 
     // search from last
     static int searchFromLast(int[] arr, int target, int i){
-        if (i == 0)
+        if (i == -1)
             return -1;
 
         if (arr[i] == target)
