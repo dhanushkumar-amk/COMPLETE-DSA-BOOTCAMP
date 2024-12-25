@@ -3,7 +3,7 @@ package RECURSION;
 
 public class PalindromeNumberOrNot {
     public static void main(String[] args) {
-        int n = 1234;
+        int n = 121;
         System.out.println(isPalindrome(n));
     }
 
