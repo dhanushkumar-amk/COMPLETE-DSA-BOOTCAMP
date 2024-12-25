@@ -8,7 +8,7 @@ public class ReverseANumber {
     static void reverse(int n){
 
         if (sum == 0)
-            
+
 
     }
 }
