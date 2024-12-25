@@ -19,7 +19,10 @@ public class ReverseANumber {
         sum = sum * 10 + remainder;
 
         reverse1(n / 10);
-
-
     }
+
+    static void reverse(int n){
+        
+    }
+
 }
