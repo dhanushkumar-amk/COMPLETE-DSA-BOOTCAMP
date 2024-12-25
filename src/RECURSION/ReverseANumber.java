@@ -4,7 +4,7 @@ public class ReverseANumber {
     public static void main(String[] args) {
 
         int n = 522;
-        System.out.println(reverse(1235));
+        System.out.println(reverse(n));
     }
 
     static int  sum  = 0;
