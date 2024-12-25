@@ -4,7 +4,7 @@ public class LinearSearch {
     public static void main(String[] args) {
 
         int[] arr = {1,2,3,4,5};
-        System.out.println(searc1(arr, 4, 0));
+        System.out.println(search1(arr, 4, 0));
     }
 
     // basic linear search
