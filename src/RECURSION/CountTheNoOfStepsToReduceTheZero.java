@@ -4,7 +4,7 @@ public class CountTheNoOfStepsToReduceTheZero {
     public static void main(String[] args) {
         int num = 14;
         System.out.println(numberSteps(num));
-        normal(num);
+//        normal(num);
     }
 
 
@@ -24,6 +24,8 @@ public class CountTheNoOfStepsToReduceTheZero {
             return helper(num - 1, steps + 1);
     }
 
+
+    // iterative method
     static void normal(int num){
 
         int steps = 0;
@@ -37,9 +39,7 @@ public class CountTheNoOfStepsToReduceTheZero {
                 num = num - 1;
                 steps++;
             }
-
         }
         System.out.println(steps);
-
     }
 }
