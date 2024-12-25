@@ -23,7 +23,7 @@ public class PalindromeNumberOrNot {
 
         int rem = n % 10;
 
-        return rem * (int) Math.pow(10, digits- 1) + helper(n / 10, digits - 1);
+        return rem * (int) Math.pow(10, digits - 1) + helper(n / 10, digits - 1);
     }
 
 }
