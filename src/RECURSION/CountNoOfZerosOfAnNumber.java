@@ -8,6 +8,10 @@ public class CountNoOfZerosOfAnNumber {
         int count = 0;
         while(n != 0){
             int rem = n % 10;
+
+            if (n % 10 == n)
+                count++;
+
             if (rem == 0) {
                 count++;
                 n = n / 10;
