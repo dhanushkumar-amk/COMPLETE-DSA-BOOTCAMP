@@ -1,10 +1,15 @@
 package RECURSION;
 
+import java.util.ArrayList;
+
 public class LinearSearch {
     public static void main(String[] args) {
 
-        int[] arr = {1,2,3,4,5};
-        System.out.println(searchFromLast(arr, 4, arr.length -1));
+//        int[] arr = {1,2,3,4,5};
+        int[] arr = {1,2,3,4,4,5};
+//        System.out.println(searchFromLast(arr, 4, arr.length -1));
+        findAllIndex(arr,4,0);
+        System.out.println(list);
     }
 
     // basic linear search
@@ -38,7 +43,19 @@ public class LinearSearch {
             return searchFromLast(arr, target, i - 1);
     }
 
-    // return as a list
+    // return as a list of all index
+
+    static ArrayList<Integer> list = new ArrayList<>();
+    static void findAllIndex(int[] arr, int target, int i){
+
+        if (i == arr.length)
+            return;
+
+        if (arr[i] == target)
+            list.add(i);
+
+        findAllIndex(arr,target, i+ 1);
+    }
 
 
 }
