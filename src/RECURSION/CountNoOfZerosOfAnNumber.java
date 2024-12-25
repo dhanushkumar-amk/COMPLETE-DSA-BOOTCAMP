@@ -3,7 +3,7 @@ package RECURSION;
 public class CountNoOfZerosOfAnNumber {
     public static void main(String[] args) {
 
-        int n = 1000;
+        int n = 10000000;
 
         int count = 0;
         while(n != 0){
