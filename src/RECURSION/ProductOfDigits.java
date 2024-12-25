@@ -7,7 +7,7 @@ public class ProductOfDigits {
     }
     static int product(int n){
         if (n == 0)
-            return 1;
+            return 0;
 
         return product(n/ 10) * product(n % 10);
     }
