@@ -18,12 +18,12 @@ public class ReverseArrayAndRemoveDuplicates {
         System.out.println();
 
         int ans = removeDuplicates(arr);
-        for (int i = 0; i < ans ; i++) {
+        for (int i = ans; i >=0  ; i++) {
             System.out.print(arr[i] + " ");
         }
 
         reverse(arr);
-        
+
     }
 
 
