@@ -18,7 +18,7 @@ public class ReverseArrayAndRemoveDuplicates {
         System.out.println();
 
         int ans = removeDuplicates(arr);
-        for (int i = ans + 1; i >=0  ; i--) {
+        for (int i = ans - 1; i >=0  ; i--) {
             System.out.print(arr[i] + " ");
         }
 
