@@ -28,14 +28,13 @@ public class ReverseArrayAndRemoveDuplicates {
         Arrays.sort(arr);
 
         int j=0;
-
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[j] != arr[i]) {
-                j++;
-                arr[j] = arr[i];
+            for (int i = 1; i < arr.length; i++) {
+                if (arr[i] != arr[j]) { // Only add unique elements
+                    j++;
+                    arr[j] = arr[i];
+                }
             }
-        }
-        return j+1;
+            return j + 1;
     }
 
      static void reverse(int[] arr){
