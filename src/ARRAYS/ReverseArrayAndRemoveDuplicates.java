@@ -22,7 +22,7 @@ public class ReverseArrayAndRemoveDuplicates {
             System.out.print(arr[i] + " ");
         }
 
-        reverse(arr);
+        
 
     }
 
