@@ -1,5 +1,7 @@
 package ARRAYS;
 
+import java.util.Arrays;
+
 public class ReverseArrayAndRemoveDuplicates {
 
     public static void main(String[] args) {
@@ -22,6 +24,9 @@ public class ReverseArrayAndRemoveDuplicates {
 
 
     static  int removeDuplicates(int[] arr){
+
+        Arrays.sort(arr);
+
         int j=0;
 
         for (int i = 0; i < arr.length; i++) {
