@@ -21,7 +21,13 @@ public class ReverseArrayAndRemoveDuplicates {
         for (int i = 0; i < ans ; i++) {
             System.out.print(arr[i] + " ");
         }
+
+        reverse(arr);
+        
     }
+
+
+
 
 
 
