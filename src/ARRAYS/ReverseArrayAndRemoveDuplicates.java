@@ -15,6 +15,16 @@ public class ReverseArrayAndRemoveDuplicates {
 
     }
 
+
+
+    static  int removeDuplicates(int[] arr){
+        int j=0;
+
+        for (int i = 0; i < arr.length; i++) {
+
+        }
+    }
+
      static void reverse(int[] arr){
         int start = 0;
         int end = arr.length -1;
