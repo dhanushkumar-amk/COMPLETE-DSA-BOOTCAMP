@@ -13,6 +13,10 @@ public class ReverseArrayAndRemoveDuplicates {
             System.out.print(arr[i] + " ");
         }
 
+        int ans = removeDuplicates(arr);
+        for (int i = 0; i < ans ; i++) {
+            System.out.print(arr[i] + " ");
+        }
     }
 
 
@@ -26,6 +30,7 @@ public class ReverseArrayAndRemoveDuplicates {
                 arr[j] = arr[i];
             }
         }
+        return j+1;
     }
 
      static void reverse(int[] arr){
