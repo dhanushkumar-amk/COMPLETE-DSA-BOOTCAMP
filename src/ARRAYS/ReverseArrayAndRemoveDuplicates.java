@@ -23,7 +23,6 @@ public class ReverseArrayAndRemoveDuplicates {
         for (int i = 0; i < arr.length; i++) {
             if(arr[j] != arr[i]) {
                 j++;
-
                 arr[j] = arr[i];
             }
         }
