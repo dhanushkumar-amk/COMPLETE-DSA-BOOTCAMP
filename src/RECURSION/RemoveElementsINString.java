@@ -4,6 +4,8 @@ public class RemoveElementsINString {
     public static void main(String[] args) {
 
         skip("", "abacde");
+
+        System.out.println(string("helloaaa"));
     }
 
 
@@ -23,7 +25,7 @@ public class RemoveElementsINString {
             skip(result + character, original.substring(1));
         }
     }
-        static  void string(String s){
+        static  StringBuilder string(String s){
 
         StringBuilder str = new StringBuilder();
 
@@ -32,7 +34,7 @@ public class RemoveElementsINString {
                     str.append(i);
             }
 
-     return
+     return str;
 
     }
 }
