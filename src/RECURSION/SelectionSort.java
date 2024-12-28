@@ -1,2 +1,7 @@
-package RECURSION;public class SelectionSort {
+package RECURSION;
+
+public class SelectionSort {
+    public static void main(String[] args) {
+
+    }
 }
