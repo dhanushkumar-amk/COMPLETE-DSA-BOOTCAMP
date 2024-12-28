@@ -23,5 +23,16 @@ public class RemoveElementsINString {
             skip(result + character, original.substring(1));
         }
     }
+        static  void string(String s){
 
+        StringBuilder str = new StringBuilder();
+
+            for (char i = 0; i <s.length() ; i++) {
+                if (s.charAt(i) != 'a')
+                    str.append(i);
+            }
+
+     return
+
+    }
 }
