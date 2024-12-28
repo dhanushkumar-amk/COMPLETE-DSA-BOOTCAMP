@@ -2,7 +2,7 @@ package RECURSION;
 
 public class PatternPrinting {
     public static void main(String[] args) {
-        pattern1(4,0);
+        pattern2(4,0);
     }
     static void pattern1(int row, int column){
 
