@@ -43,4 +43,16 @@ public class PatternPrinting {
         }
     }
 
+    /*
+    output:
+ *
+ *  *
+ *  *  *
+ *  *  *  *
+
+     */
+
+
+
+
 }
