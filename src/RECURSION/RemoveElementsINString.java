@@ -5,7 +5,8 @@ public class RemoveElementsINString {
 
         skip("", "abacde");
 
-        System.out.println(string("helloaaa"));
+        StringBuilder s = string("helloaaaa");
+        System.out.println(s);
     }
 
 
