@@ -42,12 +42,14 @@ public class MergeSort {
             }
         }
 
+        // if i is not finish
         while (i < left.length){
             result[k] = left[i];
             i++;
             k++;
         }
 
+//        else if j is not finish
         while(j < right.length){
             result[k] = right[j];
             j++;
@@ -55,6 +57,10 @@ public class MergeSort {
         }
 
         return result;
-
     }
+
+
+
+    // merge sort with in place
+    
 }
