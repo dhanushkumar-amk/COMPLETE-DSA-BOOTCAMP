@@ -1,2 +1,9 @@
-package RECURSION;public class SkipAString {
+package RECURSION;
+
+public class SkipAString {
+    public static void main(String[] args) {
+
+    }
+
+
 }

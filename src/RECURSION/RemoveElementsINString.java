@@ -5,7 +5,7 @@ public class RemoveElementsINString {
 
         skip("", "abacde");
 
-        System.out.println(string("heloaaaoajgfg"));
+        //System.out.println(string("heloaaaoajgfg"));
     }
 
 
@@ -25,6 +25,9 @@ public class RemoveElementsINString {
             skip(result + character, original.substring(1));
         }
     }
+
+
+    // iterative method
         static  String string(String s){
 
          String result = "";
