@@ -5,8 +5,7 @@ public class RemoveElementsINString {
 
         skip("", "abacde");
 
-        StringBuilder s = string("helloaaaa");
-        System.out.println(s.toString());
+        System.out.println(string("heloaaaoajgfg"));
     }
 
 
@@ -26,16 +25,16 @@ public class RemoveElementsINString {
             skip(result + character, original.substring(1));
         }
     }
-        static  StringBuilder string(String s){
+        static  String string(String s){
 
-        StringBuilder str = new StringBuilder();
+         String result = "";
 
             for (char i = 0; i <s.length() ; i++) {
                 if (s.charAt(i) != 'a')
-                    str.append(i);
+                    result += s.charAt(i);
             }
 
-     return str;
+     return result;
 
     }
 }
