@@ -1,2 +1,8 @@
-package RECURSION;public class QuickSort {
+package RECURSION;
+
+public class QuickSort {
+    public static void main(String[] args) {
+
+    }
+    
 }
