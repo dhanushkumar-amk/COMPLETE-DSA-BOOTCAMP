@@ -60,12 +60,12 @@ public class MergeSort {
         return result;
     }
 
-
+// ---------------------------------------------------------------------------------------------//
 
     // merge sort with in place
     static void mergeSortInPlace(int[] arr, int start, int end){
 
-        if (end - start == 1)
+        if (end - start == 1)  // 5  - 3 = 2 == 1
             return;
 
         int mid = (start + end) / 2;
@@ -81,7 +81,7 @@ public class MergeSort {
         int[] result  = new int[end - start];
 
         int i = start;
-        int j = mid;
+        int j = mid; // j start in mid
         int k = 0;
 
         while(i < mid && j < end){
