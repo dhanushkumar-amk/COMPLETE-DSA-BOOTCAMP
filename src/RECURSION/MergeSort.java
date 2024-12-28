@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class MergeSort {
     public static void main(String[] args) {
         int[] arr = {22,44,11,66,33,919,111};
-        System.out.println(Arrays.toString(mergeSort(arr)));
+        mergeSortInPlace(arr, 0, arr.length - 1);
+        System.out.println(Arrays.toString(arr));
     }
 
     static  int[] mergeSort(int[] arr){
@@ -62,5 +63,56 @@ public class MergeSort {
 
 
     // merge sort with in place
-    
+    static void mergeSortInPlace(int[] arr, int start, int end){
+
+        if (end - start == 1)
+            return;
+
+        int mid = (start + end) / 2;
+
+        mergeSortInPlace(arr, start, mid);
+        mergeSortInPlace(arr, mid, end);
+
+        mergeInPlace(arr, start, mid, end);
+    }
+
+    private static void mergeInPlace(int[] arr, int start, int mid, int end){
+
+        int[] result  = new int[end - start];
+
+        int i = start;
+        int j = mid;
+        int k = 0;
+
+        while(i < mid && j < end){
+            if (arr[i] < arr[j]){
+                result[k] = arr[i];
+                i++;
+                k++;
+            }else{
+                result[k] = arr[j];
+                j++;
+                k++;
+            }
+        }
+
+        // if i is not finish
+        while (i < mid){
+            result[k] = arr[i];
+            i++;
+            k++;
+        }
+
+//        else if j is not finish
+        while(j < end){
+            result[k] = arr[j];
+            j++;
+            k++;
+        }
+
+         // modify in an original array
+        for (int l = 0; l < result.length; l++) {
+            arr[start  + l] = result[l];
+        }
+    }
 }
