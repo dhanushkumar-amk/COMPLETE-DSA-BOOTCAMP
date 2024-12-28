@@ -1,2 +1,7 @@
-package RECURSION;public class MergeSort {
+package RECURSION;
+
+public class MergeSort {
+    public static void main(String[] args) {
+
+    }
 }
