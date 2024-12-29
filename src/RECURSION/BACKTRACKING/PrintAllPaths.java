@@ -2,11 +2,18 @@ package RECURSION.BACKTRACKING;
 
 public class PrintAllPaths {
     public static void main(String[] args) {
+
         boolean[][] maze = {
                 {true, true, true},
                 {true, true, true},
                 {true, true, true},
         };
+
+       /*  boolean[][] maze = {
+                {true, true, true},
+                {true, false, true},
+                {true, true, true},
+        };*/
 
         path("", maze, 0,0);
     }
@@ -21,7 +28,7 @@ public class PrintAllPaths {
         if (!maze[row][column])
             return;
 
-        // if not false make it as false  so next time we can'tgo
+        // if not false make it as false  so next time we can't go
         else
            maze[row][column] = false;
 
