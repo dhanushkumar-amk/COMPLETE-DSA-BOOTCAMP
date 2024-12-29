@@ -4,7 +4,7 @@ public class NQueens {
     public static void main(String[] args) {
         int n = 4;
         boolean[][] board = new boolean[n][n];
-        queens(board, 0);
+        System.out.println(queens(board, 0));
     }
 
     static int queens(boolean[][] board, int row){
@@ -13,7 +13,6 @@ public class NQueens {
             display(board);
             return 1;
         }
-
 
         int count = 0;
 
