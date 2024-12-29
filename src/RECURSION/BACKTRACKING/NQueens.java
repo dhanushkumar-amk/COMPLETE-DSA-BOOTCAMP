@@ -31,7 +31,7 @@ public class NQueens {
 
     }
 
-    private static boolean isSafe(Boolean[][] board, int row, int column) {
+    private static boolean isSafe(boolean[][] board, int row, int column) {
         // check vertical row
         for (int i = 0; i < row ; i++) {
             if (board[i][column]) // its true means already has  queen
@@ -60,7 +60,7 @@ public class NQueens {
 
 
 
-    private static void display(Boolean[][] board) {
+    private static void display(boolean[][] board) {
         for (int i = 0; i <board.length ; i++) {
             for (int j = 0; j <board[0].length ; j++) {
                 if (board[i][j]){
