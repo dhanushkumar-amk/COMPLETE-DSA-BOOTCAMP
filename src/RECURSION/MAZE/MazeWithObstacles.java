@@ -6,6 +6,9 @@ public class MazeWithObstacles {
                 {true, true, true},
                 {true, false, true},
                 {true, true, true},
+                {true, true, true},
+                {true, true, true},
+                {true, true, true},
         };
 
         path("", maze, 0, 0);
@@ -17,8 +20,9 @@ public class MazeWithObstacles {
             System.out.println(answer);
             return;
         }
-        
-        if (maze[row][column] == false)
+
+        // maze abtsracles
+        if (!maze[row][column])
             return;
 
         if (row < maze.length - 1)
