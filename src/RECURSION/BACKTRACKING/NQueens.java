@@ -11,6 +11,7 @@ public class NQueens {
 
         if (row == board.length){
             display(board);
+            System.out.println();
             return 1;
         }
 
