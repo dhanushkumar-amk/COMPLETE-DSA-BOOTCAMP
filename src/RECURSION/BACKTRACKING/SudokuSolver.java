@@ -25,7 +25,7 @@ public class SudokuSolver {
     }
 
 
-    static  boolean isSafe()
+    static  boolean isSafe(int[] board)
 
     private static void Display(int[][] board) {
     }
