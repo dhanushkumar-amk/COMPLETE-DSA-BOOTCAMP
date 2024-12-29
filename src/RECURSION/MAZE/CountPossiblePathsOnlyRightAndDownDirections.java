@@ -1,6 +1,6 @@
 package RECURSION.MAZE;
 
-public class CountPossiblePaths {
+public class CountPossiblePathsOnlyRightAndDownDirections {
     public static void main(String[] args) {
 
         int row = 3;
