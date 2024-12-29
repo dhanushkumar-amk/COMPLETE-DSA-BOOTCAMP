@@ -7,15 +7,15 @@ public class NQueens {
         System.out.println(queens(board, 0));
     }
 
-    static int queens(boolean[][] board, int row){
+    static void queens(boolean[][] board, int row){
 
         if (row == board.length){
             display(board);
             System.out.println();
-            return 1;
+            return;
         }
 
-        int count = 0;
+//        int count = 0;
 
         // placing the queen and checking for every row and column
         for (int column = 0; column < board.length; column++) {
@@ -27,7 +27,7 @@ public class NQueens {
                 board[row][column] = false;
             }
         }
-        return count;
+//        return count;
 
     }
 
