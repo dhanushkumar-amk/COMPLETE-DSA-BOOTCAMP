@@ -24,13 +24,10 @@ public class SudokuSolver {
         }
     }
 
-
-
-    private static boolean solve(int[][] board) {
+    private static void Display(int[][] board) {
     }
 
-
-    private static void Display(int[][] board) {
+    private static boolean solve(int[][] board) {
     }
 
 }
