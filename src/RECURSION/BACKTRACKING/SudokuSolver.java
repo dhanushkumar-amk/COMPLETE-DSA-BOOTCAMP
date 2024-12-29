@@ -58,6 +58,12 @@ public class SudokuSolver {
 
 
     private static void Display(int[][] board) {
+        for (int[] row : board) {
+            for (int num : row) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
     }
 
     private static boolean solve(int[][] board) {
