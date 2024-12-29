@@ -17,8 +17,11 @@ public class PrintingAllPossiblePathsINOnlyRightAndDownDirections {
             return;
         }
 
-        printPaths(answer + 'R', row, column - 1); // going right
-        printPaths(answer + 'D', row - 1, column); // going down
+        if (row > 1)
+            printPaths(answer + 'D', row - 1, column); // going down
+
+        if (column > 1 )
+            printPaths(answer + 'R', row, column - 1); // going right
 
     }
 }
