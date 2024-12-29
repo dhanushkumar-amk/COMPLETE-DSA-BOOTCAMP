@@ -41,7 +41,7 @@ public class NQueens {
 
         int maxLeft = Math.min(row, column);
         for (int i = 1; i <= maxLeft ; i++) {
-            if (board[row - i][column - 1])
+            if (board[row - i][column - i])
                 return false;
         }
 
