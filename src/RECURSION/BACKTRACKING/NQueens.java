@@ -1,2 +1,7 @@
-package RECURSION.BACKTRACKING;public class NQueens {
+package RECURSION.BACKTRACKING;
+
+public class NQueens {
+    public static void main(String[] args) {
+        
+    }
 }
