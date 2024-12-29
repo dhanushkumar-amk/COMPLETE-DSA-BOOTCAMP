@@ -8,8 +8,22 @@ public class MazeWithObstacles {
                 {true, true, true},
         };
 
+        path("", maze, 0, 0);
     }
 
+    static  void path(String answer, boolean[][] maze, int row, int column){
 
+        if (row  == maze.length - 1 && column == maze[0].length -1){
+            System.out.println(answer);
+            return;
+        }
+
+        if (row < maze.length - 1)
+            path(answer + "D", maze, row + 1, column);
+
+        if (column < maze[0].length - 1)
+            path(answer + "R", maze, row, column + 1);
+
+    }
 
 }
