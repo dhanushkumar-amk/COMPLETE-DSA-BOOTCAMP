@@ -15,14 +15,17 @@ public class SudokuSolver {
                 {0,0,0,0,8,0,0,7,9}
         };
 
-        System.out.println(solve(board));
-
-        if (solve(board)) {
-            Display(board);
-        } else {
-            System.out.println("Can't be solved");
-        }
+//        System.out.println(solve(board));
+//
+//        if (solve(board)) {
+//            Display(board);
+//        } else {
+//            System.out.println("Can't be solved");
+//        }
     }
+
+
+    static  boolean isSafe()
 
     private static void Display(int[][] board) {
     }
