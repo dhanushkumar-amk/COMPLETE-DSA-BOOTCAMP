@@ -23,7 +23,7 @@ public class NQueens {
 
             if (isSafe(board, row, column)){
                 board[row][column] = true;
-                count += queens(board, row + 1);
+                count = count + queens(board, row + 1);
                 board[row][column] = false;
             }
         }
@@ -52,13 +52,10 @@ public class NQueens {
             if (board[row - i][column + i])
                 return false;
         }
-
         return true;
 
 
     }
-
-
 
     private static void display(boolean[][] board) {
         for (int i = 0; i <board.length ; i++) {
