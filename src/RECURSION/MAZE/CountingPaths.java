@@ -1,2 +1,5 @@
-package RECURSION.MAZE;public class CountingPaths {
+package RECURSION.MAZE;
+
+public class CountingPaths {
+    
 }
