@@ -6,9 +6,6 @@ public class MazeWithObstacles {
                 {true, true, true},
                 {true, false, true},
                 {true, true, true},
-                {true, true, true},
-                {true, true, true},
-                {true, true, true},
         };
 
         path("", maze, 0, 0);
