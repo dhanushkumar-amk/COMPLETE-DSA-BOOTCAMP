@@ -9,7 +9,7 @@ public class SubsequenceWithASCII {
     static  void subSequence(String answer, String orginal){
 
         if (orginal.isEmpty()){
-            System.out.println(answer);
+            System.out.println(answer + " ");
             return;
         }
 
