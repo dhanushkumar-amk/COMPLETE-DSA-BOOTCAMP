@@ -31,7 +31,7 @@ public class PrintAllPaths {
             path(answer + "D", maze, row + 1, column);
 
         // for right
-        if (column < maze.length - 1)
+        if (column < maze[0].length - 1)
             path(answer + "R", maze, row, column + 1);
 
         // for up
