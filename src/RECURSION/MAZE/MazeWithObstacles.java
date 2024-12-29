@@ -17,6 +17,9 @@ public class MazeWithObstacles {
             System.out.println(answer);
             return;
         }
+        
+        if (maze[row][column] == false)
+            return;
 
         if (row < maze.length - 1)
             path(answer + "D", maze, row + 1, column);
