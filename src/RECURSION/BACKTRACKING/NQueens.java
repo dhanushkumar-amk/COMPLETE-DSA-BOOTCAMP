@@ -23,7 +23,7 @@ public class NQueens {
 
             if (isSafe(board, row, column)){
                 board[row][column] = true;
-                count = count + queens(board, row + 1);
+                queens(board, row + 1);
                 board[row][column] = false;
             }
         }
