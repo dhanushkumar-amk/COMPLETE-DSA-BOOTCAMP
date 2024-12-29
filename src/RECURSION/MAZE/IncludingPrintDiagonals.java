@@ -10,6 +10,11 @@ public class IncludingPrintDiagonals {
         System.out.println(ans);
     }
 
+
+    // D -> Diagonal
+    // V -> Vertical
+    // H -> Horizontal
+
     static ArrayList<String> diagonals(String answer, int row, int column){
 
         if (row == 1 && column == 1){
