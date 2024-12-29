@@ -66,7 +66,48 @@ public class SudokuSolver {
         }
     }
 
-    private static boolean solve(int[][] board) {
+    public static boolean solve(int[][] board) {
+        int n = board.length;
+        int row = -1;
+        int column = -1;
+
+        boolean emptyLeft = true;
+
+        // Find the first empty cell
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j] == 0) {
+                    row = i;
+                    column = j;
+                    emptyLeft = false;
+                    break;
+                }
+            }
+            if (!emptyLeft) {
+                break;
+            }
+        }
+
+        // If no empty cell is found, the puzzle is solved
+        if (emptyLeft) {
+            return true;
+        }
+
+        // Try placing numbers from 1 to 9 in the empty cell
+        for (int number = 1; number <= 9; number++) {
+            if (isSafe(board, row, column, number)) {
+                board[row][column] = number;
+
+                // Recursively attempt to solve the rest of the board
+                if (solve(board)) {
+                    return true;
+                } else {
+                    // Backtrack
+                    board[row][column] = 0;
+                }
+            }
+        }
+        return false;
     }
 
 }
