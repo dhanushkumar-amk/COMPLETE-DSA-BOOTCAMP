@@ -2,7 +2,7 @@ package RECURSION.BACKTRACKING;
 
 public class NQueens {
     public static void main(String[] args) {
-        int n = 4;
+        int n = 100;
         boolean[][] board = new boolean[n][n];
         System.out.println(queens(board, 0));
     }
