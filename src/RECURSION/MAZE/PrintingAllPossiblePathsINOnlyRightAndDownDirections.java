@@ -22,6 +22,5 @@ public class PrintingAllPossiblePathsINOnlyRightAndDownDirections {
 
         if (column > 1 )
             printPaths(answer + 'R', row, column - 1); // going right
-
     }
 }
