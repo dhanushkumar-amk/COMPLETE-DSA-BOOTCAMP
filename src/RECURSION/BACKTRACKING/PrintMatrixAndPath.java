@@ -18,9 +18,12 @@ public class PrintMatrixAndPath {
     static  void path(String answer, boolean[][] maze, int row, int column, int[][] path , int steps){
 
         if (row == maze.length -1 && column == maze[0].length - 1){
+            path[row][column] = steps;
            for(int[] arr : path){
                System.out.println(Arrays.toString(arr));
            }
+            System.out.println(answer);
+            System.out.println();
             return;
         }
 
