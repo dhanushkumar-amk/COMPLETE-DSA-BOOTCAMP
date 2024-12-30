@@ -1,7 +1,10 @@
 package RECURSION;
 
-import java.sql.Array;
 import java.util.Arrays;
+
+
+// Arrays.sort() => works as a dual point quicksort O (log n)
+
 
 public class QuickSort {
     public static void main(String[] args) {
@@ -41,7 +44,7 @@ public class QuickSort {
           }
       }
 
-      // if thre pivot was correct index then sort two half
+      // if there pivot was correct position then sort two half
       quickSort(arr, low, end);
       quickSort(arr, start, high);
 
