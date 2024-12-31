@@ -21,7 +21,7 @@ public class Main {
 
 
         Students(){
-            int[] roll = {4};
+            int[] roll = {1,2,3,4,4};
         }
      }
 
