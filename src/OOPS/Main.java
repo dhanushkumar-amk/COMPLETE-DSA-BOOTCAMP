@@ -5,8 +5,8 @@ package OOPS;
 public class Main {
     public static void main(String[] args) {
 
-        Students student = new Students();
-        student.marks = 10.5f;
+        Students student = new Students(10, "dhanushkumar", 10.8f);
+
 
         System.out.println(student.marks);
         System.out.println(student.rollNo);
