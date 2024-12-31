@@ -1,6 +1,6 @@
 package OOPS;
 
-import java.util.Arrays;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -24,12 +24,15 @@ public class Main {
         int rollNo;
         String name;
         float marks;
-//
-//        public Students(int rollNo, String name, float marks) {
-//            this.rollNo = rollNo;
-//            this.name = name;
-//            this.marks = marks;
-//        }
+
+
+        public Students(int rollNo, String name, float mark) {
+            this.rollNo = rollNo;
+            this.name = name;
+            this.marks = mark;
+
+        }
+
     }
 
 
