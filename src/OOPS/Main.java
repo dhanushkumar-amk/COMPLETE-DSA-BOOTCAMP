@@ -1,10 +1,12 @@
 package OOPS;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
         Students student = new Students();
-        System.out.println(student.toString(roll));
+        System.out.println(Arrays.toString(student.roll));
 
     }
 }
