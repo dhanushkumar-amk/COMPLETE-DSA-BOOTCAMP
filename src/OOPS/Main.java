@@ -4,20 +4,23 @@ public class Main {
     public static void main(String[] args) {
 
         Students student = new Students();
-
-        boolean str = new Boolean(false);
-        System.out.println(str);
+        System.out.println(student.toString(roll));
 
     }
 }
 
-    // craete a class
+    // create a class
 
     // we can create own data type using class
     class Students{
         int[] roll = new int[5];
         String[] name = new String[5];
         float[] marks = new float[5];
+
+
+        Students(){
+            int[] roll = {4};
+        }
      }
 
 
