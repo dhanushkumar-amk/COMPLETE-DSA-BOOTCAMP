@@ -9,6 +9,9 @@ public class Main {
         student.marks = 10.5f;
 
         System.out.println(student.marks);
+        System.out.println(student.rollNo);
+        System.out.println(student.name);
+
 
     }
 }
