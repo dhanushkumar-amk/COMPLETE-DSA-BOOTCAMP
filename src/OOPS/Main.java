@@ -5,7 +5,7 @@ public class Main {
 
         Students student = new Students();
 
-        String str;
+        String str = new String("");
         System.out.println(str);
 
     }
