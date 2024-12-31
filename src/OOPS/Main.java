@@ -5,7 +5,7 @@ public class Main {
 
         Students student = new Students();
 
-        boolean str;
+        boolean str = new Boolean();
         System.out.println(str);
 
     }
