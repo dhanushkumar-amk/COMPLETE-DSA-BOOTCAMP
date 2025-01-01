@@ -44,8 +44,8 @@ public class QueueExample {
 
 
         System.out.println(queue1.remove());
-        System.out.println(queue1.remove());
-        System.out.println(queue1.remove());
+//        System.out.println(queue1.remove());
+//        System.out.println(queue1.remove());
 
 
         System.out.println(queue1.front());
