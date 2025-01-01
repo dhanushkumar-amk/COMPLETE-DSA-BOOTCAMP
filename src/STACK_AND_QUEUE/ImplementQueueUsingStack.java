@@ -25,7 +25,9 @@ class  QueueUsingStack{
         second = new Stack<>();
     }
 
+    public void push(){
+        
+    }
 
-    
 
 }
