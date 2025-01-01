@@ -42,7 +42,7 @@ class  QueueUsingStack{
         }
 
         int removed = second.pop();
-        
+
         while (!second.isEmpty()){
             int popped = second.pop();
             first.push(popped);
@@ -50,5 +50,7 @@ class  QueueUsingStack{
         return removed;
     }
 
+
+    
 
 }
