@@ -53,6 +53,7 @@ public class QueueExample {
         System.out.println(queue1.front());
 
 
+
         queue1.display();
 
 
