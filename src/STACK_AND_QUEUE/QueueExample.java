@@ -20,7 +20,8 @@ public class QueueExample {
 //        System.out.println(queue.poll());
 
 
-        
+        // Deque
+        //
 
 
 
