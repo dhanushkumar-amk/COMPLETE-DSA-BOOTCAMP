@@ -3,7 +3,10 @@ package STACK_AND_QUEUE;
 import java.util.*;
 
 public class StackExample {
-    public static void main(String[] args) {
+    public StackExample() {
+    }
+
+    public static void main(String[] args) throws CustomStackException {
 
         Stack<Integer> stack = new Stack();
 
