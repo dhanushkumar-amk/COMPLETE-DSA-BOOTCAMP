@@ -14,14 +14,14 @@ public class ImplementQueueUsingStack {
         queue.push(2);
         queue.push(3);
         queue.push(4);
+
+
+        System.out.println("-----------");
+
         queue.push(5);
 
-
-//        System.out.println(queue.peek());
-//        System.out.println(queue.empty());
         System.out.println(queue.pop());
 
-        System.out.println(queue);
 
     }
 
