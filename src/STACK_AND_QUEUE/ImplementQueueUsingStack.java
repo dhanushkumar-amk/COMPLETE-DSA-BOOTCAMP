@@ -7,9 +7,7 @@ public class ImplementQueueUsingStack {
 
     }
 
-    public MyQueue() {
-
-    }
+    
 
     public void push(int x) {
 
