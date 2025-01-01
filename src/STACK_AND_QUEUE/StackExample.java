@@ -36,13 +36,17 @@ public class StackExample {
         stack1.push(8);
         stack1.push(9);
         stack1.push(10);
+        stack1.push(11);
+
+
 
         System.out.println(stack1.pop());
         System.out.println(stack1.pop());
         System.out.println(stack1.pop());
         System.out.println(stack1.pop());
         System.out.println(stack1.pop());
-        System.out.println(stack1.pop());
+
+       // System.out.println(stack1.pop());
 
 
 
