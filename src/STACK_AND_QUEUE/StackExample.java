@@ -42,6 +42,9 @@ public class StackExample {
         System.out.println(stack1.pop());
         System.out.println(stack1.pop());
         System.out.println(stack1.pop());
+        System.out.println(stack1.pop());
+
+
 
 
 
