@@ -55,6 +55,19 @@ class  QueueUsingStack{
         return first.empty();
     }
 
-    
+    public int peek() {
+        while (!first.isEmpty()){
+            int peeked = first.peek();
+            second.push(peeked);
+        }
+
+        int peek = second.peek();
+
+        while (!second.isEmpty()){
+            int peeked = second.pop();
+            first.push(peeked);
+        }
+        return peek;
+    }
 
 }
