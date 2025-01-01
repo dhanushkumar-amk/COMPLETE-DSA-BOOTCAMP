@@ -15,4 +15,17 @@ public class ImplementQueueUsingStack {
 
 }
 
-class 
+class  QueueUsingStack{
+    private Stack<Integer> first;
+    private Stack<Integer> second;
+
+
+    public QueueUsingStack() {
+        first = new Stack<>();
+        second = new Stack<>();
+    }
+
+
+    
+
+}
