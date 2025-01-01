@@ -51,6 +51,10 @@ class  QueueUsingStack{
     }
 
 
+    public boolean empty() {
+        return first.empty();
+    }
+
     
 
 }
