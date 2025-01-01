@@ -66,7 +66,7 @@ public class CircularQueue {
 
     // display function
     public  void display(){
-        for (int i = front; i <end; i++) {
+        for (int i = front; i <= end; i++) {
             System.out.print(data[i] + " ");
         }
         System.out.println("END");

@@ -57,5 +57,15 @@ public class QueueExample {
         queue1.display();
 
 
+        CircularQueue CQueue = new CircularQueue();
+
+        CQueue.insert(101);
+        CQueue.insert(102);
+        CQueue.insert(103);
+        CQueue.insert(104);
+
+        CQueue.display();
+
+
     }
 }
