@@ -18,7 +18,7 @@ public class QueueExample {
         System.out.println(queue.peek());
         System.out.println(queue.remove());
         System.out.println(queue.poll());
-        System.out.println(queue.offer(6));
+        System.out.println(queue.offer(1));
 
 
 
