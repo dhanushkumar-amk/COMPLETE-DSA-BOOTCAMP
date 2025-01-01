@@ -30,8 +30,8 @@ public class ImplementQueueUsingStack {
 }
 
 class  MyQueue{
-    private Stack<Integer> first;
-    private Stack<Integer> second;
+    private static Stack<Integer> first;
+    private static Stack<Integer> second;
 
 
     public MyQueue() {
@@ -41,7 +41,7 @@ class  MyQueue{
 
 
     // add element
-    public void push(int item){
+    public static void push(int item){
        while (!first.empty()){
            int added = first.pop();
            second.push(added);
@@ -56,16 +56,16 @@ class  MyQueue{
 
 
     // remove elements
-    public int pop() {
+    public static int pop() {
        return first.pop();
     }
 
 
-    public boolean empty() {
+    public static boolean empty() {
         return first.empty();
     }
 
-    public int peek() {
+    public static int peek() {
         return first.peek();
     }
 
