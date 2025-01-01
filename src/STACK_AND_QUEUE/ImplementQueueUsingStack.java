@@ -25,9 +25,13 @@ class  QueueUsingStack{
         second = new Stack<>();
     }
 
-    public void push(){
-        
+
+    // add element
+    public void push(int item){
+        first.push(item);
     }
+
+    
 
 
 }
