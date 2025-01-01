@@ -34,6 +34,8 @@ public class QueueExample {
 
 
 
+        CustomStack stack2 = new CustomStack();
+        stack2.isEmpty();
 
     }
 }
