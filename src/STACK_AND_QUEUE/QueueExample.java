@@ -33,6 +33,8 @@ public class QueueExample {
 
         dq.addLast(2);
 
+        System.out.println(dq.poll());
+
         System.out.println(dq);
 
 
