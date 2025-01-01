@@ -1,6 +1,6 @@
 package STACK_AND_QUEUE;
 
-import java.util.Stack;
+import java.util.*;
 
 public class StackExample {
     public static void main(String[] args) {

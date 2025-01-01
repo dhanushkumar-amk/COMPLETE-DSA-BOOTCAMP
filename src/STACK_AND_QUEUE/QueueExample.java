@@ -1,10 +1,7 @@
 package STACK_AND_QUEUE;
 
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class QueueExample {
     public static void main(String[] args) {

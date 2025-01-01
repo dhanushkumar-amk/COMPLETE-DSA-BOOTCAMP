@@ -1,2 +1,17 @@
-package STACK_AND_QUEUE;public class CustomStack {
+package STACK_AND_QUEUE;
+
+public class CustomStack {
+
+    protected int[] data;
+    private static  final int DEFAULT_SIZE = 10;
+
+
+    public CustomStack() {
+        this(DEFAULT_SIZE);
+    }
+
+    public CustomStack(int size) {
+        this.data = new int[size];
+    }
+    
 }
