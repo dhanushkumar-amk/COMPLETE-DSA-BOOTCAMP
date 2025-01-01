@@ -46,12 +46,14 @@ class  MyQueue{
            int added = first.pop();
            second.push(added);
        }
-       first.push(item);
+
 
         while (!second.empty()){
             int added = second.pop();
             first.push(added);
         }
+
+        first.push(item);
     }
 
 
