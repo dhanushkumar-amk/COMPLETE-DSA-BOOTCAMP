@@ -16,5 +16,7 @@ public class StackExample {
 
         System.out.println(stack.pop());  // return as a integer
 
+        System.out.println(stack);
+
     }
 }
