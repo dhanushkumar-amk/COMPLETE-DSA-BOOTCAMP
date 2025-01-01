@@ -29,25 +29,22 @@ class  MyQueue{
 
     // add element
     public void push(int item){
-        first.push(item);
+       while (!first.empty()){
+           int added = first.pop();
+           second.push(added);
+       }
+       first.push(item);
+
+        while (!second.empty()){
+            int added = second.pop();
+            first.push(added);
+        }
     }
 
 
     // remove elements
     public int pop() {
-
-        while (!first.isEmpty()){
-            int popped = first.pop();
-            second.push(popped);
-        }
-
-        int removed = second.pop();
-
-        while (!second.isEmpty()){
-            int popped = second.pop();
-            first.push(popped);
-        }
-        return removed;
+       return first.pop();
     }
 
 
@@ -56,18 +53,7 @@ class  MyQueue{
     }
 
     public int peek() {
-        while (!first.isEmpty()){
-            int peeked = first.peek();
-            second.push(peeked);
-        }
-
-        int peek = second.peek();
-
-        while (!second.isEmpty()){
-            int peeked = second.pop();
-            first.push(peeked);
-        }
-        return peek;
+        return first.peek();
     }
 
 }
