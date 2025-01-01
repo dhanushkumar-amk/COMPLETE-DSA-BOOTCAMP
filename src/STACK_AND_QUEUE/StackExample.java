@@ -14,9 +14,18 @@ public class StackExample {
         stack.push(5);
         stack.push(6);
 
-        for (int i = 1; i < stack.size() ; i++) {
-            System.out.println(stack.pop());
-        }
+
+        System.out.println(stack.pop());  // return as a integer
+        System.out.println(stack.pop());  // return as a integer
+        System.out.println(stack.pop());  // return as a integer
+        System.out.println(stack.pop());  // return as a integer
+        System.out.println(stack.pop());  // return as a integer
+        System.out.println(stack.pop());  // return as a integer
+
+
+        // output:
+        // 6,5,4,3,2,1
+
 
 
 
