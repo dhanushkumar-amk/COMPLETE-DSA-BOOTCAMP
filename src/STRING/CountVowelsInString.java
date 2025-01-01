@@ -8,6 +8,7 @@ public class CountVowelsInString {
 
     static int count(String s){
 
+        s = s.toLowerCase();
         int count = 0;
 
         for (char i = 0; i <s.length(); i++) {
