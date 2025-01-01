@@ -27,9 +27,11 @@ public class QueueExample {
 
         Deque<Integer> dq = new ArrayDeque<>();
         dq.addFirst(1);
-        dq.addLast(2);
+
         dq.add(3);
         dq.add(4);
+
+        dq.addLast(2);
 
         System.out.println(dq);
 
