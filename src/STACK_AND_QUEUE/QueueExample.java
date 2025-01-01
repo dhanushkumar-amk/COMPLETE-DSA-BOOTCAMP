@@ -31,6 +31,7 @@ public class QueueExample {
         dq.add(3);
         dq.add(4);
 
+        System.out.println(dq);
 
 
 
