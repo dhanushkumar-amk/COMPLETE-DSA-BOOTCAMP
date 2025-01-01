@@ -17,7 +17,6 @@ public class ImplementQueueUsingStack {
 
         System.out.println(queue.peek());
         System.out.println(queue.empty());
-
         System.out.println(queue.pop());
 
     }
