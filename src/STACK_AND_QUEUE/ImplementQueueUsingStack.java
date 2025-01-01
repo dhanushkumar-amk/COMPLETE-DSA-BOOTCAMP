@@ -10,10 +10,7 @@ public class ImplementQueueUsingStack {
 
         MyQueue queue = new MyQueue();
 
-        queue.push(1);
-        queue.push(2);
-        queue.push(3);
-        queue.push(4);
+     
 
 
         System.out.println("-----------");
