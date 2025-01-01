@@ -1,9 +1,10 @@
 package STACK_AND_QUEUE;
 
+// leetcode 232
 
 import java.util.Stack;
 
-// leetcode 232
+
 public class ImplementQueueUsingStack {
     public static void main(String[] args) {
 
@@ -31,7 +32,23 @@ class  QueueUsingStack{
         first.push(item);
     }
 
-    
+
+    // remove elements
+    public int pop() {
+
+        while (!first.isEmpty()){
+            int popped = first.pop();
+            second.push(popped);
+        }
+
+        int removed = second.pop();
+        
+        while (!second.isEmpty()){
+            int popped = second.pop();
+            first.push(popped);
+        }
+        return removed;
+    }
 
 
 }
