@@ -33,7 +33,6 @@ public class QueueExample {
         dq.addLast(3);
         dq.removeFirst();
         dq.removeLast();
-
         System.out.println(dq);
 
 
