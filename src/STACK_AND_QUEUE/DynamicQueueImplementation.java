@@ -1,2 +1,5 @@
-package STACK_AND_QUEUE;public class DynamicQueueImplementaion {
+package STACK_AND_QUEUE;
+
+public class DynamicQueueImplementation {
+
 }

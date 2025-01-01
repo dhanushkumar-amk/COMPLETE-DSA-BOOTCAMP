@@ -57,6 +57,8 @@ public class QueueExample {
         queue1.display();
 
 
+        System.out.println("Circular Queue implementation");
+
         CircularQueue CQueue = new CircularQueue();
 
         CQueue.insert(101);
