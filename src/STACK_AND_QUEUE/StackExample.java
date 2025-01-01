@@ -15,8 +15,13 @@ public class StackExample {
         stack.push(6);
 
         System.out.println(stack.pop());  // return as a integer
+        System.out.println(stack.pop());  // return as a integer
+        System.out.println(stack.pop());  // return as a integer
+        System.out.println(stack.pop());  // return as a integer
+        System.out.println(stack.pop());  // return as a integer
+        System.out.println(stack.pop());  // return as a integer
 
-        System.out.println(stack.isEmpty());
+        System.out.println(stack);
 
     }
 }
