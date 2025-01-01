@@ -9,35 +9,32 @@ import java.util.Queue;
 public class QueueExample {
     public static void main(String[] args) {
 
-//        Queue<Integer> queue = new LinkedList<>();
-//
-//        queue.add(1);
-//        queue.add(2);
-//        queue.add(3);
-//        queue.add(4);
-//        queue.add(5);
+        Queue<Integer> queue = new LinkedList<>();
 
-//        System.out.println(queue.peek());
-//        System.out.println(queue.remove());
-//        System.out.println(queue.poll());
+        queue.add(1);
+        queue.add(2);
+        queue.add(3);
+        queue.add(4);
+        queue.add(5);
+
+        System.out.println(queue.peek());
+        System.out.println(queue.remove());
+        System.out.println(queue.poll());
 
 
         // Deque
         // insert and remove from both side
 
         Deque<Integer> dq = new ArrayDeque<>();
-        dq.addFirst(1);
 
-        dq.add(3);
-        dq.add(4);
 
-        dq.addLast(2);
-
-        System.out.println(dq.poll());
+        dq.add(1);
+        dq.addFirst(2);
+        dq.addLast(3);
+        dq.removeFirst();
+        dq.removeLast();
 
         System.out.println(dq);
-
-
 
 
 
