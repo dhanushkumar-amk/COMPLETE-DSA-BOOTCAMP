@@ -14,10 +14,10 @@ public class StackExample {
         stack.push(5);
         stack.push(6);
 
-        for (int i = 0; i < stack.size() ; i++) {
+        for (int i = 1; i < stack.size() ; i++) {
             System.out.println(stack.pop());
         }
- 
+
 
 
 
