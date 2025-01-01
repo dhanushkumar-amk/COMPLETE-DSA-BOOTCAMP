@@ -37,7 +37,7 @@ public class StackExample {
         stack1.push(9);
         stack1.push(10);
 
-        System.out.println(stack1);
+        System.out.println(stack1.toString());
 
 
 
