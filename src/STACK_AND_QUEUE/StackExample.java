@@ -27,6 +27,13 @@ public class StackExample {
         // 6,5,4,3,2,1
 
 
+        CustomStack stack1 = new CustomStack(5);
+        stack1.push(6);
+        stack1.push(7);
+        stack1.push(8);
+        stack1.push(9);
+        stack1.push(10);
+
 
 
 

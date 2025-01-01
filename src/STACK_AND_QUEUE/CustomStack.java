@@ -7,7 +7,7 @@ public class CustomStack {
 
 
     // pointer
-    int pointer = -1;
+    int pointer = -1;   // initially pointer denotes -1;
 
     public CustomStack() {
         this(DEFAULT_SIZE);
@@ -46,10 +46,23 @@ public class CustomStack {
 
     //pop element
 
-    public int pop(){
+    public int pop() throws CustomStackException {
         if (isEmpty()){
-            throw new
+            throw new CustomStackException("Can't pop from an empty stack");
         }
+
+        int removedItem = data[pointer];
+        pointer--;
+        return removedItem;
+    }
+
+
+    // peek
+    public int peek() throws CustomStackException {
+        if (isEmpty()){
+            throw new CustomStackException("Can't peek from an empty stack");
+        }
+        return data[pointer];
     }
 
 }
