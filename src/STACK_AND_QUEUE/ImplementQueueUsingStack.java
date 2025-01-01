@@ -1,6 +1,6 @@
 package STACK_AND_QUEUE;
 
-// leetcode 232
+// Code 232
 
 import java.util.Stack;
 
@@ -8,7 +8,17 @@ import java.util.Stack;
 public class ImplementQueueUsingStack {
     public static void main(String[] args) {
 
+        MyQueue queue = new MyQueue();
 
+        queue.push(1);
+        queue.push(2);
+        queue.push(3);
+        queue.push(4);
+
+        System.out.println(queue.peek());
+        System.out.println(queue.empty());
+
+        System.out.println(queue.pop());
 
     }
 
