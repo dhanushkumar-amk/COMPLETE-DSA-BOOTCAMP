@@ -32,7 +32,7 @@ public class StackExample {
 
         System.out.println("----------------------------");
 
-        CustomStack stack1 = new CustomStack(5);
+        DynamicStack stack1 = new DynamicStack(5);
         stack1.push(6);
         stack1.push(7);
         stack1.push(8);
