@@ -14,10 +14,10 @@ public class GameOfTwoStack {
 
     static int twoStack(int target, int[] a, int[] b){
 
-        return twoStack(target, a,b,0,0) - 1;
+        return helper(target, a,b,0,0) - 1;
     }
 
-    private static  int twoStack(int target, int[] a, int[] b, int sum, int count){
+    private static  int helper(int target, int[] a, int[] b, int sum, int count){
 
         if (sum > target)
             return count;
@@ -25,8 +25,8 @@ public class GameOfTwoStack {
         if(a.length == 0 || b.length == 0)
             return count;
 
-        int answer1 = twoStack(target, Arrays.copyOfRange(a, 1, a.length), b, sum + a[0], count+ 1);
-        int answer2 = twoStack(target, a, Arrays.copyOfRange(b, 1, b.length), sum + b[0], count+ 1);
+        int answer1 = helper(target, Arrays.copyOfRange(a, 1, a.length), b, sum + a[0], count+ 1);
+        int answer2 = helper(target, a, Arrays.copyOfRange(b, 1, b.length), sum + b[0], count+ 1);
 
         return Math.max(answer1, answer2);
     }
