@@ -1,2 +1,5 @@
-package STACK_AND_QUEUE;public class CustomQueue {
+package STACK_AND_QUEUE;
+
+public class CustomQueue {
+    
 }
