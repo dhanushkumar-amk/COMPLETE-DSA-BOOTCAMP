@@ -36,6 +36,14 @@ public class QueueExample {
 
         CustomQueue queue1 = new CustomQueue();
 
+        queue1.insert(111);
+        queue1.insert(222);
+        queue1.insert(333);
+        queue1.insert(444);
+        queue1.insert(555);
+
+        queue1.display();
+
 
     }
 }

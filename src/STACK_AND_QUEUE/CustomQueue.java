@@ -56,6 +56,7 @@ public class CustomQueue {
     }
 
 
+    // get the first element
     public int front() throws Exception{
         if (isEmpty())
             throw new Exception("Queue is empty");
@@ -64,6 +65,7 @@ public class CustomQueue {
     }
 
 
+    // display function
     public  void display(){
         for (int i = 0; i <end; i++) {
             System.out.print(data[i] + " ");
