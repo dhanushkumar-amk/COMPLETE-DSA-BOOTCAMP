@@ -34,6 +34,8 @@ public class QueueExample {
 
 
 
+        // custom queue implementation
+
         CustomQueue queue1 = new CustomQueue();
 
         queue1.insert(111);
