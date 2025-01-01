@@ -4,7 +4,7 @@ package STACK_AND_QUEUE;
 import java.util.*;
 
 public class QueueExample {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Queue<Integer> queue = new LinkedList<>();
 
@@ -41,6 +41,15 @@ public class QueueExample {
         queue1.insert(333);
         queue1.insert(444);
         queue1.insert(555);
+
+
+        System.out.println(queue1.remove());
+        System.out.println(queue1.remove());
+        System.out.println(queue1.remove());
+
+
+        System.out.println(queue1.front());
+
 
         queue1.display();
 
