@@ -27,15 +27,49 @@ public class CustomQueue {
     }
 
 
+    // insert the element in queue at the end   tC = O(n)
     public boolean insert(int item){
         if (isFull())
             return false;
 
-        data[end]
+        data[end] = item;
+        end++;
+        return true;
+    }
 
+    // remove the item from the first
+    // actually shifting one to the left from the first then it automatically removes  TC= O(n)
+    public int remove() throws Exception{
+        if (isEmpty())
+            throw new Exception("Queue is empty");
+
+        int removed = data[0];
+
+        //shift the elements to the left
+
+        for (int i = 1; i <end; i++) {
+            data[i - 1] = data[i];
+        }
+        end--;
+        return removed;
 
     }
 
+
+    public int front() throws Exception{
+        if (isEmpty())
+            throw new Exception("Queue is empty");
+
+        return data[0];
+    }
+
+
+    public  void display(){
+        for (int i = 0; i <end; i++) {
+            System.out.print(data[i] + " ");
+        }
+        System.out.println(end);
+    }
 
 
 }
