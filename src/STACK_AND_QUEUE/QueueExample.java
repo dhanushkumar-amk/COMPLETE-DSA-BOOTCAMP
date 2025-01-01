@@ -68,6 +68,7 @@ public class QueueExample {
 
         System.out.println(CQueue.remove());
 
+        CQueue.display();
 
     }
 }
