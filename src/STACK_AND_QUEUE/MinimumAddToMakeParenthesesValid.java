@@ -21,7 +21,8 @@ public class MinimumAddToMakeParenthesesValid {
                     stack.pop();
                 else
                     stack.push(ch);
-            }
+            }else
+                stack.push(ch);
 
 
             // for [
@@ -31,6 +32,8 @@ public class MinimumAddToMakeParenthesesValid {
                 else
                     stack.push(ch);
             }
+            else
+                stack.push(ch);
 
 
             // for (
@@ -39,7 +42,8 @@ public class MinimumAddToMakeParenthesesValid {
                     stack.pop();
                 else
                     stack.push(ch);
-            }
+            }else
+                stack.push(ch);
 
         }
         return stack.size();
