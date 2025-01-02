@@ -21,6 +21,7 @@ public class MinimumAddToMakeParenthesesValid {
 
             if (ch == '('){
 
+                // two choices left or right
                 if (stack.isEmpty()){
                     stack.push(ch);
                 }
@@ -35,10 +36,29 @@ public class MinimumAddToMakeParenthesesValid {
             }
             else{
 
+                // two choices
+                if (stack.isEmpty()){
+
+                    //if stack is empty then add pne left parentheses
+                    countInsertion++;
+                    stack.add('(');
+                    stack.add(ch); //ch is a right parenthesis
+                }
+                else{
+                    // it is not empty then it has two choices left or right
+                    if (stack.peek() == '('){
+                        stack.add(ch);
+                    }else{
+                        stack.pop();
+                        stack.pop();
+                    }
+                }
+
 
 
             }
         }
+        return countInsertion;
 
     }
 }
