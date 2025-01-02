@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class MinimumAddToMakeParenthesesValid {
     public static void main(String[] args) {
-        String s = "{{{}";
+        String s = "(()))";
         System.out.println(minAddToMakeValid(s));
     }
 
@@ -16,8 +16,8 @@ public class MinimumAddToMakeParenthesesValid {
         for( char ch : s.toCharArray()) {
 
             // for {
-            if (ch == '}'){
-                if (!stack.isEmpty() || stack.peek() == '{')
+            if (ch == ')'){
+                if (!stack.isEmpty() || stack.peek() == '(')
                     stack.pop();
                 else
                     stack.push(ch);
