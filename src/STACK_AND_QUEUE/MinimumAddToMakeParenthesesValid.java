@@ -53,12 +53,24 @@ public class MinimumAddToMakeParenthesesValid {
                         stack.pop();
                     }
                 }
+            }
+        }
 
-
-
+        if (stack.isEmpty()) {
+            return countInsertion;
+        }
+        else {
+            while(!stack.isEmpty()){
+                char ch = stack.pop();
+                if (ch == '('){
+                    countInsertion += 2;
+                }
+                else{
+                    countInsertion++;
+                    stack.pop();
+                }
             }
         }
         return countInsertion;
-
     }
 }
