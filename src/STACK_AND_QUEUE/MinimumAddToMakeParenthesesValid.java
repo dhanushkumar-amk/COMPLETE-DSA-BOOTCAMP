@@ -12,19 +12,33 @@ public class MinimumAddToMakeParenthesesValid {
     static int minAddToMakeValid(String s){
 
         Stack<Character> stack = new Stack<>();
+        int countInsertion = 0;
 
-        for( char ch : s.toCharArray()) {
+        for (int i = 0; i <s.length() ; i++) {
+            char ch = s.charAt(i);
 
-            // for {
-            if (ch == ')'){
-                if (!stack.isEmpty() || stack.peek() == '(')
-                    stack.pop();
-                else
+            // have two choices left parenthesis or right parenthesis
+
+            if (ch == '('){
+
+                if (stack.isEmpty()){
                     stack.push(ch);
-            }else
-                stack.push(ch);
+                }
+                else{
+                    if (stack.peek() != '(') {
+                        countInsertion++;
+                        stack.pop();
+                        stack.pop();
+                    }
+                    stack.add(ch);
+                }
+            }
+            else{
 
+
+
+            }
         }
-        return stack.size();
+
     }
 }
