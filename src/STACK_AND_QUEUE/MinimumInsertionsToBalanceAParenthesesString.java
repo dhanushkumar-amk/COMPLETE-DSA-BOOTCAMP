@@ -14,7 +14,7 @@ public class MinimumInsertionsToBalanceAParenthesesString {
 
         for (char ch : s.toCharArray()){
             if (ch == '}'){
-                if (!stack.isEmpty() || stack.peek() == '{')
+                if (!stack.isEmpty() && stack.peek() == '{')
                     stack.pop();
                 else
                     stack.push(ch);
