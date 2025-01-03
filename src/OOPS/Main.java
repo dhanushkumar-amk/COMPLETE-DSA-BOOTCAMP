@@ -17,6 +17,7 @@ public class Main {
         System.out.println(students.marks);
         System.out.println(students.rollNo);
         System.out.println(students.name);
+        students.greeting();
 
 
     }
@@ -32,6 +33,11 @@ public class Main {
         float marks;
 
 
+
+        void greeting(){
+            System.out.println("Hello my name is " + name);
+        }
+
         public Students(int rollNo, String name, float mark) {
             this.rollNo = rollNo;
             this.name = name;
@@ -39,6 +45,9 @@ public class Main {
 
             // this.marks = marks == marks = marks
         }
+
+
+
 
 
         // constructor type
