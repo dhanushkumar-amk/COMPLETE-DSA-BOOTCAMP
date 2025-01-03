@@ -30,7 +30,6 @@ public class Main {
             this.rollNo = rollNo;
             this.name = name;
             this.marks = mark;
-
         }
 
 
