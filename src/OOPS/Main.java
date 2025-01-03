@@ -13,7 +13,10 @@ public class Main {
         System.out.println(student.marks);
         System.out.println(student.rollNo);
         System.out.println(student.name);
+        student.changeName("dhanush");
+    
         student.greeting();
+
 
 
         /*
@@ -21,7 +24,7 @@ public class Main {
         System.out.println(students.rollNo);
         System.out.println(students.name);
         students.greeting();
-        
+
          */
 
 
@@ -40,9 +43,14 @@ public class Main {
 
 
         void greeting(){
-            System.out.println("Hello my name is " + name);
+            System.out.println("Hello my name is " + this.name);
         }
 
+        void changeName(String name){
+            name = name;
+        }
+
+        // constructor overloading
         public Students(int rollNo, String name, float mark) {
             this.rollNo = rollNo;
             this.name = name;
