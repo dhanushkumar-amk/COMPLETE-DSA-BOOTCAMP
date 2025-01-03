@@ -13,6 +13,8 @@ public class Main {
         System.out.println(student.marks);
         System.out.println(student.rollNo);
         System.out.println(student.name);
+        student.greeting();
+
 
         System.out.println(students.marks);
         System.out.println(students.rollNo);
