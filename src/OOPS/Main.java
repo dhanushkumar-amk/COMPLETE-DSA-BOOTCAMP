@@ -16,10 +16,13 @@ public class Main {
         student.greeting();
 
 
+        /*
         System.out.println(students.marks);
         System.out.println(students.rollNo);
         System.out.println(students.name);
         students.greeting();
+        
+         */
 
 
     }
