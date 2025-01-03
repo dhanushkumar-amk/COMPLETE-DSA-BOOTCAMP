@@ -14,7 +14,7 @@ public class Main {
         System.out.println(student.rollNo);
         System.out.println(student.name);
 
-        student.changeName("dhanushkumar");
+        student.changeName("something special");
         student.greeting();
 
 
