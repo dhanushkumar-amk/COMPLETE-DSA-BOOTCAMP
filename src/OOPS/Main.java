@@ -13,8 +13,8 @@ public class Main {
         System.out.println(student.marks);
         System.out.println(student.rollNo);
         System.out.println(student.name);
-        student.changeName("dhanush");
-    
+
+        student.changeName("dhanushkumar");
         student.greeting();
 
 
