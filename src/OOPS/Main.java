@@ -41,14 +41,15 @@ public class Main {
         float marks;
 
 
+        void changeName(String name){
+            this.name = name;
+        }
 
         void greeting(){
             System.out.println("Hello my name is " + this.name);
         }
 
-        void changeName(String name){
-            name = name;
-        }
+
 
         // constructor overloading
         public Students(int rollNo, String name, float mark) {
