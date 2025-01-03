@@ -36,8 +36,10 @@ public class Main {
 
         // constructor type
         /*
+
         1. default constructor
-        2. parameterized 
+        2. parameterized constructor
+
          */
 
     }
