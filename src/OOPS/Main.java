@@ -16,7 +16,8 @@ public class Main {
         student.greeting();
 
 
-        Students students = new Students(student);
+
+        Students students = new Students();
 
         System.out.println(students.marks);
         System.out.println(students.rollNo);
@@ -48,9 +49,11 @@ public class Main {
 
 
       public Students(){
-            this.marks = 100.0f;
-            this.rollNo = 10;
-            this.name = "dhanushkumar11";
+            // call constructor from another constructor
+
+          this(110, "Arun", 145.0f);
+
+          // this call the below constructor as a default at the time of calling empty constructor
         }
 
 
@@ -64,6 +67,9 @@ public class Main {
         }
 
 
+
+
+        // we can also pass nested constructors
         Students( Students others){
             this.name = others.name;
             this.rollNo = others.rollNo;
