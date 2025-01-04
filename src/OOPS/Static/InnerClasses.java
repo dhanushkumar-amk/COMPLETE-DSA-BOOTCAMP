@@ -3,15 +3,25 @@ package OOPS.Static;
 public class InnerClasses {
 
     static class A{
-        public static void main(String[] args) {
-            System.out.println("hello world");
-        }
-    }
+        String name;
+
+         public A(String name) {
+             this.name = name;
+         }
+     }
 
     static class B{
-        public static void main(String[] args) {
-            System.out.println("hello");
-        }
+
+    }
+
+
+    static class C{
+
+    }
+
+    public static void main(String[] args) {
+        A a = new A("dhanush");
+        A b = new A("sanjay");
     }
 }
 

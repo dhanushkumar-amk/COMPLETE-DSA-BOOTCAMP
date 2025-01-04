@@ -7,7 +7,7 @@ public class staticBlock {
     static int b;
 
 
-    // will only runs only onces, when the object is created
+    // will only runs only once, when the object is created
     static {
         System.out.println("i am from the static block");
         b = a * 5;
