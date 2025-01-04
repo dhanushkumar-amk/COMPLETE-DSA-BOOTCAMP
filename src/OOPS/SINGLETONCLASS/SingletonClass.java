@@ -1,8 +1,10 @@
 package OOPS.SINGLETONCLASS;
 
 public class SingletonClass {
-    SingletonClass() {
-        String name = "dhanush";
+
+   String name;
+    SingletonClass(String name) {
+        this.name = "dhanush";
     }
 
     private static SingletonClass instance;
@@ -11,7 +13,7 @@ public class SingletonClass {
         // check whether 1 obj only is created or not
 
         if (instance == null){
-            instance = new SingletonClass();
+            instance = new SingletonClass(instance.name);
         }
         return instance;
     }

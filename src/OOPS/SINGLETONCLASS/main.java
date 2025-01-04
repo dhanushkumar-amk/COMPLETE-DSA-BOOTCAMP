@@ -5,6 +5,6 @@ public class main {
         SingletonClass obj1 =  SingletonClass.getInstance();
         SingletonClass ob2 = SingletonClass.getInstance();
 
-        System.out.println(obj1.na);
+        System.out.println(obj1.name);
     }
 }
