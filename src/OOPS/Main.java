@@ -22,7 +22,7 @@ public class Main {
         System.out.println(students.marks);
         System.out.println(students.rollNo);
         System.out.println(students.name);
-        students.greeting();
+        //students.greeting();
 
 
 
@@ -63,7 +63,7 @@ public class Main {
             this.name = name;
             this.marks = mark;
 
-            // this.marks = marks == marks = marks
+            // this.marks = marks ====> marks = marks
         }
 
 
