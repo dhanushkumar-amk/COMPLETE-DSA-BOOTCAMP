@@ -13,11 +13,13 @@ public class main {
         System.out.println(box2.w);
 
 
-         */
+
         System.out.println(box.l);
         System.out.println(box.h);
         System.out.println(box.w);
 
+
+         */
 
         BoxWeight box3 = new BoxWeight(10,10,10,10);
         System.out.println(box3.h);
