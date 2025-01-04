@@ -2,8 +2,8 @@ package OOPS.SINGLETONCLASS;
 
 public class SingletonClass {
 
-//    public SingletonClass() {
-//    }
+    public SingletonClass() {
+    }
 
     private static SingletonClass instance;
 
