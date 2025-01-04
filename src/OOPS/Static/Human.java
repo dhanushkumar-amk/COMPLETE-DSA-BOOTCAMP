@@ -14,7 +14,11 @@ public class Human {
         this.isMarried = isMarried;
         this.name = name;
         this.salary = salary;
+
+        //this.population =+ 1;
+        // both are correctly working but conversion we use class.variable
         Human.population += 1;
+
     }
 
 
