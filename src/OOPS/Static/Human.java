@@ -7,15 +7,14 @@ public class Human {
     String name;
     int salary;
     boolean isMarried;
-    long population;
+   static long population;
 
     public Human(int age, boolean isMarried, String name, int salary) {
         this.age = age;
         this.isMarried = isMarried;
         this.name = name;
         this.salary = salary;
-
-        this.population =+1;
+        Human.population += 1;
     }
 
 
