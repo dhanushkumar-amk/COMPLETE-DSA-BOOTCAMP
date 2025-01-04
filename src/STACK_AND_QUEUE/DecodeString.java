@@ -1,4 +1,4 @@
-package STRING;
+package STACK_AND_QUEUE;
 
 public class DecodeString {
     public static void main(String[] args) {
@@ -6,6 +6,6 @@ public class DecodeString {
     }
 
     public static String decodeString(String s) {
-        
+
     }
 }
