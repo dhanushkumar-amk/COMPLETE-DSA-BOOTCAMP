@@ -15,5 +15,28 @@ public class Main {
 
         System.out.println(dhanush.name);
 
+    //  greeting();
     }
+
+
+    static void fun(){
+       // greeting(); // you can't access because it is depends on instances
+
+        
+        // it will only access by creating the objects
+        Main obj = new Main();
+        obj.greeting();
+
+    }
+
+    void fun2(){
+        greeting();
+    }
+
+    // non static method belongs to the object
+    void greeting(){
+        fun();
+        System.out.println("hello world");
+    }
+
 }
