@@ -15,6 +15,8 @@ public class Main {
 
         System.out.println(dhanush.name);
 
+        Human.message();
+
         Main greet = new Main();
         greet.greeting();
 

@@ -9,6 +9,11 @@ public class Human {
     boolean isMarried;
    static long population;
 
+
+   static void message(){
+       System.out.println("hello");
+   }
+
     public Human(int age, boolean isMarried, String name, int salary) {
         this.age = age;
         this.isMarried = isMarried;
@@ -18,6 +23,8 @@ public class Human {
         //this.population =+ 1;
         // both are correctly working but conversion we use class.variable
         Human.population += 1;
+
+        Human.message();
 
     }
 
