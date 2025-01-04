@@ -22,10 +22,17 @@ public class InnerClasses {
 
     }
 
+    @Override
+    public String toString() {
+        return this.name;
+    }
+
     public static void main(String[] args) {
         A a = new A("dhanush");
         A b = new A("sanjay");
 
+
+        // it contain a.toString() by default; ig it has own the it will use that otherwise use default method
         System.out.println(a);
 //        System.out.println(a.name);
 //        System.out.println(b.name);
