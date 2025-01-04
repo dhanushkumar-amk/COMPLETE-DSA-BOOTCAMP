@@ -22,6 +22,8 @@ public class InnerClasses {
     public static void main(String[] args) {
         A a = new A("dhanush");
         A b = new A("sanjay");
+
+        System.out.println(a.name);
     }
 }
 
