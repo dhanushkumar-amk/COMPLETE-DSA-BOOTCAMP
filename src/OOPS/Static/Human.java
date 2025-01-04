@@ -12,6 +12,8 @@ public class Human {
 
    static void message(){
        System.out.println("hello");
+       // System.out.println(this.name);
+       // we can't ue this keyword
    }
 
     public Human(int age, boolean isMarried, String name, int salary) {
