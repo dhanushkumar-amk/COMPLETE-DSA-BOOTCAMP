@@ -1,4 +1,4 @@
-package OOPS.Static;
+package OOPS.STATICKEYWORD;
 
 public class Main {
     public static void main(String[] args) {

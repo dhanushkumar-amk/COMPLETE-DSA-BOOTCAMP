@@ -1,4 +1,4 @@
-package OOPS.Static;
+package OOPS.STATICKEYWORD;
 
 public class Tostring {
     public static void main(String[] args) {

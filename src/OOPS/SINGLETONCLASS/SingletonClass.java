@@ -1,2 +1,5 @@
-package OOPS.SINGLETONCLASS;public class SingletoncClass {
+package OOPS.SINGLETONCLASS;
+
+public class SingletonClass {
+            
 }
