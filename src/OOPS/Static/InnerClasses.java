@@ -2,6 +2,9 @@ package OOPS.Static;
 
 public class InnerClasses {
 
+
+    // only nested class will be static
+    // if the classes o function is static then everything inside is static
     static class A{
         String name;
 
@@ -23,8 +26,9 @@ public class InnerClasses {
         A a = new A("dhanush");
         A b = new A("sanjay");
 
-        System.out.println(a.name);
-        System.out.println(b.name);
+        System.out.println(a);
+//        System.out.println(a.name);
+//        System.out.println(b.name);
     }
 }
 
