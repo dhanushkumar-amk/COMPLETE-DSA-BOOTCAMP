@@ -11,6 +11,12 @@ public class InnerClasses {
          public A(String name) {
              this.name = name;
          }
+
+        @Override
+        public String toString() {
+            return name;
+        }
+
      }
 
     static class B{
@@ -22,10 +28,7 @@ public class InnerClasses {
 
     }
 
-    @Override
-    public String toString() {
-        return this.name;
-    }
+
 
     public static void main(String[] args) {
         A a = new A("dhanush");
