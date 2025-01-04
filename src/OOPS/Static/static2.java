@@ -13,7 +13,7 @@ public class static2 {
 
     public static void main(String[] args) {
         static2 obj = new static2();
-        System.out.println(static2.a + " ");
+        System.out.println(static2.a + " " + static2.b);
     }
 
 }
