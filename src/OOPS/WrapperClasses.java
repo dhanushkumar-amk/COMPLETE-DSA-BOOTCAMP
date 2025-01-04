@@ -74,6 +74,8 @@ class A {
     }
 
 
+
+    // it will class on the time of garbage collector
     @Override
     protected void finalize() throws Throwable {
         System.out.println("object is destroyed");;
