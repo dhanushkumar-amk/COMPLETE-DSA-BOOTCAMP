@@ -22,6 +22,8 @@ public class Box {
 
     // cube
     Box(double side){
+
+        
         this.l = side;
         this.w = side;
         this.h = side;
