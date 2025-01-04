@@ -38,7 +38,7 @@ public class Main {
 
     // non static method belongs to the object
     void greeting(){
-        fun();
+       // fun();
         System.out.println("hello world");
     }
 
