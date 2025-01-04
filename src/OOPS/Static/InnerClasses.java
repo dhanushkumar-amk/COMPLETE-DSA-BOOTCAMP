@@ -1,2 +1,5 @@
-package OOPS.Static;public class InnerClasses {
+package OOPS.Static;
+
+public class InnerClasses {
+
 }
