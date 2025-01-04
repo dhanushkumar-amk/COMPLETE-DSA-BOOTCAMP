@@ -12,7 +12,8 @@ public class Main {
         System.out.println(Human.population);
         System.out.println(Human.population);
 
-        
+
+        System.out.println(dhanush.name);
 
     }
 }
