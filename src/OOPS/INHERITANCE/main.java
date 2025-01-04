@@ -3,7 +3,7 @@ package OOPS.INHERITANCE;
 public class main {
     public static void main(String[] args) {
 
-        Box box = new Box(4);
+       // Box box = new Box(4);
 
         /*
         Box box2 = new Box(box);
@@ -26,5 +26,9 @@ public class main {
         System.out.println(box3.w);
         System.out.println(box3.l);
         System.out.println(box3.weight);
+
+
+        Box box4 = new BoxWeight(1,2,3,5);
+        System.out.println(box4.weight);
     }
 }
