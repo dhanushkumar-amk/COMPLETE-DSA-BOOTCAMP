@@ -22,7 +22,16 @@ public class WrapperClasses {
         final int bonus = 2;
         System.out.println(bonus);
 
+
+
         //bonus = 3;
+
+
+        final A student = new A("dhanush");
+        student.name = "ashwin";
+
+        System.out.println(student.name);
+
 
 
     }
@@ -34,13 +43,26 @@ public class WrapperClasses {
     }
 
 
-    // it also can't be swap because it is afinal class
+    // it also can't be swap because it is a final class
     static void swap1(Integer num1, Integer num2){
         int temp = num1;
         num1 = num2;
         num2 = temp;
     }
 
+
+
+
+}
+
+class A {
+    final int num = 10;
+
+    String name;
+
+    public A(String name) {
+        this.name = name;
+    }
 
 
 }
