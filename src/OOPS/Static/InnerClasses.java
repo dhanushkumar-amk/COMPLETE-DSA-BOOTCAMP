@@ -13,11 +13,10 @@ public class InnerClasses {
          }
 
         @Override
-        public static String toString() {
+        public String toString() {
             return name;
         }
-
-     }
+    }
 
     static class B{
 
