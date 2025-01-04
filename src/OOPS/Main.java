@@ -26,10 +26,10 @@ public class Main {
 
         Students one  = new Students();
         Students two = one;
-
         one.name = "something something";
-
         System.out.println(two.name);
+
+
 
 
     }
