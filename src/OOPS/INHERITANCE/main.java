@@ -28,7 +28,14 @@ public class main {
         System.out.println(box3.weight);
 
 
+        // we can't access the parent class that refers the child class then we can't get the child class elements
         Box box4 = new BoxWeight(1,2,3,5);
         System.out.println(box4.h);
+
+//        BoxWeight box5 = new Box();
+//        System.out.println(box4.h);
+
+
+
     }
 }
