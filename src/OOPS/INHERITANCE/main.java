@@ -29,6 +29,6 @@ public class main {
 
 
         Box box4 = new BoxWeight(1,2,3,5);
-        System.out.println(box4.weight);
+        System.out.println(box4.h);
     }
 }
