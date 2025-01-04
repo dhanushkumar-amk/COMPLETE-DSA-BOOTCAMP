@@ -24,6 +24,12 @@ public class Main {
         System.out.println(students.name);
         //students.greeting();
 
+        Students one  = new Students();
+        Students two = one;
+
+        one.name = "something something";
+
+        System.out.println(two.name);
 
 
     }
