@@ -17,5 +17,12 @@ public class main {
         System.out.println(box.l);
         System.out.println(box.h);
         System.out.println(box.w);
+
+
+        BoxWeight box3 = new BoxWeight();
+        System.out.println(box3.h);
+        System.out.println(box3.w);
+        System.out.println(box3.l);
+        System.out.println(box3.weight);
     }
 }
