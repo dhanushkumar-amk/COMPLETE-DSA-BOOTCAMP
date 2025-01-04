@@ -38,7 +38,7 @@ public class WrapperClasses {
         System.out.println(student.name);
 
         A object;
-        for (int i = 0; i <1000; i++) {
+        for (int i = 0; i <100000; i++) {
             object = new A("Random name");
         }
 
