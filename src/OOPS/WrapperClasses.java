@@ -8,7 +8,7 @@ public class WrapperClasses {
         // it will created as a object
         Integer num = 20;
 
-        System.out.println( 'a' - num);
+        System.out.println( 'a' + num);
     }
 
 }
