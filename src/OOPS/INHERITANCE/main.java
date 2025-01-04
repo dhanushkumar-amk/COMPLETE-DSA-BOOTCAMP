@@ -19,7 +19,7 @@ public class main {
         System.out.println(box.w);
 
 
-        BoxWeight box3 = new BoxWeight();
+        BoxWeight box3 = new BoxWeight(10,10,10,10);
         System.out.println(box3.h);
         System.out.println(box3.w);
         System.out.println(box3.l);
