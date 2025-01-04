@@ -15,14 +15,17 @@ public class Main {
 
         System.out.println(dhanush.name);
 
-    //  greeting();
+        Main greet = new Main();
+        greet.greeting();
+
+//      greeting();
     }
 
 
     static void fun(){
        // greeting(); // you can't access because it is depends on instances
 
-        
+
         // it will only access by creating the objects
         Main obj = new Main();
         obj.greeting();
