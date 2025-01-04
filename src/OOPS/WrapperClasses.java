@@ -27,11 +27,20 @@ public class WrapperClasses {
         //bonus = 3;
 
 
+
+        // we can reassign the value as a object
         final A student = new A("dhanush");
         student.name = "ashwin";
 
+        // we an non primitive is final, you can't reassign it
+        //student = new A("hello world");
+
         System.out.println(student.name);
 
+        A object;
+        for (int i = 0; i <1000000000; i++) {
+            object = new A("Random name");
+        }
 
 
     }
@@ -65,4 +74,8 @@ class A {
     }
 
 
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("object is destroyed");;
+    }
 }
