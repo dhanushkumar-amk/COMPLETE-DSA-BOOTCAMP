@@ -16,7 +16,7 @@ public class Main {
         student.greeting();
 
 
-        Students students = new Students();
+        Students students = new Students(student);
 
         System.out.println(students.marks);
         System.out.println(students.rollNo);
@@ -64,7 +64,11 @@ public class Main {
         }
 
 
-        
+        Students( Students others){
+            this.name = others.name;
+            this.rollNo = others.rollNo;
+            this.marks = others.marks;
+        }
 
 
         // constructor type
