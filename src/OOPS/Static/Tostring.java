@@ -15,9 +15,13 @@ class fun{
         this.name = name;
     }
 
- /*   @Override
+
+    @Override
     public String toString() {
         return name;
-    }*/
+    }
+
+    // without declere the name it generate same random name
+//    OOPS.Static.fun@6acbcfc0
 }
 
