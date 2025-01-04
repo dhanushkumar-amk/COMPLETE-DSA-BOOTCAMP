@@ -33,7 +33,7 @@ public class Main {
     }
 
     void fun2(){
-        greeting();
+//greeting();
     }
 
     // non static method belongs to the object
