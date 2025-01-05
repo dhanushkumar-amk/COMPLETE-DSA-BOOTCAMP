@@ -2,11 +2,14 @@ package OOPS.INHERITANCE;
 
 public class Box {
 
-    double l;
+     private double l;
     double h;
     double w;
 
 
+    public double getL() {
+        return l;
+    }
 
     static void greeting(){
         System.out.println("i am in box class. greetings");

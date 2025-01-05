@@ -3,8 +3,9 @@ package OOPS.INHERITANCE;
 public class main {
     public static void main(String[] args) {
 
-       // Box box = new Box(4);
+        Box box = new Box(4);
 
+        box.getL();
 
 //        Box box2 = new Box();
         // it consist all the property of the old constructor
@@ -14,6 +15,8 @@ public class main {
 
         // static variable can access by the class name we don't need to create object
         Box.greeting();
+
+
         /*
 
 
@@ -48,7 +51,7 @@ public class main {
 
 
         // it compile time java determines which function is called
-        BoxPrice box = new BoxPrice(5, 8,10);
+        BoxPrice box1 = new BoxPrice(5, 8,10);
         BoxColor color = new BoxColor(1,2,3,4,"red");
 
 
