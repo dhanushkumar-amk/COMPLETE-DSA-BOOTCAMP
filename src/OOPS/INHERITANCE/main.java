@@ -12,7 +12,7 @@ public class main {
 //        System.out.println(box2.h);
 //        System.out.println(box2.w);
 
-        // static variable c
+        // static variable can access by the class name we don't need to create object
         Box.greeting();
         /*
 

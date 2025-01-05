@@ -14,6 +14,9 @@ public class BoxWeight extends Box {
     }
 
 
+    static void greeting(){
+        System.out.println("i am in box class. greetings");
+    }
 
 
     BoxWeight(double side, double weight){
