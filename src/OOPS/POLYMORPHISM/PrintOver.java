@@ -8,14 +8,9 @@ public class PrintOver {
         this.num = num;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
-
     public static void main(String[] args) {
         PrintOver print = new PrintOver(5);
-        System.out.println(print.toString());
+        System.out.println(print);
 
 
 
