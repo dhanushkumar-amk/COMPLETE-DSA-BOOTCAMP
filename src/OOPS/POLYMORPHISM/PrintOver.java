@@ -10,6 +10,9 @@ public class PrintOver {
 
     public static void main(String[] args) {
         PrintOver print = new PrintOver(5);
-        System.out.println(print);
+        System.out.println(print.toString());
+
+
+
     }
 }
