@@ -43,8 +43,8 @@ public class main {
      */
 
 
-        BoxPrice box = new BoxPrice();
-
+        BoxPrice box = new BoxPrice(5, 8,10);
+    
 
     }
 }
