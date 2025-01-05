@@ -13,7 +13,7 @@ public class main {
 //        System.out.println(box2.w);
 
         // static variable c
-        box2.greeting();
+        Box.greeting();
         /*
 
 
