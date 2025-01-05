@@ -10,7 +10,10 @@ public class subClass extends  A{
         subClass obj = new subClass("dhanush", 10);
 
 
+        // check if it is instance of a parent class
         System.out.println(obj instanceof  A);
+
+        // get the data about the class
         System.out.println(obj.getClass());
     }
 
