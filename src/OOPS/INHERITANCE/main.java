@@ -43,6 +43,7 @@ public class main {
      */
 
 
+        // it compile time java determines wgich function is called
         BoxPrice box = new BoxPrice(5, 8,10);
         BoxColor color = new BoxColor(1,2,3,4,"red");
 
