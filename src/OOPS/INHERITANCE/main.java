@@ -44,7 +44,7 @@ public class main {
 
 
         BoxPrice box = new BoxPrice(5, 8,10);
-    
+        BoxColor color = new BoxColor(1,2,3,4,"red");
 
     }
 }
