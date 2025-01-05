@@ -8,7 +8,7 @@ public class subClass extends  A{
 
     public static void main(String[] args) {
         subClass obj = new subClass("dhanush", 10);
-        int num1 = obj.num;
+        obj.num
     }
 
    
