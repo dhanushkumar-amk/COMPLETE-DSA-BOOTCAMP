@@ -7,6 +7,11 @@ public class Box {
     double w;
 
 
+
+    static void greeting(){
+        System.out.println("i am in box class. greetings");
+    }
+
     Box(){
         this.h = -1;
         this.l = -1;
