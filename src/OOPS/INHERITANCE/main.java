@@ -6,12 +6,13 @@ public class main {
        // Box box = new Box(4);
 
 
-        Box box2 = new Box();
+//        Box box2 = new Box();
         // it consist all the property of the old constructor
-        System.out.println(box2.l);
-        System.out.println(box2.h);
-        System.out.println(box2.w);
+//        System.out.println(box2.l);
+//        System.out.println(box2.h);
+//        System.out.println(box2.w);
 
+        // static variable c
         box2.greeting();
         /*
 
