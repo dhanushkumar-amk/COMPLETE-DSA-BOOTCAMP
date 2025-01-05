@@ -17,7 +17,7 @@ public class ObjectDemo {
 
     @Override
     public boolean equals(Object obj) {
-        return super.equals(num);
+        return super.equals(obj);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class ObjectDemo {
 
     public static void main(String[] args) {
         ObjectDemo obj1 = new ObjectDemo(10.0f, 100);
-        ObjectDemo obj2 = new ObjectDemo(7.0f, 100);
+        ObjectDemo obj2 = new ObjectDemo(7.0f, 70);
 
         // hashcode is a random numbers not address
         System.out.println(obj1.hashCode());
