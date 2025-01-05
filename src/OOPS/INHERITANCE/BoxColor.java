@@ -1,6 +1,6 @@
 package OOPS.INHERITANCE;
 
-public class BoxColor extends BoxPrice{
+public class BoxColor extends BoxWeight{
 
     String color;
 
@@ -11,8 +11,9 @@ public class BoxColor extends BoxPrice{
 
     // perfect example for
 
-    public BoxColor(double h, double l, double w, double weight, double cost, String color) {
-        super(h, l, w, weight, cost);
+
+    public BoxColor(double h, double l, double w, double weight, String color) {
+        super(h, l, w, weight);
         this.color = color;
     }
 }
