@@ -39,7 +39,9 @@ public class ObjectDemo {
 
 
     public static void main(String[] args) {
-        ObjectDemo obj = new ObjectDemo(10);
-        System.out.println(obj.hashCode());
+        ObjectDemo obj1 = new ObjectDemo(10);
+        ObjectDemo obj2 = new ObjectDemo(10);
+        System.out.println(obj1.hashCode());
+        System.out.println(obj2.hashCode());
     }
 }
