@@ -25,7 +25,7 @@ public class ObjectDemo {
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return num;
     }
 
     public ObjectDemo() {
@@ -41,6 +41,7 @@ public class ObjectDemo {
     public static void main(String[] args) {
         ObjectDemo obj1 = new ObjectDemo(10);
         ObjectDemo obj2 = new ObjectDemo(10);
+
         System.out.println(obj1.hashCode());
         System.out.println(obj2.hashCode());
     }
