@@ -10,9 +10,7 @@ public class PrintOver {
 
     @Override
     public String toString() {
-        return "PrintOver{" +
-                "num=" + num +
-                '}';
+        return "" + num;
     }
 
     public static void main(String[] args) {
