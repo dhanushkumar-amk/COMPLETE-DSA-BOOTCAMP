@@ -11,6 +11,7 @@ public class subClass extends  A{
 
 
         System.out.println(obj instanceof  A);
+        System.out.println(obj.getClass());
     }
 
 
