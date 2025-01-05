@@ -26,7 +26,7 @@ public class RomanToInteger {
 
             char ch = s.charAt(i);
             if (i + 1 < s.length()  && map.get(s.charAt(i + 1)) > map.get(ch)) {
-                result += map.get(s.charAt(i - 1)) - map.get(ch);
+                result += map.get(s.charAt(i + 1)) - map.get(ch);
                 i+=1; // for going i= 2 steps then it will increase one time as loop and we manually increase one
             }
             else
