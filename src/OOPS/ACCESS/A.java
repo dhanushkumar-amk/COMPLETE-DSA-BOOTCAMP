@@ -1,11 +1,20 @@
 package OOPS.ACCESS;
 
 public class A {
-    int num;
+   private int num;
     String name;
     int[] arr;
 
-    public A( String name, int num) {
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    public A(String name, int num) {
         this.num = num;
         this.name = name;
         this.arr = new int[num];
