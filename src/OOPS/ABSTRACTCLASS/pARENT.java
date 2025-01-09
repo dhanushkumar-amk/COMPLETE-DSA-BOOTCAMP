@@ -1,5 +1,7 @@
 package OOPS.ABSTRACTCLASS;
 
-public class Parent{
+abstract class Parent{
+
+    abstract void career(String name);
 
 }
