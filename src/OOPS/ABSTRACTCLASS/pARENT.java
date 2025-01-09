@@ -1,2 +1,5 @@
-package OOPS.ABSTRACTCLASS;public class pARENT {
+package OOPS.ABSTRACTCLASS;
+
+public class Parent{
+
 }
