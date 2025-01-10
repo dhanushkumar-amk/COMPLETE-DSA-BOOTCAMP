@@ -15,5 +15,11 @@ public class Daughter extends Parent{
         void partner() {
             System.out.println("i love somex and he age is 100");
         }
-    }
+
+        @Override
+        void normal() {
+            super.normal();
+         }
+
+}
 
