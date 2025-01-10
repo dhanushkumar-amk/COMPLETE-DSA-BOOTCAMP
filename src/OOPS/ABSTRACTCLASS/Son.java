@@ -16,5 +16,8 @@ public class Son  extends Parent{
         System.out.println("i love some and her age is 20");
     }
 
-
+    @Override
+    void normal() {
+        super.normal();
+    }
 }
