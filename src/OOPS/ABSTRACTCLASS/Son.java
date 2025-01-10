@@ -3,7 +3,7 @@ package OOPS.ABSTRACTCLASS;
 public class Son  extends Parent{
 
     public Son(int age) {
-        this.age = age;
+        super(age);
     }
 
     @Override
