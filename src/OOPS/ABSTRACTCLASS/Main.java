@@ -1,7 +1,11 @@
- package OOPS.ABSTRACTCLASS; 
+package OOPS.ABSTRACTCLASS;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
+        Son son = new Son();
+        son.career();
 
+        Daughter daughter = new Daughter();
+        daughter.career();
     }
 }

@@ -1,2 +1,15 @@
-package OOPS.ABSTRACTCLASS;public class Daughter {
-}
+package OOPS.ABSTRACTCLASS;
+
+public class Daughter extends Parent{
+
+        @Override
+        void career() {
+            System.out.println("I am going to be a dev");
+        }
+
+        @Override
+        void partner() {
+            System.out.println("i love somex and he age is 100");
+        }
+    }
+
