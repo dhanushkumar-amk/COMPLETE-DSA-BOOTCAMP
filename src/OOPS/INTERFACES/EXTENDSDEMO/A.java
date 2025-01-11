@@ -1,2 +1,6 @@
-package OOPS.INTERFACES.EXTENDSDEMO;public interface A {
+package OOPS.INTERFACES.EXTENDSDEMO;
+
+public interface A  {
+
+    void fun();
 }
