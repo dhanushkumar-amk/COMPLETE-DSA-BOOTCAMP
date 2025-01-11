@@ -12,6 +12,8 @@ public class A {
 
 class B implements A.NestedInterface {
 
+    //  A.NestedInterface because class A inside  NestedInterface interface
+
     @Override
     public boolean isOddOREven(int n) {
         return (n & 1) == 1;
