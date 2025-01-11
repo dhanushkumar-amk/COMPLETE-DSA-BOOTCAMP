@@ -1,6 +1,6 @@
 package OOPS.INTERFACES;
 
-public class Car implements Engine, Break {
+public class Car implements Engine, Break, Media {
 
     @Override
     public void brake() {
@@ -9,13 +9,13 @@ public class Car implements Engine, Break {
 
     @Override
     public void start() {
-        System.out.println("start like a normal car");
+        System.out.println("start engine like a normal car");
 
     }
 
     @Override
     public void stop() {
-        System.out.println("stop like a normal car");
+        System.out.println("stop engine like a normal car");
     }
 
     @Override

@@ -2,12 +2,13 @@ package OOPS.INTERFACES;
 
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
+        Engine car = new Car();
+
 
         car.acc();
         car.start();
         car.stop();
-        car.brake();
+//        car.brake(); // we can't accesses car.break because it reference to the Engine class
 
     }
 }
