@@ -10,9 +10,10 @@ public class A {
     }
 }
 
-class B implements A.NestedInterface{
+class B implements A.NestedInterface {
 
     @Override
     public boolean isOddOREven(int n) {
         return (n & 1) == 1;
     }
+}
