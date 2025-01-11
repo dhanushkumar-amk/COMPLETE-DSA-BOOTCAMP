@@ -1,5 +1,6 @@
-package OOPS.INTERFACES.EXTENDSDEMO;
+package OOPS.INTERFACES.EXTENDEDDEMO;
 
-public interface B extends A{
+public interface B  {
     void greet();
+//    void fun();
 }

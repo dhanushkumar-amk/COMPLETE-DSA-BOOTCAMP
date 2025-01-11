@@ -1,13 +1,20 @@
-package OOPS.INTERFACES.EXTENDSDEMO;
+package OOPS.INTERFACES.EXTENDEDDEMO;
 
-public class Main implements B{
+public class Main implements A,B {
+
+
+//    @Override
+//    public void fun() {
+//
+//    }
+
     @Override
     public void greet() {
-        
     }
 
-    @Override
-    public void fun() {
+    public static void main(String[] args) {
+        Main main = new Main();
 
+        A.greeting();
     }
 }
