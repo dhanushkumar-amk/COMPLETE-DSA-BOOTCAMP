@@ -1,2 +1,12 @@
-package OOPS.INTERFACES;public interface Engine {
+package OOPS.INTERFACES;
+
+public interface Engine {
+
+
+    static final int PRICE = 100000;
+
+    void start();
+    void stop();
+    void acc();
+
 }

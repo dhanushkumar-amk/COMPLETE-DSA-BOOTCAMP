@@ -1,2 +1,7 @@
-package OOPS.INTERFACES;public interface Break {
+package OOPS.INTERFACES;
+
+public interface Break {
+
+    void brake();
+
 }

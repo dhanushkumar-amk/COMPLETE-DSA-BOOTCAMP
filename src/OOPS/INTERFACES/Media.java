@@ -1,2 +1,10 @@
-package OOPS.INTERFACES;public interface Media {
+package OOPS.INTERFACES;
+
+public interface Media {
+
+
+    void start();
+    void stop();
+
+
 }
