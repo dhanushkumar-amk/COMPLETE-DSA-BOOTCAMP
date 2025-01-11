@@ -15,6 +15,8 @@ public class Main implements A,B {
     public static void main(String[] args) {
         Main main = new Main();
 
+
+        // we can call it by interface name
         A.greeting();
     }
 }
