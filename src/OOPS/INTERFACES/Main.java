@@ -10,6 +10,7 @@ public class Main {
         car.stop();
 //        car.brake(); // we can't accesses car.break because it reference to the Engine class
 
+        System.out.println("-------------------------");
         Media carMedia = new Car();
         carMedia.stop();
 
