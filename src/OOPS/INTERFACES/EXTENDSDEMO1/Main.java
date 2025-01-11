@@ -1,4 +1,4 @@
-package OOPS.INTERFACES.EXTENDEDDEMO;
+package OOPS.INTERFACES.EXTENDSDEMO1;
 
 public class Main implements A,B {
 
