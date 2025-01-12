@@ -17,7 +17,6 @@ public class Main {
         }
 
 
-
     }
 
     static int divide(int a, int b) throws ArithmeticException{
