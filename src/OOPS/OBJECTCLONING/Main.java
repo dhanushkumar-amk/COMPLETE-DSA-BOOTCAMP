@@ -1,5 +1,7 @@
 package OOPS.OBJECTCLONING;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) throws CloneNotSupportedException {
@@ -15,6 +17,15 @@ public class Main {
 
         System.out.println(dhanush.name);
         System.out.println(dhanush.age);
+
+
+
+        System.out.println(Arrays.toString(kumar.arr));
+
+        kumar.arr[0] = 100;
+
+        System.out.println(Arrays.toString(dhanush.arr));
+
     }
 
 }
