@@ -1,2 +1,21 @@
-package OOPS.COMPARINGOBJECTS;public class LambdaFunctions {
+package OOPS.COMPARINGOBJECTS;
+
+import java.util.ArrayList;
+
+public class LambdaFunctions {
+    public static void main(String[] args) {
+        ArrayList<Integer> arr =new ArrayList<>();
+        for (int i = 0; i < 5 ; i++) {
+            arr.add(i);
+        }
+
+        // lambda expression example
+        arr.forEach((item)  -> System.out.println(item + 2));
+
+
+    }
+
+    int sum(int a, int b){
+        return a + b;
+    }
 }
