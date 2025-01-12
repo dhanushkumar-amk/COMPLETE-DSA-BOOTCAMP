@@ -91,7 +91,11 @@ public class CustomArrayList {
 
 
         // internal arraylist
-        
+        ArrayList<Integer> list2 = new ArrayList<>();
+//        list2.add("hcsvgv");
+
+            // here we only use integer data type
+        list2.add(1);
 
     }
 }
