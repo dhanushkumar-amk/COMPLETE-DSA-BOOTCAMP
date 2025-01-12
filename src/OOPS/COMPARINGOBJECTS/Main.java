@@ -15,7 +15,7 @@ public class Main  {
         Student[] list = {dhanush, kumar, sanjay, ashwin, arun};
 
         System.out.println(Arrays.toString(list));
-        
+
 
 
        // we can't directly compare objects because it consists more than one variables

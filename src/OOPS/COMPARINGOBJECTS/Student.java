@@ -9,6 +9,13 @@ public class Student  implements Comparable<Student>{
         this.rollNo = rollNo;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "marks=" + marks +
+                ", rollNo=" + rollNo +
+                '}';
+    }
 
     @Override
     public int compareTo(Student o) {
