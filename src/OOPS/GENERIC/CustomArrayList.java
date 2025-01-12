@@ -66,10 +66,7 @@ public class CustomArrayList {
 
     @Override
     public String toString() {
-        return "CustomArrayList{" +
-                "data=" + Arrays.toString(data) +
-                ", size=" + size +
-                '}';
+        return  Arrays.toString(data);
     }
 
     public static void main(String[] args) {
