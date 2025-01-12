@@ -1,6 +1,6 @@
 package OOPS.OBJECTCLONING;
 
-public class Human {
+public class Human implements Cloneable {
 
     int age;
     String name;
@@ -10,10 +10,14 @@ public class Human {
         this.name = name;
     }
 
-    
+
     public Human(Human other){
         this.name = other.name;
         this.age = other.age;
+    }
+
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 
 }
