@@ -83,14 +83,10 @@ public class CustomArrayList {
 */
 
         CustomArrayList list = new CustomArrayList();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
 
-        list.remove();
-        list.remove();
-
+        for (int i = 0; i < 14 ; i++) {
+            list.add(i);
+        }
 
         System.out.println(list);
 
