@@ -13,7 +13,7 @@ public class Main {
 
 
         week() {
-            System.out.println("Constructor called for " + this);
+            System.out.println("Constructor called for " + this.name());
         }
     }
     // these are called enum constants
