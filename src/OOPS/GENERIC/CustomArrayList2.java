@@ -4,7 +4,7 @@ package OOPS.GENERIC;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class CustomArrayList {
+public class CustomArrayList2 {
 
 
 
@@ -13,7 +13,7 @@ public class CustomArrayList {
     private int size = 0;
 
 
-    public CustomArrayList() {
+    public CustomArrayList2() {
         this.data = new int[DEFAULT_SIZE];
     }
 
@@ -82,7 +82,7 @@ public class CustomArrayList {
         list.set(1, 234);
 */
 
-        CustomArrayList list = new CustomArrayList();
+        CustomArrayList2 list = new CustomArrayList2();
 
         for (int i = 0; i < 20 ; i++) {
             list.add(i);
