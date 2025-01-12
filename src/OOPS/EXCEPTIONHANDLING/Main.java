@@ -7,7 +7,7 @@ public class Main {
 
 
         try {
-            divide(a, b);
+//            divide(a, b);
             String name = "dhanushkumar";
 
             if (name.equals("dhanushkumar"))
