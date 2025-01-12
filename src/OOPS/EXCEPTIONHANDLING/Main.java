@@ -19,10 +19,10 @@ public class Main {
 
     }
 
-    static int divide(int a, int b) throws ArithmeticException{
+    static int divide(int a, int b) throws Exception{
 
         if (b == 0)
-            throw new ArithmeticException("pls don't divide by 0");
+            throw new Exception("pls don't divide by 0");
 
         return a/b;
     }
