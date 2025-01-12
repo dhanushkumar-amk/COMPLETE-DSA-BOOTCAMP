@@ -9,7 +9,12 @@ public class Main {
         thursday,
         friday,
         saturday,
-        sunday
+        sunday;
+
+
+        week() {
+            System.out.println("Constructor called for " + this.);
+        }
     }
     // these are called enum constants
     // every one in enum is public static and final one
@@ -22,5 +27,8 @@ public class Main {
 
         for (week day : week.values())
             System.out.println(day);
+
+
     }
+
 }
