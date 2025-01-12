@@ -10,8 +10,10 @@ public class Human {
         this.name = name;
     }
 
+    
     public Human(Human other){
-        this.name
+        this.name = other.name;
+        this.age = other.age;
     }
 
 }
