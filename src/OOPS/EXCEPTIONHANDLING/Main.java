@@ -8,13 +8,15 @@ public class Main {
 
         try {
             divide(a, b);
-            throw new Exception("just for try");
+            String name ="dhanushkumar";
+
+            if (name == "dhanuhskumar")
+                throw new CustomException("dhanushkumar");
         }
-        catch (CustomException e){
+        catch (Exception e){
             System.out.println(e.getMessage());
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        } finally {
+        }
+        finally {
             System.out.println("this will always execute");
         }
 
