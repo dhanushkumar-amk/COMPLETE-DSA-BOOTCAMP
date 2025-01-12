@@ -23,10 +23,16 @@ public class LambdaFunctions {
         Consumer<Integer> fun = (item) -> System.out.println(item + 2);
         arr.forEach(fun);
 
+        Sum sum = (a, b) -> Integer.sum(a, b);
 
     }
 
     int sum(int a, int b){
         return a + b;
     }
+}
+
+
+interface Sum {
+    int sum(int a, int b);
 }
