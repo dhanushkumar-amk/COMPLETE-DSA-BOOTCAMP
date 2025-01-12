@@ -8,7 +8,7 @@ public class Main  {
 
 
        // we can't directly compare objects because it consists more than one variables
-        if (dhanush.compareTo(kumar)> 0)
+        if (dhanush.compareTo(kumar)< 0)
             System.out.println("dhanush has more marks");
         else
             System.out.println("kumar has more marks");
