@@ -8,6 +8,7 @@ public class Main {
 
         try {
             divide(a, b);
+            throw new Exception("just for try");
         }
         catch (Exception e){
             System.out.println(e.getMessage());
