@@ -1,6 +1,7 @@
 package OOPS.COMPARINGOBJECTS;
 
 import java.util.ArrayList;
+import java.util.function.Consumer;
 
 public class LambdaFunctions {
     public static void main(String[] args) {
@@ -13,10 +14,14 @@ public class LambdaFunctions {
         arr.forEach((item)  -> System.out.println(item + 2));
 
         // the above function is equal to
-        System.out.println("------------------");
+        System.out.println("------- normal for loop implementations -----------");
         for (int i = 0; i < arr.size() ; i++) {
             System.out.println(arr.get(i) + 2);
         }
+
+        System.out.println("--- consumer type implementations---");
+        Consumer<Integer> fun = (item) -> System.out.println(item + 2);
+
 
     }
 
