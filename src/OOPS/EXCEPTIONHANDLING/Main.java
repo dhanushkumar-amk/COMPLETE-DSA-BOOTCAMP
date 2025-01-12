@@ -1,5 +1,7 @@
-/*
+
 package OOPS.EXCEPTIONHANDLING;
+
+import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +13,7 @@ public class Main {
 //            divide(a, b);
             String name = "dhanushkumar";
 
-            if (name.equals("dhanushkumar"))
+            if (Objects.equals(name, "dhanushkumar"))
                 throw new CustomException("dhanushkumar");
         } catch (CustomException e) {
             System.out.println(e.getMessage());
@@ -37,4 +39,3 @@ public class Main {
         return a/b;
     }
 }
-*/
