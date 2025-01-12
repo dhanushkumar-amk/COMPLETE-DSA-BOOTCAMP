@@ -5,8 +5,11 @@ public class Main {
         int a = 5;
         int b = 0;
 
-        int c = a / b;
-
-        System.out.println(c);
+        try {
+            int c = a / b;
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }
