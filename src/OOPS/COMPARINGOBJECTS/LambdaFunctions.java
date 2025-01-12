@@ -12,6 +12,11 @@ public class LambdaFunctions {
         // lambda expression example
         arr.forEach((item)  -> System.out.println(item + 2));
 
+        // the above function is equal to
+
+        for (int i = 0; i < arr.size() ; i++) {
+            System.out.println(arr.get(i) + 2);
+        }
 
     }
 
