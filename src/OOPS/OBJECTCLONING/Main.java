@@ -12,6 +12,9 @@ public class Main {
 
         System.out.println(kumar.name);
         System.out.println(kumar.age);
+
+        System.out.println(dhanush.name);
+        System.out.println(dhanush.age);
     }
 
 }
