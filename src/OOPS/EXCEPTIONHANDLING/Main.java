@@ -8,14 +8,15 @@ public class Main {
 
         try {
             divide(a, b);
-            String name ="dhanushkumar";
+            String name = "dhanushkumar";
 
             if (name.equals("dhanuhskumar"))
                 throw new CustomException("dhanushkumar");
-        }
-        catch (Exception e){
+        } catch (ArithmeticException e) {
             System.out.println(e.getMessage());
-        }
+        } catch (Exception e){
+        System.out.println(e.getMessage());
+    }
         finally {
             System.out.println("this will always execute");
         }
