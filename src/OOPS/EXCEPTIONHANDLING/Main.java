@@ -12,7 +12,7 @@ public class Main {
 
             if (name.equals("dhanuhskumar"))
                 throw new CustomException("dhanushkumar");
-        } catch (ArithmeticException e) {
+        } catch (CustomException e) {
             System.out.println(e.getMessage());
         } catch (Exception e){
         System.out.println(e.getMessage());
