@@ -21,6 +21,7 @@ public class LambdaFunctions {
 
         System.out.println("--- consumer type implementations---");
         Consumer<Integer> fun = (item) -> System.out.println(item + 2);
+        arr.forEach(fun);
 
 
     }
