@@ -10,7 +10,7 @@ public class Main {
             divide(a, b);
             String name ="dhanushkumar";
 
-            if (name == "dhanuhskumar")
+            if (name.equals("dhanuhskumar"))
                 throw new CustomException("dhanushkumar");
         }
         catch (Exception e){
