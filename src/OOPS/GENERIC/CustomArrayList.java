@@ -88,6 +88,7 @@ public class CustomArrayList {
         list.add(3);
         list.add(4);
 
+        list.remove();
 
         System.out.println(list);
 
