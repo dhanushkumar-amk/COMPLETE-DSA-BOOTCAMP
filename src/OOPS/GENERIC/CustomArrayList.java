@@ -84,7 +84,7 @@ public class CustomArrayList {
 
         CustomArrayList list = new CustomArrayList();
 
-        for (int i = 0; i < 14 ; i++) {
+        for (int i = 0; i < 20 ; i++) {
             list.add(i);
         }
 
