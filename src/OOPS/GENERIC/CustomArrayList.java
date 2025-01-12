@@ -2,6 +2,7 @@ package OOPS.GENERIC;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class CustomArrayList {
 
@@ -62,6 +63,15 @@ public class CustomArrayList {
         data[index] = value;
     }
 
+
+    @Override
+    public String toString() {
+        return "CustomArrayList{" +
+                "data=" + Arrays.toString(data) +
+                ", size=" + size +
+                '}';
+    }
+
     public static void main(String[] args) {
 
 /*
@@ -80,6 +90,7 @@ public class CustomArrayList {
         list.add(2);
         list.add(3);
         list.add(4);
+
 
         System.out.println(list);
 
