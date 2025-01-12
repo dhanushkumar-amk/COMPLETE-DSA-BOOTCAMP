@@ -66,7 +66,7 @@ public class CustomArrayList {
 
     @Override
     public String toString() {
-        return  Arrays.toString(data) + " " + size;
+        return  Arrays.toString(data) + " \n" + size;
     }
 
     public static void main(String[] args) {
