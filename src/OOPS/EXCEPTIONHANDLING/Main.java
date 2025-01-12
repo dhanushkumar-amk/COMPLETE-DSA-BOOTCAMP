@@ -14,7 +14,11 @@ public class Main {
                 throw new CustomException("dhanushkumar");
         } catch (CustomException e) {
             System.out.println(e.getMessage());
-        } catch (Exception e){
+        }
+        catch (ArithmeticException e){
+            System.out.println(e.getMessage());
+        }
+        catch (Exception e){
         System.out.println(e.getMessage());
     }
         finally {
