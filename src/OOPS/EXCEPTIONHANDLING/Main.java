@@ -12,8 +12,9 @@ public class Main {
         }
         catch (CustomException e){
             System.out.println(e.getMessage());
-        }
-        finally {
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        } finally {
             System.out.println("this will always execute");
         }
 
