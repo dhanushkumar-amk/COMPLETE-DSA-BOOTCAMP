@@ -23,7 +23,7 @@ public class Main {
         System.out.println(Arrays.toString(kumar.arr));
 
         kumar.arr[0] = 100;
-
+        System.out.println(Arrays.toString(kumar.arr));
         System.out.println(Arrays.toString(dhanush.arr));
 
     }

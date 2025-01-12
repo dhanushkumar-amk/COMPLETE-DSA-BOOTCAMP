@@ -20,7 +20,16 @@ public class Human implements Cloneable {
 
     @Override
     public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+
+       // shallow copy
+
+        Human kumar = (Human) super.clone();
+
+        // make deep copy
+        kumar.arr = new int[kumar.arr.length];
+        System.arraycopy(this.arr, 0, kumar.arr, 0, kumar.arr.length);
+
+        return kumar;
     }
 
 }
