@@ -7,7 +7,7 @@ public class Main {
 
 
         try {
-            int c = a / b;
+            divide(a, b);
         }
         catch (Exception e){
             System.out.println(e.getMessage());
@@ -21,7 +21,7 @@ public class Main {
     }
 
     static int divide(int a, int b) throws ArithmeticException{
-        
+
         if (b == 0)
             throw new ArithmeticException("pls don't divide by 0");
 
