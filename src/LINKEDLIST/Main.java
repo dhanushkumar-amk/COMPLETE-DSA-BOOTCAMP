@@ -19,5 +19,9 @@ public class Main {
         list.insert(100, 3);
 
         list.display();
+
+        list.deleteFirst();
+        
+        list.display();
     }
 }

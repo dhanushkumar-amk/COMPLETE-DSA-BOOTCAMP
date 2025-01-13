@@ -68,7 +68,7 @@ public class LL {
 
     //delete last
     public void deleteLast(){
-        if (size < 1){
+        if (size <= 1){
             deleteFirst();
             return;
         }
