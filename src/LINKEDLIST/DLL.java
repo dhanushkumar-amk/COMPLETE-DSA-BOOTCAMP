@@ -33,8 +33,9 @@ public class DLL {
 
         while (temp != null){
             System.out.print(temp.val +  " --> " );
-            temp = temp.next;
             last = temp; // at the ned this points the last node
+            temp = temp.next;
+
         }
         System.out.println("end");
 
