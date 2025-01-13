@@ -38,7 +38,7 @@ public class Main {
         list.insertFirst(5);
         list.insertLast(88);
         list.display();
-        list.insert(2,22);
+        list.insert(88,22);
         list.display();
     }
 }
