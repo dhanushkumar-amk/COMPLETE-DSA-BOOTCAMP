@@ -11,20 +11,6 @@ public class LL {
     }
 
 
-     private class Node{
-         private int value;
-         private  Node next;
-
-         public Node(Node next, int val) {
-             this.next = next;
-             this.value = val;
-         }
-
-         public Node(int val) {
-             this.value = val;
-         }
-     }
-
      // insert element in first
     public void insertFirst(int value){
         Node node = new Node(value);
@@ -42,12 +28,24 @@ public class LL {
     public void display(){
         Node temp = head;
         while(temp != null){
-            System.out.print(temp.value +  " --> " );
+            System.out.print(temp.val +  " --> " );
             temp = temp.next;
         }
-        System.out.println();
+        System.out.println("end");
     }
 
 
+    private class Node{
+        private int val;
+        private  Node next;
 
+        public Node(Node next, int val) {
+            this.next = next;
+            this.val = val;
+        }
+
+        public Node(int val) {
+            this.val = val;
+        }
+    }
 }
