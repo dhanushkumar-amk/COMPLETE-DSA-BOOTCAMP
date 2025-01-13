@@ -59,7 +59,13 @@ public class LL {
             return;
         }
 
-        
+        Node temp = head;
+        for (int i = 1; i <index ; i++) {
+            temp = temp.next;
+        }
+
+        Node node = new Node(val, temp.next);
+
 
     }
 
@@ -68,7 +74,7 @@ public class LL {
         private int val;
         private  Node next;
 
-        public Node(Node next, int val) {
+        public Node( int val,Node next) {
             this.next = next;
             this.val = val;
         }
