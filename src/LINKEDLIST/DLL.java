@@ -3,7 +3,6 @@ package LINKEDLIST;
 public class DLL {
 
     private Node head;
-    private Node tail;
     private int size;
 
     public DLL() {
@@ -23,7 +22,10 @@ public class DLL {
         head = node;
     }
 
-
+    // insert last
+    public void insertLast(int val){
+        
+    }
 
 
     // display function
