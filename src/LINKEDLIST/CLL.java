@@ -38,7 +38,7 @@ public class CLL {
                 temp = temp.next;
             } while (temp != head);
         }
-        System.out.println("end");
+        System.out.println("head");
     }
 
 
@@ -47,7 +47,10 @@ public class CLL {
         private int val;
         private Node next;
 
-
+        public Node(Node next, int val) {
+            this.next = next;
+            this.val = val;
+        }
 
         public Node(int val) {
             this.val = val;
