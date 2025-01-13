@@ -18,7 +18,7 @@ public class LL {
         head = node;
 
         if (tail == null)
-            head = tail;
+            tail  = head;
 
         size += 1;
     }
