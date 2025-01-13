@@ -19,8 +19,8 @@ public class LL {
 
         if (tail == null)
             head = tail;
-        else
-            size++;
+
+        size += 1;
     }
 
 
