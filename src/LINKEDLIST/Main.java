@@ -29,7 +29,7 @@ public class Main {
 
          */
 
-
+    /*
         DLL list = new DLL();
         list.insertFirst(1);
         list.insertFirst(2);
@@ -40,5 +40,16 @@ public class Main {
         list.display();
         list.insert(88,22);
         list.display();
+
+        */
+
+        CLL list = new CLL();
+        list.insert(1);
+        list.insert(2);
+        list.insert(3);
+        list.insert(4);
+
+        list.display();
+
     }
 }
