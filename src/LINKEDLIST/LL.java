@@ -155,10 +155,10 @@ public class LL {
         head = insertRecursion(val, index, head);
     }
 
-    private InsertTheElementUsingRecursion.Node insertRecursion(int val, int index, InsertTheElementUsingRecursion.Node node){
+    private Node insertRecursion(int val, int index, Node node){
 
         if (val == 0){
-            InsertTheElementUsingRecursion.Node temp = new InsertTheElementUsingRecursion.Node(node,val);
+            Node temp = new Node(val,node);
             size++;
             return temp;
         }
