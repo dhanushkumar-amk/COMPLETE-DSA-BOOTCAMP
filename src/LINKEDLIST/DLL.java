@@ -41,7 +41,7 @@ public class DLL {
 
         System.out.println("Print in reverse : ");
         while (last != null){
-            System.out.print(last.val + " <-- ");
+            System.out.print(last.val + " --> ");
             last = last.prev;
         }
         System.out.println();
