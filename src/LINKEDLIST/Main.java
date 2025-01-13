@@ -21,7 +21,7 @@ public class Main {
         list.display();
 
         list.deleteFirst();
-        
+        list.deleteLast();
         list.display();
     }
 }
