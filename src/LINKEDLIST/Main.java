@@ -16,7 +16,7 @@ public class Main {
         list.insertLast(7);
         list.insertLast(8);
 
-        list.insert(100, 113);
+        list.insert(100, 3);
 
         list.display();
     }
