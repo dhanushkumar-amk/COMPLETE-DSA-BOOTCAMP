@@ -2,7 +2,12 @@ package LINKEDLIST;
 
 public class Main {
     public static void main(String[] args) {
-        LL list = new LL();
 
+        LL list = new LL();
+        list.insertFirst(10);
+        list.insertFirst(20);
+        list.insertFirst(30);
+
+        System.out.println(list);
     }
 }
