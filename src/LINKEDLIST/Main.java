@@ -28,5 +28,15 @@ public class Main {
         System.out.println(list.getNode(2));
 
          */
+
+
+        DLL list = new DLL();
+        list.insertFirst(1);
+        list.insertFirst(2);
+        list.insertFirst(3);
+        list.insertFirst(4);
+        list.insertFirst(5);
+
+        list.display();
     }
 }
