@@ -35,6 +35,20 @@ public class LL {
     }
 
 
+    // insert element in last
+    public void insertLast(int val){
+        if (head == null) {
+            insertFirst(val);
+            return;
+        }
+
+        Node node = new Node(val);
+        tail.next = node;
+        tail = node;
+        size += 1;
+    }
+
+
     private class Node{
         private int val;
         private  Node next;

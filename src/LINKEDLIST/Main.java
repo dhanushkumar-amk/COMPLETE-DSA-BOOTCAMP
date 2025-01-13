@@ -10,6 +10,9 @@ public class Main {
         list.insertFirst(3);
         list.insertFirst(4);
         list.insertFirst(5);
+        list.insertLast(22);
+        list.insertLast(23);
+        list.insertLast(24);
 
 
         list.display();
