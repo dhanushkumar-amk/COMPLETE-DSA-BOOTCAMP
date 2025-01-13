@@ -11,7 +11,9 @@ public class Main {
         list.add(3);
         list.add(4);
         list.addLast(5);
+        list.add(4);
 
+        
         System.out.println(list);
     }
 }
