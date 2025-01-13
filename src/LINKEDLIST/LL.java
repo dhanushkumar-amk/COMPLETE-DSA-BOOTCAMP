@@ -11,7 +11,16 @@ public class LL {
     }
 
 
-     private class Node{
+    @Override
+    public String toString() {
+        return "LL{" +
+                "head=" + head +
+                ", tail=" + tail +
+                ", size=" + size +
+                '}';
+    }
+
+    private class Node{
          private int value;
          private  Node next;
 
