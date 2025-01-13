@@ -29,15 +29,24 @@ public class DLL {
     // display function
     public void display(){
         Node temp = head;
+        Node last = null;
 
         while (temp != null){
             System.out.print(temp.val +  " --> " );
             temp = temp.next;
+            last = temp; // at the ned this points the last node
         }
         System.out.println("end");
 
-
+        System.out.println("Print in reverse : ");
+        while (last != null){
+            System.out.print(last.val + " <-- ");
+            last = last.prev;
+        }
+        System.out.println();
     }
+
+
 
 
     private class Node{
