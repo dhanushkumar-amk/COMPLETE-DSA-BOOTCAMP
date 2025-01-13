@@ -12,8 +12,8 @@ public class LL {
 
 
      // insert element in first
-    public void insertFirst(int value){
-        Node node = new Node(value);
+    public void insertFirst(int val){
+        Node node = new Node(val);
         node.next = head;
         head = node;
 
