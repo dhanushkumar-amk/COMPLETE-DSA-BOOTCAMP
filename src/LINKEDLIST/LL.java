@@ -24,5 +24,15 @@ public class LL {
              this.value = val;
          }
 
+
+
      }
+
+    public void insertFirst(int value){
+        Node node = new Node(value);
+
+        node.next = head;
+        head = node;
+
+    }
 }
