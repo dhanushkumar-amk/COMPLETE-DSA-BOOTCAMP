@@ -19,11 +19,11 @@ public class Main {
         list.insert(100, 3);
 
         list.display();
-
         list.deleteFirst();
         list.deleteLast();
-
         list.deleteIndex(2);
         list.display();
+
+        list.getNode(2);
     }
 }
