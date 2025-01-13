@@ -11,16 +11,7 @@ public class LL {
     }
 
 
-    @Override
-    public String toString() {
-        return "LL{" +
-                "head=" + head +
-                ", tail=" + tail +
-                ", size=" + size +
-                '}';
-    }
-
-    private class Node{
+     private class Node{
          private int value;
          private  Node next;
 
@@ -32,16 +23,32 @@ public class LL {
          public Node(int val) {
              this.value = val;
          }
-
-
-
      }
 
+     // insert element in first
     public void insertFirst(int value){
         Node node = new Node(value);
-
         node.next = head;
         head = node;
 
+        if (tail == null)
+            head = tail;
+        else
+            size++;
     }
+
+    public void display(){
+        Node temp = head;
+
+        while(temp != null){
+            System.out.print(temp.value +  " --> " );
+            temp = temp.next;
+        }
+
+
+        System.out.println();
+    }
+
+
+
 }
