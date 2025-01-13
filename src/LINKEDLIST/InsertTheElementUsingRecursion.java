@@ -7,6 +7,10 @@ public class InsertTheElementUsingRecursion {
     private int size;
 
 
+    public InsertTheElementUsingRecursion(){
+        this.size = 0;
+    }
+
     public static void main(String[] args) {
 
         InsertTheElementUsingRecursion list = new InsertTheElementUsingRecursion();
