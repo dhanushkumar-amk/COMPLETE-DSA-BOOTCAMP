@@ -23,19 +23,9 @@ public class LL {
         size += 1;
     }
 
-    // display function
-    public void display(){
-        Node temp = head;
-        while(temp != null){
-            System.out.print(temp.val +  " --> " );
-            temp = temp.next;
-        }
-        System.out.println("end");
-    }
-
     // insert element in last
     public void insertLast(int val){
-        if (head == null) {
+        if (tail == null) {
             insertFirst(val);
             return;
         }
@@ -46,7 +36,32 @@ public class LL {
         size += 1;
     }
 
-    //
+    // display function
+    public void display(){
+        Node temp = head;
+        while(temp != null){
+            System.out.print(temp.val +  " --> " );
+            temp = temp.next;
+        }
+        System.out.println("end");
+    }
+
+
+    // insert element in particular index
+    public void insert(int val, int index){
+        if (index == 0){
+            insertLast(val);
+            return;
+        }
+
+        if (index == size){
+            insertLast(val);
+            return;
+        }
+
+        
+
+    }
 
 
     private class Node{
