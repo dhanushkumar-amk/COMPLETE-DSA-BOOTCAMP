@@ -6,8 +6,8 @@ public class CLL {
     private Node tail;
 
     public CLL() {
-//        this.head = null;
-//        this.tail = null;
+        this.head = null;
+        this.tail = null;
     }
 
 
@@ -45,10 +45,7 @@ public class CLL {
         private int val;
         private Node next;
 
-        public Node(Node next, int val) {
-            this.next = next;
-            this.val = val;
-        }
+       
 
         public Node(int val) {
             this.val = val;
