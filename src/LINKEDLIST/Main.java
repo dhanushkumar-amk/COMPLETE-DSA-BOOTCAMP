@@ -3,6 +3,7 @@ package LINKEDLIST;
 public class Main {
     public static void main(String[] args) {
 
+        /*
         LL list = new LL();
 
         list.insertFirst(1);
@@ -25,5 +26,7 @@ public class Main {
         list.display();
 
         System.out.println(list.getNode(2));
+        
+         */
     }
 }
