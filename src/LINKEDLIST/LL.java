@@ -147,4 +147,23 @@ public class LL {
             this.val = val;
         }
     }
+
+
+
+    // insert element using recursion
+    public  void insertRecursion(int val, int index){
+        head = insertRecursion(val, index, head);
+    }
+
+    private InsertTheElementUsingRecursion.Node insertRecursion(int val, int index, InsertTheElementUsingRecursion.Node node){
+
+        if (val == 0){
+            InsertTheElementUsingRecursion.Node temp = new InsertTheElementUsingRecursion.Node(node,val);
+            size++;
+            return temp;
+        }
+
+        node.next = insertRecursion(val, index--, node.next);
+        return node;
+    }
 }
