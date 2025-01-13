@@ -163,7 +163,7 @@ public class LL {
             return temp;
         }
 
-        node.next = insertRecursion(val, index--, node.next);
+        node.next = insertRecursion(val, index -= 1, node.next);
         return node;
     }
 }
