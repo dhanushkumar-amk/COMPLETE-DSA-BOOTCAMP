@@ -15,15 +15,17 @@ public class CLL {
     public void insert(int val){
         Node node = new Node(val);
 
-        tail.next = node;
-        node.next = head;
-        tail = node;
 
         if (head == null){
             head = node;
             tail = node;
             return;
         }
+
+        tail.next = node;
+        node.next = head;
+        tail = node;
+
     }
 
     // display
@@ -45,7 +47,7 @@ public class CLL {
         private int val;
         private Node next;
 
-       
+
 
         public Node(int val) {
             this.val = val;
