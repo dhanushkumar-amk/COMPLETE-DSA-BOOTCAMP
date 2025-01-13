@@ -6,8 +6,8 @@ public class CLL {
     private Node tail;
 
     public CLL() {
-        this.head = null;
-        this.tail = null;
+//        this.head = null;
+//        this.tail = null;
     }
 
 
@@ -30,11 +30,12 @@ public class CLL {
     public void display(){
         Node temp = head;
 
-        do{
-            System.out.print(temp.val + " --> ");
-            temp = temp.next;
-        }while (temp != head);
-
+        if (head != null) {
+            do {
+                System.out.print(temp.val + " --> ");
+                temp = temp.next;
+            } while (temp != head);
+        }
         System.out.println("end");
     }
 
