@@ -8,6 +8,6 @@ public class Main {
         list.insertFirst(20);
         list.insertFirst(30);
 
-        System.out.println(list);
+        System.out.println(list.toString());
     }
 }
