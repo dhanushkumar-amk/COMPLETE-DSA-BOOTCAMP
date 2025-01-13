@@ -65,7 +65,7 @@ public class LL {
         }
 
         Node node = new Node(val);
-        node.next = temp.next.next;
+        node.next = temp.next;
         size++;
     }
 
