@@ -5,15 +5,17 @@ public class Main {
 
         LL list = new LL();
 
-        list.insertFirst(1);
-        list.insertFirst(2);
-        list.insertFirst(3);
-        list.insertFirst(4);
-        list.insertFirst(5);
-        list.insertLast(22);
-        list.insertLast(23);
-        list.insertLast(24);
+        list.insertFirst(01);
+        list.insertFirst(02);
+        list.insertFirst(03);
+        list.insertFirst(04);
+        list.insertFirst(05);
 
+        list.insertLast(06);
+        list.insertLast(07);
+        list.insertLast(08);
+        list.insertLast(09);
+        list.insertLast(010);
 
         list.display();
     }

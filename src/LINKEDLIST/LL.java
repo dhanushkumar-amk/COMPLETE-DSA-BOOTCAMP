@@ -23,7 +23,6 @@ public class LL {
         size += 1;
     }
 
-
     // display function
     public void display(){
         Node temp = head;
@@ -33,7 +32,6 @@ public class LL {
         }
         System.out.println("end");
     }
-
 
     // insert element in last
     public void insertLast(int val){
@@ -47,6 +45,8 @@ public class LL {
         tail = node;
         size += 1;
     }
+
+    //
 
 
     private class Node{
