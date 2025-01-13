@@ -36,7 +36,7 @@ public class Main {
         list.insertFirst(3);
         list.insertFirst(4);
         list.insertFirst(5);
-
+        list.insertLast(88);
         list.display();
     }
 }
