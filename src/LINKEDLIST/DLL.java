@@ -34,7 +34,7 @@ public class DLL {
             System.out.print(node.val +  " --> " );
             node = node.next;
         }
-        System.out.println();
+        System.out.println("end");
 
     }
 
