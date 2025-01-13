@@ -58,8 +58,6 @@ public class LL {
         size++;
     }
 
-
-
     // delete first
     public void deleteFirst(){
         head = head.next;
@@ -70,7 +68,32 @@ public class LL {
 
     //delete last
     public void deleteLast(){
+        if (size < 1){
+            deleteFirst();
+            return;
+        }
 
+        Node secondLast = getRef(size - 2);
+        tail = secondLast;
+        tail.next = null;
+
+    }
+
+    // delete the element in particular index
+    public void deleteIndex(int index){
+
+        if (index == 0){
+            deleteFirst();
+            return;
+        }
+
+        if (index == size - 1){
+            deleteLast();
+            return;
+        }
+
+        Node previousIndex = getRef(index - 1);
+        previousIndex.next = previousIndex.next.next;
     }
 
 
@@ -84,8 +107,16 @@ public class LL {
         System.out.println("end");
     }
 
+    // get the reference type of the node in the given index
+    public Node getRef(int index){
+        Node node = head;
 
+        for (int i = 0; i <index ; i++) {
+            node = node.next;
+        }
 
+        return node;
+    }
 
 
     private class Node{
