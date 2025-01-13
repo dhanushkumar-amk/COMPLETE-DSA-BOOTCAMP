@@ -28,13 +28,14 @@ public class DLL {
 
     // display function
     public void display(){
-        Node node = head;
+        Node temp = head;
 
-        while (node != null){
-            System.out.print(node.val +  " --> " );
-            node = node.next;
+        while (temp != null){
+            System.out.print(temp.val +  " --> " );
+            temp = temp.next;
         }
         System.out.println("end");
+
 
     }
 
