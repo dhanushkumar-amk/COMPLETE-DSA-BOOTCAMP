@@ -44,7 +44,7 @@ public class DLL {
             System.out.print(last.val + " --> ");
             last = last.prev;
         }
-        System.out.println("end");
+        System.out.println("start");
     }
 
 
