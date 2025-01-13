@@ -24,6 +24,6 @@ public class Main {
         list.deleteIndex(2);
         list.display();
 
-        list.getNode(2);
+        System.out.println(list.getNode(2));
     }
 }
