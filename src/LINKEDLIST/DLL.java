@@ -44,6 +44,25 @@ public class DLL {
         node.next = null;
     }
 
+    // insert index
+    public void insert(int after, int val){
+        Node previous = getNode(after);
+
+        if (previous == null){
+            System.out.println("does not exit");
+            return;
+        }
+
+        Node node = new Node(val);
+
+        node.next = previous.next;
+        previous.next = node;
+        node.prev = previous;
+
+        if (node.next != null)
+            node.next.prev = node;
+
+    }
 
     // display function
     public void display(){
@@ -66,7 +85,19 @@ public class DLL {
         System.out.println("start");
     }
 
+    // get the node;
+    public Node getNode(int val){
 
+        Node node = head;
+
+        while (node != null){
+            if (node.val == val)
+                return node;
+
+            node = node.next;
+        }
+        return null;
+    }
 
 
     private class Node{
