@@ -22,6 +22,8 @@ public class Main {
 
         list.deleteFirst();
         list.deleteLast();
+
+        list.deleteIndex(2);
         list.display();
     }
 }
