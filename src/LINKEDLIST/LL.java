@@ -118,17 +118,17 @@ public class LL {
     }
 
     // get the node of the particular val
-    public Node getNode(int val){
+    public int getNode(int val){
 
         Node node = head;
 
         while (node != null){
             if (node.val == val)
-                return node;
+                return node.val;
 
             node = node.next;
         }
-        return null;
+        return -1;
     }
 
 
