@@ -13,7 +13,7 @@ public class Main {
 
         list.insertLast(06);
         list.insertLast(07);
-        list.insertLast(010);
+        list.insertLast(8);
 
         list.display();
     }
