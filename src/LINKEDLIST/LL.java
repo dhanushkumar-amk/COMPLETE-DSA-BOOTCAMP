@@ -309,7 +309,22 @@ public class LL {
         return slow;
     }
 
-    // sort the list
+    // sort the list using merge sort
+    public Node sortList(Node head){
 
+        // if there is only element o zero element
+        if (head == null || head.next == null)
+            return head;
+
+        Node middle = middleOfTheLinkedList(head);
+        Node left = sortList(head);
+        Node right = sortList(middle);
+
+       // return merge(left, right);
+        return head;
+    }
+
+    // bubble sort
+    
 
 }
