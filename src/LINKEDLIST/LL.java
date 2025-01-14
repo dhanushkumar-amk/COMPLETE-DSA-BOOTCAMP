@@ -325,6 +325,48 @@ public class LL {
     }
 
     // bubble sort
-    
+    public void bubbleSort(){
+        bubbleSort(size - 1, 0);
+    }
+
+    private void bubbleSort(int row, int column) {
+
+        // base case
+        if (row == 0)
+            return;
+
+        if (column < row){
+            Node first = getNode(column);
+            Node second = getNode(column + 1);
+
+            if (first.val > second.val){
+
+                // swap
+                if (first == head){
+                    head = second;
+                    first.next = second.next;
+                    second.next = first;
+                } else if (second == tail) {
+                    Node previous = getNode(column - 1);
+                    previous.next = second;
+                    tail = first;
+                    first.next = null;
+                    second.next = tail;
+                }else{
+                    Node previous = getNode(column - 1);
+                    previous.next = second;
+                    first.next = second.next;
+                    second.next = first;
+                }
+
+            }
+            bubbleSort(row , column + 1);
+        }
+        else{
+            bubbleSort(row-1, 0);
+        }
+    }
+
+
 
 }
