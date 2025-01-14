@@ -261,6 +261,42 @@ public class LL {
 
 
     // give the cycle where is started
-    
+    public Node detectedCycleStartPlace(Node head){
+        int length = 0;
+
+        Node fast = head;
+        Node slow = head;
+
+        while (fast != null && fast.next != null){
+            if (fast == slow){
+                length = LengthOfTheCycle(slow);
+                break;
+            }
+            slow = slow.next;
+            fast= fast.next.next;
+        }
+
+        if (length == 0)
+            return null;
+
+        // find the start node
+        Node first =head;
+        Node second =head;
+
+        while (length > 0){
+            second = second.next;
+            length--;
+        }
+
+        // keep moving both forward they can meet start position
+        while (first != second){
+            first = first.next;
+            second = second.next;
+        }
+
+        return first;  // or slow your wish
+    }
+
+
 
 }
