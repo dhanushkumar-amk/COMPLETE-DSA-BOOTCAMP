@@ -169,7 +169,6 @@ public class LL {
     }
 
 
-
     // remove all duplicates from sorted list
     public void removeDuplicates(){
         Node node = head;
@@ -298,16 +297,19 @@ public class LL {
     }
 
 
-    public  Node middleOfTheLinkedList(){
+    // middle of the linked list
+    public static Node middleOfTheLinkedList(Node head ){
         Node slow = head;
         Node fast = head;
 
-        while (slow != null && fast != null){
+        while (fast != null && fast.next != null){
             slow = slow.next;
             fast = fast.next.next;
         }
-
         return slow;
     }
+
+    // sort the list
+
 
 }
