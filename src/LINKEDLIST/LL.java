@@ -188,6 +188,36 @@ public class LL {
 
     // mergeTwo Sorted list
 
+    public static LL merge(LL first, LL second){
+
+        Node firstListHead = first.head;
+        Node secondListHead = second.head;
+
+        LL ans = new LL();
+
+        while (firstListHead != null && secondListHead != null){
+            if (firstListHead.val < secondListHead.val){
+                ans.insertLast(firstListHead.val);
+                firstListHead = firstListHead.next;
+            }else{
+                ans.insertLast(secondListHead.val);
+                secondListHead = secondListHead.next;
+            }
+        }
+
+
+        while (firstListHead != null){
+            ans.insertLast(firstListHead.val);
+            firstListHead = firstListHead.next;
+        }
+
+
+        while (secondListHead != null){
+            ans.insertLast(secondListHead.val);
+            secondListHead = secondListHead.next;
+        }
+        return ans;
+    }
 
 
 }

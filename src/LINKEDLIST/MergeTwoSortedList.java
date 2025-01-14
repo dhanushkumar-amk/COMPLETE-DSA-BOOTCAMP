@@ -18,6 +18,7 @@ public class MergeTwoSortedList {
         list1.display();
         list2.display();
 
+        LL.merge(list1, list2);
 
     }
 }
