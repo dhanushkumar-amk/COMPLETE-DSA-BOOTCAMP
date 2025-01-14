@@ -166,4 +166,9 @@ public class LL {
         node.next = insertRecursion(val, index-=1, node.next);
         return node;
     }
+
+
+
+    // remove all duplicates from sorted list
+
 }
