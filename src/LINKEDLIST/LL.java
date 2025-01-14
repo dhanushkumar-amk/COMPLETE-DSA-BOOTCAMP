@@ -298,5 +298,16 @@ public class LL {
     }
 
 
+    public  Node middleOfTheLinkedList(){
+        Node slow = head;
+        Node fast = head;
+
+        while (slow != null && fast != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return slow;
+    }
 
 }
