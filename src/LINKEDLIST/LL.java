@@ -149,6 +149,7 @@ public class LL {
     }
 
 
+    // questions
 
     // insert element using recursion
     public  void insertRecursion(int val, int index){
@@ -187,7 +188,6 @@ public class LL {
 
 
     // mergeTwo Sorted list
-
     public static LL merge(LL first, LL second){
 
         Node firstListHead = first.head;
@@ -218,5 +218,49 @@ public class LL {
         return ans;
     }
 
+
+    // Detect linkedList cycle
+    public boolean hasCycle(Node head){
+
+        Node fast = head;
+        Node slow = head;
+
+        while (fast != null && fast.next != null){
+            if (fast == slow){
+                return true;
+            }
+            slow = slow.next;
+            fast= fast.next.next;
+        }
+        return false;
+    }
+
+
+    // find the length of linked list cycle
+    public int LengthOfTheCycle(Node head){
+        Node fast = head;
+        Node slow = head;
+
+        while (fast != null && fast.next != null){
+            slow = slow.next;
+            fast= fast.next.next;
+
+            if (fast == slow){
+                Node temp = slow;  // because it initially on the slow so we use do while loop
+                int length = 0;
+                do{
+                    temp = temp.next;
+                    length++;
+                }while (temp != slow);
+
+                return length;
+            }
+        }
+        return 0; // if cycle is not present
+    }
+
+
+    // give the cycle where is started
+    
 
 }
