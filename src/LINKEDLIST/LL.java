@@ -211,7 +211,6 @@ public class LL {
             firstListHead = firstListHead.next;
         }
 
-
         while (secondListHead != null){
             ans.insertLast(secondListHead.val);
             secondListHead = secondListHead.next;
