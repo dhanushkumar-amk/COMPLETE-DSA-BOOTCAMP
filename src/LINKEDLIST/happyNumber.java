@@ -17,7 +17,7 @@ public class happyNumber {
             fast = findSquare(findSquare(fast));
         }while (fast != slow);
 
-        if (fast == 1)
+        if (fast == 1) // slow thats our wish
             return true;
         else
             return false;
