@@ -1,2 +1,7 @@
-package LINKEDLIST;public class LinkedListCycle {
+package LINKEDLIST;
+
+public class LinkedListCycle {
+    public static void main(String[] args) {
+        
+    }
 }
