@@ -1,2 +1,5 @@
-package LINKEDLIST;public class MergeTwoSortedList {
+package LINKEDLIST;
+
+public class MergeTwoSortedList {
+    
 }

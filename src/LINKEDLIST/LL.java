@@ -170,7 +170,6 @@ public class LL {
 
 
     // remove all duplicates from sorted list
-
     public void removeDuplicates(){
         Node node = head;
         while (node.next != null){
@@ -185,6 +184,10 @@ public class LL {
         node = tail;
         tail.next = null;
     }
+
+
+    // mergeTwo Sorted list
+
 
 
 }
