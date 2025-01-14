@@ -21,4 +21,5 @@ public class RemoveDuplicatesFromSortedList {
         list.display();
 
     }
+
 }

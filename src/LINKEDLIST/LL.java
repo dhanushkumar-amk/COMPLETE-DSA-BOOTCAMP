@@ -172,9 +172,7 @@ public class LL {
     // remove all duplicates from sorted list
 
     public void removeDuplicates(){
-
         Node node = head;
-
         while (node.next != null){
             if (node.val == node.next.val){
                 node.next = node.next.next;
