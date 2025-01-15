@@ -51,9 +51,10 @@ public class StringBuilderandStrings {
 
         System.out.println();
         // string operators
-        System.out.println('a' + 'b');
-        System.out.println("a" + "b");
-        System.out.println("a" + 'b');
+        System.out.println('a' + 'b'); // 195
+        System.out.println("a" + "b"); // ab
+        System.out.println("a" + 'b'); // ab
+        System.out.println("a" + 5);
 
 
     }
