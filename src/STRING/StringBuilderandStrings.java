@@ -35,7 +35,7 @@ public class StringBuilderandStrings {
 
         int[] arr = new int[]{1,2,3,4};
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr).toLowerCase().charAt(1));
 
 
     }
