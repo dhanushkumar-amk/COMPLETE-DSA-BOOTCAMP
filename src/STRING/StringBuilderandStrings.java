@@ -29,7 +29,7 @@ public class StringBuilderandStrings {
         System.out.println(one.equals(two)); // it only check values
 
 
-        System.out.println((char)56);
+        System.out.println( 56);
 
 
 
