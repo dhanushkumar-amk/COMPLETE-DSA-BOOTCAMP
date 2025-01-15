@@ -8,6 +8,8 @@ public class StringBuilderandStrings {
 
         System.out.println(a);
         System.out.println(b);
+
+        a = "ashwin";
     }
 }
 
