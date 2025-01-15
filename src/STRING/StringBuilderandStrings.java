@@ -93,7 +93,10 @@ public class StringBuilderandStrings {
         System.out.println(a1);
         System.out.println(a2);
 
-        
+        a1 = new StringBuilder("20");
+
+        System.out.println(a2);
+        System.out.println(a1);
     }
 
 
