@@ -444,7 +444,7 @@ public class LL {
     public boolean isPalindrome(){
 
         Node mid = middleOfTheLinkedList(head);
-        Node headSecond = reverseRecursion(mid);
+        Node headSecond = reverseInPlace(mid);
         Node reReverse = headSecond;
 
 
@@ -462,7 +462,7 @@ public class LL {
     }
 
     // reOrder the linked list
-
+    
 
 
 
