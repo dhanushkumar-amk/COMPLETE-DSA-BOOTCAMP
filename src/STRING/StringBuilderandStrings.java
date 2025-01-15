@@ -62,11 +62,15 @@ public class StringBuilderandStrings {
         // concat method
         System.out.println(a.concat(b));
 
+
+        // string performance
         String series = "";
 
         for (int i = 0; i < 26 ; i++) {
             char ch = (char)  ('a' + i);
             System.out.print( ch + " ");
+            series += ch;
+            System.out.println(series);
         }
     }
 
