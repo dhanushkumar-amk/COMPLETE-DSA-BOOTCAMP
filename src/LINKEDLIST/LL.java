@@ -384,6 +384,24 @@ public class LL {
 
 
     // inPlace reversal of the LL using iterative method
+    public void reverseInPlace(){
+
+        if (size < 2)
+            return;
+
+        Node previous = null;
+        Node present = head;
+        Node next = head.next;
+
+        while (present != null){
+            present.next = previous;
+            previous = present;
+            present = next;
+            next = next.next;
+        }
+
+        
+    }
 
 
 
