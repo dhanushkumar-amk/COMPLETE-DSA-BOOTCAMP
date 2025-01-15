@@ -76,6 +76,14 @@ public class StringBuilderandStrings {
 
 //        every time we create a seperate object so it become o(n2)
 
+        // we use StringBuilder
+
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i <26 ; i++) {
+            char ch = (char)  ('a' + i);
+            builder.append(ch);
+        }
+        System.out.println(builder);
     }
 
 
