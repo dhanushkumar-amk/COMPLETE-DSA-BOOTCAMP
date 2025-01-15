@@ -11,6 +11,38 @@ public class LLL {
     }
 
 
+    public ListNode middleList(ListNode head){
+
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while (fast != null && fast)
+
+        return slow;
+    }
+
+    // reverseList in place
+    public ListNode revereList(ListNode head){
+
+        if (head == null) return head;
+
+        ListNode previous = null;
+        ListNode present = head;
+        ListNode next = present.next;
+
+
+        while (present != null){
+
+            present.next = next;
+            previous = present;
+            present = next;
+            if (next != null)
+                next = next.next;
+        }
+
+        // now head = previous
+        return previous;
+    }
 
 
 
