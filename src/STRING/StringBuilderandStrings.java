@@ -40,8 +40,8 @@ public class StringBuilderandStrings {
         System.out.println(Arrays.toString(arr));
 
         // pretty printing
-        float a = 453.3547f;
-        System.out.printf("formatted num is %.2f", a);
+        float z = 453.3547f;
+        System.out.printf("formatted num is %.2f", z);
 
 
 
