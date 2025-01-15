@@ -573,6 +573,33 @@ public class LL {
         return head;
     }
 
-    
+    // rotate the list by k times
+    public Node rotateRight(Node head, int k){
+
+        if (k <= 0 || head == null || head.next == null)
+            return head;
+
+        Node last = head;
+        int length = 1;
+
+        while (last.next != null){
+            last = last.next;
+            length++;
+        }
+        last.next = head;
+
+        int rotations = k % length;
+        int skip = length - rotations;
+
+        Node newlast = head;
+        for (int i = 0; i < skip - 1 ; i++) {
+            newlast =  newlast.next;
+        }
+
+        head = newlast.next;
+        newlast.next = null;
+
+        return head;
+    }
 }
 
