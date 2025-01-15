@@ -59,9 +59,14 @@ public class StringBuilderandStrings {
         System.out.println('a' + 5);  // 102
         System.out.println((char) ('a' + 5)); // f
 
-
+        // concat method
         System.out.println(a.concat(b));
 
+        String series = "";
+
+        for (int i = 0; i < 26 ; i++) {
+            System.out.print((char)  'a' + i + " ");
+        }
     }
 
 
