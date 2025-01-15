@@ -3,11 +3,6 @@ package STRING;
 import java.util.Arrays;
 
 public class StringBuilderandStrings {
-    @Override
-    public String toString() {
-        return super.toString();
-    }
-
     public static void main(String[] args) {
 
         String a = "dhanushkumar";
@@ -41,7 +36,12 @@ public class StringBuilderandStrings {
         int[] arr = new int[]{1,2,3,4};
 
 
+        // to string method
         System.out.println(Arrays.toString(arr));
+
+        // pretty printing
+        float a = 453.3547f;
+        System.out.printf("formatted num is %.2f", a);
 
 
 
