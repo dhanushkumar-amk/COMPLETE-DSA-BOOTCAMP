@@ -1,12 +1,12 @@
 package STRING;
 
 public class CountVowelsInString {
-    public static void main(String[] args) {
-        String s = "dhanushkumar";
+    public static void main(StringBuilderandStrings[] args) {
+        StringBuilderandStrings s = "dhanushkumar";
         System.out.println(count(s));
     }
 
-    static int count(String s){
+    static int count(StringBuilderandStrings s){
 
         s = s.toLowerCase();
         int count = 0;

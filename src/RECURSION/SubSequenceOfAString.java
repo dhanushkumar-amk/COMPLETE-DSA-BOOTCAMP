@@ -11,7 +11,7 @@ public class SubSequenceOfAString {
 //        System.out.println(list);
     }
 
-//    static ArrayList<String> list = new ArrayList<>();
+//    static ArrayList<StringBuilderandStrings> list = new ArrayList<>();
 
     static void subSequence(String s, String answer){
 
