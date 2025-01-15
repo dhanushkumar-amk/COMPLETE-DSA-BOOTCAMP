@@ -91,6 +91,9 @@ public class StringBuilderandStrings {
 
         System.out.println(a1 == a2);
         System.out.println(a1);
+        System.out.println(a2);
+
+        
     }
 
 
