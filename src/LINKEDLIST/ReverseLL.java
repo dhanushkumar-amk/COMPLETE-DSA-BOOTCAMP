@@ -2,6 +2,9 @@ package LINKEDLIST;
 
 public class ReverseLL {
     public static void main(String[] args) {
+
+        // https://leetcode.com/problems/reverse-linked-list/description/
+
         LL list = new LL();
 
         list.insertLast(1);
