@@ -11,18 +11,17 @@ public class StringBuilderandStrings {
         System.out.println(a);
         System.out.println(b);
 
+
+        // how to know the both the values is stored in same place
+        String name1 = "ram";
+        String name2 = "ram";
+
+        System.out.println(name1 == name2);
+
+
     }
 
 
-    public class comparison{
-        public static void main(String[] args) {
-
-            String a = "ram";
-            String b = "ram";
-
-            System.out.println(a == b);
-        }
-    }
 }
 
 
