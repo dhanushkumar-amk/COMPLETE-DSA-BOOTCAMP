@@ -18,12 +18,16 @@ public class StringBuilderandStrings {
 
         System.out.println(name1 == name2);
 
+        // create the seperate obj using new keyword
         String one = new String("hello");
         String two = new String("hello");
 
-        System.out.println(one == two);
+        // it checks the both values and reference value are same or not
+        System.out.println(one == two); // false because we create seprate reference type
 
-        System.out.println(one.equals(two));
+        System.out.println(one.equals(two)); // it only check values
+
+        System.out.println(one.hashCode());
 
 
 
