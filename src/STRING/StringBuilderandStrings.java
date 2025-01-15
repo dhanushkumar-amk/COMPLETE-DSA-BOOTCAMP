@@ -18,6 +18,12 @@ public class StringBuilderandStrings {
 
         System.out.println(name1 == name2);
 
+        String one = new String("hello");
+        String two = new String("hello");
+
+        System.out.println(one == two);
+
+
 
     }
 
