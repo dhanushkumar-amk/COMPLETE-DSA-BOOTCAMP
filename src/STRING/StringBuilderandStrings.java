@@ -90,6 +90,7 @@ public class StringBuilderandStrings {
         StringBuilder a2 = new StringBuilder("10");
 
         System.out.println(a1 == a2);
+        System.out.println(a1);
     }
 
 
