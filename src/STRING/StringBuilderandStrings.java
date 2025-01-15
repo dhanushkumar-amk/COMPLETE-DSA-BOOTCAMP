@@ -6,8 +6,8 @@ public class StringBuilderandStrings {
         String a = "dhanushkumar";
         String b = "dhanushkumar";
 
-        a = "ashwin";
-        
+        a = "ram";
+
         System.out.println(a);
         System.out.println(b);
 
