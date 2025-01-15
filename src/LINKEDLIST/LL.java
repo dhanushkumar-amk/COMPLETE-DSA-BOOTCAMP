@@ -399,46 +399,7 @@ public class LL {
         return previous;
     }
 
-    // reverse a linkedList in an given range
-    public void reverseBetween(int left, int right){
 
-        // left == right means there is only one element
-        if (left == right)
-            return;
-        // return head;
-
-        // skip first left - 1 nodes
-        Node present = head;
-        Node previous = null;
-        Node next = present.next;
-
-        for (int i = 0; present != null && i < left - 1; i++) {
-            previous = present;
-            present = present.next;
-        }
-        Node last = previous;
-        Node newEnd = present;
-
-        // reverse between left and right
-        for (int i = 0; present != null && i < right - left + 1; i++) {
-            present.next = previous;
-            previous = present;
-            present = next;
-
-            if (next != null)
-                next = next.next;
-        }
-
-        if (last != null)
-            last.next = previous;
-        else
-            head = previous;
-
-        newEnd.next = present;
-
-        // return head;
-
-    }
 
     // palindromic linked list
     public boolean isPalindrome(){
@@ -488,7 +449,130 @@ public class LL {
 
     }
 
-    
+    // the below three question i similar
+    // reverse a linkedList in an given range
+    public void reverseBetween(int left, int right){
 
+        // left == right means there is only one element
+        if (left == right)
+            return;
+        // return head;
+
+        // skip first left - 1 nodes
+        Node present = head;
+        Node previous = null;
+        Node next = present.next;
+
+        for (int i = 0; present != null && i < left - 1; i++) {
+            previous = present;
+            present = present.next;
+        }
+        Node last = previous;
+        Node newEnd = present;
+
+        // reverse between left and right
+        for (int i = 0; present != null && i < right - left + 1; i++) {
+            present.next = previous;
+            previous = present;
+            present = next;
+
+            if (next != null)
+                next = next.next;
+        }
+
+        if (last != null)
+            last.next = previous;
+        else
+            head = previous;
+
+        newEnd.next = present;
+
+        // return head;
+
+    }
+
+    public Node reverseKGroup( Node head, int k){
+
+        if (k <= 1 || head == null)
+            return head;
+
+        Node present = head;
+        Node previous = null;
+
+
+
+        while (true) {
+
+            Node last = previous;
+            Node newEnd = present;
+            Node next = present.next;
+
+            // reverse between left and right
+            for (int i = 0; present != null && i < k; i++) {
+                present.next = previous;
+                previous = present;
+                present = next;
+
+                if (next != null)
+                    next = next.next;
+            }
+
+            if (last != null)
+                last.next = previous;
+            else
+                head = previous;
+
+            newEnd.next = present;
+
+            if (present == null) break;
+
+            previous = newEnd;
+        }
+        return head;
+    }
+
+    public Node reverseAlternateKGroup( Node head, int k){
+
+        if (k <= 1 || head == null)
+            return head;
+
+        Node present = head;
+        Node previous = null;
+
+
+
+        while (present != null) {
+
+            Node last = previous;
+            Node newEnd = present;
+            Node next = present.next;
+
+            // reverse between left and right
+            for (int i = 0; present != null && i < k; i++) {
+                present.next = previous;
+                previous = present;
+                present = next;
+
+                if (next != null)
+                    next = next.next;
+            }
+
+            if (last != null)
+                last.next = previous;
+            else
+                head = previous;
+
+            newEnd.next = present;
+
+            // skip the k nodes here
+            for (int i = 0;present !=null && i < k ; i++) {
+                previous = present;
+                present = present.next;
+            }
+        }
+        return head;
+    }
+
+    
 }
 
