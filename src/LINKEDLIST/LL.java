@@ -328,7 +328,6 @@ public class LL {
     public void bubbleSort(){
         bubbleSort(size - 1, 0);
     }
-
     private void bubbleSort(int row, int column) {
 
         // base case
@@ -367,8 +366,10 @@ public class LL {
         }
     }
 
-
+    // reverse a list using recursion
     
+
+
 
 
 
