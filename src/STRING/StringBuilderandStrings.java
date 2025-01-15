@@ -31,6 +31,9 @@ public class StringBuilderandStrings {
 
         System.out.println( 56);
 
+        int[] arr = new int[]{1,2,3,4};
+
+        System.out.println(arr);
 
 
     }
