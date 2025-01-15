@@ -1,6 +1,6 @@
 package LINKEDLIST;
 
-public class ReOrderLL {
+public class ReverseLL {
     public static void main(String[] args) {
 
         // https://leetcode.com/problems/reverse-linked-list/description/
@@ -15,7 +15,7 @@ public class ReOrderLL {
 
         list.display();
 
-        list.reOrderList();
+
 
         list.display();
     }
