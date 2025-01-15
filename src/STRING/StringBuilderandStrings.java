@@ -7,6 +7,7 @@ public class StringBuilderandStrings {
         String b = "dhanushkumar";
 
         a = "ram";
+        a = "arun";
 
         System.out.println(a);
         System.out.println(b);
