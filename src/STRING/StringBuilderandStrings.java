@@ -50,13 +50,17 @@ public class StringBuilderandStrings {
         System.out.printf("hello my name is %s, i am so %s", "dhanush", "cool");
 
         System.out.println();
+
         // string operators
         System.out.println('a' + 'b'); // 195
         System.out.println("a" + "b"); // ab
         System.out.println("a" + 'b'); // ab
-        System.out.println("a" + 5);
-        System.out.println((char)('a' + 5));
+        System.out.println("a" + 5); // a5 // int can convert into Integer wrapper class it calls toString() method
+        System.out.println('a' + 5);  // 102
+        System.out.println((char) ('a' + 5)); // f
 
+
+        System.out.println(a.concat(b));
 
     }
 
