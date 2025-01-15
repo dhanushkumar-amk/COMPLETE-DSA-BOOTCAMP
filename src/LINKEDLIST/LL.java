@@ -366,12 +366,12 @@ public class LL {
     }
 
     // reverse a list using recursion
-    public void reverseRecursion(Node node){
+    public Node reverseRecursion(Node node){
 
         // base case
         if (node == tail){
             head = tail;
-            return;
+            return node;
         }
 
         // calling next next until reach last
@@ -380,14 +380,16 @@ public class LL {
         tail.next = node;
         tail = node;
         tail.next = null;
+        return node;
     }
 
 
     // inPlace reversal of the LL using iterative method
-    public void reverseInPlace(){
-
+    public Node reverseInPlace(Node head){
+// void reverseInPlace()
         if (size < 2)
-            return;
+            return head;
+//            return
 
         Node previous = null;
         Node present = head;
@@ -401,7 +403,8 @@ public class LL {
             if (next != null)
                 next = next.next;
         }
-        head = previous;
+//        head = previous;
+        return previous;
     }
 
     // reverse a linkedList in an given range
@@ -447,7 +450,27 @@ public class LL {
 
 
     // palindromic linked list
-    
+    public boolean isPalindrome(){
+
+        Node mid = middleOfTheLinkedList(head);
+        Node headSecond = reverseRecursion(mid);
+        Node reReverse = headSecond;
+
+
+        // compare both half
+        while (head != null && headSecond != null){
+            if (head.val != headSecond.val)
+                break;
+
+            head = head.next;
+            headSecond = headSecond.next;
+        }
+        reverseRecursion(reReverse);
+
+        return head == null || headSecond == null;  // the condition can't be break then it is a palindrome
+    }
+
+
 
 }
 
