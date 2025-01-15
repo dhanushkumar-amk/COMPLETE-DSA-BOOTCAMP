@@ -462,7 +462,31 @@ public class LL {
     }
 
     // reOrder the linked list
-    
+    public void reOrderList(){
+
+        if (head == null ||head.next == null)
+            return;
+
+        Node mid = middleOfTheLinkedList(head);
+        Node headSecond = reverseInPlace(mid);
+        Node headFirst = head;
+
+        while(headFirst != null && headSecond != null) {
+
+            Node temp = headFirst.next;
+            headFirst.next = headSecond;
+            headFirst = temp;
+
+            temp = headSecond.next;
+            headSecond.next = headFirst;
+            headSecond = temp;
+        }
+
+        // for last element the next to last is null
+        if (headFirst != null)
+            headFirst.next = null;
+
+    }
 
 
 

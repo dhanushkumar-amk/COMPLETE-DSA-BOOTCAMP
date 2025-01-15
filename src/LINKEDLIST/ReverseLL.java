@@ -15,7 +15,7 @@ public class ReverseLL {
 
         list.display();
 
-        list.reverseInPlace();
+        list.reOrderList();
 
         list.display();
     }
