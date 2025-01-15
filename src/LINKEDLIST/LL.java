@@ -405,7 +405,45 @@ public class LL {
     }
 
     // reverse a linkedList in an given range
-    
+    public void reverseBetween(int left, int right){
+
+        // left == right means there is only one element
+        if (left == right)
+            return;
+        // return head;
+
+        // skip first left - 1 nodes
+        Node present = head;
+        Node previous = null;
+        Node next = present.next;
+
+        for (int i = 0; present != null && i < left - 1; i++) {
+            previous = present;
+            present = present.next;
+        }
+        Node last = previous;
+        Node newEnd = present;
+
+        // reverse between left and right
+        for (int i = 0; present != null && i < right - left + 1; i++) {
+            present.next = previous;
+            previous = present;
+            present = next;
+
+            if (next != null)
+                next = next.next;
+        }
+
+        if (last != null)
+            last.next = previous;
+        else
+            head = previous;
+
+        newEnd.next = present;
+
+        // return head;
+
+    }
 
 }
 
