@@ -2,9 +2,9 @@ package LINKEDLIST;
 
 public class LL {
 
-    private Node head;
-    private Node tail;
-    private int size;
+      private Node head;
+      private Node tail;
+      private int size;
 
     public LL(){
         this.size = 0;
@@ -131,7 +131,6 @@ public class LL {
         return null;
     }
 
-
     // important class constructor
     private class Node{
         private int val;
@@ -167,7 +166,6 @@ public class LL {
         return node;
     }
 
-
     // remove all duplicates from sorted list
     public void removeDuplicates(){
         Node node = head;
@@ -183,7 +181,6 @@ public class LL {
         node = tail;
         tail.next = null;
     }
-
 
     // mergeTwo Sorted list
     public static LL merge(LL first, LL second){
@@ -216,7 +213,6 @@ public class LL {
         return ans;
     }
 
-
     // Detect linkedList cycle
     public boolean hasCycle(Node head){
 
@@ -232,7 +228,6 @@ public class LL {
         }
         return false;
     }
-
 
     // find the length of linked list cycle
     public int LengthOfTheCycle(Node head){
@@ -256,7 +251,6 @@ public class LL {
         }
         return 0; // if cycle is not present
     }
-
 
     // give the cycle where is started
     public Node detectedCycleStartPlace(Node head){
@@ -294,7 +288,6 @@ public class LL {
 
         return first;  // or slow your wish
     }
-
 
     // middle of the linked list
     public static Node middleOfTheLinkedList(Node head ){
@@ -383,7 +376,6 @@ public class LL {
         return node;
     }
 
-
     // inPlace reversal of the LL using iterative method
     public Node reverseInPlace(Node head){
 // void reverseInPlace()
@@ -448,7 +440,6 @@ public class LL {
 
     }
 
-
     // palindromic linked list
     public boolean isPalindrome(){
 
@@ -469,6 +460,8 @@ public class LL {
 
         return head == null || headSecond == null;  // the condition can't be break then it is a palindrome
     }
+
+    // reOrder the linked list
 
 
 
