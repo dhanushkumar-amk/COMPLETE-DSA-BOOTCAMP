@@ -84,6 +84,12 @@ public class StringBuilderandStrings {
             builder.append(ch);
         }
         System.out.println(builder);
+
+
+        StringBuilder a1 = new StringBuilder("10");
+        StringBuilder a2 = new StringBuilder("10");
+
+        System.out.println(a1 == a2);
     }
 
 
