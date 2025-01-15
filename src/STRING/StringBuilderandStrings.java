@@ -55,6 +55,7 @@ public class StringBuilderandStrings {
         System.out.println("a" + "b"); // ab
         System.out.println("a" + 'b'); // ab
         System.out.println("a" + 5);
+        System.out.println('a' + 5);
 
 
     }
