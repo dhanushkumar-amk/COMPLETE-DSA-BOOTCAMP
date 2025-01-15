@@ -132,8 +132,7 @@ public class LL {
     }
 
 
-
-
+    // important class constructor
     private class Node{
         private int val;
         private  Node next;
@@ -367,9 +366,24 @@ public class LL {
     }
 
     // reverse a list using recursion
-    
+    public void reverseRecursion(Node node){
+
+        // base case
+        if (node == tail){
+            head = tail;
+            return;
+        }
+
+        // calling next next until reach last
+        reverseRecursion(node.next);
+
+        tail.next = node;
+        tail = node;
+        tail.next = null;
+    }
 
 
+    // inPlace reversal of the LL using iterative method
 
 
 
