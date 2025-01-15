@@ -46,7 +46,11 @@ public class StringBuilderandStrings {
         System.out.println();
         System.out.printf(" %.3f",Math.PI);
 
+        System.out.println();
         System.out.printf("hello my name is %s, i am so %s", "dhanush", "cool");
+
+        // string operators
+        System.out.println('a' + 'b');
 
 
 
