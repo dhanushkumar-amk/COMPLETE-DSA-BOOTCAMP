@@ -41,7 +41,7 @@ public class StringBuilderandStrings {
 
         // pretty printing
         float z = 453.3547f;
-        System.out.printf("formatted num is %.2f", z);
+        System.out.printf("formatted num is %.2f", z); // % place holder
 
 
 
