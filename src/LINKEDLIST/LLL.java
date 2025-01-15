@@ -11,13 +11,16 @@ public class LLL {
     }
 
 
+    // middle list
     public ListNode middleList(ListNode head){
 
         ListNode fast = head;
         ListNode slow = head;
 
-        while (fast != null && fast)
-
+        while (fast != null && fast.next != null){
+            fast = fast.next.next; // for two steps
+            slow = fast.next; // for one step
+        }
         return slow;
     }
 
