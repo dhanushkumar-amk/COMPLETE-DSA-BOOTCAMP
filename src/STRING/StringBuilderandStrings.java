@@ -49,9 +49,10 @@ public class StringBuilderandStrings {
         System.out.println();
         System.out.printf("hello my name is %s, i am so %s", "dhanush", "cool");
 
+        System.out.println();
         // string operators
         System.out.println('a' + 'b');
-
+        System.out.println("a" + "b");
 
 
     }
