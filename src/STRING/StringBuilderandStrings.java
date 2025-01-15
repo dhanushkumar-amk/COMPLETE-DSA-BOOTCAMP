@@ -11,6 +11,7 @@ public class StringBuilderandStrings {
         System.out.println(a);
         System.out.println(b);
 
+        // string pooling means store the same reference for a similar values
 
         // how to know the both the values is stored in same place
         String name1 = "ram";
@@ -26,8 +27,6 @@ public class StringBuilderandStrings {
         System.out.println(one == two); // false because we create seprate reference type
 
         System.out.println(one.equals(two)); // it only check values
-
-        System.out.println(one.translateEscapes());
 
 
 
