@@ -3,6 +3,11 @@ package STRING;
 import java.util.Arrays;
 
 public class StringBuilderandStrings {
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
     public static void main(String[] args) {
 
         String a = "dhanushkumar";
@@ -35,7 +40,10 @@ public class StringBuilderandStrings {
 
         int[] arr = new int[]{1,2,3,4};
 
-        System.out.println(Arrays.toString(arr).charAt(1));
+
+        System.out.println(Arrays.toString(arr));
+
+
 
 
     }
