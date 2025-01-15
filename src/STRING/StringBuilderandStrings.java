@@ -71,8 +71,9 @@ public class StringBuilderandStrings {
             System.out.print( ch + " ");
             series += ch;
         }
+        System.out.println();
         System.out.println(series);
-        
+
     }
 
 
