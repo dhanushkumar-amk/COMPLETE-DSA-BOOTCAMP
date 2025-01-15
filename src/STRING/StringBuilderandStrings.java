@@ -65,7 +65,8 @@ public class StringBuilderandStrings {
         String series = "";
 
         for (int i = 0; i < 26 ; i++) {
-            System.out.print((char)  'a' + i + " ");
+            char ch = (char)  ('a' + i);
+            System.out.print( ch + " ");
         }
     }
 
