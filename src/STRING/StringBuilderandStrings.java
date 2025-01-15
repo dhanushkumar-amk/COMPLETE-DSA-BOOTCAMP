@@ -1,5 +1,7 @@
 package STRING;
 
+import java.util.Arrays;
+
 public class StringBuilderandStrings {
     public static void main(String[] args) {
 
@@ -33,7 +35,7 @@ public class StringBuilderandStrings {
 
         int[] arr = new int[]{1,2,3,4};
 
-        System.out.println(arr);
+        System.out.println(Arrays.toString(arr));
 
 
     }
