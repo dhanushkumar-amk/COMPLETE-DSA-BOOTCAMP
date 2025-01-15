@@ -27,7 +27,7 @@ public class StringBuilderandStrings {
 
         System.out.println(one.equals(two)); // it only check values
 
-        System.out.println(one.hashCode());
+        System.out.println(one.translateEscapes());
 
 
 
