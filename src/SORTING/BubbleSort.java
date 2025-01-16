@@ -5,10 +5,10 @@ import java.util.Arrays;
 public class BubbleSort {
     public static void main(String[] args) {
     int[] arr = {3,1,5,4,2};
-    System.out.println(Arrays.toString(arr));
-    
+    System.out.println("Before sorting = \t" + Arrays.toString(arr));
+
     bubbleSort(arr);
-    System.out.println(Arrays.toString(arr));
+    System.out.println("After sorting = \t"+Arrays.toString(arr));
     }
 
     static void bubbleSort(int[] arr){
