@@ -21,8 +21,9 @@ public class InsertionSort {
                     arr[j] = arr[j-1];
                     arr[j-1] = temp;
                 }
-//                else
-//                    break;
+                // break if the value of j is greater than j - 1 then it is already sorted
+                else
+                    break;
             }
         }
     }
