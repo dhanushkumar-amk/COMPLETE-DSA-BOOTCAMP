@@ -14,20 +14,19 @@ public class SelectionSort {
     static void selectionSort(int[] arr){
 
         for (int i = 0; i < arr.length; i++) {
+
             // find the max value in remaining array and swap it as a correct index
             int last = arr.length - i - 1;
-            int maxIndex = getMaxElement(arr, 0, last);
+            int maxIndex = getMaxIndex(arr, 0, last);
 
             // swap max index with last index
                 int temp = arr[last];
                 arr[last] = arr[maxIndex];
                 arr[maxIndex] = temp;
         }
-
-
     }
 
-    private static int getMaxElement(int[] arr, int start, int end) {
+    private static int getMaxIndex(int[] arr, int start, int end) {
         int max = start;
         for (int i = start; i <end; i++) {
             if (arr[max] < arr[i]){
