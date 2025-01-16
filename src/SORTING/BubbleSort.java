@@ -5,10 +5,8 @@ import java.util.Arrays;
 public class BubbleSort {
     public static void main(String[] args) {
     int[] arr = {3,1,5,4,2};
-
     bubbleSort(arr);
-
-        System.out.println(Arrays.toString(arr));
+    System.out.println(Arrays.toString(arr));
     }
 
     static void bubbleSort(int[] arr){
@@ -20,7 +18,7 @@ public class BubbleSort {
                 if (arr[j] < arr[j - 1]){
                     int temp = arr[j];
                     arr[j] = arr[j - 1];
-                    arr[j = 1] = temp;
+                    arr[j - 1] = temp;
                 }
             }
         }
