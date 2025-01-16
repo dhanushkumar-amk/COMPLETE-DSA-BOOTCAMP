@@ -34,5 +34,6 @@ public class SelectionSort {
                 max = i;
             }
         }
+        return max;
     }
 }
