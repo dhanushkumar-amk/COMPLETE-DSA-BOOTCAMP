@@ -5,5 +5,7 @@ public class FirstMissingPositiveNumber {
 
     }
 
-    public static 
+    public static int firstMissingPositive(int[] arr) {
+        
+    }
 }
