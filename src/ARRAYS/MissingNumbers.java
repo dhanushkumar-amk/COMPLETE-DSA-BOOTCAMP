@@ -2,7 +2,7 @@ package ARRAYS;
 
 public class MissingNumbers {
     public static void main(String[] args) {
-        int[] arr = {3,0,1};
+        int[] arr = {0,4,5,2,1};
         System.out.println(missingNumbers(arr));
     }
 
