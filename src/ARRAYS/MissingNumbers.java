@@ -6,15 +6,15 @@ public class MissingNumbers {
         System.out.println(missingNumbers(arr));
     }
 
-    static int missingNumbers(int[] arr){
+    static int missingNumbers(int[] nums){
 
         int sum = 0;
-        for (int i = 1; i < arr.length; i++) {
-            sum += arr[i];
+        for (int i = 0; i < nums.length; i++) {
+            sum = sum + nums[i];
         }
+        int actualSum = nums.length * (nums.length + 1) / 2;
+        int missingNum = actualSum - sum;
 
-        int actualSum = arr.length * (arr.length + 1)/2;
-        int missingNumber = actualSum - sum;
-        return missingNumber;
+        return missingNum;
     }
 }
