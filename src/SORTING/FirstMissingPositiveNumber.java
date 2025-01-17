@@ -2,7 +2,8 @@ package SORTING;
 
 public class FirstMissingPositiveNumber {
     public static void main(String[] args) {
-
+        int[] arr = {1,2,0};
+        System.out.println(firstMissingPositive(arr));
     }
 
     public static int firstMissingPositive(int[] arr) {
