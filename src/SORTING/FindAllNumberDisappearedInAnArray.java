@@ -1,20 +1,15 @@
 package SORTING;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+
 
 public class FindAllNumberDisappearedInAnArray {
     public static void main(String[] args) {
     int[] arr = {4,3,2,7,8,2,3,1};
-    ArrayList<Integer> ans  = findDisappearedNumbers(arr);
 
-        for (int i = 0; i < ans.size() ; i++) {
-            System.out.println(ans.get(i));
-        }
 
     }
-    static ArrayList<Integer> findDisappearedNumbers(int[] arr){
+    static List<Integer> findDisappearedNumbers(int[] arr){
         ArrayList<Integer> list = new ArrayList<>();
 
         int i = 0;
@@ -31,7 +26,7 @@ public class FindAllNumberDisappearedInAnArray {
 
         // just find the missing number and add as index + 1
         for (int index = 0; index < arr.length; index++) {
-            if (arr[index] != index)
+            if (arr[index] != index + 1)
                 list.add(index + 1);
         }
         return list;
