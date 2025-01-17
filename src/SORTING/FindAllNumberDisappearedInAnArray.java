@@ -8,7 +8,11 @@ public class FindAllNumberDisappearedInAnArray {
     public static void main(String[] args) {
     int[] arr = {4,3,2,7,8,2,3,1};
     ArrayList<Integer> ans  = findDisappearedNumbers(arr);
-        System.out.println(ans);
+
+        for (int i = 0; i < ans.size() ; i++) {
+            System.out.println(ans.get(i));
+        }
+
     }
     static ArrayList<Integer> findDisappearedNumbers(int[] arr){
         ArrayList<Integer> list = new ArrayList<>();
