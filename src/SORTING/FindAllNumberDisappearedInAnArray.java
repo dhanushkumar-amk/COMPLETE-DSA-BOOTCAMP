@@ -8,8 +8,9 @@ public class FindAllNumberDisappearedInAnArray {
     int[] arr = {4,3,2,7,8,2,3,1};
 
 
+
     }
-    static List<Integer> findDisappearedNumbers(int[] arr){
+ public  static List<Integer> findDisappearedNumbers(int[] arr){
         ArrayList<Integer> list = new ArrayList<>();
 
         int i = 0;
