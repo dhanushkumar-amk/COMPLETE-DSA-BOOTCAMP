@@ -25,7 +25,7 @@ public class FindAllDuplicatesElementsInArray {
         List<Integer> list = new ArrayList<>();
         for (int index = 0; index < arr.length; index++) {
             if (arr[index] != index + 1)
-                list.add(index + 1);
+                list.add(arr[index]);
         }
         return list;
     }
