@@ -14,7 +14,7 @@ public class MissingNumbers {
             sum += arr[i];
         }
 
-        int actualSum = (n * n + 1)/2;
+        int actualSum = n * (n + 1)/2;
         int missingNumber = actualSum - sum;
         return missingNumber;
     }
