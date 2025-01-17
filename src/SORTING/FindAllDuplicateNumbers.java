@@ -6,7 +6,6 @@ public class FindAllDuplicateNumbers {
         System.out.println(duplicateNumber(arr));
     }
     static int duplicateNumber(int[] arr){
-
         int i = 0;
         while(i < arr.length){
             if (arr[i] != i + 1) {
