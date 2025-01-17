@@ -10,6 +10,7 @@ public class CyclicSort {
         cyclicSort(arr);
         System.out.println(Arrays.toString(arr));
     }
+
     static void cyclicSort(int[] arr){
         
     }
