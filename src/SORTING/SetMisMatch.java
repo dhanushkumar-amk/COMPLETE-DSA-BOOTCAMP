@@ -1,9 +1,13 @@
 package SORTING;
 
 public class SetMisMatch {
-
     public static void main(String[] args) {
+        int[] arr = {1,2,2,4};
+        int[] ans = findErrorNums(arr);
 
+        for (int i = 0; i < ans.length ; i++) {
+            System.out.print(arr[i]);
+        }
     }
 
    static int[] findErrorNums(int[] arr) {
