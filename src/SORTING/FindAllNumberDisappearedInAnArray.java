@@ -7,7 +7,8 @@ import java.util.List;
 public class FindAllNumberDisappearedInAnArray {
     public static void main(String[] args) {
     int[] arr = {4,3,2,7,8,2,3,1};
-        System.out.println(Arrays.toString(arr));
+    List<Integer> ans  = findDisappearedNumbers(arr);
+        System.out.println(Arrays.toString(ans));
     }
     static List<Integer> findDisappearedNumbers(int[] arr){
         ArrayList<Integer> list = new ArrayList<>();
