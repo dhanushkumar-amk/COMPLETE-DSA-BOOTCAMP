@@ -19,7 +19,7 @@ public class FindAllNumberDisappearedInAnArray {
         int i = 0;
         while( i < arr.length){
             int correctIndex = arr.length - 1;
-            if (arr[i] != correctIndex){
+            if (arr[i] != arr[correctIndex]){
                 int temp = arr[i];
                 arr[i] = arr[correctIndex];
                 arr[correctIndex] = temp;
