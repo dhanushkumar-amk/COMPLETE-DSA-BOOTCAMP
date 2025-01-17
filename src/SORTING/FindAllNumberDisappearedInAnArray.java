@@ -7,10 +7,10 @@ import java.util.List;
 public class FindAllNumberDisappearedInAnArray {
     public static void main(String[] args) {
     int[] arr = {4,3,2,7,8,2,3,1};
-    List<Integer> ans  = findDisappearedNumbers(arr);
-        System.out.println(Arrays.toString(ans));
+    ArrayList<Integer> ans  = findDisappearedNumbers(arr);
+        System.out.println(ans);
     }
-    static List<Integer> findDisappearedNumbers(int[] arr){
+    static ArrayList<Integer> findDisappearedNumbers(int[] arr){
         ArrayList<Integer> list = new ArrayList<>();
 
         int i = 0;
