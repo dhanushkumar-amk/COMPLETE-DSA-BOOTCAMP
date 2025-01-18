@@ -76,7 +76,12 @@ public class AVLTREE {
         // the max height is left node and right node + 1 => is a new height
         node.height = Math.max(height(node.left), height(node.right)) + 1;
 
-        return node;
+        // after rotate the node return itself as a root root up up and finally return root
+        return rotate(node);
+    }
+
+    // rotate function
+    private Node rotate(Node node) {
     }
 
     // insert through array
