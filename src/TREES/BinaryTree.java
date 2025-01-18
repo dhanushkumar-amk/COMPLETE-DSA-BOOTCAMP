@@ -164,9 +164,14 @@ public class BinaryTree {
         tree.populate(scanner);
        // tree.display();
         tree.prettyDisplay();
-        
+
+        System.out.println();
+        System.out.println();
+
         tree.preOrder();
+        System.out.println();
         tree.inOrder();
+        System.out.println();
         tree.postOrder();
     }
 }
