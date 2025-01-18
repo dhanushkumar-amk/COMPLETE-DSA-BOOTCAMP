@@ -1,2 +1,5 @@
-package TREES;public class BinarySearchTree {
+package TREES;
+
+public class BinarySearchTree {
+
 }
