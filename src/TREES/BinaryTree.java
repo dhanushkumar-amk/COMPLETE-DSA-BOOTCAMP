@@ -76,6 +76,35 @@ public class BinaryTree {
         display(node.right, indent + "\t");
 
     }
+
+
+    // pretty display
+    public void prettyDisplay(){
+        prettyDisplay(root, 0);
+    }
+
+    private void prettyDisplay(Node node, int level) {
+        // base case
+        if (node == null)
+            return;
+
+        // go to the right most element first
+        prettyDisplay(node.right, level + 1);
+
+        // if level != 0 means i am not in root
+        if (level != 0){
+            for (int i = 0; i <level - 1 ; i++) {
+                System.out.print("|\t\t");
+            }
+            System.out.println("|----> " + node.value);
+        }else{
+            System.out.println(node.value); // print the root
+        }
+
+        // then go left
+        prettyDisplay(node.left, level + 1);
+
+    }
 }
 
 
@@ -84,6 +113,7 @@ class Main{
         Scanner scanner = new Scanner(System.in);
         BinaryTree tree = new BinaryTree();
         tree.populate(scanner);
-        tree.display();
+       // tree.display();
+        tree.prettyDisplay();
     }
 }
