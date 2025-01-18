@@ -119,8 +119,9 @@ public class BinaryTree {
         // Node -> left ->  right
 
         preOrder(node.left);
-        System.out.println(node.value);
         preOrder(node.right);
+        System.out.println(node.value);
+
     }
 }
 
