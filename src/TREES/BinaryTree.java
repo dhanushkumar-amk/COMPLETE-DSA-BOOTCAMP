@@ -105,6 +105,22 @@ public class BinaryTree {
         prettyDisplay(node.left, level + 1);
 
     }
+
+
+    // preorder traversal
+    public void preOrder(){
+        preOrder(root);
+    }
+
+    private void preOrder(Node node) {
+        if (node == null)
+            return;
+
+        // Node -> left ->  right
+        System.out.println(node.value);
+        preOrder(node.left);
+        preOrder(node.right);
+    }
 }
 
 
@@ -115,5 +131,6 @@ public class BinaryTree {
         tree.populate(scanner);
        // tree.display();
         tree.prettyDisplay();
+        tree.preOrder();
     }
 }
