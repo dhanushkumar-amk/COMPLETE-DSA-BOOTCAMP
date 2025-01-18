@@ -125,7 +125,7 @@ class mainBinarySearch{
         BinarySearchTree tree = new BinarySearchTree();
 
 //        int[] arr = {5,2,7,1,4,6,9,8,3,10};
-        int[] arr = {1,2,3,4,5,6,7,8,9,10};
+        int[] arr = {11,6,22,7,33,4,44,9,56,45};
 
 //        tree.populate(arr);
         tree.populateSorted(arr);
