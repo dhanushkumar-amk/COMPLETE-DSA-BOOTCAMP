@@ -14,7 +14,7 @@ public class RadixSort {
         int max = Arrays.stream(arr).max().getAsInt();
 
         // do count sort for every digit place
-        for (int exp = 0; max/exp > 0; exp *= 10) {
+        for (int exp = 1; max/exp > 0; exp *= 10) {
             countSort(arr, exp);
         }
 
