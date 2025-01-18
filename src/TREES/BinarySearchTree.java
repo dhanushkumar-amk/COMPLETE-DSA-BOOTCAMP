@@ -130,5 +130,7 @@ class mainBinarySearch{
 //        tree.populate(arr);
         tree.populateSorted(arr);
         tree.display();
+        System.out.println(tree.isEmpty());
+        System.out.println(tree.isBalanced());
     }
 }
