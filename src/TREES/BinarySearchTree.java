@@ -87,6 +87,7 @@ public class BinarySearchTree {
         }
     }
 
+    // insert the element in sorted array
     public void populateSorted(int[] arr){
         populateSorted(arr, 0, arr.length);
     }
@@ -125,6 +126,7 @@ class mainBinarySearch{
 
 //        int[] arr = {5,2,7,1,4,6,9,8,3,10};
         int[] arr = {1,2,3,4,5,6,7,8,9,10};
+
 //        tree.populate(arr);
         tree.populateSorted(arr);
         tree.display();
