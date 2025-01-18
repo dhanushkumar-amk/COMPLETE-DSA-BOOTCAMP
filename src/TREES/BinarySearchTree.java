@@ -2,8 +2,7 @@ package TREES;
 
 public class BinarySearchTree {
 
-    public BinarySearchTree() {
-    }
+
 
     public class Node{
         private int value;
@@ -22,12 +21,17 @@ public class BinarySearchTree {
 
     private Node root;
 
+    public BinarySearchTree() {
+    }
+
+    // calculate height function
     public int height(Node node){
         if (node == null)
             return -1;
         return node.height;
     }
 
+    // is empty function
     // root is null means there is empty
     public boolean isEmpty(){
         return root == null;
@@ -50,7 +54,30 @@ public class BinarySearchTree {
         display(node.right, "Right child of " + node.getValue() + " : ");
     }
 
-    
+    // insert function
+    public void insert(int value){
+
+    }
+
+    private Node insert(int value, Node node){
+
+        // base case
+        // if the value is null then the given value act as a root element
+        if (node == null) {
+            node = new Node(value);
+            return node;
+        }
+
+        if (value < node.value){
+        node.left = insert(value, node.left);
+        }
+
+        if (value > node.value){
+            node.right = insert(value, node.right);
+        }
+
+        
+    }
 
 
 }
