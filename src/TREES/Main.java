@@ -1,2 +1,5 @@
-package TREES;public class Main {
+package TREES;
+
+public class Main {
+    
 }
