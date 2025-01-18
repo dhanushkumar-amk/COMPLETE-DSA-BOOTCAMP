@@ -189,9 +189,9 @@ class AVLMain{
         for (int i = 0; i <1000 ; i++) {
             tree.insert(i);
         }
-       
+
 //        tree.populate(arr);
-      //  tree.populateSorted(arr);
+//        tree.populateSorted(arr);
         tree.display();
         System.out.println(tree.isEmpty());
         System.out.println(tree.isBalanced());
