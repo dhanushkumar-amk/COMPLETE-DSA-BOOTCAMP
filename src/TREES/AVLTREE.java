@@ -188,6 +188,8 @@ class AVLMain{
 
 //        for (int i = 0; i <1000 ; i++) {
 //            tree.insert(i);
+
+
 //        }
 
         int[] arr = {11,6,22,7,33,4,44,9,56,45};
