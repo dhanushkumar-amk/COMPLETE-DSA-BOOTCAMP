@@ -186,11 +186,12 @@ class AVLMain{
     public static void main(String[] args) {
         AVLTREE tree = new AVLTREE();
 
-        int[] arr = {5,2,7,1,4,6,9,8,3,10};
-//        int[] arr = {1,2,3,4,5,6,7,8,9,10};
-//
+        for (int i = 0; i <1000 ; i++) {
+            tree.insert(i);
+        }
+       
 //        tree.populate(arr);
-        tree.populateSorted(arr);
+      //  tree.populateSorted(arr);
         tree.display();
         System.out.println(tree.isEmpty());
         System.out.println(tree.isBalanced());
