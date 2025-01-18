@@ -26,7 +26,8 @@ public class CountSort {
         // frequency array and it into frequency
         int[] countArray = new int[max + 1];
         for (int i = 0; i < arr.length; i++) {
-            countArray[i]++;
+            int num = arr[i];
+            countArray[num]++;
         }
 
         int index = 0;
