@@ -56,13 +56,13 @@ public class BinarySearchTree {
 
     // insert function
     public void insert(int value){
-
+        root = insert( value, root);
     }
 
     private Node insert(int value, Node node){
 
         // base case
-        // if the value is null then the given value act as a root element
+        // if the value is null then create the new node then add the value on it and return that node
         if (node == null) {
             node = new Node(value);
             return node;
@@ -76,8 +76,22 @@ public class BinarySearchTree {
             node.right = insert(value, node.right);
         }
 
-        
+        // the max height is left node and right node + 1 => is a new height
+        node.height = Math.max(height(node.left), height(node.right)) + 1;
+
+        return node;
     }
 
+    // isBalanced or not
+    public boolean isBalanced(){
+        return isBalanced(root);
+    }
+
+    private boolean isBalanced(Node node) {
+        if (node == null)
+            return true;
+        
+       return Math.abs(height(node.left) - height(node.right)) <= 1 && isBalanced(node.left) && isBalanced(node.right);
+    }
 
 }
