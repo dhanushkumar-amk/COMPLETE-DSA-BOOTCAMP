@@ -166,12 +166,12 @@ public class BinaryTree {
         tree.prettyDisplay();
 
         System.out.println();
-        System.out.println();
+        System.out.println("Pre order traversal : ");
 
         tree.preOrder();
-        System.out.println();
+        System.out.println("In order traversal : ");
         tree.inOrder();
-        System.out.println();
+        System.out.println("Post order traversal : ");
         tree.postOrder();
     }
 }
