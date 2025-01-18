@@ -40,7 +40,7 @@ public class BinarySearchTree {
 
     // display the function
     public void display(){
-        display(root, "Root Node : ");
+        display(this.root, "Root Node : ");
     }
 
     private void display(Node node, String details) {
@@ -48,10 +48,10 @@ public class BinarySearchTree {
         if (node == null)
             return;
 
-        System.out.println(details + node.getValue());
+        System.out.println(details + node.value);
 
-        display(node.left, "Left child of " + node.getValue() + " : ");
-        display(node.right, "Right child of " + node.getValue() + " : ");
+        display(node.left, "Left child of " + node.value + " : ");
+        display(node.right, "Right child of " + node.value + " : ");
     }
 
     // insert function
@@ -82,6 +82,13 @@ public class BinarySearchTree {
         return node;
     }
 
+    // insert through array
+    public void populate(int[] arr){
+        for (int i = 0; i <arr.length; i++) {
+            this.insert(arr[i]);
+        }
+    }
+
     // isBalanced or not
     public boolean isBalanced(){
         return isBalanced(root);
@@ -90,8 +97,23 @@ public class BinarySearchTree {
     private boolean isBalanced(Node node) {
         if (node == null)
             return true;
-        
+
        return Math.abs(height(node.left) - height(node.right)) <= 1 && isBalanced(node.left) && isBalanced(node.right);
     }
 
+
+
+}
+
+
+class main{
+    public static void main(String[] args) {
+
+        BinarySearchTree tree = new BinarySearchTree();
+
+        int[] arr = {5,2,7,1,4,6,9,8,3,10};
+        tree.populate(arr);
+        tree.display();
+
+    }
 }
