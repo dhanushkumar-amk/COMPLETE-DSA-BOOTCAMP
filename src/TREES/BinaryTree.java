@@ -117,10 +117,41 @@ public class BinaryTree {
             return;
 
         // Node -> left ->  right
-
+        System.out.print(node.value + " -> ");
         preOrder(node.left);
         preOrder(node.right);
-        System.out.println(node.value);
+    }
+
+    // inorder traversal
+    public void inOrder(){
+        inOrder(root);
+    }
+
+    private void inOrder(Node node) {
+        if (node == null)
+            return;
+
+        // left -> node -> right
+
+        inOrder(node.left);
+        System.out.print(node.value + " -> ");
+        inOrder(node.right);
+    }
+
+    // post order traversal
+    public void postOrder(){
+        postOrder(root);
+    }
+
+    private void postOrder(Node node) {
+        if (node == null)
+            return;
+
+        // left -> right -> node
+
+        postOrder(node.left);
+        postOrder(node.right);
+        System.out.print(node.value + " -> ");
 
     }
 }
@@ -133,6 +164,9 @@ public class BinaryTree {
         tree.populate(scanner);
        // tree.display();
         tree.prettyDisplay();
+        
         tree.preOrder();
+        tree.inOrder();
+        tree.postOrder();
     }
 }
