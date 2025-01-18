@@ -190,7 +190,7 @@ class AVLMain{
 //            tree.insert(i);
 //        }
 
-        int[] arr = {1,2,3,6,4,3,6,3,7,3,8,3,7,4,7};
+        int[] arr = {11,6,22,7,33,4,44,9,56,45};
 //        tree.populate(arr);
         tree.populateSorted(arr);
         tree.display();
