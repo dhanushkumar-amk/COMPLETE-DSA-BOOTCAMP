@@ -99,3 +99,5 @@ public class BinarySearchTree {
        return Math.abs(height(node.left) - height(node.right)) <= 1 && isBalanced(node.left) && isBalanced(node.right);
     }
 }
+
+class mainBinary
