@@ -23,14 +23,19 @@ public class CountSort {
                 max = arr[i];
         }
 
+        // frequency array and it into frequency
         int[] countArray = new int[max + 1];
-
         for (int i = 0; i < arr.length; i++) {
-            int num = arr[i];
-            countArray[num]++;
+            countArray[i]++;
         }
 
-
-
+        int index = 0;
+        for (int i = 0; i <= max; i++) {
+            while(countArray[i] > 0){
+                arr[index] = i;
+                index++;
+                countArray[i]--;
+            }
+        }
     }
 }
