@@ -2,8 +2,6 @@ package TREES;
 
 public class BinarySearchTree {
 
-
-
     public class Node{
         private int value;
         private int height;
