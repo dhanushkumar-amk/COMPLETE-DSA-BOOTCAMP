@@ -9,7 +9,8 @@ public class CountSort {
     int[] arr = {3,4,1,3,2,5,2,8};
     System.out.println(Arrays.toString(arr));
 
-    countSortHashmap(arr);
+    countSort(arr);
+//    countSortHashmap(arr);
     System.out.println(Arrays.toString(arr));
 
 
@@ -19,11 +20,7 @@ public class CountSort {
             return;
 
         // find largest element
-        int  max= arr[0];
-        for (int i = 0; i < arr.length ; i++) {
-            if (arr[i] > max)
-                max = arr[i];
-        }
+        int max = Arrays.stream(arr).max().getAsInt();;
 
         // frequency array and it into frequency
         int[] countArray = new int[max + 1];
