@@ -1,5 +1,4 @@
 package TREES;
-
 import java.util.Scanner;
 
 public class BinaryTree {
@@ -77,10 +76,6 @@ public class BinaryTree {
         display(node.right, indent + "\t");
 
     }
-
-
-
-
 }
 
 
