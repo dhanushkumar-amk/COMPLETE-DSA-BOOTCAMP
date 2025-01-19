@@ -68,12 +68,12 @@ public class SegmentTree {
 
         if (node.right != null){
             str = str + " Interval = [ " + node.right.startIndex + " - " + node.right.endIndex + " ] and the " +
-                    "data : " + node.right.data  + "+ -> ";
+                    "data : " + node.right.data ;
         }
         else {
             str = str + "no right child";
         }
-        System.out.println(str);
+        System.out.println(str + "\n");
 
         if(node.left != null)
             display(node.left);
