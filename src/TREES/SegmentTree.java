@@ -89,13 +89,15 @@ public class SegmentTree {
     }
 
     private int query(Node node, int queryStartIndex, int queryEndIndex) {
+
+        /// case 1
         if (node.startIndex >= queryStartIndex && node.endIndex <= queryEndIndex){
             // node completely lie inside the query
             return node.data;
-        } else if (node.startIndex > queryEndIndex || node.endIndex < queryStartIndex) {
+        } else if (node.startIndex > queryEndIndex || node.endIndex < queryStartIndex) { // case 2
             // completely outside
             return 0;
-        }else{
+        }else{ // case3
             return this.query(node.left, queryStartIndex, queryEndIndex) + this.query(node.right, queryStartIndex, queryEndIndex);
         }
     }
