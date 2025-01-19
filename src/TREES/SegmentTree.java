@@ -1,2 +1,5 @@
-package TREES;public class SegmentTree {
+package TREES;
+
+public class SegmentTree {
+    
 }
