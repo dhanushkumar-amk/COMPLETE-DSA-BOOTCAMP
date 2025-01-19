@@ -27,7 +27,7 @@ public class SegmentTree {
     private Node constructTree(int[] arr, int start, int end) {
 
         if (start == end){
-            // leaf node
+            // leaf node left most leaf node
             Node leaf = new Node(start, end);
             leaf.data = arr[start];
             return leaf;
