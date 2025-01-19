@@ -132,10 +132,10 @@ public class SegmentTree {
 
 
         System.out.println(tree.query(2,6));
-        tree.update(0, 1);
+        //tree.update(0, 1);
 
         tree.display();
-        
+
 
     }
 
