@@ -131,6 +131,7 @@ public class SegmentTree {
         SegmentTree tree = new SegmentTree(arr);
 
         tree.display();
+        tree.query(2,7);
     }
 
 }
