@@ -122,10 +122,20 @@ public class SegmentTree {
         }
         return node.data;
     }
+}
 
 
+class segmentMain{
+    public static void main(String[] args) {
+        int[] arr = {3,8,7,6,-2,-8,4,9};
+        SegmentTree tree = new SegmentTree(arr);
 
-    // main function
-   
 
+        System.out.println(tree.query(2,6));
+        //tree.update(0, 1);
+
+        tree.display();
+
+
+    }
 }
