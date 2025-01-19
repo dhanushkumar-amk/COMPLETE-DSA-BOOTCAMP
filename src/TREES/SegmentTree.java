@@ -63,7 +63,7 @@ public class SegmentTree {
          }
 
          //no current child
-        str = str + " Interval = [ " + node.left.startIndex + " - " + node.left.endIndex + " ] and the " +
+        str = str + " Interval = [ " + node..startIndex + " - " + node.left.endIndex + " ] and the " +
                 "data : " + node.left.data  + "+ -> ";
 
         if (node.right != null){
