@@ -132,7 +132,7 @@ public class SegmentTree {
 
 //        tree.display();
 
-        System.out.println(tree.query(2,7));
+        System.out.println(tree.query(2,6));
     }
 
 }
