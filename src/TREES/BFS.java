@@ -1,2 +1,5 @@
-package TREES;public class BFS {
+package TREES;
+
+public class BFS {
+    
 }
