@@ -5,8 +5,32 @@ package TREES;
 
 // leetcode 637
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class AverageOfLevelsInBinaryTree {
 
+
+    public List<Double> averageOfLevels(TreeNode root) {
+            List<Double> result = new ArrayList<>();
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()){
+
+            int average = 0;
+            int currentLevelSize = queue.size();
+
+            for (int i = 0; i < queue.size(); i++) {
+                
+            }
+        }
+
+            return result;
+    }
 
     public class TreeNode {
        int val;
@@ -20,11 +44,13 @@ public class AverageOfLevelsInBinaryTree {
        TreeNode(int val) {
            this.val = val;
        }
-       
+
        TreeNode(int val, TreeNode left, TreeNode right) {
            this.val = val;
            this.left = left;
            this.right = right;
        }
    }
+
+   private TreeNode root;
 }
