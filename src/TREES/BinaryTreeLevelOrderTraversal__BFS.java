@@ -9,65 +9,6 @@ import java.util.*;
 public class BinaryTreeLevelOrderTraversal__BFS {
 
 
-    // calculate height function
-    public int height(TreeNode node){
-        if (node == null)
-            return -1;
-        return node.height;
-    }
-
-    // display the function
-    public void display(){
-        display(this.root, "Root Node : ");
-    }
-
-    private void display(TreeNode node, String details) {
-
-        if (node == null)
-            return;
-
-        System.out.println(details + TreeNode.val);
-
-        display(node.left, "Left child of " + TreeNode.val + " : ");
-        display(node.right, "Right child of " + TreeNode.val + " : ");
-    }
-
-    // insert function
-    public void insert(int value){
-        root = insert( value, root);
-    }
-
-    private TreeNode insert(int value, TreeNode node){
-
-        // base case
-        // if the value is null then create the new node then add the value on it and return that node
-        if (node == null) {
-            node = new TreeNode(value);
-            return node;
-        }
-
-        if (value < node.val){
-            node.left = insert(value, node.left);
-        }
-
-        if (value > node.val){
-            node.right = insert(value, node.right);
-        }
-
-        // the max height is left node and right node + 1 => is a new height
-        node.height = Math.max(height(node.left), height(node.right)) + 1;
-
-        return node;
-    }
-
-    // insert through array
-    public void populate(int[] arr){
-        for (int i = 0; i <arr.length; i++) {
-            this.insert(arr[i]);
-        }
-    }
-
-
     public static List<List<Integer>> levelOrder(TreeNode root){
 
         List<List<Integer>> result = new ArrayList<>();
@@ -101,11 +42,9 @@ public class BinaryTreeLevelOrderTraversal__BFS {
     }
 
     public class TreeNode {
-      static int val;
+      int val;
       TreeNode left;
       TreeNode right;
-      int height;
-
       TreeNode() {
 
       }
@@ -123,12 +62,6 @@ public class BinaryTreeLevelOrderTraversal__BFS {
 
     private TreeNode root;
 
-}
 
-class BFSMain{
-    public static void main(String[] args) {
-        BinaryTreeLevelOrderTraversal__BFS tree = new BinaryTreeLevelOrderTraversal__BFS();
 
-        int[] arr = {};
-    }
 }
