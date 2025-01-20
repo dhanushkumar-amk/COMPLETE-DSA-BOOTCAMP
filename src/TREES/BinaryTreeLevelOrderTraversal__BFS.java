@@ -16,25 +16,42 @@ public class BinaryTreeLevelOrderTraversal__BFS {
         queue.offer(root);
 
         while(!queue.isEmpty()){
+            int levelSize = queue.size();
+            List<Integer> currentLevellist = new ArrayList<>(levelSize);
+            for (int i = 0; i < levelSize ; i++) {
+                TreeNode currentNode = queue.poll(); // poll => removing
+                currentLevellist.add(currentNode.val);
 
+                if (currentNode.left != null){
+                    queue.offer(currentNode.left);
+                }
+
+                if (currentNode.right != null){
+                    queue.offer(currentNode.right);
+                }
+            }
+            result.add(currentLevellist);
         }
-
-
+        return result;
     }
 
-    public class TreeNode{
-        private int value;
-        private int height;
-        private TreeNode left;
-        private TreeNode right;
+    public class TreeNode {
+      int val;
+      TreeNode left;
+      TreeNode right;
+      TreeNode() {
 
-        public TreeNode(int value) {
-            this.value = value;
-        }
+      }
 
-        public int getValue(){
-            return value;
-        }
+      TreeNode(int val) {
+          this.val = val;
+      }
+
+      TreeNode(int val, TreeNode left, TreeNode right) {
+          this.val = val;
+          this.left = left;
+          this.right = right;
+      }
     }
 
     private TreeNode root;
