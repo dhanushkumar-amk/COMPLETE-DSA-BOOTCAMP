@@ -22,10 +22,12 @@ public class BinaryTreeLevelOrderTraversal__BFS {
                 TreeNode currentNode = queue.poll(); // poll => removing fast element present in queue
                 currentLevellist.add(currentNode.val);
 
+                // add left element in current node
                 if (currentNode.left != null){
                     queue.offer(currentNode.left);
                 }
 
+                // add right element in current node
                 if (currentNode.right != null){
                     queue.offer(currentNode.right);
                 }
