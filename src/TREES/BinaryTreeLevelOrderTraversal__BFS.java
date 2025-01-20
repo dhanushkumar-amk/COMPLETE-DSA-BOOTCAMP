@@ -19,7 +19,7 @@ public class BinaryTreeLevelOrderTraversal__BFS {
             int levelSize = queue.size();
             List<Integer> currentLevellist = new ArrayList<>(levelSize);
             for (int i = 0; i < levelSize ; i++) {
-                TreeNode currentNode = queue.poll(); // poll => removing
+                TreeNode currentNode = queue.poll(); // poll => removing fast element present in queue
                 currentLevellist.add(currentNode.val);
 
                 if (currentNode.left != null){
