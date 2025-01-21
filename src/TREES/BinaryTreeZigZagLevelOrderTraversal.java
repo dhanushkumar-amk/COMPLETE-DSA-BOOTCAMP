@@ -68,9 +68,10 @@ public class BinaryTreeZigZagLevelOrderTraversal {
                         deque.addFirst(currentNode.left);
 
                 }
-                // if true means false || false means true conversion on every iteration
-                isReverse = !isReverse;
+
             }
+            // if true means false || false means true conversion on every iteration
+            isReverse = !isReverse;
 
             result.add(currentLevelList);
         }
