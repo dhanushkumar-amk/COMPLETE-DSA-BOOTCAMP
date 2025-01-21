@@ -1,7 +1,7 @@
 package TREES;
 
 // https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/
-// leetcode 103
+// LeetCode 103
 
 import java.util.*;
 
@@ -66,17 +66,12 @@ public class BinaryTreeZigZagLevelOrderTraversal {
 
                     if (currentNode.left != null)
                         deque.addFirst(currentNode.left);
-
                 }
-
             }
             // if true means false || false means true conversion on every iteration
             isReverse = !isReverse;
-
             result.add(currentLevelList);
         }
         return result;
     }
-
-
 }
