@@ -5,4 +5,29 @@ package TREES;
 // leetcode 199
 
 public class BinaryTreeRightSideView {
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
+    private TreeNode root;
+
+    
+
 }
