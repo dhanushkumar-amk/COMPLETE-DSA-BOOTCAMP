@@ -1,5 +1,9 @@
 package TREES;
 
+// https://leetcode.com/problems/cousins-in-binary-tree/description/
+
+//leetcode 993
+
 public class CousinsInBinaryTree {
 
 
@@ -78,9 +82,6 @@ public class CousinsInBinaryTree {
         // otherwise find right side
         return findNode(node.right, x);
     }
-
-
-
 
 
 }
