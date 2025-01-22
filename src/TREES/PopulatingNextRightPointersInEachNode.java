@@ -28,7 +28,6 @@ public class PopulatingNextRightPointersInEachNode {
 
     public Node connect(Node root) {
 
-
         if (root == null)
             return null;
 
@@ -39,9 +38,15 @@ public class PopulatingNextRightPointersInEachNode {
 
             while (currentNode != null){
                 currentNode.left.next = currentNode.right;
+
+                if (currentNode.next  != null){
+                    currentNode.right.next = currentNode.next.left;
+                }
+                currentNode = currentNode.next;
             }
+
+            leftMostNode = leftMostNode.left;
         }
-
-
+        return root;
     }
 }
