@@ -1,7 +1,7 @@
 package TREES;
 
-//
-
+//https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+// leetcode 116
 public class PopulatingNextRightPointersInEachNode {
 
     class Node {
@@ -27,6 +27,6 @@ public class PopulatingNextRightPointersInEachNode {
     private Node root;
 
     public Node connect(Node root) {
-
+        
     }
 }
