@@ -37,10 +37,29 @@ public class SymmetricTree {
         queue.add(root.right);
 
         while (!queue.isEmpty()){
-            TreeNode<Integer> left = queue.poll();
-            
+            TreeNode left = queue.poll();
+            TreeNode right = queue.poll();
+
+            // both are null skip it
+            if (left == null && right == null)
+                continue;
+
+            // if one node is null then break and return false;
+            if (left == null || right == null  )
+                return false;
+
+            // if the left value not equal to right value
+            if (left.val != right.val)
+                return false;
+
+            queue.add(left.left);
+            queue.add(right.right);
+            queue.add(left.right);
+            queue.add(right.left);
+
         }
 
+        return true;
     }
 
     
