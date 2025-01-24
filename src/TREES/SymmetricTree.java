@@ -6,7 +6,8 @@ package TREES;
 // leetcode 101
 
 
-
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class SymmetricTree {
 
@@ -25,7 +26,15 @@ public class SymmetricTree {
   }
 
   private TreeNode root;
+
+    public boolean isSymmetric(TreeNode root) {
+
+        Queue<TreeNode>  queue = new LinkedList<>();
+        queue.offer(root);
+
         
+
+    }
 
     
 

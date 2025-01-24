@@ -33,7 +33,7 @@ public class CousinsInBinaryTree {
         TreeNode yy = findNode(root, y);
 
         return (
-                (level(root, xx, 0) == level(root, yy, 0)) && (isSibling(root, xx, yy))
+                (level(root, xx, 0) == level(root, yy, 0)) && (!isSibling(root, xx, yy))
 
         );
     }
