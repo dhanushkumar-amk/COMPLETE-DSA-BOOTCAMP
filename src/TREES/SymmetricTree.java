@@ -6,7 +6,10 @@ package TREES;
 // leetcode 101
 
 
+import com.sun.source.doctree.IndexTree;
+
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class SymmetricTree {
@@ -30,9 +33,13 @@ public class SymmetricTree {
     public boolean isSymmetric(TreeNode root) {
 
         Queue<TreeNode>  queue = new LinkedList<>();
-        queue.offer(root);
+        queue.add(root.left);
+        queue.add(root.right);
 
-        
+        while (!queue.isEmpty()){
+            TreeNode<Integer> left = queue.poll();
+            
+        }
 
     }
 
