@@ -2,6 +2,9 @@ package PATTERNS;
 
 import java.util.*;
 
+// https://leetcode.com/problems/pascals-triangle/description/
+// leetcode 118
+
 public class PascalTriangle {
     public static void main(String[] args) {
         int n = 5;
