@@ -5,6 +5,10 @@ package TREES;
 
 public class DiameterOfATree {
 
+    
 
+    public int diameterOfBinaryTree(TreeNode root) {
+
+    }
 
 }
