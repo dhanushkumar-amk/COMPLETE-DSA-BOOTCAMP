@@ -3,7 +3,7 @@ package TREES;
 
 public class InvertBinaryTree {
 
-    class   TreeNode{
+    public class TreeNode{
 
          int val;
        TreeNode left;
@@ -25,7 +25,12 @@ public class InvertBinaryTree {
 
     private TreeNode root;
 
+
     public TreeNode invertTree(TreeNode root) {
+        if (root == null)
+            return null ;
+
+        
 
         return root;
     }
