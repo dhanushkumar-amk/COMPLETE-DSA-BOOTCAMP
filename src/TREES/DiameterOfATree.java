@@ -27,13 +27,16 @@ public class DiameterOfATree {
 
    private TreeNode root;
 
+    int diameter = 0;
+
     public int diameterOfBinaryTree(TreeNode root) {
-        int diameter = 0;
+
 
         height(root);
 
-        return diameter;
+        return diameter - 1;
     }
+
 
     private int height(TreeNode node) {
 
@@ -43,7 +46,12 @@ public class DiameterOfATree {
         int heightOfLeftNode = height(node.left);
         int heightOfRightNode = height(node.right);
 
+        int dia = heightOfLeftNode + heightOfRightNode + 1;
+        diameter = Math.max(diameter, dia);
+
         return Math.max(heightOfLeftNode, heightOfRightNode) + 1;
     }
+
+
 
 }
