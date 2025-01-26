@@ -1,5 +1,7 @@
 package TREES;
 
+// https://leetcode.com/problems/invert-binary-tree/
+// leetcode 226
 
 public class InvertBinaryTree {
 
@@ -30,7 +32,7 @@ public class InvertBinaryTree {
         if (root == null)
             return null ;
 
-        
+
 
         return root;
     }
