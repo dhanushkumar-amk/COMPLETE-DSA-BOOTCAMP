@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class ArrangeArrayBySign {
     public static void main(String[] args) {
-        int[] arr = {3,1,-2, -5, 2, -4};
+        int[] arr = {3,0,-2, -5, 2, -4};
         int[] answer = arrange(arr);
         System.out.println(Arrays.toString(answer));
     }
