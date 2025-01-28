@@ -27,6 +27,5 @@ public class ProfitOrLoss {
             System.out.println("Profit " + result);
         else if(answer < 0)
             System.out.println("Loss " + result);
-
     }
 }
