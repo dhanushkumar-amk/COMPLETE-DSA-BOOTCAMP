@@ -13,7 +13,7 @@ public class PercentageCalculation {
 
     public static void percentage(int salary){
 
-        double needs = 0.4; // 50%
+        double needs = 0.5; // 50%
         double wants = 0.3; // 30%
         double savings = 0.2; // 20%
 
