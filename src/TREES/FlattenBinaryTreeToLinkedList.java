@@ -1,6 +1,7 @@
 package TREES;
 
-//
+//https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+
 
 public class FlattenBinaryTreeToLinkedList {
     public class TreeNode {
@@ -19,6 +20,6 @@ public class FlattenBinaryTreeToLinkedList {
     private TreeNode root;
 
     public void flatten(TreeNode root) {
-    
+
     }
 }
