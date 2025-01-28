@@ -35,7 +35,7 @@ public class MaximumDepthOfBinaryTree {
 
         int depth = Math.max(left, right);
 
-        return depth;
+        return depth + 1;
     }
 
 }
