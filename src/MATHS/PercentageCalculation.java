@@ -11,7 +11,9 @@ public class PercentageCalculation {
 
     }
 
-    public static 
+    public static void percentage(int salary){
+        
+    }
 
 
 }
