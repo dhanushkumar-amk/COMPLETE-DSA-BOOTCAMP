@@ -17,7 +17,7 @@ public class ProfitOrLoss {
 
     static void profitOrLoss(int costPrice, int sellingPrice){
 
-        int answer = costPrice - sellingPrice;
+        int answer = sellingPrice - costPrice;
         int result = Math.abs(answer);
 
         if (answer == 0)
