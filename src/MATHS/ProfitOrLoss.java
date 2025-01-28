@@ -17,12 +17,13 @@ public class ProfitOrLoss {
 
     static void profitOrLoss(int costPrice, int sellingPrice){
 
-        int result = Math.abs(costPrice - sellingPrice);
+        int answer = costPrice - sellingPrice;
+        int result = Math.abs(answer);
 
-        if (result == 0)
+        if (answer == 0)
             System.out.println("Nothing profit or loss " + result);
 
-        if (result > 0)
+        if (answer > 0)
             System.out.println("Profit " + result);
         else
             System.out.println("Loss " + result);
