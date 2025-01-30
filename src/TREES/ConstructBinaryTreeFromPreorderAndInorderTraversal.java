@@ -17,6 +17,8 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
           this.right = right;
       }
   }
-  
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+
+    }
     
 }
