@@ -23,9 +23,7 @@ public class CountString {
                 zcount++;
         }
 
-        System.out.println(xcount);
-        System.out.println(ycount);
-        System.out.println(zcount);
+        System.out.println(xcount + " " + ycount + " " + zcount);
     }
 
 }
