@@ -1,2 +1,5 @@
-package TREES;public class PathSum {
+package TREES;
+
+public class PathSum {
+    
 }
