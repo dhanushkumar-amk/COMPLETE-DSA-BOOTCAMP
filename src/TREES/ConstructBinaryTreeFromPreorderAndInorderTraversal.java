@@ -42,9 +42,6 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
 
          return node;
-
-
-
+         // efficient solution using hashmap
     }
-    
 }
