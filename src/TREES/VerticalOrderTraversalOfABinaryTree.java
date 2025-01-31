@@ -27,6 +27,7 @@ public class VerticalOrderTraversalOfABinaryTree {
             return answer;
 
         int column = 0;
+
         Queue<Map.Entry<TreeNode, Integer>> queue = new ArrayDeque<>();
         Map<Integer, ArrayList<Integer>> map = new HashMap<>();
 
