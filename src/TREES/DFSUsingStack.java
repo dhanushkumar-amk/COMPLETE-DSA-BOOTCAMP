@@ -1,2 +1,7 @@
-package TREES;public class DFSUsingStack {
+package TREES;
+
+public class DFSUsingStack {
+    class Node{
+        
+    }
 }
