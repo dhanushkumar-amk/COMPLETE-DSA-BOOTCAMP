@@ -24,7 +24,7 @@ public class PathExitsInBinaryTreeFromRootToLeaf {
     public boolean findPath(TreeNode node, int[] arr){
         if (node == null)
             return arr.length == 0;
-        
+
         return helper(node, arr ,0);
     }
 
