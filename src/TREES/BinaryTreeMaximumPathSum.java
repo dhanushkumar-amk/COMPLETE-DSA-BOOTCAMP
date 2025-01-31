@@ -31,6 +31,7 @@ public class BinaryTreeMaximumPathSum {
       int left = helper(node.left);
       int right = helper(node.right);
 
+      
       // if it value was negative
       left = Math.max(0, left);
       right = Math.max(0, right);
