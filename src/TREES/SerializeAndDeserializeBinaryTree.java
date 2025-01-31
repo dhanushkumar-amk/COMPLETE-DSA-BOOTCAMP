@@ -12,7 +12,9 @@ public class SerializeAndDeserializeBinaryTree {
 
   }
 
-  
+  public String serialize(TreeNode root) {
+
+  }
 
 
 }
