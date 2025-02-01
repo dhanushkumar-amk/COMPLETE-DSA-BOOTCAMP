@@ -1,2 +1,5 @@
-package TREES;public class Heaps {
+package TREES;
+
+public class Heaps {
+    
 }
