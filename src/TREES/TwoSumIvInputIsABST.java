@@ -1,6 +1,6 @@
 package TREES;
 
-//leetcode 
+//leetcode
 
 public class TwoSumIvInputIsABST {
 
