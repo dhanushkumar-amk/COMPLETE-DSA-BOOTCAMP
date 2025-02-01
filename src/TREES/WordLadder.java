@@ -40,11 +40,11 @@ public class WordLadder {
             length++;
 
             for (int i = 0; i <size; i++) {
-                String current = queue.poll();
+                String currentString = queue.poll();
 
-                for (int j = 0; j <current.length(); j++) {
+                for (int j = 0; j <currentString.length(); j++) {
 
-                    char[] temp = current.toCharArray();
+                    char[] temp = currentString.toCharArray();
 
                     for (char ch = 'a'; ch <= 'z'; ch++ ){
                         temp[j] = ch;
