@@ -129,6 +129,6 @@ class Main{
         System.out.println(heap.remove());
 
         ArrayList List = heap.heapSort();
-        System.out.println(list);
+        System.out.println(List);
     }
 }
