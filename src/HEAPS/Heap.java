@@ -123,9 +123,12 @@ class Main{
         heap.insert(54);
         heap.insert(97);
 
+        // min heap
         System.out.println(heap.remove());
         System.out.println(heap.remove());
         System.out.println(heap.remove());
 
+        ArrayList List = heap.heapSort();
+        System.out.println(list);
     }
 }
