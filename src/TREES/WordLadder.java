@@ -17,7 +17,7 @@ public class WordLadder {
         String beginWord = "hit";
         String endWord = "cog";
 
-        System.out.println(ladderLength(beginWord, endWord,));
+        System.out.println(ladderLength(beginWord, endWord, wordList));
 
     }
 
