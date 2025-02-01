@@ -41,7 +41,7 @@ public class WordLadder {
                 for (int j = 0; j <current.length(); j++) {
 
                     char[] temp = current.toCharArray();
-                    
+
                     for (char ch = 'a'; ch <= 'z'; ch++ ){
                         temp[j] = ch;
                         String newWord = new String(temp);
