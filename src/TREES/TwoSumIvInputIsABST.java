@@ -24,6 +24,8 @@ public class TwoSumIvInputIsABST {
         }
     }
 
-    
+    public boolean findTarget(TreeNode root, int k) {
+
+    }
 
 }
