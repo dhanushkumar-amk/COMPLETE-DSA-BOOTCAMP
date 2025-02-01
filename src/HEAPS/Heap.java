@@ -124,5 +124,8 @@ class Main{
         heap.insert(97);
 
         System.out.println(heap.remove());
+        System.out.println(heap.remove());
+        System.out.println(heap.remove());
+
     }
 }
