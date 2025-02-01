@@ -22,9 +22,13 @@ public class ConvertBinaryTreeToDoublyLinkedList {
         LLNode newNode = new LLNode(node.val);
 
         if (head == null){
-            head
-        }
-
+            head = newNode;
+            tail = newNode;
+        }else{
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = newNode;
+         }
 
         helper(node.right);
     }
