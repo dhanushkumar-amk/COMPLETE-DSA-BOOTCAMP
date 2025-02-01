@@ -51,7 +51,7 @@ public class Heap<T extends  Comparable<T>> {
     }
 
     // remove
-    private T remove() throws Exception{
+    public T remove() throws Exception{
 
         if (list.isEmpty()){
             throw new Exception("Removing from the empty heap");
@@ -112,7 +112,7 @@ public class Heap<T extends  Comparable<T>> {
 }
 
 class Main{
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Heap<Integer> heap = new Heap<>();
 
         heap.insert(34);
@@ -123,6 +123,6 @@ class Main{
         heap.insert(54);
         heap.insert(97);
 
-        System.out.println(heap.);
+        System.out.println(heap.remove());
     }
 }
