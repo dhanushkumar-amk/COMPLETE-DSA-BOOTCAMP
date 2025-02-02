@@ -1,5 +1,7 @@
 package HASHMAPS;
 
+import java.awt.*;
+
 public class HashMapDemo {
     public static void main(String[] args) {
         String name = "dhanush";
