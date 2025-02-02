@@ -124,17 +124,18 @@ public class HuffmanCoder {
         return answer;
     }
 
-    class Main{
-        public static void main(String[] args) throws Exception {
-            String str = "abbccda";
-            HuffmanCoder coder = new HuffmanCoder(str);
-            String cs = coder.encode(str);
-            String ds = coder.decode(str);
 
-            System.out.println(cs);
-            System.out.println(ds);
 
-        }
+}
+ class Main{
+    public static void main(String[] args) throws Exception {
+        String str = "abbccda";
+        HuffmanCoder coder = new HuffmanCoder(str);
+        String cs = coder.encode(str);
+        String ds = coder.decode(str);
+
+        System.out.println(cs);
+        System.out.println(ds);
+
     }
-
 }
