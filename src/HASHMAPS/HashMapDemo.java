@@ -36,6 +36,8 @@ public class HashMapDemo {
         set.add(51);
 
         System.out.println(set);
+
+
     }
 }
 
