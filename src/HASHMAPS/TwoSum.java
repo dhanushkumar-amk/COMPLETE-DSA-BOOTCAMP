@@ -2,12 +2,16 @@ package HASHMAPS;
 
 //leetcode 1
 
+import java.util.HashMap;
+
 public class TwoSum {
     public static void main(String[] args) {
 
     }
 
-    public static int twoSum{
+    public int[] twoSum(int[] nums, int target) {
 
+        HashMap<Integer, Integer> map = new HashMap<>();
+        
     }
 }
