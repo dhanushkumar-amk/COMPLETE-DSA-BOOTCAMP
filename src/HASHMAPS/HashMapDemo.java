@@ -23,6 +23,8 @@ public class HashMapDemo {
         // search it present give that value, not present give default value you assign
         System.out.println(map.getOrDefault("arun", 49));
 
+        // check if the key is present or not
+        System.out.println(map.containsKey("dhanush"));
 
     }
 }
