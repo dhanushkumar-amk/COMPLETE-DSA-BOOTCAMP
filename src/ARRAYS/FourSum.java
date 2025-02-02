@@ -1,41 +1,37 @@
 package ARRAYS;
 
-// https://leetcode.com/problems/4sum/
-// leetcode 18
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class FourSum {
-    public static void main(String[] args) {
-
-    }
     public List<List<Integer>> fourSum(int[] nums, int target) {
 
         ArrayList<List<Integer>> result = new ArrayList<>();
 
-        if (nums == null || nums.length == 0)
+        if (nums == null || nums.length < 4)
             return result;
 
-        int n = nums.length;;
+        int n = nums.length;
         Arrays.sort(nums);
 
-        for (int i = 0; i <n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                int remaining = target - nums[i] - nums[j];
+        for (int i = 0; i < n - 3; i++) {
+            if (i > 0 && nums[i] == nums[i - 1])
+                continue;
+
+            for (int j = i + 1; j < n - 2; j++) {
+                if (j > i + 1 && nums[j] == nums[j - 1])
+                    continue;
 
                 int left = j + 1;
                 int right = n - 1;
 
-                while (left > right) {
-                    int leftAndRightSum = nums[left] + nums[right];
+                while (left < right) {
+                    int sum = nums[i] + nums[j] + nums[left] + nums[right];
 
-                    if (leftAndRightSum < remaining)
+                    if (sum < target)
                         left++;
-                    else if (leftAndRightSum > remaining)
+                    else if (sum > target)
                         right--;
-                    else{
+                    else {
                         List<Integer> list = new ArrayList<>();
                         list.add(nums[i]);
                         list.add(nums[j]);
@@ -43,21 +39,19 @@ public class FourSum {
                         list.add(nums[right]);
                         result.add(list);
 
-                        //removing the duplicates of 3
                         while (left < right && nums[left] == list.get(2))
-                            ++left;
+                            left++;
 
-                        //duplicates of 4
                         while (left < right && nums[right] == list.get(3))
-                            ++right;
+                            right--;
                     }
                 }
-                while (j + 1 < n && nums[j + 1] == nums[j])
-                    ++j;
             }
-            while (i+ 1 < n && nums[i + 1] == nums[i])
-                ++i;
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
