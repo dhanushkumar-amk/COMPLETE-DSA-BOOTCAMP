@@ -3,63 +3,46 @@ package GREEDY;
 import HEAPS.Heap;
 
 import java.util.*;
+
 public class HuffmanCoder {
 
     HashMap<Character, String> encoder;
     HashMap<String, Character> decoder;
 
-    private class Node implements Comparable<Node>{
-
+    private class Node implements Comparable<Node> {
         Character data;
         int cost;
         Node left;
         Node right;
 
         public Node(Character data, int cost) {
-            this.cost = cost;
             this.data = data;
+            this.cost = cost;
             this.left = null;
             this.right = null;
         }
 
-        // java is confuse so we tell what to compare
         @Override
         public int compareTo(Node other) {
             return this.cost - other.cost;
         }
-        // negative means smaller , 0 means equal, positive means larger
     }
 
-    // step 1 pass the feeder
     public HuffmanCoder(String feeder) throws Exception {
-
-        // step 2 create frequency map
         HashMap<Character, Integer> frequency = new HashMap<>();
-        for (int i = 0; i <feeder.length() ; i++) {
-            char character = feeder.charAt(i);
 
-            // if value already exists then increase the count
-            if (frequency.containsKey(character)) {
-                int originalValue = frequency.get(character);
-                originalValue += 1;
-                frequency.put(character, originalValue);
-            }else {
-                // if does not exit put one
-                frequency.put(character, 1);
-            }
+        for (int i = 0; i < feeder.length(); i++) {
+            char character = feeder.charAt(i);
+            frequency.put(character, frequency.getOrDefault(character, 0) + 1);
         }
 
-        //step 3 create the min heap and insert the value as a set
         Heap<Node> minHeap = new Heap<>();
-        Set<Map.Entry<Character, Integer>> entrySet = frequency.entrySet();
-
-        for (Map.Entry<Character, Integer> entry : entrySet){
+        for (Map.Entry<Character, Integer> entry : frequency.entrySet()) {
             Node node = new Node(entry.getKey(), entry.getValue());
             minHeap.insert(node);
         }
 
-        // step 4 remove the two nodes and combine into one
-        while (minHeap.size() != 1){
+        while (minHeap.size() > 1) {
             Node first = minHeap.remove();
             Node second = minHeap.remove();
 
@@ -70,73 +53,61 @@ public class HuffmanCoder {
             minHeap.insert(newNode);
         }
 
-        //step 5 create the full tree
         Node fullTree = minHeap.remove();
 
-        // fill it into encoder and decoder
         this.encoder = new HashMap<>();
         this.decoder = new HashMap<>();
 
-        this.initEncoderDecoder(fullTree, "");
-
+        initEncoderDecoder(fullTree, "");
     }
 
     private void initEncoderDecoder(Node node, String output) {
-
-        if (node == null){
+        if (node == null) {
             return;
-
-            // if go in the leaf node and add the data into it an hashmaps
-            if (node.left == null && node.right == null){
-                this.encoder.put(node.data, output);
-                this.decoder.put(output, node.data);
-            }
-
-            // go left and right , fo left add 0 to all and right 1 to all
-            initEncoderDecoder(node.left, output + "0");
-            initEncoderDecoder(node.right, output + "1");
-            }
         }
 
-    // encode the function
-    public String encode(String source){
-        String answer = "";
-
-        for (int i = 0; i <source.length() ; i++) {
-            answer = answer + encoder.get(source);
+        if (node.left == null && node.right == null) {
+            this.encoder.put(node.data, output);
+            this.decoder.put(output, node.data);
         }
 
-        return answer;
+        initEncoderDecoder(node.left, output + "0");
+        initEncoderDecoder(node.right, output + "1");
     }
 
-    // decode function
-    public String decode(String codedString){
-        String key = "";
-        String answer = "";
-        for (int i = 0; i <codedString.length() ; i++) {
-            key += codedString.charAt(i);
+    public String encode(String source) {
+        StringBuilder answer = new StringBuilder();
 
-                // get the key pairs
-            if (decoder.containsKey(key)){
-                answer = answer + decoder.get(key);
-                key = ""; // key will be reset
-            }
+        for (int i = 0; i < source.length(); i++) {
+            answer.append(encoder.get(source.charAt(i)));
         }
-        return answer;
+
+        return answer.toString();
     }
 
+    public String decode(String codedString) {
+        StringBuilder key = new StringBuilder();
+        StringBuilder answer = new StringBuilder();
 
+        for (int i = 0; i < codedString.length(); i++) {
+            key.append(codedString.charAt(i));
 
-}
- class Main{
+            if (decoder.containsKey(key.toString())) {
+                answer.append(decoder.get(key.toString()));
+                key.setLength(0); // Reset key
+            }
+        }
+
+        return answer.toString();
+    }
+
     public static void main(String[] args) throws Exception {
         String str = "abbccda";
         HuffmanCoder coder = new HuffmanCoder(str);
         String cs = coder.encode(str);
-        String ds = coder.decode(str);
+        String ds = coder.decode(cs);
 
-        System.out.println(cs);
-        System.out.println(ds);
-
+        System.out.println("Encoded: " + cs);
+        System.out.println("Decoded: " + ds);
     }
 }
