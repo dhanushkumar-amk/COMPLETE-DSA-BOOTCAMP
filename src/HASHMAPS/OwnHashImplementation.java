@@ -54,6 +54,6 @@ class Main{
         map.put("ram", "designer");
         map.put("kunal", "engineer");
 
-        map.get("dhanush");
+        System.out.println(map.get("dhanush"));
     }
 }
