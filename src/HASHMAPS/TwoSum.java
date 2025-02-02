@@ -25,7 +25,6 @@ public class TwoSum {
                 result[0] = map.get(target - nums[i]);
                 return result;
             }
-
             map.put(nums[i], i);
         }
         return result;
