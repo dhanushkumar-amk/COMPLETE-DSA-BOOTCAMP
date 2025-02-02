@@ -109,6 +109,10 @@ public class Heap<T extends  Comparable<T>> {
         }
         return data;
     }
+
+    public int size() {
+        return this.size();
+    }
 }
 
 class Main{
