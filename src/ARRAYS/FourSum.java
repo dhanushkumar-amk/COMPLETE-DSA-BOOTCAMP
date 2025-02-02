@@ -1,4 +1,4 @@
-package HASHMAPS;
+package ARRAYS;
 
 // https://leetcode.com/problems/4sum/
 // leetcode 18
