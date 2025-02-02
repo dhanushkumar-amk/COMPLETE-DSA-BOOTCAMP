@@ -1,5 +1,8 @@
 package HASHMAPS;
 
+// https://leetcode.com/problems/4sum/
+// leetcode 18
+
 import java.util.List;
 
 public class FourSum {
