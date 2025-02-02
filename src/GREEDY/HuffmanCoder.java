@@ -1,5 +1,7 @@
 package GREEDY;
 
+import HEAPS.Heap;
+
 import java.util.*;
 public class HuffmanCoder {
 
@@ -28,13 +30,31 @@ public class HuffmanCoder {
         // negative means smaller , 0 means equal, positive means larger
     }
 
+    // step 1 pass the feeder
     public HuffmanCoder(String feeder) throws Exception {
 
+        // step 2 create frequency map
         HashMap<Character, Integer> frequency = new HashMap<>();
-
         for (int i = 0; i <feeder.length() ; i++) {
             char character = feeder.charAt(i);
 
+            // if value already exists then increase the count
+            if (frequency.containsKey(character)) {
+                int originalValue = frequency.get(character);
+                originalValue += 1;
+                frequency.put(character, originalValue);
+            }else {
+                // if does not exit put one
+                frequency.put(character, 1);
+            }
+        }
+
+        //step 3
+        Heap<Node> minHeap = new Heap<>();
+        Set<Map.Entry<Character, Integer>> entrySet = frequency.entrySet();
+
+        for (Map.Entry<Character, Integer> entry : entrySet){
+            Node node = new Node(entry.getKey())
         }
     }
 }
