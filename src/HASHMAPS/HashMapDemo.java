@@ -8,3 +8,4 @@ public class HashMapDemo {
         System.out.println(code);
     }
 }
+
