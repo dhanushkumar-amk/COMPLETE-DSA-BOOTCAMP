@@ -5,5 +5,6 @@ public class HashMapDemo {
         String name = "dhanush";
         int code = name.hashCode();
         System.out.println(code);
+        System.out.println(code);
     }
 }
