@@ -83,11 +83,11 @@ public class HuffmanCoder {
 
     private void initEncoderDecoder(Node node, String output) {
 
-        if (node == null) {
+        if (node == null){
             return;
 
             // if go in the leaf node and add the data into it an hashmaps
-            if (node.left == null && node.right == null) {
+            if (node.left == null && node.right == null){
                 this.encoder.put(node.data, output);
                 this.decoder.put(output, node.data);
             }
@@ -95,8 +95,8 @@ public class HuffmanCoder {
             // go left and right , fo left add 0 to all and right 1 to all
             initEncoderDecoder(node.left, output + "0");
             initEncoderDecoder(node.right, output + "1");
+            }
         }
-    }
 
     // encode the function
     public String encode(String source){
