@@ -6,7 +6,7 @@ public class OwnHashImplementation {
 
     private Entity[] entities;
 
-    public OwnHashImplementation(Entity[] entities) {
+    public OwnHashImplementation() {
         this.entities = new Entity[100];
     }
 
