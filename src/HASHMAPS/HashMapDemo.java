@@ -20,6 +20,8 @@ public class HashMapDemo {
 
         System.out.println(map.get("raj"));
 
+        System.out.println(map.getOrDefault("arun", 49));
+
     }
 }
 
