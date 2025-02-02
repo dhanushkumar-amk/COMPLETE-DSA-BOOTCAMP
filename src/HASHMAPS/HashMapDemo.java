@@ -20,7 +20,9 @@ public class HashMapDemo {
 
         System.out.println(map.get("raj"));
 
+        // search it present give that value, not present give default value you assign
         System.out.println(map.getOrDefault("arun", 49));
+
 
     }
 }
