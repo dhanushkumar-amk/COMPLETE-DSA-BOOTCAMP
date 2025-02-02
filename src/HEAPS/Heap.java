@@ -111,7 +111,7 @@ public class Heap<T extends  Comparable<T>> {
     }
 
     public int size() {
-        return this.size();
+        return list.size();
     }
 }
 
