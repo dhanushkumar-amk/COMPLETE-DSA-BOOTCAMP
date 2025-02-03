@@ -1,11 +1,47 @@
 package TRIE;
 
-import com.sun.security.jgss.GSSUtil;
 
-import java.util.Arrays;
-import java.util.Collections;
 
 public class Trie {
+
+
+    class Node{
+        Node[] links = new Node[26];
+        boolean flag = false;
+
+        public Node() {}
+
+        // contains key functions
+        // it return true if the character is found , otherwise return false if word not found
+        private boolean containsKey(char ch){
+            return links[ch - 'a'] != null;
+        }
+
+        // put function
+        // put create a new node and add the current character of the words to the new node
+        private void put(char ch, Node node){
+            links[ch - 'a'] = node;
+        }
+
+        // get function
+        private Node get(char ch){
+            return links[ch - 'a'];
+        }
+
+        // set flag as true function
+        private void setEnd(){
+            flag = true;
+        }
+
+        // check if the current reference node is a last node
+        private boolean isEnd(){
+            return flag;
+        }
+    }
+
+
+
+
 
     //  every trie has a root
     private static Node root;
@@ -83,39 +119,7 @@ public class Trie {
 
 
 
-    class Node{
-        Node[] links = new Node[26];
-        boolean flag = false;
 
-        public Node() {}
-
-        // contains key functions
-        // it return true if the character is found , otherwise return false if word not found
-        private boolean containsKey(char ch){
-            return links[ch - 'a'] != null;
-        }
-
-        // put function
-        // put create a new node and add the current character of the words to the new node
-        private void put(char ch, Node node){
-            links[ch - 'a'] = node;
-        }
-
-        // get function
-        private Node get(char ch){
-            return links[ch - 'a'];
-        }
-
-        // set flag as true function
-        private void setEnd(){
-            flag = true;
-        }
-
-        // check if the current reference node is a last node
-        private boolean isEnd(){
-            return flag;
-        }
-    }
 }
 
 
