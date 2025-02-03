@@ -1,9 +1,6 @@
 package TRIE;
 
-
-
 public class Trie {
-
 
     class Node{
         Node[] links = new Node[26];
@@ -38,9 +35,6 @@ public class Trie {
             return flag;
         }
     }
-
-
-
 
 
     //  every trie has a root
@@ -102,8 +96,6 @@ public class Trie {
         return true;
      }
 
-    /
-
 
     public static void main(String[] args) {
         Trie trie = new Trie();
@@ -119,5 +111,3 @@ public class Trie {
         System.out.println(trie.startsWith("dha"));
     }
 }
-
-
