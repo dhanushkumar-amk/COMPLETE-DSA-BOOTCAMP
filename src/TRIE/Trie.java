@@ -37,7 +37,6 @@ public class Trie {
         private boolean isEnd(){
             return flag;
         }
-
     }
 
 
