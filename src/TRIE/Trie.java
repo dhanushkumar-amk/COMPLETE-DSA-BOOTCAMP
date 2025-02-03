@@ -2,6 +2,9 @@ package TRIE;
 
 import com.sun.security.jgss.GSSUtil;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Trie {
 
     //  every trie has a root
@@ -69,7 +72,7 @@ public class Trie {
         trie.insert("ahelp");
         trie.insert("abox");
 
-        System.out.println(trie);
+        System.out.println(Arrays.toString(new Trie[]{trie}));
 
         System.out.println(trie.search("hello"));
         System.out.println(trie.search("boom"));
