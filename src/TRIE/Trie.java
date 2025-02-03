@@ -108,18 +108,12 @@ public class Trie {
         trie.insert("ahelp");
         trie.insert("abox");
 
-
-
         System.out.println(trie.search("hello"));
         System.out.println(trie.search("boom"));
 
         System.out.println(trie.startsWith("hell"));
         System.out.println(trie.startsWith("dha"));
     }
-
-
-
-
 }
 
 
