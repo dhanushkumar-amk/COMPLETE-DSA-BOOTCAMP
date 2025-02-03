@@ -1,4 +1,4 @@
-package TRIE;
+package TREES;
 
 //leetcode 100
 
