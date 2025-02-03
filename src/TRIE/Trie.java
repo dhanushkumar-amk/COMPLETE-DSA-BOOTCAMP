@@ -72,7 +72,7 @@ public class Trie {
         trie.insert("ahelp");
         trie.insert("abox");
 
-        System.out.println(Arrays.toString(new Trie[]{trie}));
+        
 
         System.out.println(trie.search("hello"));
         System.out.println(trie.search("boom"));
