@@ -1,6 +1,6 @@
 package TRIE;
 
-public class Trie {
+public class Trie1 {
 
     class Node{
         Node[] links = new Node[26];
@@ -40,7 +40,7 @@ public class Trie {
     //  every trie has a root
     private static Node root;
 
-    public Trie(){
+    public Trie1(){
         root = new Node();
     }
 
@@ -98,7 +98,7 @@ public class Trie {
 
 
     public static void main(String[] args) {
-        Trie trie = new Trie();
+        Trie1 trie = new Trie1();
         trie.insert("hello");
         trie.insert("help");
         trie.insert("ahelp");
