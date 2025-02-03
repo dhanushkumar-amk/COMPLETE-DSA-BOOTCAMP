@@ -17,30 +17,14 @@ public class SameTree {
       }
   }
 
-  private TreeNode root1;
-  private TreeNode root2;
 
+    public boolean isSameTree(TreeNode first, TreeNode second) {
+        if (first == null && second == null)
+            return true;
 
-    public boolean isSameTree(TreeNode p, TreeNode q) {
+        if (first == null || second == null || first.val != second.val)
+            return false;
 
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root1);
-        queue.offer(root2);
-
-        while (!queue.isEmpty()){
-            TreeNode first = queue.poll();
-            TreeNode second = queue.poll();
-
-            if (first == null && second == null)
-                continue;
-            else if (first == null || second == null || first.val != second.val)
-                return false;
-
-            queue.add(root1.left);
-            queue.add(root2.left);
-            queue.add(root1.right);
-            queue.add(root2.right);
-        }
-        return true;
+        return isSameTree(first.left, second.left) && isSameTree(first.right,second.right);
     }
 }
