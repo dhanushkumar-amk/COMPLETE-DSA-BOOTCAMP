@@ -1,7 +1,6 @@
 package TRIE;
 
-import java.util.LinkedList;
-import java.util.Queue;
+//leetcode 100
 
 public class SameTree {
     public class TreeNode {
