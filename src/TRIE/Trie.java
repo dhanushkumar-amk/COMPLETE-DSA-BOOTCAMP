@@ -65,7 +65,7 @@ public class Trie {
         // at standing at the last reference trie then we set the flag => true
         node.setEnd();
     }
-    
+
 
     // search function (if the word present or not)
     public boolean search(String word){
@@ -102,7 +102,7 @@ public class Trie {
         return true;
      }
 
-
+    /
 
 
     public static void main(String[] args) {
