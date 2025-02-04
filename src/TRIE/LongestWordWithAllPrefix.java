@@ -4,7 +4,7 @@ public class LongestWordWithAllPrefix {
 
 
 
-    private  Node root;
+    private static   Node root;
 
     public  LongestWordWithAllPrefix() {
         root = new Node();
