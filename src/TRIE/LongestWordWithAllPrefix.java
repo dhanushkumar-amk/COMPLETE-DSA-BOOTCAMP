@@ -81,7 +81,7 @@ public class LongestWordWithAllPrefix {
 
     public static void main(String[] args) {
         String[] arr = {"n", "ninja", "ninj", "ni", "ninga"};
-        int n = arr.length;
-        System.out.println(completeString(n, arr)); // Output: "ninja"
+        System.out.println(completeString(arr.length, arr));
+
     }
 }
