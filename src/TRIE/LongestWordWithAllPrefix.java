@@ -28,7 +28,7 @@ public class LongestWordWithAllPrefix {
         }
     }
 
-    private static final Node root = new Node(); // Root should NOT be reset
+    private static  Node root = new Node(); // Root should NOT be reset
 
     // Insert word into the Trie
     public static void insert(String word) {
