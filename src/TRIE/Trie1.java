@@ -2,6 +2,32 @@ package TRIE;
 
 public class LongestWordWithAllPrefix {
 
+    // Trie Node class
+    class Node {
+        private final TRIE.Node[] links = new TRIE.Node[26];
+        private boolean flag = false;
+
+        boolean containsKey(char ch) {
+            return links[ch - 'a'] != null;
+        }
+
+        TRIE.Node get(char ch) {
+            return links[ch - 'a'];
+        }
+
+        void put(char ch, TRIE.Node node) {
+            links[ch - 'a'] = node;
+        }
+
+        void setEnd() {
+            flag = true;
+        }
+
+        boolean isEnd() {
+            return flag;
+        }
+    }
+
     private static Node root;
 
     public LongestWordWithAllPrefix() {
@@ -66,28 +92,4 @@ public class LongestWordWithAllPrefix {
     }
 }
 
-// Trie Node class
-class Node {
-    private final Node[] links = new Node[26];
-    private boolean flag = false;
 
-    boolean containsKey(char ch) {
-        return links[ch - 'a'] != null;
-    }
-
-    Node get(char ch) {
-        return links[ch - 'a'];
-    }
-
-    void put(char ch, Node node) {
-        links[ch - 'a'] = node;
-    }
-
-    void setEnd() {
-        flag = true;
-    }
-
-    boolean isEnd() {
-        return flag;
-    }
-}
