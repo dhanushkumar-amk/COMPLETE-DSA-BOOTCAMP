@@ -1,95 +1,113 @@
 package TRIE;
 
-public class LongestWordWithAllPrefix {
+public class Trie1 {
 
-    // Trie Node class
-    class Node {
-        private final TRIE.Node[] links = new TRIE.Node[26];
-        private boolean flag = false;
+    class Node{
+        Node[] links = new Node[26];
+        boolean flag = false;
 
-        boolean containsKey(char ch) {
+        public Node() {}
+
+        // contains key functions
+        // it return true if the character is found , otherwise return false if word not found
+        private boolean containsKey(char ch){
             return links[ch - 'a'] != null;
         }
 
-        TRIE.Node get(char ch) {
-            return links[ch - 'a'];
-        }
-
-        void put(char ch, TRIE.Node node) {
+        // put function
+        // put create a new node and add the current character of the words to the new node
+        private void put(char ch, Node node){
             links[ch - 'a'] = node;
         }
 
-        void setEnd() {
+        // get function
+        private Node get(char ch){
+            return links[ch - 'a'];
+        }
+
+        // set flag as true function
+        private void setEnd(){
             flag = true;
         }
 
-        boolean isEnd() {
+        // check if the current reference node is a last node
+        private boolean isEnd(){
             return flag;
         }
     }
 
+
+    //  every trie has a root
     private static Node root;
 
-    public LongestWordWithAllPrefix() {
+    public Trie1(){
         root = new Node();
     }
 
-    // Insert word into the trie
-    public static void insert(String word) {
-        Node node = root;
-        for (int i = 0; i < word.length(); i++) {
-            char ch = word.charAt(i);
-            if (!node.containsKey(ch))
-                node.put(ch, new Node());
-            node = node.get(ch);
+    // insert function
+    public void insert(String word){
+        Node node = root;// always starts from root
+
+        // insert every character in word
+        for (char i = 0; i <word.length(); i++) {
+            if (!node.containsKey(word.charAt(i))){
+                node.put(word.charAt(i), new Node());
+            }
+            // move to the reference trie
+            node.get(word.charAt(i));
         }
+        // at standing at the last reference trie then we set the flag => true
         node.setEnd();
     }
 
-    // Check if all prefixes of a word exist in Trie
-    public static boolean checkIfPrefixExists(String word) {
+
+    // search function (if the word present or not)
+    public boolean search(String word){
         Node node = root;
+
         for (int i = 0; i < word.length(); i++) {
-            char ch = word.charAt(i);
-            if (node.containsKey(ch)) {
-                node = node.get(ch);
-                if (!node.isEnd()) // If any prefix is missing, return false
-                    return false;
-            } else {
+
+            // if character is not found return false
+            if (!node.containsKey(word.charAt(i)))
                 return false;
-            }
+
+            // otherwise go to the next reference
+            node.get(word.charAt(i));
+        }
+
+        // if node reaches the last node then word is found
+        if (node.isEnd())
+            return true;
+
+        return false;
+    }
+
+
+    // words starts with function
+    public boolean startsWith(String prefixWord){
+        Node node = root;
+
+        for (int i = 0; i < prefixWord.length(); i++) {
+            if (!node.containsKey(prefixWord.charAt(i)))
+                return false;
+            // go to the next
+            node.get(prefixWord.charAt(i));
         }
         return true;
-    }
+     }
 
-    // Find the longest word with all prefixes present
-    public static String completeString(int n, String[] words) {
-        root = new Node(); // Initialize root
-
-        // Insert all words into the Trie
-        for (String word : words) {
-            insert(word);
-        }
-
-        String longest = "";
-        for (String word : words) {
-            if (checkIfPrefixExists(word)) {
-                // Choose the longest word or lexicographically smaller if equal in length
-                if (word.length() > longest.length() ||
-                        (word.length() == longest.length() && word.compareTo(longest) < 0)) {
-                    longest = word;
-                }
-            }
-        }
-
-        return longest.isEmpty() ? "None" : longest;
-    }
 
     public static void main(String[] args) {
-        String[] arr = {"n", "ninja", "ninj", "ni", "ninga"};
-        int n = arr.length;
-        System.out.println(completeString(n, arr)); // Output: "ninja"
+        Trie1 trie = new Trie1();
+        trie.insert("hello");
+        trie.insert("help");
+        trie.insert("ahelp");
+        trie.insert("abox");
+
+        System.out.println(trie.search("hello"));
+        System.out.println(trie.search("boom"));
+
+        System.out.println(trie.startsWith("hell"));
+        System.out.println(trie.startsWith("dha"));
     }
 }
-
-

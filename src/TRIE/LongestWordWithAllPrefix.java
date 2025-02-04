@@ -2,101 +2,88 @@ package TRIE;
 
 public class LongestWordWithAllPrefix {
 
+    // Trie Node class
+    static class Node {  // Made static
+        private final Node[] links = new Node[26];
+        private boolean flag = false;
 
+        boolean containsKey(char ch) {
+            return links[ch - 'a'] != null;
+        }
 
-    private static   Node root;
+        Node get(char ch) {
+            return links[ch - 'a'];
+        }
 
-    public  LongestWordWithAllPrefix() {
-        root = new Node();
+        void put(char ch, Node node) {
+            links[ch - 'a'] = node;
+        }
+
+        void setEnd() {
+            flag = true;
+        }
+
+        boolean isEnd() {
+            return flag;
+        }
     }
 
-    // insert word into the trie
+    private static Node root = new Node(); // Initialize root properly
 
-    public static void insert(String word){
+    // Insert word into the trie
+    public static void insert(String word) {
         Node node = root;
-        for (int i = 0; i <word.length() ; i++) {
-
-            if (!node.containsKey(word.charAt(i)))
-                node.put(word.charAt(i), new Node());
-
-            node = node.get(word.charAt(i));
+        for (int i = 0; i < word.length(); i++) {
+            char ch = word.charAt(i);
+            if (!node.containsKey(ch))
+                node.put(ch, new Node());
+            node = node.get(ch);
         }
         node.setEnd();
     }
 
-
-    // boolean check if the word exits or not
-    boolean checkIfPrefixExists(String word){
+    // Check if all prefixes of a word exist in Trie
+    public static boolean checkIfPrefixExists(String word) {
         Node node = root;
-        boolean flag = true;
-        for (int i = 0; i <word.length(); i++) {
-            if (node.containsKey(word.charAt(i))){
-                node = node.get(word.charAt(i));
-
-                if (!node.isEnd())
+        for (int i = 0; i < word.length(); i++) {
+            char ch = word.charAt(i);
+            if (node.containsKey(ch)) {
+                node = node.get(ch);
+                if (!node.isEnd()) // If any prefix is missing, return false
                     return false;
+            } else {
+                return false;
             }
-            return false;
         }
         return true;
     }
 
-    public static String completeString(int n, String[] a){
-        LongestWordWithAllPrefix obj = new LongestWordWithAllPrefix();
+    // Find the longest word with all prefixes present
+    public static String completeString(int n, String[] words) {
+        root = new Node(); // Reinitialize root
 
-        for (int i = 0; i <n ; i++) {
-            obj.insert(a[i]);
+        // Insert all words into the Trie
+        for (String word : words) {
+            insert(word);
         }
 
         String longest = "";
-
-        for (int i = 0; i < n; i++) {
-            if (obj.checkIfPrefixExists(a[i])){
-                if (a[i].length() > longest.length())
-                    longest = a[i];
-                else if(a[i].length() == longest.length() && a[i].compareTo(longest) < 0)
-                    longest = a[i];
+        for (String word : words) {
+            if (checkIfPrefixExists(word)) {
+                // Choose the longest word or lexicographically smaller if equal in length
+                if (word.length() > longest.length() ||
+                        (word.length() == longest.length() && word.compareTo(longest) < 0)) {
+                    longest = word;
+                }
             }
         }
-        return longest == "" ? "None" : longest;
 
+        return longest.isEmpty() ? "None" : longest;
     }
 
     public static void main(String[] args) {
-        LongestWordWithAllPrefix trie = new LongestWordWithAllPrefix();
-        String[] arr = {"n", "ninja", "ninj","ni", "ninga"};
+        String[] arr = {"n", "ninja", "ninj", "ni", "ninga"};
         int n = arr.length;
-        System.out.println(completeString(n, arr));
-    }
-
-}
-
-class Node{
-    Node[] links = new Node[26];
-    boolean flag = false;
-
-
-    public Node() {
-    }
-
-    boolean containsKey(char ch){
-        return links[ch - 'a'] != null;
-    }
-
-    Node get(char ch){
-        return links[ch - 'a'];
-    }
-
-    void put(char ch, Node node){
-        links[ch - 'a'] = node;
-    }
-
-    public void setEnd(){
-        flag = true;
-    }
-
-    // check if the current reference node is a last node
-    public boolean isEnd(){
-        return flag;
+        System.out.println(completeString(n, arr)); // Output: "ninja"
     }
 }
