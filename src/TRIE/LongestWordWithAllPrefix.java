@@ -42,7 +42,6 @@ public class LongestWordWithAllPrefix {
         node.setEnd();
     }
 
-    // Check if all prefixes of a word exist in Trie
     public static boolean checkIfPrefixExists(String word) {
         Node node = root;
         for (int i = 0; i < word.length(); i++) {
@@ -52,11 +51,12 @@ public class LongestWordWithAllPrefix {
                 if (!node.isEnd())
                     return false;
             } else {
-                return false;
+                return false; // ✅ Moved outside the loop
             }
         }
         return true;
     }
+
 
     // Find the longest word with all prefixes present
     public static String completeString(int n, String[] words) {
