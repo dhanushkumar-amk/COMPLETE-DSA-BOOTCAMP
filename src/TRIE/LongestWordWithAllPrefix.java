@@ -3,7 +3,7 @@ package TRIE;
 public class LongestWordWithAllPrefix {
 
     // Trie Node class
-    static class Node {  // Made static
+    static class Node {
         private final Node[] links = new Node[26];
         private boolean flag = false;
 
@@ -28,9 +28,9 @@ public class LongestWordWithAllPrefix {
         }
     }
 
-    private static Node root = new Node(); // Initialize root properly
+    private static final Node root = new Node(); // Root should NOT be reset
 
-    // Insert word into the trie
+    // Insert word into the Trie
     public static void insert(String word) {
         Node node = root;
         for (int i = 0; i < word.length(); i++) {
@@ -49,7 +49,7 @@ public class LongestWordWithAllPrefix {
             char ch = word.charAt(i);
             if (node.containsKey(ch)) {
                 node = node.get(ch);
-                if (!node.isEnd()) // If any prefix is missing, return false
+                if (!node.isEnd())
                     return false;
             } else {
                 return false;
@@ -60,8 +60,6 @@ public class LongestWordWithAllPrefix {
 
     // Find the longest word with all prefixes present
     public static String completeString(int n, String[] words) {
-        root = new Node(); // Reinitialize root
-
         // Insert all words into the Trie
         for (String word : words) {
             insert(word);
