@@ -58,10 +58,8 @@ public class LongestWordWithAllPrefix {
                     longest = a[i];
             }
         }
-        if (longest == "")
-            return "None";
+        return longest == "" ? "None" : longest;
 
-        return longest;
     }
 
     public static void main(String[] args) {
