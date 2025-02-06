@@ -2,7 +2,7 @@ package GRAPH;
 import java.util.*;
 
 // https://leetcode.com/problems/number-of-provinces/
-
+//leetcode 547
 
 public class NumberOfProvinces {
     private static void dfs(int node,ArrayList<ArrayList<Integer>> adjLs,int vis[]) {
