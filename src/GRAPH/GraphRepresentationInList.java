@@ -9,6 +9,7 @@ public class GraphRepresentationInList {
 
         ArrayList<ArrayList<Integer>> list = new ArrayList<>();
 
+        // create the empty list of every index
         for (int i = 0; i <=n; i++) {
             list.add(new ArrayList<>());
         }
