@@ -34,7 +34,7 @@ public class GraphRepresentationInList {
 
         for (int i = 0; i <=n ; i++) {
             for (int j = 0; j < list.get(i).size(); j++) {
-                System.out.println(list.get(i).get(j) + " ");
+                System.out.print(list.get(i).get(j) + " ");
             }
             System.out.println();
         }
