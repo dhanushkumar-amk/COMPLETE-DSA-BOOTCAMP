@@ -41,7 +41,7 @@ public class DFSImplementation {
         adj.get(0).add(1);
         adj.get(1).add(0);
         adj.get(0).add(3);
-        
+
         adj.get(3).add(0);
         adj.get(2).add(4);
         adj.get(4).add(2);
