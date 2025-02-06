@@ -1,6 +1,9 @@
 package GRAPH;
 import java.util.*;
 
+// https://leetcode.com/problems/number-of-provinces/
+
+
 public class NumberOfProvinces {
     private static void dfs(int node,ArrayList<ArrayList<Integer>> adjLs,int vis[]) {
         vis[node] = 1;
