@@ -8,14 +8,24 @@ public class DFSImplementation {
     // Function to return a list containing the DFS traversal of the graph.
     public ArrayList<Integer> dfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
         //boolean array to keep track of visited vertices
-        boolean vis[] = new boolean[V+1];
+        boolean[] vis = new boolean[V+1];
         vis[0] = true;
-        ArrayList<Integer> ls = new ArrayList<>();
-        dfs(0, vis, adj, ls);
-        return ls;
+        ArrayList<Integer> list = new ArrayList<>();
+        dfs(0, vis, adj, list);
+        return list;
     }
 
-    
+    public static void dfs(int node, boolean[] vis, ArrayList<ArrayList<Integer>> adj,ArrayList<Integer> list){
+        vis[node] = true;
+        list.add(node);
+
+        //getting neighbour nodes
+        for(Integer it: adj.get(node)) {
+            if(vis[it] == false) {
+                dfs(it, vis, adj, list);
+            }
+        }
+    }
 
     public DFSImplementation() {
     }
@@ -31,6 +41,7 @@ public class DFSImplementation {
         adj.get(0).add(1);
         adj.get(1).add(0);
         adj.get(0).add(3);
+        
         adj.get(3).add(0);
         adj.get(2).add(4);
         adj.get(4).add(2);
