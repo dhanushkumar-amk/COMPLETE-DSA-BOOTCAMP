@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public class DFSImplementation {
 
-    public static void dfs(int node, boolean[] vis, ArrayList<ArrayList<Integer>> adj,
-                           ArrayList<Integer> ls){
+    public static void dfs(int node, boolean[] vis, ArrayList<ArrayList<Integer>> adj,ArrayList<Integer> ls){
         vis[node] = true;
         ls.add(node);
 
