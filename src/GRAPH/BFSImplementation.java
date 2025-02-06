@@ -28,7 +28,7 @@ public class BFSImplementation {
         int n = answer.size();
 
         for (int i = 0; i <n; i++) {
-            System.out.println(answer.get(i));
+            System.out.print(answer.get(i) + " ");
         }
 
     }
