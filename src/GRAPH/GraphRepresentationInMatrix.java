@@ -3,8 +3,8 @@ package GRAPH;
 public class GraphRepresentationInMatrix {
     public static void main(String[] args) {
 
-        int n = 3;
-        int m = 3;
+        int n = 5;
+        int m = 6;
 
         int[][] matrix = new int[n + 1][n + 1];
 
