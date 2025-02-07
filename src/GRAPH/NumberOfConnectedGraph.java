@@ -38,6 +38,8 @@ public class NumberOfConnectedGraph {
             int c = queue.peek().first;
             queue.remove();
 
+            // het the neighbour nodes
+
             for (int deltaRow = -1; deltaRow <= 1; deltaRow++) {
                 for (int deltaCol = -1; deltaCol <= 1; deltaCol++) {
                     int neighbourRow = r + deltaRow;
