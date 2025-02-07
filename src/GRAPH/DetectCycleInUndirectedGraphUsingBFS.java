@@ -1,6 +1,48 @@
 package GRAPH;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class DetectCycleInUndirectedGraphUsingBFS {
 
-    
+    public boolean checkForCycle(int src, int v, ArrayList<ArrayList<Integer>> list, boolean[] visited ){
+        visited[src] = true;
+
+        Queue<Pair> queue = new LinkedList<>();
+        queue.add(new Pair(src, -1));
+
+        while(!queue.isEmpty()){
+            int node = queue.peek().first;
+            int parent = queue.peek().second;
+            queue.remove();
+
+            for( int adjacentNode : list.get(node)){
+                if (!visited[adjacentNode]){
+                    visited[adjacentNode] = true;
+                    queue.add(new Pair(adjacentNode, node));
+                }
+                // if someone already visited that element before means cyclic
+                else if(parent != adjacentNode){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean isCycle(int v, ArrayList<ArrayList<Integer>> list){
+        
+    }
+
+
+    class Pair{
+        int first;
+        int second;
+
+        public Pair(int first, int second) {
+            this.first = first;
+            this.second = second;
+        }
+    }
 }
