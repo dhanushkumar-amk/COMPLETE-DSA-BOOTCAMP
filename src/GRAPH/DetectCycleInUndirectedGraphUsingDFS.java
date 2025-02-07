@@ -14,8 +14,10 @@ public class DetectCycleInUndirectedGraphUsingDFS {
                 if(dfs(adjacentNode, node, visited, list))
                     return true;
             }
-
+            else if(adjacentNode != parent)
+                return true;
         }
+        return false;
     }
 
 }
