@@ -2,7 +2,7 @@ package GRAPH;
 
 public class FloodFillAlgorithm {
 
-    private void dfs(int row, int col, int[][] ans, int[][] image, int newColor, int delRow[], int delCol[], int iniColor) {
+    private void dfs(int row, int col, int[][] ans, int[][] image, int newColor, int[] delRow, int[] delCol, int iniColor) {
         // color with new color
         ans[row][col] = newColor;
         int n = image.length;
