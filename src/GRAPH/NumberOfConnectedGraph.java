@@ -33,18 +33,23 @@ public class NumberOfConnectedGraph {
         int n = matrix.length;
         int m = matrix[0].length;
 
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             int r = queue.peek().first;
             int c = queue.peek().first;
             queue.remove();
 
-            for (int i = 0; i < ; i++) {
-                
-            }
-            
-        }
-        
+            for (int deltaRow = -1; deltaRow <= 1; deltaRow++) {
+                for (int deltaCol = -1; deltaCol <= 1; deltaCol++) {
+                    int neighbourRow = r + deltaRow;
+                    int neighbourCol = c + deltaCol;
 
+                    if (neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourCol < m && matrix[neighbourRow][neighbourCol] == '1' && visited[neighbourRow][neighbourCol] == 0) {
+                        visited[neighbourRow][neighbourCol] = 1;
+                        queue.add(new Pair(neighbourRow, neighbourCol));
+                    }
+                }
+            }
+        }
     }
 
     class Pair{
