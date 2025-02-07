@@ -50,7 +50,9 @@ public class RottingOranges {
         while (!queue.isEmpty()){
             int r = queue.peek().row;
             int c = queue.peek().colum;
+
             
+
         }
 
     }
