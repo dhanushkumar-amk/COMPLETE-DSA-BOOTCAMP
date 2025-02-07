@@ -32,7 +32,16 @@ public class DetectCycleInUndirectedGraphUsingBFS {
     }
 
     public boolean isCycle(int v, ArrayList<ArrayList<Integer>> list){
-        
+
+        boolean[] visited = new boolean[v];
+
+        for (int i = 0; i < v; i++) {
+            if (!visited[i]){
+                if (checkForCycle(i, v, list, visited))
+                    return true;
+            }
+        }
+        return false;
     }
 
 
