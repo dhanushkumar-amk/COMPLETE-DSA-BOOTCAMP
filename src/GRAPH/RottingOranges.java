@@ -86,7 +86,7 @@ public class RottingOranges {
 
         RottingOranges answer = new RottingOranges();
         int rotting = answer.orangesRotting(grid);
-
+        System.out.println("Minimum Number of Minutes Required "+rotting);
     }
 
 
