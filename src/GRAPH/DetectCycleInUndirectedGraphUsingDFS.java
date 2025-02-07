@@ -10,7 +10,8 @@ public class DetectCycleInUndirectedGraphUsingDFS {
 
         for(int adjacentNode : list.get(node)){
 
-            if (visited[adjacentNode]) {
+            if (visited[adjacentNode]== 0) {
+                
             }
             visited[adjacentNode]++;
         }
