@@ -30,6 +30,21 @@ public class NumberOfConnectedGraph {
         Queue<Pair> queue = new LinkedList<Pair>();
         queue.add(new Pair(row, col));
 
+        int n = matrix.length;
+        int m = matrix[0].length;
+
+        while (!queue.isEmpty()){
+            int r = queue.peek().first;
+            int c = queue.peek().first;
+            queue.remove();
+
+            for (int i = 0; i < ; i++) {
+                
+            }
+            
+        }
+        
+
     }
 
     class Pair{
