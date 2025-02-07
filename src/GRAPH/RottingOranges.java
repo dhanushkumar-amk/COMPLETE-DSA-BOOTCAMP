@@ -47,14 +47,44 @@ public class RottingOranges {
         }
 
         int time = 0;
+        int[] deltaRow = {-1, 0, 1, 0};
+        int[] deltaCol = {0, 1, 0, -1};
+        int count = 0;
+
         while (!queue.isEmpty()){
             int r = queue.peek().row;
             int c = queue.peek().colum;
+            int t = queue.peek().time;
 
-            
+            time = Math.max(time, t);
+            queue.remove();
 
+            for (int i = 0; i < 4 ; i++) {
+                int neighbourRow = r + deltaRow[i];
+                int neighbourCol = c + deltaCol[i];
+
+                if (neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourCol < m && visited[neighbourRow][neighbourCol] != 2 && grid[neighbourRow][neighbourCol] == 1){
+                    queue.add(new Pair(neighbourRow, neighbourCol, t+1));
+                    visited[neighbourRow][neighbourCol] = 2;
+                    count++;
+                }
+            }
         }
 
+        if (count != countFresh)
+            return -1;
+
+        return time;
+    }
+
+    public static void main(String[] args) {
+        int[][] grid = {
+                {0,1,2},
+                {0,1,1},
+                {2,1,1},
+        };
+
+        
     }
 
 
