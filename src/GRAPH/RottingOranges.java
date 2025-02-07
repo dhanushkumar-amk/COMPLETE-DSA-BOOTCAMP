@@ -22,7 +22,7 @@ public class RottingOranges {
         }
     }
 
-    public int orangesRotting(int[][] grid) {
+    public  int orangesRotting(int[][] grid) {
 
         int n = grid.length;
         int m = grid[0].length;
@@ -84,7 +84,9 @@ public class RottingOranges {
                 {2,1,1},
         };
 
-        
+        RottingOranges answer = new RottingOranges();
+        int rotting = answer.orangesRotting(grid);
+
     }
 
 
