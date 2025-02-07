@@ -45,6 +45,25 @@ public class DetectCycleInUndirectedGraphUsingBFS {
     }
 
 
+    public static void main(String[] args)
+    {
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        for (int i = 0; i < 4; i++) {
+            adj.add(new ArrayList < > ());
+        }
+        adj.get(1).add(2);
+        adj.get(2).add(1);
+        adj.get(2).add(3);
+        adj.get(3).add(2);
+
+        DetectCycleInUndirectedGraphUsingBFS obj = new DetectCycleInUndirectedGraphUsingBFS();
+        boolean ans = obj.isCycle(4, adj);
+        if (ans)
+            System.out.println("1");
+        else
+            System.out.println("0");
+    }
+
     class Pair{
         int first;
         int second;
