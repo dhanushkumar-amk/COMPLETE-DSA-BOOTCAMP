@@ -12,12 +12,15 @@ public class DetectCycleInDirectedGraph {
 
         for (int i = 0; i < v; i++) {
             if (visited[i] == 0) {
-                // it is cycl then it ist true
+                // it is cycle then it ist true
                 if (dfs(i, list, visited, pathVisited))
                     return true;
             }
-
-
         }
+        return false;
+    }
+
+    private boolean dfs(int i, ArrayList<ArrayList<Integer>> list, int[] visited, int[] pathVisited) {
+    
     }
 }
