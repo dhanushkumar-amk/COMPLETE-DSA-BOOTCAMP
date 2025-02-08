@@ -53,11 +53,16 @@ public class SurroundedRegions {
     private static void dfs(int row, int col, int[][] visited, char[][] matrix, int[] deltaRow, int[] deltaCol) {
             visited[row][col] = 1;
 
-        int n = matrix.length;
-        int m = matrix[0].length;
+            int n = matrix.length;
+            int m = matrix[0].length;
 
             // check for top and right
-        
+        for (int i = 0; i <4 ; i++) {
+            int neighbourRow = row + deltaRow[i];
+            int neighbourCol = col + deltaCol[i];
+
+            if (!visited[][])
+        }
     }
 
 
