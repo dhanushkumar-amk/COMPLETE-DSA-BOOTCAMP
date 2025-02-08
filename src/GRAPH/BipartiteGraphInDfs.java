@@ -1,10 +1,8 @@
 package GRAPH;
 
-
 import java.util.*;
 
 public class BipartiteGraphInDfs {
-
     public boolean isBipartite(int v, ArrayList<ArrayList<Integer>>list){
 
         int[] color = new int[v];
@@ -58,5 +56,4 @@ public class BipartiteGraphInDfs {
             System.out.println("1");
         else System.out.println("0");
     }
-
 }
