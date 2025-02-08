@@ -62,7 +62,7 @@ public class SurroundedRegions {
             int neighbourCol = col + deltaCol[i];
 
            if (neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourCol < m && visited[neighbourRow][neighbourCol] == 0 &&  matrix[neighbourRow][neighbourCol] == '0'){
-               visited[neighbourRow][neighbourCol] = 1;
+              dfs(row, col, visited, matrix, deltaRow, deltaCol);
            }
         }
     }
