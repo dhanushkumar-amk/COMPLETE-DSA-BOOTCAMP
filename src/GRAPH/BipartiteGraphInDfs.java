@@ -20,8 +20,11 @@ public class BipartiteGraphInDfs {
         return true;
     }
 
-    private boolean dfs(int i, int col, int[] color, ArrayList<ArrayList<Integer>> list) {
-        return false;
+    private boolean dfs(int node, int currentColor, int[] color, ArrayList<ArrayList<Integer>> list) {
+
+        color[node] = currentColor;
+
+        for(auto i : list.get(node))
     }
 
 
