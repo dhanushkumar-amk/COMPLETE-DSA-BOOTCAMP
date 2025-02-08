@@ -7,7 +7,7 @@ package GRAPH;
 public class SurroundedRegions {
 
 
-    static  char[][] fill(int n, int m, char[][] matrix){
+    public   char[][] fill(int n, int m, char[][] matrix){
         int[] deltaRow = {-1, 0, +1, 0};
         int[] deltaCol = {0, 1, 0, -1};
         int[][] visited = new int[n][m];
@@ -50,6 +50,32 @@ public class SurroundedRegions {
 
     }
 
-    private static void dfs(int i, int j, int[][] visited, char[][] matrix, int[] deltaRow, int[] deltaCol) {
+    private static void dfs(int row, int col, int[][] visited, char[][] matrix, int[] deltaRow, int[] deltaCol) {
+            visited[row][col] = 1;
+
+
+            // check for top and right
+        
+    }
+
+
+    public static void main(String[] args)
+    {
+        char matrix[][] = {
+                {'X', 'X', 'X', 'X'},
+                {'X', 'O', 'X', 'X'},
+                {'X', 'O', 'O', 'X'},
+                {'X', 'O', 'X', 'X'},
+                {'X', 'X', 'O', 'O'}};
+
+        // n = 5, m = 4
+        SurroundedRegions ob = new SurroundedRegions();
+        char[][] ans = ob.fill(5, 4, matrix);
+        for(int i = 0;i < 5;i++) {
+            for(int j = 0;j < 4;j++) {
+                System.out.print(ans[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
