@@ -23,6 +23,10 @@ public class MatrixDistanceAtNearestCellHaving {
 
     public int[][] updateMatrix(int[][] mat) {
 
+        int n = mat.length;
+        int m = mat[0].length;
+
+        
     }
 
 
@@ -44,6 +48,6 @@ public class MatrixDistanceAtNearestCellHaving {
         }
     }
 
- 
+
 
 }
