@@ -24,7 +24,15 @@ public class BipartiteGraphInDfs {
 
         color[node] = currentColor;
 
-        for(auto i : list.get(node))
+        for(int i : list.get(node)){
+            if (color[i] == -1){
+                if (!dfs(i, 1 - currentColor, color, list))
+                    return false;
+            } else if (color[i] == currentColor) {
+                return false;
+            }
+        }
+        return true;
     }
 
 
