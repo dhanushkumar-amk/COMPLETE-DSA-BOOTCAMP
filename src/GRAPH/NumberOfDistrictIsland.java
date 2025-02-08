@@ -41,7 +41,7 @@ public class NumberOfDistrictIsland {
     private void dfs(int row, int col, int[][] visited, ArrayList<String> list, int[][] matrix, int baseRow, int baseCol) {
 
         visited[row][col] = 1;
-        list.add(toString(row - baseRow, col - baseCol));
+        list.add(toString1(row - baseRow, col - baseCol));
 
         int[] deltaRow = {-1, 0, 1, 0};
         int[] deltaCol = {0, -1, 0, 1};
@@ -61,7 +61,7 @@ public class NumberOfDistrictIsland {
     }
 
 
-    private String toString ( int row, int col){
+    private String toString1 ( int row, int col){
         return Integer.toString(row) + " " + Integer.toString(col);
     }
 
