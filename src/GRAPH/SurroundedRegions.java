@@ -16,6 +16,7 @@ public class SurroundedRegions {
         for(int j = 0 ; j<m;j++) {
             // check for unvisited Os in the boundary rows
             // first row
+
             if(visited[0][j] == 0 && matrix[0][j] == 'O') {
                 dfs(0, j, visited, matrix, deltaRow, deltaCol);
             }
