@@ -5,15 +5,23 @@ import java.util.*;
 
 public class BipartiteGraphInDfs {
 
-    public boolean isBipartite(int v, ArrayList<ArrayList<Integer>>adj){
+    public boolean isBipartite(int v, ArrayList<ArrayList<Integer>>list){
 
-        int[] color = new int[adj.size()];
+        int[] color = new int[v];
+        Arrays.fill(color,-1);
 
-        for (int i = 0; i < ; i++) {
-            
+        // components
+        for (int i = 0; i < v; i++) {
+            if (color[i] == -1){
+                if (!dfs(i, 0, color, list))
+                    return false;
+            }
         }
-        
+        return true;
+    }
 
+    private boolean dfs(int i, int col, int[] color, ArrayList<ArrayList<Integer>> list) {
+        return false;
     }
 
 
