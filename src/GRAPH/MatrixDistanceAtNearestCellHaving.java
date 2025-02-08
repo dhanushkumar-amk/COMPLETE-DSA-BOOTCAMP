@@ -31,11 +31,17 @@ public class MatrixDistanceAtNearestCellHaving {
         int[][] visited = new int[n][m];
         int[][] distance = new int[n][m];
 
-        Queue<Node> q = new LinkedList<Node>();
+        Queue<Node> queue = new LinkedList<Node>();
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                
+                if (mat[i][j] == 1){
+                    queue.add(new Node(i, j, 0));
+                    visited[i][j] = 1;
+                }
+                else{
+                    
+                }
             }
         }
     }
