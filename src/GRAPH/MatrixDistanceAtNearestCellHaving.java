@@ -8,8 +8,18 @@ public class MatrixDistanceAtNearestCellHaving {
 
 
     class Node{
-        
+        int first;
+        int second;
+        int third;
+
+        public Node(int first, int second, int third) {
+            this.first = first;
+            this.second = second;
+            this.third = third;
+        }
     }
+
+    
 
     public int[][] updateMatrix(int[][] mat) {
 
