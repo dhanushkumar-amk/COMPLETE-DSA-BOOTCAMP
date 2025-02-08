@@ -6,8 +6,15 @@ package GRAPH;
 
 public class MatrixDistanceAtNearestCellHaving {
 
+
+    class Node{
+        
+    }
+
     public int[][] updateMatrix(int[][] mat) {
 
     }
+
+
 
 }
