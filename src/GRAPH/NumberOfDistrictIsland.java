@@ -29,7 +29,7 @@ public class NumberOfDistrictIsland {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (visited[i][j] == 0 && matrix[i][j] == 1){
-                    ArrayList<String> list = new ArrayList<>();
+                    ArrayList<String>list = new ArrayList<>();
                     dfs(i, j, visited, list,matrix, i , j);
                     set.add(list);
                 }
