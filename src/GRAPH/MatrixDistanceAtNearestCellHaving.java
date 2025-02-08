@@ -40,9 +40,15 @@ public class MatrixDistanceAtNearestCellHaving {
                     visited[i][j] = 1;
                 }
                 else{
-                    
+                    visited[i][j] = 0;
                 }
             }
+        }
+
+        while (!queue.isEmpty()){
+            int row = queue.peek().first;
+            int col = queue.peek().second;
+            
         }
     }
 
