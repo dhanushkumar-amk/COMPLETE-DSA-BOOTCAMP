@@ -55,15 +55,26 @@ public class NumberOfDistrictIsland {
             int neighbourCol = col + deltaCol[i];
 
             if (neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourCol < m && visited[neighbourRow][neighbourCol] == 0 && matrix[neighbourRow][neighbourCol] == 1) {
-                
+                dfs(row, col,visited, list, matrix, baseRow,baseCol);
             }
         }
-
-
-
-
     }
+
+
     private String toString ( int row, int col){
         return Integer.toString(row) + " " + Integer.toString(col);
+    }
+
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+                {1,1,0,1,1},
+                {1,0,0,0,0},
+                {0,0,0,1,1},
+                {1,1,0,1,0},
+        };
+
+        NumberOfEnclaves answer = new NumberOfEnclaves();
+        System.out.println(answer.numEnclaves(matrix));
     }
 }
