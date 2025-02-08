@@ -20,7 +20,25 @@ public class DetectCycleInDirectedGraph {
         return false;
     }
 
-    private boolean dfs(int i, ArrayList<ArrayList<Integer>> list, int[] visited, int[] pathVisited) {
-    
+    private boolean dfs(int node, ArrayList<ArrayList<Integer>> list, int[] visited, int[] pathVisited) {
+
+        visited[node] = 1;
+
+        // backtrack
+        pathVisited[node] = 1;
+
+        for(int it : list.get(node)){
+            if (visited[it] == 0){
+                if (dfs(it, list, visited, pathVisited))
+                    return true;
+            } 
+            // if the node has been previous visited but it has been visited on the same path
+            else if (pathVisited[it] == 1)
+                return true;
+        }
+
+        // backtrack
+        pathVisited[node] = 0;
+        return false;
     }
 }
