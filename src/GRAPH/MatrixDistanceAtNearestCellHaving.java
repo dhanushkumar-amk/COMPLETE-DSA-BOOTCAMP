@@ -26,7 +26,8 @@ public class MatrixDistanceAtNearestCellHaving {
         int n = mat.length;
         int m = mat[0].length;
 
-        int[][] visited = mat;
+        int[][] visited = new int[n][m];
+        int[][] 
     }
 
 
