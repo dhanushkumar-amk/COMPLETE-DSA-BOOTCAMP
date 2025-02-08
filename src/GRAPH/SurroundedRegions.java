@@ -38,7 +38,15 @@ public class SurroundedRegions {
                 dfs(i, m-1, visited, matrix, deltaRow, deltaCol);
             }
         }
-        
+        // if unvisited O then convert to X
+        for(int i = 0;i<n;i++) {
+            for(int j= 0 ;j<m;j++) {
+                if(visited[i][j] == 0 && matrix[i][j] == 'O')
+                    matrix[i][j] = 'X';
+            }
+        }
+
+        return matrix;
 
     }
 
