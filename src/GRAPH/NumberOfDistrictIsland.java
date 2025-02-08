@@ -39,23 +39,31 @@ public class NumberOfDistrictIsland {
     }
 
     private void dfs(int row, int col, int[][] visited, ArrayList<String> list, int[][] matrix, int baseRow, int baseCol) {
-        
+
         visited[row][col] = 1;
         list.add(toString(row - baseRow, col - baseCol));
 
-        int[] deltaRow = {-1,0, 1, 0};
-        int[] deltaCol = {0,-1, 0, 1};
+        int[] deltaRow = {-1, 0, 1, 0};
+        int[] deltaCol = {0, -1, 0, 1};
 
+        int n = matrix.length;
+        int m = matrix[0].length;
 
         for (int i = 0; i < 4; i++) {
 
+            int neighbourRow = row + deltaRow[i];
+            int neighbourCol = col + deltaCol[i];
 
+            if (neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourCol < m && visited[neighbourRow][neighbourCol] == 0 && matrix[neighbourRow][neighbourCol] == 1) {
+                
+            }
         }
+
+
+
+
     }
-
-
-  private String toString(int row, int col){
+    private String toString ( int row, int col){
         return Integer.toString(row) + " " + Integer.toString(col);
-  }
+    }
 }
-
