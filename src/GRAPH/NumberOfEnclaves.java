@@ -70,4 +70,18 @@ public class NumberOfEnclaves {
         }
         return count;
     }
+
+
+    public static void main(String[] args)
+    {
+        int[][] matrix = {
+                {0, 0, 0, 0},
+                {1, 0, 1, 0},
+                {0, 1, 1, 0},
+                {0, 0, 0, 0}};
+
+        NumberOfEnclaves ob = new NumberOfEnclaves();
+        int ans = ob.numEnclaves(matrix);
+        System.out.println(ans);
+    }
 }
