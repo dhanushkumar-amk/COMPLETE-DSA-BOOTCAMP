@@ -5,4 +5,21 @@ package GRAPH;
 
 
 public class NumberOfEnclaves {
+
+    class Pair{
+        int fist;
+        int second;
+
+        public Pair(int fist, int second) {
+            this.fist = fist;
+            this.second = second;
+        }
+    }
+
+
+    public int numEnclaves(int[][] grid) {
+
+        
+    }
+
 }
