@@ -4,6 +4,8 @@ package GRAPH;
 // https://leetcode.com/problems/01-matrix/description/
 //leetcode 542
 
+import java.util.*;
+
 public class MatrixDistanceAtNearestCellHaving {
 
 
@@ -28,6 +30,8 @@ public class MatrixDistanceAtNearestCellHaving {
 
         int[][] visited = new int[n][m];
         int[][] distance = new int[n][m];
+
+        Queue<Node> q = new LinkedList<Node>();
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
