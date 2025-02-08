@@ -7,7 +7,11 @@ public class BipartiteGraphInDfs {
 
     public boolean isBipartite(int v, ArrayList<ArrayList<Integer>>adj){
 
-        int[] color = new int[v];
+        int[] color = new int[adj.size()];
+
+        for (int i = 0; i < ; i++) {
+            
+        }
         
 
     }
