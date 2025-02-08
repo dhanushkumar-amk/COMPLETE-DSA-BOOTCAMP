@@ -61,7 +61,7 @@ public class SurroundedRegions {
             int neighbourRow = row + deltaRow[i];
             int neighbourCol = col + deltaCol[i];
 
-           
+           if (neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourCol < m && visited[neighbourRow][neighbourCol] == 0 && )
         }
     }
 
