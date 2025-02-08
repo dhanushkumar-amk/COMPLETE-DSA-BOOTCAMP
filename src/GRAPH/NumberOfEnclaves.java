@@ -10,11 +10,11 @@ import java.util.Queue;
 public class NumberOfEnclaves {
 
     class Pair{
-        int fist;
+        int first;
         int second;
 
-        public Pair(int fist, int second) {
-            this.fist = fist;
+        public Pair(int first, int second) {
+            this.first = first;
             this.second = second;
         }
     }
@@ -46,7 +46,7 @@ public class NumberOfEnclaves {
 
         while (!queue.isEmpty()){
 
-            int row = queue.peek().fist;
+            int row = queue.peek().first;
             int col = queue.peek().second;
             queue.remove();
 
