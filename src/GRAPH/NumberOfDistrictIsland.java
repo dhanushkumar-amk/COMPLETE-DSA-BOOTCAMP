@@ -13,6 +13,8 @@ public class NumberOfDistrictIsland {
         }
     }
 
-    public int countDistinctIslands()
+    public int countDistinctIslands(){
+        
+    }
 
 }
