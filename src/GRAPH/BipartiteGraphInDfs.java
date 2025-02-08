@@ -2,6 +2,9 @@ package GRAPH;
 
 import java.util.*;
 
+//https://leetcode.com/problems/is-graph-bipartite/description/
+// leetcode = 
+
 public class BipartiteGraphInDfs {
     public boolean isBipartite(int v, ArrayList<ArrayList<Integer>>list){
 
