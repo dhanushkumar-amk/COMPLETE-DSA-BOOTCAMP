@@ -7,7 +7,7 @@ package GRAPH;
 public class SurroundedRegions {
 
 
-    public   char[][] fill(int n, int m, char[][] matrix){
+    public   void  fill(int n, int m, char[][] matrix){
         int[] deltaRow = {-1, 0, +1, 0};
         int[] deltaCol = {0, 1, 0, -1};
         int[][] visited = new int[n][m];
@@ -46,7 +46,7 @@ public class SurroundedRegions {
             }
         }
 
-        return matrix;
+
 
     }
 
@@ -78,11 +78,10 @@ public class SurroundedRegions {
                 {'X', 'X', 'O', 'O'}};
 
         // n = 5, m = 4
-        SurroundedRegions ob = new SurroundedRegions();
-        char[][] ans = ob.fill(5, 4, matrix);
+        SurroundedRegions ob = new SurroundedRegions(); ob.fill(5, 4, matrix);
         for(int i = 0;i < 5;i++) {
             for(int j = 0;j < 4;j++) {
-                System.out.print(ans[i][j] + " ");
+                System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
