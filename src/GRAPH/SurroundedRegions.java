@@ -3,10 +3,32 @@ package GRAPH;
 // https://leetcode.com/problems/surrounded-regions/description/
 //leetcode 130
 
+
 public class SurroundedRegions {
 
 
     static  char[][] fill(int n, int m, char[][] matrix){
+        int[] deltaRow = {-1, 0, +1, 0};
+        int[] deltaCol = {0, 1, 0, -1};
+        int[][] visited = new int[n][m];
+
+        // traverse first row and last row
+        for(int j = 0 ; j<m;j++) {
+            // check for unvisited Os in the boundary rows
+            // first row
+            if(visited[0][j] == 0 && matrix[0][j] == 'O') {
+                dfs(0, j, visited, matrix, deltaRow, deltaCol);
+            }
+
+            // last row
+            if(visited[n-1][j] == 0 && matrix[n-1][j] == 'O') {
+                dfs(n-1,j,visited,matrix, deltaRow, deltaCol);
+            }
+        }
+
         
+    }
+
+    private static void dfs(int i, int j, int[][] visited, char[][] matrix, int[] deltaRow, int[] deltaCol) {
     }
 }
