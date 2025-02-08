@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class BipartiteGraphUsingBFS {
 
-    boolean isBipartite(int V
+    boolean isBipartite(int v, )
 
 
     public static void main(String[] args)
