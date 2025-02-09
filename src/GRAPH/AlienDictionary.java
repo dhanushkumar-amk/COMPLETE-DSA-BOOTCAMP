@@ -64,7 +64,18 @@ public class AlienDictionary {
         for(int it : topo){
             answer = answer + (char)(it + (int)('a'));
         }
-
         return answer;
+    }
+
+    public static void main(String[] args) {
+        int N = 5, K = 4;
+        String[] dict = {"baa", "abcd", "abca", "cab", "cad"};
+        AlienDictionary obj = new AlienDictionary();
+        String ans = obj.findDictionary(dict, N, K);
+
+        for (int i = 0; i < ans.length(); i++) {
+            System.out.print(ans.charAt(i) + " ");
+        }
+        System.out.println("");
     }
 }
