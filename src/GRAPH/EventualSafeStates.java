@@ -1,2 +1,5 @@
-package GRAPH;public class EventualSafeStates {
+package GRAPH;
+
+public class EventualSafeStates {
+    
 }
