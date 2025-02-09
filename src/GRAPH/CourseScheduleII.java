@@ -10,52 +10,57 @@ import java.util.Queue;
 
 public class CourseScheduleII {
 
-    public static int[] findOrder(int numCourses, ArrayList<ArrayList<Integer>> prerequisites) {
-        ArrayList<ArrayList<Integer>> list = new ArrayList<>();
-        for (int i = 0; i <numCourses; i++) {
-            list.add(new ArrayList<>());
-        }
-
-        int n = prerequisites.length;
-        for (int i = 0; i <n ; i++) {
-            list.get(prerequisites[i][1]).add(prerequisites[i][0]);
-        }
-
-        int[] inDegree = new int[n];
+    static int[] findOrder(int n, int m, ArrayList<ArrayList<Integer>> prerequisites) {
+        // Form a graph
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            for(int it : list.get(i)){
-                inDegree[i]++;
+            adj.add(new ArrayList<>());
+        }
+
+        for (int i = 0; i < m; i++) {
+            adj.get(prerequisites.get(i).get(1)).add(prerequisites.get(i).get(0));
+        }
+
+
+
+        int indegree[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            for (int it : adj.get(i)) {
+                indegree[it]++;
             }
         }
 
-        Queue<Integer> queue = new LinkedList<>();
+
+        Queue<Integer> q = new LinkedList<Integer>();
         for (int i = 0; i < n; i++) {
-            if (inDegree[i] == 0)
-                queue.add(i);
-        }
-
-        int i = 0;
-        int[] answer = new int[numCourses];
-        while (!queue.isEmpty()){
-            int node = queue.poll();
-            answer[i] = node;
-            i++;
-
-            for(int it : list.get(node)){
-                inDegree[it]--;
-
-                if (inDegree[it] == 0)
-                    queue.add(it);
+            if (indegree[i] == 0) {
+                q.add(i);
             }
         }
 
-        if (answer.length == numCourses)
-            return answer;
 
-        return new int[]{};
+        int topo[] = new int[n];
+        int ind = 0;
+        // o(v + e)
+        while (!q.isEmpty()) {
+            int node = q.peek();
 
+            q.remove();
+            topo[ind++] = node;
+            // node is in your topo sort
+            // so please remove it from the indegree
+
+            for (int it : adj.get(node)) {
+                indegree[it]--;
+                if (indegree[it] == 0) q.add(it);
+            }
+        }
+
+
+        if (ind == n) return topo;
+        int[] arr = {};
+        return arr;
     }
-
     public static void main(String[] args) {
         int N = 4;
         int M = 3;
@@ -74,7 +79,7 @@ public class CourseScheduleII {
         prerequisites.get(2).add(2);
         prerequisites.get(2).add(3);
 
-        int[] ans = CourseScheduleII.findOrder(N, prerequisites);
+        int[] ans = CourseScheduleII.findOrder(N, M, prerequisites);
 
         for (int task : ans) {
             System.out.print(task + " ");
