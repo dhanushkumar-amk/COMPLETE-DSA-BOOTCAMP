@@ -28,7 +28,7 @@ public class TopologicalSort {
         return answer;
     }
 
-    private void dfs(int node, ArrayList<ArrayList<Integer>> list, int[] visited, Stack<Integer> stack) {
+    private static void dfs(int node, ArrayList<ArrayList<Integer>> list, int[] visited, Stack<Integer> stack) {
 
         visited[node] = 1;
 
