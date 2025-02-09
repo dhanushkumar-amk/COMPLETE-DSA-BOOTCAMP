@@ -1,2 +1,5 @@
-package GRAPH;public class KhansAlgorithm {
+package GRAPH;
+
+public class KhansAlgorithm {
+    
 }
