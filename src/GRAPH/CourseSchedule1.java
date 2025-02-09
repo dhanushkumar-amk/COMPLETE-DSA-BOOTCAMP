@@ -15,7 +15,7 @@ public class CourseSchedule1 {
 
         int n = prerequisites.length;
         for (int i = 0; i <n ; i++) {
-            list.get(prerequisites[i][0]).add(prerequisites[]);
+            list.get(prerequisites[i][0]).add(prerequisites[i][1]);
         }
 
     }
