@@ -4,40 +4,43 @@ import java.util.*;
 
 public class KhansAlgorithm {
 
-    public static int[] khansAlgoForTopologicalSortInBFS(int v, ArrayList<ArrayList<Integer>> list) {
-
-        int[] inDegree = new int[v];
-
-        // calculate inDegree of each element
-        for (int i = 0; i < v; i++) {
-            for (int it : list.get(i))
-                inDegree[it]++;
-        }
-
-        // add elements into queue which kas indegree 0 intially
-        Queue<Integer> queue = new LinkedList<>();
-        for (int i = 0; i < v; i++) {
-            if (inDegree[i] == 0)
-                queue.add(i);
-        }
-
-        int[] answer = new int[v];
-        int i = 0;
-        while (!queue.isEmpty()) {
-            int node = queue.peek();
-            queue.remove();
-            answer[i] = node;
-            i++;
-
-            // if node was taken then reduce the indegree value
-            for (int it : list.get(i)) {
-                inDegree[it]--;
-                if (inDegree[it] == 0)
-                    queue.add(it);
+    // Function to return list containing vertices in Topological order.
+    static int[] topoSort(int V, ArrayList<ArrayList<Integer>> adj) {
+        int indegree[] = new int[V];
+        for (int i = 0; i < V; i++) {
+            for (int it : adj.get(i)) {
+                indegree[it]++;
             }
         }
-        return answer;
+
+        Queue<Integer> q = new LinkedList<Integer>();
+        ;
+        for (int i = 0; i < V; i++) {
+            if (indegree[i] == 0) {
+                q.add(i);
+            }
+        }
+
+        int topo[] = new int[V];
+        int i = 0;
+        while (!q.isEmpty()) {
+            int node = q.peek();
+            q.remove();
+            topo[i++] = node;
+            // node is in your topo sort
+            // so please remove it from the indegree
+
+            for (int it : adj.get(node)) {
+                indegree[it]--;
+                if (indegree[it] == 0) {
+                    q.add(it);
+                }
+            }
+        }
+
+        return topo;
     }
+
 
     public static void main(String[] args) {
         int V = 6;
@@ -52,7 +55,7 @@ public class KhansAlgorithm {
         adj.get(5).add(0);
         adj.get(5).add(2);
 
-        int[] ans = KhansAlgorithm.khansAlgoForTopologicalSortInBFS(V, adj);
+        int[] ans = KhansAlgorithm.topoSort(V, adj);
         for (int node : ans) {
             System.out.print(node + " ");
         }
