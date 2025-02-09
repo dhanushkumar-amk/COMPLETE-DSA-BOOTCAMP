@@ -15,7 +15,7 @@ public class EventualSafeNodeUsingTopoSort {
        int[] indegree = new int[V];
 
        for (int i = 0; i < V; i++) {
-           for(int it : list.get(i)){
+           for(int it : reverseList.get(i)){
                indegree[it]++;
            }
        }
