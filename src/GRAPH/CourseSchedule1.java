@@ -1,2 +1,6 @@
-package GRAPH;public class CourseSchedule1 {
+package GRAPH;
+
+//leetcode 
+public class CourseSchedule1 {
+
 }
