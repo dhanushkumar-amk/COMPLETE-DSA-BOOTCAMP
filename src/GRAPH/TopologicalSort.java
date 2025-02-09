@@ -1,2 +1,8 @@
-package GRAPH;public class TopologicalSort {
+package GRAPH;
+
+import java.util.ArrayList;
+
+public class TopologicalSort {
+
+    public int[] topologicalSort(int v, ArrayList<ArrayList<Integer>> list)
 }
