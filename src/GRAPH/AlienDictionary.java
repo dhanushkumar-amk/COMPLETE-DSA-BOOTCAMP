@@ -1,9 +1,6 @@
 package GRAPH;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class AlienDictionary {
 
@@ -65,8 +62,9 @@ public class AlienDictionary {
         String answer  = "";
 
         for(int it : topo){
-            answer += topo.get(it);
+            answer = answer + (char)(it + (int)('a'));
         }
 
+        return answer;
     }
 }
