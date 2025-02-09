@@ -38,5 +38,4 @@ public class KhansAlgorithm {
         return answer;
     }
 
-    
-}
+    i++;}
