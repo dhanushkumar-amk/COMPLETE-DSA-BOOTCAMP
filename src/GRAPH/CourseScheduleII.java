@@ -49,7 +49,10 @@ public class CourseScheduleII {
             }
         }
 
-        if (answer.length == n)
+        if (answer.length == numCourses)
+            return answer;
+
+        return new int[]{};
 
     }
 }
