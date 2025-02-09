@@ -48,10 +48,31 @@ public class CourseSchedule1 {
                     queue.add(it);
             }
         }
-        
+
         if (answer.length == numCourses)
             return true;
 
         return false;
+    }
+
+
+    public static void main(String[] args) {
+        int N = 4;
+        int[][] prerequisites = new int[3][2];
+        prerequisites[0][0] = 1;
+        prerequisites[0][1] = 0;
+
+        prerequisites[1][0] = 2;
+        prerequisites[1][1] = 1;
+
+        prerequisites[2][0] = 3;
+        prerequisites[2][1] = 2;
+
+        CourseSchedule1 obj = new CourseSchedule1();
+        boolean ans = obj.canFinish(N, prerequisites);
+        if (ans)
+            System.out.println("YES");
+        else
+            System.out.println("NO");
     }
 }
