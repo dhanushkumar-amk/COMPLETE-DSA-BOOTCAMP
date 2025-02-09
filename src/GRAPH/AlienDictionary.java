@@ -8,7 +8,36 @@ import java.util.Queue;
 public class AlienDictionary {
 
 
-    
+    private List<Integer> topoSort(int V, List<List<Integer>> adj) {
+        int indegree[] = new int[V];
+        for (int i = 0; i < V; i++) {
+            for (int it : adj.get(i)) {
+                indegree[it]++;
+            }
+        }
+
+        Queue<Integer> q = new LinkedList<>();
+        for (int i = 0; i < V; i++) {
+            if (indegree[i] == 0) {
+                q.add(i);
+            }
+        }
+        List<Integer> topo = new ArrayList<>();
+        while (!q.isEmpty()) {
+            int node = q.peek();
+            q.remove();
+            topo.add(node);
+            // node is in your topo sort
+            // so please remove it from the indegree
+
+            for (int it : adj.get(node)) {
+                indegree[it]--;
+                if (indegree[it] == 0) q.add(it);
+            }
+        }
+
+        return topo;
+    }
 
     public String findDictionary(String[] dictionary, int n, int k){
 
@@ -32,8 +61,12 @@ public class AlienDictionary {
             }
         }
 
-        List<Integer> answer = topoSort(k, list);
-        String answer
+        List<Integer> topo = topoSort(k, list);
+        String answer  = "";
+
+        for(int it : topo){
+            answer += topo.get(it);
+        }
 
     }
 }
