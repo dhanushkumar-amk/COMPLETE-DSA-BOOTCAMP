@@ -21,8 +21,7 @@ public class TopologicalSort {
         int i= 0;
 
         while (!stack.isEmpty()){
-            answer[i] = stack.peek();
-            i++;
+            answer[i++] = stack.peek();
             stack.peek();
 
         }
