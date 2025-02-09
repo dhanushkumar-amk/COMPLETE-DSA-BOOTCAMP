@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class TopologicalSort {
 
-    public int[] topologicalSort(int v, ArrayList<ArrayList<Integer>> list){
+    public static int[] topologicalSort(int v, ArrayList<ArrayList<Integer>> list){
 
         int[] visited = new int[v];
 
@@ -39,5 +39,26 @@ public class TopologicalSort {
         }
         // before returning store the element  on the stack
         stack.push(node);
+    }
+
+
+    public static void main(String[] args) {
+        int V = 6;
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        for (int i = 0; i < V; i++) {
+            adj.add(new ArrayList<>());
+        }
+        adj.get(2).add(3);
+        adj.get(3).add(1);
+        adj.get(4).add(0);
+        adj.get(4).add(1);
+        adj.get(5).add(0);
+        adj.get(5).add(2);
+
+        int[] ans = TopologicalSort.topologicalSort(V, adj);
+        for (int node : ans) {
+            System.out.print(node + " ");
+        }
+        System.out.println("");
     }
 }
