@@ -32,7 +32,7 @@ public class EventualSafeNodeUsingTopoSort {
            int node = queue.poll();
            safeNodes.add(node);
 
-           for(int it : list.get(node)){
+           for(int it : reverseList.get(node)){
                indegree[it]--;
 
                if (indegree[it] == 0)
