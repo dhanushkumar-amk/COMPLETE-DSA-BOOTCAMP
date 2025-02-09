@@ -21,11 +21,10 @@ public class KhansAlgorithm {
                 queue.add(i);
         }
 
-        int[] answer = new int[0];
+        int[] answer = new int[v];
         int i = 0;
         while (!queue.isEmpty()) {
-            int node = queue.peek();
-            queue.remove();
+            int node = queue.poll();
             answer[i] = node;
             i++;
 
