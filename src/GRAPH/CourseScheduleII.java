@@ -10,7 +10,7 @@ import java.util.Queue;
 
 public class CourseScheduleII {
 
-    public int[] findOrder(int numCourses, int[][] prerequisites) {
+    public static int[] findOrder(int numCourses, ArrayList<ArrayList<Integer>> prerequisites) {
         ArrayList<ArrayList<Integer>> list = new ArrayList<>();
         for (int i = 0; i <numCourses; i++) {
             list.add(new ArrayList<>());
@@ -54,5 +54,31 @@ public class CourseScheduleII {
 
         return new int[]{};
 
+    }
+
+    public static void main(String[] args) {
+        int N = 4;
+        int M = 3;
+        ArrayList<ArrayList<Integer>> prerequisites = new ArrayList<>();
+        for (int i = 0; i < N; i++) {
+            prerequisites.add(i, new ArrayList<>());
+        }
+
+
+        prerequisites.get(0).add(0);
+        prerequisites.get(0).add(1);
+
+        prerequisites.get(1).add(1);
+        prerequisites.get(1).add(2);
+
+        prerequisites.get(2).add(2);
+        prerequisites.get(2).add(3);
+
+        int[] ans = CourseScheduleII.findOrder(N, prerequisites);
+
+        for (int task : ans) {
+            System.out.print(task + " ");
+        }
+        System.out.println("");
     }
 }
