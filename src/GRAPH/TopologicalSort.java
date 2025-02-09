@@ -49,9 +49,12 @@ public class TopologicalSort {
             adj.add(new ArrayList<>());
         }
         adj.get(2).add(3);
+
         adj.get(3).add(1);
+
         adj.get(4).add(0);
         adj.get(4).add(1);
+
         adj.get(5).add(0);
         adj.get(5).add(2);
 
