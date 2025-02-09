@@ -62,7 +62,7 @@ public class AlienDictionary {
         String answer  = "";
 
         for(int it : topo){
-            answer = answer + (it +'a');
+            answer = answer +it;
         }
         return answer;
     }
