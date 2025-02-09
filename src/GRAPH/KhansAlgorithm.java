@@ -24,7 +24,8 @@ public class KhansAlgorithm {
         int[] answer = new int[0];
         int i = 0;
         while (!queue.isEmpty()) {
-            int node = queue.poll();
+            int node = queue.peek();
+            queue.remove();
             answer[i] = node;
             i++;
 
