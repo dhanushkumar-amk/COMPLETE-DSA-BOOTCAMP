@@ -1,2 +1,5 @@
-package GRAPH;public class AlienDictionary {
+package GRAPH;
+
+public class AlienDictionary {
+    
 }
