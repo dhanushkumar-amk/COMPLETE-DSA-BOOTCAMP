@@ -42,9 +42,30 @@ public class WordLadder2 {
 
                 // get the lost word on the list and make operations
                 String word = subAnswer.get(subAnswer.size() - 1);
+                for (int i = 0; i < word.length(); i++) {
+                    for (char ch = 'a'; ch <= 'z' ; ch++) {
 
+                        char[] charReplacementArray = word.toCharArray();
+                        charReplacementArray[i] = ch;
+
+                        String replaceWord = new String(charReplacementArray);
+
+                        // if the replace word is present in an set means take that word make the new sequence
+                        if (set.contains((replaceWord))){
+                            subAnswer.add((replaceWord));
+
+                            ArrayList<String> temp = new ArrayList<>(subAnswer);
+                            queue.add(temp);
+
+                            everyLevelList.add(replaceWord);
+
+                            // remove tha last word and check again for another possibility
+                            subAnswer.remove(subAnswer.size() - 1);
+                        }
+
+                    }
+                }
             }
-
             return answer;
         }
-}
+    }
