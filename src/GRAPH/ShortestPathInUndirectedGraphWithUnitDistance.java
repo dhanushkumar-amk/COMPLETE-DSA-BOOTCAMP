@@ -1,9 +1,6 @@
 package GRAPH;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-
+import java.util.*;
 public class ShortestPathInUndirectedGraphWithUnitDistance {
 
     public int[] shortestPath(int[][] edges, int n, int m,int src){
