@@ -73,6 +73,9 @@ public class ShortestPathInDAG {
 
             }
         }
+        for (int i = 0; i < N; i++) {
+            if (distance[i] == 1e9) distance[i] = -1;
+        }
         return distance;
     }
 
