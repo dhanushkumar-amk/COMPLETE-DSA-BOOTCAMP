@@ -1,5 +1,5 @@
 package GRAPH;
 
-public class WordLadder1 {
-    
+public class WordLadder2 {
+
 }
