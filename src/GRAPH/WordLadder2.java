@@ -6,7 +6,7 @@ package GRAPH;
 import java.util.*;
 
 public class WordLadder2 {
-        public ArrayList<ArrayList<String>> findSequence(String startWord, String targetWord, String[] wordList){
+        public ArrayList<ArrayList<String>> findLadders(String startWord, String targetWord, String[] wordList){
 
             // create the set and ad elements in the set
             Set<String> set = new HashSet<>();
