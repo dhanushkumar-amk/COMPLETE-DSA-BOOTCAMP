@@ -1,6 +1,8 @@
 package GRAPH;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class ShortestPathInUndirectedGraphWithUnitDistance {
 
@@ -24,7 +26,30 @@ public class ShortestPathInUndirectedGraphWithUnitDistance {
         for (int i = 0; i < n; i++)
             distance[i] = (int) 1e9;
 
+        // set default value to src is 0
+        distance[src] = 0;
 
+        // create the src and add the src path as a initial value
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(src);
 
+        while (!queue.isEmpty()){
+            int node = queue.poll();
+
+            for(int it : adj.get(node)){
+                if (distance[node] + 1 < distance[it]){
+                    distance[it] = 1 + distance[node];
+                    queue.add(it);
+                }
+            }
+        }
+
+        // if node is not visited means set as a -1
+        for (int i = 0; i < n; i++) {
+            if (distance[i] == 1e9)
+                distance[i] = -1;
+        }
+
+        return distance;
     }
 }
