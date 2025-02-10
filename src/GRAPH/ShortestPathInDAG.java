@@ -80,7 +80,7 @@ public class ShortestPathInDAG {
     private void topoSort(int node, ArrayList<ArrayList<Pair>> list, int[] visited, Stack<Integer> stack) {
         visited[node] = 1;
 
-        for (int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < list.get(node).size(); i++) {
             // int i = 0; 4 => [[0, 3], [2, 1]] go 0 and 2 so we use node = 4 i = 0 means get [0, 3] then first of [0, 3] is 0 check if zero is visited or not
             int adjNode = list.get(node).get(i).first;
 
