@@ -76,4 +76,33 @@ public class WordLadder2 {
             }
             return answer;
         }
+
+    public static void main(String[] args) {
+        String startWord = "der", targetWord = "dfs";
+        String[] wordList = {
+                "des",
+                "der",
+                "dfr",
+                "dgt",
+                "dfs"
+        };
+
+        WordLadder2 obj = new WordLadder2();
+        ArrayList < ArrayList < String >> ans = obj.findLadders(startWord, targetWord, wordList);
+
+        // If no transformation sequence is possible.
+        if (ans.size() == 0)
+            System.out.println(-1);
+        else {
+
+            Collections.sort(ans, new comp());
+            for (int i = 0; i < ans.size(); i++) {
+                for (int j = 0; j < ans.get(i).size(); j++) {
+                    System.out.print(ans.get(i).get(j) + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
+
     }
