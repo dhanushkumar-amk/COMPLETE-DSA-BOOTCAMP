@@ -39,9 +39,17 @@ public class WordLadder2 {
                         set.remove(it);
                 }
 
-
                 // get the lost word on the list and make operations
                 String word = subAnswer.get(subAnswer.size() - 1);
+
+                if (word.equals(targetWord)){
+                    if (answer.size() == 0)
+                        answer.add(subAnswer);
+                    else if(answer.get(0).size() == subAnswer.size())
+                        answer.add(subAnswer);
+                }
+
+
                 for (int i = 0; i < word.length(); i++) {
                     for (char ch = 'a'; ch <= 'z' ; ch++) {
 
