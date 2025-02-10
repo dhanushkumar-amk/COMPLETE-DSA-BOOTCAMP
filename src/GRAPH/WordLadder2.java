@@ -78,13 +78,13 @@ public class WordLadder2 {
         }
 
     public static void main(String[] args) {
-        String startWord = "der", targetWord = "dfs";
+        String startWord = "bat", targetWord = "coz";
         String[] wordList = {
-                "des",
-                "der",
-                "dfr",
-                "dgt",
-                "dfs"
+                "pat",
+                "bat",
+                "pot",
+                "poz",
+                "coz"
         };
 
         WordLadder2 obj = new WordLadder2();
