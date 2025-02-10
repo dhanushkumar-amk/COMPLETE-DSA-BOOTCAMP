@@ -63,7 +63,7 @@ public class AlienDictionary {
 
         for(int it : topo){
             answer = answer + (char)(it + (int)('a'));
-            // answer = answer +it;
+            // answer = answer +it; 
         }
         return answer;
     }
