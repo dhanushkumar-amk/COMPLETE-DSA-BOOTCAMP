@@ -104,5 +104,18 @@ public class WordLadder2 {
             }
         }
     }
-
     }
+
+
+class comp implements Comparator < ArrayList < String >> {
+
+    public int compare(ArrayList < String > a, ArrayList < String > b) {
+        String x = "";
+        String y = "";
+        for (int i = 0; i < a.size(); i++)
+            x += a.get(i);
+        for (int i = 0; i < b.size(); i++)
+            y += b.get(i);
+        return x.compareTo(y);
+    }
+}
