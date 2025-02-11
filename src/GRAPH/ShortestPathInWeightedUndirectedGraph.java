@@ -1,6 +1,7 @@
 package GRAPH;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.PriorityQueue;
 
@@ -68,7 +69,26 @@ public class ShortestPathInWeightedUndirectedGraph {
                 }
             }
 
-            List
+            List<Integer> answer = new ArrayList<>();
 
+            // if we can't reach the destination
+            if (distanceArray[n] == 1e9){
+                answer.add(-1);
+                return answer;
+            }
+
+            int node = n;
+
+            // 1 != 1 while elimination
+            while (parentArray[node] != node){
+                answer.add(node);
+                node = parentArray[node];
+            }
+
+            // because src is 1 the loop terminates  1 == 1
+            answer.add(1);
+            Collections.reverse(answer);
+        
+            return answer;
     }
 }
