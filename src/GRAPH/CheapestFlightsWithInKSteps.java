@@ -30,7 +30,7 @@ class tuple{
 
 public class CheapestFlightsWithInKSteps {
 
-    public int cheapFlight(int n, int[][] flights, int source, int destination, int k){
+    public int findCheapestPrice(int n, int[][] flights, int source, int destination, int k){
 
         // create the graph and add elements to it
         ArrayList<ArrayList<Pair>> list = new ArrayList<>();
@@ -91,7 +91,7 @@ public class CheapestFlightsWithInKSteps {
         int[][] flights={{0, 1, 100}, {1, 2, 100}, {2, 0, 100}, {1, 3, 600}, {2, 3, 200}};
 
         CheapestFlightsWithInKSteps obj = new CheapestFlightsWithInKSteps();
-        int ans = obj.cheapFlight(n,flights,src,dst,K);
+        int ans = obj.findCheapestPrice(n,flights,src,dst,K);
 
         System.out.print(ans);
         System.out.println();
