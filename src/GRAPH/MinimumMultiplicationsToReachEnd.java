@@ -56,5 +56,15 @@ public class MinimumMultiplicationsToReachEnd {
         // If the end no. is unattainable.
         return -1;
     }
-}
+    public static void main(String[] args) {
+
+        int start=3, end=30;
+        int[] arr = {2,5,7};
+
+        MinimumMultiplicationsToReachEnd obj = new MinimumMultiplicationsToReachEnd();
+        int ans = obj.minimumMultiplications(arr,start,end);
+
+        System.out.print(ans);
+        System.out.println();
+    }
 }
