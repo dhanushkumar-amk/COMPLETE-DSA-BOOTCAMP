@@ -5,8 +5,6 @@ import java.util.PriorityQueue;
 
 public class DijkstraAlgorithm {
 
-    import java.util.PriorityQueue;
-
     class Pair {
         int distance;
         int value;
@@ -20,7 +18,24 @@ public class DijkstraAlgorithm {
 
     public int[] dijkstra(int v, ArrayList<ArrayList<Integer>> list, int src){
 
-        PriorityQueue<Pair> pQueue = new PriorityQueue<Pair>((x, y) -> x.distance + y.distance);
+        PriorityQueue<Pair> pQueue = new PriorityQueue<Pair>((x, y) -> x.distance - y.distance);
+
+        int[] distanceArray = new int[v];
+        distanceArray[src] = 0;
+        pQueue.add(new Pair(0, src));
+
+        while (pQueue.size() != 0){
+            int distance = pQueue.peek().distance;
+            int value = pQueue.peek().value;
+            pQueue.remove();
+
+            // list
+            for (int i = 0; i <list.get(value).size(); i++) {
+
+                int adjWeight = list.get(value).get(i).get(1);
+
+            }
+        }
 
     }
 }
