@@ -6,13 +6,13 @@ import java.util.PriorityQueue;
 
 public class ShortestPathInWeightedUndirectedGraph {
 
-    static class Pair{
-        int weight;
-        int node;
+    static   class Pair {
+        int distance;
+        int value;
 
-        public Pair(int weight, int node) {
-            this.weight = weight;
-            this.node = node;
+        public Pair(int distance, int value) {
+            this.distance = distance;
+            this.value = value;
         }
     }
 
@@ -36,12 +36,37 @@ public class ShortestPathInWeightedUndirectedGraph {
 
 
             // init queue parent[] and distance[];
-            PriorityQueue<Pair>  pq = new PriorityQueue<>((x, y) -> x.weight - y.weight);
-            int[] distance = new int[n - 1];
-            int[] parent = new int[n - 1];
+            PriorityQueue<Pair>  pq = new PriorityQueue<>((x, y) -> x.distance - y.distance);
+            int[] distanceArray = new int[n - 1];
+            int[] parentArray = new int[n - 1];
 
+            // fill with default values
+            for (int i = 0; i <=n; i++) {
+                distanceArray[i] = (int)(1e9);
+                parentArray[i] = i;
+            }
 
+            // src = 1 so put default as 0
+            distanceArray[1] = 0;
+            pq.add(new Pair(0, 1));
 
+            while (!pq.isEmpty()){
+                Pair it = pq.peek();
+                int node = it.value;
+                int distance = it.distance;
+                pq.remove();
+
+                for(Pair iterator : list.get(node)){
+                    int adjNode = iterator.value;
+                    int adjDistance = iterator.distance;
+
+                    if(adjDistance + distance < distanceArray[adjNode]){
+                        distanceArray[adjNode] = distance + adjDistance;
+                        pq.add(new Pair(distanceArray[adjNode], adjNode));
+                        parentArray[adjNode] = node;
+                    }
+                }
+            }
 
 
 
