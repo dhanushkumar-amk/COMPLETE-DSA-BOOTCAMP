@@ -7,10 +7,11 @@ public class ShortestPathInBinaryMatrixOAllDirectionAllows {
         int first;
         int second;
         int third;
-        pair(int _a, int _b, int _c){
-            this.first = _a;
-            this.second = _b;
-            this.third = _c;
+
+        public pair(int first, int second, int third) {
+            this.first = first;
+            this.second = second;
+            this.third = third;
         }
     }
 
