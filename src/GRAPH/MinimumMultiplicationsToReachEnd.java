@@ -25,7 +25,9 @@ public class MinimumMultiplicationsToReachEnd {
         // Create a dist array to store the no. of multiplications to reach
         // a particular number from the start number.
         int[] dist = new int[100000];
-        for(int i = 0;i<100000;i++) dist[i] = (int)(1e9);
+        for(int i = 0;i<100000;i++)
+            dist[i] = (int)(1e9);
+
         dist[start] = 0;
         int mod = 100000;
         int n = arr.length;
