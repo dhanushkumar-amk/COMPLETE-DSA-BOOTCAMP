@@ -24,6 +24,7 @@ public class NumberOfWaysToArriveTheDestination {
         int m = roads.size();
         for (int i = 0; i < m; i++) {
             list.get(roads.get(i).get(0)).add(new Pair(roads.get(i).get(1), roads.get(i).get(2)));
+            list.get(roads.get(i).get(1)).add(new Pair(roads.get(i).get(0), roads.get(i).get(2)));
         }
 
     }
