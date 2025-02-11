@@ -63,6 +63,7 @@ public class CheapestFlightsWithInKSteps {
             int steps = iterator.steps;
             int node = iterator.node;
             int cost = iterator.distance;
+            queue.remove();
 
             if (steps > k)
                 continue;
