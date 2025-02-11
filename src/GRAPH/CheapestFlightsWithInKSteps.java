@@ -33,7 +33,7 @@ public class CheapestFlightsWithInKSteps {
     public int cheapFlight(int n, int[][] flights, int source, int destination, int k){
 
         // create the graph and add elements to it
-        ArrayList<ArrayList<Integer>> list = new ArrayList<>();
+        ArrayList<ArrayList<Pair>> list = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             list.add(new ArrayList<>());
         }
@@ -62,14 +62,26 @@ public class CheapestFlightsWithInKSteps {
             tuple iterator = queue.peek();
             int steps = iterator.steps;
             int node = iterator.node;
-            int distance = iterator.distance;
+            int cost = iterator.distance;
 
             if (steps > k)
                 continue;
 
-            for(Pair it : list.get(node))
+            for(Pair it : list.get(node)){
+                int adjNode = it.first;
+                int adjDistance = it.second;
+
+                if (cost + adjDistance < distanceArray[adjNode] && steps <= k){
+                    distanceArray[adjDistance] = cost + adjDistance;
+                    queue.add(new tuple(steps + 1, adjNode, cost + adjDistance));
+                }
+            }
         }
 
+        if (distanceArray[destination] == (int)(1e9))
+            return -1;
+
+        return distanceArray[destination];
     }
 
 }
