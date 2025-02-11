@@ -21,7 +21,12 @@ public class DijkstraAlgorithm {
         PriorityQueue<Pair> pQueue = new PriorityQueue<Pair>((x, y) -> x.distance - y.distance);
 
         int[] distanceArray = new int[v];
+
+        for (int i = 0; i < v; i++)
+            distanceArray[i] = (int) 1e9;
+
         distanceArray[src] = 0;
+
         pQueue.add(new Pair(0, src));
 
         while (pQueue.size() != 0){
@@ -33,9 +38,14 @@ public class DijkstraAlgorithm {
             for (int i = 0; i <list.get(value).size(); i++) {
 
                 int adjWeight = list.get(value).get(i).get(1);
+                int adjNode = list.get(value).get(i).get(0);
 
+                if (distance + adjWeight< distanceArray[adjNode]){
+                    distanceArray[adjNode] = distance + adjWeight;
+                    pQueue.add(new Pair(distanceArray[adjNode], adjNode));
+                }
             }
         }
-
+        return distanceArray;
     }
 }
