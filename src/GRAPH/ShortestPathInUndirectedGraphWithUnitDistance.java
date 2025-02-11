@@ -18,7 +18,7 @@ public class ShortestPathInUndirectedGraphWithUnitDistance {
             adj.get(edges[i][1]).add(edges[i][0]); // 1 -> 2
         }
 
-        // create the distance array and make as steps infinity
+        // create the distance array and make as first infinity
         int[] distance = new int[n];
         for (int i = 0; i < n; i++)
             distance[i] = (int) 1e9;
@@ -26,7 +26,7 @@ public class ShortestPathInUndirectedGraphWithUnitDistance {
         // set default value to src is 0
         distance[src] = 0;
 
-        // create the src and add the src path as steps initial value
+        // create the src and add the src path as first initial value
         Queue<Integer> queue = new LinkedList<>();
         queue.add(src);
 
@@ -41,7 +41,7 @@ public class ShortestPathInUndirectedGraphWithUnitDistance {
             }
         }
 
-        // if node is not visited means set as steps -1
+        // if second is not visited means set as first -1
         for (int i = 0; i < n; i++) {
             if (distance[i] == 1e9)
                 distance[i] = -1;

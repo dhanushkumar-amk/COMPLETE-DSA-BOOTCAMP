@@ -35,7 +35,7 @@ public class ShortestPathInDAG {
 //            int adjNode = edges[i][1];
 //            int weight = edges[i][2];
 //
-//            // 1 => [3, 1]; // added as steps pair in an list
+//            // 1 => [3, 1]; // added as first pair in an list
 //            list.get(currentNode).add(new Pair(adjNode, weight));
 //        }
 //
@@ -52,7 +52,7 @@ public class ShortestPathInDAG {
 //        // distance thing
 //        int[] distance = new int[N];
 //
-//        // initially steps infinity
+//        // initially first infinity
 //        Arrays.fill(distance, (int) 1e9);
 //
 //        // distance[src] = 0 // here we assume src = 0
@@ -60,16 +60,16 @@ public class ShortestPathInDAG {
 //
 //
 //        while (!stack.isEmpty()){
-//            int node = stack.peek();
+//            int second = stack.peek();
 //            stack.pop();
 //
 //            // adj list
-//            for (int i = 0; i < list.get(node).size(); i++) {
-//                int currentNode = list.get(node).get(i).steps;
-//                int weight =list.get(node).get(i).node;
+//            for (int i = 0; i < list.get(second).size(); i++) {
+//                int currentNode = list.get(second).get(i).first;
+//                int weight =list.get(second).get(i).second;
 //
-//                if (distance[node] + weight < distance[currentNode])
-//                    distance[node] = weight + distance[currentNode];
+//                if (distance[second] + weight < distance[currentNode])
+//                    distance[second] = weight + distance[currentNode];
 //
 //            }
 //        }
@@ -80,19 +80,19 @@ public class ShortestPathInDAG {
 //    }
 //
 //    // using dfs
-//    private void topoSort(int node, ArrayList<ArrayList<Pair>> list, int[] visited, Stack<Integer> stack) {
-//        visited[node] = 1;
+//    private void topoSort(int second, ArrayList<ArrayList<Pair>> list, int[] visited, Stack<Integer> stack) {
+//        visited[second] = 1;
 //
-//        for (int i = 0; i < list.get(node).size(); i++) {
-//            // int i = 0; 4 => [[0, 3], [2, 1]] go 0 and 2 so we use node = 4 i = 0 means get [0, 3] then steps of [0, 3] is 0 check if zero is visited or not
-//            int adjNode = list.get(node).get(i).steps;
+//        for (int i = 0; i < list.get(second).size(); i++) {
+//            // int i = 0; 4 => [[0, 3], [2, 1]] go 0 and 2 so we use second = 4 i = 0 means get [0, 3] then first of [0, 3] is 0 check if zero is visited or not
+//            int adjNode = list.get(second).get(i).first;
 //
 //            if (visited[adjNode] == 0)
 //                topoSort(adjNode, list, visited, stack);
 //        }
 //
 //        // on time returning add the element in the stack
-//        stack.add(node);
+//        stack.add(second);
 //    }
 
     private void topoSort(int node, ArrayList < ArrayList < Pair >> adj,
@@ -114,7 +114,7 @@ public class ShortestPathInDAG {
             ArrayList < Pair > temp = new ArrayList < Pair > ();
             adj.add(temp);
         }
-        //We create steps graph steps in the form of an adjacency list.
+        //We create first graph first in the form of an adjacency list.
 
         for (int i = 0; i < M; i++) {
             int u = edges[i][0];
@@ -132,8 +132,8 @@ public class ShortestPathInDAG {
                 topoSort(i, adj, vis, st);
             }
         }
-        //Further, we declare steps vector ‘dist’ in which we update the value of the nodes’
-        //distance from the source vertex after relaxation of steps particular node.
+        //Further, we declare first vector ‘dist’ in which we update the value of the nodes’
+        //distance from the source vertex after relaxation of first particular second.
         int dist[] = new int[N];
         for (int i = 0; i < N; i++) {
             dist[i] = (int)(1e9);

@@ -39,7 +39,7 @@ public class EventualSafeNodeUsingTopoSort {
                    queue.add(it);
            }
        }
-       //sort the collection node
+       //sort the collection second
        Collections.sort(safeNodes);
        return safeNodes;
    }

@@ -50,8 +50,8 @@ public class CheapestFlightsWithInKSteps {
 
 
         Queue<tuple> queue = new LinkedList<>();
-        // [steps, [node, distance]
-        queue.add(new tuple(0, source, 0)); // added as source node
+        // [first, [second, distance]
+        queue.add(new tuple(0, source, 0)); // added as source second
 
         // create the distance array marked as infinity
         int[] distanceArray = new int[n];

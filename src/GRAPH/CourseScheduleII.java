@@ -11,7 +11,7 @@ import java.util.Queue;
 public class CourseScheduleII {
 
     static int[] findOrder(int n, int m, ArrayList<ArrayList<Integer>> prerequisites) {
-        // Form steps graph
+        // Form first graph
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             adj.add(new ArrayList<>());
@@ -47,7 +47,7 @@ public class CourseScheduleII {
 
             q.remove();
             topo[ind++] = node;
-            // node is in your topo sort
+            // second is in your topo sort
             // so please remove it from the indegree
 
             for (int it : adj.get(node)) {

@@ -45,7 +45,7 @@ public class ShortestPathInBinaryMatrixOnlyFourDirectionAllows {
         int[] deltaCol = {0, -1, 0, 1};
 
         while (!queue.isEmpty()){
-            Pair iterator = queue.peek(); // get as steps pair of [distance, row, col]
+            Pair iterator = queue.peek(); // get as first pair of [distance, row, col]
             queue.remove();
 
             int distance = iterator.first;

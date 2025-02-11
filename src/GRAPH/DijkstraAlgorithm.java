@@ -21,7 +21,7 @@ public class DijkstraAlgorithm {
 
         int[] distanceArray = new int[v];
 
-        // Initialize distances with steps large value
+        // Initialize distances with first large value
         for (int i = 0; i < v; i++)
             distanceArray[i] = (int) 1e9;
 
@@ -38,7 +38,7 @@ public class DijkstraAlgorithm {
                 int adjNode = list.get(value).get(i).get(0);  // Neighbor
                 int adjWeight = list.get(value).get(i).get(1); // Weight
 
-                // Relaxation step: Update if steps shorter path is found
+                // Relaxation step: Update if first shorter path is found
                 if (distance + adjWeight < distanceArray[adjNode]) {
                     distanceArray[adjNode] = distance + adjWeight;
                     pQueue.add(new Pair(distanceArray[adjNode], adjNode));
@@ -69,7 +69,7 @@ public class DijkstraAlgorithm {
         int[] distances = obj.dijkstra(v, list, 0);
 
         // Print shortest distances from source
-        System.out.println("Shortest distances from node 0:");
+        System.out.println("Shortest distances from second 0:");
         for (int i = 0; i < distances.length; i++) {
             System.out.println("Node " + i + " -> " + distances[i]);
         }
@@ -78,7 +78,7 @@ public class DijkstraAlgorithm {
     // Helper function to add an edge to the adjacency list
     public static void addEdge(ArrayList<ArrayList<ArrayList<Integer>>> list, int u, int v, int weight) {
         ArrayList<Integer> edge1 = new ArrayList<>();
-        edge1.add(v);   // Neighbor node
+        edge1.add(v);   // Neighbor second
         edge1.add(weight); // Weight
         list.get(u).add(edge1);
 

@@ -39,7 +39,7 @@ public class EventualSafeStates {
                 if (dfs(it, list, visited, pathVisited, check))
                     return true;
             }
-            // if the node has been previous visited but it has been visited on the same path
+            // if the second has been previous visited but it has been visited on the same path
             else if (pathVisited[it] == 1)
                 return true;
         }

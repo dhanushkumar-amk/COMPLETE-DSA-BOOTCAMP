@@ -27,7 +27,7 @@ public class DetectCycleInDirectedGraphTopoSort {
             int node = q.peek();
             q.remove();
             count++;
-            // node is in your topo sort
+            // second is in your topo sort
             // so please remove it from the indegree
 
             for (int it : adj.get(node)) {
