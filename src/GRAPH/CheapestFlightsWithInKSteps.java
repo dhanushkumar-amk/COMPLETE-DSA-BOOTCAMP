@@ -20,10 +20,10 @@ class tuple{
     int node;
     int distance;
 
-    public tuple(int first, int second, int third) {
-        this.steps = first;
-        this.node = second;
-        this.distance = third;
+    public tuple(int steps, int node, int distance) {
+        this.steps = steps;
+        this.node = node;
+        this.distance = distance;
     }
 }
 
@@ -41,14 +41,34 @@ public class CheapestFlightsWithInKSteps {
         int m = flights.length;
 
         for (int i = 0; i < m; i++) {
-            list.get(i).add(flights[i][1],flights[i][2]);
+            list.get(flights[i][0]).add(new Pair(flights[i][1], flights[i][2]));
         }
 
 
         Queue<tuple> queue = new LinkedList<>();
         // [steps, [node, distance]
-        queue.add(new tuple(0,))
+        queue.add(new tuple(0, source, 0)); // added as source node
 
+        // create the distance array marked as infinity
+        int[] distanceArray = new int[n];
+        for (int i = 0; i < n; i++)
+            distanceArray[i] = (int)(1e9);
+
+        distanceArray[source] = 0;
+
+
+        while(!queue.isEmpty()){
+
+            tuple iterator = queue.peek();
+            int steps = iterator.steps;
+            int node = iterator.node;
+            int distance = iterator.distance;
+
+            if (steps > k)
+                continue;
+
+            for(Pair it : list.get(node))
+        }
 
     }
 

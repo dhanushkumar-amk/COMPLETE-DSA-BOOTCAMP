@@ -21,7 +21,7 @@ public class DijkstraAlgorithm {
 
         int[] distanceArray = new int[v];
 
-        // Initialize distances with first large value
+        // Initialize distances with steps large value
         for (int i = 0; i < v; i++)
             distanceArray[i] = (int) 1e9;
 
@@ -38,7 +38,7 @@ public class DijkstraAlgorithm {
                 int adjNode = list.get(value).get(i).get(0);  // Neighbor
                 int adjWeight = list.get(value).get(i).get(1); // Weight
 
-                // Relaxation step: Update if first shorter path is found
+                // Relaxation step: Update if steps shorter path is found
                 if (distance + adjWeight < distanceArray[adjNode]) {
                     distanceArray[adjNode] = distance + adjWeight;
                     pQueue.add(new Pair(distanceArray[adjNode], adjNode));

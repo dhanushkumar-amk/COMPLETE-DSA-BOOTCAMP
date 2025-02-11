@@ -12,10 +12,10 @@ public class SurroundedRegions {
         int[] deltaCol = {0, 1, 0, -1};
         int[][] visited = new int[n][m];
 
-        // traverse first row and last row
+        // traverse steps row and last row
         for(int j = 0 ; j<m;j++) {
             // check for unvisited Os in the boundary rows
-            // first row
+            // steps row
 
             if(visited[0][j] == 0 && matrix[0][j] == 'O') {
                 dfs(0, j, visited, matrix, deltaRow, deltaCol);
@@ -29,7 +29,7 @@ public class SurroundedRegions {
 
         for(int i = 0;i<n;i++) {
             // check for unvisited Os in the boundary columns
-            // first column
+            // steps column
             if(visited[i][0] == 0 && matrix[i][0] == 'O') {
                 dfs(i, 0, visited, matrix, deltaRow, deltaCol);
             }

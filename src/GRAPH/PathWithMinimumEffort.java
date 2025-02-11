@@ -80,7 +80,7 @@ class Solution {
         // Directions for moving in 4 directions (right, down, left, up)
         int[][] directions = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
 
-        // Min heap (Priority Queue) to process the least effort path first
+        // Min heap (Priority Queue) to process the least effort path steps
         PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a[0]));
 
         // Effort matrix to store the minimum effort required to reach each cell

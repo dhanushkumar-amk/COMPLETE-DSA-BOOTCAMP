@@ -11,7 +11,7 @@ import java.util.Queue;
 public class CourseScheduleII {
 
     static int[] findOrder(int n, int m, ArrayList<ArrayList<Integer>> prerequisites) {
-        // Form first graph
+        // Form steps graph
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             adj.add(new ArrayList<>());
