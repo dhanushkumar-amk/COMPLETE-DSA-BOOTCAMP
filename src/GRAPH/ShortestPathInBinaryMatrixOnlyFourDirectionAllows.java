@@ -1,10 +1,9 @@
 package GRAPH;
 
-import java.sql.SQLOutput;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class ShortestPathInBinaryMatrix {
+public class ShortestPathInBinaryMatrixOnlyFourDirectionAllows {
     class Pair{
         int first;
         int second;
@@ -72,7 +71,7 @@ public class ShortestPathInBinaryMatrix {
     }
 
     public static void main(String[] args) {
-        ShortestPathInBinaryMatrix answer = new ShortestPathInBinaryMatrix();
+        ShortestPathInBinaryMatrixOnlyFourDirectionAllows answer = new ShortestPathInBinaryMatrixOnlyFourDirectionAllows();
 
         int[][] matrix = {
                 {1,1,1,1},
