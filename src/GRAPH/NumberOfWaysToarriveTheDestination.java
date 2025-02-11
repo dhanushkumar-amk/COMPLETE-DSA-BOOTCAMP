@@ -1,2 +1,4 @@
-package GRAPH;public class NumberOfWaysToarriveTheDestination {
+package GRAPH;
+
+public class NumberOfWaysToarriveTheDestination {
 }
