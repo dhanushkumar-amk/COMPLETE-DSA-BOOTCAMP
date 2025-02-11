@@ -49,7 +49,7 @@ public class PathWithMinimumEffort {
             int col = iterator.col;
             queue.remove();
 
-            // checks
+            // checks and return as an answer
             if (row == n - 1 && col == n - 1)
                 return difference;
 
@@ -59,11 +59,12 @@ public class PathWithMinimumEffort {
 
                 if (neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourCol < m){
                     int newEffort = Math.max(Math.abs(heights[row][col] - heights[neighbourRow][neighbourCol]), difference);
-                    
+                    if (newEffort < distanceArray[neighbourRow][neighbourCol]){
+                        distanceArray[neighbourRow][neighbourCol] = newEffort;
+                        queue.add(new Pair(newEffort, neighbourRow, neighbourCol));
+                    }
                 }
-
             }
-
         }
 
         return 0;
