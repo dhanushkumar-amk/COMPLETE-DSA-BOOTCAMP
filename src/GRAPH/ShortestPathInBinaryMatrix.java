@@ -83,7 +83,7 @@ public class ShortestPathInBinaryMatrix {
         };
 
         int[] source = {0, 1};
-        int[] destination ={2,2};
+        int[] destination ={4,0};
 
         System.out.println(answer.shortestPath(matrix, source, destination));
     }
