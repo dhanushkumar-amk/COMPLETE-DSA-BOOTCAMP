@@ -23,8 +23,12 @@ public class ShortestPathInWeightedUndirectedGraph {
 
         // added the edges given in matrix to list of graph
         for (int i = 0; i < m; i++) {
-           list.get(matrix[i][0]).add(new Pair(matrix[i][1], matrix[i][2]));
-           list.get(matrix[i][1]).add(new Pair(matrix[i][0], matrix[i][2]));
+            int node1 = matrix[i][0];
+            int node2 = matrix[i][1];
+            int weight = matrix[i][2];
+
+            list.get(node1).add(new Pair(weight, node2));
+            list.get(node2).add(new Pair(weight, node1));
         }
 
 
