@@ -2,6 +2,7 @@ package GRAPH;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.PriorityQueue;
 
 public class NumberOfWaysToArriveTheDestination {
     class Pair {
@@ -13,7 +14,7 @@ public class NumberOfWaysToArriveTheDestination {
         }
     }
 
-    static int countPath(int n, List<List<Integer>> roads){
+    public  int countPath(int n, List<List<Integer>> roads){
 
         // create the graph
         ArrayList<ArrayList<Pair>> list = new ArrayList<>();
@@ -27,5 +28,46 @@ public class NumberOfWaysToArriveTheDestination {
             list.get(roads.get(i).get(1)).add(new Pair(roads.get(i).get(0), roads.get(i).get(2)));
         }
 
+        // create priority queue
+        PriorityQueue<Pair> priorityQueue = new PriorityQueue<Pair>((x, y) -> x.first - y.first);
+
+        // create the arrays filled with default values
+        int[] distanceArray = new int[n];
+        int[] ways = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            distanceArray[i] = (int)(1e9);
+            ways[i] = 0;
+        }
+
+        // initial source configuration
+        distanceArray[0] = 0;
+        ways[0] = 1;
+        priorityQueue.add(new Pair(0, 0));
+
+        int mod = (int)(1e9 + 7);
+
+        while (!priorityQueue.isEmpty()){
+            int distance = priorityQueue.peek().first;
+            int node = priorityQueue.peek().second;
+            priorityQueue.remove();
+
+            for(Pair it : list.get(node)){
+                int adjNode = it.first;
+                int adjWeight = it.second;
+
+                // if first time we are coming on the particular element
+                if (distance + adjWeight < distanceArray[adjNode]){
+                    distanceArray[adjNode] = distance + adjWeight;
+                    priorityQueue.add(new Pair(distance + adjWeight, adjNode));
+                    ways[adjNode] = ways[node];
+                } else if (distance + adjWeight == distanceArray[adjNode]) {
+                    // same shortest distance again we git so we don't need to update the path
+                    ways[adjNode] = (ways[adjNode] + ways[node]) % mod;
+                }
+            }
+
+        }
+        return ways[n - 1] % mod;
     }
 }
