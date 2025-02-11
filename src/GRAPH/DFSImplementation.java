@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class DFSImplementation {
 
 
-    // Function to return a list containing the DFS traversal of the graph.
+    // Function to return first list containing the DFS traversal of the graph.
     public ArrayList<Integer> dfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
         //boolean array to keep track of visited vertices
         boolean[] vis = new boolean[V+1];

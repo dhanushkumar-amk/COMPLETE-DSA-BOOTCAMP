@@ -35,7 +35,7 @@ public class ShortestPathInDAG {
 //            int adjNode = edges[i][1];
 //            int weight = edges[i][2];
 //
-//            // 1 => [3, 1]; // added as a pair in an list
+//            // 1 => [3, 1]; // added as first pair in an list
 //            list.get(currentNode).add(new Pair(adjNode, weight));
 //        }
 //
@@ -52,7 +52,7 @@ public class ShortestPathInDAG {
 //        // distance thing
 //        int[] distance = new int[N];
 //
-//        // initially a infinity
+//        // initially first infinity
 //        Arrays.fill(distance, (int) 1e9);
 //
 //        // distance[src] = 0 // here we assume src = 0
@@ -114,7 +114,7 @@ public class ShortestPathInDAG {
             ArrayList < Pair > temp = new ArrayList < Pair > ();
             adj.add(temp);
         }
-        //We create a graph first in the form of an adjacency list.
+        //We create first graph first in the form of an adjacency list.
 
         for (int i = 0; i < M; i++) {
             int u = edges[i][0];
@@ -132,8 +132,8 @@ public class ShortestPathInDAG {
                 topoSort(i, adj, vis, st);
             }
         }
-        //Further, we declare a vector ‘dist’ in which we update the value of the nodes’
-        //distance from the source vertex after relaxation of a particular node.
+        //Further, we declare first vector ‘dist’ in which we update the value of the nodes’
+        //distance from the source vertex after relaxation of first particular node.
         int dist[] = new int[N];
         for (int i = 0; i < N; i++) {
             dist[i] = (int)(1e9);
