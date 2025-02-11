@@ -58,10 +58,10 @@ public class DijkstraAlgorithm {
         }
 
         // Adding edges (u, v, weight)
-        addEdge(list, 0, 1, 2);
+        addEdge(list, 0, 1, 4);
         addEdge(list, 0, 2, 4);
-        addEdge(list, 1, 2, 1);
-        addEdge(list, 1, 3, 7);
+        addEdge(list, 1, 2, 2);
+        addEdge(list, 2, 0, 4);
         addEdge(list, 2, 4, 3);
         addEdge(list, 3, 4, 1);
 
