@@ -50,11 +50,27 @@ public class ShortestPathInBinaryMatrixOAllDirectionAllows {
 
                     if(neighbourRow >=0 && neighbourRow <n && neighbourCol >=0 && neighbourCol < m && grid[neighbourRow][neighbourCol] == 0 && distance +1 < distanceArray[neighbourRow][neighbourCol]){
                         distanceArray[neighbourRow][neighbourCol] = 1 + distance;
-                        if(neighbourRow == n-1 && neighbourCol == n-1) return distance + 1;
+                        if(neighbourRow == n-1 && neighbourCol == n-1)
+                            return distance + 1;
                         queue.add(new pair(distance +1, neighbourRow, neighbourCol));
                     }
                 }
             }
             return -1;
         }
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+                {0,1,1,1},
+                {1,0,0,1},
+                {1,1,1,0},
+                {1,1,0,0},
+                {1,0,0,0},
+        };
+
+        ShortestPathInBinaryMatrixOAllDirectionAllows answer = new ShortestPathInBinaryMatrixOAllDirectionAllows();
+        System.out.println(answer.shortestPathBinaryMatrix(matrix));
+
+
+    }
 }
