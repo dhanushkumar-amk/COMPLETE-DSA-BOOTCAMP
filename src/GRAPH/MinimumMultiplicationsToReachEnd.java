@@ -1,2 +1,5 @@
-package GRAPH;public class MinimumMultiplicationsToReachEnd {
+package GRAPH;
+
+public class MinimumMultiplicationsToReachEnd {
+    
 }
