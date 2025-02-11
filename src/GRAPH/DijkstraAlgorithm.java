@@ -31,7 +31,7 @@ public class DijkstraAlgorithm {
         while (!pQueue.isEmpty()) {
             int distance = pQueue.peek().distance;
             int value = pQueue.peek().value;
-            pQueue.poll();  // Use poll() instead of remove() for better performance
+            pQueue.poll();
 
             // Traverse adjacent nodes
             for (int i = 0; i < list.get(value).size(); i++) {
