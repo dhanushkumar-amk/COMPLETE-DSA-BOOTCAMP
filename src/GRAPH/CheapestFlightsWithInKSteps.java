@@ -73,7 +73,7 @@ public class CheapestFlightsWithInKSteps {
                 int adjDistance = it.second;
 
                 if (cost + adjDistance < distanceArray[adjNode] && steps <= k){
-                    distanceArray[adjDistance] = cost + adjDistance;
+                    distanceArray[adjNode] = cost + adjDistance;
                     queue.add(new tuple(steps + 1, adjNode, cost + adjDistance));
                 }
             }
