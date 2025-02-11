@@ -28,6 +28,7 @@ public class MinimumMultiplicationsToReachEnd {
 
         PriorityQueue<Pair> queue = new PriorityQueue<>((x, y) -> x.first - y.first);
 
-        int[] distanceArray = new int[]
+        int[] distanceArray = new int[n];
+        int[] ways = 
     }
 }
