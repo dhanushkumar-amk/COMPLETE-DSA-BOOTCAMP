@@ -17,7 +17,7 @@ public class DijkstraAlgorithm {
 
     public int[] dijkstra(int v, ArrayList<ArrayList<ArrayList<Integer>>> list, int src) {
 
-        PriorityQueue<Pair> pQueue = new PriorityQueue<>((x, y) -> x.distance - y.distance);
+        PriorityQueue<Pair> pQueue = new PriorityQueue<>();
 
         int[] distanceArray = new int[v];
 
