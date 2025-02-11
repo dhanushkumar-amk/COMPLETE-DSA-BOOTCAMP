@@ -84,4 +84,16 @@ public class CheapestFlightsWithInKSteps {
         return distanceArray[destination];
     }
 
+    public static void main(String[] args) {
+
+        int n = 4, src = 0, dst = 3, K = 1;
+        int[][] flights={{0, 1, 100}, {1, 2, 100}, {2, 0, 100}, {1, 3, 600}, {2, 3, 200}};
+
+        CheapestFlightsWithInKSteps obj = new CheapestFlightsWithInKSteps();
+        int ans = obj.cheapFlight(n,flights,src,dst,K);
+
+        System.out.print(ans);
+        System.out.println();
+    }
+
 }
