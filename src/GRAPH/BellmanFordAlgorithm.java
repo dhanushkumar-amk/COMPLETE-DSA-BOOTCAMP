@@ -28,12 +28,13 @@ public class BellmanFordAlgorithm {
             }
         }
 
-        // In nth relaxation to check the negative cycle
+        // In nth relaxation to check the negative cycle then return -1 as a array
         for(ArrayList<Integer> it : list){
             int u = it.get(0);
             int v = it.get(1);
             int weight = it.get(2);
 
+            // after n - 1iteration still the value is reducing means there is a negative cycle so return -1
             if (distanceArray[u] != 1e9 && distanceArray[u] + weight < distanceArray[v]){
                 int[] temp = new int[1];
                 temp[0] = -1;
