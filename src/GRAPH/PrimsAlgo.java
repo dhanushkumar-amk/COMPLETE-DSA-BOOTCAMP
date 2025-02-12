@@ -15,7 +15,7 @@ public class PrimsAlgo {
         }
     }
 
-    int spanningTree(int V, ArrayList<ArrayList<Integer>> list) {
+    int spanningTree(int V, ArrayList<ArrayList<ArrayList<Integer>>>list) {
 
         PriorityQueue<Pair> priorityQueue = new PriorityQueue<>((x, y) -> x.distance - y.distance);
 
