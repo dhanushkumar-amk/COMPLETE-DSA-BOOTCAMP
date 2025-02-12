@@ -54,7 +54,7 @@ public class FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance {
 
     public static void main(String[] args) {
         int n = 4;
-   
+
         int[][] edges =  {{0, 1, 3}, {1, 2, 1}, {1, 3, 4}, {2, 3, 1}};
         int distanceThreshold = 4;
 
