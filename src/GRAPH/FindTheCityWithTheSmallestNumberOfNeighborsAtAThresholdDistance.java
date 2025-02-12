@@ -2,6 +2,8 @@ package GRAPH;
 
 public class FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance {
 
-    int findCity(int n, )
+    public int findTheCity(int n, int[][] edges, int distanceThreshold) {
+            int 
+    }
 
 }
