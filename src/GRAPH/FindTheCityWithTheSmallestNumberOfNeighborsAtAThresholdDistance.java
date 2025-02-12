@@ -51,4 +51,15 @@ public class FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance {
         }
         return cityNo;
     }
+
+    public static void main(String[] args) {
+        int n = 4;
+   
+        int[][] edges =  {{0, 1, 3}, {1, 2, 1}, {1, 3, 4}, {2, 3, 1}};
+        int distanceThreshold = 4;
+
+        FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance obj = new FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance();
+        int cityNo = obj.findTheCity(n, edges, distanceThreshold);
+        System.out.println("The answer is node: " + cityNo);
+    }
 }
