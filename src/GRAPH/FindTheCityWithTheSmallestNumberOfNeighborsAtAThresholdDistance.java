@@ -11,6 +11,15 @@ public class FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance {
             }
         }
 
+        for (int i = 0; i < edges.length; i++) {
+            int u = edges[i][0];
+            int v = edges[i][1];
+            int weight = edges[i][2];
+
+            distance[u][v] = weight;
+            distance[v][u] = weight;
+        }
+
         for (int i = 0; i < n; i++)
             distance[i][i] = 0;
 
@@ -20,10 +29,26 @@ public class FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance {
                     if (distance[i][k] == (int)(1e9) || distance[k][j] == (int)(1e9))
                         continue;
 
-
+                    distance[i][j] = Math.min(distance[i][j], distance[i][k] + distance[k][j]);
                 }
             }
         }
-    }
 
+        int countCity = n;
+        int cityNo = -1;
+
+        for (int city = 0; city < n; city++) {
+            int count = 0;
+            for (int adjCity = 0; adjCity < n; adjCity++) {
+                if (distance[city][adjCity] <= distanceThreshold)
+                    count++;
+            }
+
+            if (count <= countCity){
+                countCity = count;
+                cityNo = city;
+            }
+        }
+        return cityNo;
+    }
 }
