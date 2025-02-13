@@ -33,7 +33,7 @@ public class AddTwoNumbers {
         // if any one become null th loops ends
         while (l1 != null || l2 != null){
 
-            int sum = 0 + carry // init the sum
+            int sum = 0 + carry; // init the sum
 
             if(l1 != null){
                 sum += l1.val;
