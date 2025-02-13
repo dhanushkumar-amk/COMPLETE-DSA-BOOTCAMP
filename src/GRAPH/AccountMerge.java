@@ -88,7 +88,7 @@ public class AccountMerge {
             mergeMail[node].add(mail);
         }
 
-        List<List<String>> answer = new ArrayList<>()
+        List<List<String>> answer = new ArrayList<>();
         for (int i = 0; i < n; i++) {
 
             // if list doesn't not have answer simply skip
