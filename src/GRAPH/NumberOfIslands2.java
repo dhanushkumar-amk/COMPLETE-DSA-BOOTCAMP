@@ -130,6 +130,7 @@ public class NumberOfIslands2 {
         return answer;
     }
 
+
     private boolean isValid(int neighbourRow, int neighbourCol, int n, int m) {
         return neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourCol < m;
     }
