@@ -133,4 +133,20 @@ public class NumberOfIslands2 {
     private boolean isValid(int neighbourRow, int neighbourCol, int n, int m) {
         return neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourRow < m;
     }
+
+    public static void main (String[] args) {
+        int n = 4, m = 5;
+        int[][] operators = {{0, 0}, {0, 0}, {1, 1}, {1, 0}, {0, 1},
+                {0, 3}, {1, 3}, {0, 4}, {3, 2}, {2, 2}, {1, 2}, {0, 2}
+        };
+
+        NumberOfIslands2 obj = new NumberOfIslands2();
+        List<Integer> ans = obj.numOfIslands(n, m, operators);
+
+        int sz = ans.size();
+        for (int i = 0; i < sz; i++) {
+            System.out.print(ans.get(i) + " ");
+        }
+        System.out.println("");
+    }
 }
