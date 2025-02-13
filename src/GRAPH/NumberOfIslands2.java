@@ -84,6 +84,5 @@ public class NumberOfIslands2 {
     }
 
 
-    public List<Integer> numOfInslands
-
-}
+    {
+   }
