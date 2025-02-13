@@ -1,2 +1,6 @@
-package GRAPH;public class NumberOfOperationsToMajeConnectedGraph {
+package GRAPH;
+
+// https://leetcode.com/problems/number-of-operations-to-make-network-connected/
+
+public class NumberOfOperationsToMajeConnectedGraph {
 }
