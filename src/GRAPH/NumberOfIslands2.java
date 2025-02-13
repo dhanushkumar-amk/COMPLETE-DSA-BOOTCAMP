@@ -131,7 +131,7 @@ public class NumberOfIslands2 {
     }
 
     private boolean isValid(int neighbourRow, int neighbourCol, int n, int m) {
-        return neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourRow < m;
+        return neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourCol < m;
     }
 
     public static void main (String[] args) {
