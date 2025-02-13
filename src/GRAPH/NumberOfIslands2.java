@@ -140,7 +140,7 @@ public class NumberOfIslands2 {
                 {0, 3}, {1, 3}, {0, 4}, {3, 2}, {2, 2}, {1, 2}, {0, 2}
         };
 
-        NumberOfIslands2 obj = new NumberOfIslands2();
+        NumberOfIslands2 obj = new NumberOfIslands2(operators.length);
         List<Integer> ans = obj.numOfIslands(n, m, operators);
 
         int sz = ans.size();
