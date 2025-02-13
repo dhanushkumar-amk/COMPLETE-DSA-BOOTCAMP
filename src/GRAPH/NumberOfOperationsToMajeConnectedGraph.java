@@ -45,5 +45,39 @@ public class NumberOfOperationsToMajeConnectedGraph {
         }
     }
 
-    
+    public int makeConnected(int n, int[][] connections) {
+
+        NumberOfOperationsToMajeConnectedGraph ds = new NumberOfOperationsToMajeConnectedGraph(n);
+
+        int extraEdgesCount = 0;
+
+        int m = connections.length;
+
+        for (int i = 0; i < m; i++) {
+            int u = connections[i][0];
+            int v = connections[i][1];
+
+            // if both parent are equal then there is edges is free
+            if (ds.findUPar(u) == ds.findUPar(v))
+                extraEdgesCount++;
+
+            // or connected use to merge using union by size or union by rank
+            else
+                ds.unionBySize(u, v);
+        }
+
+        int connectedComponentsCount = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (ds.parent.get(i) == i)
+             connectedComponentsCount++;
+        }
+
+        int answer = connectedComponentsCount - 1;
+
+        if (extraEdgesCount >= answer)
+            return answer;
+
+        return -1;
+    }
 }
