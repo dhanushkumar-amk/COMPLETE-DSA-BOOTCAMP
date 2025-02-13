@@ -97,14 +97,14 @@ class Edge implements Comparable<Edge> {
             }
         }
 
-        KrusKalsAlgorithm ds = new KrusKalsAlgorithm();
+        KrusKalsAlgorithm ds = new KrusKalsAlgorithm(V);
         Collections.sort(edges);
         int mstWt = 0;
         // M x 4 x alpha x 2
         for (int i = 0; i < edges.size(); i++) {
             int wt = edges.get(i).weight;
             int u = edges.get(i).src;
-            int v = edges.get(i).dest;
+            int v = edges.get(i).destination;
 
             if (ds.findUPar(u) != ds.findUPar(v)) {
                 mstWt += wt;
