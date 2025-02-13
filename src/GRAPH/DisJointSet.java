@@ -8,6 +8,7 @@ public class DisJointSet {
     List<Integer> rank = new ArrayList<>();
     List<Integer> parent = new ArrayList<>();
 
+    
     // filled with rank[0] and parent[i] itself as iinit
     public DisJointSet(int n) {
         for (int i = 0; i < n; i++) {
