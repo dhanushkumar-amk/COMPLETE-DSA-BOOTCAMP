@@ -77,5 +77,4 @@ public class DisJointSet {
         } else
             System.out.println("Not Same");
     }
-    }
 }
