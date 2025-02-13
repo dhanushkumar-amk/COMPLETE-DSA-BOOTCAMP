@@ -7,13 +7,15 @@ public class DisJointSet {
     // create the parent and rank array
     List<Integer> rank = new ArrayList<>();
     List<Integer> parent = new ArrayList<>();
+    List<Integer> size = new ArrayList<>();
 
-    
+
     // filled with rank[0] and parent[i] itself as iinit
     public DisJointSet(int n) {
         for (int i = 0; i < n; i++) {
             rank.add(0);
             parent.add(i);
+            size.add(1);
         }
     }
 
@@ -55,6 +57,28 @@ public class DisJointSet {
             parent.set(ultimateParentOfV, ultimateParentOfU);  // or parent.set(ultimateParentOfU, ultimateParentOfV); your wish
             int ultimateRank = rank.get(ultimateParentOfU);
             rank.set(ultimateParentOfU, ultimateRank + 1);
+        }
+    }
+
+    // union by rank method
+    public void unionBySize(int u, int v){
+
+        int ultimateParentOfU = findParent(u);
+        int ultimateParentOfV = findParent(v);
+
+        // if both belongs to same parent nothing can do just return
+        if (ultimateParentOfU == ultimateParentOfV)
+            return;
+
+        // if one element is smaller then that is attached to larger
+
+        if(size.get(ultimateParentOfU) < size.get(ultimateParentOfV)){
+            parent.set(ultimateParentOfU, ultimateParentOfV);
+            size.set(ultimateParentOfV, size.get(ultimateParentOfU) + size.get(ultimateParentOfV));
+        }
+        else{
+            parent.set(ultimateParentOfV, ultimateParentOfU);
+            size.set(ultimateParentOfU, size.get(ultimateParentOfU) + size.get(ultimateParentOfV));
         }
     }
 
