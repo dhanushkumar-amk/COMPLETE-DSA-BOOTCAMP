@@ -96,7 +96,6 @@ public class NumberOfIslands2 {
             int row = operators[i][0];
             int col = operators[i][1];
 
-
             // if the node already visited then add the count to the answer and skip it
             if (visitedArray[row][col] == 1) {
                 answer.add(count);
@@ -130,7 +129,7 @@ public class NumberOfIslands2 {
         return answer;
     }
 
-
+// check validation
     private boolean isValid(int neighbourRow, int neighbourCol, int n, int m) {
         return neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourCol < m;
     }
