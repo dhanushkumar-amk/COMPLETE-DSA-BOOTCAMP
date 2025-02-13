@@ -57,6 +57,7 @@ public class AccountMerge {
         }
     }
 
+    // main function
         public List<List<String>> accountsMerge(List<List<String>> accounts) {
 
             int n = accounts.size();
