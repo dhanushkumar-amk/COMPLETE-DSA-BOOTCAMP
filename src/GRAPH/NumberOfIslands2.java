@@ -21,7 +21,7 @@ public class NumberOfIslands2 {
     }
 
     // find parent method
-    public int findParent(int node){
+    public int findParent(int node) {
 
         // base case
         if (node == parent.get(node))
@@ -34,7 +34,7 @@ public class NumberOfIslands2 {
     }
 
     // union by rank method
-    public void unionByRank(int u, int v){
+    public void unionByRank(int u, int v) {
 
         int ultimateParentOfU = findParent(u);
         int ultimateParentOfV = findParent(v);
@@ -50,11 +50,11 @@ public class NumberOfIslands2 {
             parent.set(ultimateParentOfU, ultimateParentOfV);
         }
         // if v < u then v attached to u
-        else if(rank.get(ultimateParentOfV) < rank.get(ultimateParentOfU)) {
+        else if (rank.get(ultimateParentOfV) < rank.get(ultimateParentOfU)) {
             parent.set(ultimateParentOfV, ultimateParentOfU);
         }
         // if both are same
-        else{
+        else {
             parent.set(ultimateParentOfV, ultimateParentOfU);  // or parent.set(ultimateParentOfU, ultimateParentOfV); your wish
             int ultimateRank = rank.get(ultimateParentOfU);
             rank.set(ultimateParentOfU, ultimateRank + 1);
@@ -62,7 +62,7 @@ public class NumberOfIslands2 {
     }
 
     // union by rank method
-    public void unionBySize(int u, int v){
+    public void unionBySize(int u, int v) {
 
         int ultimateParentOfU = findParent(u);
         int ultimateParentOfV = findParent(v);
@@ -73,16 +73,64 @@ public class NumberOfIslands2 {
 
         // if one element is smaller then that is attached to larger
 
-        if(size.get(ultimateParentOfU) < size.get(ultimateParentOfV)){
+        if (size.get(ultimateParentOfU) < size.get(ultimateParentOfV)) {
             parent.set(ultimateParentOfU, ultimateParentOfV);
             size.set(ultimateParentOfV, size.get(ultimateParentOfU) + size.get(ultimateParentOfV));
-        }
-        else{
+        } else {
             parent.set(ultimateParentOfV, ultimateParentOfU);
             size.set(ultimateParentOfU, size.get(ultimateParentOfU) + size.get(ultimateParentOfV));
         }
     }
 
 
-    {
-   }
+    public List<Integer> numOfIslands(int n, int m, int[][] operators) {
+
+        NumberOfIslands2 ds = new  NumberOfIslands2(n * m);
+        int[][] visitedArray = new int[n][m];
+        int count = 0;
+
+        List<Integer> answer = new ArrayList<>();
+        int len = operators.length;
+
+        for (int i = 0; i < len; i++) {
+            int row = operators[i][0];
+            int col = operators[i][1];
+
+
+            // if the node already visited then add the count to the answer and skip it
+            if (visitedArray[row][col] == 1) {
+                answer.add(count);
+                continue;
+            }
+            visitedArray[row][col] = 1;
+            count++;
+
+
+            int[] deltaRow = {-1, 0, 1, 0};
+            int[] deltaCol = {0, -1, 0, 1};
+
+            for (int index = 0; index < 4; index++) {
+                int neighbourRow = row + deltaRow[index];
+                int neighbourCol = col + deltaCol[index];
+
+                if (isValid(neighbourRow, neighbourCol, n, m)){
+                    if(visitedArray[neighbourRow][neighbourCol] == 1){
+                        int nodeNumber = row * m + col;
+                        int adjNodeNumber = neighbourRow * m + neighbourCol;
+
+                        if (ds.findParent(nodeNumber) != ds.findParent(adjNodeNumber)){
+                            count--;
+                            ds.unionBySize(nodeNumber, adjNodeNumber);
+                        }
+                    }
+                }
+            }
+            answer.add(count);
+        }
+        return answer;
+    }
+
+    private boolean isValid(int neighbourRow, int neighbourCol, int n, int m) {
+        return neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourRow < m;
+    }
+}
