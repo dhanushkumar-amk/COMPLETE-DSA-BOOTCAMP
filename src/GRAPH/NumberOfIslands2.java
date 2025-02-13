@@ -107,7 +107,7 @@ public class NumberOfIslands2 {
 
 
             int[] deltaRow = {-1, 0, 1, 0};
-            int[] deltaCol = {0, -1, 0, 1};
+            int[] deltaCol = {0, 1, 0, -1};
 
             for (int index = 0; index < 4; index++) {
                 int neighbourRow = row + deltaRow[index];
