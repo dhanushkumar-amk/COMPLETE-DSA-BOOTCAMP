@@ -58,7 +58,7 @@ public class DisJointSet {
     }
 
     public static void main(String[] args) {
-        DisJointSet ds = new DisJointSet(7);
+        DisJointSet ds = new DisJointSet(8);
         ds.unionByRank(1, 2);
         ds.unionByRank(2, 3);
         ds.unionByRank(4, 5);
