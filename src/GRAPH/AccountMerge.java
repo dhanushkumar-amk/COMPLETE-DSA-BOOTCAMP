@@ -124,7 +124,7 @@ public class AccountMerge {
             }
         };
 
-        AccountMerge obj = new AccountMerge();
+        AccountMerge obj = new AccountMerge(accounts.size());
         List<List<String>> ans = obj.accountsMerge(accounts);
 
         int n = ans.size();
