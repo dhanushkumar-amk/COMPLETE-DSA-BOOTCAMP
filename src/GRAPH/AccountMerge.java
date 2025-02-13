@@ -57,5 +57,53 @@ public class AccountMerge {
 
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
 
+        int n = accounts.size();
+        AccountMerge ds = new AccountMerge(n);
+
+        HashMap<String, Integer> mailMap = new HashMap<>();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < accounts.get(i).size(); j++) {
+                String mail = accounts.get(i).get(j);
+
+                if (!mailMap.containsKey(mail))
+                    mailMap.put(mail, i);
+                else
+                    ds.unionBySize(i, mailMap.get(mail));
+                
+            }
+        }
+
+    }
+
+
+
+    public static void main (String[] args) {
+        List<List<String>> accounts = new ArrayList() {
+            {
+                add(new ArrayList<String>(Arrays.asList("John", "j1@com", "j2@com", "j3@com")));
+                add(new ArrayList<String>(Arrays.asList("John", "j4@com")));
+                add(new ArrayList<String>(Arrays.asList("Raj", "r1@com", "r2@com")));
+                add(new ArrayList<String>(Arrays.asList("John", "j1@com", "j5@com")));
+                add(new ArrayList<String>(Arrays.asList("Raj", "r2@com", "r3@com")));
+                add(new ArrayList<String>(Arrays.asList("Mary", "m1@com")));
+
+            }
+        };
+
+        AccountMerge obj = new AccountMerge();
+        List<List<String>> ans = obj.accountsMerge(accounts);
+
+        int n = ans.size();
+        for (int i = 0; i < n; i++) {
+            System.out.print(ans.get(i).get(0) + ": ");
+            int size = ans.get(i).size();
+            for (int j = 1; j < size; j++) {
+                System.out.print(ans.get(i).get(j) + " ");
+            }
+
+            System.out.println("");
+        }
+
     }
 }
