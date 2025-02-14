@@ -52,5 +52,7 @@ public class MakingALargeIsland {
         }
     }
 
-    
+    public int MaxConnection(int[][] grid){
+        
+    }
 }
