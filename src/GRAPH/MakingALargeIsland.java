@@ -16,18 +16,18 @@ public class MakingALargeIsland {
         }
     }
 
-    public int findUPar(int node) {
+    public int findexUPar(int node) {
         if (node == parent.get(node)) {
             return node;
         }
-        int ulp = findUPar(parent.get(node));
+        int ulp = findexUPar(parent.get(node));
         parent.set(node, ulp);
         return parent.get(node);
     }
 
     public void unionByRank(int u, int v) {
-        int ulp_u = findUPar(u);
-        int ulp_v = findUPar(v);
+        int ulp_u = findexUPar(u);
+        int ulp_v = findexUPar(v);
         if (ulp_u == ulp_v) return;
         if (rank.get(ulp_u) < rank.get(ulp_v)) {
             parent.set(ulp_u, ulp_v);
@@ -41,8 +41,8 @@ public class MakingALargeIsland {
     }
 
     public void unionBySize(int u, int v) {
-        int ulp_u = findUPar(u);
-        int ulp_v = findUPar(v);
+        int ulp_u = findexUPar(u);
+        int ulp_v = findexUPar(v);
         if (ulp_u == ulp_v) return;
         if (size.get(ulp_u) < size.get(ulp_v)) {
             parent.set(ulp_u, ulp_v);
@@ -66,6 +66,16 @@ public class MakingALargeIsland {
 
                 int[] deltaRow = { -1, 0, 1, 0};
                 int[] deltaCol = {0, -1, 0, 1};
+
+                for (int index = 0; index < 4; index++) {
+                    int newr = row + deltaRow[index];
+                    int newc = col + deltaCol[index];
+                    if (isValid(newr, newc, n) && grid[newr][newc] == 1) {
+                        int nodeNo = row * n + col;
+                        int adjNodeNo = newr * n + newc;
+                        ds.unionBySize(nodeNo, adjNodeNo);
+                    }
+                }
             }
         }
     }
