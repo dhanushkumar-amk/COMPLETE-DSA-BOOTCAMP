@@ -63,6 +63,9 @@ public class MakingALargeIsland {
 
                 if (grid[row][col] == 0)
                     continue;
+
+                int[] deltaRow = { -1, 0, 1, 0};
+                int[] deltaCol = {0, -1, 0, 1};
             }
         }
     }
