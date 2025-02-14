@@ -68,15 +68,20 @@ public class MakingALargeIsland {
                 int[] deltaCol = {0, -1, 0, 1};
 
                 for (int index = 0; index < 4; index++) {
-                    int newr = row + deltaRow[index];
-                    int newc = col + deltaCol[index];
-                    if (isValid(newr, newc, n) && grid[newr][newc] == 1) {
+                    int neighbourRow = row + deltaRow[index];
+                    int neighbourCol = col + deltaCol[index];
+                    if (isValid(neighbourRow, neighbourCol, n) && grid[neighbourRow][neighbourCol] == 1) {
                         int nodeNo = row * n + col;
-                        int adjNodeNo = newr * n + newc;
+                        int adjNodeNo = neighbourRow * n + neighbourCol;
                         ds.unionBySize(nodeNo, adjNodeNo);
                     }
                 }
             }
         }
+    }
+
+
+    private boolean isValid(int neighbourRow, int neighbourCol, int n) {
+        return neighbourRow >= 0 && neighbourRow < n && neighbourCol >= 0 && neighbourCol < n;
     }
 }
