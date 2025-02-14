@@ -53,6 +53,10 @@ public class MakingALargeIsland {
     }
 
     public int MaxConnection(int[][] grid){
+        int n = grid.length;
+
+        MakingALargeIsland ds = new MakingALargeIsland(n);
+
         
     }
 }
