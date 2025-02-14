@@ -16,18 +16,18 @@ public class MakingALargeIsland {
         }
     }
 
-    public int findexUPar(int node) {
+    public int findUPar(int node) {
         if (node == parent.get(node)) {
             return node;
         }
-        int ulp = findexUPar(parent.get(node));
+        int ulp = findUPar(parent.get(node));
         parent.set(node, ulp);
         return parent.get(node);
     }
 
     public void unionByRank(int u, int v) {
-        int ulp_u = findexUPar(u);
-        int ulp_v = findexUPar(v);
+        int ulp_u = findUPar(u);
+        int ulp_v = findUPar(v);
         if (ulp_u == ulp_v) return;
         if (rank.get(ulp_u) < rank.get(ulp_v)) {
             parent.set(ulp_u, ulp_v);
@@ -41,8 +41,8 @@ public class MakingALargeIsland {
     }
 
     public void unionBySize(int u, int v) {
-        int ulp_u = findexUPar(u);
-        int ulp_v = findexUPar(v);
+        int ulp_u = findUPar(u);
+        int ulp_v = findUPar(v);
         if (ulp_u == ulp_v) return;
         if (size.get(ulp_u) < size.get(ulp_v)) {
             parent.set(ulp_u, ulp_v);
@@ -78,6 +78,42 @@ public class MakingALargeIsland {
                 }
             }
         }
+
+
+        int maxIsland = 0;
+        for (int row = 0; row < n; row++) {
+            for (int col = 0; col < n; col++) {
+                
+                if (grid[row][col] == 1) 
+                    continue;
+                
+                int[] deltaRow = { -1, 0, 1, 0};
+                int[] deltaCol= {0, -1, 0, 1};
+                
+                HashSet<Integer> components = new HashSet<>();
+                
+                for (int ind = 0; ind < 4; ind++) {
+                    
+                    int neighbourRow = row + deltaRow[ind];
+                    int neighbourCol = col + deltaCol[ind];
+                    
+                    if (isValid(neighbourRow, neighbourCol, n)) {
+                        if (grid[neighbourRow][neighbourCol] == 1) {
+                            components.add(ds.findUPar(neighbourRow * n + neighbourCol));
+                        }
+                    }
+                }
+                int sizeTotal = 0;
+                for (Integer parents : components) {
+                    sizeTotal += ds.size.get(parents);
+                }
+                maxIsland = Math.max(maxIsland, sizeTotal + 1);
+            }
+        }
+        for (int cellNo = 0; cellNo < n * n; cellNo++) {
+            maxIsland = Math.max(maxIsland, ds.size.get(ds.findUPar(cellNo)));
+        }
+        return maxIsland;
     }
 
 
