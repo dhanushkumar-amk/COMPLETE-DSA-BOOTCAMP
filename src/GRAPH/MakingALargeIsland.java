@@ -1,6 +1,7 @@
 package GRAPH;
 
 
+import javax.swing.plaf.IconUIResource;
 import java.util.*;
 
 public class MakingALargeIsland {
@@ -57,6 +58,12 @@ public class MakingALargeIsland {
 
         MakingALargeIsland ds = new MakingALargeIsland(n);
 
-        
+        for (int row = 0; row < n ; row++) {
+            for (int col = 0; col < n ; col++) {
+
+                if (grid[row][col] == 0)
+                    continue;
+            }
+        }
     }
 }
