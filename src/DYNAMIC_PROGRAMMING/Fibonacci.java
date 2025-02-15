@@ -55,7 +55,7 @@ public class Fibonacci {
         }
 
         // 0 to <= n so so previous == current
-        System.out.println(previous1);
+        System.out.println(previous2);
     }
 
 
