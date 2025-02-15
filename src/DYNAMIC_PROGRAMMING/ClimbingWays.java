@@ -7,7 +7,7 @@ public class ClimbingWays {
 
 
     public static void main(String[] args) {
-        System.out.println(climbStairs(2));
+        System.out.println(climbStairs(5));
     }
 
 
