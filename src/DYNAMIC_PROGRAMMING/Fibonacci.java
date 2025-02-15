@@ -6,7 +6,7 @@ public class Fibonacci {
     public static void main(String[] args) {
         int n = 5;
         int[] dp = new int[n + 1];
-        Arrays.fill(dp,);
+        Arrays.fill(dp, -1);
 
         System.out.println(fibo(n, dp));
 
