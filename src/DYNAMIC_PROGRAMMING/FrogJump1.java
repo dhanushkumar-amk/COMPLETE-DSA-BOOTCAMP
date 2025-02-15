@@ -1,8 +1,17 @@
 package DYNAMIC_PROGRAMMING;
 
+import java.util.Arrays;
+
 public class FrogJump1 {
     public static void main(String[] args) {
 
+        int[] height ={30,10,60 , 10 , 60 , 50};
+        int n = height.length;
+
+        int[] dp=new int[n];
+        Arrays.fill(dp,-1);
+
+        System.out.println(solve(n-1,height,dp));
     }
 
     static int solve(int n,int[] height,int[] dp){
