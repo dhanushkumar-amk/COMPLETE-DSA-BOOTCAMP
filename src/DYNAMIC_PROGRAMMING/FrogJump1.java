@@ -11,10 +11,10 @@ public class FrogJump1 {
         int[] dp=new int[n];
         Arrays.fill(dp,-1);
 
-        System.out.println(solve(n-1,height,dp));
+        System.out.println(jump1(n-1,height,dp));
     }
 
-    static int solve(int n,int[] height,int[] dp){
+    static int jump1(int n,int[] height,int[] dp){
         
         
         if(n == 0)
@@ -23,11 +23,11 @@ public class FrogJump1 {
         if( dp[n] != -1)
             return dp[n];
 
-        int jumpOneStep = solve(n-1, height,dp)+ Math.abs(height[n]-height[n-1]);
+        int jumpOneStep = jump1(n-1, height,dp)+ Math.abs(height[n]-height[n-1]);
 
         int jumpTwoSteps = Integer.MAX_VALUE;
         if(n>1)
-            jumpTwoSteps = solve(n-2, height,dp)+ Math.abs(height[n]-height[n-2]);
+            jumpTwoSteps = jump1(n-2, height,dp)+ Math.abs(height[n]-height[n-2]);
 
         return dp[n]=Math.min(jumpOneStep, jumpTwoSteps);
     }
