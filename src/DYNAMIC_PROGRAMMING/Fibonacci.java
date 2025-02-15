@@ -1,9 +1,12 @@
 package DYNAMIC_PROGRAMMING;
 
+import java.util.Arrays;
+
 public class Fibonacci {
     public static void main(String[] args) {
         int n = 5;
         int[] dp = new int[n + 1];
+        Arrays.fill(dp,);
 
         System.out.println(fibo(n, dp));
 
