@@ -28,6 +28,7 @@ public class Fibonacci {
 
     }
 
+    // tabulation concept
     public static void fibo1(int n, int[] dp){
         dp[0] = 0;
         dp[1] = 1;
@@ -37,6 +38,19 @@ public class Fibonacci {
         }
         System.out.println(dp[n]);
     }
+
+
+    public static void fibo2(int n){
+
+        int previous1 = 0;
+        int previous2 = 1;
+        int cur
+        for (int i = 2; i <= n ; i++) {
+
+        }
+        System.out.println();
+    }
+
 
 
 }
