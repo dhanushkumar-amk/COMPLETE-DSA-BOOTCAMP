@@ -11,6 +11,6 @@ public class FrogJump1 {
         if (n == 0)
             return 0;
 
-        int left = jump1(n - 1, Math.abs(dp[n] - dp[n - 1]));
+        
     }
 }
