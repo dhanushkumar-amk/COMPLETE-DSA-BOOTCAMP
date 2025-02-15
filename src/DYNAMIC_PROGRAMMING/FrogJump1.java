@@ -14,6 +14,7 @@ public class FrogJump1 {
         System.out.println(jump1(n-1,height,dp));
     }
 
+    // memorization
     static int jump1(int n,int[] height,int[] dp){
         
         
@@ -31,4 +32,6 @@ public class FrogJump1 {
 
         return dp[n]=Math.min(jumpOneStep, jumpTwoSteps);
     }
+
+
 }
