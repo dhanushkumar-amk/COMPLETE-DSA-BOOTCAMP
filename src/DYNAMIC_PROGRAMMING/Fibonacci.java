@@ -42,6 +42,7 @@ public class Fibonacci {
     }
 
 
+    // space optimization
     public static void fibo2(int n){
 
         int previous2 = 0;
@@ -52,10 +53,12 @@ public class Fibonacci {
 
             previous2 = previous1;
             previous1 = currentElement;
+
+            System.out.println(previous1);
+            
         }
 
         // 0 to <= n so so previous == current
-        System.out.println(previous1);
     }
 
 
