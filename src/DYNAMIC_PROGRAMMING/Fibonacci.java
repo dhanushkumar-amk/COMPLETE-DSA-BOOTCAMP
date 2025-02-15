@@ -10,7 +10,7 @@ public class Fibonacci {
 
         // System.out.println(fibo(n, dp));
 
-      // fibo1(n, dp);  
+      // fibo1(n, dp);
 
         fibo2(n);
 
@@ -48,7 +48,7 @@ public class Fibonacci {
         int previous2 = 1;
 
         for (int i = 2; i <= n ; i++) {
-            int currentElement = previous1 + previous2;
+            int currentElement = previous2 + previous1;
 
             previous2 = previous1;
             previous1 = currentElement;
