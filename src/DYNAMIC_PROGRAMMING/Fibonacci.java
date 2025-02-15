@@ -44,8 +44,8 @@ public class Fibonacci {
 
     public static void fibo2(int n){
 
-        int previous1 = 0;
-        int previous2 = 1;
+        int previous2 = 0;
+        int previous1 = 1;
 
         for (int i = 2; i <= n ; i++) {
             int currentElement = previous2 + previous1;
@@ -55,7 +55,7 @@ public class Fibonacci {
         }
 
         // 0 to <= n so so previous == current
-        System.out.println(previous2);
+        System.out.println(previous1);
     }
 
 
