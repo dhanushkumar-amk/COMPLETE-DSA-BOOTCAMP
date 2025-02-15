@@ -12,6 +12,7 @@ public class Fibonacci {
 
     }
 
+    // memoi
     public static int fibo(int n, int[] dp){
 
         // base case
@@ -24,6 +25,4 @@ public class Fibonacci {
         return dp[n] = fibo(n - 1, dp) + fibo(n - 2, dp);
 
     }
-
-
 }
