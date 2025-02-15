@@ -8,9 +8,11 @@ public class Fibonacci {
         int[] dp = new int[n + 1];
         Arrays.fill(dp, -1);
 
-        //System.out.println(fibo(n, dp));
+        // System.out.println(fibo(n, dp));
 
-        fibo1(n, dp);
+      // fibo1(n, dp);
+
+        fibo2(n);
 
     }
 
@@ -44,11 +46,16 @@ public class Fibonacci {
 
         int previous1 = 0;
         int previous2 = 1;
-        int cur
-        for (int i = 2; i <= n ; i++) {
 
+        for (int i = 2; i <= n ; i++) {
+            int currentElement = previous1 + previous2;
+
+            previous2 = previous1;
+            previous1 = currentElement;
         }
-        System.out.println();
+
+        // 0 to <= n so so previous == current
+        System.out.println(previous1);
     }
 
 
