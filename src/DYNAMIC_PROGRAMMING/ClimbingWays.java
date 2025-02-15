@@ -21,7 +21,5 @@ public class ClimbingWays {
 
         return left + right;
     }
-    
-
 }
 
