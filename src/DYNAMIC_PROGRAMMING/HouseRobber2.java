@@ -13,6 +13,8 @@ public class HouseRobber2 {
         System.out.println(ans.rob(nums));
     }
 
+    
+
             // Helper function to solve the House Robber I problem for a given range
             private int rob1(int[] nums, int start, int end) {
                 int previous1 = 0; // Represents dp[i-1]
