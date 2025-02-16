@@ -1,5 +1,7 @@
 package DYNAMIC_PROGRAMMING;
 
+import java.util.Arrays;
+
 public class HouseRobber {
 
 
@@ -13,6 +15,7 @@ public class HouseRobber {
     public static int rob(int[] nums) {
         int n = nums.length;
         int[] dp = new int[n + 1];
+        Arrays.fill(dp, -1);
         return helper(n - 1, nums, dp);
     }
 
@@ -24,7 +27,7 @@ public class HouseRobber {
         if (index < 0)
             return 0;
 
-        if (dp[index] != 1)
+        if (dp[index] != -1)
             return dp[index];
 
         int pick = nums[index] + helper(index - 2, nums, dp);
