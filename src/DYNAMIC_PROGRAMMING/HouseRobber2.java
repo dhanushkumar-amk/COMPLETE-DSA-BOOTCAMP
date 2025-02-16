@@ -34,11 +34,15 @@ public class HouseRobber2 {
 
     public int rob(int[] nums) {
 
-            int[] temp1 = new int[nums.length];
-            int[] tem2 = new int[nums.length];
+            int n = nums.length;
+
+            int[] temp1 = new int[n];
+            int[] tem2 = new int[n];
 
             if (n == 1)
-                return 
+                return nums[0];
+
+            
     }
 
 }
