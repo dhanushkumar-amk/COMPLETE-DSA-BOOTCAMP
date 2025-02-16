@@ -3,6 +3,8 @@ package DYNAMIC_PROGRAMMING;
 //https://leetcode.com/problems/house-robber-ii/description/
 // leetcode 213
 
+import java.util.ArrayList;
+
 public class HouseRobber2 {
 
 
@@ -35,16 +37,16 @@ public class HouseRobber2 {
     public int rob(int[] nums) {
 
             int n = nums.length;
+        ArrayList<Integer> temp1 = new ArrayList<>();
+        ArrayList<Integer> temp2 = new ArrayList<>();
 
-            int[] temp1 = new int[n];
-            int[] tem2 = new int[n];
 
             if (n == 1)
                 return nums[0];
 
         for (int i = 0; i < n; i++) {
                 if (i != 0)
-                    temp1[nums[i]];
+                    temp1.add()
         }
     }
 
