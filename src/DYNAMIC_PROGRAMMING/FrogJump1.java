@@ -13,6 +13,8 @@ public class FrogJump1 {
 
 //        System.out.println(jump1(n-1,height,dp));
 
+        System.out.println(jump2(n, height, dp));
+
 
 
     }
@@ -38,6 +40,23 @@ public class FrogJump1 {
 
 
     // tabulation
-    
+    static int jump2(int n, int[] height, int[] dp){
+
+        dp[0] = 0;
+
+
+        for (int i = 2; i < n; i++) {
+            int oneStep = dp[i - 1] + Math.abs(height[i]  -height[i - 1]);
+
+            int twoStep = Integer.MAX_VALUE;
+
+            if (i > 1)
+                twoStep = dp[i - 2] + Math.abs(height[i] -height[i - 2]);
+
+            dp[i] = Math.min(oneStep, twoStep);
+        }
+
+        return dp[n - 1];
+    }
 
 }
