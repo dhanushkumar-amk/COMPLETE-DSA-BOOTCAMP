@@ -49,7 +49,8 @@ public class HouseRobber2 {
                     temp1.add(nums[i]);
 
                 if (i != n - 1)
-                    temp2.add(nums[i], )
+                    temp2.add(nums[i]);
+                
         }
     }
 
