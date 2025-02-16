@@ -37,7 +37,12 @@ public class MinimumPathSumInTriangle {
         if (dp[row][col] != -1)
             return dp[row][col];
 
-        
+        int downDirection = triangle.get(row).get(col) + minimumPath(row + 1, col, triangle, dp);
+        int downDiagonalDirection = triangle.get(row).get(col) + minimumPath(row + 1, col + 1, triangle, dp);
+
+        dp[row][col] = Math.min(downDirection, downDiagonalDirection);
+
+        return dp[row - 1][col - 1];
 
     }
 
