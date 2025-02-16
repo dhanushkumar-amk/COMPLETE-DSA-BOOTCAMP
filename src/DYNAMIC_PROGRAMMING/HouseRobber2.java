@@ -43,7 +43,7 @@ public class HouseRobber2 {
                 return nums[0];
 
         for (int i = 0; i < n; i++) {
-                
+                if ()
         }
     }
 
