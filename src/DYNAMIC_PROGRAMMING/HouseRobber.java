@@ -24,7 +24,7 @@ public class HouseRobber {
             return 0;
 
         int pick = nums[index] + helper(index - 2, nums);
-        int notPick = 0 + helper(index - 1, nums);
+        int notPick = helper(index - 1, nums);
 
         return Math.max(pick, notPick);
 
