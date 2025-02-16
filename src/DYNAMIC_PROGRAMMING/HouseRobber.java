@@ -12,10 +12,11 @@ public class HouseRobber {
 
     public static int rob(int[] nums) {
         int n = nums.length;
-        return helper(n - 1, nums);
+        int[] dp = new int[n + 1];
+        return helper(n - 1, nums, dp);
     }
 
-    private static int helper(int index, int[] nums) {
+    private static int helper(int index, int[] nums, int[] dp) {
 
         if (index == 0)
             return nums[index];
@@ -23,10 +24,13 @@ public class HouseRobber {
         if (index < 0)
             return 0;
 
-        int pick = nums[index] + helper(index - 2, nums);
-        int notPick = helper(index - 1, nums);
+        if (dp[index] != 1)
+            return dp[index];
 
-        return Math.max(pick, notPick);
+        int pick = nums[index] + helper(index - 2, nums, dp);
+        int notPick = helper(index - 1, nums, dp);
+
+        return dp[index] =  Math.max(pick, notPick);
 
     }
 
