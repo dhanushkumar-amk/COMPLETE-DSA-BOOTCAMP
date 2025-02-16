@@ -7,7 +7,13 @@ package DYNAMIC_PROGRAMMING.BASED_ON_GRIDS;
 public class MinimumPathSum {
 
     public static void main(String[] args) {
+        int matrix[][] = {
+                {5, 9, 6},
+                {11, 5, 2}
+        };
 
+        MinimumPathSum ans = new MinimumPathSum();
+        System.out.println(ans.minPathSum( matrix));
     }
 
 
@@ -62,5 +68,5 @@ public class MinimumPathSum {
     }
 
 
-    
+
 }
