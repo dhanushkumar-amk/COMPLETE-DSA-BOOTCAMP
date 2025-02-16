@@ -43,6 +43,15 @@ public class MinimumPathSum {
                     else
                         upDirection += (int) Math.pow(10, 9);
 
+
+                    // left direction
+                    int leftDirection = grid[row][col];
+
+                    if (col > 0)
+                        leftDirection += dp[row][col - 1];
+                    else
+                        leftDirection += (int) Math.pow(10, 9);
+
                 }
             }
         }
