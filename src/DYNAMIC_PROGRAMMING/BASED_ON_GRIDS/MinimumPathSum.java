@@ -36,7 +36,9 @@ public class MinimumPathSum {
                     dp[row][col] = grid[row][col];
                 else{
 
-                    int upDirection = 
+                    int upDirection = grid[row][col];
+
+                    if (row > 0)
                 }
             }
         }
