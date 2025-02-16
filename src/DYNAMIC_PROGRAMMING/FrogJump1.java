@@ -59,4 +59,17 @@ public class FrogJump1 {
         return dp[n - 1];
     }
 
+
+
+    //space optimization
+    static void jump3(int n, int[] height){
+
+        int previous1 = 0;
+        int previous2 = 0;
+
+        for (int i = 1; i < n; i++) {
+
+        }
+
+    }
 }
