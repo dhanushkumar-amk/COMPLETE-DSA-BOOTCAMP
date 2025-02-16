@@ -42,7 +42,7 @@ public class MinimumPathSumInTriangle {
 
         dp[row][col] = Math.min(downDirection, downDiagonalDirection);
 
-        return dp[row - 1][col - 1];
+        return dp[row][col];
 
     }
 
