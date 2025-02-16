@@ -6,7 +6,7 @@ package DYNAMIC_PROGRAMMING;
 public class HouseRobber2 {
 
 
-        public int rob(int[] nums) {
+        public static  int rob1(int[] nums) {
             int n = nums.length;
 
             // -1, 0, 1 previous1 = 0 and previous2 -1
