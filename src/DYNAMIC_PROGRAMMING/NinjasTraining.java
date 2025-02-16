@@ -4,6 +4,16 @@ import java.util.Arrays;
 
 public class NinjasTraining {
 
+    public static void main(String args[]) {
+        // Define the points for each activity on each day
+        int[][] points = {{10, 40, 70},
+                {20, 50, 80},
+                {30, 60, 90}};
+
+        int n = points.length; // Get the number of days
+        System.out.println(ninjaTraining(n, points)); // Calculate and print the maximum points
+    }
+
     static int ninjaTraining(int n, int[][] points) {
 
         int[][] dp = new int[n][4];
