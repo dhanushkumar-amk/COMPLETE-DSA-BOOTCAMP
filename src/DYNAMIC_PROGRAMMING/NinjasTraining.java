@@ -15,5 +15,7 @@ public class NinjasTraining {
             }
             return dp[day][last] = maximum;
         }
+        
+
     }
 }
