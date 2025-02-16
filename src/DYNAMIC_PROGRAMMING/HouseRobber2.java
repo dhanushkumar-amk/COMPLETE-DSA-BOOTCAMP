@@ -37,8 +37,8 @@ public class HouseRobber2 {
     public int rob(int[] nums) {
 
             int n = nums.length;
-        ArrayList<Integer> temp1 = new ArrayList<>();
-        ArrayList<Integer> temp2 = new ArrayList<>();
+       int[] temp1 = new int[n];
+       int[] temp2 = new int[n];
 
 
             if (n == 1)
@@ -46,12 +46,16 @@ public class HouseRobber2 {
 
         for (int i = 0; i < n; i++) {
                 if (i != 0)
-                    temp1.add(nums[i]);
+                    temp1[nums[i]]++;
 
                 if (i != n - 1)
-                    temp2.add(nums[i]);
-                
+                    temp2[nums[i]]++;
         }
+
+        long ans1 = rob1(temp1);
+        long ans2 = rob1(temp2);
+
+        return (int) Math.max(ans1,ans2);
     }
 
 }
