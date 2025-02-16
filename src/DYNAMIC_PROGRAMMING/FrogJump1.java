@@ -68,7 +68,7 @@ public class FrogJump1 {
         int previous2 = 0;
 
         for (int i = 1; i < n; i++) {
-            int jumOne = 
+            int jumOne = previous1 + Math.abs(height[previous1] - height[previous1 - 1])
 
         }
 
