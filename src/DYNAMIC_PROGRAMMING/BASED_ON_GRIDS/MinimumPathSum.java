@@ -10,6 +10,8 @@ public class MinimumPathSum {
 
     }
 
+
+    // tabulation method
     public int minPathSum(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
@@ -58,4 +60,7 @@ public class MinimumPathSum {
         }
     return dp[m - 1][n - 1];
     }
+
+
+    
 }
