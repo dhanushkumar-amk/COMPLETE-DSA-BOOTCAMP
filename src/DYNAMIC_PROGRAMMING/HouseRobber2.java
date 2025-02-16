@@ -38,7 +38,7 @@ public class HouseRobber2 {
             int[] tem2 = new int[nums.length];
 
             if (n == 1)
-                
+                return 
     }
 
 }
