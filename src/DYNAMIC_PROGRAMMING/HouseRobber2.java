@@ -31,5 +31,7 @@ public class HouseRobber2 {
             // 5,6,7, n; n= i answer is i -1 is previous1
             return previous1;
         }
+
+
 }
 
