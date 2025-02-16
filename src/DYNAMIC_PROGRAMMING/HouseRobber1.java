@@ -2,11 +2,11 @@ package DYNAMIC_PROGRAMMING;
 
 
 // https://leetcode.com/problems/house-robber/description/
-// leetcode 
+// leetcode 198
 
 import java.util.Arrays;
 
-public class HouseRobber {
+public class HouseRobber1 {
 
 
     public static void main(String[] args) {
