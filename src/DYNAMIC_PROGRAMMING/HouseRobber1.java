@@ -8,11 +8,8 @@ import java.util.Arrays;
 
 public class HouseRobber1 {
 
-
     public static void main(String[] args) {
         int[] nums = {1,2,3,1};
-
-//        System.out.println(rob(nums));
         System.out.println(rob2(nums));
     }
 
@@ -43,7 +40,6 @@ public class HouseRobber1 {
     }
 
 
-
     // space optimization problem
     static int rob2(int[] nums){
 
@@ -60,15 +56,15 @@ public class HouseRobber1 {
             if (i > 1)
                 pick+= previous2;
 
-            int notPick = 0 + previous1;
+            // just go i - 1
+            int notPick = previous1;
 
             int current = Math.max(pick, notPick);
             previous2 = previous1;
             previous1 = current;
-
-
         }
 
+        // 5,6,7, n; n= i answer is i -1 is previous1
         return previous1;
 
     }
