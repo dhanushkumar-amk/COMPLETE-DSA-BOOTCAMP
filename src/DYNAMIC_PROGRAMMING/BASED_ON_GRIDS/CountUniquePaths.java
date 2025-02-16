@@ -7,14 +7,12 @@ public class CountUniquePaths {
         int m = 3;
         int n = 2;
 
-        
         System.out.println(countWays(m, n));
     }
 
     static int countWays(int m, int n) {
 
         int[][] dp = new int[m][n];
-
 
         for (int[] row : dp)
             Arrays.fill(row, -1);
