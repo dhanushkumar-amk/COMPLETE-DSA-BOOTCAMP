@@ -22,6 +22,13 @@ public class UniquePaths2 {
                 dp[i][j] = -1;
             }
         }
+
+        return mazeObstaclesUtil(n - 1, m - 1, obstacleGrid, dp);
+    }
+
+    private int mazeObstaclesUtil(int row, int col, int[][] obstacleGrid, int[][] dp) {
+
+        if (row >= 0 && col >= 0 && obstacleGrid[row][col] == -1)
     }
 
 }
