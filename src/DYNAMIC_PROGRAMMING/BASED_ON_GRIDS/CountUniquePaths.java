@@ -7,7 +7,7 @@ public class CountUniquePaths {
         int m = 3;
         int n = 2;
 
-        // Call the countWays function and print the result
+        
         System.out.println(countWays(m, n));
     }
 
