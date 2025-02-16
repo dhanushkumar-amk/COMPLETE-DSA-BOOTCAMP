@@ -21,7 +21,7 @@ public class MinimumPathSumInTriangle {
             }
         }
 
-        return minimumPath(triangle, dp);
+        return minimumPath(0,0, triangle, dp);
 
     }
 
