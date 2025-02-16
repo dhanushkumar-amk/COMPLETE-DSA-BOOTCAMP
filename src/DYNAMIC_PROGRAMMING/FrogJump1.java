@@ -32,8 +32,8 @@ public class FrogJump1 {
         int jumpOneStep = jump1(n-1, height,dp)+ Math.abs(height[n]-height[n-1]);
 
         int jumpTwoSteps = Integer.MAX_VALUE;
-        if(n>1)
-            jumpTwoSteps = jump1(n-2, height,dp)+ Math.abs(height[n]-height[n-2]);
+
+        if(n>1) jumpTwoSteps = jump1(n-2, height,dp)+ Math.abs(height[n]-height[n-2]);
 
         return dp[n]=Math.min(jumpOneStep, jumpTwoSteps);
     }
