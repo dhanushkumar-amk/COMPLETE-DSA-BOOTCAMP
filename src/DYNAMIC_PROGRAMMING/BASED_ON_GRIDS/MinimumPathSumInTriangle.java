@@ -25,10 +25,17 @@ public class MinimumPathSumInTriangle {
 
     }
 
-    private int minimumPath( List<List<Integer>> triangle, int[][] dp){
+    private int minimumPath( int row, int col, List<List<Integer>> triangle, int[][] dp){
         int m = triangle.size();
         int n = triangle.get(0).size();
 
+        // base case
+        if (row == m - 1)
+            return triangle.get(m - 1).get(col);
+
+
+        if (dp[row][col] != -1)
+            
 
     }
 
