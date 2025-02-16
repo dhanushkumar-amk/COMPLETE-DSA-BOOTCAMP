@@ -21,16 +21,18 @@ public class MinimumPathSum {
             }
         }
 
-        return minPath(m, n, grid, dp);
+        return minPath( grid, dp);
 
     }
 
-    private int minPath(int row, int col, int[][] grid, int[][] dp) {
+    private int minPath( int[][] grid, int[][] dp) {
 
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                if (row == 0 && col == 0)
-                    dp[row][col] = grid[i][j];
+        int m = grid.length;
+        int n = grid[0].length;
+
+        for (int row = 0; row < m; row++) {
+            for (int col = 0; col < n; col++) {
+                if ()
             }
         }
 
