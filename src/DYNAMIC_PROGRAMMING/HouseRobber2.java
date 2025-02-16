@@ -46,7 +46,7 @@ public class HouseRobber2 {
 
         for (int i = 0; i < n; i++) {
                 if (i != 0)
-                    temp1.add()
+                    temp1.add(nums[i], )
         }
     }
 
