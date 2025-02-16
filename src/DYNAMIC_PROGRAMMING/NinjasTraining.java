@@ -7,6 +7,7 @@ public class NinjasTraining {
         if (dp[day][last] != -1)
             return dp[day][last];
 
+        // base case
         if (day == 0) {
             int maximum = 0;
             for (int i = 0; i <= 2; i++) {
@@ -24,7 +25,6 @@ public class NinjasTraining {
                 maximum = Math.max(maximum, activity);
             }
         }
-        
-
+        return dp[day][last] = maximum;
     }
 }
