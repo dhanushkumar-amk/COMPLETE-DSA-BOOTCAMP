@@ -1,5 +1,9 @@
 package DYNAMIC_PROGRAMMING.BASED_ON_GRIDS;
 
+
+// https://leetcode.com/problems/triangle/description/
+// leetcode 120
+
 import java.util.List;
 
 public class MinimumPathSumInTriangle {
