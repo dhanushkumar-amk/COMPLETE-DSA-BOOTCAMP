@@ -33,14 +33,18 @@ public class UniquePaths2 {
     }
 
     private int mazeObstaclesUtil(int row, int col, int[][] obstacleGrid, int[][] dp) {
+
+       // validation and abstracles
         if (row < 0 || col < 0 || obstacleGrid[row][col] == 1) {
             return 0;
         }
 
+        // if base case
         if (row == 0 && col == 0) {
             return 1;
         }
 
+        // aready present
         if (dp[row][col] != -1) {
             return dp[row][col];
         }
