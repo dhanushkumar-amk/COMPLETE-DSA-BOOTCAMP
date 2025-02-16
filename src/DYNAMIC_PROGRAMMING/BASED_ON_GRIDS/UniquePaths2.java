@@ -7,6 +7,8 @@ public class UniquePaths2 {
 
 
     public static void main(String[] args) {
+        UniquePaths2 ans = new UniquePaths2();
+
 
     }
 
@@ -34,7 +36,15 @@ public class UniquePaths2 {
         if (row == 0 || col == 0)
             return 1;
 
-        
+        if(dp[row][col] != -1)
+            return dp[row][col];
+
+        int upDirection = mazeObstaclesUtil(row - 1, col, obstacleGrid, dp);
+        int leftDirection = mazeObstaclesUtil(row, col - 1, obstacleGrid, dp);
+
+        dp[row][col] = upDirection + leftDirection;
+
+        return dp[row][col];
 
     }
 
