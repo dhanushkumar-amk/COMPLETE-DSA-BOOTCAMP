@@ -24,7 +24,7 @@ public class CountUniquePaths {
     private static int countWaysUtil(int row, int col, int[][] dp) {
 
         // reach the destination
-        if (row == 0  && col == 0)
+        if (row == 0  || col == 0)
             return 1;
 
         // validation
