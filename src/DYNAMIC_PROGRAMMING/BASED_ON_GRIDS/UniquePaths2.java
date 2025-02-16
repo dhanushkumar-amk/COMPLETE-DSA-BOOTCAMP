@@ -31,7 +31,11 @@ public class UniquePaths2 {
         if (row >= 0 && col >= 0 && obstacleGrid[row][col] == -1)
             return 0;
 
+        if (row == 0 || col == 0)
+            return 1;
+
         
+
     }
 
 }
