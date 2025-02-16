@@ -15,7 +15,7 @@ public class UniquePaths2 {
                 {0, 0, 0}
         };
 
-        
+        System.out.println(ans.uniquePathsWithObstacles(maze));
 
     }
 
