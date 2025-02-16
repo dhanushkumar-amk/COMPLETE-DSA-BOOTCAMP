@@ -10,7 +10,7 @@ public class HouseRobber2 {
     public static void main(String[] args) {
         // Test case 1: Single house
         int[] nums1 = {5};
-        Solution solution = new Solution();
+        HouseRobber2 solution = new HouseRobber2();
         System.out.println("Test Case 1: " + solution.rob(nums1)); // Expected: 5
 
         // Test case 2: Two houses
