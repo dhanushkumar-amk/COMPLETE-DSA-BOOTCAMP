@@ -33,7 +33,7 @@ public class MinimumPathSum {
         for (int row = 0; row < m; row++) {
             for (int col = 0; col < n; col++) {
                 if (row == 0 && col == 0)
-                    
+                    dp[row][col] = grid[row][col];
             }
         }
 
