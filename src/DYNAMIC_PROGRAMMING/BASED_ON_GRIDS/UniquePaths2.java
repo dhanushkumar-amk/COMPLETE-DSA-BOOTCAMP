@@ -10,6 +10,12 @@ public class UniquePaths2 {
 
     }
 
-    
+    public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+
+        int m = obstacleGrid.length;
+        int n = obstacleGrid[0].length;
+
+        int[][] dp = new int[m][n];
+    }
 
 }
