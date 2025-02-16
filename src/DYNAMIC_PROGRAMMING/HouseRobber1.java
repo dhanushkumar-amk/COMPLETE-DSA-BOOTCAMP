@@ -43,4 +43,33 @@ public class HouseRobber1 {
 
 
 
+    // space optimization problem
+    static int rob2(int[] nums){
+
+        int n = nums.length;
+
+        // -1, 0, 1 previous1 = 0 and previous2 -1
+        int previous1 = nums[0];
+        int previous2 = 0;
+
+        for (int i = 1; i < n; i++) {
+
+            // pick means = i - 2;
+            int pick = nums[i];
+            if (i > 1)
+                pick+= previous2;
+
+            int notPick = 0 + previous1;
+
+            int current = Math.max(pick, notPick);
+            previous2 = previous1;
+            previous1 = current;
+
+            return previous1;
+        }
+
+
+
+    }
+
 }
