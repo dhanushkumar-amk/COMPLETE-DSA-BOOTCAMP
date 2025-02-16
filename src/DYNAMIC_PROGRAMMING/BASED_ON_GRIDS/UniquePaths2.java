@@ -29,6 +29,9 @@ public class UniquePaths2 {
     private int mazeObstaclesUtil(int row, int col, int[][] obstacleGrid, int[][] dp) {
 
         if (row >= 0 && col >= 0 && obstacleGrid[row][col] == -1)
+            return 0;
+
+        
     }
 
 }
