@@ -11,7 +11,10 @@ public class FrogJump1 {
         int[] dp=new int[n];
         Arrays.fill(dp,-1);
 
-        System.out.println(jump1(n-1,height,dp));
+//        System.out.println(jump1(n-1,height,dp));
+
+
+
     }
 
     // memorization
@@ -33,5 +36,8 @@ public class FrogJump1 {
         return dp[n]=Math.min(jumpOneStep, jumpTwoSteps);
     }
 
+
+    // tabulation
+    
 
 }
