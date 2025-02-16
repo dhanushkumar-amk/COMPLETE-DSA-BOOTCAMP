@@ -1,7 +1,7 @@
 package DYNAMIC_PROGRAMMING.BASED_ON_GRIDS;
 
 // https://leetcode.com/problems/unique-paths/description/
-// 
+// leetcode 62
 
 import java.util.Arrays;
 
@@ -29,11 +29,7 @@ public class CountUniquePaths {
         // reach the destination
         if (row == 0  || col == 0)
             return 1;
-
-        // validation
-        if (row < 0 ||col < 1)
-            return 0;
-
+        
         if (dp[row][col] != -1)
             return dp[row][col];
 
