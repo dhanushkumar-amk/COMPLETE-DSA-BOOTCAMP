@@ -3,7 +3,7 @@ package DYNAMIC_PROGRAMMING.BASED_ON_GRIDS;
 import java.util.Arrays;
 
 public class CountUniquePaths {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int m = 3;
         int n = 2;
 
