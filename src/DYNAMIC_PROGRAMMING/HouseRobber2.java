@@ -44,7 +44,7 @@ public class HouseRobber2 {
 
         for (int i = 0; i < n; i++) {
                 if (i != 0)
-                    arr1[nums[i]]
+                    temp1[nums[i]];
         }
     }
 
