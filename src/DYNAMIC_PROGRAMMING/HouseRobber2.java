@@ -21,7 +21,8 @@ public class HouseRobber2 {
 
                 int notPick = 0 + previous1;
 
-                
+
+
 
             }
     }
