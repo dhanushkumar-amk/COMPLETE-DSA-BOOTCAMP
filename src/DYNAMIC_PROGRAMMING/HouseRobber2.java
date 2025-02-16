@@ -8,12 +8,21 @@ package DYNAMIC_PROGRAMMING;
 public class HouseRobber2 {
 
     public static void main(String[] args) {
-        int[] nums ={2,3,2};
-        HouseRobber2 ans =  new HouseRobber2();
-        System.out.println(ans.rob(nums));
+        // Test case 1: Single house
+        int[] nums1 = {5};
+        Solution solution = new Solution();
+        System.out.println("Test Case 1: " + solution.rob(nums1)); // Expected: 5
+
+        // Test case 2: Two houses
+        int[] nums2 = {2, 3};
+        System.out.println("Test Case 2: " + solution.rob(nums2)); // Expected: 3
+
+        // Test case 3: No houses
+        int[] nums3 = {};
+        System.out.println("Test Case 3: " + solution.rob(nums3)); // Expected: 0
     }
 
-    
+
 
             // Helper function to solve the House Robber I problem for a given range
             private int rob1(int[] nums, int start, int end) {
