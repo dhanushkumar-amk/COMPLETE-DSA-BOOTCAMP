@@ -12,9 +12,9 @@ public class FrogJump1 {
         Arrays.fill(dp,-1);
 
 //        System.out.println(jump1(n-1,height,dp));
+//        System.out.println(jump2(n, height, dp));
 
-        System.out.println(jump2(n, height, dp));
-
+        jump3(n, height);
 
 
     }
@@ -68,9 +68,20 @@ public class FrogJump1 {
         int previous2 = 0;
 
         for (int i = 1; i < n; i++) {
-            int jumOne = previous1 + Math.abs(height[previous1] - height[previous1 - 1])
+            int jumOne = previous1 + Math.abs(height[i] - height[i - 1]);
+
+            int jumpTwo = Integer.MAX_VALUE;
+
+            if (i > 1)
+                jumpTwo = previous2 + Math.abs(height[i] - height[i - 2]);
+
+            int current = Math.min(jumOne, jumpTwo);
+
+            previous2 = previous1;
+            previous1 = current;
 
         }
+        System.out.println(previous1);
 
     }
 }
