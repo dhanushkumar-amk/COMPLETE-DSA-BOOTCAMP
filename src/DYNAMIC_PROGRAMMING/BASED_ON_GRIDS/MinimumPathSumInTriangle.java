@@ -4,11 +4,19 @@ import java.util.List;
 
 public class MinimumPathSumInTriangle {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
+            List<List<Integer>> triangle = List.of(
+                    List.of(2),
+                    List.of(3, 4),
+                    List.of(6, 5, 7),
+                    List.of(4, 1, 8, 3)
+            );
 
+            int result = minimumTotal(triangle);
+            System.out.println(result); // Output: 11
     }
 
-    public int minimumTotal(List<List<Integer>> triangle) {
+    public  static int minimumTotal(List<List<Integer>> triangle) {
 
         int m = triangle.size();
         int n = triangle.get(0).size();
@@ -25,7 +33,7 @@ public class MinimumPathSumInTriangle {
 
     }
 
-    private int minimumPath( int row, int col, List<List<Integer>> triangle, int[][] dp){
+    private static int minimumPath( int row, int col, List<List<Integer>> triangle, int[][] dp){
         int m = triangle.size();
         int n = triangle.get(0).size();
 
