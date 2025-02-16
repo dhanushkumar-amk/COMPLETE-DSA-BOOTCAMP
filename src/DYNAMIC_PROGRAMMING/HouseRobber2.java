@@ -7,6 +7,9 @@ package DYNAMIC_PROGRAMMING;
 
 public class HouseRobber2 {
 
+    public static void main(String[] args) {
+        int[] nums ={}
+    }
 
             // Helper function to solve the House Robber I problem for a given range
             private int rob1(int[] nums, int start, int end) {
