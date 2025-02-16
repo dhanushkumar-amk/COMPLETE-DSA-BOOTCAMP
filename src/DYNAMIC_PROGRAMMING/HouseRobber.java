@@ -12,6 +12,7 @@ public class HouseRobber {
     }
 
 
+    // memorization
     public static int rob(int[] nums) {
         int n = nums.length;
         int[] dp = new int[n + 1];
@@ -34,7 +35,8 @@ public class HouseRobber {
         int notPick = helper(index - 1, nums, dp);
 
         return dp[index] =  Math.max(pick, notPick);
-
     }
+
+    
 
 }
