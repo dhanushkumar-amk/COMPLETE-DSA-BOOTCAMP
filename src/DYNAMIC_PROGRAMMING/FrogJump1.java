@@ -68,6 +68,7 @@ public class FrogJump1 {
         int previous2 = 0;
 
         for (int i = 1; i < n; i++) {
+            int jumOne = 
 
         }
 
