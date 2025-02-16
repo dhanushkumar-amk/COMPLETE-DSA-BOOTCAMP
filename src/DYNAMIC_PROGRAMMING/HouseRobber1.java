@@ -65,10 +65,10 @@ public class HouseRobber1 {
             previous2 = previous1;
             previous1 = current;
 
-            return previous1;
+
         }
 
-
+        return previous1;
 
     }
 
