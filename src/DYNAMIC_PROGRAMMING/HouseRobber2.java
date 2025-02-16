@@ -34,7 +34,10 @@ public class HouseRobber2 {
 
     public int rob(int[] nums) {
 
-            int[] temp = new int[]
+            int[] temp1 = new int[nums.length];
+            int[] tem2 = new int[nums.length];
+
+            
     }
 
 }
