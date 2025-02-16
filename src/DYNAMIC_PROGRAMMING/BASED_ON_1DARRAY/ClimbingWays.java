@@ -1,4 +1,4 @@
-package DYNAMIC_PROGRAMMING;
+package DYNAMIC_PROGRAMMING.BASED_ON_1DARRAY;
 
 // https://leetcode.com/problems/climbing-stairs/description/
 // leetcode 70
