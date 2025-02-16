@@ -52,6 +52,7 @@ public class MinimumPathSum {
                     else
                         leftDirection += (int) Math.pow(10, 9);
 
+                    dp[row][col] = Math.min(leftDirection, upDirection);
                 }
             }
         }
