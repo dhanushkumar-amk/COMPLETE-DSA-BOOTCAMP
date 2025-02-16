@@ -7,49 +7,38 @@ package DYNAMIC_PROGRAMMING;
 
 public class HouseRobber2 {
 
-        // Helper function to solve the House Robber I problem
-        private int rob1(int[] nums) {
-            int n = nums.length;
-            if (n == 0) return 0;
-            if (n == 1) return nums[0];
 
-            int previous1 = nums[0];
-            int previous2 = 0;
+            // Helper function to solve the House Robber I problem for a given range
+            private int rob1(int[] nums, int start, int end) {
+                int previous1 = 0; // Represents dp[i-1]
+                int previous2 = 0;  // Represents dp[i-2]
 
-            for (int i = 1; i < n; i++) {
-                int pick = nums[i] + (i > 1 ? previous2 : 0);
-                int notPick = previous1;
-                int current = Math.max(pick, notPick);
-                previous2 = previous1;
-                previous1 = current;
+                for (int i = start; i <= end; i++) {
+                    int pick = nums[i] + previous2; // Rob the current house and add dp[i-2]
+                    int notPick = previous1;       // Do not rob the current house, take dp[i-1]
+                    int current = Math.max(pick, notPick); // Current maximum
+                    previous2 = previous1; // Update dp[i-2] to dp[i-1]
+                    previous1 = current;   // Update dp[i-1] to current
+                }
+
+                return previous1; // The final result is stored in previous1
             }
 
-            return previous1;
-        }
+            // Main function to solve the House Robber II problem
+            public int rob(int[] nums) {
+                int n = nums.length;
+                if (n == 0) return 0;
+                if (n == 1) return nums[0];
 
-        // Main function to solve the House Robber II problem
-        public int rob(int[] nums) {
-            int n = nums.length;
-            if (n == 0) return 0;
-            if (n == 1) return nums[0];
+                // Solve two subproblems:
+                // 1. Rob houses from 0 to n-2 (exclude the last house)
+                // 2. Rob houses from 1 to n-1 (exclude the first house)
+                int ans1 = rob1(nums, 0, n - 2); // Exclude the last house
+                int ans2 = rob1(nums, 1, n - 1); // Exclude the first house
 
-            // Split the problem into two subproblems
-            int[] temp1 = new int[n - 1];
-            int[] temp2 = new int[n - 1];
-
-            for (int i = 0; i < n - 1; i++) {
-                temp1[i] = nums[i]; // Exclude the last house
-                temp2[i] = nums[i + 1]; // Exclude the first house
+                // Return the maximum of the two solutions
+                return Math.max(ans1, ans2);
             }
-
-            // Solve both subproblems
-            int ans1 = rob1(temp1);
-            int ans2 = rob1(temp2);
-
-            // Return the maximum of the two solutions
-            return Math.max(ans1, ans2);
         }
-    }
 
-}
 
