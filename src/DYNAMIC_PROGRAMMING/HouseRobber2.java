@@ -34,7 +34,7 @@ public class HouseRobber2 {
 
     public int rob(int[] nums) {
 
-            int temp = 
+            int[] temp = new int[]
     }
 
 }
