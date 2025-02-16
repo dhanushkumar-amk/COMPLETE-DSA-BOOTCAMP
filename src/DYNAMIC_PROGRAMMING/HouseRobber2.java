@@ -8,7 +8,9 @@ package DYNAMIC_PROGRAMMING;
 public class HouseRobber2 {
 
     public static void main(String[] args) {
-        int[] nums ={}
+        int[] nums ={2,3,2};
+        HouseRobber2 ans =  new HouseRobber2();
+        System.out.println(ans.rob(nums));
     }
 
             // Helper function to solve the House Robber I problem for a given range
