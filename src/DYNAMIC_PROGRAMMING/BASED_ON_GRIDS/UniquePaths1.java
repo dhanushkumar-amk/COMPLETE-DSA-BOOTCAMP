@@ -5,7 +5,7 @@ package DYNAMIC_PROGRAMMING.BASED_ON_GRIDS;
 
 import java.util.Arrays;
 
-public class CountUniquePaths {
+public class UniquePaths1 {
     public static void main(String[] args) {
         int m = 3;
         int n = 2;
@@ -29,7 +29,7 @@ public class CountUniquePaths {
         // reach the destination
         if (row == 0  || col == 0)
             return 1;
-        
+
         if (dp[row][col] != -1)
             return dp[row][col];
 
