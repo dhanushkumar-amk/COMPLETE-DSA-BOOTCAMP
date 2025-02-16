@@ -32,6 +32,10 @@ public class HouseRobber2 {
             return previous1;
         }
 
+    public int rob(int[] nums) {
+
+            int temp = 
+    }
 
 }
 
