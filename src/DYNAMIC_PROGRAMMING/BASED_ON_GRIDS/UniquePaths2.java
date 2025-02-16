@@ -9,6 +9,13 @@ public class UniquePaths2 {
     public static void main(String[] args) {
         UniquePaths2 ans = new UniquePaths2();
 
+        int[][] maze = {
+                {0, 0, 0},
+                {0, -1, 0},
+                {0, 0, 0}
+        };
+
+        
 
     }
 
