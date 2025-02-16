@@ -27,7 +27,9 @@ public class MinimumPathSum {
 
     private int minPath(int row, int col, int[][] grid, int[][] dp) {
 
-        if ()
+        for (int i = 0; i < ; i++) {
+            
+        }
 
     }
 }
