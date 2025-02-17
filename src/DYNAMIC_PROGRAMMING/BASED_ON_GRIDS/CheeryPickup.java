@@ -51,7 +51,7 @@ public class CheeryPickup {
                     answer = grid[i][j1];
 
                 else
-                    answer = grid[i][j1] + grid[i][j2] + maxChocoUtil()
+                    answer = grid[i][j1] + grid[i][j2] + maxChocoUtil(i + 1, )
             }
         }
 
