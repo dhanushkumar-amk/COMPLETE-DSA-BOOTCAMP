@@ -3,8 +3,15 @@ package DYNAMIC_PROGRAMMING.BASED_ON_GRIDS;
 import java.util.Arrays;
 
 public class CheeryPickup {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
+        int matrix[][] = {{2, 3, 1, 2},
+                {3, 4, 2, 2},
+                {5, 6, 3, 5}};
+        int n = matrix.length;
+        int m = matrix[0].length;
 
+        // Call the maximumChocolates function and print the result
+        System.out.println(maximumChocolates(n, m, matrix));
     }
 
     static int maximumChocolates(int n, int m, int[][] grid) {
