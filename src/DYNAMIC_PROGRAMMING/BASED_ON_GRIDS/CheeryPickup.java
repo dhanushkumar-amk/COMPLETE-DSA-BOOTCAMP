@@ -39,6 +39,11 @@ public class CheeryPickup {
                 return grid[i][j1] + grid[i][j2];
         }
 
+        // check if the calls already occurs
+        if (dp[i][j1][j2] != -1)
+            return dp[i][j1][j2];
+
+
         int maxi = (int) (-1e9);
 
         // explore all paths on bob and alice in simultaneously
