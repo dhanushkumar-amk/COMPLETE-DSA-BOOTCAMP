@@ -56,6 +56,6 @@ public class CheeryPickup {
                 maxi = Math.max(maxi, answer);
             }
         }
-    return maxi;    
+    return maxi;
     }
 }
