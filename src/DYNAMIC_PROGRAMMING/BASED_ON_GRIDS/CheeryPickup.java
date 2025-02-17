@@ -54,7 +54,7 @@ public class CheeryPickup {
         int maxi = (int) (-1e9);
 
         // explore all paths on bob and alice in simultaneously
-        for (int dj1 = -1; dj1 <= 1; dj1++) { // for alice
+        for (int dj1 = -1; dj1 <= 1; dj1++) { // for alice  for more information search on notes
             for (int dj2 = -1; dj2 <= 1; dj2++) { // for bob
                 int answer = 0;
 
