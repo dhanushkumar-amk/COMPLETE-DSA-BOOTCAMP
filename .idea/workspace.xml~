@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3b31853-a80d-4570-8193-c0fc280c5451" name="Changes" comment="modified" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Enum" />
+        <option value="Record" />
+        <option value="AnnotationType" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="templatePsvm" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-22.0.1/lib/src.zip!/java.base/java/util/Queue.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <hideBySeverity>
+      <option value="11" />
+      <option value="12" />
+      <option value="13" />
+      <option value="14" />
+      <option value="15" />
+      <option value="16" />
+      <option value="100" />
+    </hideBySeverity>
+    <option name="selectedTabId" value="CurrentFile" />
+    <option name="showPreview" value="true" />
+    <option name="sortByName" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;0f7f7fff&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2p7NwaiJCZKDdnuZ24QmNuiYDl1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+    <option name="sortKey" value="BY_TIME_DESCENDING" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AVLMain.executor": "Run",
+    "Application.AccountMerge.executor": "Run",
+    "Application.AddTwoNumbers.executor": "Run",
+    "Application.AlienDictionary.executor": "Run",
+    "Application.ArrangeArrayBySign.executor": "Run",
+    "Application.ArrayIsSortedOrNot.executor": "Run",
+    "Application.BFSImplementation.executor": "Run",
+    "Application.BellmanFordAlgorithm.executor": "Run",
+    "Application.BinarySearch.executor": "Debug",
+    "Application.BinaryTree.executor": "Run",
+    "Application.BipartiteGraphInDfs.executor": "Run",
+    "Application.BipartiteGraphUsingBFS.executor": "Run",
+    "Application.BitonicArray.executor": "Run",
+    "Application.BitonicArrray.executor": "Run",
+    "Application.BookAllocationProblem.executor": "Run",
+    "Application.BubbleSort.executor": "Debug",
+    "Application.CheapestFlightsWithInKSteps.executor": "Run",
+    "Application.CheckIfArrayIsSortedOrNOt.executor": "Run",
+    "Application.CheckIfTheGivenStringIsPalindromeOrNot.executor": "Run",
+    "Application.CheckIfTheIthBitIsOnOrOff.executor": "Run",
+    "Application.CheckIfTheValueIsConsecutiveOnesOrNot.executor": "Run",
+    "Application.ClimbingWays.executor": "Run",
+    "Application.ConvertBinaryToDecimal.executor": "Run",
+    "Application.ConvertDecimalToBinary.executor": "Run",
+    "Application.CountNoOfZerosOfAnNumber.executor": "Run",
+    "Application.CountNumberOfDigitsInAGivenValue.executor": "Run",
+    "Application.CountPossiblePaths.executor": "Run",
+    "Application.CountSort.executor": "Run",
+    "Application.CountString.executor": "Run",
+    "Application.CountTheLongestConsecutiveOnesInBinaryRepresentationINGivenNumber.executor": "Run",
+    "Application.CountTheNoOfStepsToReduceTheZero.executor": "Run",
+    "Application.CountTheNumberInDigit.executor": "Run",
+    "Application.CountTheSetBits.executor": "Run",
+    "Application.CountTheSmallerOrEqualElements.executor": "Run",
+    "Application.CountUniquePaths.executor": "Run",
+    "Application.CountVowelsInString.executor": "Run",
+    "Application.CourseSchedule1.executor": "Run",
+    "Application.CourseScheduleII.executor": "Run",
+    "Application.CustomArrayList.executor": "Run",
+    "Application.CyclicSort.executor": "Run",
+    "Application.DFSImplementation.executor": "Run",
+    "Application.DecodeString.executor": "Run",
+    "Application.Demo.executor": "Run",
+    "Application.DetectCycleInDirectedGraph.executor": "Run",
+    "Application.DetectCycleInDirectedGraphTopoSort.executor": "Run",
+    "Application.DetectCycleInUndirectedGraphUsingBFS.executor": "Run",
+    "Application.DetectCycleInUndirectedGraphUsingDFS.executor": "Run",
+    "Application.DijkstraAlgorithm.executor": "Run",
+    "Application.DisJointSet.executor": "Run",
+    "Application.EuclidLCM.executor": "Run",
+    "Application.Euclid_Of_Alexandria_GCD.executor": "Run",
+    "Application.EventualSafeNodeUsingTopoSort.executor": "Run",
+    "Application.EventualSafeStates.executor": "Run",
+    "Application.Factorial.executor": "Run",
+    "Application.FactorialOfANumber.executor": "Run",
+    "Application.Fiboacci.executor": "Run",
+    "Application.Fibonacci.executor": "Run",
+    "Application.FibonacciNumber.executor": "Run",
+    "Application.FindAllDuplicateNumbers.executor": "Run",
+    "Application.FindAllDuplicatesElementsInArray.executor": "Run",
+    "Application.FindAllNumberDisappearedInAnArray.executor": "Run",
+    "Application.FindSquareOrFloorRootOfAnNumber.executor": "Run",
+    "Application.FindSubArrayOfAnArrray.executor": "Run",
+    "Application.FindTheCityWithTheSmallestNumberOfNeighborsAtAThresholdDistance.executor": "Run",
+    "Application.FindWhetherTheNumberIsAPowerOf2.executor": "Run",
+    "Application.FirstAndLastPositionOfAnElementInSortedArray.executor": "Run",
+    "Application.FirstMissingPositiveNumber.executor": "Run",
+    "Application.FloodFillAlgorithm.executor": "Run",
+    "Application.FloorAndCeilOfAnNumber.executor": "Run",
+    "Application.FloydWarshallAlgorithm.executor": "Run",
+    "Application.FrequencyOfAnArray.executor": "Run",
+    "Application.FrogJump1.executor": "Run",
+    "Application.GCD_and_HCF_of_tow_numbers.executor": "Run",
+    "Application.GREEDY.Main.executor": "Run",
+    "Application.GabrielLameOptimizedEculidAlgorithmGCD.executor": "Debug",
+    "Application.GameOfTwoStack.executor": "Run",
+    "Application.GenerateAllBalancedParentheses.executor": "Run",
+    "Application.GraphRepresentationInList.executor": "Run",
+    "Application.GraphRepresentationInMatrix.executor": "Run",
+    "Application.Greeting.executor": "Run",
+    "Application.HASHMAPS.Main (1).executor": "Run",
+    "Application.HASHMAPS.Main.executor": "Run",
+    "Application.HashMapDemo.executor": "Run",
+    "Application.HeapSort.executor": "Run",
+    "Application.HouseRobber.executor": "Run",
+    "Application.HouseRobber1.executor": "Run",
+    "Application.HouseRobber2.executor": "Run",
+    "Application.HowToReverseAnArray.executor": "Run",
+    "Application.HuffmanCoder.executor": "Run",
+    "Application.ImplementQueueUsingStack (1).executor": "Run",
+    "Application.ImplementQueueUsingStack (2).executor": "Run",
+    "Application.ImplementQueueUsingStack.executor": "Run",
+    "Application.IncludingPrintDiagonals.executor": "Run",
+    "Application.Inner.executor": "Run",
+    "Application.InnerClasses$A.executor": "Run",
+    "Application.InnerClasses.executor": "Run",
+    "Application.InsertTheElementUsingRecursion.executor": "Run",
+    "Application.InsertionSort.executor": "Run",
+    "Application.InverseOfAnArray.executor": "Run",
+    "Application.IterativeProgramToPrintAllTheSubsequences.executor": "Run",
+    "Application.JosephusProblem.executor": "Run",
+    "Application.KhansAlgorithm.executor": "Run",
+    "Application.LCM.executor": "Run",
+    "Application.LINKEDLIST.Main.executor": "Run",
+    "Application.LambdaFunctions.executor": "Run",
+    "Application.LargestRectangleInHistogram.executor": "Run",
+    "Application.LeadersOfAnArray.executor": "Run",
+    "Application.LetterCombinationOfAPhoneNumber.executor": "Run",
+    "Application.LinearSearch.executor": "Run",
+    "Application.LonelyDigits.executor": "Run",
+    "Application.LongestWordWithAllPrefix (1).executor": "Run",
+    "Application.LongestWordWithAllPrefix.executor": "Run",
+    "Application.LuckyNumber.executor": "Run",
+    "Application.Main (1).executor": "Run",
+    "Application.Main (2).executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MainBinaryTree.executor": "Run",
+    "Application.MajorityElements.executor": "Run",
+    "Application.MatrixDistanceAtNearestCellHaving.executor": "Run",
+    "Application.MaximumConsecutiveFlips.executor": "Run",
+    "Application.MaximumNumberInArray.executor": "Run",
+    "Application.MaximumSubArray.executor": "Run",
+    "Application.MaximumSubArrayWithSumK.executor": "Run",
+    "Application.MazeWithObstacles.executor": "Run",
+    "Application.MedianOfTheMatrix.executor": "Run",
+    "Application.MedianOfTwoSortedArray.executor": "Run",
+    "Application.MergeSort.executor": "Debug",
+    "Application.MergeTwoSortedList.executor": "Run",
+    "Application.MiddleOfLinkedList.executor": "Run",
+    "Application.MinimumAddToMakeParenthesesValid.executor": "Run",
+    "Application.MinimumInsertionsToBalanceAParenthesesString.executor": "Run",
+    "Application.MinimumMultiplicationsToReachEnd.executor": "Run",
+    "Application.MinimumNumberOfDaysToMakeMBouqutes.executor": "Run",
+    "Application.MinimumPathSum.executor": "Run",
+    "Application.MinimumPathSumInTriangle.executor": "Run",
+    "Application.MissingNumber.executor": "Run",
+    "Application.MissingNumbers.executor": "Run",
+    "Application.MoveZerosToTheEnd.executor": "Run",
+    "Application.NKnight.executor": "Run",
+    "Application.NQueens.executor": "Run",
+    "Application.NinjasTraining.executor": "Run",
+    "Application.NthPalindromicRepresentation.executor": "Run",
+    "Application.NumberOfDiceRollsWithTargetSum.executor": "Run",
+    "Application.NumberOfDistrictIsland.executor": "Run",
+    "Application.NumberOfEnclaves.executor": "Run",
+    "Application.NumberOfIslands2.executor": "Run",
+    "Application.NumberOfProvinces.executor": "Run",
+    "Application.OOPS.ACCESS.Main.executor": "Run",
+    "Application.OOPS.COLLECTIONS.Main.executor": "Run",
+    "Application.OOPS.COMPARINGOBJECTS.Main.executor": "Run",
+    "Application.OOPS.EXCEPTIONHANDLING.Main.executor": "Run",
+    "Application.OOPS.INHERITANCE.main.executor": "Run",
+    "Application.OOPS.INTERFACES.EXTENDEDDEMO.Main.executor": "Run",
+    "Application.OOPS.INTERFACES.Main.executor": "Run",
+    "Application.OOPS.INTERFACES.NESTEDINTERFACE.Main.executor": "Run",
+    "Application.OOPS.OBJECTCLONING.Main.executor": "Run",
+    "Application.OOPS.Static.Main.executor": "Run",
+    "Application.ObjectDemo.executor": "Run",
+    "Application.OddOrEven.executor": "Run",
+    "Application.OnesComplement.executor": "Run",
+    "Application.PainterPartitionProblem.executor": "Run",
+    "Application.PalindromeNumberOrNot.executor": "Run",
+    "Application.PatternPrinting.executor": "Run",
+    "Application.PercentageCalculation.executor": "Run",
+    "Application.PowerOfNumbers.executor": "Run",
+    "Application.PrimeFactors.executor": "Run",
+    "Application.PrimeNumber.executor": "Run",
+    "Application.PrimeNumberInGivenRange.executor": "Run",
+    "Application.PrimsAlgo.executor": "Run",
+    "Application.Print1ToN.executor": "Run",
+    "Application.PrintAllPaths.executor": "Run",
+    "Application.PrintAllPermutationOfAGivenString.executor": "Run",
+    "Application.PrintAllTheBoundriesOfAMatrix.executor": "Run",
+    "Application.PrintDivisorOfANumber.executor": "Run",
+    "Application.PrintMatrixAndPath.executor": "Run",
+    "Application.PrintMatrixInZigZagForm.executor": "Run",
+    "Application.PrintOver.executor": "Run",
+    "Application.PrintTheNumbersNTo1.executor": "Run",
+    "Application.PrintingAllPossiblePathsINOnlyRightAndDownDirections.executor": "Run",
+    "Application.ProductOfDigits.executor": "Run",
+    "Application.ProfitOrLoss.executor": "Run",
+    "Application.ProgramToFindTheRightMostBit.executor": "Run",
+    "Application.QueueExample.executor": "Run",
+    "Application.QuickSort.executor": "Run",
+    "Application.RadixSort.executor": "Run",
+    "Application.RemoveDuplicatesFromSortedArray.executor": "Run",
+    "Application.RemoveDuplicatesFromSortedList.executor": "Run",
+    "Application.RemoveElementsINString.executor": "Run",
+    "Application.ReorderLL.executor": "Run",
+    "Application.ReverseAColumnOfAMatrix.executor": "Run",
+    "Application.ReverseANumber.executor": "Run",
+    "Application.ReverseAString.executor": "Run",
+    "Application.ReverseArrayAndRemoveDuplicates.executor": "Run",
+    "Application.ReverseInBetween.executor": "Run",
+    "Application.ReverseLL.executor": "Run",
+    "Application.RomanToInteger.executor": "Run",
+    "Application.RopeCuttingProblem.executor": "Run",
+    "Application.RotateAnArray.executor": "Run",
+    "Application.RotateTheMatrixBy90Degree.executor": "Run",
+    "Application.RotatedBinarySearch.executor": "Run",
+    "Application.RottingOranges.executor": "Run",
+    "Application.SearchInDecendingOrderSortedArray.executor": "Run",
+    "Application.SearchInRotatedSortedArray.executor": "Run",
+    "Application.SearchInTwoDMatrix.executor": "Run",
+    "Application.SecondLargestElement.executor": "Run",
+    "Application.SecondSmallestNumber.executor": "Run",
+    "Application.SegmentTree.executor": "Run",
+    "Application.SelectionSort.executor": "Run",
+    "Application.SerializeAndDeserializeBinaryTree.executor": "Run",
+    "Application.SetBitsOfAnInteger.executor": "Run",
+    "Application.SetMisMatch.executor": "Run",
+    "Application.ShortestPathInBinaryMatrix.executor": "Run",
+    "Application.ShortestPathInBinaryMatrixOAllDirectionAllows.executor": "Debug",
+    "Application.ShortestPathInDAG.executor": "Run",
+    "Application.ShortestPathInUndirectedGraphWithUnitDistance.executor": "Run",
+    "Application.SieveOfEratosthenes.executor": "Run",
+    "Application.SkipAString.executor": "Run",
+    "Application.SkipAStringIfItNotTheReqiredString.executor": "Run",
+    "Application.SpanOfAnArray.executor": "Run",
+    "Application.SpiralMatrix.executor": "Run",
+    "Application.Sqrt.executor": "Run",
+    "Application.StackExample.executor": "Run",
+    "Application.StringBuilderandStrings (1).executor": "Run",
+    "Application.StringBuilderandStrings (2).executor": "Run",
+    "Application.StringBuilderandStrings (3).executor": "Run",
+    "Application.StringBuilderandStrings.executor": "Run",
+    "Application.SubSequenceOfAString.executor": "Run",
+    "Application.SubSetSum.executor": "Run",
+    "Application.SubsequenceWithASCII.executor": "Run",
+    "Application.SubtractTwoNumber.executor": "Run",
+    "Application.SudokuSolver.executor": "Run",
+    "Application.SumOfAllDigits.executor": "Run",
+    "Application.SumOfAllElementsInArray.executor": "Run",
+    "Application.SumOfNNumbers.executor": "Run",
+    "Application.SurroundedRegions.executor": "Run",
+    "Application.SwapAllOddAndEvenBits.executor": "Run",
+    "Application.SwitchOffTheIthBit.executor": "Run",
+    "Application.SwitchOnTheIthBit.executor": "Run",
+    "Application.ToogleTheIthBit.executor": "Run",
+    "Application.TopologicalSort.executor": "Run",
+    "Application.Tostring (1).executor": "Run",
+    "Application.Tostring.executor": "Run",
+    "Application.TowerOfHanoi.executor": "Run",
+    "Application.TrailingZerosInABinary.executor": "Run",
+    "Application.Trailing_Zeors_In_A_Facorial.executor": "Run",
+    "Application.TransposeMatrix.executor": "Run",
+    "Application.TrappingRainWaterSum.executor": "Run",
+    "Application.Trie.executor": "Run",
+    "Application.TwoSum.executor": "Run",
+    "Application.TwosComplement.executor": "Run",
+    "Application.UniquePaths2.executor": "Run",
+    "Application.ValidParentheses.executor": "Run",
+    "Application.WeightedGraphRepresentationInMatrix.executor": "Run",
+    "Application.WordLadder.executor": "Run",
+    "Application.WordLadder1.executor": "Run",
+    "Application.WordLadder2 (1).executor": "Run",
+    "Application.WordLadder2.executor": "Run",
+    "Application.WrapperClass.executor": "Run",
+    "Application.WrapperClasses.executor": "Run",
+    "Application.happyNumber.executor": "Run",
+    "Application.main.executor": "Run",
+    "Application.mainBinarySearch.executor": "Run",
+    "Application.maximumAlternativeEvenOddSubArray.executor": "Run",
+    "Application.maximumConsecutiveOnes.executor": "Run",
+    "Application.segmentMain.executor": "Run",
+    "Application.static2.executor": "Run",
+    "Application.subClass.executor": "Run",
+    "Application.swap.executor": "Run",
+    "Notification.DisplayName-DoNotAsk-WindowsDefender": "Microsoft Defender configuration",
+    "Notification.DoNotAsk-WindowsDefender": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/hp5cd/Documents/Coding.dev/src/OOPS/GENERIC/CustomArrayList.java",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "two.files.diff.last.used.file": "C:/Users/hp5cd/Documents/Coding.dev/src/OOPS/GENERIC/CustomArrayList.java"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Markdown"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="STRING" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp5cd\Documents\Coding.dev\src\OOPS\INTERFACES\EXTENDEDDEMO" />
+      <recent name="C:\Users\hp5cd\Documents\Coding.dev\src\OOPS\INTERFACES\EXTENDSDEMO2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp5cd\Documents\Coding.dev\src\STACK_AND_QUEUE" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="OOPS.POLYMORPHISM" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="OOPS.GENERIC" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="git" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MinimumPathSumInTriangle">
+    <configuration name="MinimumPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DYNAMIC_PROGRAMMING.BASED_ON_GRIDS.MinimumPathSum" />
+      <module name="Coding.dev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DYNAMIC_PROGRAMMING.BASED_ON_GRIDS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinimumPathSumInTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DYNAMIC_PROGRAMMING.BASED_ON_GRIDS.MinimumPathSumInTriangle" />
+      <module name="Coding.dev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DYNAMIC_PROGRAMMING.BASED_ON_GRIDS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NinjasTraining" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DYNAMIC_PROGRAMMING.BASED_ON_1DARRAY.NinjasTraining" />
+      <module name="Coding.dev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DYNAMIC_PROGRAMMING.BASED_ON_1DARRAY.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UniquePaths1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DYNAMIC_PROGRAMMING.BASED_ON_GRIDS.UniquePaths1" />
+      <module name="Coding.dev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DYNAMIC_PROGRAMMING.BASED_ON_GRIDS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UniquePaths2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DYNAMIC_PROGRAMMING.BASED_ON_GRIDS.UniquePaths2" />
+      <module name="Coding.dev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DYNAMIC_PROGRAMMING.BASED_ON_GRIDS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MinimumPathSumInTriangle" />
+        <item itemvalue="Application.MinimumPathSum" />
+        <item itemvalue="Application.UniquePaths2" />
+        <item itemvalue="Application.UniquePaths1" />
+        <item itemvalue="Application.NinjasTraining" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3b31853-a80d-4570-8193-c0fc280c5451" name="Changes" comment="" />
+      <created>1732113394695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732113394695</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1732335110087</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732335110087</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1732536181749</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732536181750</updated>
+    </task>
+    <task id="LOCAL-00003" summary="modified">
+      <option name="closed" value="true" />
+      <created>1736666153171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736666153172</updated>
+    </task>
+    <task id="LOCAL-00004" summary="modified">
+      <option name="closed" value="true" />
+      <created>1736666303360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736666303360</updated>
+    </task>
+    <task id="LOCAL-00005" summary="modified">
+      <option name="closed" value="true" />
+      <created>1739246528113</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739246528113</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SEARCHING/BitonicArrray.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ARRAYS/MaximumSubArrayWithSumK.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TREES/SymmetricTree.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GRAPH/ShortestPathInBinaryMatrixOAllDirectionAllows.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/RECURSION/MergeSort.java</url>
+          <line>24</line>
+          <properties class="RECURSION.MergeSort" method="merge">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Coding_dev$Print1ToN.ic" NAME="Print1ToN Coverage Results" MODIFIED="1734674162618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>RECURSION.*</FILTER>
+    </SUITE>
+  </component>
+</project>
