@@ -39,7 +39,10 @@ public class CheeryPickup {
                 return grid[i][j1] + grid[i][j2];
         }
 
-        
+        // explore all paths on bob and alice in simultaneously
+        for (int j = ; j < ; j++) {
+
+        }
 
     }
 }
