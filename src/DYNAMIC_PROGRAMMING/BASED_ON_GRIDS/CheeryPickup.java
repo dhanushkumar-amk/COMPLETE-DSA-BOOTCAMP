@@ -52,8 +52,10 @@ public class CheeryPickup {
 
                 else
                     answer = grid[i][j1] + grid[i][j2] + maxChocoUtil(i + 1, j1 +dj1, j2 + dj2, n, m , grid,dp);
+
+                maxi = Math.max(maxi, answer);
             }
         }
-
+    return maxi;    
     }
 }
