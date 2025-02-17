@@ -39,9 +39,16 @@ public class CheeryPickup {
                 return grid[i][j1] + grid[i][j2];
         }
 
+        int maxi = (int) (-1e9);
+
         // explore all paths on bob and alice in simultaneously
         for (int dj1 = -1; dj1 <= 1; dj1++) { // for alice
             for (int dj2 = -1; dj2 <= 1; dj2++) { // for bob
+                int answer = 0;
+
+                // if both in same cell then take the consideration of one and move
+                if (j1 == j2)
+                    answer = grid[i][j1];
                 
             }
         }
