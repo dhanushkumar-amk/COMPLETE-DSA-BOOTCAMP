@@ -40,8 +40,10 @@ public class CheeryPickup {
         }
 
         // explore all paths on bob and alice in simultaneously
-        for (int j = ; j < ; j++) {
-
+        for (int dj1 = -1; dj1 <= 1; dj1++) { // for alice
+            for (int dj2 = -1; dj2 <= 1; dj2++) { // for bob
+                
+            }
         }
 
     }
