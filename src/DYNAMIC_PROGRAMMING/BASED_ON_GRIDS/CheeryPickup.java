@@ -23,7 +23,13 @@ public class CheeryPickup {
         return maxChocoUtil(0, 0, m - 1, n, m, grid, dp);
     }
 
-    private static int maxChocoUtil(int i, int i1, int i2, int n, int m, int[][] grid, int[][][] dp) {
-   
+    private static int maxChocoUtil(int i, int j1, int j2, int n, int m, int[][] grid, int[][][] dp) {
+
+        // bounty case
+        if (j1 < 0 || j1 >= m || j2 < 0 || j2 >= m)
+            return (int) (Math.pow(-10, 9));
+
+
+        
     }
 }
