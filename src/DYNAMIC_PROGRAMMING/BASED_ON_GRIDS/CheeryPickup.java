@@ -49,7 +49,9 @@ public class CheeryPickup {
                 // if both in same cell then take the consideration of one and move
                 if (j1 == j2)
                     answer = grid[i][j1];
-                
+
+                else
+                    answer = 
             }
         }
 
