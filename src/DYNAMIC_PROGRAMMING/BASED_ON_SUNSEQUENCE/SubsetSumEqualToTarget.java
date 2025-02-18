@@ -4,7 +4,7 @@ public class SubsetSumEqualToTarget {
 
     public static void main(String args[]) {
         int arr[] = { 1, 2, 3, 4 };
-        int k = 0;
+        int k = 10;
         int n = arr.length;
 
         // Check if there exists a subset with the given target sum
