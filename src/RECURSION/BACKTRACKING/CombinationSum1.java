@@ -6,7 +6,17 @@ import java.util.List;
 public class CombinationSum1 {
 
     public static void main(String[] args) {
-
+        int arr[] = {2,3,6,7};
+        int target = 7;
+        CombinationSum1 sol = new CombinationSum1();
+        List < List < Integer >> ls = sol.combinationSum(arr, target);
+        System.out.println("Combinations are: ");
+        for (int i = 0; i < ls.size(); i++) {
+            for (int j = 0; j < ls.get(i).size(); j++) {
+                System.out.print(ls.get(i).get(j) + " ");
+            }
+            System.out.println();
+        }
     }
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
@@ -29,7 +39,7 @@ public class CombinationSum1 {
         if (candidates[index] <= target){
             dataStructure.add(candidates[index]);
             findCombinations(index, candidates,target - candidates[index], answer, dataStructure);
-            dataStructure.remove(candidates[index]);  // backtrack 
+            dataStructure.remove(candidates[index]);  // backtrack
         }
 
         // not pick
