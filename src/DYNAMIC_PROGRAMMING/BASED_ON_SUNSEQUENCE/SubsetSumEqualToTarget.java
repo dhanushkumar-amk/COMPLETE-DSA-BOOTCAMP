@@ -2,9 +2,20 @@ package DYNAMIC_PROGRAMMING.BASED_ON_SUNSEQUENCE;
 
 public class SubsetSumEqualToTarget {
 
+    public static void main(String args[]) {
+        int arr[] = { 1, 2, 3, 4 };
+        int k = 4;
+        int n = arr.length;
+
+        // Check if there exists a subset with the given target sum
+        if (subsetSumToK(n, k, arr))
+            System.out.println("Subset with the given target found");
+        else
+            System.out.println("Subset with the given target not found");
+    }
+
     static boolean subsetSumToK(int n, int target, int[] arr){
-
-
+        
         int[][] dp = new int[n][target + 1];
 
         for (int i = 0; i < n; i++) {
@@ -13,12 +24,7 @@ public class SubsetSumEqualToTarget {
             }
         }
 
-
-
-
-       return fun(n -1, target, arr, dp);
-
-
+       return fun(n -1, target, arr, dp)
 
     }
 
