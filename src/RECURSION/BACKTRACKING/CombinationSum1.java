@@ -39,7 +39,7 @@ public class CombinationSum1 {
         if (candidates[index] <= target){
             dataStructure.add(candidates[index]);
             findCombinations(index, candidates,target - candidates[index], answer, dataStructure);
-            dataStructure.remove(candidates[index]);  // backtrack
+            dataStructure.remove(dataStructure.size() - 1);  // backtrack
         }
 
         // not pick
