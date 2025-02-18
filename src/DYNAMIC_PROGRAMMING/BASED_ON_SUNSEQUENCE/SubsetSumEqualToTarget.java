@@ -31,6 +31,10 @@ public class SubsetSumEqualToTarget {
         if (index == 0)
             return (arr[0] == target);
 
+        // If the result for this subproblem has already been calculated, return it
+        if (dp[index][target] != -1)
+            return dp[index][target] == 0 ? false : true;
+
         boolean notPick = fun(index -1, target, arr, dp);
         boolean pick = false;
 
@@ -38,7 +42,7 @@ public class SubsetSumEqualToTarget {
         if (target >= arr[index])
             pick = fun(index - 1, target - arr[index], arr,dp);
 
-        
+
 
         return pick || notPick;
 
