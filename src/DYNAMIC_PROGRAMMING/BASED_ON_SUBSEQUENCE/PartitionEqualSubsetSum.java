@@ -6,13 +6,17 @@ public class PartitionEqualSubsetSum {
 
     public boolean canPartition(int[] nums) {
 
+        int n = nums.length;
         int totalSum = 0;
-        for (int i = 0; i < nums.length; i++)
+        for (int i = 0; i < n; i++)
             totalSum += nums[i];
 
         if (totalSum % 2 == 1)
             return false;
 
+        int k = totalSum / 2;
+
+        return subsetSumToK(n, k, nums);
     }
 
 
