@@ -10,7 +10,8 @@ public class PartitionEqualSubsetSum {
         for (int i = 0; i < nums.length; i++)
             totalSum += nums[i];
 
-        if (totalSum % 2)
+        if (totalSum % 2 == 1)
+            return false;
 
     }
 
