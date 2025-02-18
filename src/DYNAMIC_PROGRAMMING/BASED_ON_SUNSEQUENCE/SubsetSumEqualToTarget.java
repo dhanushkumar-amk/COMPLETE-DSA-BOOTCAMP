@@ -5,7 +5,8 @@ public class SubsetSumEqualToTarget {
     static boolean subsetSumToK(int n, int target, int[] arr){
 
 
-        
+        int[] dp = new 
+
        return fun(n -1, target, arr);
 
 
