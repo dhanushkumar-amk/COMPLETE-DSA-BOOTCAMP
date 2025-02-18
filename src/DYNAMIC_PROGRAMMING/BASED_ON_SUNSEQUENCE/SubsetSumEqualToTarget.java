@@ -1,5 +1,7 @@
 package DYNAMIC_PROGRAMMING.BASED_ON_SUNSEQUENCE;
 
+import java.util.Arrays;
+
 public class SubsetSumEqualToTarget {
 
     public static void main(String args[]) {
@@ -19,7 +21,7 @@ public class SubsetSumEqualToTarget {
         int[][] dp = new int[n][target + 1];
 
         for(int[] row : dp){
-            
+            Arrays.fill(row, -1);
         }
 
        return fun(n -1, target, arr, dp);
