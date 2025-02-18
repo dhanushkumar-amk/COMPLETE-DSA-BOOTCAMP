@@ -26,24 +26,24 @@ public class CombinationSum1 {
         return answer;
     }
 
-    private void findCombinations(int index, int[] candidates, int target, List<List<Integer>> answer,  ArrayList<Integer> dataStructure) {
+    private void findCombinations(int index, int[] candidates, int target, List<List<Integer>> answer,  ArrayList<Integer> Container) {
 
         // base case
         if (index == candidates.length){
             if (target == 0)
-                answer.add(new ArrayList<>(dataStructure));  // add  if the target is 0 otherwise backtrack
+                answer.add(new ArrayList<>(Container));  // add  if the target is 0 otherwise backtrack
             return;
         }
 
         //pick
         if (candidates[index] <= target){
-            dataStructure.add(candidates[index]);
-            findCombinations(index, candidates,target - candidates[index], answer, dataStructure);
-            dataStructure.remove(dataStructure.size() - 1);  // backtrack
-        }
+            Container.add(candidates[index]);
+            findCombinations(index, candidates,target - candidates[index], answer, Container);
+            Container.remove(Container.size() - 1);  // backtrack remove lastly added elements from th Container
+             }
 
         // not pick
-        findCombinations(index + 1, candidates, target, answer, dataStructure);
+        findCombinations(index + 1, candidates, target, answer, Container);
     }
 
 }
