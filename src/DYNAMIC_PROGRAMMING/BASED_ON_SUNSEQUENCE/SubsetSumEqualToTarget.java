@@ -18,7 +18,7 @@ public class SubsetSumEqualToTarget {
 
         int[][] dp = new int[n][target + 1];
 
-        for(int[] row : arr){
+        for(int[] row : dp){
             
         }
 
