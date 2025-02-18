@@ -42,7 +42,8 @@ public class SubsetSumEqualToTarget {
         if (target >= arr[index])
             pick = fun(index - 1, target - arr[index], arr,dp);
 
-
+// if boolean means true or false but we need 1 or 0
+        dp[index][target] = notPick || pick ? 1 : 0;
 
         return pick || notPick;
 
