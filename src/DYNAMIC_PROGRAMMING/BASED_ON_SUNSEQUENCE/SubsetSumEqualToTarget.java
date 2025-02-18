@@ -14,6 +14,7 @@ public class SubsetSumEqualToTarget {
             System.out.println("Subset with the given target not found");
     }
 
+    // memorization
     static boolean subsetSumToK(int n, int target, int[] arr){
 
         int[][] dp = new int[n][target + 1];
