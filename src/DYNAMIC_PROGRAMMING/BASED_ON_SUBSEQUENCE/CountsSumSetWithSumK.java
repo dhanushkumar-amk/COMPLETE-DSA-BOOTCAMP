@@ -36,14 +36,16 @@ public class CountsSumSetWithSumK {
                 return 0;
         }
 
+        if (dp[index][target] != -1)
+            return dp[index][target];
 
-        int notPick = function(index - 1, target, arr);
+        int notPick = function(index - 1, target, arr, dp);
 
 
         int pick = 0;
         if (arr[index] <= target)
-            pick = function(index - 1, target - arr[index], arr);
+            pick = function(index - 1, target - arr[index], arr, dp);
 
-        return pick + notPick;
+        return dp[index][target] =  pick + notPick;
     }
 }
