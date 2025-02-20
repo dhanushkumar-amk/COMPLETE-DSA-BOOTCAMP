@@ -9,4 +9,8 @@ public class CountsSumSetWithSumK {
         // Calculate and print the number of subsets that sum up to k
         System.out.println("The number of subsets found are " + findWays(arr, k));
     }
+
+    static int findWays(int[] num, int k) {
+        int n = num.length;
+    }
 }
