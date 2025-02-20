@@ -12,5 +12,9 @@ public class CountsSumSetWithSumK {
 
     static int findWays(int[] num, int k) {
         int n = num.length;
+
+        int[][] dp = new int[n - 1][k + 1];
+
+        
     }
 }
