@@ -29,15 +29,14 @@ public class CountsSumSetWithSumK {
                 return 0;
         }
 
-        // Not pick the current element
+
         int notPick = function(index - 1, target, arr);
 
-        // Pick the current element (if it is less than or equal to the target)
+
         int pick = 0;
         if (arr[index] <= target)
             pick = function(index - 1, target - arr[index], arr);
 
-        // Return the total number of subsets
         return pick + notPick;
     }
 }
