@@ -10,34 +10,34 @@ public class CountsSumSetWithSumK {
         System.out.println("The number of subsets found are " + findWays1(arr, k));
     }
 
-
-    // memoization answer
+    // Memoization answer
     static int findWays1(int[] arr, int target) {
-
-
-
-        int startIndex = arr.length- 1;
+        int startIndex = arr.length - 1; // Fix: Start from the last index
         return function(startIndex, target, arr);
     }
 
-    static int function(int index, int target, int[] arr){
-
+    static int function(int index, int target, int[] arr) {
+        // Base case: If target is 0, we found a valid subset
         if (target == 0)
             return 1;
 
-        if (index == 0){
-            if (arr[index] == 0)
+        // Base case: If we've reached the first element
+        if (index == 0) {
+            if (arr[index] == target) // If the first element equals the target
                 return 1;
             else
                 return 0;
         }
 
-        int notPick  = function(index - 1, target, arr);
+        // Not pick the current element
+        int notPick = function(index - 1, target, arr);
 
+        // Pick the current element (if it is less than or equal to the target)
         int pick = 0;
         if (arr[index] <= target)
             pick = function(index - 1, target - arr[index], arr);
 
+        // Return the total number of subsets
         return pick + notPick;
     }
 }
