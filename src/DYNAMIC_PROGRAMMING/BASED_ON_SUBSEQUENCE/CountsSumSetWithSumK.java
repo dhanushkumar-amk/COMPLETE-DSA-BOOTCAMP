@@ -14,9 +14,9 @@ public class CountsSumSetWithSumK {
     // memoization answer
     static int findWays1(int[] arr, int target) {
 
-        
 
-        int startIndex = arr.length;
+
+        int startIndex = arr.length- 1;
         return function(startIndex, target, arr);
     }
 
