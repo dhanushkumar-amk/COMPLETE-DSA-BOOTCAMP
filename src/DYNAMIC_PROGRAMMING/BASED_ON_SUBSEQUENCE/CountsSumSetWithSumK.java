@@ -28,13 +28,9 @@ public class CountsSumSetWithSumK {
         if (target == 0)
             return 1;
 
-        // Base case: If we've reached the first element
-        if (index == 0) {
-            if (arr[index] == target) // If the first element equals the target
-                return 1;
-            else
-                return 0;
-        }
+        if (index == 0)
+            return arr[0] == target ? 1 : 0;
+
 
         if (dp[index][target] != -1)
             return dp[index][target];
