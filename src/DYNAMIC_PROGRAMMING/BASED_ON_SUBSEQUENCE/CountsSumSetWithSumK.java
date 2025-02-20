@@ -1,5 +1,7 @@
 package DYNAMIC_PROGRAMMING.BASED_ON_SUBSEQUENCE;
 
+import java.util.Arrays;
+
 public class CountsSumSetWithSumK {
 
     public static void main(String args[]) {
@@ -13,10 +15,15 @@ public class CountsSumSetWithSumK {
     // Memoization answer
     static int findWays1(int[] arr, int target) {
         int startIndex = arr.length - 1; // Fix: Start from the last index
-        return function(startIndex, target, arr);
+
+        int[][] dp = new int[startIndex][target + 1];
+        for (int[] row : dp)
+            Arrays.fill(row, -1);
+
+        return function(startIndex, target, arr, dp);
     }
 
-    static int function(int index, int target, int[] arr) {
+    static int function(int index, int target, int[] arr, int[][] dp) {
         // Base case: If target is 0, we found a valid subset
         if (target == 0)
             return 1;
