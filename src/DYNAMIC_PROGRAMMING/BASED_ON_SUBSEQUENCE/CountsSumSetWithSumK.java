@@ -14,13 +14,13 @@ public class CountsSumSetWithSumK {
 
     // Memoization answer
     static int findWays1(int[] arr, int target) {
-        int startIndex = arr.length - 1; // Fix: Start from the last index
+        int startIndex = arr.length; // Fix: Start from the last index
 
         int[][] dp = new int[startIndex][target + 1];
         for (int[] row : dp)
             Arrays.fill(row, -1);
 
-        return function(startIndex, target, arr, dp);
+        return function(startIndex - 1, target, arr, dp);
     }
 
     static int function(int index, int target, int[] arr, int[][] dp) {
