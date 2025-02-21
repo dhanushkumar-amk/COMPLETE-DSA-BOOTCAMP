@@ -24,7 +24,8 @@ public class PrintAllLongestCommonSubSequence {
 
             int n = text1.length();
             int m = text2.length();
-            return function(text1.length() - 1, text2.length() - 1, text1, text2, dp);
+
+            return function(n - 1, m -1, text1, text2, dp);
         }
 
         private static int function(int i, int j, String text1, String text2, int[][] dp) {
