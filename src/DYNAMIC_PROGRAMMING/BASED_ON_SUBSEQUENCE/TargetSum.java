@@ -13,7 +13,6 @@ public class TargetSum {
         
         int totalSum = 0;
 
-        // Calculate the total sum of elements in the array
         for (int i = 0; i < arr.length; i++) {
             totalSum += arr[i];
         }
@@ -24,7 +23,7 @@ public class TargetSum {
         if ((totalSum - target) % 2 == 1)
             return 0;
 
-      
+
         int s2 = (totalSum - target) / 2;
 
         int[][] dp = new int[n][s2 + 1];
@@ -37,5 +36,31 @@ public class TargetSum {
         return function(n - 1, s2, arr, dp);
     }
 
+
+    static int function(int index, int target, int[] arr, int[][] dp) {
+
+        if (index == 0) {
+            if (target == 0 && arr[0] == 0)
+                return 2;
+
+            if (target == 0 || target == arr[0])
+                return 1;
+            
+            return 0;
+        }
+
+        if (dp[index][target] != -1)
+            return dp[index][target];
+
+
+        int notTaken = function(index - 1, target, arr, dp);
+
+        int taken = 0;
+
+        if (arr[index] <= target)
+            taken = function(index - 1, target - arr[index], arr, dp);
+
+
+        return dp[ind][target] = (notTaken + taken);
 
 }
