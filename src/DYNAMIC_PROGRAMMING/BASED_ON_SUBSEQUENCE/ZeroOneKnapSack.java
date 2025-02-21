@@ -1,5 +1,7 @@
 package DYNAMIC_PROGRAMMING.BASED_ON_SUBSEQUENCE;
 
+import java.util.Arrays;
+
 public class ZeroOneKnapSack {
 
     public static void main(String[] args) {
@@ -15,13 +17,13 @@ public class ZeroOneKnapSack {
 
         int[][] dp = new int[n][maxWeight + 1];
 
-        for(int[] row : dp)
-            row
+        for(int[] row: dp)
+            Arrays.fill(row,-1);
 
-        return function(n -1 , maxWeight, weight, value);
+        return function(n -1 , maxWeight, weight, value, dp);
     }
 
-    static int function(int index, int bagWeight, int[] weight, int[] value){
+    static int function(int index, int bagWeight, int[] weight, int[] value, int[][] dp){
 
         if (index == 0){
             if (weight[0] <= bagWeight)
@@ -30,13 +32,16 @@ public class ZeroOneKnapSack {
                 return 0;
         }
 
-        int notSteal = 0 + function(index -1, bagWeight, weight, value);
+        if (dp[index][bagWeight] != -1)
+            return dp[index][bagWeight];
+
+        int notSteal = 0 + function(index -1, bagWeight, weight, value, dp);
 
         int steal = Integer.MIN_VALUE;
         if (weight[index] <= bagWeight)
-            steal = value[index] + function(index - 1, bagWeight - weight[index], weight, value);
+            steal = value[index] + function(index - 1, bagWeight - weight[index], weight, value, dp);
 
-        return Math.max(steal, notSteal);
+        return dp[index][bagWeight] =  Math.max(steal, notSteal);
     }
 
 }
