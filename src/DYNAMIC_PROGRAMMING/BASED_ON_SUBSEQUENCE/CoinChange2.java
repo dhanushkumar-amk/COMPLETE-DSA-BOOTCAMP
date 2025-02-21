@@ -4,6 +4,8 @@ package DYNAMIC_PROGRAMMING.BASED_ON_SUBSEQUENCE;
 // leetcode 518
 // https://leetcode.com/problems/coin-change-ii/
 
+import java.util.Arrays;
+
 public class CoinChange2 {
 
     public static void main(String args[]) {
@@ -18,6 +20,12 @@ public class CoinChange2 {
     public static int change(int amount, int[] coins) {
 
         int n = coins.length;
+
+        int[][] dp = new int[n][amount + 1];
+
+        for(long[] row : dp)
+            Arrays.fill(row, -1);
+
         return function(n -1, amount, coins);
     }
 
