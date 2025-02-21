@@ -5,7 +5,12 @@ import java.util.Arrays;
 public class LongestCommonSubsequence {
 
     public static void main(String[] args) {
-        String text1 =  
+        String s1 = "acd";
+        String s2 = "ced";
+
+        // Call the lcs function and print the result
+        System.out.println("The Length of Longest Common Subsequence is " + longestCommonSubsequence(s1, s2));
+
     }
 
    public static int longestCommonSubsequence(String text1, String text2) {
