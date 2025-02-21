@@ -6,7 +6,14 @@ package DYNAMIC_PROGRAMMING.BASED_ON_SUBSEQUENCE;
 
 public class CoinChange2 {
 
-    
+    public static void main(String args[]) {
+        int arr[] = { 1, 2, 3 };
+        int target = 4;
+      
+
+        // Call the countWaysToMakeChange function and print the result
+        System.out.println("The total number of ways is " + change(target, arr));
+    }
 
     public static int change(int amount, int[] coins) {
 
