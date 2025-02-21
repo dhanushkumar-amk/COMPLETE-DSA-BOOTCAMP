@@ -26,7 +26,7 @@ public class CoinChange {
 
         if (index == 0){
             if (target % coins[0] == 0)
-                return target % coins[0];
+                return target / coins[0];
             else
                 return (int) 1e9;
         }
