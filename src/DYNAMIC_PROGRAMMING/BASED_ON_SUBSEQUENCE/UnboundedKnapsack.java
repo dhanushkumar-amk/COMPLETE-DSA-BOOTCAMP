@@ -1,7 +1,5 @@
 package DYNAMIC_PROGRAMMING.BASED_ON_SUBSEQUENCE;
 
-import javax.xml.transform.stax.StAXResult;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class UnboundedKnapsack {
