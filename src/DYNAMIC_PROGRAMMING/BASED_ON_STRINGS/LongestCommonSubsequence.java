@@ -8,7 +8,6 @@ public class LongestCommonSubsequence {
         String s1 = "acd";
         String s2 = "ced";
 
-        // Call the lcs function and print the result
         System.out.println("The Length of Longest Common Subsequence is " + longestCommonSubsequence(s1, s2));
 
     }
