@@ -12,10 +12,8 @@ public class TargetSum {
         int arr[] = {1, 2, 3, 1};
         int target = 3;
 
-        int n = arr.length;
-
         // Call the targetSum function and print the result
-        System.out.println("The number of ways found is " + findTargetSumWays(n, target, arr));
+        System.out.println("The number of ways found is " + findTargetSumWays ( arr,target));
     }
 
     public static int findTargetSumWays(int[] arr, int target) {
