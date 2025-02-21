@@ -33,7 +33,7 @@ public class CoinChange {
         int notPick = 0 + function(index -1, coins, target);
 
         int pick = Integer.MAX_VALUE;
-        if (target <= coins[index])
+        if (coins[index] <)
             pick = 1 + function(index, coins, target - coins[index]);
 
         return Math.min(pick, notPick);
