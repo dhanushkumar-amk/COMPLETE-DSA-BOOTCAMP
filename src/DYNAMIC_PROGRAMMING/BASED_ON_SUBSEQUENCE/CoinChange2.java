@@ -7,6 +7,8 @@ package DYNAMIC_PROGRAMMING.BASED_ON_SUBSEQUENCE;
 public class CoinChange2 {
 
 
-    
+    public static int change(int amount, int[] coins) {
+        
+    }
 
 }
