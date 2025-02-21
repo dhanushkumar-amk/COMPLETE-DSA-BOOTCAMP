@@ -13,7 +13,7 @@ public class UnboundedKnapsack {
         int n = wt.length;
 
         // Call the unboundedKnapsack function and print the result
-        System.out.println("The Maximum value of items, the thief can steal is " + unbounded(n, W, val, wt);
+        System.out.println("The Maximum value of items, the thief can steal is " + unbounded(n, W, val, wt));
     }
 
     static int function(int index, int bagWeight, int[] value, int[] weight){
