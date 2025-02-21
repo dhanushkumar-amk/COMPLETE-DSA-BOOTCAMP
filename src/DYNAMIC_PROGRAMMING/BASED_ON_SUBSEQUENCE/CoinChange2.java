@@ -15,8 +15,10 @@ public class CoinChange2 {
 
     static int function(int index, int target, int[] coins){
 
-        if (index == 0)
-            
+        if (index == 0){
+            if (target % coins[0] == 0)
+                return 0;
+        }
 
     }
 
