@@ -21,6 +21,9 @@ public class PrintAllLongestCommonSubSequence {
         }
 
         public static int longestCommonSubsequence(String text1, String text2, int[][] dp) {
+
+            int n = text1.length();
+            int m = text2.length();
             return function(text1.length() - 1, text2.length() - 1, text1, text2, dp);
         }
 
