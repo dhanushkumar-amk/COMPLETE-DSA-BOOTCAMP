@@ -12,6 +12,12 @@ public class ZeroOneKnapSack {
     }
 
     static  int knapSack(int[] weight, int[] value, int n, int maxWeight){
+
+        int[][] dp = new int[n][maxWeight + 1];
+
+        for(int[] row : dp)
+            row
+
         return function(n -1 , maxWeight, weight, value);
     }
 
