@@ -29,7 +29,9 @@ public class CoinChange {
 
         int answer =  function( n-1, coins, amount, dp);
 
-        if (answer)
+        if (answer >= 1e9)
+            return -1;
+        return  answer;
     }
 
     static int function(int index, int[] coins, int target, int[][] dp){
