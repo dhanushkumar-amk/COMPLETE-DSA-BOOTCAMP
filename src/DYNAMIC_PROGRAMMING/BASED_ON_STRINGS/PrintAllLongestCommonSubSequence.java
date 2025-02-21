@@ -46,13 +46,13 @@ public class PrintAllLongestCommonSubSequence {
 
             while (i >= 0 && j >= 0) {
                 if (text1.charAt(i) == text2.charAt(j)) {
-                    lcs.append(text1.charAt(i)); // Add the matching character
+                    lcs.append(text1.charAt(i)); 
                     i--;
                     j--;
                 } else if (i > 0 && (j == 0 || dp[i - 1][j] > dp[i][j - 1])) {
-                    i--; // Move up in the DP table
+                    i--;
                 } else {
-                    j--; // Move left in the DP table
+                    j--;
                 }
             }
 
