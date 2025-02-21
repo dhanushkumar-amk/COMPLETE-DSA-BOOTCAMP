@@ -19,6 +19,7 @@ public class CountPartitionWithGivenDifference {
         if(totalSum - d < 0) return 0;
         if((totalSum - d ) % 2 == 1) return 0;
 
+        // formula
         int s2 = (totalSum - d ) / 2;
 
         int[][] dp = new int[n][s2+1];
@@ -26,8 +27,7 @@ public class CountPartitionWithGivenDifference {
         for(int[] row: dp)
             Arrays.fill(row,-1);
 
-        return  
-
+        return  function(n-1,s2,arr,dp);
     }
 
     static int function(int index, int target, int[] arr, int[][] dp) {
@@ -51,4 +51,6 @@ public class CountPartitionWithGivenDifference {
 
         return dp[index][target] =  pick + notPick;
     }
+
+
 }
