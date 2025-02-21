@@ -7,6 +7,15 @@ package DYNAMIC_PROGRAMMING.BASED_ON_SUBSEQUENCE;
 
 public class CoinChange {
 
+
+    public static void main(String args[]) {
+        int arr[] = { 1, 2, 3 };
+        int T = 7;
+
+        // Call the minimumElements function and print the result
+        System.out.println("The minimum number of coins required to form the target sum is " + coinChange(arr, T));
+    }
+
     public static int coinChange(int[] coins, int amount) {
 
         return function(coins.length - 1, coins, amount);
