@@ -8,7 +8,16 @@ public class CoinChange2 {
 
 
     public static int change(int amount, int[] coins) {
-        
+
+        int n = coins.length;
+        return function(n -1, amount, coins);
+    }
+
+    static int function(int index, int target, int[] coins){
+
+        if (index == 0)
+            
+
     }
 
 }
