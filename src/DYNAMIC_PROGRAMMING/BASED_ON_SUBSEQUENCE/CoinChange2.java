@@ -9,7 +9,7 @@ public class CoinChange2 {
     public static void main(String args[]) {
         int arr[] = { 1, 2, 3 };
         int target = 4;
-      
+
 
         // Call the countWaysToMakeChange function and print the result
         System.out.println("The total number of ways is " + change(target, arr));
@@ -34,7 +34,7 @@ public class CoinChange2 {
         int notPick = function(index -1, target, coins);
 
         int pick = 0;
-        if (target <= coins[index])
+        if (coins[index] <= target)
             pick = function(index , target - coins[index], coins);
 
         return pick + notPick;
