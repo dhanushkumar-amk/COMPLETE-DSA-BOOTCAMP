@@ -5,6 +5,8 @@ package DYNAMIC_PROGRAMMING.BASED_ON_SUBSEQUENCE;
 // https://leetcode.com/problems/coin-change/description/
 
 
+import java.util.Arrays;
+
 public class CoinChange {
 
 
@@ -19,10 +21,16 @@ public class CoinChange {
     public static int coinChange(int[] coins, int amount) {
 
         int n = coins.length;
-        return function( n-1, coins, amount);
+
+        int[][] dp = new int[n][amount + 1];
+
+        for(int[] row : dp)
+            Arrays.fill(row, -1);
+
+        return function( n-1, coins, amount, dp);
     }
 
-    static int function(int index, int[] coins, int target){
+    static int function(int index, int[] coins, int target, int[][] dp){
 
         if (index == 0){
             if (target % coins[0] == 0)
@@ -31,12 +39,15 @@ public class CoinChange {
                 return (int) 1e9;
         }
 
-        int notPick = 0 + function(index -1, coins, target);
+        if (dp[index][target] != -1)
+            return dp[index][target];
+
+        int notPick = 0 + function(index -1, coins, target, dp);
 
         int pick = Integer.MAX_VALUE;
         if (coins[index] <= target)
-            pick = 1 + function(index, coins, target - coins[index]);
+            pick = 1 + function(index, coins, target - coins[index], dp);
 
-        return Math.min(pick, notPick);
+        return dp[index][target] =  Math.min(pick, notPick);
     }
 }
