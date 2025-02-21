@@ -45,7 +45,10 @@ public class CountPartitionWithGivenDifference {
         for(int it : arr)
             totalSum += it;
 
-        if (totalSum - d < 0 || (totalSum - d) % 2)
-            return false
+        // base case
+        if(totalSum - d < 0) return 0;
+        if((totalSum - d ) % 2 == 1) return 0;
+
+        
     }
 }
