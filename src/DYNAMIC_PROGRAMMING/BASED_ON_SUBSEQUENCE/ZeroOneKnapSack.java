@@ -13,6 +13,7 @@ public class ZeroOneKnapSack {
         System.out.println(knapSack(weight, value, n, maxWeight ));
     }
 
+    // memorization
     static  int knapSack(int[] weight, int[] value, int n, int maxWeight){
 
         int[][] dp = new int[n][maxWeight + 1];
