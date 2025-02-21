@@ -42,6 +42,6 @@ public class LongestCommonSubsequence {
 
 
         return dp[i][j] =  Math.max(function(i - 1, j, text1, text2, dp), function(i, j - 1, text1, text2, dp));
-        
+
     }
 }
