@@ -4,6 +4,11 @@ import java.util.Arrays;
 
 public class RodCuttingProblem {
 
+
+    public static void main(String[] args) {
+        
+    }
+
     static int  cutRod(int[] price, int totalRodLength){
 
         int n = price.length;
@@ -12,8 +17,7 @@ public class RodCuttingProblem {
         for(int[] row : dp)
             Arrays.fill(dp, -1);
 
-        return function(n - 1, totalRodLength,)
-
+        return function(n - 1, totalRodLength, price, dp);
     }
 
 
