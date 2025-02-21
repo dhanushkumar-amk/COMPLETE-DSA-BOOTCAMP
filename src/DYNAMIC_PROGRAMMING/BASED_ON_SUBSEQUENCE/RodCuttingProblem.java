@@ -6,7 +6,11 @@ public class RodCuttingProblem {
 
 
     public static void main(String[] args) {
-        
+        int[] price = {2,5,7,8,10};
+        int totalRodLength = 5;
+
+        System.out.println(cutRod(price, totalRodLength));
+
     }
 
     static int  cutRod(int[] price, int totalRodLength){
