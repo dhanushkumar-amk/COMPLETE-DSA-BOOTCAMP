@@ -6,6 +6,7 @@ package DYNAMIC_PROGRAMMING.BASED_ON_SUBSEQUENCE;
 
 public class CoinChange2 {
 
+    
 
     public static int change(int amount, int[] coins) {
 
@@ -23,7 +24,13 @@ public class CoinChange2 {
                 return 0;
         }
 
-        int notPick = fu
+        int notPick = function(index -1, target, coins);
+
+        int pick = 0;
+        if (target <= coins[index])
+            pick = function(index , target - coins[index], coins);
+
+        return pick + notPick;
     }
 
 }
