@@ -3,7 +3,7 @@ package DYNAMIC_PROGRAMMING.BASED_ON_STRINGS;
 import java.util.Arrays;
 
 // https://leetcode.com/problems/longest-common-subsequence/description/
-// leetcode 1
+// leetcode 1143
 
 public class LongestCommonSubsequence {
 
