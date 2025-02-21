@@ -23,13 +23,13 @@ public class CoinChange2 {
 
         int[][] dp = new int[n][amount + 1];
 
-        for(long[] row : dp)
+        for(int[] row : dp)
             Arrays.fill(row, -1);
 
-        return function(n -1, amount, coins);
+        return function(n -1, amount, coins, dp);
     }
 
-    static int function(int index, int target, int[] coins){
+    static int function(int index, int target, int[] coins, int[][] dp){
 
         // base case
         if (index == 0){
@@ -39,13 +39,16 @@ public class CoinChange2 {
                 return 0;
         }
 
-        int notPick = function(index -1, target, coins);
+        if (dp[index][target] != -1)
+            return dp[index][target];
+
+        int notPick = function(index -1, target, coins, dp);
 
         int pick = 0;
         if (coins[index] <= target)
-            pick = function(index , target - coins[index], coins);
+            pick = function(index , target - coins[index], coins, dp);
 
-        return pick + notPick;
+        return dp[index][target] =  pick + notPick;
     }
 
 }
