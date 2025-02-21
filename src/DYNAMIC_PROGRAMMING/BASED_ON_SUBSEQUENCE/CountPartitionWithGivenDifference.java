@@ -30,6 +30,7 @@ public class CountPartitionWithGivenDifference {
         return  function(n-1,s2,arr,dp);
     }
 
+    static int mod =(int)(Math.pow(10,9)+7);
     static int function(int index, int target, int[] arr, int[][] dp) {
         // Base case: If target is 0, we found a valid subset
         if (target == 0)
