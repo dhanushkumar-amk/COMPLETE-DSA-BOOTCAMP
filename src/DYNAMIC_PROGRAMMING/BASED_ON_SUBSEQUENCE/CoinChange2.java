@@ -15,12 +15,15 @@ public class CoinChange2 {
 
     static int function(int index, int target, int[] coins){
 
+        // base case
         if (index == 0){
             if (target % coins[0] == 0)
                 return 1;
-            return 0;
+            else
+                return 0;
         }
 
+        int notPick = fu
     }
 
 }
