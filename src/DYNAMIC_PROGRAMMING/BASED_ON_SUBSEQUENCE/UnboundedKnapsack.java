@@ -1,6 +1,8 @@
 package DYNAMIC_PROGRAMMING.BASED_ON_SUBSEQUENCE;
 
 import javax.xml.transform.stax.StAXResult;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class UnboundedKnapsack {
 
@@ -16,23 +18,33 @@ public class UnboundedKnapsack {
         System.out.println("The Maximum value of items, the thief can steal is " + unbounded(n, W, val, wt));
     }
 
-    static int function(int index, int bagWeight, int[] value, int[] weight){
+
+    static  int unbounded(int n, int bagWeight, int[] value, int[] weight){
+
+        int[][] dp = new int[n][bagWeight + 1];
+
+        for(int[] row : dp)
+            Arrays.fill(row, -1);
+
+        return function(n - 1, bagWeight, value, weight, dp);
+    }
+
+    static int function(int index, int bagWeight, int[] value, int[] weight,int[][] dp){
 
         if (index == 0){
             return ( (int) (bagWeight/ weight[0])) * value[0];
         }
 
-        int notPick = function(index - 1, bagWeight, value, weight);
+        if (dp[index][bagWeight] != -1)
+            return dp[index][bagWeight];
+
+        int notPick = function(index - 1, bagWeight, value, weight, dp);
 
         int pick = 0;
 
         if (weight[index] <= bagWeight)
-            pick = value[index] +  function(index, bagWeight - weight[index], value, weight);
+            pick = value[index] +  function(index, bagWeight - weight[index], value, weight, dp);
 
-        return pick + notPick;
-    }
-
-    static  int unbounded(int n, int bagWeight, int[] value, int[] weight){
-         return function(n - 1, bagWeight, value, weight);
+        return dp[index][bagWeight]=  pick + notPick;
     }
 }
