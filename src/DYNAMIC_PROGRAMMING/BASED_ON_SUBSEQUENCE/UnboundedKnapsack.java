@@ -8,6 +8,7 @@ public class UnboundedKnapsack {
             return ( (int) (bagWeight/ weight[0])) * value[0];
         }
 
+        
 
 
 
