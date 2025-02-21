@@ -18,7 +18,8 @@ public class CoinChange {
 
     public static int coinChange(int[] coins, int amount) {
 
-        return function(coins.length - 1, coins, amount);
+        int n = coins.length;
+        return function( n-1, coins, amount);
     }
 
     static int function(int index, int[] coins, int target){
