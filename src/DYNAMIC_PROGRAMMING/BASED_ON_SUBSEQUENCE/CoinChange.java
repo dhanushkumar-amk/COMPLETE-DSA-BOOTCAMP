@@ -27,7 +27,9 @@ public class CoinChange {
         for(int[] row : dp)
             Arrays.fill(row, -1);
 
-        return function( n-1, coins, amount, dp);
+        int answer =  function( n-1, coins, amount, dp);
+
+        if (answer)
     }
 
     static int function(int index, int[] coins, int target, int[][] dp){
