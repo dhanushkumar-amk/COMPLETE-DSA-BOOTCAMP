@@ -17,7 +17,8 @@ public class CoinChange2 {
 
         if (index == 0){
             if (target % coins[0] == 0)
-                return 0;
+                return 1;
+            return 0;
         }
 
     }
