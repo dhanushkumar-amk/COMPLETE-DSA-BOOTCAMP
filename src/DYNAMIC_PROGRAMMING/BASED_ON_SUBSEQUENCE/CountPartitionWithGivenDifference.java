@@ -6,9 +6,6 @@ public class CountPartitionWithGivenDifference {
 
     // Memoization answer
 
-
-
-
     static int countPartition( int d, int[] arr){
 
         int n = arr.length;
@@ -23,6 +20,13 @@ public class CountPartitionWithGivenDifference {
         if((totalSum - d ) % 2 == 1) return 0;
 
         int s2 = (totalSum - d ) / 2;
+
+        int[][] dp = new int[n][s2+1];
+
+        for(int[] row: dp)
+            Arrays.fill(row,-1);
+
+        return  
 
     }
 
