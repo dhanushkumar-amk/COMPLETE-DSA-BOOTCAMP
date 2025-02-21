@@ -49,6 +49,7 @@ public class CountPartitionWithGivenDifference {
         if(totalSum - d < 0) return 0;
         if((totalSum - d ) % 2 == 1) return 0;
 
+        int s2 = (totalSum - d ) / 2;
         
     }
 }
