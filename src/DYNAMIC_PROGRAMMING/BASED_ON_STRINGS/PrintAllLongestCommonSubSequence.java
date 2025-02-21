@@ -46,7 +46,7 @@ public class PrintAllLongestCommonSubSequence {
 
             while (i >= 0 && j >= 0) {
                 if (text1.charAt(i) == text2.charAt(j)) {
-                    lcs.append(text1.charAt(i)); 
+                    lcs.append(text1.charAt(i));
                     i--;
                     j--;
                 } else if (i > 0 && (j == 0 || dp[i - 1][j] > dp[i][j - 1])) {
@@ -55,7 +55,6 @@ public class PrintAllLongestCommonSubSequence {
                     j--;
                 }
             }
-
             return lcs.reverse().toString(); // Reverse to get the correct order
         }
     }
