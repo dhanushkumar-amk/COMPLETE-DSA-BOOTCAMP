@@ -4,8 +4,15 @@ import java.util.Arrays;
 
 public class CountPartitionWithGivenDifference {
 
-    // Memoization answer
+    public static void main(String args[]) {
 
+        int arr[] = {5,2,6,4};
+        int d=3;
+
+        System.out.println("The number of subsets found are "+countPartition(d,arr));
+    }
+
+    // Memoization answer
     static int countPartition( int d, int[] arr){
 
         int n = arr.length;
@@ -52,6 +59,7 @@ public class CountPartitionWithGivenDifference {
 
         return dp[index][target] =  (pick + notPick) % mod;
     }
+
 
 
 }
