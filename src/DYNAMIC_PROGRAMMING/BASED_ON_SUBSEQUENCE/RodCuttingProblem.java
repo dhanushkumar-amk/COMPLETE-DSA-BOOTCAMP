@@ -19,7 +19,7 @@ public class RodCuttingProblem {
         int[][] dp = new int[n][totalRodLength + 1];
 
         for(int[] row : dp)
-            Arrays.fill(dp, -1);
+            Arrays.fill(row, -1);
 
         return function(n - 1, totalRodLength, price, dp);
     }
