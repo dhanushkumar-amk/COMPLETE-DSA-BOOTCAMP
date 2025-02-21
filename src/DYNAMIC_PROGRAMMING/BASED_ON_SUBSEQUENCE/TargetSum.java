@@ -7,10 +7,21 @@ import java.util.Arrays;
 
 public class TargetSum {
 
-    public int findTargetSumWays(int[] arr, int target) {
-      
+
+    public static void main(String args[]) {
+        int arr[] = {1, 2, 3, 1};
+        int target = 3;
+
         int n = arr.length;
-        
+
+        // Call the targetSum function and print the result
+        System.out.println("The number of ways found is " + findTargetSumWays(n, target, arr));
+    }
+
+    public static int findTargetSumWays(int[] arr, int target) {
+
+        int n = arr.length;
+
         int totalSum = 0;
 
         for (int i = 0; i < arr.length; i++) {
@@ -45,7 +56,7 @@ public class TargetSum {
 
             if (target == 0 || target == arr[0])
                 return 1;
-            
+
             return 0;
         }
 
@@ -61,6 +72,7 @@ public class TargetSum {
             taken = function(index - 1, target - arr[index], arr, dp);
 
 
-        return dp[ind][target] = (notTaken + taken);
+        return dp[index][target] = (notTaken + taken);
 
+    }
 }
