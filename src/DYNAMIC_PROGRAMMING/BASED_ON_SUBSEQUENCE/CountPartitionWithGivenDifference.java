@@ -50,7 +50,7 @@ public class CountPartitionWithGivenDifference {
         if (arr[index] <= target)
             pick = function(index - 1, target - arr[index], arr, dp);
 
-        return dp[index][target] =  pick + notPick;
+        return dp[index][target] =  (pick + notPick) % mod;
     }
 
 
