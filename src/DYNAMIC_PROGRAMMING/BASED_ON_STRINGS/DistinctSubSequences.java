@@ -10,7 +10,7 @@ public class DistinctSubSequences {
 
         String s1 = "babgbag";
         String s2 = "bag";
-        
+
         System.out.println("The Count of Distinct Subsequences is " + answer.numDistinct(s1, s2));
     }
 
