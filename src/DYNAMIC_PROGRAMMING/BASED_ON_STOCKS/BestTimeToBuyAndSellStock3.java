@@ -61,12 +61,23 @@ public class BestTimeToBuyAndSellStock3 {
 
         int[][][] dp = new int[n + 1][2][3];
 
+        // base case 1 if transaction == 0 return 0
         for (int index = n - 1; index >= 0 ; index--) {
-            for (int buy = 0; buy < ; buy++) {
-                
+            for (int buy = 0; buy <= 1 ; buy++) {
+                dp[index][buy][0] = 0;
             }
-            
         }
+
+        // base case  if index == n return 0
+        for (int buy = 0; buy <= 1 ; buy++) {
+            for (int transaction = 0; transaction <= 2 ; transaction++) {
+                dp[n][buy][transaction] = 0;
+            }
+        }
+
+        
+
+
         
         
     }
