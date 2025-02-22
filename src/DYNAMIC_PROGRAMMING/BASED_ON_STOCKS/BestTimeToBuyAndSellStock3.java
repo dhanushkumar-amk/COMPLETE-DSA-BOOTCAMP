@@ -59,5 +59,12 @@ public class BestTimeToBuyAndSellStock3 {
     public  static int maxProfit(int[] prices){
         int n = prices.length;
 
+        int[][][] dp = new int[n + 1][2][3];
+
+        for (int i = 0; i < ; i++) {
+            
+        }
+        
+        
     }
 }
