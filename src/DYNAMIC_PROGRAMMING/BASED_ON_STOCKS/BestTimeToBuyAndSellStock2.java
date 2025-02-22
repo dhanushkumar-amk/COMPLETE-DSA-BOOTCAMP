@@ -2,10 +2,10 @@ package DYNAMIC_PROGRAMMING.BASED_ON_STOCKS;
 
 import java.util.Arrays;
 
-public class BestTimeToBuyAndSellStockIi {
+public class BestTimeToBuyAndSellStock2 {
 
     public static void main(String[] args) {
-        BestTimeToBuyAndSellStockIi answer = new BestTimeToBuyAndSellStockIi();
+        BestTimeToBuyAndSellStock2 answer = new BestTimeToBuyAndSellStock2();
         int[] prices = {7, 1, 5, 3, 6, 4};
         System.out.println(answer.maxProfit(prices));
     }
