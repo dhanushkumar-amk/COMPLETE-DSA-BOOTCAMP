@@ -46,7 +46,7 @@ public class LongestCommonSubString {
 
         // Create a DP array initialized with -1
         int[][] dp = new int[n + 1][m + 1];
-        
+
         for (int[] row : dp) {
             Arrays.fill(row, -1);
         }
