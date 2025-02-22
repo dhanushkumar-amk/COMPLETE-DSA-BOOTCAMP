@@ -8,6 +8,17 @@ import java.util.Arrays;
 
 public class DeleteOperationForTwoStrings {
 
+    public static void main(String[] args) {
+        String str1 = "abcd";
+        String str2 = "anc";
+
+        DeleteOperationForTwoStrings answer = new DeleteOperationForTwoStrings();
+
+        System.out.println("The Minimum operations required to convert str1 to str2: "
+                +answer.minDistance(str1, str2));
+    }
+
+
     public int minDistance(String word1, String word2) {
         int n = word1.length();
         int m = word2.length();
