@@ -3,6 +3,19 @@ package DYNAMIC_PROGRAMMING.BASED_ON_STOCKS;
 import java.util.Arrays;
 
 public class BestTimeToBuyAndSellStocks4 {
+
+    public static void main(String[] args) {
+
+
+        BestTimeToBuyAndSellStocks4  answer = new BestTimeToBuyAndSellStocks4();
+
+        int[] prices = {3, 3, 5, 0, 0, 3, 1, 4};
+        int n = prices.length;
+
+        // Calculate and print the maximum profit
+        System.out.println("The maximum profit that can be generated is " +answer.maxProfit(3, prices));
+    }
+
     public int maxProfit(int k, int[] prices) {
         int n = prices.length;
 
