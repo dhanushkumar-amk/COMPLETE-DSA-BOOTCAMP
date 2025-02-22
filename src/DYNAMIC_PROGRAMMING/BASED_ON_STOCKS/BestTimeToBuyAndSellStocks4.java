@@ -9,7 +9,7 @@ public class BestTimeToBuyAndSellStocks4 {
 
         BestTimeToBuyAndSellStocks4  answer = new BestTimeToBuyAndSellStocks4();
 
-        int[] prices = {3, 3, 5, 0, 0, 3, 1, 4};
+        int[] prices = {3,2,6,5,0,3};
 
         // Calculate and print the maximum profit
         System.out.println("The maximum profit that can be generated is " +answer.maxProfit(2, prices));
