@@ -27,6 +27,7 @@ public class DeleteOperationForTwoStrings {
     }
 
 
+    // copy and paste
     public  int longestCommonSubsequence(String text1, String text2) {
 
         int n = text1.length();
