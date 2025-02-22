@@ -14,6 +14,8 @@ public class DistinctSubSequences {
         System.out.println("The Count of Distinct Subsequences is " + answer.numDistinct(s1, s2));
     }
 
+
+    static int prime = (int) (Math.pow(10, 9) + 7);
     public int numDistinct(String s, String t) {
 
         int n = s.length();
