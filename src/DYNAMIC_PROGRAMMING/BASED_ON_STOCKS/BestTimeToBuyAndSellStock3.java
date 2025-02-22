@@ -13,7 +13,7 @@ public class BestTimeToBuyAndSellStock3 {
         System.out.println("The maximum profit that can be generated is " + maxProfit(prices));
     }
 
-    public static int maxProfit(int[] prices) {
+    public static int maxProfit1(int[] prices) {
         int n = prices.length;
         int[][][] dp = new int[n][2][3];
 
@@ -56,5 +56,7 @@ public class BestTimeToBuyAndSellStock3 {
 
 
     // tabulation method
-    
+    public  static int maxProfit(int[] prices){
+        
+    }
 }
