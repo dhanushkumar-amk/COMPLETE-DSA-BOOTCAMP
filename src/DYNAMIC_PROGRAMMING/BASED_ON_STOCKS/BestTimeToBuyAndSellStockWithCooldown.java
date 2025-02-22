@@ -8,7 +8,12 @@ import java.util.Arrays;
 public class BestTimeToBuyAndSellStockWithCooldown {
 
     public static void main(String[] args) {
-        
+
+        BestTimeToBuyAndSellStockWithCooldown answer = new BestTimeToBuyAndSellStockWithCooldown();
+
+        int[] prices = {1,2,3,0,2};
+        System.out.println(answer.maxProfit(prices));
+
     }
 
     // just copy and paste of BestTimeToBuyAndSellStock2
