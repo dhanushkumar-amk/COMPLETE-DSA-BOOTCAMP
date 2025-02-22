@@ -61,7 +61,10 @@ public class BestTimeToBuyAndSellStock3 {
 
         int[][][] dp = new int[n + 1][2][3];
 
-        for (int index = n - 1; index >= 0 ; index++) {
+        for (int index = n - 1; index >= 0 ; index--) {
+            for (int buy = 0; buy < ; buy++) {
+                
+            }
             
         }
         
