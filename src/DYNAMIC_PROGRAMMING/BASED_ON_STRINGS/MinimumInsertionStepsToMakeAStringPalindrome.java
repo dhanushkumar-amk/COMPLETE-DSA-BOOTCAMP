@@ -7,6 +7,15 @@ import java.util.Arrays;
 
 public class MinimumInsertionStepsToMakeAStringPalindrome {
 
+    public static void main(String args[]) {
+        String s = "abcaa";
+
+
+        MinimumInsertionStepsToMakeAStringPalindrome answer = new MinimumInsertionStepsToMakeAStringPalindrome();
+
+        System.out.println("The Minimum insertions required to make the string palindrome: " + answer.minInsertion(s));
+    }
+
     public int minInsertions(String s) {
 
         int size = s.length();
