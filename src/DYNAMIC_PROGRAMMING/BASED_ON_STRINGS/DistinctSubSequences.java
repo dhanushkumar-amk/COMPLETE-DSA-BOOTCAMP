@@ -2,6 +2,9 @@ package DYNAMIC_PROGRAMMING.BASED_ON_STRINGS;
 
 import java.util.Arrays;
 
+// https://leetcode.com/problems/distinct-subsequences/description/
+// leetcode
+
 public class DistinctSubSequences {
 
     static int prime = (int) (Math.pow(10, 9) + 7);
