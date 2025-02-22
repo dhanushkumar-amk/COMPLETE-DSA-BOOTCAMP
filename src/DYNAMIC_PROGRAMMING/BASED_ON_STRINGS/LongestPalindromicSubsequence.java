@@ -9,11 +9,12 @@ public class LongestPalindromicSubsequence {
         String reversed = new StringBuilder(s).reverse().toString();
         int n = s.length();
 
-        int[][] dp = new int[n + 1][n + 1];
+        int[][] dp = new int[n][n];
         for (int[] row : dp)
             Arrays.fill(row, -1);
 
-        return function(s, reversed, n, n, dp);
-
+        return function(s, reversed, n - 1, n - 1, dp);
     }
+
+    int function(String  s, String reverse, )
 }
