@@ -1,5 +1,7 @@
 package DYNAMIC_PROGRAMMING.BASED_ON_STRINGS;
 
+import java.util.Arrays;
+
 public class LongestCommonSubString {
 
     // tabulation
