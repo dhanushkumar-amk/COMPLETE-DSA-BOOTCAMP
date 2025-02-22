@@ -6,12 +6,18 @@ package DYNAMIC_PROGRAMMING.BASED_ON_STOCKS;
 public class BestTimeToBuyAndSellStockIi {
 
 
-    public int maxProfit(int[] prices) {
-
-
+    public static void main(String[] args) {
+        
     }
 
-    int function(int index, int buy, int[] prices, int n){
+    public int maxProfit(int[] prices) {
+
+        return function(0, 1, prices);
+    }
+
+    int function(int index, int buy, int[] prices){
+
+        int n = prices.length;
 
         // base case
         if (index == n)
@@ -19,7 +25,12 @@ public class BestTimeToBuyAndSellStockIi {
 
         int profit = 0;
         if (buy == 0)
-            
+            profit = Math.max(-prices[index] + function(index + 1, 1, prices),
+                   0 +  function(index + 1, 0, prices));
+        else
+            profit = Math.max(prices[index] + function(index + 1, 1, prices),
+                    0 + function(index + 1, 0, prices));
 
+        return profit;
     }
 }
