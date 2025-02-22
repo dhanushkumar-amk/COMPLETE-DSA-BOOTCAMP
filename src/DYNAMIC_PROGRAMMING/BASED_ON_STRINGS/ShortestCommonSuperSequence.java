@@ -119,13 +119,13 @@ public class ShortestCommonSuperSequence {
             for (int i = 0; i < n; i++)
                 Arrays.fill(dp[i], -1);
             
-            solve(text1, text2, 0, 0, dp);
+            function(text1, text2, 0, 0, dp);
             
             return dp;
         }
 
         // Memoized LCS function
-        public int solve(String text1, String text2, int index1, int index2, int dp[][]) {
+        public int function(String text1, String text2, int index1, int index2, int dp[][]) {
             
             int n = text1.length();
             int m = text2.length();
@@ -137,10 +137,10 @@ public class ShortestCommonSuperSequence {
                 return dp[index1][index2];
 
             if (text1.charAt(index1) == text2.charAt(index2)) {
-                return dp[index1][index2] = 1 + solve(text1, text2, index1 + 1, index2 + 1, dp);
+                return dp[index1][index2] = 1 + function(text1, text2, index1 + 1, index2 + 1, dp);
             } else {
-                int opt1 = solve(text1, text2, index1, index2 + 1, dp);
-                int opt2 = solve(text1, text2, index1 + 1, index2, dp);
+                int opt1 = function(text1, text2, index1, index2 + 1, dp);
+                int opt2 = function(text1, text2, index1 + 1, index2, dp);
                 return dp[index1][index2] = Math.max(opt1, opt2);
             }
         }
