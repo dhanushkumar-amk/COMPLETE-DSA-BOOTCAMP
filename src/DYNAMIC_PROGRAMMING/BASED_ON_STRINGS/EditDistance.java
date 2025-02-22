@@ -9,7 +9,7 @@ public class EditDistance {
 
     public static void main(String[] args) {
         String s1 = "dinitrophenylhydrazine";
-        String s2 = ";
+        String s2 = "benzalphenylhydrazone";
 
         EditDistance answer = new EditDistance();
 
