@@ -32,7 +32,7 @@ public class LongestPalindromicSubsequence {
         if (dp[i][j] != -1)
             return dp[i][j];
 
-        if (orginalString.charAt(i) == reverseString.charAt(j))
+        if (orginalString.charAt(i - 1) == reverseString.charAt(j - 1))
             return dp[i][j] = 1 + function(orginalString, reverseString,i -1,j - 1, dp);
         else
             return dp[i][j] = Math.max(function(orginalString, reverseString, i - 1, j, dp), function(orginalString, reverseString, i, j - 1, dp));
