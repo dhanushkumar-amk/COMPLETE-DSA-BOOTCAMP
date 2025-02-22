@@ -7,7 +7,14 @@ public class DistinctSubSequences {
 
     public static void main(String[] args) {
         DistinctSubSequences answer = new DistinctSubSequences();
-      
+
+        String s1 = "babgbag";
+        String s2 = "bag";
+
+        int n = s1.length();
+        int m = s2.length();
+
+        System.out.println();
     }
 
     public int numDistinct(String s, String t) {
