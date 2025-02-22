@@ -16,6 +16,9 @@ public class BestTimeToBuyAndSellStock3 {
         if (index == n || transaction == 0)
             return 0;
 
+        if (dp[index][buy][transaction] != -1)
+            return dp[index][buy][transaction];
+
         if (buy == 1)
             // buy
             return dp[index][buy][transaction] =  Math.max(-price[index] + function(index -1, 0, transaction, price,dp),
@@ -23,8 +26,8 @@ public class BestTimeToBuyAndSellStock3 {
                     );
         else
             // sell
-            return dp[index][buy][transaction] =
-
+            return dp[index][buy][transaction] = Math.max(price[index] + function(index -1, 1, transaction -1, price,dp),
+                    0 + function(index -1, 0, transaction, price, dp)
+                    );
     }
-
 }
