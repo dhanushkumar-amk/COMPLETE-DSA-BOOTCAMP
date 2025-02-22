@@ -7,6 +7,16 @@ import java.util.Arrays;
 
 public class EditDistance {
 
+    public static void main(String[] args) {
+        String s1 = "horse";
+        String s2 = "ros";
+
+        EditDistance answer = new EditDistance();
+
+
+        System.out.println("The minimum number of operations required is: " +
+               answer.minDistance(s1, s2));
+    }
 
 
     public int minDistance(String word1, String word2) {
