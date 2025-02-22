@@ -18,7 +18,7 @@ public class BestTimeToBuyAndSellStockIi {
             return 0;
 
         int profit = 0;
-        if (buy)
+        if (buy ==0 )
 
     }
 }
