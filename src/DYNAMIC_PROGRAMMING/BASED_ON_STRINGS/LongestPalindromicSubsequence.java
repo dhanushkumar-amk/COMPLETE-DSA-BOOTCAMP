@@ -24,6 +24,8 @@ public class LongestPalindromicSubsequence {
         if (dp[i][j] != -1)
             return dp[i][j];
 
-        
+        if (s.charAt(i) == reverse.charAt(j))
+            
+
     }
 }
