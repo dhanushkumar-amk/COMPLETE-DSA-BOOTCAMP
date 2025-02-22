@@ -24,7 +24,7 @@ public class BestTimeToBuyAndSellStockWithCooldown {
         int n = prices.length;
 
         // Base case: if index reaches end of prices array, return 0 profit
-        if (index == n)
+        if (index >= n)
             return 0;
 
         if (dp[index][buy] != -1)

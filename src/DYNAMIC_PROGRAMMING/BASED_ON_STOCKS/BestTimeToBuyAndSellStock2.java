@@ -27,7 +27,7 @@ public class BestTimeToBuyAndSellStock2 {
         int n = prices.length;
 
         // Base case: if index reaches end of prices array, return 0 profit
-        if (index >= n)  // changes 1
+        if (index == n)
             return 0;
 
         if (dp[index][buy] != -1)
@@ -41,7 +41,7 @@ public class BestTimeToBuyAndSellStock2 {
             );
         } else { // If we can sell
             profit = Math.max(
-                    prices[index] + function(index + 2, 1, prices, dp),  // Sell stock // changes 2
+                    prices[index] + function(index + 1, 1, prices, dp),  // Sell stock
                     function(index + 1, 0, prices, dp)  // Skip this day
             );
         }
