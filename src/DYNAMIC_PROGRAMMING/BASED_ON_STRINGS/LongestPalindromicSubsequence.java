@@ -7,7 +7,9 @@ public class LongestPalindromicSubsequence {
 
     public static void main(String[] args) {
         LongestPalindromicSubsequence answer = new LongestPalindromicSubsequence();
-        
+        String s = "bbabcbcab";
+
+        System.out.println(answer.longestPalindromeSubseq(s));
     }
 
     public int longestPalindromeSubseq(String s) {
