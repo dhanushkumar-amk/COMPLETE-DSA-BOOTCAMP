@@ -34,8 +34,8 @@ public class BestTimeToBuyAndSellStockIi {
             profit = Math.max(-prices[index] + function(index + 1, 0, prices),
                    0 +  function(index + 1, 1, prices));
         else
-            profit = Math.max(prices[index] + function(index + 1, 0, prices),
-                    0 + function(index + 1, 1, prices));
+            profit = Math.max(prices[index] + function(index + 1, 1, prices),
+                    0 + function(index + 1, 0, prices));
 
         return profit;
     }
