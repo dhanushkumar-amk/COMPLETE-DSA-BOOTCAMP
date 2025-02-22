@@ -37,13 +37,13 @@ public class BestTimeToBuyAndSellStock3 {
 
         if (buy == 1)
             // buy
-            return dp[index][buy][transaction] =  Math.max(-price[index] + function(index -1, 0, transaction, price,dp),
-                    0 + function(index - 1, 1, transaction, price, dp)
+            return dp[index][buy][transaction] =  Math.max(-price[index] + function(index + 1, 0, transaction, price,dp),
+                    0 + function(index + 1, 1, transaction, price, dp)
                     );
         else
             // sell
-            return dp[index][buy][transaction] = Math.max(price[index] + function(index -1, 1, transaction -1, price,dp),
-                    0 + function(index -1, 0, transaction, price, dp)
+            return dp[index][buy][transaction] = Math.max(price[index] + function(index +1, 1, transaction -1, price,dp),
+                    0 + function(index +1, 0, transaction, price, dp)
                     );
     }
 }
