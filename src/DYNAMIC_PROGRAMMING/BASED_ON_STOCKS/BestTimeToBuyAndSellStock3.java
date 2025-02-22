@@ -1,11 +1,24 @@
 package DYNAMIC_PROGRAMMING.BASED_ON_STOCKS;
 
+import java.util.Arrays;
+
 public class BestTimeToBuyAndSellStock3 {
 
 
     public int maxProfit(int[] prices) {
 
-        return function(0);
+        int n = prices.length;
+
+        int[][][] dp = new int[n][2][3];
+
+        // Initialize the dp array with -1
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < 2; j++) {
+                Arrays.fill(dp[i][j], -1);
+            }
+        }
+
+        return function(0, )
     }
 
     int function(int index, int buy, int transaction, int[] price, int[][][] dp){
