@@ -47,7 +47,7 @@ public class DistinctSubSequences {
             int leaveOneOnBoth = function(i - 1, j - 1, string1, string2, dp);
             int leaveOneOnS1 = function(i - 1, j, string1, string2, dp);  // s2 is same as bag
 
-            return dp[i][j] =  leaveOneOnBoth + leaveOneOnS1;
+            return dp[i][j] =  (leaveOneOnBoth + leaveOneOnS1) % prime;
         }
 
         //else
