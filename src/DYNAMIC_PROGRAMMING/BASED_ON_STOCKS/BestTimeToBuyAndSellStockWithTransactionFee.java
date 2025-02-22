@@ -6,6 +6,13 @@ public class BestTimeToBuyAndSellStockWithTransactionFee {
 
     public static void main(String[] args) {
 
+        BestTimeToBuyAndSellStockWithTransactionFee answer = new BestTimeToBuyAndSellStockWithTransactionFee();
+
+        int prices[] = {1, 3, 2, 8, 4, 9};
+        int n = prices.length;
+        int fee = 2;
+
+        System.out.println("The maximum profit that can be generated is " + answer.maxProfit(prices, fee));
     }
 
     public int maxProfit(int[] prices, int fee) {
