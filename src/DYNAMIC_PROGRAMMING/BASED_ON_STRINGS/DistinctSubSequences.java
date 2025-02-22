@@ -19,7 +19,9 @@ public class DistinctSubSequences {
             return 1;
 
         if (string1.charAt(i) == string2.charAt(j))
-            return function(i - 1, j - 1) + function(i -1, j);
+        int leaveOne = function(i -1, j - 1, string1, string2);
+        int stay = ;
+
     }
 
 }
