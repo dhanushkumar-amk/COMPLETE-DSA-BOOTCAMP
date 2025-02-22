@@ -7,6 +7,9 @@ import java.util.Arrays;
 
 public class BestTimeToBuyAndSellStockWithCooldown {
 
+    public static void main(String[] args) {
+        
+    }
 
     // just copy and paste of BestTimeToBuyAndSellStock2
 
