@@ -49,9 +49,8 @@ public class DistinctSubSequences {
 
             return dp[i][j] =  (leaveOneOnBoth + leaveOneOnS1) % prime;
         }
-
-        //else
-        return dp[i][j] =  function(i -1, j, string1, string2, dp);
+        else
+            return dp[i][j] =  function(i -1, j, string1, string2, dp);
     }
 
 }
