@@ -8,17 +8,16 @@ public class LongestCommonSubString {
 
         // Create a 2D array to store LCS lengths
         int[][] dp = new int[n + 1][m + 1];
-        int ans = 0; // Initialize a variable to store the maximum LCS length
+        int ans = 0; 
 
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= m; j++) {
-                // If the characters at the current indices are the same, extend the LCS
                 if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
                     int val = 1 + dp[i - 1][j - 1];
                     dp[i][j] = val;
-                    ans = Math.max(ans, val); // Update the maximum LCS length
+                    ans = Math.max(ans, val);
                 } else {
-                    dp[i][j] = 0; // Reset LCS length if characters don't match
+                    dp[i][j] = 0;
                 }
             }
         }
