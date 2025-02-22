@@ -13,7 +13,7 @@ public class MinimumInsertionStepsToMakeAStringPalindrome {
 
         MinimumInsertionStepsToMakeAStringPalindrome answer = new MinimumInsertionStepsToMakeAStringPalindrome();
 
-        System.out.println("The Minimum insertions required to make the string palindrome: " + answer.minInsertion(s));
+        System.out.println("The Minimum insertions required to make the string palindrome: " + answer.minInsertions(s));
     }
 
     public int minInsertions(String s) {
