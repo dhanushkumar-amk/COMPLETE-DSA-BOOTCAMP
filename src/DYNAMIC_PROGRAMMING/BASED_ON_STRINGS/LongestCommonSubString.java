@@ -40,23 +40,19 @@ public class LongestCommonSubString {
     /* Memoization */
 
 
-     static int lcs(String s1, String s2) {
+    static int lcs(String s1, String s2) {
         int n = s1.length();
         int m = s2.length();
 
-        // Create a DP array initialized with -1
-        int[][] dp = new int[n + 1][m + 1];
-
+        int[][] dp = new int[n][m];
         for (int[] row : dp) {
             Arrays.fill(row, -1);
         }
 
-        // Track the maximum length of common substring
         int maxLength = 0;
 
-        // Compute LCS using memoization
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= m; j++) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
                 maxLength = Math.max(maxLength, function(s1, s2, i, j, dp));
             }
         }
@@ -66,23 +62,22 @@ public class LongestCommonSubString {
 
     static int function(String text1, String text2, int i, int j, int[][] dp) {
 
-        if (i == 0 || j == 0) {
+        if (i < 0 || j < 0) {
             return 0;
         }
-
 
         if (dp[i][j] != -1) {
             return dp[i][j];
         }
 
-        // If characters match
-        if (text1.charAt(i - 1) == text2.charAt(j - 1)) {
+        if (text1.charAt(i) == text2.charAt(j)) {
             dp[i][j] = 1 + function(text1, text2, i - 1, j - 1, dp);
         } else {
-            dp[i][j] = 0; // not match just add 0
+            dp[i][j] = 0;
         }
 
         return dp[i][j];
     }
+
 
 }
