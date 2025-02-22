@@ -18,9 +18,8 @@ public class DistinctSubSequences {
         if (j < 0)
             return 1;
 
-        if (string2[j] == string1[i]){
-            
-        }
+        if (string1.charAt(i) == string2.charAt(j))
+            return function(i - 1, j - 1) + function(i -1, j);
     }
 
 }
