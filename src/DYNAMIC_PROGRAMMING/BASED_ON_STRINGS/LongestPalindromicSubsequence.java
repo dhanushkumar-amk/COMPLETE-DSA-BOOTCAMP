@@ -27,7 +27,7 @@ public class LongestPalindromicSubsequence {
 
     int function(String  orginalString, String reverseString, int i, int j, int[][] dp){
 
-        if (i == 0 || j == 0)
+        if (i < 0 || j < 0)
             return 0;
 
         if (dp[i][j] != -1)
