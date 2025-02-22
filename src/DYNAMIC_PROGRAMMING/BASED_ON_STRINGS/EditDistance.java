@@ -18,7 +18,7 @@ public class EditDistance {
                answer.minDistance(s1, s2));
     }
 
-
+// memization
 //    public int minDistance(String word1, String word2) {
 //
 //        int n = word1.length();
@@ -33,6 +33,7 @@ public class EditDistance {
 //
 //    }
 
+    // tabulation
     public int minDistance(String word1, String word2) {
 
         int n = word1.length();
