@@ -57,6 +57,7 @@ public class BestTimeToBuyAndSellStock3 {
 
     // tabulation method
     public  static int maxProfit(int[] prices){
-        
+        int n = prices.length;
+
     }
 }
