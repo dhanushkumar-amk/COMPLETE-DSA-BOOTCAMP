@@ -10,7 +10,14 @@ public class BestTimeToBuyAndSellStock3 {
 
     int function(int index, int buy, int transaction, int[] price, int[][] dp){
 
-        if (index)
+        int n = price.length;
+
+        // base case
+        if (index == n || transaction == 0)
+            return 0;
+
+        if (buy)
+
     }
 
 }
