@@ -77,6 +77,7 @@ public class EditDistance {
             dp[i][j] = function(i - 1, j - 1, word1, word2, dp); // skip both
         }
         else {
+            // insertion, deletion and replace
          dp[i][j] = 1 + Math.min(function(i, j - 1, word1,word2, dp),
                  Math.min(function(i -1, j, word1, word2, dp), function(i - 1, j - 1, word1, word2, dp)));
         }
