@@ -14,7 +14,7 @@ public class BestTimeToBuyAndSellStockIi {
 
         int n = prices.length;
 
-        int[][] dp = new int[n][n];
+        int[][] dp = new int[n][2];
 
         for(int[] row : dp)
             Arrays.fill(row, -1);
