@@ -4,6 +4,12 @@ import java.util.Arrays;
 
 public class LongestPalindromicSubsequence {
 
+
+    public static void main(String[] args) {
+        LongestPalindromicSubsequence answer = new LongestPalindromicSubsequence();
+        
+    }
+
     public int longestPalindromeSubseq(String s) {
 
         String reversed = new StringBuilder(s).reverse().toString();
@@ -28,6 +34,5 @@ public class LongestPalindromicSubsequence {
             return dp[i][j] = 1 + function(orginalString, reverseString,i -1,j - 1, dp);
         else
             return dp[i][j] = Math.max(function(orginalString, reverseString, i - 1, j, dp), function(orginalString, reverseString, i, j - 1, dp));
-        
     }
 }
