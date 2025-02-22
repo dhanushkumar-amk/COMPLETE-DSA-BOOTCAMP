@@ -73,7 +73,7 @@ public class LongestCommonSubString {
         if (text1.charAt(i) == text2.charAt(j)) {
             dp[i][j] = 1 + function(text1, text2, i - 1, j - 1, dp);
         } else {
-            dp[i][j] = 0;
+            dp[i][j] = 0; // not match just add 0
         }
 
         return dp[i][j];
