@@ -45,7 +45,8 @@ public class LongestCommonSubString {
         int m = s2.length();
 
         // Create a DP array initialized with -1
-        int[][] dp = new int[n + 1][m + 1];
+        int[][] dp = new int[n][m + 1];
+
         for (int[] row : dp) {
             Arrays.fill(row, -1);
         }
@@ -63,7 +64,7 @@ public class LongestCommonSubString {
         return maxLength;
     }
 
-    static int function(String text1, String s2, int i, int j, int[][] dp) {
+    static int function(String text1, String text2, int i, int j, int[][] dp) {
 
         if (i == 0 || j == 0) {
             return 0;
@@ -75,8 +76,8 @@ public class LongestCommonSubString {
         }
 
         // If characters match
-        if (text1.charAt(i - 1) == s2.charAt(j - 1)) {
-            dp[i][j] = 1 + function(text1, s2, i - 1, j - 1, dp);
+        if (text1.charAt(i) == text2.charAt(j)) {
+            dp[i][j] = 1 + function(text1, text2, i - 1, j - 1, dp);
         } else {
             dp[i][j] = 0; // not match just add 0
         }
