@@ -5,5 +5,20 @@ package DYNAMIC_PROGRAMMING.BASED_ON_STOCKS;
 
 public class BestTimeToBuyAndSellStockIi {
 
-    
+
+    public int maxProfit(int[] prices) {
+
+
+    }
+
+    int function(int index, int buy, int[] prices, int n){
+
+        // base case
+        if (index == n)
+            return 0;
+
+        int profit = 0;
+        if (buy)
+
+    }
 }
