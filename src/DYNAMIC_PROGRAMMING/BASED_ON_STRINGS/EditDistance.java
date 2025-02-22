@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class EditDistance {
 
- 
+
 
     public int minDistance(String word1, String word2) {
 
@@ -17,7 +17,7 @@ public class EditDistance {
         int[][] dp = new int[n][m];
 
         for(int[] row : dp)
-            Arrays.fill(dp, -1);
+            Arrays.fill(row, -1);
 
         return function(n -1, m - 1, word1, word2, dp);
 
