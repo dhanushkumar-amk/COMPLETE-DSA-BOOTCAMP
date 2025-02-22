@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class DistinctSubSequences {
 
+    static int prime = (int) (Math.pow(10, 9) + 7);
 
     public static void main(String[] args) {
         DistinctSubSequences answer = new DistinctSubSequences();
@@ -14,43 +15,32 @@ public class DistinctSubSequences {
         System.out.println("The Count of Distinct Subsequences is " + answer.numDistinct(s1, s2));
     }
 
-
-    static int prime = (int) (Math.pow(10, 9) + 7);
     public int numDistinct(String s, String t) {
-
         int n = s.length();
         int m = t.length();
 
-        int[][] dp = new int[n][m];
+        int[][] dp = new int[n + 1][m + 1];  // Use n+1 and m+1 to handle base cases properly
 
-        for(int[] row : dp)
-            Arrays.fill(row, -1);
+        for (int[] row : dp)
+            Arrays.fill(row, -1);  // Initialize DP table with -1
 
-        return function(n -1, m-1, s, t, dp);
+        return function(n, m, s, t, dp);
     }
 
-
-    private int function(int i, int j, String string1, String string2, int[][] dp){
-
-        // base case
-        if(i < 0)
-            return 0;
-
-        if (j < 0)
-            return 1;
+    private int function(int i, int j, String s, String t, int[][] dp) {
+        // Base cases
+        if (j == 0) return 1;  // If t is empty, one valid subsequence exists (empty subsequence)
+        if (i == 0) return 0;  // If s is empty but t is not, no valid subsequence exists
 
         if (dp[i][j] != -1)
             return dp[i][j];
 
-        if (string1.charAt(i) == string2.charAt(j)) {
-
-            int leaveOneOnBoth = function(i - 1, j - 1, string1, string2, dp);
-            int leaveOneOnS1 = function(i - 1, j, string1, string2, dp);  // s2 is same as bag
-
-            return dp[i][j] =  (leaveOneOnBoth + leaveOneOnS1) % prime;
+        if (s.charAt(i - 1) == t.charAt(j - 1)) {
+            int include = function(i - 1, j - 1, s, t, dp);  // Include this character
+            int exclude = function(i - 1, j, s, t, dp);  // Skip this character in s
+            return dp[i][j] = (include + exclude) % prime;
+        } else {
+            return dp[i][j] = function(i - 1, j, s, t, dp);  // Exclude and continue
         }
-        else
-            return dp[i][j] =  function(i -1, j, string1, string2, dp);
     }
-
 }
