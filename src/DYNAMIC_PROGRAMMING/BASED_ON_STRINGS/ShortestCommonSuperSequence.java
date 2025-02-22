@@ -62,6 +62,14 @@ public class ShortestCommonSuperSequence {
 //        return new StringBuilder(answer).reverse().toString();
 //    }
 
+    public static void main(String args[]) {
+
+        String s1 = "brute";
+        String s2 = "groot";
+        ShortestCommonSuperSequence answer = new ShortestCommonSuperSequence();
+
+        System.out.println("The Longest Common Supersequence is "+answer.shortestCommonSupersequence(s1,s2));
+    }
  
         public String shortestCommonSupersequence(String str1, String str2) {
 
