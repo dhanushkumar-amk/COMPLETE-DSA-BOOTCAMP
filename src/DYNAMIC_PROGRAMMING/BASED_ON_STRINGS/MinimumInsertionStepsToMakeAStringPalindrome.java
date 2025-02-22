@@ -2,6 +2,7 @@ package DYNAMIC_PROGRAMMING.BASED_ON_STRINGS;
 
 
 //leetcode 1312
+// https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/
 
 import java.util.Arrays;
 
@@ -22,7 +23,7 @@ public class MinimumInsertionStepsToMakeAStringPalindrome {
         return size - longestPalindromeSubseq(s);
     }
 
-
+// longest subsequenc eanswer just copy
     public int longestPalindromeSubseq(String s) {
 
         String reversed = new StringBuilder(s).reverse().toString();

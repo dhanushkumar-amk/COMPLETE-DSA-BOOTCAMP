@@ -12,6 +12,7 @@ public class LongestPalindromicSubsequence {
         System.out.println(answer.longestPalindromeSubseq(s));
     }
 
+
     public int longestPalindromeSubseq(String s) {
 
         String reversed = new StringBuilder(s).reverse().toString();
