@@ -38,7 +38,7 @@ public class DistinctSubSequences {
             return dp[i][j];
 
         if (string1.charAt(i) == string2.charAt(j)) {
-            
+
             int leaveOneOnBoth = function(i - 1, j - 1, string1, string2, dp);
             int leaveOneOnS1 = function(i - 1, j, string1, string2, dp);
 
