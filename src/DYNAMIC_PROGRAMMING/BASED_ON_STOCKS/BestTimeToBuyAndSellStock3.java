@@ -18,7 +18,7 @@ public class BestTimeToBuyAndSellStock3 {
             }
         }
 
-        return function(0, )
+        return function(0, 0, 2, prices, dp);
     }
 
     int function(int index, int buy, int transaction, int[] price, int[][][] dp){
