@@ -18,10 +18,10 @@ public class BestTimeToBuyAndSellStockWithTransactionFee {
             Arrays.fill(row, -1);
 
 
-        return function(0, 1, prices, dp);
+        return function(0, 1, prices, dp, fee);
     }
 
-    int function(int index, int buy, int[] prices, int[][] dp) {
+    int function(int index, int buy, int[] prices, int[][] dp, int fee) {
         int n = prices.length;
 
         // Base case: if index reaches end of prices array, return 0 profit
@@ -34,13 +34,13 @@ public class BestTimeToBuyAndSellStockWithTransactionFee {
         int profit = 0;
         if (buy == 1) { // If we can buy
             profit = Math.max(
-                    -prices[index] + function(index + 1, 0, prices, dp),  // Buy stock
-                    function(index + 1, 1, prices, dp)  // Skip this day
+                    -prices[index] + function(index + 1, 0, prices, dp, fee),  // Buy stock
+                    function(index + 1, 1, prices, dp, fee)  // Skip this day
             );
         } else { // If we can sell
             profit = Math.max(
-                    prices[index] + function(index + 2, 1, prices, dp),  // Sell stock
-                    function(index + 1, 0, prices, dp)  // Skip this day
+                    prices[index] + function(index + 2, 1, prices, dp, fee),  // Sell stock
+                    function(index + 1, 0, prices, dp, fee)  // Skip this day
             );
         }
 
