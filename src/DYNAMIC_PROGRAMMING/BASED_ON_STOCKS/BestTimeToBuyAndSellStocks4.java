@@ -13,7 +13,7 @@ public class BestTimeToBuyAndSellStocks4 {
         int n = prices.length;
 
         // Calculate and print the maximum profit
-        System.out.println("The maximum profit that can be generated is " +answer.maxProfit(3, prices));
+        System.out.println("The maximum profit that can be generated is " +answer.maxProfit(2, prices));
     }
 
     public int maxProfit(int k, int[] prices) {
