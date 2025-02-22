@@ -5,6 +5,9 @@ import java.util.Arrays;
 public class BestTimeToBuyAndSellStock3 {
 
 
+    public BestTimeToBuyAndSellStock3() {
+    }
+
     public int maxProfit(int[] prices) {
 
         int n = prices.length;
