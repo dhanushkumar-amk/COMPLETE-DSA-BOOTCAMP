@@ -16,5 +16,7 @@ public class LongestPalindromicSubsequence {
         return function(s, reversed, n - 1, n - 1, dp);
     }
 
-    int function(String  s, String reverse, )
+    int function(String  s, String reverse, int n, int m, int[][] dp){
+        
+    }
 }
