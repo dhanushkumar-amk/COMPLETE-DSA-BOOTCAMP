@@ -25,7 +25,7 @@ public class BestTimeToBuyAndSellStockWithTransactionFee {
         int n = prices.length;
 
         // Base case: if index reaches end of prices array, return 0 profit
-        if (index >= n)
+        if (index == n)
             return 0;
 
         if (dp[index][buy] != -1)
@@ -39,7 +39,7 @@ public class BestTimeToBuyAndSellStockWithTransactionFee {
             );
         } else { // If we can sell
             profit = Math.max(
-                    prices[index] + function(index + 2, 1, prices, dp, fee),  // Sell stock
+                    prices[index]  - fee + function(index + 1, 1, prices, dp, fee),  // Sell stock
                     function(index + 1, 0, prices, dp, fee)  // Skip this day
             );
         }
