@@ -16,7 +16,7 @@ public class LongestPalindromicSubsequence {
         return function(s, reversed, n - 1, n - 1, dp);
     }
 
-    int function(String  s, String reverse, int i, int j, int[][] dp){
+    int function(String  orginalString, String reverseString, int i, int j, int[][] dp){
 
         if (i == 0 || j == 0)
             return 0;
@@ -24,8 +24,8 @@ public class LongestPalindromicSubsequence {
         if (dp[i][j] != -1)
             return dp[i][j];
 
-        if (s.charAt(i) == reverse.charAt(j))
-            
+        if (orginalString.charAt(i) == reverseString.charAt(j))
+            return dp[i][j] = 1 + function(i -1,j - 1, )
 
     }
 }
