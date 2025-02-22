@@ -13,7 +13,7 @@ public class LongestPalindromicSubsequence {
         for (int[] row : dp)
             Arrays.fill(row, -1);
 
-        return function()
+        return function(s, reversed, dp);
 
     }
 }
