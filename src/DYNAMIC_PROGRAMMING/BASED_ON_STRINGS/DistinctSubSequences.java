@@ -14,7 +14,7 @@ public class DistinctSubSequences {
         int n = s1.length();
         int m = s2.length();
 
-        System.out.println();
+        System.out.println("The Count of Distinct Subsequences is " + answer.numDistinct(s1.));
     }
 
     public int numDistinct(String s, String t) {
