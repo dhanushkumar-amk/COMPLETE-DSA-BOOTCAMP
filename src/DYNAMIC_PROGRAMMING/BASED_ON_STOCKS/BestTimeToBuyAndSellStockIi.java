@@ -3,11 +3,17 @@ package DYNAMIC_PROGRAMMING.BASED_ON_STOCKS;
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/
 // leetcode 122
 
+import OOPS.INTERFACES.EXTENDSDEMO.B;
+
 public class BestTimeToBuyAndSellStockIi {
 
 
     public static void main(String[] args) {
-        int[] prices = {};
+
+        BestTimeToBuyAndSellStockIi answer = new BestTimeToBuyAndSellStockIi();
+
+        int[] prices = {7, 1, 5, 3, 6, 4};
+        System.out.println(answer.maxProfit(prices));
     }
 
     public int maxProfit(int[] prices) {
