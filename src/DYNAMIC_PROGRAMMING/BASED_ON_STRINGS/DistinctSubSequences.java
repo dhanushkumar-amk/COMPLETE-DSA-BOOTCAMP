@@ -29,15 +29,19 @@ public class DistinctSubSequences {
 
     private int function(int i, int j, String string1, String string2, int[][] dp) {
         // Base cases
-        if (j < 0) return 1;  // If string2 is fully matched, count it as 1 valid subsequence
-        if (i < 0) return 0;  // If string1 is exhausted but string2 isn't, return 0
+        if (j < 0)
+            return 1;
+        if (i < 0)
+            return 0;
 
         if (dp[i][j] != -1)
             return dp[i][j];
 
         if (string1.charAt(i) == string2.charAt(j)) {
-            int leaveOneOnBoth = function(i - 1, j - 1, string1, string2, dp); // Include character
-            int leaveOneOnS1 = function(i - 1, j, string1, string2, dp); // Exclude character from s1
+            
+            int leaveOneOnBoth = function(i - 1, j - 1, string1, string2, dp);
+            int leaveOneOnS1 = function(i - 1, j, string1, string2, dp);
+
             return dp[i][j] = (leaveOneOnBoth + leaveOneOnS1) % prime;
         } else {
             return dp[i][j] = function(i - 1, j, string1, string2, dp);
