@@ -8,8 +8,8 @@ import java.util.Arrays;
 public class EditDistance {
 
     public static void main(String[] args) {
-        String s1 = "dinitrophenylhydrazine";
-        String s2 = "benzalphenylhydrazone";
+        String s1 = "horse";
+        String s2 = "ros";
 
         EditDistance answer = new EditDistance();
 
