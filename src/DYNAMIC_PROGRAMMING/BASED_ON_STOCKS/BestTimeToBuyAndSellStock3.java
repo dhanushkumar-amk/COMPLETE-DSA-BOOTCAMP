@@ -4,7 +4,16 @@ import java.util.Arrays;
 
 public class BestTimeToBuyAndSellStock3 {
 
-    public int maxProfit(int[] prices) {
+
+    public static void main(String[] args) {
+        int[] prices = {3, 3, 5, 0, 0, 3, 1, 4};
+        int n = prices.length;
+
+        // Calculate and print the maximum profit
+        System.out.println("The maximum profit that can be generated is " + maxProfit(prices));
+    }
+
+    public static int maxProfit(int[] prices) {
         int n = prices.length;
         int[][][] dp = new int[n][2][3];
 
@@ -18,7 +27,7 @@ public class BestTimeToBuyAndSellStock3 {
         return function(0, 1, 2, prices, dp); // Changed buy from 0 → 1
     }
 
-    private int function(int index, int buy, int transaction, int[] price, int[][][] dp) {
+    private static int function(int index, int buy, int transaction, int[] price, int[][][] dp) {
         int n = price.length;
 
         // Base case
