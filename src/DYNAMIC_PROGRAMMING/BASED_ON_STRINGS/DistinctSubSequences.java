@@ -5,6 +5,10 @@ import java.util.Arrays;
 public class DistinctSubSequences {
 
 
+    public static void main(String[] args) {
+        DistinctSubSequences answer = new DistinctSubSequences();
+        
+    }
 
     public int numDistinct(String s, String t) {
 
