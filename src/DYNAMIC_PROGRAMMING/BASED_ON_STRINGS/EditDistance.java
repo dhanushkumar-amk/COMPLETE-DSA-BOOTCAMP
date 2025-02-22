@@ -7,6 +7,9 @@ import java.util.Arrays;
 
 public class EditDistance {
 
+    public EditDistance() {
+    }
+
     public int minDistance(String word1, String word2) {
 
         int n = word1.length();
