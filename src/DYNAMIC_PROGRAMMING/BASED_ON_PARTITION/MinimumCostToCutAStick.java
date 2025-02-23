@@ -9,6 +9,11 @@ import java.util.Collections;
 
 public class MinimumCostToCutAStick {
 
+
+    public static void main(String[] args) {
+        MinimumCostToCutAStick answer = new MinimumCostToCutAStick();
+    }
+
     public int cost(int n, int c, ArrayList<Integer> cuts) {
 
         // add 0 and n on both front and back
@@ -31,9 +36,12 @@ public class MinimumCostToCutAStick {
 
       for (int index = i; index <= j ; index++) {
           int answer = cuts.get(j + 1) - cuts.get(i - 1) +
-                  function(i, index -1, cuts) + function(index + 1,j, cuts);
-      }
+                  function(i, index -1, cuts)
+                  + function(index + 1,j, cuts);
 
+          minimumCuts = Math.min(minimumCuts, answer);
+      }
+    return minimumCuts;
     }
 
 }
