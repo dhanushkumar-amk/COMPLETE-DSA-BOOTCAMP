@@ -7,7 +7,7 @@ package DYNAMIC_PROGRAMMING.BASED_ON_PARTITION;
 public class MinimumCostToCutAStick {
 
     public int minCost(int n, int[] cuts) {
-
+        
     }
-    
+
 }
