@@ -18,6 +18,7 @@ public class MinimumCostToCutAStick {
         int c = cuts.size();
         int n = 7;
 
+        System.out.println("The minimum cost incurred: " + answer.cost(n, c, cuts));
     }
 
     public int cost(int n, int c, ArrayList<Integer> cuts) {
