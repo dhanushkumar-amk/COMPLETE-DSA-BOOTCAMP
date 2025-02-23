@@ -6,10 +6,10 @@ package DYNAMIC_PROGRAMMING.BASED_ON_PARTITION;
 public class PalindromePartitioningII {
 
     public static void main(String[] args) {
-        
+
     }
 
     public int minCut(String s) {
-
+    
     }
 }
