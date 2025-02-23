@@ -21,7 +21,7 @@ public class PalindromePartitioningII {
         int[] dp = new int[n];
         Arrays.fill(dp, -1);
 
-        return function(0, s);
+        return function(0, s) - 1;
     }
 
     private int function(int i, String s){
