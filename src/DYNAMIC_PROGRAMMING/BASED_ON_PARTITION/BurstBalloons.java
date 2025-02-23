@@ -6,5 +6,10 @@ package DYNAMIC_PROGRAMMING.BASED_ON_PARTITION;
 
 public class BurstBalloons {
 
+    public int maxCoins(int[] nums) {
+
+    }
+
+    
 
 }
