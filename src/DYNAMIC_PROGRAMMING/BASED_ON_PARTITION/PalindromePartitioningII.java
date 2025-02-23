@@ -10,6 +10,8 @@ public class PalindromePartitioningII {
     }
 
     public int minCut(String s) {
-    
+
+        int n = s.length();
+        int[] dp = new int[n];
     }
 }
