@@ -46,4 +46,11 @@ public class LongestIncreasingSubSequence {
 
     }
 
+
+
+    public static int tabulation(int[] nums){
+
+        
+    }
+
 }
