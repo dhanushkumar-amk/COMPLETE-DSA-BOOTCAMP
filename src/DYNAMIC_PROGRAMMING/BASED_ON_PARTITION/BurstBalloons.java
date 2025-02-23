@@ -16,7 +16,7 @@ public class BurstBalloons {
 
     }
 
-    public int maxCoins(int[] nums) {
+    public int maxCoins1(int[] nums) {
 
         int m = nums.length;
         int[] newArray = new int[m+2];
@@ -61,5 +61,45 @@ public class BurstBalloons {
     }
 
 
+//    tabulation
+    public int maxCoins(int[] nums) {
+
+        int n = nums.length;
+        int[] newArray = new int[n+2];
+
+        // create the array and add the 1 on both end
+        for(int i=0; i<n; i++){
+            newArray[i+1] = nums[i];
+        }
+        newArray[0] = 1;
+        newArray[n+1] = 1;
+
+
+        int[][] dp = new int[n + 1][n + 1];
+
+
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= n ; j++) {
+
+                if (i > j)
+                    continue;
+
+                // copy and paste recurance
+                int maximumCoins  = Integer.MIN_VALUE;
+
+                for (int index = i; index <= j; index++) {
+                    int coins = newArray[i - 1] * newArray[index] * newArray[j + 1]
+                            + dp[i][index - 1]
+                            + dp[index + 1][j];
+                            ;
+
+                    maximumCoins = Math.max(maximumCoins, coins);
+                }
+                dp[i][j] = maximumCoins;
+            }
+        }
+
+        return dp[1][n];
+    }
 
 }
