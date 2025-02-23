@@ -34,7 +34,7 @@ public class MatrixChainMultiplication {
 
         int minimumSteps = Integer.MAX_VALUE;
         for (int k = i; k < j - 1; k++) {
-            int steps = arr[i -1] * arr[k] * arr[j] + function(i, k-1, arr, dp) + function(k , j, arr,dp );
+            int steps = arr[i -1] * arr[k] * arr[j] + function(i, k, arr, dp) + function(k + 1 , j, arr,dp );
 
             if (steps < minimumSteps)
                 minimumSteps = steps;
