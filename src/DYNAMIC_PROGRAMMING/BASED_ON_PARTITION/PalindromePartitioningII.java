@@ -27,10 +27,19 @@ public class PalindromePartitioningII {
         if (i == n)
             return 0;
 
-        String
+        int minimumCost = Integer.MAX_VALUE;
+
         for (int j = i; j < n ; j++) {
 
+            if (ispalindrome(i, j, s))
         }
 
+    }
+
+    private boolean ispalindrome(int i, int j, String s) {
+
+        while (i > j){
+            
+        }
     }
 }
