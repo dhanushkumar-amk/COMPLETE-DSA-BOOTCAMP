@@ -1,4 +1,4 @@
-package DYNAMIC_PROGRAMMING.BASED_ON_LIS;
+package DYNAMIC_PROGRAMMING.BASED_ON_SUBSEQUENCE;
 
 import java.util.Arrays;
 
