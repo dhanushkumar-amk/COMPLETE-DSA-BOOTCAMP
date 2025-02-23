@@ -8,7 +8,7 @@ public class MatrixChainMultiplication {
         int arr[] = {10, 20, 30, 40, 50};
 
         System.out.println("The minimum number of operations are "+
-                matrixMultiplication(arr));
+                tabulations(arr));
     }
 
     static int matrixMultiplication(int[] arr){
@@ -39,5 +39,26 @@ public class MatrixChainMultiplication {
             minimumSteps = Math.min(minimumSteps,steps);
         }
         return dp[i][j] =  minimumSteps;
+    }
+
+
+    // tabulation method
+    static int tabulations(int[] arr){
+
+        int n = arr.length;
+        int[][] dp = new int[n][n];
+
+        for (int i = n - 1; i >= 1; i--) {
+            for (int j = i + 1; j < n ; j++) {
+                int minimumSteps = Integer.MAX_VALUE;
+                for (int k = i; k <= j - 1; k++) {
+                    int steps = arr[i -1] * arr[k] * arr[j] + dp[i][k] + dp[k + 1][j];
+
+                    minimumSteps = Math.min(minimumSteps,steps);
+                }
+                dp[i][j] =  minimumSteps;
+            }
+        }
+       return dp[1][n - 1];
     }
 }
