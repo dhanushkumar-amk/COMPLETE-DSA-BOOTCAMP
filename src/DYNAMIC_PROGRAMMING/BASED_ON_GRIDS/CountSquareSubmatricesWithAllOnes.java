@@ -13,7 +13,7 @@ public class CountSquareSubmatricesWithAllOnes {
 
         int[][] dp = new int[n][m];
 
-        for (int col = 0; col < n; col++)
+        for (int col = 0; col < m; col++)
             dp[0][col] = matrix[0][col];
 
         for (int row = 0; row < n; row++)
