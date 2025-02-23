@@ -64,7 +64,7 @@ public class PalindromePartitioningII {
         // base case
         dp[n] = 0;
 
-        for (int i = n - 1; i <= 0 ; i++) {
+        for (int i = n - 1; i >= 0 ; i++) {
             int minimumCost = Integer.MAX_VALUE;
 
             for (int j = i; j < n ; j++) {
