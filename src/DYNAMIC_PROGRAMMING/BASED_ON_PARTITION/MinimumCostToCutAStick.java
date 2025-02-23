@@ -23,9 +23,15 @@ public class MinimumCostToCutAStick {
 
   private  int function(int i ,int j, ArrayList<Integer> cuts ){
 
+        // base case
+        if (i > j)
+            return 0;
 
+        int minimumCuts = Integer.MAX_VALUE;
 
-
+      for (int index = i; index <= j ; index++) {
+          
+      }
 
     }
 
