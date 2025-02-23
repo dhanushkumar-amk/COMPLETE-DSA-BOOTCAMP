@@ -33,7 +33,7 @@ public class MatrixChainMultiplication {
             return dp[i][j];
 
         int minimumSteps = Integer.MAX_VALUE;
-        for (int k = i; k < j - 1; k++) {
+        for (int k = i; k <= j - 1; k++) {
             int steps = arr[i -1] * arr[k] * arr[j] + function(i, k, arr, dp) + function(k + 1 , j, arr,dp );
 
             minimumSteps = Math.min(minimumSteps,steps);
