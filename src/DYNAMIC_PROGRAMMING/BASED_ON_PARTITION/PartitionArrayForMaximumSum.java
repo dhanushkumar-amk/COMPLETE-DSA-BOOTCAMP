@@ -52,7 +52,7 @@ public class PartitionArrayForMaximumSum {
     public int tabulationAnswer(int[] arr, int k){
         int n = arr.length;
 
-        int[] dp = new int[n];
+        int[] dp = new int[n + 1];
 
         // base case
         dp[n] = 0;
