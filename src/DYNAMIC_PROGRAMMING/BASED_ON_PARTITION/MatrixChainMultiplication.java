@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MatrixChainMultiplication {
 
     public static void main(String[] args) {
-        int arr[] = {10, 20, 30, 40, 50};
+        int[] arr = {10, 20, 30, 40, 50};
 
         System.out.println("The minimum number of operations are "+
                 tabulations(arr));
@@ -47,6 +47,10 @@ public class MatrixChainMultiplication {
 
         int n = arr.length;
         int[][] dp = new int[n][n];
+
+        // base case
+        for (int i = 1; i < n; i++)
+            dp[i][i] = 0;
 
         for (int i = n - 1; i >= 1; i--) {
             for (int j = i + 1; j < n ; j++) {
