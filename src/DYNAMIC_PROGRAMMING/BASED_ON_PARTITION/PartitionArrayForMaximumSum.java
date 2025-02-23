@@ -49,28 +49,28 @@ public class PartitionArrayForMaximumSum {
 
 
     // tabulation
-    public int tabulationAnswer(int[] arr, int k){
-        int n = arr.length;
+        public int tabulationAnswer(int[] arr, int k){
+            int n = arr.length;
 
-        int[] dp = new int[n + 1];
+            int[] dp = new int[n + 1];
 
-        // base case
-        dp[n] = 0;
+            // base case
+            dp[n] = 0;
 
-        for (int index = n - 1; index >= 0 ; index--) {
-            int length = 0;
-            int maximum = Integer.MIN_VALUE;
-            int maximumAnswer = Integer.MIN_VALUE;
+            for (int index = n - 1; index >= 0 ; index--) {
+                int length = 0;
+                int maximum = Integer.MIN_VALUE;
+                int maximumAnswer = Integer.MIN_VALUE;
 
-            for (int j = index; j < Math.min(n, index + k); j++) {
-                length++;
-                maximum = Math.max(maximum, arr[j]);
-                int sum = length * maximum + dp[j + 1];
-                maximumAnswer = Math.max(maximumAnswer, sum);
+                for (int j = index; j < Math.min(n, index + k); j++) {
+                    length++;
+                    maximum = Math.max(maximum, arr[j]);
+                    int sum = length * maximum + dp[j + 1];
+                    maximumAnswer = Math.max(maximumAnswer, sum);
+                }
+                dp[index] =  maximumAnswer;
             }
-            dp[index] =  maximumAnswer;
+            return dp[0];
         }
-        return dp[0];
-    }
 
 }
