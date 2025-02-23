@@ -32,6 +32,6 @@ public class MatrixChainMultiplication {
             if (steps < minimumSteps)
                 minimumSteps = steps;
         }
-        return minimumSteps;
+        return dp[i][j] =  minimumSteps;
     }
 }
