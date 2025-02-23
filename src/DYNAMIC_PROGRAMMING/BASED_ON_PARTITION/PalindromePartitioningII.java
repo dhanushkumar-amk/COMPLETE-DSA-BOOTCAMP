@@ -30,16 +30,19 @@ public class PalindromePartitioningII {
         int minimumCost = Integer.MAX_VALUE;
 
         for (int j = i; j < n ; j++) {
-
-            if (ispalindrome(i, j, s))
+            int cost = 0;
+            if (isPalindrome(i, j, s))
+                 cost = 1 + function(j + 1, s);;
         }
 
     }
 
-    private boolean ispalindrome(int i, int j, String s) {
-
-        while (i > j){
-            
+    private boolean isPalindrome(int i, int j, String s) {
+        while (i < j) {
+            if (s.charAt(i) != s.charAt(j)) return false;
+            i++;
+            j--;
         }
+        return true;
     }
 }
