@@ -6,7 +6,10 @@ public class LongestIncreasingSubSequence {
 
 
     public static void main(String[] args) {
+        int[] arr = {10,9,2,5,3,7,101,18};
 
+        LongestIncreasingSubSequence answer = new LongestIncreasingSubSequence();
+        System.out.println(answer.lengthOfLIS(arr));
     }
 
     public int lengthOfLIS(int[] nums) {
