@@ -21,7 +21,7 @@ public class MinimumCostToCutAStick {
         return function(1 ,c,cuts);
     }
 
-  private  int function(int n,int c, ArrayList<Integer> cuts ){
+  private  int function(int i ,int j, ArrayList<Integer> cuts ){
 
 
 
