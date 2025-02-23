@@ -30,25 +30,34 @@ public class MinimumCostToCutAStick {
         // sort the array
         Collections.sort(cuts);
 
-        return function(1 ,c,cuts);
+        int[][] dp = new int[n][n];
+
+        for(int[] row : dp)
+            Arrays.fill(row, -1);
+
+        return function(1 ,c,cuts, dp);
     }
 
-  private  int function(int i ,int j, ArrayList<Integer> cuts ){
+  private  int function(int i ,int j, ArrayList<Integer> cuts, int[][] dp){
 
         // base case
         if (i > j)
             return 0;
 
+      if (dp[i][j] != -1) {
+          return dp[i][j];
+      }
+
         int minimumCuts = Integer.MAX_VALUE;
 
       for (int index = i; index <= j ; index++) {
           int answer = cuts.get(j + 1) - cuts.get(i - 1) +
-                  function(i, index -1, cuts)
-                  + function(index + 1,j, cuts);
+                  function(i, index -1, cuts, dp)
+                  + function(index + 1,j, cuts, dp);
 
           minimumCuts = Math.min(minimumCuts, answer);
       }
-    return minimumCuts;
+    return dp[i][j] =  minimumCuts;
     }
 
 }
