@@ -4,6 +4,13 @@ import java.util.Arrays;
 
 public class MatrixChainMultiplication {
 
+    public static void main(String[] args) {
+        int arr[] = {10, 20, 30, 40, 50};
+        
+        System.out.println("The minimum number of operations are "+
+                matrixMultiplication(arr));
+    }
+
     static int matrixMultiplication(int[] arr){
 
         int n = arr.length;
