@@ -30,7 +30,8 @@ public class MinimumCostToCutAStick {
         int minimumCuts = Integer.MAX_VALUE;
 
       for (int index = i; index <= j ; index++) {
-          int answer = cuts.get(j + 1) - cuts.get(i - 1)
+          int answer = cuts.get(j + 1) - cuts.get(i - 1) +
+                  function(i, index -1, cuts) + function(index + 1,j, cuts);
       }
 
     }
