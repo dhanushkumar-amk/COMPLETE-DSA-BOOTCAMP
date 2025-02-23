@@ -11,7 +11,7 @@ public class PalindromePartitioningII {
 
         PalindromePartitioningII answer = new PalindromePartitioningII();
         String str = "BABABCBADCEDE";
-        System.out.println(answer.minCut(str));
+        System.out.println(answer.tabulation(str));
 
     }
 
@@ -52,5 +52,29 @@ public class PalindromePartitioningII {
             j--;
         }
         return true;
+    }
+
+
+    // tabulation
+    public int tabulation(String s){
+        int n = s.length();
+
+        int[] dp = new int[n + 1];
+
+        // base case
+        dp[n] = 0;
+
+        for (int i = n - 1; i <= 0 ; i++) {
+            int minimumCost = Integer.MAX_VALUE;
+
+            for (int j = i; j < n ; j++) {
+                if (isPalindrome(i, j, s)) {
+                    int cost = 1 + dp[j + 1];
+                    minimumCost = Math.min(cost, minimumCost);
+                }
+            }
+            dp[i] = minimumCost;
+        }
+        return dp[0] - 1;
     }
 }
