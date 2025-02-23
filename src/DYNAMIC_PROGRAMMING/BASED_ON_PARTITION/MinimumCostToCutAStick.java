@@ -12,7 +12,7 @@ public class MinimumCostToCutAStick {
     }
 
     int function(int n, int[] cuts){
-        
+
     }
 
 }
