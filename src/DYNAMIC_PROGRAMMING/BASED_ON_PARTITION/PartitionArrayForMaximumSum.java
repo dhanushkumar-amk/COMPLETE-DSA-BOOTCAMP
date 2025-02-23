@@ -9,7 +9,7 @@ public class PartitionArrayForMaximumSum {
         int[] arr = {1, 15, 7, 9, 2, 5, 10};
         int k = 3;
 
-        System.out.println("The maximum sum is: " + answer.maxSumAfterPartitioning(arr, k));
+        System.out.println("The maximum sum is: " + answer.tabulationAnswer(arr, k));
 
     }
 
@@ -45,6 +45,32 @@ public class PartitionArrayForMaximumSum {
             maximumAnswer = Math.max(maximumAnswer, sum);
         }
         return dp[index] =  maximumAnswer;
+    }
+
+
+    // tabulation
+    public int tabulationAnswer(int[] arr, int k){
+        int n = arr.length;
+
+        int[] dp = new int[n];
+
+        // base case
+        dp[n] = 0;
+
+        for (int index = n - 1; index >= 0 ; index--) {
+            int length = 0;
+            int maximum = Integer.MIN_VALUE;
+            int maximumAnswer = Integer.MIN_VALUE;
+
+            for (int j = index; j < Math.min(n, index + k); j++) {
+                length++;
+                maximum = Math.max(maximum, arr[j]);
+                int sum = length * maximum + dp[j + 1];
+                maximumAnswer = Math.max(maximumAnswer, sum);
+            }
+            dp[index] =  maximumAnswer;
+        }
+        return dp[0];
     }
 
 }
