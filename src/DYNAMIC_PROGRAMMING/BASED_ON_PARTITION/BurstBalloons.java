@@ -25,7 +25,7 @@ public class BurstBalloons {
         newArray[0] = 1;
         newArray[m+1] = 1;
 
-        return function(1, n, newArray);
+        return function(1, m, newArray);
 
     }
 
