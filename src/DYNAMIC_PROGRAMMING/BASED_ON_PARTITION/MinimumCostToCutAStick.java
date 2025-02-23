@@ -18,7 +18,7 @@ public class MinimumCostToCutAStick {
         // sort the array
         Collections.sort(cuts);
 
-        return function(n,c,cuts);
+        return function(1 ,c,cuts);
     }
 
   private  int function(int n,int c, ArrayList<Integer> cuts ){
