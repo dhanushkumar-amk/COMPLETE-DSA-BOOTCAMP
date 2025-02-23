@@ -33,6 +33,7 @@ public class PalindromePartitioningII {
             int cost = 0;
             if (isPalindrome(i, j, s))
                  cost = 1 + function(j + 1, s);;
+                 
         }
 
     }
