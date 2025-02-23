@@ -36,8 +36,7 @@ public class MatrixChainMultiplication {
         for (int k = i; k < j - 1; k++) {
             int steps = arr[i -1] * arr[k] * arr[j] + function(i, k, arr, dp) + function(k + 1 , j, arr,dp );
 
-            if (steps < minimumSteps)
-                minimumSteps = steps;
+            minimumSteps = Math.min(minimumSteps,steps);
         }
         return dp[i][j] =  minimumSteps;
     }
