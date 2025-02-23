@@ -1,29 +1,45 @@
 package DYNAMIC_PROGRAMMING.BASED_ON_LIS;
 
+import java.util.Arrays;
+
 public class LongestIncreasingSubSequence {
 
 
-    public int lengthOfLIS(int[] nums) {
-
-        return function(0, -1, nums);
+    public static void main(String[] args) {
 
     }
 
-    public int function(int index, int previousIndex,int[] nums){
+    public int lengthOfLIS(int[] nums) {
+
+        int n = nums.length;
+
+        int[][] dp = new int[n][n + 1];
+
+        for(int[] row : dp)
+            Arrays.fill(row, -1);
+
+        return function(0, -1, nums, dp);
+
+    }
+
+    public int function(int index, int previousIndex,int[] nums, int[][] dp){
 
         int n = nums.length;
         if (index == n)
             return 0;
 
+        if (dp[index][previousIndex + 1] != -1)
+            return dp[index][previousIndex + 1];
+
         int take = Integer.MIN_VALUE;
         // take case
         if (previousIndex == -1 || nums[index] > nums[previousIndex])
-            take = 1 + function(index + 1, index, nums);
+            take = 1 + function(index + 1, index, nums, dp);
 
         // not take
-        int notTake = 0 + function(index + 1, previousIndex, nums);
+        int notTake = 0 + function(index + 1, previousIndex, nums, dp);
 
-        return Math.max(take, notTake);
+        return dp[index][previousIndex + 1] =  Math.max(take, notTake);
 
     }
 
