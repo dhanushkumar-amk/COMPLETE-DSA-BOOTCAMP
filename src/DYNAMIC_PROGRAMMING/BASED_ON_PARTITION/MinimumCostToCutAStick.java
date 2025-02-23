@@ -1,2 +1,4 @@
-package DYNAMIC_PROGRAMMING.BASED_ON_PARTITION;public class MinimumCostToCutAStick {
+package DYNAMIC_PROGRAMMING.BASED_ON_PARTITION;
+
+public class MinimumCostToCutAStick {
 }
