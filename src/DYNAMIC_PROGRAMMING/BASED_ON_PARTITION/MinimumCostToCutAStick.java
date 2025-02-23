@@ -8,7 +8,11 @@ public class MinimumCostToCutAStick {
 
     public int minCost(int n, int[] cuts) {
 
-        return function()
+        return function(n, cuts);
+    }
+
+    int function(int n, int[] cuts){
+        
     }
 
 }
