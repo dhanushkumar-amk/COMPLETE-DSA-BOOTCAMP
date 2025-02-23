@@ -3,10 +3,16 @@ package DYNAMIC_PROGRAMMING.BASED_ON_GRIDS;
 public class CountSquareSubmatricesWithAllOnes {
 
     public static void main(String[] args) {
+        int[][] matrix = {
+                {1,1,1},
+                {1,1,1},
+                {1,1,1},
+        };
 
+        System.out.println(countSquares(matrix));
     }
 
-    public int countSquares(int[][] matrix) {
+    public static int countSquares(int[][] matrix) {
 
         int n = matrix.length;
         int m = matrix[0].length;
