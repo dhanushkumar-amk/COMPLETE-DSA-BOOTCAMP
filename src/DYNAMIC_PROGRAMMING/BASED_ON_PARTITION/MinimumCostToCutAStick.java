@@ -5,6 +5,7 @@ package DYNAMIC_PROGRAMMING.BASED_ON_PARTITION;
 // leetcode 1547
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class MinimumCostToCutAStick {
@@ -12,6 +13,11 @@ public class MinimumCostToCutAStick {
 
     public static void main(String[] args) {
         MinimumCostToCutAStick answer = new MinimumCostToCutAStick();
+
+        ArrayList<Integer> cuts = new ArrayList<>(Arrays.asList(3, 5, 1, 4));
+        int c = cuts.size();
+        int n = 7;
+
     }
 
     public int cost(int n, int c, ArrayList<Integer> cuts) {
