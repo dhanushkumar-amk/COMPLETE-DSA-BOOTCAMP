@@ -9,6 +9,10 @@ public class PalindromePartitioningII {
 
     public static void main(String[] args) {
 
+        PalindromePartitioningII answer = new PalindromePartitioningII();
+        String str = "BABABCBADCEDE";
+        System.out.println(answer.minCut(str));
+
     }
 
     public int minCut(String s) {
