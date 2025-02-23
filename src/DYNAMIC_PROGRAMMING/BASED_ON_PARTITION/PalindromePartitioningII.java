@@ -30,10 +30,11 @@ public class PalindromePartitioningII {
         int minimumCost = Integer.MAX_VALUE;
 
         for (int j = i; j < n ; j++) {
-            int cost = 0;
-            if (isPalindrome(i, j, s))
-                 cost = 1 + function(j + 1, s);;
-                 
+            if (isPalindrome(i, j, s)) {
+               int cost = 1 + function(j + 1, s);
+                minimumCost = Math.min(cost, minimumCost);
+            }
+
         }
 
     }
