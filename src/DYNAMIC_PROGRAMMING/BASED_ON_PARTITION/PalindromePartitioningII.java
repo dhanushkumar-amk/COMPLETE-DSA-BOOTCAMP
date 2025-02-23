@@ -17,7 +17,7 @@ public class PalindromePartitioningII {
         int[] dp = new int[n];
         Arrays.fill(dp, -1);
 
-        return function(0, n, s);
+        return function(0, s);
     }
 
     private int function(int i, String s){
@@ -34,9 +34,8 @@ public class PalindromePartitioningII {
                int cost = 1 + function(j + 1, s);
                 minimumCost = Math.min(cost, minimumCost);
             }
-
         }
-
+    return minimumCost;
     }
 
     private boolean isPalindrome(int i, int j, String s) {
