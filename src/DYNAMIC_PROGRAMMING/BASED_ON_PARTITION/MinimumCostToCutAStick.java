@@ -11,11 +11,6 @@ public class MinimumCostToCutAStick {
 
     public int cost(int n, int c, ArrayList<Integer> cuts) {
 
-        return function(n,c,cuts);
-    }
-
-  private  int function(int n,int c, ArrayList<Integer> cuts ){
-
         // add 0 and n on both front and back
         cuts.add(0);
         cuts.add(n);
@@ -23,7 +18,14 @@ public class MinimumCostToCutAStick {
         // sort the array
         Collections.sort(cuts);
 
-        
+        return function(n,c,cuts);
+    }
+
+  private  int function(int n,int c, ArrayList<Integer> cuts ){
+
+
+
+
 
     }
 
