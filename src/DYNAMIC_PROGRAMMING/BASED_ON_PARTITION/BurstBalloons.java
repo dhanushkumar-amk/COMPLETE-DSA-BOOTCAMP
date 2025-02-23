@@ -6,6 +6,10 @@ package DYNAMIC_PROGRAMMING.BASED_ON_PARTITION;
 
 public class BurstBalloons {
 
+    public static void main(String[] args) {
+        
+    }
+
     public int maxCoins(int[] nums) {
 
         int m = nums.length;
@@ -30,9 +34,15 @@ public class BurstBalloons {
         int maximumCoins  = Integer.MIN_VALUE;
 
         for (int index = i; index <= j; index++) {
-            int cost =
+            int coins = arr[i - 1] * arr[index] * arr[j + 1]
+                    + function(i, index - 1, arr)
+                    + function(index + 1, j, arr)
+                    ;
+
+            maximumCoins = Math.max(maximumCoins, coins);
         }
 
+        return maximumCoins;
     }
 
 
