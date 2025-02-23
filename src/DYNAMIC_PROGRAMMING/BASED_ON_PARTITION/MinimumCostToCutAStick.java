@@ -5,17 +5,25 @@ package DYNAMIC_PROGRAMMING.BASED_ON_PARTITION;
 // leetcode 1547
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MinimumCostToCutAStick {
 
-    static int cost(int n, int c, ArrayList<Integer> cuts) {
+    public int cost(int n, int c, ArrayList<Integer> cuts) {
 
         return function(n,c,cuts);
     }
 
-    int function(int n,int c, ArrayList<Integer> cuts ){
+  private  int function(int n,int c, ArrayList<Integer> cuts ){
 
+        // add 0 and n on both front and back
+        cuts.add(0);
         cuts.add(n);
+
+        // sort the array
+        Collections.sort(cuts);
+
+        
 
     }
 
