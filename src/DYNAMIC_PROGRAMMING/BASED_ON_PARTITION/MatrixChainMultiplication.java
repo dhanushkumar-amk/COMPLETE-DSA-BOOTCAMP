@@ -22,6 +22,9 @@ public class MatrixChainMultiplication {
         if (i == j)
             return 0;
 
+        if(dp[i][j] != -1)
+            return dp[i][j];
+
         int minimumSteps = Integer.MAX_VALUE;
         for (int k = i; k < j - 1; k++) {
             int steps = arr[i -1] * arr[k] * arr[j] + function(i, k-1, arr, dp) + function(k , j, arr,dp );
