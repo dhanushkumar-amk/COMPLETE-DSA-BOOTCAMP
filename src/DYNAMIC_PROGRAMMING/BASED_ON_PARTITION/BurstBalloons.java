@@ -7,7 +7,11 @@ package DYNAMIC_PROGRAMMING.BASED_ON_PARTITION;
 public class BurstBalloons {
 
     public static void main(String[] args) {
-        
+
+        BurstBalloons answer = new BurstBalloons();
+        int[] arr = {3,1,5,8};
+        System.out.println(answer.maxCoins(arr));
+
     }
 
     public int maxCoins(int[] nums) {
