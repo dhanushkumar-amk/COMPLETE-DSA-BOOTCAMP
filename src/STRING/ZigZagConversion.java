@@ -41,7 +41,7 @@ public class ZigZagConversion {
 
         for (int i = 0; i < row; i++) {
             for (int l = 0; l < col; l++) {
-                if (matrix[i][l] != '0')
+                if (matrix[i][l] != 0)
                     answer = answer + matrix[i][l];
             }
         }
