@@ -1,2 +1,5 @@
-package SLIDING_WINDOW_AND_POINTERS;public class LongestSubstringWithoutRepeatingCharacters {
+package SLIDING_WINDOW_AND_POINTERS;
+
+public class LongestSubstringWithoutRepeatingCharacters {
+    
 }
