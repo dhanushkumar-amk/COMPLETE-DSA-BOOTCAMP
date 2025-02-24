@@ -28,7 +28,7 @@ public class ZigZagConversion {
             }
             j++;
 
-            for (int i = row - 2; i >= 1 ; i++) {
+            for (int i = row - 2; i >= 1 ; i--) {
                 if (k == s.length())
                     break;
                 matrix[i][j] = s.charAt(k);
