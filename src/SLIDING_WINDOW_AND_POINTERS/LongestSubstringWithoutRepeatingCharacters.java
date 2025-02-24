@@ -4,11 +4,13 @@ import java.util.HashMap;
 
 public class LongestSubstringWithoutRepeatingCharacters {
 
-    public static void main(String[] args) {
-        
+    public static void main(String args[]) {
+        String str = "takeUforward";
+        System.out.println("The length of the longest substring without repeating characters is " + lengthOfLongestSubstring(str));
+
     }
 
-    public int lengthOfLongestSubstring(String s) {
+    public static int lengthOfLongestSubstring(String s) {
         HashMap< Character, Integer > mpp = new HashMap < Character, Integer > ();
 
         int left = 0, right = 0;
