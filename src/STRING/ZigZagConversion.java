@@ -3,10 +3,13 @@ package STRING;
 public class ZigZagConversion {
 
     public static void main(String[] args) {
-        
+       String s =  "PAYPALISHIRING";
+       int numsRows =  3;
+
+        System.out.println(convert(s, numsRows));
     }
 
-    public String convert(String s, int numRows) {
+    public static String convert(String s, int numRows) {
 
         int row = numRows;
         int col =  s.length();
@@ -38,7 +41,8 @@ public class ZigZagConversion {
 
         for (int i = 0; i < row; i++) {
             for (int l = 0; l < col; l++) {
-                answer += matrix[i][l];
+                if (matrix[i][l] != '0')
+                    answer = answer + matrix[i][l];
             }
         }
         return answer;
