@@ -1,2 +1,12 @@
-package GREEDY;public class EatPizzas {
+package GREEDY;
+
+// leetcode : 
+
+public class EatPizzas {
+
+
+
+    public long maxWeight(int[] pizzas) {
+
+    }
 }
