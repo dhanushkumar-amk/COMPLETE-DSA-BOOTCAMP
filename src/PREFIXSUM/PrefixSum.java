@@ -5,6 +5,10 @@ public class PrefixSum {
 
         int[] arr = {1,2,3,4,5};
         int[] answer = prefixSum(arr);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
         for (int i = 0; i < answer.length; i++) {
             System.out.print( answer[i] + " ");
         }
