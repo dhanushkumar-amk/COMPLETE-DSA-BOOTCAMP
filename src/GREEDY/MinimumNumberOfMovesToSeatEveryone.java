@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 public class MinimumNumberOfMovesToSeatEveryone {
 
+    public static void main(String[] args) {
+        
+    }
 
     public int minMovesToSeat(int[] seats, int[] students) {
 
