@@ -13,10 +13,13 @@ public class MaximumAbsoluteSumOfAnySubarray {
         int maximumAbsoluteSum = 0;
 
         for(int num : nums){
-
             currentSum += num;
-
             maximumAbsoluteSum = Math.max(maximumAbsoluteSum, Math.max(Math.abs(currentSum - minSum), Math.abs(currentSum - maxSum)));
+
+            maxSum =  Math.max(maxSum, currentSum);
+            minSum = Math.max(minSum, currentSum);
         }
+
+        return maximumAbsoluteSum;
     }
 }
