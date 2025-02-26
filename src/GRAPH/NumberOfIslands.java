@@ -41,7 +41,7 @@ public class NumberOfIslands {
         // explore all the ways
         dfs(i-1, j, grid);
         dfs(i, j - 1, grid);
-        dfs(i+1, i, grid);
+        dfs(i+1, j, grid);
         dfs(i, j + 1, grid);
 
     }
