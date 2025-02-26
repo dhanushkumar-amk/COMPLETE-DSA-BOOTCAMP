@@ -32,13 +32,17 @@ public class NumberOfIslands {
     // dfs function
     private  void dfs(int i, int j, char[][] grid){
 
+        // validity check
         if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == '0')
             return;
 
         grid[i][j] = '0'; // mark the cell as visited
 
-        
-
+        // explore all the ways
+        dfs(i-1, j, grid);
+        dfs(i, j - 1, grid);
+        dfs(i+1, i, grid);
+        dfs(i, j + 1, grid);
 
     }
 
