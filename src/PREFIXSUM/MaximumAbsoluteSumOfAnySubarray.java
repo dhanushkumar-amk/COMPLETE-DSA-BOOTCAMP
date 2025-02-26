@@ -16,7 +16,7 @@ public class MaximumAbsoluteSumOfAnySubarray {
 
             currentSum += num;
 
-            maximumAbsoluteSum = Math.max(maximumAbsoluteSum, Math.max(Math.abs(currentSum - minSum), Math.abs(currentSum - maxSum)))
+            maximumAbsoluteSum = Math.max(maximumAbsoluteSum, Math.max(Math.abs(currentSum - minSum), Math.abs(currentSum - maxSum)));
         }
     }
 }
