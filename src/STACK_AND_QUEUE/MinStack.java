@@ -25,15 +25,19 @@ public class MinStack {
     }
 
     public void pop() {
+        int poppedValue = orginalStack.pop();
+
+        if (poppedValue == minStack.peek())
+            minStack.pop();
 
     }
 
     public int top() {
-
+        return orginalStack.peek();
     }
 
     public int getMin() {
-
+    return minStack.peek();
     }
 
 }
