@@ -6,7 +6,9 @@ package ARRAYS;
 
 
 public class ApplyOperationsToAnArray {
-    public int[] applyOperations(int[] nums) {
 
+
+    public int[] applyOperations(int[] nums) {
+        
     }
 }
