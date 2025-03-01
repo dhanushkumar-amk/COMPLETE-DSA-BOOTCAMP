@@ -5,5 +5,7 @@ package SLIDING_WINDOW_AND_POINTERS;
 
 public class ClearDigits {
 
+    public String clearDigits(String s) {
 
+    }
 }
