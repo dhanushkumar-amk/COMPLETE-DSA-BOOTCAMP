@@ -8,7 +8,9 @@ package ARRAYS;
 public class ApplyOperationsToAnArray {
 
     public static void main(String[] args) {
-        int[] nums = {}
+        int[] nums = {1,2,2,1,1,0};
+
+        System.out.println();
     }
 
     public int[] applyOperations(int[] nums) {
