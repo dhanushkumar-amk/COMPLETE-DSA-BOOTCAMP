@@ -7,8 +7,37 @@ package ARRAYS;
 
 public class ApplyOperationsToAnArray {
 
+    public static void main(String[] args) {
+        int[] nums = {}
+    }
 
     public int[] applyOperations(int[] nums) {
-        
+
+        int size = nums.length;
+        int index = 0;
+
+        // step 1
+        for (int i = 0; i < size - 1; i++) {
+            if (nums[i] == nums[i + 1]){
+                nums[i] *= 2;
+                nums[i + 1] = 0;
+            }
+        }
+
+        // step 2
+        for(int num : nums){
+            if (num != 0){
+                nums[index] = num;
+                index++;
+            }
+        }
+
+        // step 3
+        while (index < size){
+            nums[index] = 0;
+            index++;
+        }
+
+        return nums;
     }
 }
