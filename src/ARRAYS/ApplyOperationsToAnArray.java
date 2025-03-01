@@ -5,15 +5,18 @@ package ARRAYS;
 // https://leetcode.com/problems/apply-operations-to-an-array/description/?envType=daily-question&envId=2025-03-01
 
 
+import java.util.Arrays;
+
 public class ApplyOperationsToAnArray {
 
     public static void main(String[] args) {
         int[] nums = {1,2,2,1,1,0};
 
-        System.out.println();
+        int[] answer = applyOperations(nums);
+        System.out.println(Arrays.toString(answer));
     }
 
-    public int[] applyOperations(int[] nums) {
+    public  static  int[] applyOperations(int[] nums) {
 
         int size = nums.length;
         int index = 0;
