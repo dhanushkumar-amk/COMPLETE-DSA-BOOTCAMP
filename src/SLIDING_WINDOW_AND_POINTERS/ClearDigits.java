@@ -8,7 +8,8 @@ import java.util.Stack;
 public class ClearDigits {
 
     public static void main(String[] args) {
-
+        String s = "cbt34";
+        System.out.println(clearDigits(s));
     }
 
     public static String clearDigits(String s) {
