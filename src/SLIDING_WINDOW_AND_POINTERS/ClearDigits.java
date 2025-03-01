@@ -7,8 +7,14 @@ import java.util.Stack;
 
 public class ClearDigits {
 
-    public String clearDigits(String s) {
+    public static void main(String[] args) {
+
+    }
+
+    public static String clearDigits(String s) {
         Stack<Character> characterStack = new Stack<>();
+
+        // step 1
         for (char character : s.toCharArray()) {
             if (Character.isDigit(character)) {
                 characterStack.pop();
@@ -16,10 +22,14 @@ public class ClearDigits {
                 characterStack.push(character);
             }
         }
+
+        // step 2
         StringBuilder sb = new StringBuilder();
         while (!characterStack.isEmpty()) {
             sb.append(characterStack.pop());
         }
+
+        // step 3
         return sb.reverse().toString();
     }
 }
