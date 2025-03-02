@@ -10,6 +10,8 @@ public class test {
 
         System.out.println(number);
         System.out.println(myName);
+        System.out.println(letter);
+        System.out.println(mark);
     }
 
 }
