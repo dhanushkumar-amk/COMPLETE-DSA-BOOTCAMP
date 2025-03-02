@@ -6,10 +6,34 @@ package MATRIX;
 public class MergeTwo2DArraysBySummingValues {
 
     public static void main(String[] args) {
-        MergeTwo2DArraysBySummingValues answer = new MergeTwo2DArraysBySummingValues();
+        MergeTwo2DArraysBySummingValues solution = new MergeTwo2DArraysBySummingValues();
+
+        int[][] num1 = {
+                {1,2},
+                {2,3},
+                {4,5},
+        };
+
+        int[][] num2 = {
+                {1,4},
+                {3,2},
+                {4,1},
+        };
+
+        int[][] answer = solution.mergeArrays(num1, num2);
+
+        for (int i = 0; i < answer.length; i++) {
+            for (int j = 0; j < answer[0].length; j++) {
+                System.out.print(answer[i][j] + " ");
+            }
+            System.out.println();
+        }
+
     }
 
     public int[][] mergeArrays(int[][] nums1, int[][] nums2) {
 
+        int[][] answer = new int[][];
+        
     }
 }
