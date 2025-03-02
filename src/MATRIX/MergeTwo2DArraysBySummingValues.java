@@ -35,8 +35,15 @@ public class MergeTwo2DArraysBySummingValues {
 
         int n = nums1.length;
         int m = nums2.length;
-        
-        int[][] answer = new int[][];
+
+        int[][] answer = new int[n][m];
+
+        int i = 0;
+        int j = 0;
+
+        while(i < n && j < m){
+            
+        }
 
     }
 }
