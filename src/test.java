@@ -10,12 +10,8 @@ public class test {
         int b = 30;
         int c = 40;
 
-        if (a > b && a > c)
-            System.out.println("a is greatest");
-        else if (b > c)
-            System.out.println("b is greatest");
-        else
-            System.out.println("c is greatest");
+    int answer = Math.max(a, Math.max(b, c));
+        System.out.println(answer);
 
     }
 }
