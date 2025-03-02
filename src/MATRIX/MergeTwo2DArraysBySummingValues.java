@@ -33,7 +33,10 @@ public class MergeTwo2DArraysBySummingValues {
 
     public int[][] mergeArrays(int[][] nums1, int[][] nums2) {
 
-        int[][] answer = new int[][];
+        int n = nums1.length;
+        int m = nums2.length;
         
+        int[][] answer = new int[][];
+
     }
 }
