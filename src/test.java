@@ -9,6 +9,7 @@ public class test {
         float mark = 99.5f;
 
         System.out.println(number);
+        System.out.println(myName);
     }
 
 }
