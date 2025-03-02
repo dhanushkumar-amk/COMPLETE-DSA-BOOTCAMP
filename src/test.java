@@ -5,12 +5,17 @@ public class test {
 
     public static void main(String[] args) {
 
-        int n = 21;
 
-        if (n % 2 == 0)
-            System.out.println("even");
+        int a = 20;
+        int b = 30;
+        int c = 40;
+
+        if (a > b && a > c)
+            System.out.println("a is greatest");
+        else if (b > c)
+            System.out.println("b is greatest");
         else
-            System.out.println("odd");
-    }
+            System.out.println("c is greatest");
 
+    }
 }
