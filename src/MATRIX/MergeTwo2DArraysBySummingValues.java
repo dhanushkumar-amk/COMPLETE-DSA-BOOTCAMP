@@ -42,7 +42,9 @@ public class MergeTwo2DArraysBySummingValues {
         int j = 0;
 
         while(i < n && j < m){
-            
+            if (nums1[i][0] == nums2[j][0]){
+                
+            }
         }
 
     }
