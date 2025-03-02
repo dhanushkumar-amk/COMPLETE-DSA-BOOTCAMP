@@ -1,2 +1,14 @@
-package PACKAGE_NAME;public class test {
+public class test {
+
+    public static void main(String[] args) {
+
+
+        int number = 10;
+        String myName = "dhanabal";
+        char letter = 'a';
+        float mark = 99.5f;
+
+        System.out.println(number);
+    }
+
 }
