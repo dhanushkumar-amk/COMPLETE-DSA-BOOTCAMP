@@ -5,7 +5,12 @@ package GREEDY;
 
 public class GasStation {
 
-    public int canCompleteCircuit(int[] gas, int[] cost) {
+    public static void main(String[] args) {
+        int[] gas = {1,2,3,4,5}l;
+        int[] cost = 
+    }
+
+    public static int canCompleteCircuit(int[] gas, int[] cost) {
 
         int totalGas = 0;
         int totalCost = 0;
