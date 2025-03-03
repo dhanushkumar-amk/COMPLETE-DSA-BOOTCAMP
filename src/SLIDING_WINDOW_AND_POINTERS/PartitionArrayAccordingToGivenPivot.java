@@ -1,2 +1,6 @@
-package SLIDING_WINDOW_AND_POINTERS;public class PartitionArrayAccordingToGivenPivot {
+package SLIDING_WINDOW_AND_POINTERS;
+
+public class PartitionArrayAccordingToGivenPivot {
+
+    
 }
