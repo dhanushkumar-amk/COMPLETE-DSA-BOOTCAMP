@@ -1,2 +1,8 @@
-package MATHS;public class CheckIfNumberIsASumOfPowersOfThree {
+package MATHS;
+
+public class CheckIfNumberIsASumOfPowersOfThree {
+
+
+    
+
 }
