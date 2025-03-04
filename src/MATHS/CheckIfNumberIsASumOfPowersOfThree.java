@@ -6,7 +6,7 @@ package MATHS;
 public class CheckIfNumberIsASumOfPowersOfThree {
 
     public static void main(String[] args) {
-        int n = 81;
+        int n = 41;
         System.out.println(checkPowersOfThree(n));
     }
 
