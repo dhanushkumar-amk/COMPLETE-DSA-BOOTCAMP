@@ -1,2 +1,6 @@
-package MATHS;public class CountTotalNumberOfColoredCells {
+package MATHS;
+
+public class CountTotalNumberOfColoredCells {
+
+
 }
