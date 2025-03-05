@@ -42,4 +42,34 @@ public class RightTriangles {
         }
         return  answer;
     }
+
+
+    /*
+    class Solution {
+    public long numberOfRightTriangles(int[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+
+        int[] rows = new int[m];
+        int[] cols = new int[n];
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                rows[i] += grid[i][j];
+                cols[j] += grid[i][j];
+            }
+        }
+
+        long ans = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[i][j] == 1) {
+                    ans += (rows[i] - 1) * (cols[j] - 1);
+                }
+            }
+        }
+
+        return ans;
+    }
+}
+     */
 }
