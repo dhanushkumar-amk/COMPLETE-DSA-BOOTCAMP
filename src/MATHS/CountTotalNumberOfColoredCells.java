@@ -3,7 +3,7 @@ package MATHS;
 public class CountTotalNumberOfColoredCells {
 
 
-    public long coloredCells(int n) {
+    public long coloredCells1(int n) {
 
         long answer = 1;
         long value = 4;
@@ -17,6 +17,11 @@ public class CountTotalNumberOfColoredCells {
         }
 
         return answer;
+    }
+
+    // anotherway
+    public long coloredCells(int n) {
+        return 1+(long)2*n*(n-1);
     }
 
 }
