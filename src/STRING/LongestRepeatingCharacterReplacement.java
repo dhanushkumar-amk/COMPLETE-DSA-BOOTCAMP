@@ -1,2 +1,4 @@
-package STRING;public class LongestRepeatingCharacterReplacement {
+package STRING;
+
+public class LongestRepeatingCharacterReplacement {
 }
