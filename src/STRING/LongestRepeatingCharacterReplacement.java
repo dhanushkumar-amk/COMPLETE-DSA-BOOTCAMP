@@ -4,4 +4,8 @@ package STRING;
 // leetocde 424
 
 public class LongestRepeatingCharacterReplacement {
+
+    public int characterReplacement(String s, int k) {
+
+    }
 }
