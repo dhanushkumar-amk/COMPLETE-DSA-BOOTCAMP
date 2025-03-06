@@ -6,5 +6,12 @@ package MATHS;
 
 public class FindMissingAndRepeatedValues {
 
+    public static void main(String[] args) {
+        
+    }
+
+    public int[] findMissingAndRepeatedValues(int[][] grid) {
+
+    }
 
 }
