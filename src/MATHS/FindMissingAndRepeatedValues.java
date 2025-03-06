@@ -7,7 +7,9 @@ package MATHS;
 public class FindMissingAndRepeatedValues {
 
     public static void main(String[] args) {
-        int[][] grid = {}
+        int[][] grid = {
+                {1, 3}
+        };
     }
 
     public int[] findMissingAndRepeatedValues(int[][] grid) {
