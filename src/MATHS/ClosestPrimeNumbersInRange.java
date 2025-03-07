@@ -18,10 +18,11 @@ public class ClosestPrimeNumbersInRange {
     public static int[] closestPrimes(int left, int right) {
         boolean[] sieve = new boolean[right + 1];
         Arrays.fill(sieve, true);
-        sieve[0] = sieve[1] = false;
+        sieve[0] = false;
+        sieve[1] = false;
 
         for (int i = 2; i * i <= right; i++) {
-            if (sieve[i]) {
+            if (sieve[i] == true) {
                 for (int j = i * i; j <= right; j += i) {
                     sieve[j] = false;
                 }
@@ -50,7 +51,6 @@ public class ClosestPrimeNumbersInRange {
                 result[1] = primes.get(i);
             }
         }
-
         return result;
     }
 }
