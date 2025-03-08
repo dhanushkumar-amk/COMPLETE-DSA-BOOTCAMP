@@ -14,7 +14,7 @@ public class MinimumRecolorsToGetKConsecutiveBlackBlocks {
 
     public static int minimumRecolors(String blocks, int k) {
 
-        int answer = 0;
+        int answer = Integer.MIN_VALUE;
 
         for (int i = 0; i < blocks.length(); i++) {
             int currentLength = 0;
