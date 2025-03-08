@@ -19,7 +19,7 @@ public class MinimumRecolorsToGetKConsecutiveBlackBlocks {
         for (int i = 0; i <= blocks.length() - k; i++) {
             int currentLength = 0;
             for (int j = i; j < i + k ; j++) {
-                if (blocks.equals('w')){
+                if (blocks.charAt(j) == 'w'){
                     currentLength++;
                 }
             }
