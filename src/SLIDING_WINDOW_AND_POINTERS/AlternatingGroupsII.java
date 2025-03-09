@@ -5,5 +5,8 @@ package SLIDING_WINDOW_AND_POINTERS;
 
 public class AlternatingGroupsII {
 
+    public int numberOfAlternatingGroups(int[] colors, int k) {
+
+    }
 
 }
