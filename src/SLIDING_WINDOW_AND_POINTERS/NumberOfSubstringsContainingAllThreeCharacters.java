@@ -5,5 +5,12 @@ package SLIDING_WINDOW_AND_POINTERS;
 
 public class NumberOfSubstringsContainingAllThreeCharacters {
 
+    public int numberOfSubstrings(String s) {
+
+        int left = 0;
+        int right =0;
+        ibt valid
+
+    }
 
 }
