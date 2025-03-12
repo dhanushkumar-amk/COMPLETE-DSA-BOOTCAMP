@@ -47,7 +47,7 @@ public class MaximumCountOfPositiveIntegerAndNegativeInteger {
         int right = nums.length;
 
         while (left < right){
-            int mid = left + right / 2;
+            int mid = (left + right) / 2;
 
             if (nums[mid] <= target)
                 left = mid + 1;
@@ -62,7 +62,7 @@ public class MaximumCountOfPositiveIntegerAndNegativeInteger {
         int right = nums.length;
 
         while (left < right){
-            int mid = left + right / 2;
+            int mid = (left + right) / 2;
 
             if (nums[mid] < target)
                 left = mid + 1;
