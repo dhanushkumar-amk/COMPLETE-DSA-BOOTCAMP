@@ -39,7 +39,7 @@ public class MaximumCountOfPositiveIntegerAndNegativeInteger {
         int lowerBound = lower(nums, 0);
         int upperBound = upper(nums, 0);
 
-        return Math.max(upperBound, lowerBound);
+        return Math.max(lowerBound, n - upperBound);
     }
 
     private int upper(int[] nums, int target) {
