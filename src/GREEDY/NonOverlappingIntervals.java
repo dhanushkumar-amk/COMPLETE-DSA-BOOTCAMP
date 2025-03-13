@@ -39,6 +39,6 @@ public class NonOverlappingIntervals {
                 count++;
             }
         }
-        
+        return  intervals.length - count;
     }
 }
