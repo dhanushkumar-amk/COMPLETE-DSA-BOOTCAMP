@@ -6,5 +6,7 @@ package GREEDY;
 
 public class NonOverlappingIntervals {
 
-    
+    public int eraseOverlapIntervals(int[][] intervals) {
+
+    }
 }
