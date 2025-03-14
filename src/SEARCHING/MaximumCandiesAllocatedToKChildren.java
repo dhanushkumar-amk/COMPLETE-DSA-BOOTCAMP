@@ -1,2 +1,6 @@
-package SEARCHING;public class MaximumCandiesAllocatedToKChildren {
+package SEARCHING;
+
+public class MaximumCandiesAllocatedToKChildren {
+
+    
 }
