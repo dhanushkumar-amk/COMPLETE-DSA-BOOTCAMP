@@ -13,6 +13,7 @@ public class HouseRobber4 {
         HouseRobber4 answer = new HouseRobber4();
         int[] nums = {2,3,5,9};
         int k = 2;
+        System.out.println(answer.minCapability(nums, k));
     }
 
     public int minCapability(int[] nums, int k) {
