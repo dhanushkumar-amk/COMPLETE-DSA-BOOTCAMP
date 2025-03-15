@@ -35,7 +35,7 @@ public class HouseRobber4 {
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] <= maximumCapability){
                 count++;
-                i++;
+                i++;  // for 2 steps
             }
         }
         return count >= k;
