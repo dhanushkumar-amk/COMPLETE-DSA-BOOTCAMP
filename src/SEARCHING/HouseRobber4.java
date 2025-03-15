@@ -4,7 +4,6 @@ package SEARCHING;
 // leetcode 2560
 // https://leetcode.com/problems/house-robber-iv/description/?envType=daily-question&envId=2025-03-15
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class HouseRobber4 {
