@@ -9,5 +9,7 @@ public class HouseRobber4 {
 
     }
 
-
+    public int minCapability(int[] nums, int k) {
+        
+    }
 }
