@@ -10,6 +10,9 @@ import java.util.Arrays;
 public class HouseRobber4 {
     public static void main(String[] args) {
 
+        HouseRobber4 answer = new HouseRobber4();
+        int[] nums = {2,3,5,9};
+        int k = 2;
     }
 
     public int minCapability(int[] nums, int k) {
