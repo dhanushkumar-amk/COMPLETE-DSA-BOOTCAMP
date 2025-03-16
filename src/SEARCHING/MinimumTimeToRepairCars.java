@@ -5,5 +5,19 @@ package SEARCHING;
 
 
 public class MinimumTimeToRepairCars {
-    
+
+    public static void main(String[] args) {
+
+        MinimumTimeToRepairCars answer = new MinimumTimeToRepairCars();
+
+        int[] ranks = {};
+        int cars = 10;
+
+        System.out.println(answer.repairCars(ranks, cars));
+
+    }
+
+    public long repairCars(int[] ranks, int cars) {
+        
+    }
 }
