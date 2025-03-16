@@ -10,7 +10,7 @@ public class MinimumTimeToRepairCars {
 
         MinimumTimeToRepairCars answer = new MinimumTimeToRepairCars();
 
-        int[] ranks = {};
+        int[] ranks = {4,3,2,1};
         int cars = 10;
 
         System.out.println(answer.repairCars(ranks, cars));
@@ -18,6 +18,6 @@ public class MinimumTimeToRepairCars {
     }
 
     public long repairCars(int[] ranks, int cars) {
-        
+
     }
 }
