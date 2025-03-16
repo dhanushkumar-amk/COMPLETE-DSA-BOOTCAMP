@@ -1,2 +1,7 @@
-package SEARCHING;public class MinimumTimeToRepairCars {
+package SEARCHING;
+
+// leetcode: 2594
+
+
+public class MinimumTimeToRepairCars {
 }
