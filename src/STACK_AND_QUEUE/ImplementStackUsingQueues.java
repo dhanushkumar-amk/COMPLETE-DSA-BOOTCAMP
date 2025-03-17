@@ -18,7 +18,7 @@ public class ImplementStackUsingQueues {
 
 
     public void push(int x) {
-        
+
     }
 
     public int pop() {
@@ -34,3 +34,5 @@ public class ImplementStackUsingQueues {
     }
 
 }
+
+class M
