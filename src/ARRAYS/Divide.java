@@ -1,2 +1,6 @@
-package ARRAYS;public class Divide {
+package ARRAYS;
+
+public class Divide {
+
+        
 }
