@@ -25,7 +25,7 @@ public class DivideArrayIntoEqualPairs {
                 setPairs.add(element);
         }
 
-        if (setPairs.size() == 0)
+        if (setPairs.isEmpty())
             return true;
         return false;
     }
