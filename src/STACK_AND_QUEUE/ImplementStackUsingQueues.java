@@ -3,11 +3,15 @@ package STACK_AND_QUEUE;
 // leetcode: 225
 //https://leetcode.com/problems/implement-stack-using-queues/description/
 
+import LINKEDLIST.LinkedListCycle;
+
+import java.util.LinkedList;
+
 public class ImplementStackUsingQueues {
 
 
-    public void MyStack() {
-
+    public  MyStack() {
+        queue = new LinkedList<>();
     }
 
     public void push(int x) {
