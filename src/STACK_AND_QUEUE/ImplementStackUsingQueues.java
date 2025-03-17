@@ -6,16 +6,19 @@ package STACK_AND_QUEUE;
 import LINKEDLIST.LinkedListCycle;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class ImplementStackUsingQueues {
 
+      private Queue<Integer> queue;
 
-    public  MyStack() {
-        queue = new LinkedList<>();
-    }
+      public ImplementStackUsingQueues() {
+         queue = new LinkedList<>();
+     }
+
 
     public void push(int x) {
-
+        
     }
 
     public int pop() {
