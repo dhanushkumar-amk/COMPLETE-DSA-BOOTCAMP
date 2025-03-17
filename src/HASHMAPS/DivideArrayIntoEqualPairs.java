@@ -5,5 +5,12 @@ package HASHMAPS;
 
 public class DivideArrayIntoEqualPairs {
 
+    public static void main(String[] args) {
+        DivideArrayIntoEqualPairs answer = new DivideArrayIntoEqualPairs();
+            
+    }
 
+    public boolean divideArray(int[] nums) {
+
+    }
 }
