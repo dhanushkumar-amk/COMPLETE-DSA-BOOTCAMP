@@ -4,4 +4,8 @@ package ARRAYS;
 // https://leetcode.com/problems/find-pivot-index/description/
 
 public class FindPivotIndex {
+
+    public int pivotIndex(int[] nums) {
+
+    }
 }
