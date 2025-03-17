@@ -30,7 +30,7 @@ public class FindPivotIndex {
             if (leftSum == rightSum)
                 return i;
 
-            // update the leftSum
+            // update the leftSum next iteration
             leftSum += currentValue;
         }
         return -1;
