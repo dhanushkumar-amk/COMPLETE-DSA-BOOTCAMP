@@ -6,7 +6,7 @@ package STACK_AND_QUEUE;
 public class ImplementStackUsingQueues {
 
 
-    public MyStack() {
+    public void MyStack() {
 
     }
 
