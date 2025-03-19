@@ -6,5 +6,13 @@ package BITMANUPULATION;
 
 public class MinimumOperationsToMakeBinaryArrayElementsEqualToOneI {
 
+    public static void main(String[] args) {
+        int[] nums = {};
+        MinimumOperationsToMakeBinaryArrayElementsEqualToOneI answer = new MinimumOperationsToMakeBinaryArrayElementsEqualToOneI();
+        System.out.println(answer.minOperations(nums));
+    }
 
+    public int minOperations(int[] nums) {
+
+    }
 }
