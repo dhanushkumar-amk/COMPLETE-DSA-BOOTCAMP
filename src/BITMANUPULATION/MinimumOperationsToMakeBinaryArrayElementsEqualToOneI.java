@@ -1,2 +1,6 @@
-package BITMANUPULATION;public class MinimumOperationsToMakeBinaryArrayElementsEqualToOneI {
+package BITMANUPULATION;
+
+public class MinimumOperationsToMakeBinaryArrayElementsEqualToOneI {
+
+    
 }
