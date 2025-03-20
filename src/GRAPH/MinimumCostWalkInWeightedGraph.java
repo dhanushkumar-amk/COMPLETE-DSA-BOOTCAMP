@@ -5,5 +5,8 @@ package GRAPH;
 
 public class MinimumCostWalkInWeightedGraph {
 
+    public int[] minimumCost(int n, int[][] edges, int[][] query) {
+
+    }
 
 }
