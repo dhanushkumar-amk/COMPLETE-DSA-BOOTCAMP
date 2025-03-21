@@ -8,45 +8,49 @@ import java.util.*;
 public class FindAllPossibleRecipesFromGivenSupplies {
 
     public List<String> findAllRecipes(String[] recipes, List<List<String>> ingredients, String[] supplies) {
-        Map<String, List<String>> adj = new HashMap<>();
-        Map<String, Integer> indegree = new HashMap<>();
-        Set<String> supply = new HashSet<>(Arrays.asList(supplies));
+        Map<String, List<String>> graph = new HashMap<>(); // ingredient -> list of recipes
+        Map<String, Integer> indegree = new HashMap<>();   // recipe -> count of needed ingredients
+        Set<String> available = new HashSet<>(Arrays.asList(supplies));
+        List<String> result = new ArrayList<>();
 
-        // Initialize adjacency list and indegree map
+        // Step 1: Build graph and indegree map
         for (int i = 0; i < recipes.length; i++) {
-            indegree.put(recipes[i], 0);
-            for (String ingredient : ingredients.get(i)) {
-                if (!supply.contains(ingredient)) {
-                    adj.computeIfAbsent(ingredient, k -> new ArrayList<>()).add(recipes[i]);
-                    indegree.put(recipes[i], indegree.getOrDefault(recipes[i], 0) + 1);
+            String recipe = recipes[i];
+            indegree.put(recipe, ingredients.get(i).size());
+
+            List<String> recipeIngredients = ingredients.get(i);
+            for (String ing : recipeIngredients) {
+                List<String> recipeList = graph.get(ing);
+                if (recipeList == null) {
+                    recipeList = new ArrayList<>();
+                    graph.put(ing, recipeList);
+                }
+                recipeList.add(recipe);
+            }
+        }
+
+        // Step 2: Perform BFS
+        Queue<String> queue = new LinkedList<>();
+        for (String item : available) {
+            queue.add(item);
+        }
+
+        while (!queue.isEmpty()) {
+            String item = queue.poll();
+            if (!graph.containsKey(item)) continue;
+
+            List<String> recipesForItem = graph.get(item);
+            for (String recipe : recipesForItem) {
+                int count = indegree.get(recipe);
+                count--;
+                indegree.put(recipe, count);
+                if (count == 0) {
+                    result.add(recipe);
+                    queue.add(recipe);
                 }
             }
         }
 
-        // Initialize queue with recipes that have 0 indegree
-        Queue<String> q = new LinkedList<>();
-        for (Map.Entry<String, Integer> entry : indegree.entrySet()) {
-            if (entry.getValue() == 0) {
-                q.offer(entry.getKey());
-            }
-        }
-
-        // Perform topological sort using Kahn's algorithm
-        List<String> res = new ArrayList<>();
-        while (!q.isEmpty()) {
-            String currRecipe = q.poll();
-            res.add(currRecipe);
-
-            if (adj.containsKey(currRecipe)) {
-                for (String nextRecipe : adj.get(currRecipe)) {
-                    indegree.put(nextRecipe, indegree.get(nextRecipe) - 1);
-                    if (indegree.get(nextRecipe) == 0) {
-                        q.offer(nextRecipe);
-                    }
-                }
-            }
-        }
-
-        return res;
+        return result;
     }
 }
