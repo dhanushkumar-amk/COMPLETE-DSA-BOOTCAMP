@@ -6,4 +6,12 @@ package STACK_AND_QUEUE;
 
 
 public class LastStoneWeight {
+
+    public static void main(String[] args) {
+        
+    }
+
+    public int lastStoneWeight(int[] stones) {
+
+    }
 }
