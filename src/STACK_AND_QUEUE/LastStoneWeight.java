@@ -1,2 +1,8 @@
-package STACK_AND_QUEUE;public class LastStoneWeight {
+package STACK_AND_QUEUE;
+
+
+// leetcode : 1046
+
+
+public class LastStoneWeight {
 }
