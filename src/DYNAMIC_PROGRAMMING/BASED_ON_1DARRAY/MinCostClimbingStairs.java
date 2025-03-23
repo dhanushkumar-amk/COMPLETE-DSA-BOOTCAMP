@@ -6,4 +6,13 @@ package DYNAMIC_PROGRAMMING.BASED_ON_1DARRAY;
 
 
 public class MinCostClimbingStairs {
+
+
+    public static void main(String[] args) {
+        MinCostClimbingStairs answer = new MinCostClimbingStairs();
+    }
+
+    public int minCostClimbingStairs(int[] cost) {
+
+    }
 }
