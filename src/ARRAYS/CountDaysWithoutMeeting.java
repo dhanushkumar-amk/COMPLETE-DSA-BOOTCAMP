@@ -7,7 +7,9 @@ package ARRAYS;
 public class CountDaysWithoutMeeting {
 
     public static void main(String[] args) {
-        
+        int[][] meetings = {
+                {},
+        };
     }
 
     public int countDays(int days, int[][] meetings) {
