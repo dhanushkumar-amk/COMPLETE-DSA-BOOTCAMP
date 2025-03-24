@@ -13,7 +13,7 @@ public class CountDaysWithoutMeeting {
         int days = 10;
         CountDaysWithoutMeeting answer = new CountDaysWithoutMeeting();
 
-        System.out.println(answer.countDays(days, meetings)); // Expected Output: 4
+        System.out.println(answer.countDays(days, meetings));
     }
 
     public int countDays(int days, int[][] meetings) {
@@ -27,14 +27,14 @@ public class CountDaysWithoutMeeting {
             int start = meeting[0];
             int end = meeting[1];
 
-            // Count free days between last meeting and current meeting
+
             if (start > last + 1) {
                 freeDays += (start - last - 1);
             }
             last = Math.max(last, end);
         }
 
-        // Count free days after the last meeting
+
         if (days > last) {
             freeDays += (days - last);
         }
