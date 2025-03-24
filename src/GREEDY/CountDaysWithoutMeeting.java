@@ -4,6 +4,7 @@ package GREEDY;
 // leetcode 3169
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class CountDaysWithoutMeeting {
 
@@ -26,7 +27,7 @@ public class CountDaysWithoutMeeting {
         int n = meetings.length;
         int answer = 0;
 
-        Arrays.sort(meetings);
+        Collections.sort(meetings);
 
         int last = 1;
         for (int i = 0; i < n; i++) {
