@@ -10,8 +10,11 @@ public class CountDaysWithoutMeeting {
         int[][] meetings = {
                 {5, 7},
                 {1, 3},
-                {}
+                {9, 10},
         };
+
+        
+
     }
 
     public int countDays(int days, int[][] meetings) {
