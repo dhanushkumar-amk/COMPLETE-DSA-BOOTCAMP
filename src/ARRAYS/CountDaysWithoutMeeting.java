@@ -9,7 +9,8 @@ public class CountDaysWithoutMeeting {
     public static void main(String[] args) {
         int[][] meetings = {
                 {5, 7},
-                {},
+                {1, 3},
+                {}
         };
     }
 
