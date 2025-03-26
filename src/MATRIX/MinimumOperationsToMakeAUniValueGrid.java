@@ -9,7 +9,10 @@ public class MinimumOperationsToMakeAUniValueGrid {
 
 
     public static void main(String[] args) {
-
+        int[][] grid = {
+                {9, 2},
+                {},
+        };
     }
 
     public int minOperations(int[][] grid, int x) {
