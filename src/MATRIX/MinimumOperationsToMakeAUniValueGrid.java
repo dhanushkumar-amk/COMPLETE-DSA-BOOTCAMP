@@ -4,6 +4,7 @@ package MATRIX;
 // https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/description/?envType=daily-question&envId=2025-03-26
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class MinimumOperationsToMakeAUniValueGrid {
@@ -27,7 +28,14 @@ public class MinimumOperationsToMakeAUniValueGrid {
             }
         }
 
-        //
+        // sort the one D array
+        Collections.sort(oneDArray);
+
+        int n = oneDArray.size();
+        int middleValue = n / 2;
+
+        // count the steps required
+        
 
     }
 
