@@ -15,6 +15,10 @@ public class MinimumOperationsToMakeAUniValueGrid {
         };
 
         int x = 2;
+
+        MinimumOperationsToMakeAUniValueGrid answer = new MinimumOperationsToMakeAUniValueGrid();
+
+        System.out.println(answer.minOperations(grid, x));
     }
 
     public int minOperations(int[][] grid, int x) {
