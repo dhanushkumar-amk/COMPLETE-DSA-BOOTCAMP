@@ -6,4 +6,13 @@ package MATRIX;
 public class MinimumOperationsToMakeAUniValueGrid {
 
 
+    public static void main(String[] args) {
+        
+    }
+
+    public int minOperations(int[][] grid, int x) {
+
+    }
+
+
 }
