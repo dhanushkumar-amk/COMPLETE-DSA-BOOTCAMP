@@ -21,11 +21,13 @@ public class MinimumOperationsToMakeAUniValueGrid {
         // convert matrix into a 1D array
         for (int i = 0; i < grid.length; ++i) {
             for (int j = 0; j < grid[0].length; ++j) {
-                if (grid[i][j] % x != remainder)
+                if (grid[i][j] % x != remainder)  // not equal then return -1 because not make a unique values
                     return -1;
-                
+                oneDArray.add(grid[i][j]);
             }
         }
+
+        //
 
     }
 
