@@ -18,7 +18,14 @@ public class MinimumOperationsToMakeAUniValueGrid {
         List<Integer> oneDArray = new ArrayList<>();
         int remainder = grid[0][0] % x;
 
-        
+        // convert matrix into a 1D array
+        for (int i = 0; i < grid.length; ++i) {
+            for (int j = 0; j < grid[0].length; ++j) {
+                if (grid[i][j] % x != remainder)
+                    return -1;
+                
+            }
+        }
 
     }
 
