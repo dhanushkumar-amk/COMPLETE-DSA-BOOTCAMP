@@ -16,6 +16,8 @@ public class MinimumOperationsToMakeAUniValueGrid {
     public int minOperations(int[][] grid, int x) {
 
         List<Integer> oneDArray = new ArrayList<>();
+        int remainder = grid[0][0] % x;
+
         
 
     }
