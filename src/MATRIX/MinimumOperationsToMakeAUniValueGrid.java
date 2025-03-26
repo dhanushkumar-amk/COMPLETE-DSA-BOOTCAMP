@@ -35,7 +35,12 @@ public class MinimumOperationsToMakeAUniValueGrid {
         int middleValue = n / 2;
 
         // count the steps required
-        
+        int steps = 0;
+        for (int i = 0; i < n; ++i) {
+            steps += Math.abs(oneDArray.get(i) - oneDArray.get(middleValue)) / x;
+        }
+
+        return steps;
 
     }
 
