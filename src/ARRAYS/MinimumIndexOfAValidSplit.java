@@ -12,6 +12,7 @@ public class MinimumIndexOfAValidSplit {
         MinimumIndexOfAValidSplit answer = new MinimumIndexOfAValidSplit();
         List<Integer> nums = new ArrayList<>();
 
+        nums.add(2);
         nums.add()
 
         System.out.println(answer.minimumIndex(nums));
