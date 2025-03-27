@@ -9,6 +9,10 @@ public class MinimumIndexOfAValidSplit {
 
     public int minimumIndex(List<Integer> nums) {
 
+
     }
+
+
+    
 
 }
