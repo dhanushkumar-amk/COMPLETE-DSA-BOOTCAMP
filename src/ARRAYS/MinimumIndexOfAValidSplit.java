@@ -8,7 +8,14 @@ import java.util.*;
 public class MinimumIndexOfAValidSplit {
 
     public static void main(String[] args) {
-        
+
+        MinimumIndexOfAValidSplit answer = new MinimumIndexOfAValidSplit();
+        List<Integer> nums = new ArrayList<>();
+
+        nums.add()
+
+        System.out.println(answer.minimumIndex(nums));
+
     }
 
     public int minimumIndex(List<Integer> nums) {
