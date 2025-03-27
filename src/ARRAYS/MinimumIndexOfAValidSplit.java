@@ -16,6 +16,8 @@ public class MinimumIndexOfAValidSplit {
         nums.add(1);
         nums.add(3);
         nums.add(1);
+        nums.add(1);
+        nums.add(1);
         
 
         System.out.println(answer.minimumIndex(nums));
