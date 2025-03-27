@@ -13,6 +13,7 @@ public class MinimumIndexOfAValidSplit {
         List<Integer> nums = new ArrayList<>();
 
         nums.add(2);
+        nums.add(1);
         nums.add()
 
         System.out.println(answer.minimumIndex(nums));
