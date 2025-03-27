@@ -8,7 +8,9 @@ import java.util.*;
 public class MinimumIndexOfAValidSplit {
 
     public int minimumIndex(List<Integer> nums) {
-
+        int n = nums.size();
+        // Step-1: Find Majority element
+        int majority_element = mooresVotingAlgo(nums);
 
     }
 
