@@ -1,9 +1,10 @@
 package ARRAYS;
 
 // leetcode : 2780
-// 
+// https://leetcode.com/problems/minimum-index-of-a-valid-split/description/?envType=daily-question&envId=2025-03-27
 
 public class MinimumIndexOfAValidSplit {
 
+    
 
 }
