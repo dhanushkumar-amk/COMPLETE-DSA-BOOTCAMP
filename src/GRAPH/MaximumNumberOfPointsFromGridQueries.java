@@ -61,7 +61,9 @@ public class MaximumNumberOfPointsFromGridQueries {
             while (!minHeap.isEmpty()){
 
                 // take the top element in an minHeap (smallest element)
-                Triple current = minHeap.peek()
+                Triple current = minHeap.poll();
+                min
+
             }
         }
     }
