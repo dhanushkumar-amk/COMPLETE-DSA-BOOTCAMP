@@ -7,6 +7,7 @@ import java.util.*;
 
 public class MaximumNumberOfPointsFromGridQueries {
 
+    // for min heap [row, column]
     static class Pair {
         int first;
         int second;
@@ -18,6 +19,7 @@ public class MaximumNumberOfPointsFromGridQueries {
 
     }
 
+    // fro min heap [ value [row, column] ]
     static class Triple {
 
         int first;
@@ -36,7 +38,7 @@ public class MaximumNumberOfPointsFromGridQueries {
         for(int query : queries)
             sortedQueries.add(query);
 
-        Map<Integer, Integer> queryCount = new HashMap<>();
+        Map<Integer, Integer> queryCountMap = new HashMap<>();
 
         // create the minheap that compares the values in an grid
         PriorityQueue<Triple> minHeap = new PriorityQueue<>((a, b) -> a.first - b.first);
@@ -90,8 +92,16 @@ public class MaximumNumberOfPointsFromGridQueries {
 
                 }
             }
+            // put the count and the query
+            queryCountMap.put(query, count);
         }
-        
+
+        // create the result array
+        int[] resultArray = new int[queries.length];
+        for (int i = 0; i < queries.length; i++) {
+            resultArray[i] = queryCountMap.get(queries[i]);
+        }
+        return resultArray;
     }
 
 
