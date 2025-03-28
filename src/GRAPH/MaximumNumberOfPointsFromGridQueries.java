@@ -41,7 +41,27 @@ public class MaximumNumberOfPointsFromGridQueries {
         // create the minheap that compares the values in an grid
         PriorityQueue<Triple> minHeap = new PriorityQueue<>((a, b) -> a.first - b.first);
 
-        
+        int m = grid.length;
+        int n = grid[0].length;
+
+        // create the visited array
+        boolean[][] visited  = new boolean[m][n];
+
+        // added the first values of an grid to an minheap
+        // [2, 0, 0]
+        minHeap.add(new Triple(grid[0][0], new Pair(0,0)));
+
+        visited[0][0] = true;
+
+        int[] directions  = {-1, 0, 1, 0, -1};
+        int count = 0;
+
+        // travel the query and do bfs for every query
+        for(int query : sortedQueries){
+            while (!minHeap.isEmpty()){
+                
+            }
+        }
     }
 
 }
