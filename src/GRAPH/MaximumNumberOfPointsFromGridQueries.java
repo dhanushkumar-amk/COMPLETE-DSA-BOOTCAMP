@@ -5,9 +5,13 @@ package GRAPH;
 
 public class MaximumNumberOfPointsFromGridQueries {
 
+    static class Pair{
+        
+    }
+
     public int[] maxPoints(int[][] grid, int[] queries) {
 
-        
+
 
     }
 
