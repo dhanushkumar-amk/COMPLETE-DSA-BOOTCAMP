@@ -7,6 +7,20 @@ import java.util.*;
 
 public class MaximumNumberOfPointsFromGridQueries {
 
+
+    public static void main(String[] args) {
+        MaximumNumberOfPointsFromGridQueries answer = new MaximumNumberOfPointsFromGridQueries();
+
+        int[][]  grid  = {
+                {1, 2, 3},
+                {2, 5, 7},
+                {3, 5, 1},
+        };
+
+        int[] queries = 
+
+    }
+
     // for min heap [row, column]
     static class Pair {
         int first;
@@ -86,7 +100,7 @@ public class MaximumNumberOfPointsFromGridQueries {
                     int newColumn = column + directions[i + 1];
 
                     if (isValid(newRow, newColumn, m, n, visited)){
-                        visited[newRow][column] = true;
+                        visited[newRow][newColumn] = true;
                         minHeap.add(new Triple(grid[newRow][newColumn], new Pair(newRow, newColumn)));
                     }
 
