@@ -65,8 +65,8 @@ public class MaximumNumberOfPointsFromGridQueries {
 
                 // take the x and y of current element  heap = [ value, [x, y]] value = first [x, y] second
                 int value = currentElement.first;
-                int x = currentElement.second.first;
-                int y = currentElement.second.second;
+                int row = currentElement.second.first;
+                int column = currentElement.second.second;
 
                 // value is greater than query add it to heap back and break the loop
                 if (value >= query){
@@ -78,13 +78,23 @@ public class MaximumNumberOfPointsFromGridQueries {
                 count++;
             
                 // travel the four directions 
-                for (int i = 0; i < 4; i) {
-                    
+                for (int i = 0; i < 4; i++) {
+
+                    int newRow = row +  directions[i];
+                    int newColumn = column + directions[i + 1];
+
+                    if (isValid(newRow, newColumn, m, n, visited))
+
                 }
                 
 
             }
         }
+    }
+
+
+    boolean isValid(int row, int column, int m, int n, boolean[][] visited) {
+        return row >= 0 && row < m && column >= 0 && column < n && !visited[row][column];
     }
 
 }
