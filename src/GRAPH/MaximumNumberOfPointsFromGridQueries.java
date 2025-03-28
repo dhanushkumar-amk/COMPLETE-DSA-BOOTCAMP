@@ -83,13 +83,15 @@ public class MaximumNumberOfPointsFromGridQueries {
                     int newRow = row +  directions[i];
                     int newColumn = column + directions[i + 1];
 
-                    if (isValid(newRow, newColumn, m, n, visited))
+                    if (isValid(newRow, newColumn, m, n, visited)){
+                        visited[newRow][column] = true;
+                        minHeap.add(new Triple(grid[newRow][newColumn], new Pair(newRow, newColumn)));
+                    }
 
                 }
-                
-
             }
         }
+        
     }
 
 
