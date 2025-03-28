@@ -17,7 +17,8 @@ public class MaximumNumberOfPointsFromGridQueries {
                 {3, 5, 1},
         };
 
-        int[] queries = 
+        int[] queries = {5,6,2};
+        
 
     }
 
@@ -33,7 +34,7 @@ public class MaximumNumberOfPointsFromGridQueries {
 
     }
 
-    // fro min heap [ value [row, column] ]
+    // for min heap [ value [row, column] ]
     static class Triple {
 
         int first;
