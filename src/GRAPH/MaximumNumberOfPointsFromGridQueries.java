@@ -68,10 +68,20 @@ public class MaximumNumberOfPointsFromGridQueries {
                 int x = currentElement.second.first;
                 int y = currentElement.second.second;
 
+                // value is greater than query add it to heap back and break the loop
                 if (value >= query){
-                    minHeap.add()
+                    minHeap.add(currentElement);
+                    break;
                 }
-
+            
+                // if the value is less then the query increase the count;
+                count++;
+            
+                // travel the four directions 
+                for (int i = 0; i < 4; i) {
+                    
+                }
+                
 
             }
         }
