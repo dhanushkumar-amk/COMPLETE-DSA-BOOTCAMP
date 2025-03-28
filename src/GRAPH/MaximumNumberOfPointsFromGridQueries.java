@@ -59,7 +59,9 @@ public class MaximumNumberOfPointsFromGridQueries {
         // travel the query and do bfs for every query
         for(int query : sortedQueries){
             while (!minHeap.isEmpty()){
-                
+
+                // take the top element in an minHeap (smallest element)
+                Triple current = minHeap.peek()
             }
         }
     }
