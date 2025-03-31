@@ -21,7 +21,7 @@ public class MaximumNumberOfPointsFromGridQueries {
 
         int[] result = answer.maxPoints(grid, queries);
         for(int value : result)
-            System.out.println(value);
+            System.out.print(value + " ");
 
     }
 
