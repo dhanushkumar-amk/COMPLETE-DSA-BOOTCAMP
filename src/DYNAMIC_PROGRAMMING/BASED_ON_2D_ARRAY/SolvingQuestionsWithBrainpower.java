@@ -39,7 +39,10 @@ public class SolvingQuestionsWithBrainpower {
         if (memo[position] != -1)
             return memo[position];
 
-        
+        long exclude = helper(questions, position + 1, memo);
+        long include = questions[position][0] + helper(questions, position + questions[position][1] + 1, memo);
+        memo[position] = Math.max(exclude, include);
+        return memo[position];
 
     }
 }
