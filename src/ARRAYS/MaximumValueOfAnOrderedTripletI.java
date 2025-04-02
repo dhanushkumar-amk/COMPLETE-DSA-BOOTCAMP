@@ -6,4 +6,8 @@ package ARRAYS;
 
 public class MaximumValueOfAnOrderedTripletI {
 
+    public long maximumTripletValue(int[] nums){
+        
+    }
+
 }
