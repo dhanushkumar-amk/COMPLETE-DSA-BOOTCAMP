@@ -7,7 +7,10 @@ package ARRAYS;
 public class MaximumValueOfAnOrderedTripletI {
 
     public static void main(String[] args) {
-        
+        MaximumValueOfAnOrderedTripletI answer = new MaximumValueOfAnOrderedTripletI();
+        int[] nums ={12,6,1,2,7};
+
+        System.out.println(answer.maximumTripletValue(nums));
     }
 
     public long maximumTripletValue(int[] nums) {
