@@ -1,2 +1,5 @@
-package ARRAYS;public class MaximumValueOfAnOrderedTripletI {
+package ARRAYS;
+
+public class MaximumValueOfAnOrderedTripletI {
+
 }
