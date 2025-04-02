@@ -5,7 +5,22 @@ package DYNAMIC_PROGRAMMING.BASED_ON_2D_ARRAY;
 
 public class SolvingQuestionsWithBrainpower {
 
-    public long mostPoints(int[][] questions) {
+    public static void main(String[] args) {
+        SolvingQuestionsWithBrainpower answer = new SolvingQuestionsWithBrainpower();
+        int[][] questions = {
+                {3,2},
+                {4,3},
+                {4,4},
+                {2,5},
+        };
 
+        System.out.println(answer.mostPoints(questions));
+
+    }
+
+    public long mostPoints(int[][] questions) {
+        int n = questions.length;
+
+        
     }
 }
