@@ -2,7 +2,8 @@ package ARRAYS;
 
 
 // leetcode 2873 && 2874 both has same answer
-// https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/?envType=daily-question&envId=2025-04-02
+// https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/
+// https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/
 
 public class MaximumValueOfAnOrderedTripletIAndII {
 
