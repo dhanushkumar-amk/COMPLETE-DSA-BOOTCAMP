@@ -4,10 +4,10 @@ package ARRAYS;
 // leetcode 2873 && 2874 both has same answer
 // https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/?envType=daily-question&envId=2025-04-02
 
-public class MaximumValueOfAnOrderedTripletI {
+public class MaximumValueOfAnOrderedTripletIAndII {
 
     public static void main(String[] args) {
-        MaximumValueOfAnOrderedTripletI answer = new MaximumValueOfAnOrderedTripletI();
+        MaximumValueOfAnOrderedTripletIAndII answer = new MaximumValueOfAnOrderedTripletIAndII();
         int[] nums ={12,6,1,2,7};
 
         System.out.println(answer.maximumTripletValue(nums));
