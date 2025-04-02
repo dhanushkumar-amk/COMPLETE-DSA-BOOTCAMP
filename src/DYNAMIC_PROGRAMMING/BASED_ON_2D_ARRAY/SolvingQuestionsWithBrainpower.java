@@ -3,6 +3,8 @@ package DYNAMIC_PROGRAMMING.BASED_ON_2D_ARRAY;
 //leetcode : 2140
 // https://leetcode.com/problems/solving-questions-with-brainpower/description/?envType=daily-question&envId=2025-04-01
 
+import java.util.Arrays;
+
 public class SolvingQuestionsWithBrainpower {
 
     public static void main(String[] args) {
@@ -21,6 +23,23 @@ public class SolvingQuestionsWithBrainpower {
     public long mostPoints(int[][] questions) {
         int n = questions.length;
 
+        long[] memo = new long[n];
+        Arrays.fill(memo, -1);
+
+        return helper(questions, 0, memo);
+
+    }
+
+    private long helper(int[][] questions, int position, long[] memo) {
+
+        // base case
+        if (position >= questions.length)
+            return 0;
+
+        if (memo[position] != -1)
+            return memo[position];
+
         
+
     }
 }
