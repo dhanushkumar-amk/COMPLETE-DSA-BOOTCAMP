@@ -7,9 +7,9 @@ public class LowestCommonAncestorOfDeepestLeaves {
       TreeNode left;
       TreeNode right;
 
-      TreeNode() {}
+     TreeNode() {}
 
-      TreeNode(int val) {
+     TreeNode(int val) {
           this.val = val;
       }
 
@@ -17,13 +17,11 @@ public class LowestCommonAncestorOfDeepestLeaves {
           this.val = val;
           this.left = left;
           this.right = right;
-      }
-
+     }
   }
 
     public TreeNode lcaDeepestLeaves(TreeNode root) {
-
-        return root;
+          return root;
     }
 
 }
