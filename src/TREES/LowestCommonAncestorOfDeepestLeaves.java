@@ -18,10 +18,11 @@ public class LowestCommonAncestorOfDeepestLeaves {
           this.left = left;
           this.right = right;
       }
+
   }
 
     public TreeNode lcaDeepestLeaves(TreeNode root) {
-        
+
         return root;
     }
 
