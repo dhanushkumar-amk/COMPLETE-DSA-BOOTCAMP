@@ -5,4 +5,12 @@ package BITMANUPULATION;
 
 public class SumOfAllSubsetXORTotals {
 
+    public static void main(String[] args) {
+        int[] nums = {};
+    }
+
+    public int subsetXORSum(int[] nums) {
+
+    }
+
 }
