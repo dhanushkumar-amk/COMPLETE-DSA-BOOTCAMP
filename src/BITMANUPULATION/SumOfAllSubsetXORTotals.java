@@ -6,7 +6,12 @@ package BITMANUPULATION;
 public class SumOfAllSubsetXORTotals {
 
     public static void main(String[] args) {
-        int[] nums = {};
+
+        SumOfAllSubsetXORTotals answer = new SumOfAllSubsetXORTotals();
+        
+        int[] nums = {5,1,6};
+        System.out.println(answer.subsetXORSum(nums));
+
     }
 
     public int subsetXORSum(int[] nums) {
