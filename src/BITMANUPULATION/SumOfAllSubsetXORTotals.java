@@ -13,11 +13,11 @@ public class SumOfAllSubsetXORTotals {
 
     public int subsetXORSum(int[] nums) {
         int n = nums.length;
-        int orrValue = 0;
+        int xorValue = 0;
         for(int element : nums)
-            orrValue = orrValue | element;
+            xorValue = xorValue | element;
 
-        return orrValue * (1 << ( n - 1 ));
+        return xorValue * (1 << ( n - 1 ));
     }
 
 }
