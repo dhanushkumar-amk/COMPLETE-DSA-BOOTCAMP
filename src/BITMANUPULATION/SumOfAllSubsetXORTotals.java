@@ -6,16 +6,18 @@ package BITMANUPULATION;
 public class SumOfAllSubsetXORTotals {
 
     public static void main(String[] args) {
-
         SumOfAllSubsetXORTotals answer = new SumOfAllSubsetXORTotals();
-        
         int[] nums = {5,1,6};
         System.out.println(answer.subsetXORSum(nums));
-
     }
 
     public int subsetXORSum(int[] nums) {
+        int n = nums.length;
+        int orrValue = 0;
+        for(int element : nums)
+            orrValue = orrValue | element;
 
+        return orrValue * (1 << ( n - 1 ));
     }
 
 }
