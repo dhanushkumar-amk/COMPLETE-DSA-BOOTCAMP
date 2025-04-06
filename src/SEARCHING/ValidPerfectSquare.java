@@ -1,6 +1,10 @@
 package SEARCHING;
 
 public class ValidPerfectSquare {
+    public static void main(String[] args) {
+        ValidPerfectSquare answer = new ValidPerfectSquare();
+        System.out.println(answer.isPerfectSquare(36));
+    }
 
     public boolean isPerfectSquare(int num){
         if (num < 0)
