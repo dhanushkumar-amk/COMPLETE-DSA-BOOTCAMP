@@ -1,2 +1,7 @@
-package SEARCHING;public class ValidPerfectSquare {
+package SEARCHING;
+
+public class ValidPerfectSquare {
+
+    
+
 }
