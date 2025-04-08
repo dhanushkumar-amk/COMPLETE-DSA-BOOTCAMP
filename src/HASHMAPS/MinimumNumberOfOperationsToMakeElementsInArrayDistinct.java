@@ -49,48 +49,19 @@ public class MinimumNumberOfOperationsToMakeElementsInArrayDistinct {
 }
 
 /*
+import java.util.*;
+
 class Solution {
     public int minimumOperations(int[] nums) {
         int n = nums.length;
-        int[] hash = new int[101];
-
-        for (int num : nums) {
-            hash[num]++;
-        }
-
-        int answer = 0;
-        int index = 0;
-
-        while (!uniqueElement(hash)) {
-            int count = 3;
-            int tempIndex = index;
-
-            // Remove up to 3 duplicates
-            while (tempIndex < n && count > 0) {
-                int val = nums[tempIndex];
-                if (hash[val] > 1) {
-                    hash[val]--;
-                    count--;
-                }
-                tempIndex++;
+        Set<Integer> seen = new HashSet<>();
+        for (int i = n - 1; i >= 0; i--) {
+            if (seen.contains(nums[i])) {
+                return i / 3 + 1;
             }
-
-            // Advance index only after processing
-            index = tempIndex;
-            answer++;
+            seen.add(nums[i]);
         }
-
-        return answer;
-    }
-
-    private boolean uniqueElement(int[] hash) {
-        for (int i = 0; i < hash.length; i++) {
-            if (hash[i] > 1) {
-                return false;
-            }
-        }
-        return true;
+        return 0;
     }
 }
-
  */
