@@ -1,2 +1,8 @@
-package HASHMAPS;public class MinimumNumberOfOperationsToMakeElementsInArrayDistinct {
+package HASHMAPS;
+
+// leetcode 3396
+// 
+
+public class MinimumNumberOfOperationsToMakeElementsInArrayDistinct {
+
 }
