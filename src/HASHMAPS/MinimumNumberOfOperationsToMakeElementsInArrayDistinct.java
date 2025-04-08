@@ -47,3 +47,50 @@ public class MinimumNumberOfOperationsToMakeElementsInArrayDistinct {
     }
 
 }
+
+/*
+class Solution {
+    public int minimumOperations(int[] nums) {
+        int n = nums.length;
+        int[] hash = new int[101];
+
+        for (int num : nums) {
+            hash[num]++;
+        }
+
+        int answer = 0;
+        int index = 0;
+
+        while (!uniqueElement(hash)) {
+            int count = 3;
+            int tempIndex = index;
+
+            // Remove up to 3 duplicates
+            while (tempIndex < n && count > 0) {
+                int val = nums[tempIndex];
+                if (hash[val] > 1) {
+                    hash[val]--;
+                    count--;
+                }
+                tempIndex++;
+            }
+
+            // Advance index only after processing
+            index = tempIndex;
+            answer++;
+        }
+
+        return answer;
+    }
+
+    private boolean uniqueElement(int[] hash) {
+        for (int i = 0; i < hash.length; i++) {
+            if (hash[i] > 1) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+ */
