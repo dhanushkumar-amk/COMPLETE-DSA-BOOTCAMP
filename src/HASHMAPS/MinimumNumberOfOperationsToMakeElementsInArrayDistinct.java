@@ -5,4 +5,16 @@ package HASHMAPS;
 
 public class MinimumNumberOfOperationsToMakeElementsInArrayDistinct {
 
+    public static void main(String[] args) {
+
+        MinimumNumberOfOperationsToMakeElementsInArrayDistinct answer = new MinimumNumberOfOperationsToMakeElementsInArrayDistinct();
+        
+
+    }
+
+
+    public int minimumOperations(int[] nums) {
+
+    }
+
 }
