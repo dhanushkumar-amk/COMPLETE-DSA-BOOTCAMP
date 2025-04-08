@@ -29,7 +29,7 @@ public class MinimumNumberOfOperationsToMakeElementsInArrayDistinct {
         while (!uniqueElement(hash)){
             int count = 3;  // remove three elements maximum
 
-            while( index <= 10 && count-- > 0){
+            while( index <= n && count-- > 0){
                 hash[nums[index]]--;
                 index++;
             }
