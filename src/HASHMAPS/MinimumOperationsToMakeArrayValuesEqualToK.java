@@ -12,7 +12,8 @@ public class MinimumOperationsToMakeArrayValuesEqualToK {
 
         MinimumOperationsToMakeArrayValuesEqualToK answer = new MinimumOperationsToMakeArrayValuesEqualToK();
 
-        int [] nums = {};
+        int [] nums = {5,2,5,4,5};
+        System.out.println(answer.minOperations(nums, 2));
 
     }
 
