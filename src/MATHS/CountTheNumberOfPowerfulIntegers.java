@@ -10,11 +10,36 @@ public class CountTheNumberOfPowerfulIntegers {
         long start = 1;
         long finish = 6000;
         int limit = 4;
-        String s = 
+        String s = "124";
+
+        CountTheNumberOfPowerfulIntegers answer = new CountTheNumberOfPowerfulIntegers();
+
+        System.out.println(answer.numberOfPowerfulInt(start, finish, limit, s));
+
     }
 
     public long numberOfPowerfulInt(long start, long finish, int limit, String s) {
 
+        long suffix = Integer.parseInt(s);
+        long base = (long) Math.pow(10, s.length());
+
+        int count = 0;
+
+        for (long num = suffix; num <= finish; num += base) {
+            if (num >= start && isLimitedDigit(num, limit))
+                count++;
+        }
+        return count;
+    }
+
+    private boolean isLimitedDigit(long num, int limit) {
+
+        while (num > 0){
+            if (num % 10 > limit)
+                return false;
+            num /= 10;
+        }
+        return true;
     }
 
 }
