@@ -32,8 +32,8 @@ public class CountTheNumberOfPowerfulIntegers {
         return count;
     }
 
+    // if the digit is greater than limit return false
     private boolean isLimitedDigit(long num, int limit) {
-
         while (num > 0){
             if (num % 10 > limit)
                 return false;
