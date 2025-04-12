@@ -5,6 +5,14 @@ package MATHS;
 
 public class CountSymmetricIntegers {
 
+    public static void main(String[] args) {
+
+        CountSymmetricIntegers answer = new CountSymmetricIntegers();
+        System.out.println(answer.countSymmetricIntegers());
+
+    }
+
+
     public int countSymmetricIntegers(int low, int high) {
 
     }
