@@ -7,7 +7,10 @@ package MATHS;
 public class CountTheNumberOfPowerfulIntegers {
 
     public static void main(String[] args) {
-        long start = 
+        long start = 1;
+        long finish = 6000;
+        int limit = 4;
+        String s = 
     }
 
     public long numberOfPowerfulInt(long start, long finish, int limit, String s) {
