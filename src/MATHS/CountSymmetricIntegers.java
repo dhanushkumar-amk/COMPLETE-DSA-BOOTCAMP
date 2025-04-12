@@ -4,4 +4,9 @@ package MATHS;
 //https://leetcode.com/problems/count-symmetric-integers/description/?envType=daily-question&envId=2025-04-11
 
 public class CountSymmetricIntegers {
+
+    public int countSymmetricIntegers(int low, int high) {
+
+    }
+
 }
