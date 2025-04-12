@@ -10,57 +10,51 @@ import java.util.Arrays;
 public class CountTheNumberOfPowerfulIntegers {
 
 
-    public long numberOfPowerfulInt(long start, long finish, int limit, String s) {
-        return helper(finish, limit, s) - helper(start - 1, limit, s);
+    private Long[][] dp;
+    private String suffix;
+    private int limit;
+
+    public long numberOfPowerfulInt(long start, long finish, int limit, String suffix) {
+        this.limit = limit;
+        this.suffix = suffix;
+
+        long countToFinish = countValid(finish);
+        long countToStart = countValid(start - 1);
+        return countToFinish - countToStart;
     }
 
-    private long helper(long num, int limit, String s) {
-
-        String high = Integer.toString((int) num);
-        int n  = high.length();
-
-        if (s.length() > n)
-            return 0;
-
-        String low = "0".repeat(n - s.length()) + s;
-
-        long[] memo = new long[n];
-        Arrays.fill(memo, -1);
-
-        return dfsHelper(0, true, high, low, limit, s.length(), memo);
+    private long countValid(long num) {
+        if (num < Long.parseLong(suffix)) return 0;
+        String numStr = Long.toString(num);
+        dp = new Long[numStr.length()][2];
+        return dfs(0, true, numStr);
     }
 
-    private long dfsHelper(int i, boolean tight, String high, String full, int limit, int length, long[] memo) {
+    private long dfs(int idx, boolean tight, String num) {
+        if (idx == num.length())
+            return 1L;
 
-        if ( i == high.length())
-            return 1;
+        if (dp[idx][tight ? 1 : 0] != null)
+            return dp[idx][tight ? 1 : 0];
 
-        if (!tight && memo[i] != -1)
-            return memo[i];
+        long res = 0;
+        int maxDigit = tight ? num.charAt(idx) - '0' : 9;
 
+        int suffixStart = num.length() - suffix.length();
 
-        int lo = 0;
-        int hi = tight ? high.charAt(i) - '0' : 9;
-        long result = 0;
+        if (idx >= suffixStart) {
 
-        if (i < high.length() - length){
-            for (int digit  = lo; digit  <= Math.min(hi, limit); digit ++) {
-                result += dfsHelper(i + 1, tight && (digit == hi), high, full, limit, length, memo);
-            }
-        }else{
-            int position = 1 - (high.length() - length);
-            int digit = full.charAt(i) - '0';
+            int suffixIdx = idx - suffixStart;
+            int digit = suffix.charAt(suffixIdx) - '0';
+            if (digit <= maxDigit && digit <= limit)
+                res += dfs(idx + 1, tight && digit == maxDigit, num);
 
-            if (digit <= limit && digit >= lo && digit <= hi){
-                result += dfsHelper(i + 1, tight && (digit == hi), high, full, limit, length, memo);
+        } else {
+            for (int d = 0; d <= Math.min(maxDigit, limit); d++) {
+                res += dfs(idx + 1, tight && d == maxDigit, num);
             }
         }
-
-        if (!tight)
-            memo[i] = result;
-
-        return result;
-
+        return dp[idx][tight ? 1 : 0] = res;
     }
 
 }
