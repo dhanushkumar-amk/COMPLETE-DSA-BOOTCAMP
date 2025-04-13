@@ -11,20 +11,29 @@ public class CountGoodNumbers {
         System.out.println(answer.countGoodNumbers(4));
     }
 
-    final int MOD = 1000000007;
-    public int countGoodNumbers(long n) {
-        return (int)((binaryExponentiation(4, n / 2) * binaryExponentiation(5, n - n / 2)) % MOD);
+
+    public long helper(long base, long expo, long mod) {
+        long ans = 1;
+        while (expo > 0) {
+            if (expo % 2 == 0) {
+                base = (base * base) % mod;
+                expo = expo / 2;
+            } else {
+                ans = (ans * base) % mod;
+                expo -= 1;
+            }
+        }
+        return ans;
     }
 
-    private long binaryExponentiation(int base, long exp) {
-        long res = 1;
-        while (exp > 0) {
-            if ((exp & 1) == 1)
-                res = (res * base) % MOD;
-            base = (base * base) % MOD;
-            exp >>= 1;
-        }
-        return res;
+    public int countGoodNumbers(long n) {
+        if (n == 1) return 5;
+        long even = (n + 1) / 2;
+        long odd = n / 2;
+        long mod = 1000000007;
+        return (int) ((helper(5, even, mod) * helper(4, odd, mod)) % mod);
+
     }
 
 }
+
