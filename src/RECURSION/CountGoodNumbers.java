@@ -15,7 +15,7 @@ public class CountGoodNumbers {
         return (int)((binaryExponentiation(4, n / 2) * binaryExponentiation(5, n - n / 2)) % MOD);
     }
 
-    private Object binaryExponentiation(int i, long l) {
+    private long binaryExponentiation(int base, long exp) {
     }
 
 }
