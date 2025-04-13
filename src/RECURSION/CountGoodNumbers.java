@@ -12,9 +12,10 @@ public class CountGoodNumbers {
     }
 
     public int countGoodNumbers(long n) {
+        return (int)((binaryExponentiation(4, n / 2) * binaryExponentiation(5, n - n / 2)) % MOD);
+    }
 
-        return binaryExpotential(4, n/ 2) * 
-
+    private Object binaryExponentiation(int i, long l) {
     }
 
 }
