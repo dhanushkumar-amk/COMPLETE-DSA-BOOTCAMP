@@ -8,10 +8,12 @@ public class CountGoodNumbers {
 
     public static void main(String[] args) {
         CountGoodNumbers answer = new CountGoodNumbers();
-        System.out.println(answer.countGoodNumbers());
+        System.out.println(answer.countGoodNumbers(4));
     }
 
     public int countGoodNumbers(long n) {
+
+        return binaryExpotential(4, n/ 2) * 
 
     }
 
