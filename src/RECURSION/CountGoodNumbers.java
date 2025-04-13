@@ -6,6 +6,13 @@ package RECURSION;
 
 public class CountGoodNumbers {
 
-    
+    public static void main(String[] args) {
+        CountGoodNumbers answer = new CountGoodNumbers();
+        System.out.println(answer.countGoodNumbers());
+    }
+
+    public int countGoodNumbers(long n) {
+
+    }
 
 }
