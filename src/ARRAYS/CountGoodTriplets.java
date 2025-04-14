@@ -1,2 +1,4 @@
-package ARRAYS;public class CountGoodTriplets {
+package ARRAYS;
+
+public class CountGoodTriplets {
 }
