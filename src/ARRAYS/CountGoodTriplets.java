@@ -6,6 +6,11 @@ package ARRAYS;
 
 public class CountGoodTriplets {
 
+    public static void main(String[] args) {
+        CountGoodTriplets answer = new CountGoodTriplets();
+        int[] arr = {3,0,1,1,9,7};
+        System.out.println(answer.countGoodTriplets(arr, ));
+    }
 
     public int countGoodTriplets(int[] arr, int a, int b, int c) {
         int n = arr.length;
