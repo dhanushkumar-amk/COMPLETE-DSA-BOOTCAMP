@@ -9,7 +9,7 @@ public class CountGoodTriplets {
     public static void main(String[] args) {
         CountGoodTriplets answer = new CountGoodTriplets();
         int[] arr = {3,0,1,1,9,7};
-        System.out.println(answer.countGoodTriplets(arr, ));
+        System.out.println(answer.countGoodTriplets(arr, 7,2,3));
     }
 
     public int countGoodTriplets(int[] arr, int a, int b, int c) {
