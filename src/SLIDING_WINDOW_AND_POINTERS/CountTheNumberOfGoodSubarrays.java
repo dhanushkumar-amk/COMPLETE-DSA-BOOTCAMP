@@ -35,10 +35,17 @@ public class CountTheNumberOfGoodSubarrays {
             if (equalPairs >= k)
                 goodSubarray += n - right + 1;
 
-            frequency.
+            // Remove left item
+            long leftNum = nums[(int)left];
+            frequency.put(leftNum, frequency.get(leftNum) - 1);
 
+            if (frequency.get(leftNum) > 0) {
+                equalPairs -= frequency.get(leftNum);
+            }
+
+            left++;
         }
-
+    return  goodSubarray;
     }
 
 
