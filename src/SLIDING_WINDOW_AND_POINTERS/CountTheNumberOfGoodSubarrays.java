@@ -1,2 +1,5 @@
-package SLIDING_WINDOW_AND_POINTERS;public class CountTheNumberOfGoodSubarrays {
+package SLIDING_WINDOW_AND_POINTERS;
+
+public class CountTheNumberOfGoodSubarrays {
+    
 }
