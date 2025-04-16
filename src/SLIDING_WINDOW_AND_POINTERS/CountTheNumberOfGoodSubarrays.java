@@ -27,7 +27,7 @@ public class CountTheNumberOfGoodSubarrays {
                 frequency.put(num, frequency.getOrDefault(num, 0L) + 1);
 
                 if (frequency.get(num) >= 2)
-                    equalPairs
+                    equalPairs += frequency.get(num);
 
             }
         }
