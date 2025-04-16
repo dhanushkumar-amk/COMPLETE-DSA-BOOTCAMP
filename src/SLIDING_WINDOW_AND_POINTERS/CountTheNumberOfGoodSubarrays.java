@@ -19,7 +19,13 @@ public class CountTheNumberOfGoodSubarrays {
         long goodSubarray = 0;
         long equalPairs = 0;
 
-        HashMap<Long, Long> 
+        HashMap<Long, Long>  frequency = new HashMap<>();
+
+        while (left < n){
+            while (right < n && equalPairs < k){
+                
+            }
+        }
 
     }
 
