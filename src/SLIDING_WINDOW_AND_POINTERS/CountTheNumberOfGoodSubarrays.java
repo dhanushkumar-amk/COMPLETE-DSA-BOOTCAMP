@@ -26,7 +26,7 @@ public class CountTheNumberOfGoodSubarrays {
                 long num = nums[(int)right];
                 frequency.put(num, frequency.getOrDefault(num, 0L) + 1);
 
-                if (frequency)
+                if (frequency.get(num))
 
             }
         }
