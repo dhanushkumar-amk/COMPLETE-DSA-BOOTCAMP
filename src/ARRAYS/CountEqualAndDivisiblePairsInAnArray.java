@@ -4,7 +4,8 @@ public class CountEqualAndDivisiblePairsInAnArray {
 
     public static void main(String[] args) {
         CountEqualAndDivisiblePairsInAnArray ans = new CountEqualAndDivisiblePairsInAnArray();
-        
+        int[] nums = {3,1,2,2,2,1,3};
+        System.out.println(ans.countPairs(nums,2));
     }
 
     public int countPairs(int[] nums, int k) {
