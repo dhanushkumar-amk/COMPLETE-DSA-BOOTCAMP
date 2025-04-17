@@ -1,2 +1,8 @@
-package ARRAYS;public class CountEqualAndDivisiblePairsInAnArray {
+package ARRAYS;
+
+public class CountEqualAndDivisiblePairsInAnArray {
+
+
+    
+
 }
