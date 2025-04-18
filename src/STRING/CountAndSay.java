@@ -6,16 +6,12 @@ package STRING;
 public class CountAndSay {
 
     public static void main(String[] args) {
-
     CountAndSay answer = new CountAndSay();
     System.out.println(answer.countAndSay(4));
-
     }
 
     public String countAndSay(int n) {
-
         
-
     }
 
 }
