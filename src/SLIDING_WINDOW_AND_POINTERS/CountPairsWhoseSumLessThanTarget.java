@@ -11,7 +11,7 @@ public class CountPairsWhoseSumLessThanTarget {
     public static void main(String[] args) {
         CountPairsWhoseSumLessThanTarget answer = new CountPairsWhoseSumLessThanTarget();
         List<Integer> nums = new ArrayList<>();
-        
+
     }
 
     public int countPairs(List<Integer> nums, int target) {
