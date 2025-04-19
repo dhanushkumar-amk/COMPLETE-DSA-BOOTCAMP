@@ -1,7 +1,9 @@
- package SLIDING_WINDOW_AND_POINTERS; 
+package SLIDING_WINDOW_AND_POINTERS;
 
 public class CountPairsWhoseSumLessThanTarget {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
     }
+
+    
 }
