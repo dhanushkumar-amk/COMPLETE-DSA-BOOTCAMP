@@ -20,11 +20,8 @@ public class CountTheNumberOfFairPairs {
     }
 
     public long countFairPairs(int[] nums, int lower, int upper){
-
         Arrays.sort(nums);
-
         return helper(nums, upper + 1) - helper(nums, lower);
-
     }
 
     private long helper(int[] nums, int target){
@@ -41,7 +38,6 @@ public class CountTheNumberOfFairPairs {
             }else{
                 right--;
             }
-
         }
         return answer;
     }
