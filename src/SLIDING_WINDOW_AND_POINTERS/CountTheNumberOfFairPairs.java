@@ -1,5 +1,9 @@
 package SLIDING_WINDOW_AND_POINTERS;
 
+
+// https://leetcode.com/problems/count-the-number-of-fair-pairs/submissions/?envType=daily-question&envId=2025-04-19
+// leetcode  
+
 public class CountTheNumberOfFairPairs {
 
 
