@@ -12,7 +12,8 @@ public class CountTheNumberOfFairPairs {
 
         int[] nums = {0,1,7,4,4,5};
         int lower = 3;
-        int upper = 
+        int upper = 6;
+        
 
     }
 
