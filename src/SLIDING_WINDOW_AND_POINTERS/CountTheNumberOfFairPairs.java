@@ -22,8 +22,8 @@ public class CountTheNumberOfFairPairs {
 
     }
 
-    private  int helper(int[] nums, int target){
-        
+    private long helper(int[] nums, int target){
+
     }
 
     /*
