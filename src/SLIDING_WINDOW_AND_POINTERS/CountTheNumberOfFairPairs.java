@@ -2,11 +2,20 @@ package SLIDING_WINDOW_AND_POINTERS;
 
 
 // https://leetcode.com/problems/count-the-number-of-fair-pairs/submissions/?envType=daily-question&envId=2025-04-19
-// leetcode  
+// leetcode  2563;
 
 public class CountTheNumberOfFairPairs {
 
+    public static void main(String[] args) {
 
+        
+    }
+
+    public long countFairPairs(int[] nums, int lower, int upper){
+
+    }
+
+    /*
     public long countFairPairs(int[] nums, int lower, int upper) {
 
         long sum = 0;
@@ -19,5 +28,7 @@ public class CountTheNumberOfFairPairs {
         }
     return sum;
     }
+
+     */
 
 }
