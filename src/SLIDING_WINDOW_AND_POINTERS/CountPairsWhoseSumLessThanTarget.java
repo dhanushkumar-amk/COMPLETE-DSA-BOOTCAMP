@@ -17,10 +17,12 @@ public class CountPairsWhoseSumLessThanTarget {
 
         for (int i = 0; i < nums.size();i++) {
             for (int j = i + 1; j < nums.size(); j++) {
-                if (nums.get(i) + nums.get(j) <)
+                if (nums.get(i) + nums.get(j) < target)
+                    sum++;
             }
         }
 
+        return sum;
     }
 
 
