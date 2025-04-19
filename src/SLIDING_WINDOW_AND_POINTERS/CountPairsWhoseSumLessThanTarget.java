@@ -4,11 +4,14 @@ package SLIDING_WINDOW_AND_POINTERS;
 // https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description/
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CountPairsWhoseSumLessThanTarget {
     public static void main(String[] args) {
-
+        CountPairsWhoseSumLessThanTarget answer = new CountPairsWhoseSumLessThanTarget();
+        List<Integer> nums = new ArrayList<>();
+        
     }
 
     public int countPairs(List<Integer> nums, int target) {
