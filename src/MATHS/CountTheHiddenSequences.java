@@ -18,7 +18,7 @@ public class CountTheHiddenSequences {
         int min = 0;
 
         for (int i = 0; i < differences.length; i++) {
-            current *= differences[i];
+            current += differences[i];
             max = Math.max(max, current);
             min = Math.min(min, current);
 
