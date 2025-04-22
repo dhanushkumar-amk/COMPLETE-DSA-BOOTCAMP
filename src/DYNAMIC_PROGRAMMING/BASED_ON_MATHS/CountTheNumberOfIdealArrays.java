@@ -10,10 +10,12 @@ public class CountTheNumberOfIdealArrays {
         CountTheNumberOfIdealArrays answer = new CountTheNumberOfIdealArrays();
         int n = 2;
         int maxValue = 5;
-        System.out.println();
+        System.out.println(answer.idealArrays(n, maxValue));
     }
 
 
-    
+    public int idealArrays(int n, int maxValue) {
+
+    }
 
 }
