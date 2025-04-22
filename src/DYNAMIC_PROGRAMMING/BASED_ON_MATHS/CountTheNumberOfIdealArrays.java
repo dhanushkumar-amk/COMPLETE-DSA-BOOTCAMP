@@ -57,7 +57,7 @@ public class CountTheNumberOfIdealArrays {
             count = (count + dfsHelper(next, len - 1))  % MOD;
         }
 
-        return (int) count;
+        return memo[value][len] = (int) count;
     }
 
 }
