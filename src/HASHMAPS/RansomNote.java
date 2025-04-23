@@ -15,5 +15,18 @@ public class RansomNote {
 
     public boolean canConstruct(String ransomNote, String magazine) {
 
+        int[] charCount = new int[26];
+
+        for(char ch : magazine.toCharArray())
+            charCount[ch - 'a']++;
+
+        for(char character : ransomNote.toCharArray()){
+            if (charCount[character - 'a'] == 0)
+                return false;
+
+            charCount[character - 'a']--;
+
+        }
+        return true;
     }
 }
