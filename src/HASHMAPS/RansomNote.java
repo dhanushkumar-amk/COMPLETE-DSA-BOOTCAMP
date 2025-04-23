@@ -1,2 +1,8 @@
-package HASHMAPS;public class RansomNote {
+package HASHMAPS;
+
+
+// letocode : 
+
+public class RansomNote {
+
 }
