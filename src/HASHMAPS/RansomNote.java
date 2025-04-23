@@ -8,7 +8,9 @@ public class RansomNote {
 
     public static void main(String[] args) {
         RansomNote answer = new RansomNote();
-        String ransomNote = ""
+        String ransomNote = "aa";
+        String magazine = "abaababab";
+        System.out.println(answer.canConstruct(ransomNote, magazine));
     }
 
     public boolean canConstruct(String ransomNote, String magazine) {
