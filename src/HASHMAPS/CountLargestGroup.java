@@ -11,6 +11,19 @@ public class CountLargestGroup {
     }
 
     public int countLargestGroup(int n) {
-        
+        int[] hash =new int[40];
+        for (int i = 1; i <=n; i++) {
+            int ds = digitSum(i);
+            
+        }
+    }
+
+    private int digitSum(int num) {
+        int sum = 0;
+        while(num > 0){
+            sum += num % 10;
+            num /= 10;
+        }
+        return sum;
     }
 }
