@@ -13,6 +13,6 @@ public class CountCompleteSubarraysInAnArray {
     }
 
     public int countCompleteSubarrays(int[] nums) {
-        
+
     }
 }
