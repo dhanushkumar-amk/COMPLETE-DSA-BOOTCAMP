@@ -1,4 +1,4 @@
-package HASHMAPS;
+package STRING;
 
 
 // leetcode : 383
@@ -14,7 +14,6 @@ public class RansomNote {
     }
 
     public boolean canConstruct(String ransomNote, String magazine) {
-
         int[] charCount = new int[26];
 
         for(char ch : magazine.toCharArray())
