@@ -6,7 +6,13 @@ package SLIDING_WINDOW_AND_POINTERS;
 
 public class CountCompleteSubarraysInAnArray {
 
-    public int countCompleteSubarrays(int[] nums) {
+    public static void main(String[] args) {
+        CountCompleteSubarraysInAnArray ans = new CountCompleteSubarraysInAnArray();
+        int[] nums = {1,3,1,2,2};
+        System.out.println(ans.countCompleteSubarrays(nums));
+    }
 
+    public int countCompleteSubarrays(int[] nums) {
+        
     }
 }
