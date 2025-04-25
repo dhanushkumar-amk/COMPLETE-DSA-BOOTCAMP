@@ -30,7 +30,7 @@ public class CountOfInterestingSubarrays {
             sum += (nums.get(i) % modulo == k) ? 1 : 0;
             sum %= modulo;
 
-            int sp = (sum - k) % modulo;
+            int sp = (sum - k + modulo) % modulo;
             answer += map.getOrDefault(sp, 0);
 
             map.put(sum, map.getOrDefault(sum, 0) + 1);
