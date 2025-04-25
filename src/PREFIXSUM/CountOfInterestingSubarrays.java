@@ -10,7 +10,11 @@ public class CountOfInterestingSubarrays {
     public static void main(String[] args) {
         CountOfInterestingSubarrays answer = new CountOfInterestingSubarrays();
         List<Integer> nums = new ArrayList<>();
-        
+        nums.add(3);
+        nums.add(2);
+        nums.add(4);
+        int modulo =  int k
+
     }
 
     public long countInterestingSubarrays(List<Integer> nums, int modulo, int k) {
