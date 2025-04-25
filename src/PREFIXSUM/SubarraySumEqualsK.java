@@ -26,7 +26,7 @@ public class SubarraySumEqualsK {
             prefixSum += nums[i];
             int removeItems = prefixSum - k;
             count += map.get(removeItems);
-            map.get(prefixSum += 1);
+            map.put(prefixSum, prefixSum+=1);
         }
         return  count;
     }
