@@ -1,5 +1,8 @@
 package PREFIXSUM;
 
+// https://leetcode.com/problems/subarray-sum-equals-k/description/
+// leetcode 560
+
 public class SubarraySumEqualsK {
 
     public static void main(String[] args) {
@@ -11,6 +14,6 @@ public class SubarraySumEqualsK {
     }
 
     public int subarraySum(int[] nums, int k) {
-        
+
     }
 }
