@@ -3,6 +3,8 @@ package PREFIXSUM;
 // https://leetcode.com/problems/subarray-sum-equals-k/description/
 // leetcode 560
 
+import java.util.HashMap;
+
 public class SubarraySumEqualsK {
 
     public static void main(String[] args) {
@@ -14,6 +16,18 @@ public class SubarraySumEqualsK {
     }
 
     public int subarraySum(int[] nums, int k) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.put(0, 1);
 
+        int  prefixSum = 0;
+        int count = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            prefixSum += nums[i];
+            int removeItems = prefixSum - k;
+            count += map.get(removeItems);
+            map.get(prefixSum += 1);
+        }
+        return  count;
     }
 }
