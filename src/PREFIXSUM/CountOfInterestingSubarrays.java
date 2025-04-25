@@ -19,7 +19,23 @@ public class CountOfInterestingSubarrays {
     }
 
     public long countInterestingSubarrays(List<Integer> nums, int modulo, int k) {
-        
+       int n = nums.size();
+
+       Map<Integer, Integer> map = new HashMap<>();
+       map.put(0,1);
+
+       long answer = 0;
+       int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += (nums.get(i) % modulo == k) ? 1 : 0;
+            sum %= modulo;
+
+            int sp = (sum - k) % modulo;
+            answer += map.getOrDefault(sp, 0);
+
+            map.put(sum, map.getOrDefault(sum, 0) + 1);
+        }
+        return answer;
     }
 
 }
