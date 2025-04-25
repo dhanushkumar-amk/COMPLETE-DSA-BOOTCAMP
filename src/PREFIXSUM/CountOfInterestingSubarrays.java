@@ -13,12 +13,13 @@ public class CountOfInterestingSubarrays {
         nums.add(3);
         nums.add(2);
         nums.add(4);
-        int modulo =  int k
-
+        int modulo = 2;
+        int k = 1;
+        System.out.println(answer.countInterestingSubarrays(nums, modulo, k));
     }
 
     public long countInterestingSubarrays(List<Integer> nums, int modulo, int k) {
-
+        
     }
 
 }
