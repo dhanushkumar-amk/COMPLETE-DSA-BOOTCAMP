@@ -4,10 +4,7 @@ package SLIDING_WINDOW_AND_POINTERS;
 // leetcode 2799
 // https://leetcode.com/problems/count-complete-subarrays-in-an-array/description/?envType=daily-question&envId=2025-04-24
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class CountCompleteSubarraysInAnArray {
 
