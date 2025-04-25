@@ -19,7 +19,7 @@ public class CountOfInterestingSubarrays {
     }
 
     public long countInterestingSubarrays(List<Integer> nums, int modulo, int k) {
-        return 5;
+        
     }
 
 }
