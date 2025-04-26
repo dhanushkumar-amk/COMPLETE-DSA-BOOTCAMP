@@ -29,7 +29,6 @@ public class CountSubarraysWithFixedBounds {
                 maxIndex = i;
 
             answer += Math.max((Math.min(minIndex, maxIndex)-invalidIndex), 0);
-
         }
         return answer;
     }
