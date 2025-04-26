@@ -28,8 +28,8 @@ public class CountSubarraysWithFixedBounds {
             if (nums[i] == maxK)
                 maxIndex = i;
 
-             answer += Math.max((Math.max(minIndex, maxIndex)-invalidIndex), 0);
-//            answer+= count;
+            int count = Math.max((Math.max(minIndex, maxIndex)-invalidIndex), 0);
+            answer += count;
         }
         return answer;
     }
