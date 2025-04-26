@@ -12,6 +12,25 @@ public class CountSubarraysWithFixedBounds {
         System.out.println(answer.countSubarrays(nums, minK, maxK));
     }
     public long countSubarrays(int[] nums, int minK, int maxK) {
-        
+
+        long answer = 0;
+        int minIndex = -1;
+        int maxIndex = -1;
+        int invalidIndex = -1;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > maxK || nums[i] < minK)
+                invalidIndex = i;
+
+            if (nums[i] == minK)
+                minIndex = i;
+
+            if (nums[i] == maxK)
+                maxIndex = i;
+
+             answer += Math.max((Math.max(minIndex, maxIndex)-invalidIndex), 0);
+//            answer+= count;
+        }
+        return answer;
     }
 }
