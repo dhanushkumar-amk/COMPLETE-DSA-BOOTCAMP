@@ -4,4 +4,13 @@ package SLIDING_WINDOW_AND_POINTERS;
 // https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/?envType=daily-question&envId=2025-04-26
 
 public class CountSubarraysWithFixedBounds {
+
+
+    public static void main(String[] args) {
+        
+    }
+
+    public long countSubarrays(int[] nums, int minK, int maxK) {
+
+    }
 }
