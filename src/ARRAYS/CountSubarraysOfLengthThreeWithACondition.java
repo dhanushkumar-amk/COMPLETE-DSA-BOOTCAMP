@@ -9,6 +9,7 @@ public class CountSubarraysOfLengthThreeWithACondition {
     public static void main(String[] args) {
         CountSubarraysOfLengthThreeWithACondition answer = new CountSubarraysOfLengthThreeWithACondition();
         int[] nums = {1,2,1,4,1};
+        System.out.println(answer.countSubarrays(nums));
     }
 
     public int countSubarrays(int[] nums) {
