@@ -24,9 +24,14 @@ public class FindNumbersWithEvenNumberOfDigits {
     }
 
     private boolean isEvenNumber(int num) {
-
-        while (num != 0){
-            int 
+        int count = 0;
+        while (num > 0){
+            count++;
+            num /= 10;
         }
+        if (count % 2 == 0)
+            return true;
+        else
+            return false;
     }
 }
