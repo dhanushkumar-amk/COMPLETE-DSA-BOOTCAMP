@@ -14,24 +14,21 @@ public class FindNumbersWithEvenNumberOfDigits {
     }
 
 
-    public int findNumbers(int[] nums){
+    public int findNumbers(int[] nums) {
         int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (isEvenNumber(i))
-                count++;
+        for(int num : nums){
+            if(even(num)) count++;
         }
         return count;
     }
 
-    private boolean isEvenNumber(int num) {
+    static  boolean even(int num){
         int count = 0;
-        while (num > 0){
+        while(num > 0){
             count++;
             num /= 10;
         }
-        if (count % 2 == 0)
-            return true;
-        else
-            return false;
+        if(count % 2 == 0) return true;
+        else  return  false;
     }
 }
