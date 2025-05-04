@@ -11,7 +11,10 @@ public class NumberOfEquivalentDominoPairs {
                 {5, 6}
         };
 
-        System.out.println();
+        System.out.println(answer.numEquivDominoPairs(dominoes));
+
+    }
+    public int numEquivDominoPairs(int[][] dominoes) {
 
     }
 }
