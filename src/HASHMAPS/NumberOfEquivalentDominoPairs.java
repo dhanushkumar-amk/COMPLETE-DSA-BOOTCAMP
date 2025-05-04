@@ -15,6 +15,19 @@ public class NumberOfEquivalentDominoPairs {
 
     }
     public int numEquivDominoPairs(int[][] dominoes) {
+        int n = dominoes.length;
+        int result = 0;
+        int[] sum = new int[100];
+        for (int i = 0; i < n; i++) {
+            int value;
+            if (dominoes[i][0] < dominoes[i][1])
+                value = 10 * dominoes[i][0] + dominoes[i][1];
+            else
+                value = 10 * dominoes[i][1] + dominoes[i][0];
 
+            result += sum[value];
+            sum[value]++;
+        }
+        return result;
     }
 }
