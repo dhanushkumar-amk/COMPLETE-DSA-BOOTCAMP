@@ -5,6 +5,13 @@ package ARRAYS;
 
 public class BuildArrayFromPermutation {
 
+    public static void main(String[] args) {
+        BuildArrayFromPermutation answer = new BuildArrayFromPermutation();
+        int[] nums = {0,2,1,5,3,4};
+
+        int[] result  = 
+    }
+
     public int[] buildArray(int[] nums) {
 
     }
