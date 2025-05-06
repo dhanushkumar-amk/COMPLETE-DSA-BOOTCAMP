@@ -19,6 +19,9 @@ public class BuildArrayFromPermutation {
         int n = nums.length;
         int[] answer = new int[n];
         for (int num : nums)
+            answer[num] = nums[nums[num]];
+
+        return answer;
     }
 
 }
