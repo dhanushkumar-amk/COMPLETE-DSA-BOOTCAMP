@@ -4,4 +4,9 @@ package ARRAYS;
 //leetcode : 1920
 
 public class BuildArrayFromPermutation {
+
+    public int[] buildArray(int[] nums) {
+
+    }
+
 }
