@@ -5,8 +5,13 @@ package GRAPH;
 
 public class FindMinimumTimeToReachLastRoomI {
     public static void main(String[] args) {
+    }
 
+    public int minTimeToReach(int[][] moveTime) {
+        int n = moveTime.length;
+        int m = moveTime[0].length;
 
         
+
     }
 }
