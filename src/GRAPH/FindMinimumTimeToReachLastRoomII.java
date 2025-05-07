@@ -1,7 +1,7 @@
- package GRAPH; 
+package GRAPH;
 
 public class FindMinimumTimeToReachLastRoomII {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
     }
 }
