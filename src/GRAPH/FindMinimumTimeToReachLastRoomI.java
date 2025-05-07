@@ -43,7 +43,8 @@ public class FindMinimumTimeToReachLastRoomI {
                 int newRow = row + directions[i];
                 int newCol = col + directions[i + 1];
 
-                if (newRow > 0)
+                if (newRow >= 0 && newRow < n && newCol >= 0 && newCol < m)
+                    
             }
 
 
