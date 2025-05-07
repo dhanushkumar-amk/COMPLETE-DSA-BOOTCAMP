@@ -4,6 +4,7 @@ package GRAPH;
 // leetcode : 3341
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 public class FindMinimumTimeToReachLastRoomI {
     public static void main(String[] args) {
@@ -19,7 +20,8 @@ public class FindMinimumTimeToReachLastRoomI {
 
         visited[0][0] = 0;
 
-        
+
+        PriorityQueue<>
 
 
     }
