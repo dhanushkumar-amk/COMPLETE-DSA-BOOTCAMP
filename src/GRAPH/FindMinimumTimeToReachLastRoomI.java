@@ -33,7 +33,11 @@ public class FindMinimumTimeToReachLastRoomI {
             int row = minElement[1];
             int col = minElement[2];
 
-            if ()
+            if (row == n - 1 && col == m - 1)
+                return totalTime;
+
+            
+
 
         }
 
