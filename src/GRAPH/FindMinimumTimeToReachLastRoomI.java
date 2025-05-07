@@ -21,7 +21,7 @@ public class FindMinimumTimeToReachLastRoomI {
         visited[0][0] = 0;
 
 
-        PriorityQueue<int[]  >
+        PriorityQueue<int[]> priorityQueue = new PriorityQueue<>((a, b) -> )
 
 
     }
