@@ -36,6 +36,9 @@ public class FindMinimumTimeToReachLastRoomI {
             if (row == n - 1 && col == m - 1)
                 return totalTime;
 
+            if (totalTime > visited[row][col])
+                continue;
+
             
 
 
