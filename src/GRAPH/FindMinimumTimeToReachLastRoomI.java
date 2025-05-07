@@ -27,7 +27,7 @@ public class FindMinimumTimeToReachLastRoomI {
         int[] directions  = {-1, 0, 1, 0, -1};
         while (!priorityQueue.isEmpty()){
 
-            int 
+            int
 
         }
 
