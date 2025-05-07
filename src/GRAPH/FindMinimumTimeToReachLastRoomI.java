@@ -11,7 +11,7 @@ public class FindMinimumTimeToReachLastRoomI {
         int n = moveTime.length;
         int m = moveTime[0].length;
 
-        int[]
+        int[][] visited = new int[][]
 
     }
 }
