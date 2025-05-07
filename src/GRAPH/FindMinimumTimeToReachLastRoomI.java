@@ -28,7 +28,8 @@ public class FindMinimumTimeToReachLastRoomI {
         while (!priorityQueue.isEmpty()){
 
             int[] minElement = priorityQueue.poll();
-            
+
+            int totalTime = 
 
         }
 
