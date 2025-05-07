@@ -30,7 +30,10 @@ public class FindMinimumTimeToReachLastRoomI {
             int[] minElement = priorityQueue.poll();
 
             int totalTime = minElement[0];
-            
+            int row = minElement[1];
+            int col = minElement[2];
+
+            if ()
 
         }
 
