@@ -52,10 +52,7 @@ public class FindMinimumTimeToReachLastRoomI {
                     }
                 }
             }
-
-
         }
-
 
     }
 }
