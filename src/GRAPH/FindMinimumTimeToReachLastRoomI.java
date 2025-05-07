@@ -22,7 +22,9 @@ public class FindMinimumTimeToReachLastRoomI {
 
 
         PriorityQueue<int[]> priorityQueue = new PriorityQueue<>((a, b) -> a[0]- b[0]);
-        priorityQueue.offer(new int[] {})
+        priorityQueue.offer(new int[] {0,0,0});
+
+        
 
 
     }
