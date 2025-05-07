@@ -43,9 +43,10 @@ public class FindMinimumTimeToReachLastRoomI {
                 int newRow = row + directions[i];
                 int newCol = col + directions[i + 1];
 
-                if (newRow >= 0 && newRow < n && newCol >= 0 && newCol < m)
+                if (newRow >= 0 && newRow < n && newCol >= 0 && newCol < m) {
                     int time = Math.max(moveTime[newRow][newCol], visited[row][col]) + 1;
 
+                }
             }
 
 
