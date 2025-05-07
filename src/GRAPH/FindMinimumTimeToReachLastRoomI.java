@@ -39,7 +39,9 @@ public class FindMinimumTimeToReachLastRoomI {
             if (totalTime > visited[row][col])
                 continue;
 
-            
+            for (int i = 0; i < 4; i++) {
+                int newRow = row + visited
+            }
 
 
         }
