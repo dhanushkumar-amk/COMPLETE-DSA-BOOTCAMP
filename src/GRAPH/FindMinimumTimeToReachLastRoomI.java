@@ -17,6 +17,7 @@ public class FindMinimumTimeToReachLastRoomI {
         for(var row : visited)
             Arrays.fill(row, Integer.MAX_VALUE);
 
+        
 
 
     }
