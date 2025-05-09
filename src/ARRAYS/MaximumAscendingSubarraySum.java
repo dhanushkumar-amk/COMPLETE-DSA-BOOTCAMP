@@ -21,7 +21,4 @@ public class MaximumAscendingSubarraySum {
 
         return sum;
     }
-
-    public MaximumAscendingSubarraySum() {
-    }
 }
