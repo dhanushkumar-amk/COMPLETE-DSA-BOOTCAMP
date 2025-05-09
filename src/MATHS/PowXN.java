@@ -11,7 +11,13 @@ public class PowXN {
         System.out.println(answer.myPow(x, n));
     }
 
-    public double myPow(double x, int n) {
-        return (double) Math.pow(x, n);
+    public double myPow(double x, int n){
+        
     }
 }
+
+/*
+ public double myPow(double x, int n) {
+        return (double) Math.pow(x, n);
+    }
+ */
