@@ -5,11 +5,13 @@ package MATHS;
 
 public class PowXN {
     public static void main(String[] args) {
+        PowXN answer = new PowXN();
         double x = 2.00000;
-        int n = 
+        int n = 10;
+        System.out.println(answer.myPow(x, n));
     }
 
     public double myPow(double x, int n) {
-
+        return (double) Math.pow(x, n);
     }
 }
