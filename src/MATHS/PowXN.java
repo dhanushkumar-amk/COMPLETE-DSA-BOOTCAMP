@@ -12,16 +12,16 @@ public class PowXN {
     }
 
     public double myPow(double x, int y){
-        y = Math.abs(y);
+       int n = Math.abs(y);
         double answer = 1.0;
-        while (y >= 1){
-            if (y % 2 == 1)
-                answer *= y;
+        while (n >= 1){
+            if (n % 2 == 1)
+                answer *= n;
 
-            y /= 2;
+            n /= 2;
             x *= x;
         }
-        return answer;
+        return y < 0 ? 1/answer : answer;
     }
 }
 
