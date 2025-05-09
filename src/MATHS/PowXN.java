@@ -1,2 +1,4 @@
-package MATHS;public class PowXN {
+package MATHS;
+
+public class PowXN {
 }
