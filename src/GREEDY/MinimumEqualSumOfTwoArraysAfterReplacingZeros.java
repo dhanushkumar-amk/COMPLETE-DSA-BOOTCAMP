@@ -29,10 +29,10 @@ public class MinimumEqualSumOfTwoArraysAfterReplacingZeros {
 
         for (int i = 0; i < n2; i++) {
             if (nums2[i] == 0) {
-                zeroCount1++;
+                zeroCount2++;
                 nums2[i] = 1;
             }
-            sum1 += nums2[i];
+            sum2 += nums2[i];
         }
 
         if ((sum1 < sum2 && zeroCount1 == 0) || (sum1 > sum2 && zeroCount2 == 0))
