@@ -10,7 +10,7 @@ public class MaximumAscendingSubarraySum {
 
     public int maxAscendingSum(int[] nums) {
         int sum = 0;
-
+        return 5;
     }
 
 }
