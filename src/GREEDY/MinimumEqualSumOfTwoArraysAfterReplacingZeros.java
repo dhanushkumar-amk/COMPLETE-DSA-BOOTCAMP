@@ -7,7 +7,8 @@ package GREEDY;
 public class MinimumEqualSumOfTwoArraysAfterReplacingZeros {
     public static void main(String[] args) {
         MinimumEqualSumOfTwoArraysAfterReplacingZeros answer = new MinimumEqualSumOfTwoArraysAfterReplacingZeros();
-        int[] nums1 = {};
+        int[] nums1 = {3,2,0,1,0};
+        int[] nums2 = {}
     }
 
     public long minSum(int[] nums1, int[] nums2) {
