@@ -11,6 +11,8 @@ public class TotalCharactersInStringAfterTransformationsI {
         System.out.println(answer.lengthAfterTransformations(s,t));
     }
 
+    int MOD = 1e9+7;
+    
     public int lengthAfterTransformations(String s, int t) {
 
     }
