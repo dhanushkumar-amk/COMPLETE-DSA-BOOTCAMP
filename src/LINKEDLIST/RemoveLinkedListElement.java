@@ -12,7 +12,7 @@ public class RemoveLinkedListElement {
 
 
     public ListNode removeElements(ListNode head, int val) {
-
+        
     }
 
 }
