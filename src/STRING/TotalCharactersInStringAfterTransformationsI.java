@@ -15,7 +15,8 @@ public class TotalCharactersInStringAfterTransformationsI {
     private static final int MOD = 1_000_000_007;
     public int lengthAfterTransformations(String s, int t) {
 
-        
+        int[] frequency = new int[26];
+        f
 
     }
 }
