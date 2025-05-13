@@ -1,2 +1,4 @@
-package LINKEDLIST;public class IntersectionOfTwoLinkedLists {
+package LINKEDLIST;
+
+public class IntersectionOfTwoLinkedLists {
 }
