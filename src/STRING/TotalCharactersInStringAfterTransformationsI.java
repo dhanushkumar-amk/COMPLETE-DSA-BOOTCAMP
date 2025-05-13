@@ -11,9 +11,11 @@ public class TotalCharactersInStringAfterTransformationsI {
         System.out.println(answer.lengthAfterTransformations(s,t));
     }
 
-    
 
+    private static final int MOD = 1_000_000_007;
     public int lengthAfterTransformations(String s, int t) {
+
+        
 
     }
 }
