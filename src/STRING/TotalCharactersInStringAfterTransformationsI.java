@@ -27,11 +27,17 @@ public class TotalCharactersInStringAfterTransformationsI {
                 } else {
                     // 'z' → 'a' and also contributes to 'b'
                     next[0] = frequency[25];
-                    next[1] = addMod(next[1], freq[25]);
+                    next[1] = addMod(next[1], frequency[25]);
                 }
             }
-            freq = next;
+            frequency = next;
         }
 
+    }
+
+    private int addMod(int a, int b) {
+        a += b;
+        if (a >= MOD) a -= MOD;
+        return a;
     }
 }
