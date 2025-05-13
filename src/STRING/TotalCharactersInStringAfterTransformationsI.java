@@ -7,7 +7,8 @@ public class TotalCharactersInStringAfterTransformationsI {
     public static void main(String[] args) {
         TotalCharactersInStringAfterTransformationsI answer = new TotalCharactersInStringAfterTransformationsI();
         String s = "abcyy";
-        
+        int t = 2;
+        System.out.println(answer.lengthAfterTransformations(s,t));
     }
 
     public int lengthAfterTransformations(String s, int t) {
