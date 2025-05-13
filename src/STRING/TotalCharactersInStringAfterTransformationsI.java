@@ -19,8 +19,18 @@ public class TotalCharactersInStringAfterTransformationsI {
         for(char c : s.toCharArray())
             frequency[c - 'a']++;
 
-        for (int i = 0; i < t; i++) {
-            
+        while (t-- > 0) {
+            int[] next = new int[26];
+            for (int j = 0; j < 26; j++) {
+                if (j < 25) {
+                    next[j + 1] = frequency[j];
+                } else {
+                    // 'z' → 'a' and also contributes to 'b'
+                    next[0] = frequency[25];
+                    next[1] = addMod(next[1], freq[25]);
+                }
+            }
+            freq = next;
         }
 
     }
