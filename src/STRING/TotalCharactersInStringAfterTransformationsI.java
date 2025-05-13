@@ -16,7 +16,8 @@ public class TotalCharactersInStringAfterTransformationsI {
     public int lengthAfterTransformations(String s, int t) {
 
         int[] frequency = new int[26];
-        f
+        for(char c : s.toCharArray())
+            frequency[c-'a']++;
 
     }
 }
