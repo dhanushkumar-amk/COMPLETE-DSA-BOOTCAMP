@@ -32,7 +32,11 @@ public class TotalCharactersInStringAfterTransformationsI {
             }
             frequency = next;
         }
-
+        int result = 0;
+        for (int x : frequency) {
+            result = addMod(result, x);
+        }
+        return result;
     }
 
     private int addMod(int a, int b) {
