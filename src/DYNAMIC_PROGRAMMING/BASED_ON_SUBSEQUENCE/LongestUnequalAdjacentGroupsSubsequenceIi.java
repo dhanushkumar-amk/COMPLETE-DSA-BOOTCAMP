@@ -12,8 +12,8 @@ public class LongestUnequalAdjacentGroupsSubsequenceIi {
 
     public static void main(String[] args) {
         LongestUnequalAdjacentGroupsSubsequenceIi answer = new LongestUnequalAdjacentGroupsSubsequenceIi();
-        String[] words = {"a","b","c","d"};
-        int[] groups = {1,2,3,4};
+        String[] words = {"a", "b", "c", "d"};
+        int[] groups = {1, 2, 3, 4};
         System.out.println(answer.getWordsInLongestSubsequence(words, groups));
     }
 
@@ -39,13 +39,14 @@ public class LongestUnequalAdjacentGroupsSubsequenceIi {
 
         }
 
-            List<String> answer = new ArrayList<>();
-            for (int j = mxIndex; j >= 0 ; j = prev[i]) {
-                answer.add(words[i]);
-            }
-            Collections.reverse(answer);
-            return answer;
+        List<String> answer = new ArrayList<>();
+        for (int j = mxIndex; j >= 0; j = prev[i]) {
+            answer.add(words[i]);
+        }
+        Collections.reverse(answer);
+        return answer;
     }
+}
 
 
     private boolean check(String s1, String s2){
