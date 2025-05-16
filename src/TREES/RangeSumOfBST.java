@@ -18,14 +18,13 @@ public class RangeSumOfBST {
       }
   }
 
-    public static void main(String[] args) {
 
-    }
 
     public int rangeSumBST(TreeNode root, int low, int high) {
 
         int sum = 0;
 
+        // base case
         if (root == null)
             return 0;
 
