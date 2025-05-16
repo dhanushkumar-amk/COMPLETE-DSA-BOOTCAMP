@@ -11,6 +11,7 @@ public class LongestUnequalAdjacentGroupsSubsequenceIi {
         LongestUnequalAdjacentGroupsSubsequenceIi answer = new LongestUnequalAdjacentGroupsSubsequenceIi();
         String[] words = {"a","b","c","d"};
         int[] groups = {1,2,3,4};
+        System.out.println(answer.getWordsInLongestSubsequence(words, groups));
     }
 
     public List<String> getWordsInLongestSubsequence(String[] words, int[] groups) {
