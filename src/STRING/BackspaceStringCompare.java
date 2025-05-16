@@ -13,7 +13,26 @@ public class BackspaceStringCompare {
     }
 
     public boolean backspaceCompare(String s, String t) {
+        return getActualStringFunction(s).equals(getActualStringFunction(t));
+    }
 
+    private String getActualStringFunction(String input){
+
+        StringBuilder answer = new StringBuilder();
+        int hashCount = 0;
+
+        for(int i = input.length() - 1; i >= 0; i--){
+            if(input.charAt(i) == '#'){
+                hashCount++;
+                continue;
+            }
+
+            if (hashCount > 0)
+                hashCount--;
+            else
+                answer.insert(0, input.charAt(i));
+        }
+        return answer.toString();
     }
 
 }
