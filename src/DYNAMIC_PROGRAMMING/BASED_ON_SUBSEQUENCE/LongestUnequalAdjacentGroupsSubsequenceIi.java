@@ -9,7 +9,8 @@ public class LongestUnequalAdjacentGroupsSubsequenceIi {
 
     public static void main(String[] args) {
         LongestUnequalAdjacentGroupsSubsequenceIi answer = new LongestUnequalAdjacentGroupsSubsequenceIi();
-        String[] words = 
+        String[] words = {"a","b","c","d"};
+        int[] groups = {1,2,3,4};
     }
 
     public List<String> getWordsInLongestSubsequence(String[] words, int[] groups) {
