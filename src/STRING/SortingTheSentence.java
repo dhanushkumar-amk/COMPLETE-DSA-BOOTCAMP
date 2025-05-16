@@ -31,5 +31,13 @@ public class SortingTheSentence {
             answer.append(" ");
         }
         return answer.toString().trim();
+
+        /*
+        * String answer = map.values().stream().map(string -> string + " ").collect(Collectors.joining());
+        return answer.trim();
+        * */
+
     }
 }
+
+
