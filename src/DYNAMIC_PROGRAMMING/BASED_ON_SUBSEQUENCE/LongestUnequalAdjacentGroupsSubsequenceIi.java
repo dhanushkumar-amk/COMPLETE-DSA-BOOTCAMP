@@ -40,13 +40,13 @@ public class LongestUnequalAdjacentGroupsSubsequenceIi {
         }
 
         List<String> answer = new ArrayList<>();
-        for (int j = mxIndex; j >= 0; j = prev[i]) {
-            answer.add(words[i]);
+        for (int j = mxIndex; j >= 0; j = prev[j]) {
+            answer.add(words[j]);
         }
         Collections.reverse(answer);
         return answer;
     }
-}
+
 
 
     private boolean check(String s1, String s2){
