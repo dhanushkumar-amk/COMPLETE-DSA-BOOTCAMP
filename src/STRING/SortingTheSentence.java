@@ -1,2 +1,4 @@
-package STRING;public class SortingTheSentence {
+package STRING;
+
+public class SortingTheSentence {
 }
