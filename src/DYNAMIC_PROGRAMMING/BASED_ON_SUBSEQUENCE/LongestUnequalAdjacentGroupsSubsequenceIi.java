@@ -8,7 +8,8 @@ import java.util.List;
 public class LongestUnequalAdjacentGroupsSubsequenceIi {
 
     public static void main(String[] args) {
-        
+        LongestUnequalAdjacentGroupsSubsequenceIi answer = new LongestUnequalAdjacentGroupsSubsequenceIi();
+        String[] words = 
     }
 
     public List<String> getWordsInLongestSubsequence(String[] words, int[] groups) {
