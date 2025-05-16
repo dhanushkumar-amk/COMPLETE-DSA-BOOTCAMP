@@ -5,7 +5,6 @@ package STRING;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class SortingTheSentence {
     public static void main(String[] args) {
@@ -26,7 +25,11 @@ public class SortingTheSentence {
             map.put(index, actualWord);
         }
 
-        String answer = map.values().stream().map(string -> string + " ").collect(Collectors.joining());
-        return answer.trim();
+        StringBuilder answer = new StringBuilder();
+        for(Map.Entry<Integer, String> indexWord : map.entrySet()){
+            answer.append(indexWord.getValue());
+            answer.append(" ");
+        }
+        return answer.toString().trim();
     }
 }
