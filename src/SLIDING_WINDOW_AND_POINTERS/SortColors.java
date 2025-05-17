@@ -30,7 +30,7 @@ public class SortColors {
             }
         }
 
-        while (j <= k){
+        while (j >= k){
             nums[j] = 1;
             j++;
         }
