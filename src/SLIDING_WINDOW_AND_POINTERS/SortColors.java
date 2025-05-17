@@ -17,7 +17,7 @@ public class SortColors {
         int low = 0;
         int mid = 0;
         int high = nums.length - 1;
-        
+
         while (mid <= high) {
             if (nums[mid] == 0) {
                 int tmp = nums[low];
