@@ -7,7 +7,9 @@ public class ReorganizeString {
 
     public static void main(String[] args) {
         ReorganizeString answer = new ReorganizeString();
-        String s = ""
+        String s = "public String reorganizeString(String s) {\n" +
+                "        \n" +
+                "    }"
     }
 
 }
