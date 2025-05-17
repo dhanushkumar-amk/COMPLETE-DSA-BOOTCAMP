@@ -14,6 +14,21 @@ public class SortColors {
     }
 
     public void sortColors(int[] nums) {
-        
+        int n = nums.length;
+        int j = 0;
+        int k = nums.length - 1;
+
+        for (int i = 0; i < n; i++) {
+            if (nums[i] == 0) {
+                nums[j] = 0;
+                j++;
+            }
+
+            if (nums[i] == 2) {
+                nums[k] = 2;
+                k--;
+            }
+        }
+
     }
 }
