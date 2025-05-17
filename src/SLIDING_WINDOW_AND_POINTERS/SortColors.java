@@ -31,8 +31,7 @@ public class SortColors {
         }
 
         for (int i = j; i < k; i++) {
-            nums[i] = 1;
+            nums[j] = 1;
         }
-
     }
 }
