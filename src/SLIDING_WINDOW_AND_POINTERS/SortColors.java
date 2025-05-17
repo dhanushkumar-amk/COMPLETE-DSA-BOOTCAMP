@@ -31,8 +31,8 @@ public class SortColors {
         }
 
         while(j < k){
-            nums[j] = 1;
-            j++;
+            nums[k] = 1;
+            k--;
         }
 
 
