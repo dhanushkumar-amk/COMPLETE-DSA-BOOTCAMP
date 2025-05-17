@@ -5,6 +5,9 @@ package STRING;
 
 public class ReorganizeString {
 
-    
+    public static void main(String[] args) {
+        ReorganizeString answer = new ReorganizeString();
+        String s = ""
+    }
 
 }
