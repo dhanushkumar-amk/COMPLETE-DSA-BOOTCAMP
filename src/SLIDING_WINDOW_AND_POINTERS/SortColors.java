@@ -29,5 +29,11 @@ public class SortColors {
                 k--;
             }
         }
+
+        while (j < k){
+            nums[j] = 1;
+            j++;
+        }
+
     }
 }
