@@ -8,33 +8,25 @@ import java.util.Arrays;
 public class SortColors {
     public static void main(String[] args) {
         SortColors answer = new SortColors();
-        int[] nums = {2,0,2,1,1,0};
+        int[] nums = {2, 0, 2, 1, 1, 0};
         answer.sortColors(nums);
         System.out.println(Arrays.toString(nums));
     }
 
     public void sortColors(int[] nums) {
-        int n = nums.length;
-        int j = 0;
-        int k = nums.length - 1;
-
-        for (int i = 0; i < n; i++) {
-            if (nums[i] == 0) {
-                nums[j] = 0;
-                j++;
-            }
-
-            if (nums[i] == 2) {
-                nums[k] = 2;
-                k--;
+        int low = 0, mid = 0, high = nums.length - 1;
+        while (mid <= high) {
+            if (nums[mid] == 0) {
+                int tmp = nums[low];
+                nums[low++] = nums[mid];
+                nums[mid++] = tmp;
+            } else if (nums[mid] == 1) {
+                mid++;
+            } else {
+                int tmp = nums[mid];
+                nums[mid] = nums[high];
+                nums[high--] = tmp;
             }
         }
-
-        for (int i = j + 1; i < k; i++) {
-            nums[i] = 1;
-        }
-
-
-
     }
 }
