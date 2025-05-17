@@ -30,8 +30,8 @@ public class SortColors {
             }
         }
 
-        while(j < k){
-            nums[k--] = 1;
+        for (int i = j + 1; i < k; i++) {
+            nums[i] = 1;
         }
 
 
