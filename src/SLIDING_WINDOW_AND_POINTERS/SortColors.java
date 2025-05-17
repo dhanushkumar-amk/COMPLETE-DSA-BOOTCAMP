@@ -30,7 +30,7 @@ public class SortColors {
             }
         }
 
-        for (int i = j + 1; i < k; i++) {
+        for (int i = j; i <= k; i++) {
             if (nums[i] != 1)
                 nums[i] = 1;
         }
