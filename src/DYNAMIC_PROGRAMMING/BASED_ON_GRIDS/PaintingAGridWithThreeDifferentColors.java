@@ -5,7 +5,8 @@ package DYNAMIC_PROGRAMMING.BASED_ON_GRIDS;
 
 public class PaintingAGridWithThreeDifferentColors {
     public static void main(String[] args) {
-
+        PaintingAGridWithThreeDifferentColors answer = new PaintingAGridWithThreeDifferentColors();
+        int m = 
     }
 
     public int colorTheGrid(int m, int n) {
