@@ -1,7 +1,11 @@
- package DYNAMIC_PROGRAMMING.BASED_ON_GRIDS; 
+package DYNAMIC_PROGRAMMING.BASED_ON_GRIDS;
 
 public class PaintingAGridWithThreeDifferentColors {
-    public static void main(String[] args){
+    public static void main(String[] args) {
+
+    }
+
+    public int colorTheGrid(int m, int n) {
 
     }
 }
