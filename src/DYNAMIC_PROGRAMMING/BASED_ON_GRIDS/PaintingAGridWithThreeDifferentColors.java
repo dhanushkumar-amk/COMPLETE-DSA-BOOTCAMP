@@ -7,7 +7,8 @@ public class PaintingAGridWithThreeDifferentColors {
     public static void main(String[] args) {
         PaintingAGridWithThreeDifferentColors answer = new PaintingAGridWithThreeDifferentColors();
         int m = 5;
-        int n = 
+        int n = 5;
+        System.out.println(answer.colorTheGrid(m,n));
     }
 
     public int colorTheGrid(int m, int n) {
