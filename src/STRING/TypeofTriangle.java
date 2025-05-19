@@ -18,6 +18,6 @@ public class TypeofTriangle {
         if ((nums[index] == nums[index + 1]) || (nums[index] == nums[index + 2]) || (nums[index + 1] == nums[index + 2]))
             return "isosceles";
         else
-            return "";
+            return "scalene";
     }
 }
