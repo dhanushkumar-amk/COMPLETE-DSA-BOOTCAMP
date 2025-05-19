@@ -10,14 +10,18 @@ public class TypeofTriangle {
     }
 
     public String triangleType(int[] nums) {
-        int index = 0;
-
-        if ((nums[index] == nums[index + 1]) && (nums[index] == nums[index + 2]) && (nums[index + 1] == nums[index + 2]))
+        if (nums[0] == nums[1] && nums[1] == nums[2])
             return "equilateral";
-
-        if ((nums[index] == nums[index + 1]) || (nums[index] == nums[index + 2]) || (nums[index + 1] == nums[index + 2]))
+        else if ((nums[0] == nums[1] || nums[1] == nums[2] || nums[0] == nums[2])
+                && nums[0] + nums[1] > nums[2]
+                && nums[1] + nums[2] > nums[0]
+                && nums[0] + nums[2] > nums[1])
             return "isosceles";
-        else
+        else if (nums[0] != nums[1] && nums[1] != nums[2] && nums[0] != nums[2]
+                && nums[0] + nums[1] > nums[2]
+                && nums[1] + nums[2] > nums[0]
+                && nums[0] + nums[2] > nums[1])
             return "scalene";
+        return "none";
     }
 }
