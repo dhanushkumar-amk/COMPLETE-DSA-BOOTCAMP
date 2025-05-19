@@ -16,8 +16,8 @@ public class TypeofTriangle {
             return "equilateral";
 
         if ((nums[index] == nums[index + 1]) || (nums[index] == nums[index + 2]) || (nums[index + 1] == nums[index + 2]))
-            return "equilateral";
-
-        return "";
+            return "isosceles";
+        else
+            return "";
     }
 }
