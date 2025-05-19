@@ -12,6 +12,6 @@ public class PaintingAGridWithThreeDifferentColors {
     }
 
     public int colorTheGrid(int m, int n) {
-
+        return -1;
     }
 }
