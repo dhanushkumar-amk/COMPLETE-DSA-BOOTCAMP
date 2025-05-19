@@ -10,6 +10,9 @@ public class TypeofTriangle {
     }
 
     public String triangleType(int[] nums) {
+        int index = 0;
+        if (nums[index] == nums[index + 1]  && nums[index] == nums[index + 2] && nums[index + 1] == nums[index + 2])
+            
 
     }
 }
