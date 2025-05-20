@@ -9,6 +9,6 @@ public class ZeroArrayTransformationI {
     }
 
     public boolean isZeroArray(int[] nums, int[][] queries) {
-
+        
     }
 }
