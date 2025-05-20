@@ -12,6 +12,22 @@ public class ZeroArrayTransformationI {
     }
 
     public boolean isZeroArray(int[] nums, int[][] queries) {
-        
+        int n = nums.length;
+        int[] difference = new int[n + 1];
+        for(var query : queries){
+            int start = query[0];
+            int end  = query[1];
+
+            difference[start]++;
+            difference[end + 1]--;
+        }
+
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += difference[i];
+            if (sum <nums[i])
+                return false;
+        }
+        return true;
     }
 }
