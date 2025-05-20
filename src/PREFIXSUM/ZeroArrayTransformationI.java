@@ -1,7 +1,7 @@
- package PREFIXSUM; 
+package PREFIXSUM;
 
 public class ZeroArrayTransformationI {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
     }
 }
