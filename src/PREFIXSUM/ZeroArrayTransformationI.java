@@ -6,7 +6,7 @@ package PREFIXSUM;
 public class ZeroArrayTransformationI {
     public static void main(String[] args) {
     ZeroArrayTransformationI ans = new ZeroArrayTransformationI();
-    
+    int[] nums = {}
     }
 
     public boolean isZeroArray(int[] nums, int[][] queries) {
