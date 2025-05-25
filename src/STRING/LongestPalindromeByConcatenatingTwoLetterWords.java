@@ -26,7 +26,7 @@ public class LongestPalindromeByConcatenatingTwoLetterWords {
 
         for(String word : words){
 
-            if(frequencyMap.get(word) < 0)
+            if(frequencyMap.get(word) <= 0)
                 continue;
 
             // reverse a word
