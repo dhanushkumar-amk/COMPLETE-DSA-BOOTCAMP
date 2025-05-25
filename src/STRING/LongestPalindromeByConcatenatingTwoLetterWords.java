@@ -6,6 +6,10 @@ package STRING;
 
 public class LongestPalindromeByConcatenatingTwoLetterWords {
     public static void main(String[] args) {
+        LongestPalindromeByConcatenatingTwoLetterWords ans = new LongestPalindromeByConcatenatingTwoLetterWords();
+        
+    }
+    public int longestPalindrome(String[] words) {
 
     }
 }
