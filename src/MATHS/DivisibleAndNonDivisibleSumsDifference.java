@@ -20,7 +20,7 @@ public class DivisibleAndNonDivisibleSumsDifference {
             else
                 num2 += i;
         }
-    return num1 - num2;
+    return num2 - num1;
     }
 
 }
