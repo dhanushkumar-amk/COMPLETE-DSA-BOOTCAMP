@@ -6,6 +6,7 @@ package MATHS;
 public class DivisibleAndNonDivisibleSumsDifference {
 
     public static void main(String[] args) {
+        DivisibleAndNonDivisibleSumsDifference ans = new DivisibleAndNonDivisibleSumsDifference();
         
     }
 
