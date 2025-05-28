@@ -7,7 +7,10 @@ public class DivisibleAndNonDivisibleSumsDifference {
 
     public static void main(String[] args) {
         DivisibleAndNonDivisibleSumsDifference ans = new DivisibleAndNonDivisibleSumsDifference();
-        
+        System.out.println(ans.differenceOfSums());
+    }
+    public int differenceOfSums(int n, int m) {
+
     }
 
 }
