@@ -15,7 +15,7 @@ public class DivisibleAndNonDivisibleSumsDifference {
 
         int result = 0;
         for (int i = 1; i <= n; i++) {
-            if(i % 3 == 0)
+            if(i % m == 0)
                 num1 += i;
             else
                 num2 += i;
