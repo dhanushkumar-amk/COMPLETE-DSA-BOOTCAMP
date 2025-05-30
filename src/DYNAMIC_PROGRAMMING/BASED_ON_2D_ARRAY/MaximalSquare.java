@@ -40,6 +40,6 @@ public class MaximalSquare {
                 maxSum = Math.max(maxSum, dp[i][j]);
             }
         }
-        return maxSum;
+        return maxSum * maxSum;
     }
 }
