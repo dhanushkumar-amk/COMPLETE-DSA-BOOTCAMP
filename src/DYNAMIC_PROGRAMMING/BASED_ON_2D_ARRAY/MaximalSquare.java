@@ -17,7 +17,7 @@ public class MaximalSquare {
         System.out.println(answer.maximalSquare(matrix));
     }
 
-    class Solution {
+
         public int maximalSquare(char[][] mat) {
             int ans=0;
             int dp[][]=new int[mat.length][mat[0].length];
@@ -44,4 +44,4 @@ public class MaximalSquare {
             return ans*ans;
         }
     }
-}
+
