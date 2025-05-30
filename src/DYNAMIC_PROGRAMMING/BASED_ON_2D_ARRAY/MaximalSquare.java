@@ -38,7 +38,6 @@ public class MaximalSquare {
                         dp[i][j] = 1 +  Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]);
 
                     maxSum = Math.max(maxSum, dp[i][j]);
-
                 }
             }
         }
