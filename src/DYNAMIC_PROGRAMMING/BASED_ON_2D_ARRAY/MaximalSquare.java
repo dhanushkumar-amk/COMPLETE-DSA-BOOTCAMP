@@ -35,7 +35,7 @@ public class MaximalSquare {
                         dp[i][j] = '1';
                     else
 //                        find the min valueof the neighbour and add + 1
-                        dp[i][j] = Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]) + 1;
+                        dp[i][j] = 1 +  Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]);
                 }
                 maxSum = Math.max(maxSum, dp[i][j]);
             }
