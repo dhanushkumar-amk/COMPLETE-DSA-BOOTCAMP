@@ -7,7 +7,7 @@ public class LargestColorValueInADirectedGraph {
 
     public int largestPathValue(String colors, int[][] edges) {
 
-        
+        return  -1;
 
 
     }
