@@ -17,30 +17,31 @@ public class MaximalSquare {
         System.out.println(answer.maximalSquare(matrix));
     }
 
-    public int maximalSquare(char[][] matrix) {
-        int row = matrix.length;
-        int column  = matrix[0].length;
-
-        int[][] dp = new int[row][column];
-
-        int maxSum = 0;
-
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < column; j++) {
-
-                if(matrix[i][j] == '1'){
-
-                    // special case for first row and column when it is an value 1
-                    if(i == 0 || j == 0)
-                        dp[i][j] = '1';
-                    else
-//                        find the min valueof the neighbour and add + 1
-                        dp[i][j] = 1 +  Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]);
-
-                    maxSum = Math.max(maxSum, dp[i][j]);
+    class Solution {
+        public int maximalSquare(char[][] mat) {
+            int ans=0;
+            int dp[][]=new int[mat.length][mat[0].length];
+            for(int i=0;i<mat.length;i++){
+                if(mat[i][0]=='1'){
+                    dp[i][0]=1;
+                    ans=1;
                 }
             }
+            for(int i=0;i<mat[0].length;i++){
+                if(mat[0][i]=='1'){
+                    dp[0][i]=1;
+                    ans=1;
+                }
+            }
+            for(int i=1;i<dp.length;i++){
+                for(int j=1;j<dp[0].length;j++){
+                    if(mat[i][j]=='1'){
+                        dp[i][j]=1+Math.min(dp[i-1][j-1],Math.min(dp[i-1][j],dp[i][j-1]));
+                        ans=Math.max(ans,dp[i][j]);
+                    }
+                }
+            }
+            return ans*ans;
         }
-        return maxSum * maxSum;
     }
 }
