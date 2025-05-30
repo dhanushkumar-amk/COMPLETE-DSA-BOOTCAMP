@@ -21,6 +21,9 @@ public class MaximalSquare {
         public int maximalSquare(char[][] mat) {
             int ans=0;
             int dp[][]=new int[mat.length][mat[0].length];
+
+            // first row i == 0; i == 1;
+
             for(int i=0;i<mat.length;i++){
                 if(mat[i][0]=='1'){
                     dp[i][0]=1;
