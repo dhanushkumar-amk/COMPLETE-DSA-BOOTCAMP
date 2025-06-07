@@ -1,4 +1,4 @@
-package PATTERNS;
+package PATTERNS.NUMBER_PATTERN;
 
 public class pattern5 {
     public static void main(String[] args) {
