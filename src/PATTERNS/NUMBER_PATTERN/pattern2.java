@@ -5,9 +5,8 @@ public class pattern2 {
         int n = 7;
 
         for (int i = 1; i < n; i++) {
-            for (int j = n; j >= i; j--) {
-                int temp = j;
-                j = temp;
+            for (int j = 0; j <= i; j+=) {
+
                 System.out.print(j + " ");
             }
             System.out.println();
