@@ -24,7 +24,7 @@ public class UsingARobotToPrintTheLexicographicallySmallestString {
             while(minCharacter != 'z' && freq[minCharacter - 'a'] == 0)
                 minCharacter++;
 
-            while (stack.isEmpty() && stack.peek() <= minCharacter){
+            while (!stack.isEmpty() && stack.peek() <= minCharacter){
                 result.append(stack.pop());
             }
         }
