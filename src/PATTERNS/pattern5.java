@@ -6,7 +6,7 @@ public class pattern5 {
 
         for (int i = 1; i < n ; i++) {
             for (int j = n; j >= 0; j--) {
-                System.out.print(i * j + 1 + " ");
+                System.out.print( j+ " ");
             }
             System.out.println();
         }
