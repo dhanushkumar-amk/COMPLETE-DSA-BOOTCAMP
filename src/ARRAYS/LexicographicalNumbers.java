@@ -1,5 +1,6 @@
 package ARRAYS;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -22,7 +23,17 @@ public class LexicographicalNumbers {
 
     public List<Integer> lexicalOrder(int n) {
         int current = 1;
-        List<Integer>
+        List<Integer> list = new ArrayList<>();
+        for (int i = 1; i < n; i++) {
+            list.add(current);
+            if(current * 10 <= n)
+                current = current * 10;
+            while(current % 10 == 9 || current + 1 > n)
+                current = current / 10;
+
+            current++;
+        }
+        return list;
     }
 
 }
