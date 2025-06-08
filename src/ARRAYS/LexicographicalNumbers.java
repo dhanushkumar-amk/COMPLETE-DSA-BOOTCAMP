@@ -9,7 +9,7 @@ public class LexicographicalNumbers {
         int n = 13;
         System.out.println(ans.lexicalOrder(n));
     }
-    public List<Integer> lexicalOrder(int n) {
+    public List<Integer> lexicalOrder1(int n) {
         Integer[] arr = new Integer[n];
         for (int i = 0; i < n; i++) {
             arr[i] = i + 1;
@@ -18,4 +18,11 @@ public class LexicographicalNumbers {
         Arrays.sort(arr, (a, b) -> a.toString().compareTo(b.toString()));
         return Arrays.asList(arr);
     }
+
+
+    public List<Integer> lexicalOrder(int n) {
+        int current = 1;
+        List<Integer>
+    }
+
 }
