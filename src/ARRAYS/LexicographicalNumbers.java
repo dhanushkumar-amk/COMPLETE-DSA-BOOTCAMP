@@ -28,10 +28,12 @@ public class LexicographicalNumbers {
             list.add(current);
             if(current * 10 <= n)
                 current = current * 10;
-            while(current % 10 == 9 || current + 1 > n)
-                current = current / 10;
+            else {
+                while (current % 10 == 9 || current + 1 > n)
+                    current = current / 10;
 
-            current++;
+                current++;
+            }
         }
         return list;
     }
