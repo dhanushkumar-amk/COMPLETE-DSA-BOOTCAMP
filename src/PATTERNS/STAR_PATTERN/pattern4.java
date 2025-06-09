@@ -10,15 +10,6 @@ public class pattern4 {
                 else
                     System.out.print("  ");
             }
-
-            for (int j = n; j >= 0; j--) {
-                if(i == j)
-                    System.out.print("* ");
-                else
-                    System.out.print("  ");
-
-            }
-
             System.out.println();
         }
     }
