@@ -11,7 +11,7 @@ public class pattern4 {
                     System.out.print("  ");
             }
 
-            for (int j = n; j > 0; j--) {
+            for (int j = n; j >= 0; j--) {
                 if(i == j)
                     System.out.print("* ");
                 else
