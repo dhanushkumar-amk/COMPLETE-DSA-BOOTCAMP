@@ -5,4 +5,12 @@ package STRING;
 // leetcode : 3442
 
 public class MaximumDifferenceBetweenEvenAndOddFrequencyI {
+
+    public static void main(String[] args) {
+        
+    }
+
+    public int maxDifference(String s) {
+
+    }
 }
