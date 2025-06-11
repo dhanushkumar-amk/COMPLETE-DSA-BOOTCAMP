@@ -21,9 +21,9 @@ public class MaximumDifferenceBetweenEvenAndOddFrequencyI {
             freq[element - 'a']++;
 
         for (int i = 0; i < freq.length; i++) {
-            if( freq[i] % 2 != 0 &&freq[i] > maxFreqEven) {
+            if( freq[i] % 2 != 0 && freq[i] > minFreqOdd) {
                 minFreqOdd = freq[i];
-            } else if(freq[i] % 2 == 0 && freq[i] < minFreqOdd)
+            } else if(freq[i] % 2 == 0 && freq[i] < maxFreqEven)
                 maxFreqEven = freq[i];
         }
         return  minFreqOdd - maxFreqEven;
