@@ -14,18 +14,20 @@ public class MaximumDifferenceBetweenEvenAndOddFrequencyI {
 
     public int maxDifference(String s) {
         int[] freq = new int[26];
-        int minFreqOdd = Integer.MIN_VALUE;
-        int maxFreqEven = Integer.MAX_VALUE;
+        int minE = Integer.MAX_VALUE;
+        int maxO = 1;
 
         for(char element : s.toCharArray())
             freq[element - 'a']++;
 
-        for (int i = 0; i < freq.length; i++) {
-            if( freq[i] % 2 != 0 && freq[i] > minFreqOdd) {
-                minFreqOdd = freq[i];
-            } else if(freq[i] % 2 == 0 && freq[i] < maxFreqEven)
-                maxFreqEven = freq[i];
+        for (int i = 0; i < 26; i++) {
+            if(freq[i] == 0)
+                continue;
+            else if (freq[i] % 2 == 0)
+                minE = Math.min(minE, freq[i]);
+            else
+                maxO = Math.max(maxO, freq[i]);
         }
-        return  minFreqOdd - maxFreqEven;
+        return maxO - minE;
     }
 }
