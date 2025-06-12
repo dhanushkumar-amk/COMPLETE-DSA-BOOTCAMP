@@ -1,0 +1,7 @@
+ package ARRAYS; 
+
+public class MaximumDifferenceBetweenAdjacentElementsInACircularArray {
+    public static void main(String[] args){
+
+    }
+}
