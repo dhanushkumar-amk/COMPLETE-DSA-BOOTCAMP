@@ -28,7 +28,7 @@ public class SmallestDivisor {
         private int sumByDiv(int[] arr, int mid) {
             int sum = 0;
             for (int i = 0; i < arr.length; i++) {
-                sum += Math.ceil((double) arr[i] / mid);
+                sum += Math.ceil((double) arr[i] / (double) mid);
             }
             return sum;
         }
