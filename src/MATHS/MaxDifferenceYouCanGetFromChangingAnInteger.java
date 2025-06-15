@@ -41,7 +41,10 @@ public class MaxDifferenceYouCanGetFromChangingAnInteger {
             for (int i = 1; i < n; ++i) {
                 if(minChar[i] > '1'){
                     char target = minChar[i];
-                    
+                    for (int j = 0; j < n; ++j) {
+                        if(minChar[j] == target)
+                            minChar[j] = '1';
+                    }
                 }
             }
         }
