@@ -19,7 +19,7 @@ public class MaxDifferenceYouCanGetFromChangingAnInteger {
 
         // convert the max value
         for (int i = 0; i < n; ++i) {
-            if(maxChar[i] == '9')
+            if(maxChar[i] != '9')
                 char target = maxChar[i];
         }
 
