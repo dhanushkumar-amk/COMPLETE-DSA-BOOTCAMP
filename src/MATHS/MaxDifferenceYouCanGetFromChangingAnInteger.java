@@ -49,6 +49,6 @@ public class MaxDifferenceYouCanGetFromChangingAnInteger {
                 }
             }
         }
-        
+        int maxNum = Integer.parseInt(maxChar.toString())
     }
 }
