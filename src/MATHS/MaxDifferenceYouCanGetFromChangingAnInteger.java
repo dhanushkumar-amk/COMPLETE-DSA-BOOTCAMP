@@ -11,6 +11,18 @@ public class MaxDifferenceYouCanGetFromChangingAnInteger {
 
     }
     public int maxDiff(int num) {
-        String s = num.
+        String s = Integer.toString(num);
+        char[] maxChar = s.toCharArray();
+        char[] minChar = s.toCharArray();
+        int n = s.length();
+
+
+        // convert the max value
+        for (int i = 0; i < n; ++i) {
+            if(maxChar[i] == '9')
+                char target = maxChar[i];
+        }
+
+
     }
 }
