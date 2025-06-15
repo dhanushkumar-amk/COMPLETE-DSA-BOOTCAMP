@@ -22,6 +22,7 @@ public class MaxDifferenceYouCanGetFromChangingAnInteger {
             if(maxChar[i] != '9') {
                 char target = maxChar[i];
             }
+            
         }
 
 
