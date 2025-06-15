@@ -11,6 +11,6 @@ public class MaxDifferenceYouCanGetFromChangingAnInteger {
 
     }
     public int maxDiff(int num) {
-        
+        String s = num.
     }
 }
