@@ -30,7 +30,7 @@ public class MaxDifferenceYouCanGetFromChangingAnInteger {
             }
         }
 
-        if(minChar[0] > 0)
+        if(minChar[0] > 0'1')
 
 
 
