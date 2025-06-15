@@ -13,7 +13,7 @@ public class SmallestDivisor {
             int high = Integer.MIN_VALUE;
             for (int i = 0; i < arr.length; i++) {
                 if(arr[i] > high)
-                    high
+                    high = arr[i];
             }
 
             while (low <= high){
