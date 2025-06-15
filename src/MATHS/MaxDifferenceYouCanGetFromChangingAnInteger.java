@@ -28,10 +28,9 @@ public class MaxDifferenceYouCanGetFromChangingAnInteger {
                 }
                 break;
             }
+        }
 
         if(minChar[0] > 0)
-
-        }
 
 
 
