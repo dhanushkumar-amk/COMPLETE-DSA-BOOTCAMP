@@ -45,13 +45,10 @@ public class MaxDifferenceYouCanGetFromChangingAnInteger {
                         if(minChar[j] == target)
                             minChar[j] = '0';
                     }
+                    break;
                 }
             }
         }
-
-
-
-
-
+        
     }
 }
