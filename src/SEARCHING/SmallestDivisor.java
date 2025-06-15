@@ -10,7 +10,11 @@ public class SmallestDivisor {
 
         int smallestDivisor(int[] arr, int k) {
             int low = 1;
-            int high = Arrays.stream(arr).max().getAsInt();
+            int high = Integer.MIN_VALUE;
+            for (int i = 0; i < arr.length; i++) {
+                if(arr[i] > high)
+                    high
+            }
 
             while (low <= high){
                 int mid = low + high / 2;
