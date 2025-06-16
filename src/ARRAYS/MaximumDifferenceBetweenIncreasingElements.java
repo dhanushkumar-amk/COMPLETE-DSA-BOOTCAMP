@@ -8,10 +8,13 @@ public class MaximumDifferenceBetweenIncreasingElements {
 
     }
     public int maximumDifference(int[] nums) {
-    int max = Integer.MIN_VALUE;
+    int ans = -1;
         for (int i = 0; i < nums.length - 1; i++) {
-            if(nums[i] < nums[i + 1])
-                max = Math.max()
+            int max = Integer.MIN_VALUE;
+            if(nums[i] < nums[i + 1]){
+                max = Math.max(max, nums[i] -)
+            }
+
         }
     }
 }
