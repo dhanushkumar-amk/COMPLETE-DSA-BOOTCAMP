@@ -21,7 +21,7 @@ public class ReverseInteger {
         else {
             String val = Integer.toString(x);
 
-            for (int i = val.length(); i > 0 ; i--) {
+            for (int i = val.length() -1; i > 0 ; i--) {
                 if(i == '-')
                     break;
                 str.append(i);
