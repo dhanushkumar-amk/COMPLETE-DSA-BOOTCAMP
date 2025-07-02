@@ -8,9 +8,6 @@ public class ReverseInteger {
     }
 
 
-    public ReverseInteger() {
-    }
-
     public int reverse(int x) {
         int ans = 0;
         if(x > 0) {
