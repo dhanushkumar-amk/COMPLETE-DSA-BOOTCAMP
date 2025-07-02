@@ -18,7 +18,6 @@ public class ReverseInteger {
 
         if(x < 0)
             return -ans;
-
         return ans;
     }
 
