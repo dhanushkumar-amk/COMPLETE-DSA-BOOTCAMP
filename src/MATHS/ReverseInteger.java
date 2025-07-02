@@ -14,8 +14,6 @@ public class ReverseInteger {
         if(x > 0) {
             while (x > 0) {
                 int rem = x % 10;
-                if(rem == 0)
-                    continue;
                 ans = ans * 10 + rem;
                 x /= 10;
             }
