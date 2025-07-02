@@ -15,6 +15,10 @@ public class ReverseInteger {
             ans = ans * 10 + rem;
             x /= 10;
         }
+
+        if(x < 0)
+            return -ans;
+
         return ans;
     }
 
