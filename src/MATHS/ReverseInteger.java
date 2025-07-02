@@ -21,15 +21,13 @@ public class ReverseInteger {
             String val = Integer.toString(x);
             StringBuilder str = new StringBuilder("-");
             for (int i = val.length(); i > 0 ; i--) {
-                str.append(i);
                 if(i == '-')
                     break;
+                str.append(i);
             }
         }
 
-
-
-        return ans;
+        return x > 0 ? ans : str ;
     }
 
 }
