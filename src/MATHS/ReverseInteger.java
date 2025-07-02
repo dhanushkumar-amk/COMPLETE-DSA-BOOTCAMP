@@ -10,6 +10,7 @@ public class ReverseInteger {
 
     public int reverse(int x) {
         int ans = 0;
+        StringBuilder str = new StringBuilder("-");
         if(x > 0) {
             while (x > 0) {
                 int rem = x % 10;
@@ -19,7 +20,7 @@ public class ReverseInteger {
         }
         else {
             String val = Integer.toString(x);
-            StringBuilder str = new StringBuilder("-");
+
             for (int i = val.length(); i > 0 ; i--) {
                 if(i == '-')
                     break;
@@ -27,7 +28,7 @@ public class ReverseInteger {
             }
         }
 
-        return x > 0 ? ans : str ;
+        return x > 0 ? ans : Integer.parseInt(str.toString()) ;
     }
 
 }
