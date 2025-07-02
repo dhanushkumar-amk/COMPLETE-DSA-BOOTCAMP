@@ -10,12 +10,13 @@ public class ReverseInteger {
 
     public int reverse(int x) {
         int ans = 0;
+        int value = x;
         StringBuilder str = new StringBuilder("-");
         if(x > 0) {
-            while (x > 0) {
-                int rem = x % 10;
+            while (value > 0) {
+                int rem = value % 10;
                 ans = ans * 10 + rem;
-                x /= 10;
+                value /= 10;
             }
         }
         else {
