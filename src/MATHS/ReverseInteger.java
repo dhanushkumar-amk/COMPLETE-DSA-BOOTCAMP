@@ -8,6 +8,9 @@ public class ReverseInteger {
     }
 
 
+    public ReverseInteger() {
+    }
+
     public int reverse(int x) {
         int ans = 0;
         if(x > 0) {
@@ -17,8 +20,17 @@ public class ReverseInteger {
                 x /= 10;
             }
         }
+        else {
+            String val = Integer.toString(x);
+            StringBuilder str = new StringBuilder("-");
+            for (int i = val.length(); i > 0 ; i--) {
+                str.append(i);
+                if(i == '-')
+                    break;
+            }
+        }
 
-        
+
 
         return ans;
     }
