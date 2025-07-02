@@ -3,7 +3,7 @@ package MATHS;
 public class ReverseInteger {
     public static void main(String[] args) {
         ReverseInteger ans = new ReverseInteger();
-        int x = 123;
+        int x = -123;
         System.out.println(ans.reverse(x));
     }
 
