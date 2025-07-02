@@ -3,7 +3,7 @@ package MATHS;
 public class ReverseInteger {
     public static void main(String[] args) {
         ReverseInteger ans = new ReverseInteger();
-        int x = -123;
+        int x = 1230;
         System.out.println(ans.reverse(x));
     }
 
@@ -14,6 +14,8 @@ public class ReverseInteger {
         if(x > 0) {
             while (x > 0) {
                 int rem = x % 10;
+                if(rem == 0)
+                    continue;
                 ans = ans * 10 + rem;
                 x /= 10;
             }
@@ -27,6 +29,7 @@ public class ReverseInteger {
                 str.append(i);
             }
         }
+
 
         return x > 0 ? ans : Integer.parseInt(str.toString()) ;
     }
