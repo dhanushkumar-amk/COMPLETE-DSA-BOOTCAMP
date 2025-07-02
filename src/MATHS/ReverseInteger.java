@@ -1,2 +1,4 @@
-package MATHS;public class ReverseInteger {
+package MATHS;
+
+public class ReverseInteger {
 }
