@@ -16,6 +16,6 @@ public class FindTheKthCharacterInStringGameI {
                 sb.append(nextCharacter);
             }
         }
-        return  sb.charAt();
+        return  sb.charAt(k);
     }
 }
