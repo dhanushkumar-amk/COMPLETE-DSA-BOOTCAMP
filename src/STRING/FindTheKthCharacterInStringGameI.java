@@ -9,7 +9,8 @@ public class FindTheKthCharacterInStringGameI {
     public char kthCharacter(int k) {
         StringBuilder sb = new StringBuilder("a");
         while (sb.length() < k){
-            for (char i = 0; i < sb.length(); i++) {
+            int length = sb.length();
+            for (char i = 0; i < length ; i++) {
                 char c = sb.charAt(i);
                 char nextCharacter = (char) (((c - 'a' + 1) % 26) + 'a');
                 sb.append(nextCharacter);
