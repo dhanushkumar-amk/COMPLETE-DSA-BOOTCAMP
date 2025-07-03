@@ -10,7 +10,7 @@ public class FindTheKthCharacterInStringGameI {
         StringBuilder sb = new StringBuilder("a");
         while (sb.length() < k){
             int length = sb.length();
-            for (char i = 0; i < length ; i++) {
+            for (int i = 0; i < length ; i++) {
                 char c = sb.charAt(i);
                 char nextCharacter = (char) (((c - 'a' + 1) % 26) + 'a');
                 sb.append(nextCharacter);
