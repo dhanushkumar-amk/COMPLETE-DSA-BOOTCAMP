@@ -47,7 +47,6 @@ public class Trie1 {
     // insert function
     public void insert(String word){
         Node node = root;// always starts from root
-
         // insert every character in word
         for (char i = 0; i <word.length(); i++) {
             if (!node.containsKey(word.charAt(i))){
