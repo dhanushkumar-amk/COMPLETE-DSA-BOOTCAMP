@@ -20,6 +20,6 @@ public class LongestCommonPrefix {
             if(s1.charAt(index) == s2.charAt(index))
                 index++;
         }
-        return s1.substring(0,index - 1);
+        return s1.substring(0,index);
     }
 }
