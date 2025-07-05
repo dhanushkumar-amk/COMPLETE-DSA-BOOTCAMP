@@ -14,7 +14,7 @@ public class FindLuckyIntegerInAnArray {
             freqArray[i]++;
         }
         for (int i = freqArray.length; i >= 0; i--) {
-           if(i == freqArray[i])
+           if(i == freqArray[i-1])
                maxFreq = i;
         }
         return maxFreq;
