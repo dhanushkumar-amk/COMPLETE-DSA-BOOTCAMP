@@ -11,7 +11,7 @@ public class FindLuckyIntegerInAnArray {
         int[] freqArray = new int[501];
 
         for (int i = 0; i < arr.length; i++) {
-            freqArray[i]++;
+            freqArray[arr[i]]++;
         }
 
         for (int i = freqArray.length - 1; i > 0; i--) {
