@@ -20,8 +20,9 @@ public class LongestCommonPrefix {
         if(s1.length() == 1 && s2.length() == 1)
             return "";
 
-        if(s1.length() == 1 && s2.length() == 1 && s1.charAt(0) == s2.charAt(0))
+        if(s1.length() == 1 && s2.length() == 1 && s1.charAt(0) == s2.charAt(0)) {
             return "";
+        }
 
 
 
