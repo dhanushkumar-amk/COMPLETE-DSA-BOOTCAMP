@@ -28,5 +28,6 @@ public class LongestCommonPrefix {
         }
 
         return s1.length() > 2 ? s2.substring(0,index) : s1.toString();
+
     }
 }
