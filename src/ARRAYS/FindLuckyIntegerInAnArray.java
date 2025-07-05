@@ -10,7 +10,7 @@ public class FindLuckyIntegerInAnArray {
     public int findLucky(int[] arr) {
         int maxFreq = Integer.MIN_VALUE;
         int[] freqArray = new int[500];
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             freqArray[i]++;
         }
         for (int i = freqArray.length - 1; i > 0; i--) {
