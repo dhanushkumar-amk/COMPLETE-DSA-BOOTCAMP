@@ -13,7 +13,7 @@ public class FindLuckyIntegerInAnArray {
         for (int i = 1; i < arr.length; i++) {
             freqArray[i]++;
         }
-        for (int i = freqArray.length; i > 0; i--) {
+        for (int i = freqArray.length; i >= 0; i--) {
            if(i == freqArray[i])
                maxFreq = i;
         }
