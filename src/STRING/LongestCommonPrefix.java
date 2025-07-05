@@ -19,6 +19,8 @@ public class LongestCommonPrefix {
         for( index = 0; index < s1.length(); ++index){
             if(s1.charAt(index) == s2.charAt(index))
                 index++;
+            else
+                break;
         }
         return s1.substring(0,index);
     }
