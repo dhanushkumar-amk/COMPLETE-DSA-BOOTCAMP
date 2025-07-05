@@ -11,7 +11,7 @@ public class LongestCommonPrefix {
     }
     public String[] longestCommonPrefix(String[] strs) {
       String[] arr  = Arrays.sort(strs);
-      
+
 
     }
 }
