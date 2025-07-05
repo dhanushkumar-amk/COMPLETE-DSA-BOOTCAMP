@@ -10,8 +10,4 @@ public class LongestCommonPrefix {
 //        ans.longestCommonPrefix(strs);
         System.out.println(Arrays.toString(strs));
     }
-    public String[] longestCommonPrefix(String[] strs) {
-
-
-    }
 }
