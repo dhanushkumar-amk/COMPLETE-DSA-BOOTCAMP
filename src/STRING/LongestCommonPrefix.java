@@ -23,6 +23,6 @@ public class LongestCommonPrefix {
                 index2++;
             }
         }
-        return ans.substring(0, index1);
+        return s1.substring(0, index1);
     }
 }
