@@ -8,15 +8,16 @@ public class FindLuckyIntegerInAnArray {
     }
 
     public int findLucky(int[] arr) {
-
         int[] freqArray = new int[501];
-        for (int i = 0; i < arr.length; i++) {
-            freqArray[arr[i]]++;
+        for (int num : arr) {
+            freqArray[num]++;
         }
         for (int i = freqArray.length - 1; i > 0; i--) {
-           if(i == freqArray[i]);
-               return freqArray[i];
+            if (i == freqArray[i]) {
+                return i;
+            }
         }
         return -1;
     }
+
 }
