@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class LongestCommonPrefix {
     public static void main(String[] args) {
         LongestCommonPrefix ans = new LongestCommonPrefix();
-        String[] strs = {"a"};
+        String[] strs = {"ab", "a"};
         System.out.println(ans.longestCommonPrefix(strs));
     }
 
