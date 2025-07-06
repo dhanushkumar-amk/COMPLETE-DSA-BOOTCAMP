@@ -14,14 +14,12 @@ public class CheckifNumbersAreAscendinginASentence {
     public boolean areNumbersAscending(String s) {
         String[] arr = s.split("");
         int prevValue = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i].contains("abcdefghijklmnopqrstuvwxyz"))
-                continue;
-            else if( > prevValue){
-                prevValue
-            }
+       for(String word : arr){
+           if(word.contains("1234567890")){
+               if()
+           }
 
-        }
+       }
 
     }
 
