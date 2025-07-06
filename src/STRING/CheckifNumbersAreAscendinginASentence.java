@@ -1,2 +1,4 @@
-package STRING;public class CheckifNumbersAreAscendinginASentence {
+package STRING;
+
+public class CheckifNumbersAreAscendinginASentence {
 }
