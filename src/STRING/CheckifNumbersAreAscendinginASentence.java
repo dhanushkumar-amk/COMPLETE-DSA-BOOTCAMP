@@ -13,7 +13,7 @@ public class CheckifNumbersAreAscendinginASentence {
 
     public boolean areNumbersAscending(String s) {
         int previousValue = 0;
-        String[] strs = s.split("");
+        String[] strs = s.split(" ");
         for (String str : strs) {
             try {
                 int current = Integer.parseInt(str);
