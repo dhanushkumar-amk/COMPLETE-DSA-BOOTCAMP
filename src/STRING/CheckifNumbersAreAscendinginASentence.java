@@ -15,9 +15,7 @@ public class CheckifNumbersAreAscendinginASentence {
         String[] arr = s.split("");
         int prevValue = 0;
        for(String word : arr){
-           if(word.contains("1234567890")){
-               if()
-           }
+           int 
 
        }
 
