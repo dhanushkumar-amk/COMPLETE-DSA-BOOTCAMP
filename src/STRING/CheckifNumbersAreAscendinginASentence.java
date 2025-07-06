@@ -23,9 +23,10 @@ public class CheckifNumbersAreAscendinginASentence {
                     previousValue = currentValue;
                     continue;
                 }
+                else
+                    return false;
             }
-            else
-               return false;
+
         }
     return true;
     }
