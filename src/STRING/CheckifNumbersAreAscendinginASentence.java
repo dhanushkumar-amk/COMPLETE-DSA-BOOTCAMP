@@ -16,7 +16,7 @@ public class CheckifNumbersAreAscendinginASentence {
         String[] strs = s.split(" ");
         for (String str : strs) {
 
-                int current = Integer.parseInt();
+                int current = Integer.parseInt(str);
                 if(current < 56) {
                     if (current <= previousValue) {
                         return false;
