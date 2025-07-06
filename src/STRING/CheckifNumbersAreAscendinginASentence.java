@@ -15,10 +15,16 @@ public class CheckifNumbersAreAscendinginASentence {
         String[] arr = s.split("");
         int prevValue = 0;
        for(String word : arr){
-           int 
+           int num = Integer.parseInt(word);
 
+           if(num > prevValue){
+               prevValue = num;
+               continue;
+           }
+           else
+               return false;
        }
-
+    return true;
     }
 
 
