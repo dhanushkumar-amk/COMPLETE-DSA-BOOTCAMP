@@ -15,13 +15,13 @@ public class CheckifNumbersAreAscendinginASentence {
         int previousValue = 0;
         String[] strs = s.split(" ");
         for (String str : strs) {
-
+            if(true) {
                 int current = Integer.parseInt(str);
                 if (current <= previousValue) {
                     return false;
                 }
                 previousValue = current;
-                
+            }
         }
         return true;
     }
