@@ -13,11 +13,9 @@ public class CheckifNumbersAreAscendinginASentence {
 
     public boolean areNumbersAscending(String s) {
         int previousValue  = 0;
-        String[] arr = s.split("");
-        for (int i = 0; i < arr.length; i++) {
-            String ch = arr[i];
-            if(Integer.parseInt())
-        }
+        String[] str = s.split("");
+        int[] arr = new int[str.length];
+        
     }
 
 
