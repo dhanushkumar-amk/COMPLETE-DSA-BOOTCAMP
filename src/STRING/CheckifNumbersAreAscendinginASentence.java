@@ -25,7 +25,7 @@ public class CheckifNumbersAreAscendinginASentence {
         }
 
         int previous = 0;
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < index; i++) {
             if (arr[i] > previous) {
                 previous = arr[i];
             } else
