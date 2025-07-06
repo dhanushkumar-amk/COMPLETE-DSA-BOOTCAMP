@@ -2,7 +2,7 @@ package STRING;
 
 public class SumOfNumbersInString {
     public static void main(String[] args) {
-        String s = "abc21";
+        String s = "abc21hello48";
         System.out.println(findSum(s));
 
     }
