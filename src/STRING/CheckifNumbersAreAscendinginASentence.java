@@ -17,11 +17,13 @@ public class CheckifNumbersAreAscendinginASentence {
         for (String str : strs) {
 
                 int current = Integer.parseInt(str);
-                if (current <= previousValue) {
-                    return false;
+                if(current < 56) {
+                    if (current <= previousValue) {
+                        return false;
+                    }
+                    previousValue = current;
                 }
-                previousValue = current;
-            
+
         }
         return true;
     }
