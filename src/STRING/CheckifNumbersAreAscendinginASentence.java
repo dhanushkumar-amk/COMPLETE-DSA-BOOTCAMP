@@ -15,7 +15,13 @@ public class CheckifNumbersAreAscendinginASentence {
         int previousValue  = 0;
         String[] str = s.split("");
         int[] arr = new int[str.length];
-        
+        int index = 0;
+        try {
+
+            arr[index++] = Integer.parseInt();
+        } catch (NumberFormatException e) {
+            // Ignore if it's not a number
+        }
     }
 
 
