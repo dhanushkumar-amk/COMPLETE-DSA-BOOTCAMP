@@ -20,7 +20,7 @@ public class CheckifNumbersAreAscendinginASentence {
             try {
                 arr[index++] = Integer.parseInt(str);
             } catch (NumberFormatException e) {
-                System.out.println("error");
+
             }
         }
 
