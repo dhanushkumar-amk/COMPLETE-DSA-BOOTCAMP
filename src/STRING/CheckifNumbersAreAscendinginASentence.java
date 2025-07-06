@@ -16,11 +16,12 @@ public class CheckifNumbersAreAscendinginASentence {
         String[] str = s.split("");
         int[] arr = new int[str.length];
         int index = 0;
+        for()
         try {
 
             arr[index++] = Integer.parseInt();
         } catch (NumberFormatException e) {
-            // Ignore if it's not a number
+
         }
     }
 
