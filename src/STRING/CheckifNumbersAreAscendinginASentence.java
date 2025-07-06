@@ -18,18 +18,14 @@ public class CheckifNumbersAreAscendinginASentence {
         int index = 0;
         for (String str : strs) {
             try {
-                arr[index++] = Integer.parseInt(str);
+                int current = Integer.parseInt(str);
+                if (current <= previousValue) {
+                    return false;
+                }
+                previousValue = current;
             } catch (NumberFormatException e) {
 
             }
-        }
-
-        int previous = 0;
-        for (int i = 0; i < index; i++) {
-            if (arr[i] > previous) {
-                previous = arr[i];
-            } else
-                return false;
         }
         return true;
     }
