@@ -13,15 +13,18 @@ public class CheckifNumbersAreAscendinginASentence {
 
     public boolean areNumbersAscending(String s) {
         int previousValue  = 0;
+        int currentValue = 0;
         for (int i = 0; i < s.length(); i++) {
             int ch = s.charAt(i);
             if(Character.isDigit(ch)){
-                cur
+                currentValue *= 10;
+                currentValue += ch - 48;
+                previousValue = currentValue;
             }
-
-
+            else
+               return false;
         }
-
+    return true;
     }
 
 
