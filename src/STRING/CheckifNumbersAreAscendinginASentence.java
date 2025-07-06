@@ -19,7 +19,10 @@ public class CheckifNumbersAreAscendinginASentence {
             if(Character.isDigit(ch)){
                 currentValue *= 10;
                 currentValue += ch - 48;
-                previousValue = currentValue;
+                if(currentValue > previousValue){
+                    previousValue = currentValue;
+                    continue;
+                }
             }
             else
                return false;
