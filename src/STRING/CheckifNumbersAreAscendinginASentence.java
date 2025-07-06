@@ -18,7 +18,7 @@ public class CheckifNumbersAreAscendinginASentence {
         int index = 0;
         for (String str : strs) {
             try {
-                int current = Integer.parseInt(str);
+                int current = Integer.parseInt(strs);
                 if (current <= previousValue) {
                     return false;
                 }
