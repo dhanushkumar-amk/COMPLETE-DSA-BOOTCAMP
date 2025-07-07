@@ -7,6 +7,12 @@ public class Final {
         this.name = name;
     }
 
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
+
 
     public static void main(String[] args) {
         final int ONE = 1;
@@ -17,8 +23,11 @@ public class Final {
         one.name = "arun";
         System.out.println(one.name);
 
+        final int age = 10;
+
 
         // we can modify the non primitive but we can't modify
+
     }
 }
 
