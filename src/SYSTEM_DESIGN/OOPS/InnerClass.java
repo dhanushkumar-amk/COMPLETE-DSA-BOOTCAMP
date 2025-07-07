@@ -9,6 +9,7 @@ public class InnerClass {
             this.name = name;
         }
 
+        // for demo purpose
          @Override
          public String toString() {
              return name;
