@@ -46,7 +46,7 @@ class Numbers {
     }
 
     float sum(int a, int b, int c){
-        return a + b;
+        return a + b + c;
     }
 
     public static void main(String[] args) {
