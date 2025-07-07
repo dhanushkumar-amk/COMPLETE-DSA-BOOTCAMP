@@ -51,19 +51,19 @@ class Numbers {
         return a + b + c;
     }
 
-    int some(int ...arun){
+    int sum(int a, int ...arun){
         System.out.println(Arrays.toString(arun));
         int sum=0;
         for(int val:arun)
             sum+=val;
-        return sum;
+        return sum + a;
     }
 
     public static void main(String... args) {
         Numbers numbers = new Numbers();
         System.out.println(numbers.sum(20, 30));
         System.out.println(numbers.sum(20, 30, 40));
-        System.out.println(numbers.some(1, 2,3,5));
+        System.out.println(numbers.sum(20,1, 2,3,5));
     }
 }
 
