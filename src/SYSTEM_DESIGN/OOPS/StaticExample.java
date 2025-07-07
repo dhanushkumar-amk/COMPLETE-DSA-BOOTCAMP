@@ -3,7 +3,7 @@ package SYSTEM_DESIGN.OOPS;
 public class StaticExample {
     public static void main(String[] args) {
         Human dhanush = new Human(20, "hanushkumar", 100000);
-        System.out.println(dhanush.toString());
+        System.out.println(dhanush.name);
     }
 }
 
