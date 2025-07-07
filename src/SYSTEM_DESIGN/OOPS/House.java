@@ -50,7 +50,7 @@ class ArunssHouse extends  House {
         houses.add(new ArunssHouse());
 
         for(House house : houses ){
-            System.out.println(house.print());
+            house.print();
         }
     }
 }
