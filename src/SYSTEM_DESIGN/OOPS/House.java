@@ -39,9 +39,10 @@ class ArunssHouse extends  House {
 }
 
 
- class HouseMain{
+ class HouseBuilder{
 
     public static void main(String[] args){
-
+        House dhanushHouse = new DhanushsHouse();
+        System.out.println(dhanushHouse.Accessibility());
     }
 }
