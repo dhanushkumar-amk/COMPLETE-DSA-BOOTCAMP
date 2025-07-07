@@ -10,7 +10,11 @@ interface QualityRules {
     boolean Accessibility();
 }
 
+interface houseQualityRules extends QualityRules{
+    void 
+}
+
 abstract  class LandRules {
     abstract void length100();
-    abstract  void 
+      void
 }
