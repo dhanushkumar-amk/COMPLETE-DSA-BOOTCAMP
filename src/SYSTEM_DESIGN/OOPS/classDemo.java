@@ -23,3 +23,9 @@ public class classDemo {
 
 // object => state, identity, behaviour
 // variable inside the objects is called instance variable
+
+// object creation
+//classDemo obj = new classDemo(10, "dhanushkumar", 21);
+// compile time = run time
+
+
