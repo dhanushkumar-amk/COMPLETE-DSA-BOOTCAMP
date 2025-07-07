@@ -59,7 +59,7 @@ class Numbers {
         return sum + a;
     }
 
-    public static void main(String... args) {
+    public static void main(String ...arg) {
         Numbers numbers = new Numbers();
         System.out.println(numbers.sum(20, 30));
         System.out.println(numbers.sum(20, 30, 40));
