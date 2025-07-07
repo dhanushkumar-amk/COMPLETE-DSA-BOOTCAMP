@@ -7,6 +7,8 @@ public class Polymorphism {
         Square square = new Square();
 
         shape.area();
+        circle.area();
+        square.area();
     }
 }
 
