@@ -21,4 +21,5 @@ public class classDemo {
 }
 
 
-// state, identity, behaviour
+// object => state, identity, behaviour
+// variable inside the objects is called instance variable
