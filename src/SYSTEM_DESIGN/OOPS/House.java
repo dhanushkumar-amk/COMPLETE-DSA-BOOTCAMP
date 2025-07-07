@@ -1,18 +1,17 @@
 package SYSTEM_DESIGN.OOPS;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 interface QualityRules {
     boolean passTest();
     boolean Accessibility();
 }
 
-interface houseQualityRules extends QualityRules{
+interface HouseQualityRules extends QualityRules {
     void solidLand();
 }
 
-public abstract class House implements houseQualityRules {
+public abstract class House implements HouseQualityRules {
     @Override
     public void solidLand() {
         System.out.println("It is a solid land");
@@ -27,30 +26,33 @@ public abstract class House implements houseQualityRules {
     public boolean passTest() {
         return true;
     }
+
+    public abstract void print();
 }
 
-class DhanushsHouse extends  House {
-    void print() {
-        System.out.println("It is a dhanushshouse");
+class DhanushsHouse extends House {
+    @Override
+    public void print() {
+        System.out.println("It is a Dhanush's house");
     }
 }
 
-class ArunssHouse extends  House {
-    void print() {
-        System.out.println("It is a arunsHouse");
+class ArunssHouse extends House {
+    @Override
+    public void print() {
+        System.out.println("It is Arun's house");
     }
+
 }
 
-
- class HouseBuilder{
-
-    public static void main(String[] args){
+class HouseBuilder {
+    public static void main(String[] args) {
         ArrayList<House> houses = new ArrayList<>();
         houses.add(new DhanushsHouse());
         houses.add(new ArunssHouse());
 
-        for(House house : houses ){
-            house.print();
+        for (House house : houses) {
+            house.print();  // Correct way to call a void method
         }
     }
 }
