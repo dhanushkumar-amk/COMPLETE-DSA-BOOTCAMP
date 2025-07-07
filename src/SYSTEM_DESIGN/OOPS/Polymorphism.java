@@ -4,6 +4,8 @@ package SYSTEM_DESIGN.OOPS;
 // 1 => compile time polymorphism or static polymorphism => method overloading
 // 2 => run time polymorphism => method overriding
 
+import java.util.Arrays;
+
 public class Polymorphism {
     public static void main(String[] args) {
         Shapes shape = new Shapes();
@@ -49,10 +51,16 @@ class Numbers {
         return a + b + c;
     }
 
+    int some(int ...arun){
+        System.out.println(Arrays.toString(arun));
+        return 0;
+    }
+
     public static void main(String[] args) {
         Numbers numbers = new Numbers();
         System.out.println(numbers.sum(20, 30));
         System.out.println(numbers.sum(20, 30, 40));
+        System.out.println(numbers.some(1, 2,3,5));
     }
 }
 
