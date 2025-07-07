@@ -15,8 +15,8 @@ public class classDemo {
 
     public classDemo(){
         this.age = 13;
-        this.name = "dhanushkumar",
-        this.rollNo = 10,
+        this.name = "dhanushkumar";
+        this.rollNo = 10;
     }
 
 
