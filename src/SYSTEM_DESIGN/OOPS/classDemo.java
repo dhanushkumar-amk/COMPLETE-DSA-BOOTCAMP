@@ -20,7 +20,7 @@ public class classDemo {
     }
 
     public void greet(){
-        System.out.println("hello, good {this.name}");
+        System.out.println("hello, good" + this.name);
     }
 
 
