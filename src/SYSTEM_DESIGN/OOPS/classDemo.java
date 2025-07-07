@@ -28,7 +28,9 @@ public class classDemo {
         System.out.println(obj.rollNo);
 
         classDemo obj1 = new classDemo();
-        System.out.println(obj1);
+        System.out.println(obj1.name);
+        System.out.println(obj1.age);
+        System.out.println(obj1.rollNo);
     }
 }
 
