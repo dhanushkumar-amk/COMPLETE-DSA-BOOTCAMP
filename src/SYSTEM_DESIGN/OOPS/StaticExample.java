@@ -14,6 +14,7 @@ public class StaticExample {
         // we can call static method via object using className
         Human.func();
 
+
     }
 
 
