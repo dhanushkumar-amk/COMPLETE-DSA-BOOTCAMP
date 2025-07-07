@@ -11,6 +11,7 @@ public class StaticExample {
         System.out.println(Human.population);
         greeting();
 
+        // we can call static method via object using className
         Human.func();
 
     }
