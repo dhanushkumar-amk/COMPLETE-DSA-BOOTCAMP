@@ -4,7 +4,7 @@ public class AbstractClassExample {
     public static void main(String[] args) {
         son obj1 = new son();
         daughter obj2 = new daughter();
-        
+
         obj1.career("Developer");
         obj1.partner("nothing");
 
