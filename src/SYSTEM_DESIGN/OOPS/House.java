@@ -1,5 +1,8 @@
 package SYSTEM_DESIGN.OOPS;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 interface QualityRules {
     boolean passTest();
     boolean Accessibility();
@@ -42,7 +45,12 @@ class ArunssHouse extends  House {
  class HouseBuilder{
 
     public static void main(String[] args){
-        House dhanushHouse = new DhanushsHouse();
-        System.out.println(dhanushHouse.Accessibility());
+        ArrayList<House> houses = new ArrayList<>();
+        houses.add(new DhanushsHouse());
+        houses.add(new ArunssHouse());
+
+        for(House house : houses ){
+            System.out.println(house.print());
+        }
     }
 }
