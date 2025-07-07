@@ -10,6 +10,9 @@ public class StaticExample {
         // without creating object we can access a static variable
         System.out.println(Human.population);
         greeting();
+
+        Human.func();
+
     }
 
 
@@ -17,6 +20,9 @@ public class StaticExample {
     static  void greeting(){
         System.out.println("hello guys");
     }
+
+
+
 }
 
 class Human {
@@ -31,4 +37,9 @@ class Human {
         this.salary = salary;
         Human.population += 1;
     }
+
+    static void func(){
+        System.out.println("hello world");
+    }
+
 }
