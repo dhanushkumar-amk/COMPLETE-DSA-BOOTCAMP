@@ -1,2 +1,18 @@
-package SYSTEM_DESIGN.OOPS;public class InnerClass {
+package SYSTEM_DESIGN.OOPS;
+
+// outside class can't be static
+public class InnerClass {
+     static class Inner{
+        String name;
+
+        public Inner(String name) {
+            this.name = name;
+        }
+    }
+
+    public static void main(String[] args) {
+        Inner a = new Inner("Dhanushkumar");
+        System.out.println(a.name);
+    }
+
 }
