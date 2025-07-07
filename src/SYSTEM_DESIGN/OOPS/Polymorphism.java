@@ -53,10 +53,13 @@ class Numbers {
 
     int some(int ...arun){
         System.out.println(Arrays.toString(arun));
-        return 0;
+        int sum=0;
+        for(int val:arun)
+            sum+=val;
+        return sum;
     }
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         Numbers numbers = new Numbers();
         System.out.println(numbers.sum(20, 30));
         System.out.println(numbers.sum(20, 30, 40));
