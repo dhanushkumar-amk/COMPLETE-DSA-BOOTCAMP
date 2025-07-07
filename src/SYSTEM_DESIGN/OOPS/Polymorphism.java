@@ -1,5 +1,9 @@
 package SYSTEM_DESIGN.OOPS;
 
+// two types
+// 1 => compile time polymorphism or static polymorphism => method overloading
+// 2 => run time polymorphism => method overriding
+
 public class Polymorphism {
     public static void main(String[] args) {
         Shapes shape = new Shapes();
