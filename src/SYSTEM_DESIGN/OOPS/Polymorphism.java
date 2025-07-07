@@ -65,6 +65,5 @@ class Numbers {
         System.out.println(numbers.sum(20, 30, 40));
         System.out.println(numbers.sum(20,1, 2,3,5));
 
-      
     }
 }
