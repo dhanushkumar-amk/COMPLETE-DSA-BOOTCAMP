@@ -20,10 +20,14 @@ public class classDemo {
     }
 
     public void greet(){
-        System.out.println("hello, good" + this.name);
+        System.out.println("hello, good " + this.name);
     }
 
-
+    public classDemo(classDemo others){
+        this.name = others.name;
+        this.age = others.age;
+        this.rollNo = others.rollNo;
+    }
 
     public static void main(String[] args) {
         classDemo obj = new classDemo(10, "dhanushkumar", 21);
@@ -38,6 +42,10 @@ public class classDemo {
         System.out.println(obj1.name);
         System.out.println(obj1.age);
         System.out.println(obj1.rollNo);
+
+        classDemo copyConstructorExample = new classDemo(obj1);
+        System.out.println();
+
     }
 }
 
