@@ -12,11 +12,23 @@ public class classDemo {
         this.rollNo = rollNo;
     }
 
+
+    public classDemo(){
+        this.age = 13;
+        this.name = "dhanushkumar",
+        this.rollNo = 10,
+    }
+
+
+
     public static void main(String[] args) {
         classDemo obj = new classDemo(10, "dhanushkumar", 21);
         System.out.println(obj.name);
         System.out.println(obj.age);
         System.out.println(obj.rollNo);
+
+        classDemo obj1 = new classDemo();
+        System.out.println(obj1);
     }
 }
 
@@ -27,5 +39,6 @@ public class classDemo {
 // object creation
 //classDemo obj = new classDemo(10, "dhanushkumar", 21);
 // compile time = run time
+
 
 
