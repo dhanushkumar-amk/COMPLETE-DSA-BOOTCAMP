@@ -30,6 +30,6 @@ class child extends InheritanceExample {
 
     public static void main(String[] args) {
         child obj = new child(10, "dhanush", 21, 10);
-        System.out.println();
+        System.out.println(obj);
     }
 }
