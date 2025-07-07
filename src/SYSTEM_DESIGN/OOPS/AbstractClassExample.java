@@ -14,5 +14,8 @@ abstract class computer{
 }
 
 class Hp extends computer {
-    
+    @Override
+    void turnOn() {
+        System.out.println("HP is turning on");
+    }
 }
