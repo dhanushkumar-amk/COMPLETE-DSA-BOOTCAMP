@@ -12,7 +12,6 @@ public class classDemo {
         this.rollNo = rollNo;
     }
 
-
     public classDemo(){
         this.age = 13;
         this.name = "dhanushkumar";
@@ -35,8 +34,6 @@ public class classDemo {
         System.out.println(obj.age);
         System.out.println(obj.rollNo);
         obj.greet();
-
-
 
         classDemo obj1 = new classDemo();
         System.out.println(obj1.name);
