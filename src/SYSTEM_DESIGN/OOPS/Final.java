@@ -16,6 +16,9 @@ public class Final {
         System.out.println(one.name);
         one.name = "arun";
         System.out.println(one.name);
+
+
+        // we can modify the non primitive but we can't modify
     }
 }
 
