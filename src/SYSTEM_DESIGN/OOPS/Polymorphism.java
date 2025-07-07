@@ -2,7 +2,7 @@ package SYSTEM_DESIGN.OOPS;
 
 // two types
 // 1 => compile time polymorphism or static polymorphism => method overloading
-// 2 => run time polymorphism => method overriding
+// 2 => run time polymorphism or dynamic polymrphism => method overriding
 
 import java.util.Arrays;
 
@@ -66,6 +66,3 @@ class Numbers {
         System.out.println(numbers.sum(20,1, 2,3,5));
     }
 }
-
-
-
