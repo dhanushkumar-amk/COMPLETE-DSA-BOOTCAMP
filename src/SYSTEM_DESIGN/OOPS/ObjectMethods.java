@@ -1,2 +1,8 @@
-package SYSTEM_DESIGN.OOPS;public class ObjectMethods {
+package SYSTEM_DESIGN.OOPS;
+
+public class ObjectMethods {
+    public ObjectMethods() {
+    }
+
+    
 }
