@@ -7,14 +7,6 @@ public class Final {
         this.name = name;
     }
 
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
-        System.out.println("called");
-    }
-
-
-
     public static void main(String[] args) {
         final int ONE = 1;
         System.out.println(ONE);
