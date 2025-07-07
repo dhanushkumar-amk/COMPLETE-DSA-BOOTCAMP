@@ -9,9 +9,7 @@ public class StaticExample {
 
         // without creating object we can access a static variable
         System.out.println(Human.population);
-
         greeting();
-
     }
 
 
