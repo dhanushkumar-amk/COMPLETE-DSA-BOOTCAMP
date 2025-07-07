@@ -19,3 +19,6 @@ public class classDemo {
         System.out.println(obj.rollNo);
     }
 }
+
+
+// state, identity, behaviour
