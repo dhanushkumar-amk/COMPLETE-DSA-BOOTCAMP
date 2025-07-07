@@ -1,2 +1,38 @@
-package SYSTEM_DESIGN.OOPS;public class Polymorphism {
+package SYSTEM_DESIGN.OOPS;
+
+public class Polymorphism {
+    public static void main(String[] args) {
+        Shapes shape = new Shapes();
+        Circle circle = new Circle();
+        Square square = new Square();
+
+        shape.area();
+    }
 }
+
+class Shapes {
+    void area(){
+        System.out.println("I am in shapes");
+    }
+}
+
+class Circle extends Shapes{
+    void area(){
+        System.out.println("Area is pi * r * r");
+    }
+}
+
+class Square extends Shapes{
+    void area(){
+        System.out.println("Area is side * side");
+    }
+}
+
+class Triangle extends Shapes{
+    void area(){
+        System.out.println("Area is 1/2 * h * b");
+    }
+}
+
+
+

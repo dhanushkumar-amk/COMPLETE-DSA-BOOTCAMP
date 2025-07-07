@@ -22,7 +22,6 @@ class child extends InheritanceExample {
         super(age, name, rollNo, isMarried);
         this.no = no;
     }
-
     @Override
     public String toString() {
         return "name : " + this.name + " \n"
@@ -33,6 +32,6 @@ class child extends InheritanceExample {
     public static void main(String[] args) {
         child obj = new child(10, "dhanush", 21, 10, false);
         System.out.println(obj);
-//        System.out.println(obj.isMarried); // can't be accces tge private variables
+        // System.out.println(obj.isMarried); // can't be accces tge private variables
     }
 }
