@@ -12,7 +12,11 @@ public class InnerClass {
 
     public static void main(String[] args) {
         Inner a = new Inner("Dhanushkumar");
+        Inner b = new Inner("Arun kumar");
         System.out.println(a.name);
+
+        System.out.println(a);
+
     }
 
 }
