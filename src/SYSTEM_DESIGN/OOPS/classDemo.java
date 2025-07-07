@@ -19,7 +19,7 @@ public class classDemo {
         this.rollNo = 10;
     }
 
-    public void greet(String name){
+    public void greet(){
         System.out.println("hello, good {this.name}");
     }
 
@@ -30,6 +30,7 @@ public class classDemo {
         System.out.println(obj.name);
         System.out.println(obj.age);
         System.out.println(obj.rollNo);
+        obj.greet();
 
 
 
