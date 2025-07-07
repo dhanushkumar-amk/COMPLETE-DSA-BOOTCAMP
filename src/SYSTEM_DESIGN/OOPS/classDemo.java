@@ -19,6 +19,10 @@ public class classDemo {
         this.rollNo = 10;
     }
 
+    public void greet(String name){
+        System.out.println("hello, good {this.name}");
+    }
+
 
 
     public static void main(String[] args) {
@@ -26,6 +30,8 @@ public class classDemo {
         System.out.println(obj.name);
         System.out.println(obj.age);
         System.out.println(obj.rollNo);
+
+
 
         classDemo obj1 = new classDemo();
         System.out.println(obj1.name);
