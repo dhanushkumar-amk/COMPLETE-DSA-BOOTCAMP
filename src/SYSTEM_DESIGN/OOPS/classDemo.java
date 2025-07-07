@@ -44,7 +44,9 @@ public class classDemo {
         System.out.println(obj1.rollNo);
 
         classDemo copyConstructorExample = new classDemo(obj1);
-        System.out.println();
+        System.out.println(copyConstructorExample.name);
+        System.out.println(copyConstructorExample.rollNo);
+        System.out.println(copyConstructorExample.age);
 
     }
 }
