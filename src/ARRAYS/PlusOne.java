@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class PlusOne {
     public static void main(String[] args) {
-        int[] digits = {9,8,7,6,5,4,3,2,1,0};
+        int[] digits = {9,8,7,6,5,4,3,2,1};
         int[] ans = plusOne(digits);
 
         System.out.println(Arrays.toString(ans));
@@ -50,9 +50,7 @@ public class PlusOne {
             right++;
             left--;
         }
-
         return result;
-
     }
 
 }
