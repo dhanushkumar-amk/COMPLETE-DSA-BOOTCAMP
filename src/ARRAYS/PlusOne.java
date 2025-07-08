@@ -36,6 +36,18 @@ public class PlusOne {
         for (int i = 0; i < list.size(); i++) {
             result[i] = list.get(i);
         }
+
+        int right = 0;
+        int left = result.length - 1;
+
+        while( right < left){
+            int temp = result[right];
+            result[right] = result[left];
+            result[left] = temp;
+            right++;
+            left--;
+        }
+
         return result;
 
     }
