@@ -1,5 +1,6 @@
 package ARRAYS;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class PlusOne {
@@ -21,15 +22,16 @@ public class PlusOne {
 
         int ans = valOne + 1;
 
-        int[] arr = new int[digits.length + 1];
+        ArrayList<Integer> list = new ArrayList<>();
         int index = digits.length;
         while (ans > 0){
             int lastVal = ans % 10;
-            arr[index] = lastVal;
+            //arr[index] = lastVal;
+            list.add(index, lastVal);
             ans /= 10;
             index--;
         }
-        return arr;
+        return list.toArray();
 
     }
 
