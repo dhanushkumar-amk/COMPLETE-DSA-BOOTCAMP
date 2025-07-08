@@ -7,6 +7,20 @@ public class Pattern8 {
 
     public static void nStarTriangle(int n) {
         for (int i = 0; i < n; i++) {
+
+            for (int prefixSpace = 0; prefixSpace <  i; prefixSpace++) {
+                System.out.print(" ");
+            }
+
+            for (int star = 0; star < ; star++) {
+                
+            }
+            
+            for (int suffixSpace = 0; suffixSpace < i; suffixSpace++) {
+                System.out.print(" ");
+            }
+            
+            
             
         }
     }
