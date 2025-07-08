@@ -19,11 +19,10 @@ public class PlusOne {
             sb.append(digits[i]);
         }
 
-        int valOne;
+
         String val = sb.toString();
 
-         valOne = Integer.parseInt(val.toString());
-
+        int valOne = Integer.parseInt(val);
         int ans = valOne + 1;
 
         ArrayList<Integer> list = new ArrayList<>();
