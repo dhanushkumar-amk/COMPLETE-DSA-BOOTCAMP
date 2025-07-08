@@ -1,4 +1,4 @@
-package STRIVER_SHEET;
+package STRIVER_SHEET.MATHS;
 
 public class CountDigits {
     public static void main(String[] args) {
