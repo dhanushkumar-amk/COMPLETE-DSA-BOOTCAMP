@@ -16,7 +16,7 @@ public class Pattern9 {
                 System.out.print(" ");
             }
 
-            for (int star = 0; star < n * i + 1; star++) {
+            for (int star = 0; star < 2 * i + 1; star++) {
                 System.out.print("*");
             }
 
