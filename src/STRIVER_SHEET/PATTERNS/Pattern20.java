@@ -7,23 +7,22 @@ public class Pattern20 {
 
     public static void alphaHill(int n) {
         for (int i = 0; i < n; i++) {
-            // Print leading spaces
-            for (int space = 0; space < n - i - 1; space++) {
+
+            for (int prefixSpace = 0; prefixSpace < n - i - 1; prefixSpace++) {
                 System.out.print(" ");
             }
 
-            // Print ascending characters
             char ch = 'A';
-            for (int j = 0; j <= i; j++) {
+            int breakPoint = (n * i + 1)/2;
+            for (int letter = 0; letter < 2 * i + 1; letter++) {
                 System.out.print(ch++);
+                if(letter <= breakPoint) ch++;
+                else ch--;
             }
 
-            // Print descending characters
-            ch -= 2; // Move one step back to avoid duplication
-            for (int j = 0; j < i; j++) {
-                System.out.print(ch--);
+            for (int suffixSpace = 0; suffixSpace < n - i - 1; suffixSpace++) {
+                System.out.print(" ");
             }
-
             System.out.println();
         }
     }
