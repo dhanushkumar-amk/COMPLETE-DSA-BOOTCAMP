@@ -6,12 +6,19 @@ public class Pattern7 {
     }
     public static void nStarTriangle(int n) {
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n * 2 - i; j++) {
-                System.out.print("  ");
+
+            for (int prefixSpace = 0; prefixSpace < n-i-1; prefixSpace++) {
+                System.out.print(" ");
             }
-            for (int j = 0; j < i * 2 + 1; j++) {
-                System.out.print("* ");
+
+            for (int star = 0; star < 2 * i + 1; star++) {
+                System.out.print("*");
             }
+
+            for (int suffixStar = 0; suffixStar < n-i-1; suffixStar++) {
+                System.out.print(" ");
+            }
+
             System.out.println();
         }
     }
