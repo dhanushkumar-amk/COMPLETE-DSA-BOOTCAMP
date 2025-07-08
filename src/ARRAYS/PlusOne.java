@@ -19,12 +19,12 @@ public class PlusOne {
             sb.append(digits[i]);
         }
 
-        int valOne;
+        int valOne = 0;
         String val = sb.toString();
         try {
             valOne = Integer.parseInt(val);
         }catch (NumberFormatException e){
-            
+
         }
         int ans = valOne + 1;
 
