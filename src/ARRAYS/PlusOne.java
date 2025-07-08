@@ -47,5 +47,4 @@ public class PlusOne {
         }
         return result;
     }
-
 }
