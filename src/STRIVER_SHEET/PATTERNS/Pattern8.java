@@ -5,5 +5,9 @@ public class Pattern8 {
 
     }
 
-    
+    public static void nStarTriangle(int n) {
+        for (int i = 0; i < n; i++) {
+            
+        }
+    }
 }
