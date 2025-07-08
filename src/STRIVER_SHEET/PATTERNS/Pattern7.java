@@ -14,10 +14,6 @@ public class Pattern7 {
             for (int j = 0; j < i * 2 + 1; j++) {
                 System.out.print("* ");
             }
-            for (int j = i; j < n; j++) {
-                System.out.print(" ");
-            }
-
             System.out.println();
         }
     }
