@@ -23,13 +23,13 @@ public class PlusOne {
         int ans = valOne + 1;
 
         ArrayList<Integer> list = new ArrayList<>();
-        int index = digits.length - 1;
+        int index = 0;
         while (ans > 0){
             int lastVal = ans % 10;
             //arr[index] = lastVal;
             list.add(index, lastVal);
             ans /= 10;
-            index--;
+            index++;
         }
 
         int[] result =new int[list.size()];
