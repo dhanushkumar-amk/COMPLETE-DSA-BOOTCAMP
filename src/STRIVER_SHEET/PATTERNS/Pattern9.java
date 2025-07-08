@@ -42,7 +42,7 @@ public class Pattern9 {
             for (int suffixStar = 0; suffixStar < i; suffixStar++) {
                 System.out.print(" ");
             }
-
+            System.out.println();
         }
     }
 
