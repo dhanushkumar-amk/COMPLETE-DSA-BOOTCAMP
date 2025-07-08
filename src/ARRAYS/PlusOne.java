@@ -23,7 +23,7 @@ public class PlusOne {
         int ans = valOne + 1;
 
         ArrayList<Integer> list = new ArrayList<>();
-        int index = digits.length;
+        int index = digits.length - 1;
         while (ans > 0){
             int lastVal = ans % 10;
             //arr[index] = lastVal;
