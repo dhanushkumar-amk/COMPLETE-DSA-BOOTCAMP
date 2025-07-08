@@ -20,10 +20,6 @@ public class Pattern20 {
                 if(j <= breakpoint) ch++;
                 else ch--;
             }
-
-            for (int suffixSpace = 0; suffixSpace < n - i - 1; suffixSpace++) {
-                System.out.print(" ");
-            }
             System.out.println();
         }
     }
