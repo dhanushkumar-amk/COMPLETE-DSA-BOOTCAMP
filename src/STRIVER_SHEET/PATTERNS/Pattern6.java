@@ -9,6 +9,6 @@ public class Pattern6 {
             for(int j = n; j > 0; --j)
                 System.out.print(j + " ");
         }
-        System.out.println();
+       
     }
 }
