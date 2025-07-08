@@ -21,7 +21,7 @@ public class PlusOne {
 
         int ans = valOne + 1;
 
-        int[] arr = new int[100];
+        int[] arr = new int[digits.length];
         int index = 0;
         while (ans > 0){
             int lastVal = ans % 10;
@@ -29,7 +29,7 @@ public class PlusOne {
             ans /= 10;
             index++;
         }
-        return arr;
+        return ;
 
     }
 
