@@ -23,7 +23,7 @@ public class Pattern20 {
             for (int suffixSpace = 0; suffixSpace < n - i - 1; suffixSpace++) {
                 System.out.print(" ");
             }
-
+            System.out.println();
         }
     }
 }
