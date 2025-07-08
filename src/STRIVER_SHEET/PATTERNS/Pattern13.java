@@ -10,8 +10,8 @@ public class Pattern13 {
             int startValue = 1;
             for (int j = 0; j <= i; j++) {
                 System.out.print(startValue + " ");
-                startValue++;
             }
+            startValue++;
             System.out.println();
         }
     }
