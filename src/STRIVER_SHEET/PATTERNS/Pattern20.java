@@ -14,9 +14,9 @@ public class Pattern20 {
 
             char ch = 'A';
             int breakPoint = (n * i + 1)/2;
-            for (int letter = 0; letter < 2 * i + 1; letter++) {
+            for (int letter = 1; letter < 2 * i + 1; letter++) {
                 System.out.print(ch);
-                if(letter < breakPoint) ch++;
+                if(letter <= breakPoint) ch++;
                 else ch--;
             }
 
