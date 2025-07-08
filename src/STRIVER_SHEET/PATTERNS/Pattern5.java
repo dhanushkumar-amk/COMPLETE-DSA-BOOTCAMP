@@ -5,8 +5,8 @@ public class Pattern5 {
         seeding(5);
     }
     public static void seeding(int n) {
-        for (int i = 0; i < n; ++i) {
-            for(int j = n; j > 0; --j){
+        for (int i = n; i > 0; ++i) {
+            for (int j = 0; j < n; j++) {
                 System.out.print("* ");
             }
             System.out.println();
