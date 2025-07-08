@@ -12,13 +12,7 @@ public class Pattern20 {
                 System.out.print(" ");
             }
 
-            char ch = 'A';
-            int breakPoint = (n * i + 1)/2;
-            for (int letter = 1; letter <= 2 * i + 1; letter++) {
-                System.out.print(ch);
-                if(letter <= breakPoint) ch++;
-                else ch--;
-            }
+            
 
             for (int suffixSpace = 0; suffixSpace < n - i - 1; suffixSpace++) {
                 System.out.print(" ");
