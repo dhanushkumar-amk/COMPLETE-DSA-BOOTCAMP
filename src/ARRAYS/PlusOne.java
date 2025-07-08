@@ -22,12 +22,12 @@ public class PlusOne {
         int ans = valOne + 1;
 
         int[] arr = new int[digits.length + 1];
-        int index = 0;
+        int index = digits.length;
         while (ans > 0){
             int lastVal = ans % 10;
             arr[index] = lastVal;
             ans /= 10;
-            index++;
+            index--;
         }
         return arr;
 
