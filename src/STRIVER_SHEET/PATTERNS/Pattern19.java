@@ -12,7 +12,7 @@ public class Pattern19 {
                 int left = j;
                 int right = (2 * n - 1 - 1) - j;
                 int bottom = (2 * n - 1 - 1) - i;
-                int val = Math.min(Math.min(top, left), Math.min(right, bottom));
+                int val = (n - Math.min(Math.min(top, left), Math.min(right, bottom)));
                 System.out.print(val + " ");
             }
             System.out.println();
