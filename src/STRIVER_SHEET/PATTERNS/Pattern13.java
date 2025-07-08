@@ -14,6 +14,7 @@ public class Pattern13 {
                 System.out.print(startValue++ + " ");
                 currentValue = startValue;
             }
+            currentValue++;
 
 
             System.out.println();
