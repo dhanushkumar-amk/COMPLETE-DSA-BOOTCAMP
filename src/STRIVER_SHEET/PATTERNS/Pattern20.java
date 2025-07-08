@@ -1,2 +1,9 @@
-package STRIVER_SHEET.PATTERNS;public class Pattern20 {
+package STRIVER_SHEET.PATTERNS;
+
+public class Pattern20 {
+    public static void main(String[] args) {
+
+    }
+
+    
 }
