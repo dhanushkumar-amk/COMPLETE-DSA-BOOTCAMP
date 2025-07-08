@@ -2,7 +2,7 @@ package STRIVER_SHEET.PATTERNS;
 
 public class Pattern7 {
     public static void main(String[] args) {
-
+        nStarTriangle(3);
     }
     public static void nStarTriangle(int n) {
         for (int i = 0; i < n; i++) {
