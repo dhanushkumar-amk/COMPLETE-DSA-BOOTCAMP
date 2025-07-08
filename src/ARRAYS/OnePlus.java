@@ -1,2 +1,5 @@
-package ARRAYS;public class OnePlus {
+package ARRAYS;
+
+public class OnePlus {
+    
 }
