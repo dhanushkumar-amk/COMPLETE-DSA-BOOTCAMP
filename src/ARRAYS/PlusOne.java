@@ -7,7 +7,6 @@ public class PlusOne {
     public static void main(String[] args) {
         int[] digits = {9,9,9};
         int[] ans = plusOne(digits);
-
         System.out.println(Arrays.toString(ans));
     }
 
@@ -19,7 +18,6 @@ public class PlusOne {
 
 
         String val = sb.toString();
-
         int valOne = Integer.parseInt(val);
         int ans = valOne + 1;
 
@@ -27,7 +25,6 @@ public class PlusOne {
         int index = 0;
         while (ans > 0){
             int lastVal = ans % 10;
-            //arr[index] = lastVal;
             list.add(index, lastVal);
             ans /= 10;
             index++;
