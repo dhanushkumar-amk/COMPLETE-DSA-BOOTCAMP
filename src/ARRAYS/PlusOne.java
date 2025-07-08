@@ -31,8 +31,12 @@ public class PlusOne {
             ans /= 10;
             index--;
         }
-        Object[] resultArray = (myArrayList);
-        return list.toArray();
+
+        int[] result =new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            result[i] = list.get(i);
+        }
+        return result;
 
     }
 
