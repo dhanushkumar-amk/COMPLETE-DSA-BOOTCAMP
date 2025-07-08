@@ -13,11 +13,10 @@ public class Pattern20 {
             }
 
             char ch = 'A';
-            int breakpoint = (2*i+1)/2;
-            for(int j=1;j<=2*i+1;j++){
-
+            int breakPoint = (n * i + 1)/2;
+            for (int letter = 1; letter <= 2 * i + 1; letter++) {
                 System.out.print(ch);
-                if(j <= breakpoint) ch++;
+                if(letter <= breakPoint) ch++;
                 else ch--;
             }
 
