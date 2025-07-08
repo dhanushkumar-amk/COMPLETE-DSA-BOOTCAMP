@@ -2,7 +2,7 @@ package STRIVER_SHEET.PATTERNS;
 
 public class Pattern2 {
     public static void main(String[] args) {
-        nForest(5);
+        nForest(3);
 
     }
     public static void nForest(int n) {
