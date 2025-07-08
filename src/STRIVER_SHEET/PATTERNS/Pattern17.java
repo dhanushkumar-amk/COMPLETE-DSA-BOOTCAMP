@@ -2,7 +2,7 @@ package STRIVER_SHEET.PATTERNS;
 
 public class Pattern17 {
     public static void main(String[] args) {
-
+        alphaRamp(5);
     }
 
     public static void alphaRamp(int n) {
