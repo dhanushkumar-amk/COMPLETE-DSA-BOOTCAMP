@@ -32,7 +32,7 @@ public class PlusOne {
             index--;
         }
 
-        int[] result =new int[list.size()];
+        int[] result =new int[list.size() + 1];
         for (int i = 0; i < list.size(); i++) {
             result[i] = list.get(i);
         }
