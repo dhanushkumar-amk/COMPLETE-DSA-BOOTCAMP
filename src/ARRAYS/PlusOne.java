@@ -29,7 +29,7 @@ public class PlusOne {
             ans /= 10;
             index++;
         }
-        return ;
+        return arr;
 
     }
 
