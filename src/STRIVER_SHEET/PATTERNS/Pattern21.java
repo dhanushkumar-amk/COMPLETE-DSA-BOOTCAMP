@@ -1,46 +1,46 @@
-package STRIVER_SHEET.PATTERNS;
+package solveSTRIVER_SHEET.PATTERNS;
 
 public class Pattern21 {
     public static void main(String[] args) {
-        upperPart(5);
+        printPattern(5);
     }
 
-    public static void upperPart(int n) {
-        for (int i = 0; i < n; ++i) {
-
-            int initialSpace = 0;
-
-            for (int prefixStars = 1; prefixStars <= n; ++prefixStars) {
+    public static void printPattern(int n) {
+        // Upper half
+        int spaces = 0;
+        for (int i = n; i > 0; i--) {
+            // Left stars
+            for (int j = 0; j < i; j++) {
                 System.out.print("*");
             }
-
-            for (int space = 0; space < initialSpace; ++space) {
+            // Middle spaces
+            for (int j = 0; j < spaces; j++) {
                 System.out.print(" ");
             }
-
-            for (int suffixStar = 1; suffixStar <= n; ++suffixStar) {
+            // Right stars
+            for (int j = 0; j < i; j++) {
                 System.out.print("*");
             }
-
-
-            initialSpace += 2;
+            spaces += 2;
             System.out.println();
         }
 
-        int initialSpace = 2 * n - 2;
-        for (int i = 0; i < n; i++) {
-            for (int prefixStars = 1; prefixStars <= i; ++prefixStars) {
+        // Lower half
+        spaces = 2 * (n - 1);
+        for (int i = 1; i <= n; i++) {
+            // Left stars
+            for (int j = 0; j < i; j++) {
                 System.out.print("*");
             }
-
-            for (int space = 0; space < initialSpace; ++space) {
+            // Middle spaces
+            for (int j = 0; j < spaces; j++) {
                 System.out.print(" ");
             }
-
-            for (int suffixStar = 1; suffixStar <= i; ++suffixStar) {
+            // Right stars
+            for (int j = 0; j < i; j++) {
                 System.out.print("*");
             }
-            initialSpace -= 2;
+            spaces -= 2;
             System.out.println();
         }
     }
