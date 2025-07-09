@@ -41,24 +41,4 @@ public class Pattern21 {
             System.out.println();
         }
     }
-
-    public static void lowerPart(int n){
-        for (int i = 0; i < n; ++i) {
-
-            int initialSpace = 0;
-            for (int prefixStar = 0; prefixStar < i + 1; ++prefixStar) {
-                System.out.print("*");
-            }
-
-            for (int spaces = 0; spaces < ; spaces++) {
-
-            }
-
-            for (int suffixStar = 0; suffixStar < i + 1; suffixStar++) {
-                System.out.print("*");
-            }
-
-            System.out.println();
-        }
-    }
 }
