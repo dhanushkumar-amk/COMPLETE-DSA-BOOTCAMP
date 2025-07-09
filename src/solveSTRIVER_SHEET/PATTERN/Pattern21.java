@@ -1,11 +1,11 @@
-package solveSTRIVER_SHEET.PATTERNS;
+package solveSTRIVER_SHEET.PATTERN;
 
 public class Pattern21 {
     public static void main(String[] args) {
-        printPattern(5);
+        symmetry(5);
     }
 
-    public static void printPattern(int n) {
+    public static void symmetry(int n) {
         // Upper half
         int spaces = 0;
         for (int i = n; i > 0; i--) {
