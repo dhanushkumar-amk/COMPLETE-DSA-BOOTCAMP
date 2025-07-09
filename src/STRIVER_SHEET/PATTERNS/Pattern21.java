@@ -14,7 +14,7 @@ public class Pattern21 {
                 System.out.print("*");
             }
 
-            for (int space = 0; space <= initialSpace; ++space) {
+            for (int space = 0; space < initialSpace; ++space) {
                 System.out.print(" ");
             }
 
