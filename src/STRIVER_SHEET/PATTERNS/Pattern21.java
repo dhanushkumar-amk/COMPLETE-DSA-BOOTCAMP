@@ -10,7 +10,7 @@ public class Pattern21 {
 
             int initialSpace = 0;
 
-            for (int prefixStars = 0; prefixStars < n - i; ++prefixStars) {
+            for (int prefixStars = 1; prefixStars <= n - i; ++prefixStars) {
                 System.out.print("*");
             }
 
@@ -18,15 +18,16 @@ public class Pattern21 {
                 System.out.print(" ");
             }
 
-            for (int suffixStar = 0; suffixStar < n - i; ++suffixStar) {
+            for (int suffixStar = 1; suffixStar <= n - i; ++suffixStar) {
                 System.out.print("*");
             }
             initialSpace += 2;
             System.out.println();
         }
+
         int initialSpace = 2 * n - 2;
         for (int i = 0; i < n; i++) {
-            for (int prefixStars = 0; prefixStars < n - i; ++prefixStars) {
+            for (int prefixStars = 1; prefixStars <= i; ++prefixStars) {
                 System.out.print("*");
             }
 
@@ -34,7 +35,7 @@ public class Pattern21 {
                 System.out.print(" ");
             }
 
-            for (int suffixStar = 0; suffixStar < n - i; ++suffixStar) {
+            for (int suffixStar = 0; suffixStar <= i; ++suffixStar) {
                 System.out.print("*");
             }
             initialSpace -= 2;
