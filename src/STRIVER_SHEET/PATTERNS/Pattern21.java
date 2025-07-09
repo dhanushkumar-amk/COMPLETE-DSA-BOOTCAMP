@@ -35,7 +35,7 @@ public class Pattern21 {
                 System.out.print(" ");
             }
 
-            for (int suffixStar = 0; suffixStar <= i; ++suffixStar) {
+            for (int suffixStar = 1; suffixStar <= i; ++suffixStar) {
                 System.out.print("*");
             }
             initialSpace -= 2;
