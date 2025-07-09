@@ -36,6 +36,7 @@ public class Pattern21 {
                 System.out.print("*");
             }
 
+            System.out.println();
         }
     }
 }
