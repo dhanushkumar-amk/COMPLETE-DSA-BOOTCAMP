@@ -2,10 +2,10 @@ package STRIVER_SHEET.PATTERNS;
 
 public class Pattern21 {
     public static void main(String[] args) {
-       
+        symmetry(5);
     }
 
-    public static void upperPart(int n) {
+    public static void symmetry(int n) {
         for (int i = 0; i < n; ++i) {
 
             int initialSpace = 0;
@@ -14,7 +14,7 @@ public class Pattern21 {
                 System.out.print("*");
             }
 
-            for (int space = 0; space < i * 2; ++space) {
+            for (int space = 0; space < initialSpace; ++space) {
                 System.out.print(" ");
             }
 
@@ -22,6 +22,7 @@ public class Pattern21 {
                 System.out.print("*");
             }
             System.out.println();
+            initialSpace *= 2;
         }
     }
 }
