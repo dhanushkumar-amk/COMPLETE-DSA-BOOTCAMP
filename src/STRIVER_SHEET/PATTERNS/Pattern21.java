@@ -10,7 +10,7 @@ public class Pattern21 {
 
             int initialSpace = 0;
 
-            for (int prefixStars = 1; prefixStars <= n - i; ++prefixStars) {
+            for (int prefixStars = 1; prefixStars <= n; ++prefixStars) {
                 System.out.print("*");
             }
 
