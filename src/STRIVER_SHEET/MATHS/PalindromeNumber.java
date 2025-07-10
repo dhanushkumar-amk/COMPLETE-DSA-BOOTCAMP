@@ -2,7 +2,7 @@ package STRIVER_SHEET.MATHS;
 
 public class PalindromeNumber {
     public static void main(String[] args) {
-        System.out.println(isPalindrome(123));
+        System.out.println(isPalindrome(12321));
     }
 
     public static boolean isPalindrome(int x) {
