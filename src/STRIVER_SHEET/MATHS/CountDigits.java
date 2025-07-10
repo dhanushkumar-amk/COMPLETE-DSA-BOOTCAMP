@@ -2,7 +2,7 @@ package STRIVER_SHEET.MATHS;
 
 public class CountDigits {
     public static void main(String[] args) {
-        int n = 1234567896;
+        int n = ;
         System.out.println(countDigit(n));
     }
 
