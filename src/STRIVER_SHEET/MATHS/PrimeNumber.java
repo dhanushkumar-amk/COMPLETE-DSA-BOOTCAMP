@@ -2,7 +2,7 @@ package STRIVER_SHEET.MATHS;
 
 public class PrimeNumber {
     public static void main(String[] args) {
-        System.out.println(isPrime(11));
+        System.out.println(isPrime(7));
     }
 
     public  static boolean isPrime(int n){
