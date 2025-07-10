@@ -10,7 +10,7 @@ public class PrintAllDivisors {
         for (int i = 1; i <= Math.sqrt(36); i++) {
             if(n % i == 0){
                 if(i == Math.sqrt(n)){
-                    System.out.println(i);
+                    System.out.print(i);
                 }
                 else {
                     System.out.print(i + " " + n / i + " ");
