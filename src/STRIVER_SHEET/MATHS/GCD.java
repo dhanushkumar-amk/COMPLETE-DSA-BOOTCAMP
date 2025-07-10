@@ -5,7 +5,7 @@ public class GCD {
         System.out.println(gcd(20, 40));
     }
     public static  int gcd(int a, int b){
-
+k
         while (a > 0 && b > 0){
             if(a > b)
                 a = a % b;
