@@ -2,7 +2,7 @@ package STRIVER_SHEET.MATHS;
 
 public class ReverseANumber {
     public static void main(String[] args) {
-        System.out.println(reverse(1235));
+        System.out.println(reverse(12350));
     }
 
     public static int reverse(int n){
