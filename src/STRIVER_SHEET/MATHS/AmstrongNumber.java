@@ -1,2 +1,4 @@
-package STRIVER_SHEET.MATHS;public class AmstromgNumber {
+package STRIVER_SHEET.MATHS;
+
+public class AmstrongNumber {
 }
