@@ -5,5 +5,14 @@ public class PalindromeNumber {
 
     }
 
-    
+    public static boolean isPalindrome(int x) {
+        int n = x;
+
+        int temp = 0;
+        while(n != 0){
+            int rem = n % 10;
+            temp = temp * 10 + rem;
+        }
+
+    }
 }
