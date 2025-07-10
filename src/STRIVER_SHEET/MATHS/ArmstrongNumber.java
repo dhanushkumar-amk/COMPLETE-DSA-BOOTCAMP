@@ -2,7 +2,7 @@ package STRIVER_SHEET.MATHS;
 
 public class ArmstrongNumber {
     public static void main(String[] args) {
-        System.out.println(isArmstrongNumber(152));
+        System.out.println(isArmstrongNumber(153));
     }
 
     public static  boolean isArmstrongNumber(int n){
