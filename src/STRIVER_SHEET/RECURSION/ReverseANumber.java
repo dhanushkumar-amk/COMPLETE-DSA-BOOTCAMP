@@ -14,7 +14,7 @@ public class ReverseANumber {
     static void reverse(int index, int[] arr, int n){
         if(index >= n / 2)
             return;
-        
+
         int temp = arr[index];
         arr[index] =  arr[n - index - 1];
         arr[n - index - 1] = temp;
