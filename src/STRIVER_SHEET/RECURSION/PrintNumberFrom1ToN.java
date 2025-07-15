@@ -10,6 +10,6 @@ public class PrintNumberFrom1ToN {
             return;
 
         System.out.println("i : " +  i);
-        func(i - 1, n);
+        func(i + 1, n);
     }
 }
