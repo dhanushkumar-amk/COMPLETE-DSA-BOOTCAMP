@@ -12,7 +12,7 @@ public class PrintNamesInFiveTimes {
 
 
  public  static void func(int i, int count){
-        if(i == count)
+        if(i > count)
             return;
 
         System.out.println("dhanushkumar");
