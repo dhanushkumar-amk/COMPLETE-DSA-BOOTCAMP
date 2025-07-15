@@ -14,15 +14,11 @@ public class ReverseANumber {
     static void reverse(int index, int[] arr, int n){
         if(index >= n / 2)
             return;
-
-        swap(arr[index], arr[n - index - 1]);
+        
+        int temp = arr[index];
+        arr[index] =  arr[n - index - 1];
+        arr[n - index - 1] = temp;
 
         reverse(index + 1, arr, n);
-    }
-
-    static void swap(int left, int right){
-        int temp = left;
-        left = right;
-        right = temp;
     }
 }
