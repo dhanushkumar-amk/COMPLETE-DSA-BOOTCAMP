@@ -1,18 +1,22 @@
 package STRIVER_SHEET.RECURSION;
 
+import java.util.Scanner;
+
 public class PrintNamesInFiveTimes {
     public static void main(String[] args) {
-        func();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value : ");
+        int count = sc.nextInt();
+        func(1, count);
     }
 
-    static int count = 0;
- public  static void func(){
-        if(count == 5)
+
+ public  static void func(int i, int count){
+        if(i == 5)
             return;
 
         System.out.println("dhanushkumar");
-        count++;
-        func();
+        func(i + 1, count);
     }
 
 }
