@@ -2,7 +2,7 @@ package STRIVER_SHEET.RECURSION;
 
 public class Fibonnaci {
     public static void main(String[] args) {
-        System.out.println(fibo(4));
+        System.out.println(fibo(10));
     }
 
     static int fibo(int n){
