@@ -11,7 +11,11 @@ public class CountFrequency {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
 
         for (int i = 0; i < arr.length; i++) {
-            hashMap.put(i, hashMap.getOrDefault(hashMap.get(i) + 1), 0);
+            hashMap.put(arr[i], hashMap.getOrDefault(arr[i], 0) + 1);
+        }
+
+        for (int i = 0; i < hashMap.size(); i++) {
+
         }
 
 
