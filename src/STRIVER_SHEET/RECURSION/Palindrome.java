@@ -3,7 +3,8 @@ package STRIVER_SHEET.RECURSION;
 public class Palindrome {
 
     public static void main(String[] args) {
-        System.out.println(isPalindrome(0, "madams", "madams".length()));
+        String s = "madam";
+        System.out.println(isPalindrome(0, s, s.length()));
     }
 
     static boolean isPalindrome(int index, String s, int n){
