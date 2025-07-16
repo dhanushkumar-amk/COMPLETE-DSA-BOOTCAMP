@@ -8,7 +8,6 @@ public class Palindrome {
     }
 
     static boolean isPalindrome(int index, String s, int n){
-
         if(index >= n / 2)
             return true;
 
@@ -16,6 +15,5 @@ public class Palindrome {
             return false;
 
         return isPalindrome(index + 1, s, n);
-
     }
 }
