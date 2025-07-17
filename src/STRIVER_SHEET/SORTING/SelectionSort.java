@@ -13,10 +13,10 @@ public class SelectionSort {
     static void selectionSort(int[] arr){
 
         for (int i = 0; i < arr.length; i++) {
-            int minValueIndex = Integer.MAX_VALUE;
+            int minValueIndex = i;
 
             for (int j = i; j < arr.length; j++) {
-                if(arr[i] < minValueIndex)
+                if(arr[j] < minValueIndex)
                     minValueIndex = i;
             }
 
