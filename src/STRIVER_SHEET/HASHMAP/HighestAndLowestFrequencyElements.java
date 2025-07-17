@@ -12,7 +12,7 @@ public class HighestAndLowestFrequencyElements {
     static void freq(int[] arr) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
 
-        // Count frequencies
+
         for (int num : arr) {
             hashMap.put(num, hashMap.getOrDefault(num, 0) + 1);
         }
@@ -22,7 +22,7 @@ public class HighestAndLowestFrequencyElements {
         int maxElement = -1;
         int minElement = -1;
 
-        // Find max and min frequency elements
+
         for (Map.Entry<Integer, Integer> entry : hashMap.entrySet()) {
             int key = entry.getKey();
             int val = entry.getValue();
