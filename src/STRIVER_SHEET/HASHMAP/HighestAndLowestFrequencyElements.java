@@ -23,7 +23,7 @@ public class HighestAndLowestFrequencyElements {
 
        for(Map.Entry<Integer, Integer> entry : hashMap.entrySet()){
            if(entry.getValue() > maxValue)
-               maxValue = entry.getValue();
+               maxValue = entry.getKey();
        }
 
         System.out.println(maxValue);
