@@ -16,7 +16,7 @@ public class SelectionSort {
             int minValueIndex = i;
 
             for (int j = i; j < arr.length; j++) {
-                if(arr[j] < minValueIndex)
+                if(arr[j] < arr[minValueIndex])
                     minValueIndex = i;
             }
 
@@ -24,7 +24,7 @@ public class SelectionSort {
             arr[i] = arr[minValueIndex];
             arr[minValueIndex] = temp;
 
-            minValueIndex = Integer.MAX_VALUE;
+
 
         }
     }
