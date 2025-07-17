@@ -21,10 +21,10 @@ public class HighestAndLowestFrequencyElements {
         int maxValue = Integer.MIN_VALUE;
         int minValue = Integer.MAX_VALUE;
 
-       for(Map.Entry<Integer, Integer> entry : hashMap.entrySet()){
-           if(entry.getValue() > maxValue)
-               maxValue = entry.getKey();
-       }
+        for (int i = 0; i < hashMap.size(); i++) {
+            if(hashMap.get(i) > maxValue)
+                maxValue = hashMap.keySet()
+        }
 
         System.out.println(maxValue);
     }
