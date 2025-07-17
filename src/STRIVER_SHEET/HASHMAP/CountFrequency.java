@@ -15,7 +15,7 @@ public class CountFrequency {
         for (int i = 0; i < arr.length; i++) {
             hashMap.put(arr[i], hashMap.getOrDefault(arr[i], 0) + 1);
         }
-        // Print the frequencies
+
         for (Map.Entry<Integer, Integer> entry : hashMap.entrySet()) {
             System.out.println("Element: " + entry.getKey() + " -> Frequency: " + entry.getValue());
         }
