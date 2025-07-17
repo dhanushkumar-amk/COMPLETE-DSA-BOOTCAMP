@@ -7,25 +7,38 @@ public class HighestAndLowestFrequencyElements {
     public static void main(String[] args) {
         int[] arr = {1,1,1,1,1,2,2,2,2,2,2,3,4,4,4};
         freq(arr);
-
     }
 
-    static void freq(int[] arr){
-
+    static void freq(int[] arr) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
 
-        for (int i = 0; i < arr.length; i++) {
-            hashMap.put(arr[i], hashMap.getOrDefault(arr[i], 0) + 1);
+        // Count frequencies
+        for (int num : arr) {
+            hashMap.put(num, hashMap.getOrDefault(num, 0) + 1);
         }
 
-        int maxValue = Integer.MIN_VALUE;
-        int minValue = Integer.MAX_VALUE;
+        int maxFreq = Integer.MIN_VALUE;
+        int minFreq = Integer.MAX_VALUE;
+        int maxElement = -1;
+        int minElement = -1;
 
-        for (int i = 0; i < hashMap.size(); i++) {
-            if(hashMap.get(i) > maxValue)
-                maxValue = hashMap.keySet()
+        // Find max and min frequency elements
+        for (Map.Entry<Integer, Integer> entry : hashMap.entrySet()) {
+            int key = entry.getKey();
+            int val = entry.getValue();
+
+            if (val > maxFreq) {
+                maxFreq = val;
+                maxElement = key;
+            }
+
+            if (val < minFreq) {
+                minFreq = val;
+                minElement = key;
+            }
         }
 
-        System.out.println(maxValue);
+        System.out.println("Element with Highest Frequency: " + maxElement + " (Count: " + maxFreq + ")");
+        System.out.println("Element with Lowest Frequency: " + minElement + " (Count: " + minFreq + ")");
     }
 }
