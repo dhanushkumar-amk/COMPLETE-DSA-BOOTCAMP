@@ -12,18 +12,20 @@ public class SelectionSort {
 
     static void selectionSort(int[] arr){
 
-        int currentStartIndex = 0;
+        for (int i = 0; i < arr.length; i++) {
+            int minValueIndex = Integer.MAX_VALUE;
 
-        for (int i = currentStartIndex; i < arr.length; i++) {
-            int minValue = 100;
-            if(arr[i] < minValue)
-                minValue = i;
+            for (int j = i; j < arr.length; j++) {
+                if(arr[i] < minValueIndex)
+                    minValueIndex = arr[i];
+            }
 
-           int temp = arr[currentStartIndex];
-           arr[currentStartIndex] = arr[minValue];
-           arr[minValue] = temp;
+            int temp = arr[i];
+            arr[i] = arr[minValueIndex];
+            arr[minValueIndex] = temp;
 
-           currentStartIndex++;
+            minValueIndex = Integer.MAX_VALUE;
+
         }
     }
 }
