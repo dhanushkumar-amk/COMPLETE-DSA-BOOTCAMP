@@ -23,30 +23,30 @@ public class QuickSort {
     }
 
     private static int partitionFunction(int[] arr, int low, int high) {
-        int pivot = arr[low]; // Correct: pivot is value, not index
+        int pivot = arr[low];
         int i = low;
         int j = high;
 
         while (i < j) {
-            // Move i to the right until arr[i] > pivot
+
             while (i <= high && arr[i] <= pivot) {
                 i++;
             }
 
-            // Move j to the left until arr[j] <= pivot
+
             while (j >= low && arr[j] > pivot) {
                 j--;
             }
 
             if (i < j) {
-                // Swap arr[i] and arr[j]
+
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
         }
 
-        // Place pivot at its correct position
+
         arr[low] = arr[j];
         arr[j] = pivot;
 
