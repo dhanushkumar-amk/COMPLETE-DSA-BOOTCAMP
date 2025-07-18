@@ -1,6 +1,7 @@
 package STRIVER_SHEET.SORTING;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MergeSort {
@@ -26,7 +27,7 @@ public class MergeSort {
     }
 
     private static void merge(int[] arr, int low, int mid, int high) {
-        int[] temp = new int[low + high + 1];
+        ArrayList<Integer> temp = new ArrayList<>();
 
 
         int left = low;
@@ -35,8 +36,11 @@ public class MergeSort {
 
         while (low <= mid && right <= high){
             if(arr[left] <= arr[right]){
-                temp.pus
-                left++;
+               temp.add(arr[left]);
+               left++;
+            }else{
+                temp.add(arr[right]);
+                right++;    
             }
         }
     }
