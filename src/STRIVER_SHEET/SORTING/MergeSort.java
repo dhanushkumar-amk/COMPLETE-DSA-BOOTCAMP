@@ -6,9 +6,19 @@ import java.util.Arrays;
 
 public class MergeSort {
     public static void main(String[] args) {
-        int[] arr = {2,5,1,4,3,2};
-        mergeSort(arr, 0, arr.length - 1);
-        System.out.println(Arrays.toString(arr));
+        int n = 7;
+        int arr[] = { 9, 4, 7, 6, 3, 1, 5 };
+        System.out.println("Before sorting array: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+       mergeSort(arr, 0, n - 1);
+        System.out.println("After sorting array: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
     }
 
     private static void mergeSort(int[] arr, int low, int high) {
@@ -58,7 +68,7 @@ public class MergeSort {
 
         for (int i = low; i < high; i++) {
             arr[i] = temp.get(i - low);
-        }   
+        }
 
     }
 
