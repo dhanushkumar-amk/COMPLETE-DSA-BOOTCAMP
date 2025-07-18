@@ -50,6 +50,6 @@ public class QuickSort {
         arr[low] = arr[j];
         arr[j] = pivot;
 
-        return j; // Return the partition index
+        return j;
     }
 }
