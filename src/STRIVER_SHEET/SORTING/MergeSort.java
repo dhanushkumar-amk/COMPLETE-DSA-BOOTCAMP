@@ -40,9 +40,21 @@ public class MergeSort {
                left++;
             }else{
                 temp.add(arr[right]);
-                right++;    
+                right++;
             }
         }
+
+
+        while(left <= high){
+            temp.add(arr[left]);
+            left++;
+        }
+
+        while(right <= high){
+            temp.add(arr[right]);
+            right++;
+        }
+
     }
 
 
