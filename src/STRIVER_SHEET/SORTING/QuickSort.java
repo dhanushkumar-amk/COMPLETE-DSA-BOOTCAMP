@@ -7,7 +7,6 @@ public class QuickSort {
        int[] arr = {6,7,4,8,1,3,8};
        int[] ans = quickSort(arr);
         System.out.println(Arrays.toString(ans));
-
     }
 
     static int[] quickSort(int[] arr){
