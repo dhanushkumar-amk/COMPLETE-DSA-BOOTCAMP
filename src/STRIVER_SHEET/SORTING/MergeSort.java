@@ -29,7 +29,7 @@ public class MergeSort {
 
         mergeSort(arr, low, mid);
         mergeSort(arr, mid + 1, high);
-        
+
         merge(arr, low, mid , high);
     }
 
@@ -63,7 +63,7 @@ public class MergeSort {
         }
 
 
-        for (int i = low; i < high; i++) {
+        for (int i = low; i <= high; i++) {
             arr[i] = temp.get(i - low);
         }
 
