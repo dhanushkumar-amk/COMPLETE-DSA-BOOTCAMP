@@ -25,7 +25,7 @@ public class MergeSort {
         if(low >= high)
             return;
 
-        int mid = low + high / 2;
+        int mid = (low + high) / 2;
 
         mergeSort(arr, low, mid);
         mergeSort(arr, mid + 1, high);
