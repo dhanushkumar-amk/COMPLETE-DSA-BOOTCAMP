@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class MergeSort {
     public static void main(String[] args) {
         int[] arr = {2,5,1,4,3,2};
-        mergeSort(arr, 0, arr.length);
+        mergeSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -14,8 +14,31 @@ public class MergeSort {
         if(low >= high)
             return;
 
+        int mid = low + high / 2;
+
+        mergeSort(arr, low, mid);
+        mergeSort(arr, mid + 1, high);
+
+        merge(arr, low, mid , high);
 
 
+
+    }
+
+    private static void merge(int[] arr, int low, int mid, int high) {
+        int[] temp = new int[low + high + 1];
+
+
+        int left = low;
+        int right = mid + 1;
+
+
+        while (low <= mid && right <= high){
+            if(arr[left] <= arr[right]){
+                temp.pus
+                left++;
+            }
+        }
     }
 
 
