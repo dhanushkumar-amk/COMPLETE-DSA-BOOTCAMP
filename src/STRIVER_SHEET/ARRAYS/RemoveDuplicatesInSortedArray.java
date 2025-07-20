@@ -9,21 +9,7 @@ public class RemoveDuplicatesInSortedArray {
 
     }
 
-    static int[] removeDuplicates(int[] arr){
-
-        Set<Integer> set = new HashSet<>();
-
-        for(int num : arr){
-            set.add(num);
-        }
-
-        int[] ans = new int[set.size() + 1];
-
-        for (int i = 0; i < set.size(); i++) {
-            arr[i] = set.
-        }
-
-
-
+    static int removeDuplicates(int[] arr){
+        
     }
 }
