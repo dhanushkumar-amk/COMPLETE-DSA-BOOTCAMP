@@ -5,5 +5,5 @@ public class LeftRotationByOnePlace {
         int[] arr = {1,2,3,4,5};
 
     }
-    static 
+    static void leftRotate(int[] arr)
 }
