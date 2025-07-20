@@ -33,15 +33,15 @@ public class RemoveDuplicatesInSortedArray {
     static ArrayList<Integer> removeDuplicates1(int[] arr) {
         int i = 0;
         for (int j = 1; j < arr.length; ++j) {
-            if(arr[i] != arr[j]){
-                arr[i + 1]  = arr[j];
+            if(arr[i] != arr[j]) {
+                arr[i + 1] = arr[j];
                 i++;
             }
         }
 
         ArrayList<Integer> ans = new ArrayList<>();
         for (int j = 0; j <= i; j++) {
-            ans.add(arr[j]);
+            ans.add(arr[j]); /
         }
         return ans;
     }
