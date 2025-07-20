@@ -1,7 +1,9 @@
- package STRIVER_SHEET.ARRAYS; 
+package STRIVER_SHEET.ARRAYS;
 
 public class RemoveDuplicatesInSortedArray {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
     }
+
+    
 }
