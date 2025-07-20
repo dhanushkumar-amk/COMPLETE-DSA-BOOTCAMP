@@ -15,9 +15,8 @@ public class SecondLargestElementInArray {
                 secondLargest = arr[i];
                 largest = arr[i];
             }
-            return secondLargest;
         }
-
+        return secondLargest;
     }
 
 }
