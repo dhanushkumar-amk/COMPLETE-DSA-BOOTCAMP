@@ -2,7 +2,7 @@ package STRIVER_SHEET.ARRAYS;
 
 public class SecondLargestElementInArray {
     public static void main(String[] args) {
-        int[] arr = {17,19, 57, 43,55, 36,47,98};
+        int[] arr = {1,2,3,4,5,6};
         System.out.println(secondLargest(arr));
     }
 
