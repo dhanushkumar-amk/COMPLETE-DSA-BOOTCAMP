@@ -7,16 +7,21 @@ public class SecondLargestElementInArray {
     }
 
     static int secondLargest(int[] arr){
-        int largest = Integer.MIN_VALUE;
-        int secondLargest = 0;
+        if (arr.length < 2) return -1;
 
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i] >= largest){
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        for (int num : arr) {
+            if (num > largest) {
                 secondLargest = largest;
-                largest = arr[i];
+                largest = num;
+            } else if (num > secondLargest && num != largest) {
+                secondLargest = num;
             }
         }
-        return secondLargest;
+
+        return (secondLargest == Integer.MIN_VALUE) ? -1 : secondLargest;
     }
 
 }
