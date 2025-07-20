@@ -1,9 +1,14 @@
 package STRIVER_SHEET.ARRAYS;
 
+import java.util.Arrays;
+
 public class LargestElementInArray {
     public static void main(String[] args) {
         int[] arr = {2,5,1,3,9,7,10,2,5,6};
         System.out.println(largest(arr));
+
+        int max = Arrays.stream(arr).max().getAsInt();
+        System.out.println(max);
     }
 
     static int largest(int[] arr){
