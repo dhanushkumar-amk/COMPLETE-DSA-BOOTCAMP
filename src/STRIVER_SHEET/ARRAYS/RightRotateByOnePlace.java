@@ -11,7 +11,7 @@ public class RightRotateByOnePlace {
         int n = arr.length;
         int temp = arr[n - 1];
 
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 1; i < n; i++) {
             arr[i] = arr[i - 1];
         }
 
