@@ -40,7 +40,7 @@ public class RemoveDuplicatesInSortedArray {
         }
 
         ArrayList<Integer> ans = new ArrayList<>();
-        for (int j = 0; j <= 1; j++) {
+        for (int j = 0; j <= i; j++) {
             ans.add(arr[j]);
         }
         return ans;
