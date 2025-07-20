@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class RemoveDuplicatesInSortedArray {
     public static void main(String[] args) {
-        int[] arr = {4,6,7,8,9,9,10};
+        int[] arr = {4,4, 6,7,8,9,9,10};
         int range = removeDuplicates(arr);
         for (int i = 0; i < range; ++i) {
             System.out.print(arr[i] + " ");
