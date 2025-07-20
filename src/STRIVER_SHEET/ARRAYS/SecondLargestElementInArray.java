@@ -8,7 +8,7 @@ public class SecondLargestElementInArray {
 
     static int secondLargest(int[] arr){
         int largest = Integer.MIN_VALUE;
-        int secondLargest = largest;
+        int secondLargest = 0;
 
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] > largest){
