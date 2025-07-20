@@ -45,7 +45,7 @@ public class RemoveDuplicatesInSortedArray {
         int inner = 0;
         for (int j = 0; j <= i; j++) {
             inner++;
-            if(inner <= count) {
+            if(inner < count) {
                 ans.add(arr[j]);
             }
             else break;
