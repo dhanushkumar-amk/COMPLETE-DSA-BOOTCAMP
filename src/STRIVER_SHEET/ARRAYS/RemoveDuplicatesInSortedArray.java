@@ -1,5 +1,6 @@
 package STRIVER_SHEET.ARRAYS;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -9,6 +10,11 @@ public class RemoveDuplicatesInSortedArray {
         int range = removeDuplicates(arr);
         for (int i = 0; i < range; ++i) {
             System.out.print(arr[i] + " ");
+        }
+
+        ArrayList<Integer> ans = removeDuplicates1(arr);
+        for (int i = 0; i < ans.size(); i++) {
+            System.out.print(ans.get(i) + " ");
         }
     }
 
@@ -22,4 +28,21 @@ public class RemoveDuplicatesInSortedArray {
         }
         return i + 1;
     }
+
+    static ArrayList<Integer> removeDuplicates1(int[] arr) {
+        int i = 0;
+        for (int j = 1; j < arr.length; ++j) {
+            if(arr[i] != arr[j]){
+                arr[i + 1]  = arr[j];
+                i++;
+            }
+        }
+
+        ArrayList<Integer> ans = new ArrayList<>();
+        for (int j = 0; j < i + 1; j++) {
+            ans.add(arr[j]);
+        }
+        return ans;
+    }
+
 }
