@@ -32,16 +32,22 @@ public class RemoveDuplicatesInSortedArray {
 
     static ArrayList<Integer> removeDuplicates1(int[] arr) {
         int i = 0;
+        int count = 0;
         for (int j = 1; j < arr.length; ++j) {
             if(arr[i] != arr[j]) {
                 arr[i + 1] = arr[j];
                 i++;
+                count++;
             }
         }
 
         ArrayList<Integer> ans = new ArrayList<>();
+        int inner = 0;
         for (int j = 0; j <= i; j++) {
-            ans.add(arr[j]); 
+            if(inner <= count) {
+                ans.add(arr[j]);
+            }
+            else break;
         }
         return ans;
     }
