@@ -17,6 +17,6 @@ public class FindMissingNumbers {
             actualSum += arr[i];
         }
 
-        return actualSum - sumOfNaturalNumber;
+        return sumOfNaturalNumber - actualSum;
     }
 }
