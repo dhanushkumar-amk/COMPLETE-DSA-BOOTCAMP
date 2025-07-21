@@ -18,15 +18,37 @@ public class UnionOfTwoSortedArray {
         int i = 0;
         int j = 0;
 
-        ArrayList<Integer> ans = new ArrayList<>();
+        ArrayList<Integer> Union = new ArrayList<>();
 
         while (i < n1 && j < n2){
-            if(arr1[i] <= arr2[j]){
-                ans.get(i - 1)
+           if(arr1[i] <= arr2[j]) {
+               if (Union.size() == 0 || Union.get(Union.size() - 1) != arr1[i])
+                   Union.add(arr1[i]);
+               i++;
+           }
+           else{
+               if (Union.size() == 0 || Union.get(Union.size() - 1) != arr2[j])
+                   Union.add(arr2[j]);
+               j++;
+           }
+        }
+
+        while (i < n1){
+            if(arr1[i] <= arr2[j]) {
+                if (Union.size() == 0 || Union.get(Union.size() - 1) != arr1[i])
+                    Union.add(arr1[i]);
+                i++;
             }
         }
 
-        return ans;
+        while(j < n2){
+            if (Union.size() == 0 || Union.get(Union.size() - 1) != arr2[j])
+                Union.add(arr2[j]);
+            j++;
+        }
+        }
+
+        return Union;
     }
 
 
