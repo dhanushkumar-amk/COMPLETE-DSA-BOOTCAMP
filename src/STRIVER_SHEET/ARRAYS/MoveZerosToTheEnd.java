@@ -25,7 +25,7 @@ public class MoveZerosToTheEnd {
             if(arr[k] != 0){
                 ans[i] = arr[k];
                 i++;
-            } else if (arr[k] == 0) {
+            } else {
                 arr[j] = arr[k];
                 j--;
             }
