@@ -13,21 +13,13 @@ public class MoveZerosToTheEnd {
 
     static int[] moveZeros(int n, int[] arr){
 
-        if(arr.length < 2)
-            return new int[arr[0]];
+        int[] ans = new int[n];
+        int index = 0;
 
-        int[] ans = new int[arr.length];
 
-        int i = 0;
-        int j = ans.length - 1;
-
-        for (int k = 0; k < arr.length; k++) {
-            if(arr[k] != 0){
-                ans[i] = arr[k];
-                i++;
-            } else {
-                arr[j] = arr[k];
-                j--;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] != 0) {
+                ans[index++] = arr[i];
             }
         }
         return ans;
