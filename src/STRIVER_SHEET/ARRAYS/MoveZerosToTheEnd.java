@@ -6,6 +6,6 @@ public class MoveZerosToTheEnd {
     }
 
     static void zeroToEnd(int[] arr){
-
+        
     }
 }
