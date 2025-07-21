@@ -10,7 +10,7 @@ public class FindMissingNumbers {
     static int missingNumber(int[] arr){
         int n = arr.length;
 
-        int sumOfNaturalNumber = (n * (n + 1) / 2);
+        int sumOfNaturalNumber = (n * (n + 1) )/ 2;
 
         int actualSum = 0;
         for (int i = 0; i < arr.length; ++i) {
