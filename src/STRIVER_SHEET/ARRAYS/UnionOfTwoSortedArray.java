@@ -8,7 +8,10 @@ public class UnionOfTwoSortedArray {
         int[] arr1 = {1,1,2,3,4,5};
         int[] arr2 = {2,3,4,4,5,6};
 
-
+        ArrayList<Integer> Union = FindUnion(arr1, arr2, n, m);
+        System.out.println("Union of arr1 and arr2 is ");
+        for (int val: Union)
+            System.out.print(val+" ");
     }
 
     static ArrayList<Integer> FindUnion(int[] arr1, int[] arr2){
