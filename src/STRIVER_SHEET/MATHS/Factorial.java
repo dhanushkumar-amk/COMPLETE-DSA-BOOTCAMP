@@ -16,6 +16,7 @@ public class Factorial {
         ans.add(fact);
         for (long i = 2; i <= n ; ++i) {
             fact = fact * i;
+            ans.add(fact);
         }
     return ans;
     }
