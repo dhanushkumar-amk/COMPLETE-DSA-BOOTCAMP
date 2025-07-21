@@ -7,17 +7,18 @@ public class RightRotateByOnePlace {
     }
 
 
-    static void rightRotate(int[] arr){
+    static void rightRotate(int[] arr) {
         int n = arr.length;
-        int temp = arr[n - 1];
+        int temp = arr[n - 1]; 
 
-        for (int i = 0; i < n - 1; i++) {
-            arr[i + 1] = arr[i];
+        for (int i = n - 1; i > 0; i--) {
+            arr[i] = arr[i - 1];
         }
 
         arr[0] = temp;
 
-        for (int i = 0; i < arr.length; i++) {
+
+        for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
         }
     }
