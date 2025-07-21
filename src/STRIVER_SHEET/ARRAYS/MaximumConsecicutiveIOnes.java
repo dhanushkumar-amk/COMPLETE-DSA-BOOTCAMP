@@ -1,4 +1,4 @@
 package STRIVER_SHEET.ARRAYS;
 
-public class MaximumConsecicutiveIOnes {
+public class MaximumConsecutiveIOnes {
 }
