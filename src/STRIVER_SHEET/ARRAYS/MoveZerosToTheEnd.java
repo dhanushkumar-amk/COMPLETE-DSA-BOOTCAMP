@@ -13,6 +13,9 @@ public class MoveZerosToTheEnd {
 
     static int[] moveZeros(int n, int[] arr){
 
+        if(arr.length < 2)
+            return new int[arr[0]];
+
         int[] ans = new int[arr.length];
 
         int i = 0;
@@ -26,9 +29,7 @@ public class MoveZerosToTheEnd {
                 arr[j] = arr[k];
                 j--;
             }
-
         }
-
-
+        return ans;
     }
 }
