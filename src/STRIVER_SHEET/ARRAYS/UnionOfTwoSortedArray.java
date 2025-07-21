@@ -46,10 +46,6 @@ public class UnionOfTwoSortedArray {
                 Union.add(arr2[j]);
             j++;
         }
-        }
-
         return Union;
     }
-
-
 }
