@@ -28,7 +28,6 @@ public class MajorityElementsNByTwoTimes {
         }
         if(counter1 > arr.length / 2)
             return element;
-
         return -1;
     }
 }
