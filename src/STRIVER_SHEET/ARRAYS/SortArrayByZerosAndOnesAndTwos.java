@@ -12,7 +12,7 @@ public class SortArrayByZerosAndOnesAndTwos {
     }
 
     static void sort(int[] arr){
-        Arrays.sort(arr);
+       
     }
 
 }
