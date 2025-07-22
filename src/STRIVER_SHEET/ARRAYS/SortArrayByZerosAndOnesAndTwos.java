@@ -19,9 +19,13 @@ public class SortArrayByZerosAndOnesAndTwos {
         while (mid <= high){
             if(arr[mid] == 0){
 
-                int temp = arr[mid];
-                arr[mid] = arr[low];
-                arr[low] = temp;
+                arr[mid] = arr[mid] ^ arr[low];
+                arr[low] = arr[mid] ^ arr[low];
+                arr[mid] = arr[mid] ^ arr[low];
+//                
+//                int temp = arr[mid];
+//                arr[mid] = arr[low];
+//                arr[low] = temp;
 
                 low++;
                 mid++;
