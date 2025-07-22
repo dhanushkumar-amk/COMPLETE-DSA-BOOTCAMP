@@ -20,16 +20,14 @@ public class SortArrayByZerosAndOnesAndTwos {
             if(arr[mid] == 0){
                 arr[mid] = arr[mid] ^ arr[low];
                 arr[low] = arr[mid] ^ arr[low];
-                arr[mid] = arr[mid] ^ arr[low];
-                low++;
+                arr[mid] = arr[mid] ^ arr[low++];
                 mid++;
             } else if (arr[mid] == 1) {
                 mid++;
             }else{
                 arr[mid] = arr[mid] ^ arr[high];
                 arr[high] = arr[mid] ^ arr[high];
-                arr[mid] = arr[mid] ^ arr[high];
-                high--;
+                arr[mid] = arr[mid] ^ arr[high--];
             }
         }
     }
