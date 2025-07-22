@@ -12,8 +12,8 @@ public class GenerateAllSubarrays {
                 for (int k = i; k <= j; ++k) {
                     System.out.print(arr[k] + " ");
                 }
+                System.out.println();
             }
-            System.out.println();
         }
     }
 }
