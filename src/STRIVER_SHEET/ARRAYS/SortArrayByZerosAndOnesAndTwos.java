@@ -20,8 +20,7 @@ public class SortArrayByZerosAndOnesAndTwos {
             if(arr[mid] == 0){
                 arr[mid] = arr[mid] ^ arr[low];
                 arr[low] = arr[mid] ^ arr[low];
-                arr[mid] = arr[mid] ^ arr[low++];
-                mid++;
+                arr[mid++] = arr[mid] ^ arr[low++];
             } else if (arr[mid] == 1) {
                 mid++;
             }else{
