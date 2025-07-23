@@ -5,6 +5,6 @@ public class RearrangeArrayElementsBySign {
 
     }
 
-    public static 
+    public static
 
 }
