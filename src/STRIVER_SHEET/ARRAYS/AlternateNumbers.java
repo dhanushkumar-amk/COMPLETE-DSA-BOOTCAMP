@@ -5,5 +5,7 @@ public class AlternateNumbers {
 
     }
 
-    static 
+    public static int[] alternateNumbers(int []a) {
+        
+    }
 }
