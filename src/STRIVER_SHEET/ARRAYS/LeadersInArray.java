@@ -22,7 +22,7 @@ public class LeadersInArray {
             }
             max = Math.max(arr[i], max);
         }
-//        Collections.sort(ans);
+        Collections.sort(ans);
         return ans;
     }
 }
