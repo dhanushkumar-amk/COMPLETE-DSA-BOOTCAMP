@@ -24,7 +24,7 @@ public class LeadersInArray {
             }
         }
 
-        Collections.reverse(ans);  // to maintain left-to-right order
+        Collections.reverse(ans);  
         return ans;
     }
 }
