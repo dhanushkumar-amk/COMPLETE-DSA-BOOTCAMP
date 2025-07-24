@@ -1,10 +1,13 @@
 package STRIVER_SHEET.ARRAYS;
 
 
+import java.util.Arrays;
 
 public class NextPermutations {
     public static void main(String[] args) {
-
+    int[] arr = {1,2,3};
+    nextPermutation(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
     public static void nextPermutation(int[] arr) {
