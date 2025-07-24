@@ -5,5 +5,7 @@ public class NextPermutations {
 
     }
 
-    
+    public static void nextPermutation(int[] nums) {
+
+    }
 }
