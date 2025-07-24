@@ -16,13 +16,15 @@ public class LeadersInArray {
         ArrayList<Integer> ans = new ArrayList<>();
         int max = Integer.MIN_VALUE;
         int n = arr.length;
-        for (int i = n - 1; i > 0 ; i--) {
-            if(arr[i] > max){
+
+        for (int i = n - 1; i >= 0 ; i--) {
+            if(arr[i] >= max){
                 ans.add(arr[i]);
+                max = arr[i];
             }
-            max = Math.max(arr[i], max);
         }
-       Collections.sort(ans);
+
+        Collections.reverse(ans);  // to maintain left-to-right order
         return ans;
     }
 }
