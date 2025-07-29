@@ -1,5 +1,7 @@
 package STRIVER_SHEET.ARRAYS;
 
+import java.util.ArrayList;
+
 public class TransposeOfAMatrix {
     public static void main(String[] args) {
         int[][] matrix = {
@@ -31,7 +33,19 @@ public class TransposeOfAMatrix {
     }
 
 
-    
+    public ArrayList<ArrayList<Integer>> transpose1(int[][] mat) {
+
+        int n = mat.length;
+        int m = mat[0].length;
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                ans.get(i).get(j) = mat[j][i];
+            }
+        }
+        return ans;
+    }
 
 
 }
