@@ -17,6 +17,8 @@ public class TransposeOfAMatrix {
             }
             System.out.println();
         }
+
+
     }
 
     public static int[][] transpose(int[][] matrix) {
@@ -34,18 +36,21 @@ public class TransposeOfAMatrix {
 
 
     public ArrayList<ArrayList<Integer>> transpose1(int[][] mat) {
-
         int n = mat.length;
         int m = mat[0].length;
         ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                ans.get(i).get(j) = mat[j][i];
+        for (int i = 0; i < m; i++) {
+            ArrayList<Integer> row = new ArrayList<>();
+            for (int j = 0; j < n; j++) {
+                row.add(mat[j][i]);
             }
+            ans.add(row);
         }
+
         return ans;
     }
+
 
 
 }
