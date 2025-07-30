@@ -30,7 +30,19 @@ public class ReverseAColInMatrix {
 
     }
 
-    static void reverseMatrix(int[][] matrix){
+  public  static void reverseMatrix(int[][] matrix){
+      for (int i = 0; i < matrix.length; i++) {
+          int left = 0;
+          int right = matrix[0].length - 1;
 
+          while (left < right){
+              int temp = matrix[i][left];
+              matrix[i][left] = matrix[i][right];
+              matrix[i][right] = temp;
+              left++;
+              right--;
+          }
+
+      }
     }
 }
