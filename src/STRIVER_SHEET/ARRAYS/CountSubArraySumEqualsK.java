@@ -6,5 +6,7 @@ public class CountSubArraySumEqualsK {
     }
 
 
-    static 
+    public static int subarraySum(int[] nums, int k) {
+        
+    }
 }
