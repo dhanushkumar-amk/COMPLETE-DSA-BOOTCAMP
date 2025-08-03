@@ -8,7 +8,9 @@ public class MergeTwoSortedArray {
         int[] nums2 = {2,5,6};
 
         merge(nums1, 3, nums2, 3);
-       
+        for (int i = 0; i < nums1.length; i++) {
+            System.out.print(nums1[i] + " ");
+        }
     }
 
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
