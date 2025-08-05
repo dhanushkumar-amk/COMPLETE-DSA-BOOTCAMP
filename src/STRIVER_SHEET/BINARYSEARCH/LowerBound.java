@@ -3,7 +3,7 @@ package STRIVER_SHEET.BINARYSEARCH;
 public class LowerBound {
     public static void main(String[] args) {
         int[] arr = {1,4,6,7,7,8,9};
-        System.out.println(lowerBoundIndex(arr, 5));
+        System.out.println(lowerBoundIndex(arr, 10));
     }
 
     public static int lowerBoundIndex(int[] arr, int target){
