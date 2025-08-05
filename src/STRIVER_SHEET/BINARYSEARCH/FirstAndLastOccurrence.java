@@ -9,8 +9,14 @@ public class FirstAndLastOccurrence {
     }
 
 
-    public static int[] searchRange(int[] nums, int target){
+    public static int[] searchRange(int[] arr, int target){
+            int lowerBound = lowerBoundIndex(arr, target);
+            int upperBound = upperBoundIndex(arr, target);
 
+            if(lowerBound == arr.length || arr[lowerBound] != target)
+                return new int[]{-1,-1};
+
+            return new int[]{lowerBound, upperBound};
     }
 
 
@@ -32,6 +38,27 @@ public class FirstAndLastOccurrence {
             }
         }
         return ans;
+    }
+
+
+    public static int upperBoundIndex(int[] arr, int target){
+        int n = arr.length;
+        int low = 0;
+        int high = n - 1;
+        int ans = 0;
+
+
+        while(low <= high){
+            int mid = (low + high) / 2;
+
+            if(arr[mid] <= target){
+                ans = mid;
+                low = mid + 1;
+            }else{
+                high = mid - 1;
+            }
+        }
+        return ans + 1;
     }
 
 
