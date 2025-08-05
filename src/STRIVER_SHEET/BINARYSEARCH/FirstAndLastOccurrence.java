@@ -16,7 +16,7 @@ public class FirstAndLastOccurrence {
             if(lowerBound == arr.length || arr[lowerBound] != target)
                 return new int[]{-1,-1};
 
-            return new int[]{lowerBound, upperBound};
+            return new int[]{lowerBound, upperBound - 1};
     }
 
 
