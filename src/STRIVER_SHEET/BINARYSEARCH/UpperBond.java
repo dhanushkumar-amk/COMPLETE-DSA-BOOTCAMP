@@ -3,7 +3,7 @@ package STRIVER_SHEET.BINARYSEARCH;
 public class UpperBond {
     public static void main(String[] args) {
         int[] arr = {1,4,6,7,7,8,9};
-        System.out.println(upperBoundIndex(arr, 1));
+        System.out.println(upperBoundIndex(arr, 0));
     }
 
     public static int upperBoundIndex(int[] arr, int target){
