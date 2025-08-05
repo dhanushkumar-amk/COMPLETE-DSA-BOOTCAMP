@@ -23,6 +23,6 @@ public class UpperBond {
                 high = mid - 1;
             }
         }
-        return ans;
+        return ans + 1;
     }
 }
