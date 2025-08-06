@@ -17,7 +17,7 @@ public class MinimumInSortedArray {
                 low = mid + 1;
 
             } else {
-                
+
                 ans = Math.min(ans, arr[mid]);
                 high = mid - 1;
             }
