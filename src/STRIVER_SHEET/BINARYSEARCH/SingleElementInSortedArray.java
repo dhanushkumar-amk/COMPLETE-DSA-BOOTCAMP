@@ -6,10 +6,13 @@ public class SingleElementInSortedArray {
     public static void main(String[] args) {
 
         int[] arr = {1,1,2,2,3,3,4,5,5,6,6};
-        System.out.println();
+        System.out.println(single(arr));
 
     }
 
-    
+   public static int single(int[] arr) {
+
+
+    }
 
 }
