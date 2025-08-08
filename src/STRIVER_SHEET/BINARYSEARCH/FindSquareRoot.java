@@ -3,7 +3,7 @@ package STRIVER_SHEET.BINARYSEARCH;
 
 public class FindSquareRoot {
     public static void main(String[] args) {
-        int n = 7;
+        int n = 25;
         System.out.println(sqrt(n));
     }
 
