@@ -16,7 +16,6 @@ public class ArrayToLinkedList {
             mover.next = temp;
             mover = temp;
         }
-
         return head;
     }
 }
