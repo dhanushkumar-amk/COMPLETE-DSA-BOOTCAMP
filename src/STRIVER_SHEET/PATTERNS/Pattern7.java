@@ -2,10 +2,10 @@ package STRIVER_SHEET.PATTERNS;
 
 public class Pattern7 {
     public static void main(String[] args) {
-        nStarTriangle(3);
+        nStarTriangle(20);
     }
     public static void nStarTriangle(int n) {
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
 
             for (int prefixSpace = 0; prefixSpace < n-i-1; prefixSpace++) {
                 System.out.print(" ");
@@ -20,6 +20,9 @@ public class Pattern7 {
             }
 
             System.out.println();
+        }
+        for (int i = 1; i < 50; i++) {
+            System.out.print(i);
         }
     }
 }
