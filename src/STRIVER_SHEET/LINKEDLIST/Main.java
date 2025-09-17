@@ -23,7 +23,7 @@ package STRIVER_SHEET.LINKEDLIST;
      public static void main(String[] args) {
          int[] arr  = {1,2,3,4,5};
          NodeDLL head = convertArrayToDLL(arr);
-        NodeDLL head1 = deleteKthElement(head, 2);
+        NodeDLL head1 = insertBeforeTail(head, 10);
         print(head1);
      }
 
@@ -39,7 +39,6 @@ package STRIVER_SHEET.LINKEDLIST;
          }
          return head;
      }
-
 
      // Delete the Head
      public static NodeDLL deleteHead(NodeDLL head){
@@ -71,6 +70,7 @@ package STRIVER_SHEET.LINKEDLIST;
          return head;
      }
 
+     // delete the kth position element
      public static NodeDLL deleteKthElement(NodeDLL head, int k){
 
          if (head == null)
@@ -104,6 +104,34 @@ package STRIVER_SHEET.LINKEDLIST;
          return head;
      }
 
+     // insert Before head
+     public static NodeDLL insertBeforeHead(NodeDLL head,int val){
+         NodeDLL newHead = new NodeDLL(val, null, head);
+         head.prev = newHead;
+
+         return newHead;
+     }
+
+     // insert before tail
+     public static NodeDLL insertBeforeTail(NodeDLL head, int val){
+         if (head.next == null)
+             return insertBeforeHead(head, val);
+
+         NodeDLL tail = head;
+         while (tail.next != null){
+             tail = tail.next;
+         }
+
+         NodeDLL previous = tail.prev;
+         NodeDLL newNode = new NodeDLL(val, previous, tail);
+         previous.next = newNode;
+         tail.prev = newNode;
+
+         return head;
+
+     }
+
+
 
     // Print the linked list
      public static void print(NodeDLL head){
@@ -112,9 +140,6 @@ package STRIVER_SHEET.LINKEDLIST;
              head = head.next;
          }
      }
-
-     
-
 
  }
 
